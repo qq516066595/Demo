@@ -8,6 +8,6 @@ namespace com.ToolHelper
 {
     public class Class1
     {
-        、、
+       
     }
 }
