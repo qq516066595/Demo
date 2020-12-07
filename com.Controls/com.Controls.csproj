@@ -44,18 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="ForMonitor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ForMonitor.Designer.cs">
-      <DependentUpon>ForMonitor.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="ForMonitor.resx">
-      <DependentUpon>ForMonitor.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="page\" />
