@@ -125,8 +125,10 @@ namespace com.DataBaseDAL
             SqliteHelper.Instance.ExecuteSql(0, sql);
         }
 
-        public void UpdateUserInfo(string userName, string password, string nickName, int userRoleSimple, byte ValueOfRight)
+        public  void UpdateUserInfo(string userName, string password, string nickName, int userRoleSimple, byte ValueOfRight)
         {
+         
+
             //string sql = "update user set nick_name = '" + nickName + "', password = '" + password + "', powerscr = '" + ValueOfRight.ToString() + "' where user_name='" + userName  + "'";
             string sql = "";
             if (password != "")
@@ -138,6 +140,20 @@ namespace com.DataBaseDAL
                 sql = string.Format("replace into user (user_name,nick_name,user_role_simple,powerscr) values ('{0}','{1}',{2},{3})", userName, nickName, userRoleSimple.ToString(), ValueOfRight.ToString());
             }
             SqliteHelper.Instance.ExecuteSql(0, sql);
+            
+
+
+            myModus.stMFC_Ctrl sd = new myModus.stMFC_Ctrl();
+            sd.bCheckDiff_Enable = true;
+            myModus.stRecipeArrary[1].bOpen_Valve_1 = true;
+
+            
+
+
+
+
+
+
         }
 
  

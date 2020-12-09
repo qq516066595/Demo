@@ -7,18 +7,20 @@ using System.Threading.Tasks;
 
 namespace com.DataBaseModels
 {
-    public class myModus
+    public   class myModus
     {
-        static myModus instance;
+       private static myModus instance;
 
-        public static myModus Instance() {
-            if (instance == null)
+        public static myModus Instance
+        {
+            get
             {
-                instance = new myModus();
+                if (instance == null)
+                {
+                    instance = new myModus();
+                }
+                return instance;
             }
-            return instance;
-
-
         }
 
 
@@ -71,9 +73,9 @@ namespace com.DataBaseModels
 
         }
 
-        public static stRecipePara[] stRecipeArrary = new stRecipePara[5];
+        public static sStRecipePara[] stRecipeArrary = new sStRecipePara[5];
 
-        public struct stRecipePara
+        public   struct sStRecipePara
         {
 
             public int ename;      //配方步名称
@@ -251,10 +253,10 @@ namespace com.DataBaseModels
             public ushort nAlmDiff;     //报警偏差值
             public bool bShield;        //当前通道屏蔽
         }
-        stMFC_Ctrl[] stMFC = new stMFC_Ctrl[12];
+        //stMFC_Ctrl[] stMFC = new stMFC_Ctrl[12];
          
 
-        public struct stMFC_Ctrl
+        public  struct stMFC_Ctrl
         { 
            public bool bReset;              //复位
            public bool bExcute;             //触发
