@@ -11,7 +11,7 @@ namespace com.CIPServer
 {
     public class CIPDriver: NXCompolet
     {
-         private CIPDriver instance;
+        // private CIPDriver instance;
 
 
         List<string> ips = new List<string>();
@@ -24,6 +24,9 @@ namespace com.CIPServer
 
 
         public CIPDriver() { }
+
+
+
 
         public CIPDriver(string ips, bool active)
         {
