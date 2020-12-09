@@ -1,4 +1,5 @@
-﻿using com.FunctionModels;
+﻿using com.DataBaseModels;
+using com.FunctionModels;
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
@@ -138,6 +139,10 @@ namespace com.DataBaseDAL
             }
             SqliteHelper.Instance.ExecuteSql(0, sql);
         }
+
+ 
+
+
 
 
     }

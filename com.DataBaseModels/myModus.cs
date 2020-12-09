@@ -9,8 +9,19 @@ namespace com.DataBaseModels
 {
     public class myModus
     {
-      
-       
+        static myModus instance;
+
+        public static myModus Instance() {
+            if (instance == null)
+            {
+                instance = new myModus();
+            }
+            return instance;
+
+
+        }
+
+
 
         private static string TableHead(int index)
         {
@@ -60,8 +71,8 @@ namespace com.DataBaseModels
 
         }
 
-        stRecipePara[] stRecipeArrary = new stRecipePara[5];
-         
+        public static stRecipePara[] stRecipeArrary = new stRecipePara[5];
+
         public struct stRecipePara
         {
 
@@ -140,7 +151,7 @@ namespace com.DataBaseModels
             public double rBoatOut_OpenPos;         //出舟开炉门判断位
             public double rBoatOut_FastPos;         //出舟快速判断位
             public double rBoatOut_OffsetPos;       //出舟时，根据传感器定位舟
-            public bool   bAutoCalcEnable;          //使能自动计算力矩
+            public bool bAutoCalcEnable;          //使能自动计算力矩
             public double rFollow_StartT;           //随动启动力矩
             public double rFollow_StopT;            //随动停止力矩
             public double rFollow_MaxOffsetPos;     //随动最大允许的偏移距离
@@ -161,8 +172,8 @@ namespace com.DataBaseModels
         //当前工艺控制
         public struct stCurrentRecipeCtrl
         {
-            public bool   bFinish;                   
-            public bool   bAlarm;
+            public bool bFinish;
+            public bool bAlarm;
             public double nWorking_Time;            //工艺进行时间
             public double nRemain_Time;             //工艺剩余时间
             public double eName;
@@ -172,13 +183,13 @@ namespace com.DataBaseModels
         //真空规控制结构体
         public struct stVG1_Ctrl
         {
-          public double IN;                 //模块实际输入
-          public double Q;                  //换算后的实际值
-          public double bAlarm;             //报警标志位
-          public double nErrorCode;         //报警代码
+            public double IN;                 //模块实际输入
+            public double Q;                  //换算后的实际值
+            public double bAlarm;             //报警标志位
+            public double nErrorCode;         //报警代码
         }
         //真空规参数结构体
-        public struct stVG1_Para 
+        public struct stVG1_Para
         {
             public int FilterN;             //滤波数量
             public int PeakN;               //毛刺监控数量
@@ -192,12 +203,12 @@ namespace com.DataBaseModels
         public struct stTube_BoatInfo
         {
             public string ID;               //舟托编号  
-            public int    eBoatState;       //舟状态
+            public int eBoatState;       //舟状态
             public double rActStoreTime;    //实际存放时间
-            public int    iUseCount;        //使用次数
-            public bool   bAlarm;           //舟工位报警 
+            public int iUseCount;        //使用次数
+            public bool bAlarm;           //舟工位报警 
         }
-         
+
         //炉管和机械手通讯
         public struct stComm_from_Tube
         {
@@ -212,7 +223,7 @@ namespace com.DataBaseModels
         //机械手和炉管通讯
         public struct stComm_to_Tube
         {
-            public int  iHeartBeat;         //心跳位
+            public int iHeartBeat;         //心跳位
             public bool bHand_atSafePos;    //机械手在安全位置
             public bool bTube_has_Task;     //炉管正在执行搬舟任务
             public bool bAckTakeReq;        //机械手收到炉管请求取舟的信号
@@ -241,6 +252,7 @@ namespace com.DataBaseModels
             public bool bShield;        //当前通道屏蔽
         }
         stMFC_Ctrl[] stMFC = new stMFC_Ctrl[12];
+         
 
         public struct stMFC_Ctrl
         { 
