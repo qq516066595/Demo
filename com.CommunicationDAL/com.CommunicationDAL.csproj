@@ -56,12 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Loader\LoaderService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TubeService\TubeDiService.cs" />
+    <Compile Include="TubeService\TubeDoService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Loader\" />
-    <Folder Include="TubeService\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\com.CommonHelper\com.CommonHelper.csproj">
       <Project>{053a8ed8-c9d5-4d3a-872f-affd69c23936}</Project>

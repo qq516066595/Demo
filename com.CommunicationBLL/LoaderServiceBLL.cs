@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace com.CIPServer
+namespace com.CommunicationBLL
 {
-    public class Class1
+    public class LoaderServiceBLL
     {
+
+
+
     }
 }

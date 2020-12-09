@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace com.CommunicationBLL
+namespace com.CommunicationDAL.TubeService
 {
-    public class Class1
+    class TubeDoService
     {
     }
 }

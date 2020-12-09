@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace com.FunctionModels
+namespace com.CommunicationDAL.Loader
 {
-    public class Class1
+    class LoaderService
     {
     }
 }

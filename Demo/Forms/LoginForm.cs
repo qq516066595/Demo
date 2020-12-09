@@ -81,16 +81,13 @@ namespace Sunny.UI
                 user.Password = txtPassword.Text;
               
 
-                //if (UserService.Instance.Login(user))
-                //{
-                //    this.Close();
-                //}
+                 if (UserService.Instance.Login(user))
+                 {
+                    UIMessageBox.Show("登录成功！");
+                 }
 
                 IsLogin = OnLogin != null && OnLogin(txtUser.Text, txtPassword.Text) ; 
-                if (IsLogin)
-                { 
-                    this.Close(); 
-                }
+                if (IsLogin) this.Close(); 
              
               
                 
