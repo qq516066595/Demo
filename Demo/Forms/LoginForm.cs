@@ -121,5 +121,10 @@ namespace Sunny.UI
             get => txtPassword.Text;
             set => txtPassword.Text = value;
         }
+
+        private void uiPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 } 

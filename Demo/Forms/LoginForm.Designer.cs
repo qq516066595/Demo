@@ -105,11 +105,11 @@
             // 
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.btnLogin.Location = new System.Drawing.Point(4, 206);
+            this.btnLogin.Location = new System.Drawing.Point(3, 206);
             this.btnLogin.MinimumSize = new System.Drawing.Size(1, 1);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Padding = new System.Windows.Forms.Padding(28, 0, 0, 0);
-            this.btnLogin.Size = new System.Drawing.Size(86, 29);
+            this.btnLogin.Size = new System.Drawing.Size(87, 29);
             this.btnLogin.Style = Sunny.UI.UIStyle.Custom;
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "登录";
@@ -131,7 +131,7 @@
             this.btnCancel.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
             this.btnCancel.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
             this.btnCancel.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-            this.btnCancel.Size = new System.Drawing.Size(86, 29);
+            this.btnCancel.Size = new System.Drawing.Size(90, 29);
             this.btnCancel.Style = Sunny.UI.UIStyle.Red;
             this.btnCancel.StyleCustomMode = true;
             this.btnCancel.Symbol = 61453;
@@ -189,23 +189,24 @@
             this.uiPanel1.Controls.Add(this.btnLogin);
             this.uiPanel1.FillColor = System.Drawing.Color.White;
             this.uiPanel1.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.uiPanel1.Location = new System.Drawing.Point(433, 126);
+            this.uiPanel1.Location = new System.Drawing.Point(433, 120);
             this.uiPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.uiPanel1.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiPanel1.Name = "uiPanel1";
             this.uiPanel1.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
             this.uiPanel1.RectSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.None;
-            this.uiPanel1.Size = new System.Drawing.Size(190, 245);
+            this.uiPanel1.Size = new System.Drawing.Size(197, 254);
             this.uiPanel1.Style = Sunny.UI.UIStyle.Custom;
             this.uiPanel1.StyleCustomMode = true;
             this.uiPanel1.TabIndex = 9;
             this.uiPanel1.Text = null;
+            this.uiPanel1.Click += new System.EventHandler(this.uiPanel1_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Demo.Properties.Resources.Login4;
+            this.BackgroundImage = global::Demo.Properties.Resources.Login3;
             this.ClientSize = new System.Drawing.Size(750, 450);
             this.Controls.Add(this.uiPanel1);
             this.Controls.Add(this.lblSubText);
