@@ -46,10 +46,6 @@
     <Compile Include="UserService\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\com.CommonHelper\com.CommonHelper.csproj">
-      <Project>{053A8ED8-C9D5-4D3A-872F-AFFD69C23936}</Project>
-      <Name>com.CommonHelper</Name>
-    </ProjectReference>
     <ProjectReference Include="..\com.DataBaseDAL\com.DataBaseDAL.csproj">
       <Project>{2D27551D-B091-4BB1-857B-D0E863E469AC}</Project>
       <Name>com.DataBaseDAL</Name>
@@ -58,9 +54,6 @@
       <Project>{5b454594-3f89-4968-84e5-c6f673f87dad}</Project>
       <Name>com.FunctionModels</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="File\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
