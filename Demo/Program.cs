@@ -1,4 +1,5 @@
-﻿ 
+﻿
+using Demo.Forms.Template;
 using Sunny.UI;
 using System;
 using System.Collections.Generic;
@@ -17,8 +18,11 @@ namespace Demo
         static void Main()
         {
             Application.EnableVisualStyles();
+            DevExpress.UserSkins.BonusSkins.Register();
+            DevExpress.Skins.SkinManager.EnableFormSkins();
+            DevExpress.Skins.SkinManager.EnableMdiFormSkins();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new frmParent());
            
         }
     }

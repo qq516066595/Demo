@@ -30,6 +30,7 @@ namespace Demo.Forms.Template
             InitializeComponent();
             MRF = this;
             MRF.IsMdiContainer = true;
+            defaultLookAndFeel1.LookAndFeel.SkinName = "Liquid Sky";//窗体默认皮肤
 
             //设置tab子窗体不可关闭
             xtraTabbedMdiManager1.PageAdded += (s, ei) =>
@@ -103,9 +104,10 @@ namespace Demo.Forms.Template
         /// <summary>
         /// 将子窗体在父窗体中打开
         /// </summary>
-        /// <param name="caption"></param>
-        /// <param name="ViewType"></param>
-        private void ActivateOrAddForm(string caption, string ViewType)
+        /// <param name="caption">打开tab页的名称</param>
+        /// <param name="ViewType">窗体路径</param>
+        /// <param name="groupNum">借用tag值进行传值，区分管和机械手：替换变量</param>
+        private void ActivateOrAddForm(string caption, string ViewType,int groupNum)
         {
             foreach (Form subForm in MRF.MdiChildren)
             {
@@ -118,6 +120,7 @@ namespace Demo.Forms.Template
             Form fm = (Form)Activator.CreateInstance(Type.GetType(ViewType));
             fm.MdiParent = MRF;
             fm.Text = caption;
+            fm.Tag = groupNum;
             fm.Show();
         }
         
@@ -128,13 +131,48 @@ namespace Demo.Forms.Template
         /// <param name="e"></param>
         private void frmParent_Load(object sender, EventArgs e)
         {
-            ActivateOrAddForm("  总  览  ", "Demo.Forms.frmHomePage");
-            ActivateOrAddForm(" 第 一 组 ", "Demo.Forms.Tube.frmTubeMain");
-            ActivateOrAddForm(" 第 二 组 ", "Demo.Forms.Tube.frmTubeMain");
-            ActivateOrAddForm(" 第 三 组 ", "Demo.Forms.Tube.frmTubeMain");
-            ActivateOrAddForm(" 第 四 组 ", "Demo.Forms.Tube.frmTubeMain");
-            ActivateOrAddForm(" 第 五 组 ", "Demo.Forms.Tube.frmTubeMain");
-            ActivateOrAddForm(" 机 械 手 ", "Demo.Forms.Hander.frmHanderMain");
+            ActivateOrAddForm("  总  览  ", "Demo.Forms.frmHomePage",0);
+            ActivateOrAddForm(" 第 一 组 ", "Demo.Forms.Tube.frmTubeMain",1);
+            ActivateOrAddForm(" 第 二 组 ", "Demo.Forms.Tube.frmTubeMain",2);
+            ActivateOrAddForm(" 第 三 组 ", "Demo.Forms.Tube.frmTubeMain",3);
+            ActivateOrAddForm(" 第 四 组 ", "Demo.Forms.Tube.frmTubeMain",4);
+            ActivateOrAddForm(" 第 五 组 ", "Demo.Forms.Tube.frmTubeMain",5);
+            ActivateOrAddForm(" 机 械 手 ", "Demo.Forms.Hander.frmHanderMain",6);
+        }
+        #endregion
+
+        #region Dev换肤设置，可优化
+        /// <summary>
+        /// 换肤
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void lblSkinsOne_Click(object sender, EventArgs e)
+        {
+            Skins("Liquid Sky");
+            lblSkinsOne.BackColor = Color.LightBlue;
+            lblSkinsTwo.BackColor = DefaultBackColor;
+            lblSkinsThree.BackColor = DefaultBackColor; 
+        }
+        private void lblSkinsTwo_Click(object sender, EventArgs e)
+        {
+            Skins("Office 2007 Green");
+            lblSkinsTwo.BackColor = Color.LightBlue;
+            lblSkinsOne.BackColor = DefaultBackColor;
+            lblSkinsThree.BackColor = DefaultBackColor;
+        }
+        private void lblSkinsThree_Click(object sender, EventArgs e)
+        {
+            Skins("Office 2007 Black");
+            lblSkinsThree.BackColor = Color.LightBlue;
+            lblSkinsOne.BackColor = DefaultBackColor;
+            lblSkinsTwo.BackColor = DefaultBackColor;
+        }
+        private void Skins(string SkinName)
+        {
+            defaultLookAndFeel1.LookAndFeel.UseWindowsXPTheme = false;
+            defaultLookAndFeel1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Skin;
+            defaultLookAndFeel1.LookAndFeel.SkinName = SkinName;
         }
         #endregion
     }

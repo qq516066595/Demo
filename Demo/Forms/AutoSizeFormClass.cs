@@ -33,7 +33,7 @@ namespace Demo.Forms
         // public List oldCtrl= new List();//这里将西文的大于小于号都过滤掉了，只能改为中文的，使用中要改回西文
         public List<controlRect> oldCtrl = new List<controlRect>();
         int ctrlNo = 0;//1;
-                       //(3). 创建两个函数
+        //(3). 创建两个函数
                        //(3.1)记录窗体和其控件的初始位置和大小,
         public void controllInitializeSize(Control mForm)
         {
