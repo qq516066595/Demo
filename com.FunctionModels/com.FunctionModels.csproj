@@ -41,10 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="DoConf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\com.CommunicationDAL\com.CommunicationDAL.csproj">
+      <Project>{E34C4230-911E-47FB-83B4-D5D1CFD0FCC4}</Project>
+      <Name>com.CommunicationDAL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

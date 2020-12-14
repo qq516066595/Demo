@@ -8,13 +8,13 @@ namespace com.FunctionModels
 {
     public class UserInfo
     {
-        private string zUserName;
-        private string zNickName;
-        private string zPassword;
-        private byte zPowerscri;
-        private int zUserRole;
-        private int zUserRoleSimple;
-        private bool zUserEditAble;
+        private string zUserName;        //用户名称
+        private string zNickName;        //别名
+        private string zPassword;        //密码
+        private byte   zPowerscri;       //最高
+        private int    zUserRole;        //角色
+        private int    zUserRoleSimple;  //简单角色
+        private bool   zUserEditAble;    //可编辑的角色
 
         public bool UserEditAble
         {

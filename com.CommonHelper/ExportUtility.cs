@@ -1,4 +1,5 @@
-﻿using System;
+﻿using log4net;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace com.CommonHelper
 {
     public class ExportUtility
     {
-      
+        public static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType); public static object locker = new object();
         public static void ExportCSV(string[][] data, string fileName)
         {
             try
@@ -32,7 +33,7 @@ namespace com.CommonHelper
             }
             catch (Exception ex)
             {
-              //  log.Error("Exception caught in process:{0}", ex);
+               log.Error("ExportCSV函数进程中捕获异常{0}", ex);
             }
         }
 

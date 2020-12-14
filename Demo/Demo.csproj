@@ -55,6 +55,9 @@
     <Reference Include="DevExpress.XtraRichEdit.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraSpreadsheet.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="log4net">
+      <HintPath>lib\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\MySql.Data.dll</HintPath>
@@ -100,18 +103,6 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Template\frmParent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Template\frmParent.Designer.cs">
-      <DependentUpon>frmParent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Tube\frmTubeMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Tube\frmTubeMain.Designer.cs">
-      <DependentUpon>frmTubeMain.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -144,6 +135,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl\ucTubeMain.resx">
+      <DependentUpon>ucTubeMain.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -178,6 +172,10 @@
     <ProjectReference Include="..\com.FunctionModels\com.FunctionModels.csproj">
       <Project>{5B454594-3F89-4968-84E5-C6F673F87DAD}</Project>
       <Name>com.FunctionModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.TubeServices\com.TubeServices.csproj">
+      <Project>{A9A14334-CABD-40FC-9D42-648F038D15E3}</Project>
+      <Name>com.TubeServices</Name>
     </ProjectReference>
     <ProjectReference Include="..\FunctionDAL\com.FunctionDAL.csproj">
       <Project>{DFC291AD-795A-4058-AE72-1BE92205CDE4}</Project>
