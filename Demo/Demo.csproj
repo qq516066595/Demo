@@ -85,6 +85,12 @@
     <Compile Include="Forms\frmHomePage.Designer.cs">
       <DependentUpon>frmHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Loader\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Loader\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Loader\frmHanderMain.cs">
       <SubType>Form</SubType>
     </Compile>
