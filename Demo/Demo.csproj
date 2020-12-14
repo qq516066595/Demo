@@ -74,6 +74,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AutoSizeFormClass.cs" />
+    <Compile Include="Forms\frmHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHomePage.Designer.cs">
+      <DependentUpon>frmHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Hander\frmHanderMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Hander\frmHanderMain.Designer.cs">
+      <DependentUpon>frmHanderMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,14 +99,47 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Template\frmParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Template\frmParent.Designer.cs">
+      <DependentUpon>frmParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tube\frmTubeMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tube\frmTubeMain.Designer.cs">
+      <DependentUpon>frmTubeMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\ModelHelper.cs" />
+    <Compile Include="model\TubeDoConfViewModel.cs" />
+    <Compile Include="model\TubeViewModelFactory.cs" />
+    <Compile Include="UserControl\ucTubeMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucTubeMain.Designer.cs">
+      <DependentUpon>ucTubeMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmHomePage.resx">
+      <DependentUpon>frmHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Hander\frmHanderMain.resx">
+      <DependentUpon>frmHanderMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Template\frmParent.resx">
+      <DependentUpon>frmParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tube\frmTubeMain.resx">
+      <DependentUpon>frmTubeMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -106,6 +152,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl\ucTubeMain.resx">
+      <DependentUpon>ucTubeMain.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -140,6 +189,10 @@
     <ProjectReference Include="..\com.FunctionModels\com.FunctionModels.csproj">
       <Project>{5B454594-3F89-4968-84E5-C6F673F87DAD}</Project>
       <Name>com.FunctionModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.TubeServices\com.TubeServices.csproj">
+      <Project>{A9A14334-CABD-40FC-9D42-648F038D15E3}</Project>
+      <Name>com.TubeServices</Name>
     </ProjectReference>
     <ProjectReference Include="..\FunctionDAL\com.FunctionDAL.csproj">
       <Project>{DFC291AD-795A-4058-AE72-1BE92205CDE4}</Project>

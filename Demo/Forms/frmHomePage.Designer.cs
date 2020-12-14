@@ -33,19 +33,21 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(335, 424);
+            this.labelControl1.Location = new System.Drawing.Point(234, 270);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(144, 22);
+            this.labelControl1.Size = new System.Drawing.Size(96, 14);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "您好，我是首页！";
             // 
             // frmHomePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 1140);
+            this.ClientSize = new System.Drawing.Size(717, 700);
             this.Controls.Add(this.labelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHomePage";
             this.Text = "frmHomePage";
             this.ResumeLayout(false);

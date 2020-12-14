@@ -16,7 +16,7 @@ namespace com.CIPServer
 
         List<string> ips = new List<string>();
         public static System.ComponentModel.IContainer components = new System.ComponentModel.Container();
-        public OMRON.Compolet.CIPCompolet64.NXCompolet nxCompolet1 = new OMRON.Compolet.CIPCompolet64.NXCompolet(components);
+        public OMRON.Compolet.CIPCompolet64.NXCompolet nxCompolet1 = new NXCompolet(components);
 
         private Thread zConnectThread;
         private bool zUpdateCom;
