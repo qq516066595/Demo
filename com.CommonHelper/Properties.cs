@@ -1,4 +1,5 @@
-﻿using System;
+﻿using log4net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,7 @@ namespace com.CommonHelper
 {
     public class Properties
     {
-
-        public static object locker = new object();
+        public static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType); public static object locker = new object();
 
         private Dictionary<String, String> list;
         private String filename;
@@ -28,7 +28,7 @@ namespace com.CommonHelper
         {
             return (list.ContainsKey(field)) ? (list[field]) : (null);
         }
-
+        //设置键和值
         public void set(String field, Object value)
         {
             if (!list.ContainsKey(field))
@@ -47,7 +47,7 @@ namespace com.CommonHelper
             }
 
         }
-
+        //保存
         public void Save()
         {
             try
@@ -56,10 +56,10 @@ namespace com.CommonHelper
             }
             catch (Exception e)
             {
-                //  log.Error("save file error");
+                 log.Error("保存文件错误"+e.ToString());
             }
         }
-
+        //保存指定文件
         public void Save(String filename)
         {
             this.filename = filename;
