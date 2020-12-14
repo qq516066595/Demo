@@ -36,7 +36,7 @@
             // labelControl1
             // 
             this.labelControl1.Location = new System.Drawing.Point(308, 356);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(120, 14);
             this.labelControl1.TabIndex = 1;
@@ -53,7 +53,7 @@
             this.ClientSize = new System.Drawing.Size(1024, 1044);
             this.Controls.Add(this.labelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHanderMain";
             this.Text = "frmHanderMain";
             this.ResumeLayout(false);
