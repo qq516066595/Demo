@@ -1,4 +1,4 @@
-﻿namespace Demo.Forms.Hander
+﻿namespace Demo.Forms.Loader
 {
     partial class frmHanderMain
     {

@@ -19,7 +19,7 @@ using DevExpress.XtraEditors;
 * 
 * Remarks：
 */
-namespace Demo.Forms.Hander
+namespace Demo.Forms.Loader
 {
     public partial class frmHanderMain : DevExpress.XtraEditors.XtraForm
     {
