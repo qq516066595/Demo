@@ -30,7 +30,7 @@ namespace Demo.Forms.Template
             InitializeComponent();
             MRF = this;
             MRF.IsMdiContainer = true;
-            defaultLookAndFeel1.LookAndFeel.SkinName = "Liquid Sky";//窗体默认皮肤
+            defaultLookAndFeel1.LookAndFeel.SkinName = "DevExpress Style";//窗体默认皮肤
 
             //设置tab子窗体不可关闭
             xtraTabbedMdiManager1.PageAdded += (s, ei) =>
@@ -149,14 +149,14 @@ namespace Demo.Forms.Template
         /// <param name="e"></param>
         private void lblSkinsOne_Click(object sender, EventArgs e)
         {
-            Skins("Liquid Sky");
+            Skins("DevExpress Style"); 
             lblSkinsOne.BackColor = Color.LightBlue;
             lblSkinsTwo.BackColor = DefaultBackColor;
             lblSkinsThree.BackColor = DefaultBackColor; 
         }
         private void lblSkinsTwo_Click(object sender, EventArgs e)
         {
-            Skins("Office 2007 Green");
+            Skins("Caramel");
             lblSkinsTwo.BackColor = Color.LightBlue;
             lblSkinsOne.BackColor = DefaultBackColor;
             lblSkinsThree.BackColor = DefaultBackColor;

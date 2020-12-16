@@ -206,7 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Demo.Properties.Resources.Login3;
+            this.BackgroundImage = global::Demo.Properties.Resources.Login4;
             this.ClientSize = new System.Drawing.Size(750, 450);
             this.Controls.Add(this.uiPanel1);
             this.Controls.Add(this.lblSubText);

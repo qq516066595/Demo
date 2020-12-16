@@ -28,18 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmParent));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager();
+            this.imageCollection1 = new DevExpress.Utils.ImageCollection();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.pnAlarmShield = new DevExpress.XtraEditors.PanelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.lblSkinsThree = new System.Windows.Forms.Label();
@@ -85,7 +84,7 @@
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1024, 50);
+            this.panelControl1.Size = new System.Drawing.Size(1280, 50);
             this.panelControl1.TabIndex = 1;
             // 
             // panelControl3
@@ -96,15 +95,11 @@
             this.panelControl3.Controls.Add(this.picAbout);
             this.panelControl3.Controls.Add(this.picExit);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl3.Location = new System.Drawing.Point(806, 2);
+            this.panelControl3.Location = new System.Drawing.Point(1062, 2);
             this.panelControl3.Margin = new System.Windows.Forms.Padding(2);
             this.panelControl3.Name = "panelControl3";
             this.panelControl3.Size = new System.Drawing.Size(216, 46);
             this.panelControl3.TabIndex = 1;
-            // 
-            // defaultLookAndFeel1
-            // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Liquid Sky";
             // 
             // imageCollection1
             // 
@@ -119,7 +114,7 @@
             this.panelControl2.Location = new System.Drawing.Point(0, 50);
             this.panelControl2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1024, 30);
+            this.panelControl2.Size = new System.Drawing.Size(1280, 30);
             this.panelControl2.TabIndex = 1;
             // 
             // pnAlarmShield
@@ -128,7 +123,7 @@
             this.pnAlarmShield.Controls.Add(this.labelControl2);
             this.pnAlarmShield.Controls.Add(this.pictureEdit3);
             this.pnAlarmShield.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnAlarmShield.Location = new System.Drawing.Point(918, 2);
+            this.pnAlarmShield.Location = new System.Drawing.Point(1174, 2);
             this.pnAlarmShield.Margin = new System.Windows.Forms.Padding(2);
             this.pnAlarmShield.Name = "pnAlarmShield";
             this.pnAlarmShield.Size = new System.Drawing.Size(104, 26);
@@ -175,10 +170,10 @@
             this.panelControl4.Controls.Add(this.panelControl5);
             this.panelControl4.Controls.Add(this.label1);
             this.panelControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl4.Location = new System.Drawing.Point(0, 1024);
+            this.panelControl4.Location = new System.Drawing.Point(0, 1004);
             this.panelControl4.Margin = new System.Windows.Forms.Padding(2);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1024, 20);
+            this.panelControl4.Size = new System.Drawing.Size(1280, 20);
             this.panelControl4.TabIndex = 2;
             // 
             // panelControl5
@@ -188,7 +183,7 @@
             this.panelControl5.Controls.Add(this.lblSkinsOne);
             this.panelControl5.Controls.Add(this.lblSkinsTwo);
             this.panelControl5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl5.Location = new System.Drawing.Point(956, 2);
+            this.panelControl5.Location = new System.Drawing.Point(1212, 2);
             this.panelControl5.Margin = new System.Windows.Forms.Padding(2);
             this.panelControl5.Name = "panelControl5";
             this.panelControl5.Size = new System.Drawing.Size(66, 16);
@@ -238,7 +233,7 @@
             this.label1.Location = new System.Drawing.Point(2, 2);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1020, 16);
+            this.label1.Size = new System.Drawing.Size(1276, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "深圳市拉普拉斯能源技术有限公司 版权©2020-12";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -369,7 +364,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 1044);
+            this.ClientSize = new System.Drawing.Size(1280, 1024);
             this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.panelControl2);
             this.Controls.Add(this.panelControl1);
