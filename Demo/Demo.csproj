@@ -151,6 +151,12 @@
     <Compile Include="UserControl\Tube\ucAxisX.Designer.cs">
       <DependentUpon>ucAxisX.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\Tube\ucCylinder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Tube\ucCylinder.Designer.cs">
+      <DependentUpon>ucCylinder.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Tube\ucRecipeInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -203,6 +209,9 @@
     </Compile>
     <EmbeddedResource Include="UserControl\Tube\ucAxisX.resx">
       <DependentUpon>ucAxisX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Tube\ucCylinder.resx">
+      <DependentUpon>ucCylinder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Tube\ucRecipeInfo.resx">
       <DependentUpon>ucRecipeInfo.cs</DependentUpon>
