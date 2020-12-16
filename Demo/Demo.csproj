@@ -85,17 +85,30 @@
     <Compile Include="Forms\frmHomePage.Designer.cs">
       <DependentUpon>frmHomePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Loader\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Loader\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Forms\Loader\AssistTool.cs" />
     <Compile Include="Forms\Loader\frmHanderMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Loader\frmHanderMain.Designer.cs">
       <DependentUpon>frmHanderMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Loader\XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Loader\XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Loader\ucAxisState.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Loader\ucAxisState.Designer.cs">
+      <DependentUpon>ucAxisState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Loader\ucBoat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Loader\ucBoat.Designer.cs">
+      <DependentUpon>ucBoat.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Main.cs">
       <SubType>Form</SubType>
@@ -136,6 +149,9 @@
     <EmbeddedResource Include="Forms\Loader\frmHanderMain.resx">
       <DependentUpon>frmHanderMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Loader\XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +175,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl\Loader\ucAxisState.resx">
+      <DependentUpon>ucAxisState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Loader\ucBoat.resx">
+      <DependentUpon>ucBoat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Tube\ucTemp.resx">
       <DependentUpon>ucTemp.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +213,16 @@
     <Content Include="image\notifier.png" />
     <Content Include="image\wind.png" />
     <Content Include="image\wind_postion.png" />
+    <None Include="Resources\下拉箭头3.png" />
+    <None Include="Resources\下拉箭头2.png" />
+    <None Include="Resources\下拉箭头.png" />
+    <None Include="Resources\双手自动绿.png" />
+    <None Include="Resources\双手自动红 %281%29.png" />
+    <None Include="Resources\输送带单步.png" />
+    <None Include="Resources\门禁管理绿.png" />
+    <None Include="Resources\门禁管理红.png" />
+    <None Include="Resources\静音.png" />
+    <None Include="Resources\静音 红.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\com.FunctionModels\com.FunctionModels.csproj">
@@ -206,8 +238,6 @@
       <Name>com.FunctionDAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UserControl\Loader\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
