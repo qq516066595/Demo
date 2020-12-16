@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -58,5 +59,6 @@
         #endregion
 
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
     }
 }

@@ -134,12 +134,6 @@
     <Compile Include="Forms\Tube\frmTubeMain.Designer.cs">
       <DependentUpon>frmTubeMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Tube\ucTemp.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\Tube\ucTemp.Designer.cs">
-      <DependentUpon>ucTemp.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -180,9 +174,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Loader\ucBoat.resx">
       <DependentUpon>ucBoat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Tube\ucTemp.resx">
-      <DependentUpon>ucTemp.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -238,6 +229,8 @@
       <Name>com.FunctionDAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="UserControl\Tube\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

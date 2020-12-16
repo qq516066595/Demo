@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 
-namespace Demo.UserControl
+namespace Demo.UserControl.Tube
 {
-    public partial class ucTemp : DevExpress.XtraEditors.XtraUserControl
+    public partial class ucRecipeInfo : DevExpress.XtraEditors.XtraUserControl
     {
-        public ucTemp()
+        public ucRecipeInfo()
         {
             InitializeComponent();
         }

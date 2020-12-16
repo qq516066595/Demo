@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHanderMain));
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.tpServo = new DevExpress.XtraTab.XtraTabPage();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -166,7 +166,7 @@
             this.btnEnable_V = new DevExpress.XtraEditors.SimpleButton();
             this.btnUnlock_V = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.tpServo.SuspendLayout();
@@ -562,7 +562,7 @@
             // picAuto_Manual
             // 
             this.picAuto_Manual.Cursor = System.Windows.Forms.Cursors.Default;
-            this.picAuto_Manual.EditValue = global::Demo.Properties.Resources.双手自动绿;
+            this.picAuto_Manual.EditValue = ((object)(resources.GetObject("picAuto_Manual.EditValue")));
             this.picAuto_Manual.Location = new System.Drawing.Point(267, 6);
             this.picAuto_Manual.Name = "picAuto_Manual";
             this.picAuto_Manual.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -607,7 +607,7 @@
             // picDoorEnable
             // 
             this.picDoorEnable.Cursor = System.Windows.Forms.Cursors.Default;
-            this.picDoorEnable.EditValue = global::Demo.Properties.Resources.门禁管理绿;
+            this.picDoorEnable.EditValue = ((object)(resources.GetObject("picDoorEnable.EditValue")));
             this.picDoorEnable.Location = new System.Drawing.Point(192, 5);
             this.picDoorEnable.Name = "picDoorEnable";
             this.picDoorEnable.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -649,7 +649,6 @@
             // picDropDown_L
             // 
             this.picDropDown_L.Cursor = System.Windows.Forms.Cursors.Default;
-            this.picDropDown_L.EditValue = global::Demo.Properties.Resources.下拉箭头3;
             this.picDropDown_L.Location = new System.Drawing.Point(51, 86);
             this.picDropDown_L.Name = "picDropDown_L";
             this.picDropDown_L.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -812,7 +811,6 @@
             // picDropDown_H
             // 
             this.picDropDown_H.Cursor = System.Windows.Forms.Cursors.Default;
-            this.picDropDown_H.EditValue = global::Demo.Properties.Resources.下拉箭头3;
             this.picDropDown_H.Location = new System.Drawing.Point(49, 123);
             this.picDropDown_H.Name = "picDropDown_H";
             this.picDropDown_H.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -945,7 +943,6 @@
             // picDropDown_V
             // 
             this.picDropDown_V.Cursor = System.Windows.Forms.Cursors.Default;
-            this.picDropDown_V.EditValue = global::Demo.Properties.Resources.下拉箭头3;
             this.picDropDown_V.Location = new System.Drawing.Point(50, 122);
             this.picDropDown_V.Name = "picDropDown_V";
             this.picDropDown_V.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -1554,7 +1551,7 @@
             // xtraTabPage2
             // 
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1272, 829);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1274, 831);
             this.xtraTabPage2.Text = "xtraTabPage2";
             // 
             // defaultLookAndFeel1
