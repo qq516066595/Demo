@@ -26,30 +26,8 @@ namespace Demo.Forms.Tube
         public frmTubeMain()
         {
             InitializeComponent();
-            this.btnCut.Text = "气\n\n路\n\n画\n\n面";
         }
 
-
-        /// <summary>
-        /// 设置气路与控制画面的切换
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        /// <remarks>遗留问题：spcMain分割线无法取消点击事件，那么点击时，btnCut显示文字需改变</remarks>
-        private void btnCut_Click(object sender, EventArgs e)
-        {
-            if (this.btnCut.Text == "气\n\n路\n\n画\n\n面")
-            {
-                this.btnCut.Text = "控\n\n制\n\n画\n\n面";
-                this.spcRoadAndControl.CollapsePanel= SplitCollapsePanel.Panel1;
-            }
-            else
-            {
-                this.btnCut.Text = "气\n\n路\n\n画\n\n面";
-                this.spcRoadAndControl.CollapsePanel = SplitCollapsePanel.Panel2;
-            }
-
-        }
         /// <summary>
         /// 过渡值与功率输出显示与隐藏
         /// </summary>
@@ -57,7 +35,47 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnShowMVAndSP_Click(object sender, EventArgs e)
         {
-            pcMVAndSP.Visible = !pcMVAndSP.Visible;
+            if (pcTempZone.Height == 110)
+            {
+                pcTempZone.Height = 165;
+                pcRoad.Text = "︽";
+            }
+            else
+            {
+                pcTempZone.Height = 110;
+                pcRoad.Text = "︾";
+            }
+        }
+        /// <summary>
+        /// 气路图的相关参数信息隐藏与显示
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnShowRoadPara_Click(object sender, EventArgs e)
+        {
+            pcShowRoadPara.Visible = !pcShowRoadPara.Visible;
+            if (pcShowRoadPara.Visible)
+                btnShowRoadPara.Text = "<<";
+            else
+                btnShowRoadPara.Text = ">>";
+        }
+        /// <summary>
+        /// 轴控单元操作按钮隐藏与显示
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnShowAxisPara_Click(object sender, EventArgs e)
+        {
+            if (pcAxis.Height == 70)
+            {
+                pcAxis.Height = 135;
+                btnShowAxisPara.Text = "︽";
+            }
+            else
+            {
+                pcAxis.Height = 70;
+                btnShowAxisPara.Text = "︾";
+            }
         }
     }
 }
