@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace Demo.UserControl.Loader
 {
-    public partial class ucAxisState : DevExpress.XtraEditors.XtraUserControl
+    public partial class ucServoPara : DevExpress.XtraEditors.XtraUserControl
     {
-        public ucAxisState()
+        public ucServoPara()
         {
             InitializeComponent();
         }
