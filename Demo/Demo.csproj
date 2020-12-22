@@ -254,11 +254,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Tube\ucSetMFC.resx">
       <DependentUpon>ucSetMFC.cs</DependentUpon>
-    <EmbeddedResource Include="UserControl\Tube\ucRoad.resx">
-      <DependentUpon>ucRoad.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Tube\ucVacuum.resx">
-      <DependentUpon>ucVacuum.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
