@@ -142,29 +142,17 @@
     <Compile Include="UserControl\Tube\ucAxisX.Designer.cs">
       <DependentUpon>ucAxisX.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Tube\ucCylinder.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\Tube\ucCylinder.Designer.cs">
-      <DependentUpon>ucCylinder.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControl\Tube\ucRecipeInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControl\Tube\ucRecipeInfo.Designer.cs">
       <DependentUpon>ucRecipeInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Tube\ucRoad.cs">
+    <Compile Include="UserControl\Tube\ucSetMFC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\Tube\ucRoad.Designer.cs">
-      <DependentUpon>ucRoad.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\Tube\ucVacuum.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\Tube\ucVacuum.Designer.cs">
-      <DependentUpon>ucVacuum.cs</DependentUpon>
+    <Compile Include="UserControl\Tube\ucSetMFC.Designer.cs">
+      <DependentUpon>ucSetMFC.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewModel.cs" />
     <Compile Include="Program.cs" />
@@ -207,14 +195,11 @@
     <EmbeddedResource Include="UserControl\Tube\ucAxisX.resx">
       <DependentUpon>ucAxisX.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Tube\ucCylinder.resx">
-      <DependentUpon>ucCylinder.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Tube\ucRecipeInfo.resx">
       <DependentUpon>ucRecipeInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Tube\ucVacuum.resx">
-      <DependentUpon>ucVacuum.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl\Tube\ucSetMFC.resx">
+      <DependentUpon>ucSetMFC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
