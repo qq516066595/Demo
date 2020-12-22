@@ -124,6 +124,12 @@
     <Compile Include="Forms\Loader\XtraForm1.Designer.cs">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\Loader\ucAxisPos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Loader\ucAxisPos.Designer.cs">
+      <DependentUpon>ucAxisPos.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Loader\ucAxis_Setting.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -160,6 +166,12 @@
     <Compile Include="Forms\Tube\frmTubeMain.Designer.cs">
       <DependentUpon>frmTubeMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\Loader\ucExtendPara.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Loader\ucExtendPara.Designer.cs">
+      <DependentUpon>ucExtendPara.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Loader\ucIO.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -177,6 +189,12 @@
     </Compile>
     <Compile Include="UserControl\Loader\ucServoPara.Designer.cs">
       <DependentUpon>ucServoPara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Loader\ucServoPara2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Loader\ucServoPara2.Designer.cs">
+      <DependentUpon>ucServoPara2.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Tube\ucAxisX.cs">
       <SubType>UserControl</SubType>
@@ -237,11 +255,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl\Loader\ucAxisPos.resx">
+      <DependentUpon>ucAxisPos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Loader\ucAxis_Setting.resx">
       <DependentUpon>ucAxis_Setting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Loader\ucBoat.resx">
       <DependentUpon>ucBoat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Loader\ucExtendPara.resx">
+      <DependentUpon>ucExtendPara.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Loader\ucIO.resx">
       <DependentUpon>ucIO.cs</DependentUpon>
@@ -251,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Loader\ucServoPara.resx">
       <DependentUpon>ucServoPara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Loader\ucServoPara2.resx">
+      <DependentUpon>ucServoPara2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Tube\ucAxisX.resx">
       <DependentUpon>ucAxisX.cs</DependentUpon>

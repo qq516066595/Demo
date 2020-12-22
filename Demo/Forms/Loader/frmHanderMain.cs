@@ -66,24 +66,8 @@ namespace Demo.Forms.Loader
             excelDataSource5.Fill();
         }
 
-        private void pictureEdit1_EditValueChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void pictureEdit1_Click(object sender, EventArgs e)
-        {
-            bDoorEnable = !bDoorEnable;
-            if (bDoorEnable)
-            {
-                picDoorEnable.Image = Image.FromFile(@"E:\工作\项目\02VS\资源\门禁管理红.png");
-            }
-            else
-            {
-                picDoorEnable.Image = Image.FromFile(@"E:\工作\项目\02VS\资源\门禁管理绿.png");
-            }
-            //pictureEdit1.Image = Image.FromFile(@"门禁管理红.png");
-        }
+       
 
         public bool bDoorEnable;
         private void picDoorEnable_EditValueChanged(object sender, EventArgs e)
@@ -91,19 +75,7 @@ namespace Demo.Forms.Loader
 
         }
         public bool bAuto_Manual;
-        private void picAuto_Manual_Click(object sender, EventArgs e)
-        {
-            bAuto_Manual = !bAuto_Manual;
-            if (bAuto_Manual)
-            {
-                picAuto_Manual.Image = Image.FromFile(@"E:\工作\项目\02VS\12.14\Demo\Demo\Resources\双手自动红 (1).png");
-
-            }
-            else
-            {
-                picAuto_Manual.Image = Image.FromFile(@"E:\工作\项目\02VS\12.14\Demo\Demo\Resources\双手自动绿.png");
-            }
-        }
+      
 
         private void btnNegative_Limit_Click(object sender, EventArgs e)
         {
@@ -123,18 +95,18 @@ namespace Demo.Forms.Loader
         {
             //  btn.Click();
             bDropDown_Vertical = !bDropDown_Vertical;
-            pnlHorizon.Size = new Size(245, 145);
-            pnlTransport.Size = new Size(245, 120);
+            pnlHorizon.Size = new Size(248, 120);
+            pnlTransport.Size = new Size(248, 120);
             bDropDown_Horizon = bDropDown_Transport = false;
             if (bDropDown_Vertical)
             {
-                // pnlVertical.Size = new Size(245, 445);
-                pnlVertical.Size = new Size(245, 550);
+                // pnlVertical.Size = new Size(248, 445);
+                pnlVertical.Size = new Size(248, 575);
                 //  pnlOther.Visible = false;
             }
             else
             {
-                pnlVertical.Size = new Size(245, 145);
+                pnlVertical.Size = new Size(248, 120);
                 // pnlOther.Visible = true;
             }
         }
@@ -143,19 +115,19 @@ namespace Demo.Forms.Loader
         private void picDropDown_Horizon_Click(object sender, EventArgs e)
         {
             bDropDown_Horizon = !bDropDown_Horizon;
-            pnlVertical.Size = new Size(245, 145);
-            pnlTransport.Size = new Size(245, 120);
+            pnlVertical.Size = new Size(248, 120);
+            pnlTransport.Size = new Size(248, 120);
             bDropDown_Vertical = bDropDown_Transport = false;
             if (bDropDown_Horizon)
             {
-                // pnlHorizon.Size = new Size(245, 360);
-                pnlHorizon.Size = new Size(245, 400);
+                // pnlHorizon.Size = new Size(248, 360);
+                pnlHorizon.Size = new Size(248, 455);
                 // pnlOther.Visible = false;
 
             }
             else
             {
-                pnlHorizon.Size = new Size(245, 145);
+                pnlHorizon.Size = new Size(248, 120);
                 //  pnlOther.Visible = true;
             }
         }
@@ -164,205 +136,32 @@ namespace Demo.Forms.Loader
         private void picDropDown_L_Click(object sender, EventArgs e)
         {
             bDropDown_Transport = !bDropDown_Transport;
-            pnlHorizon.Size = new Size(245, 145);
-            pnlVertical.Size = new Size(245, 145);
+            pnlHorizon.Size = new Size(248, 120);
+            pnlVertical.Size = new Size(248, 120);
             bDropDown_Vertical = bDropDown_Horizon = false;
             if (bDropDown_Transport)
             {
-                // pnlTransport.Size= new Size(245,190);
-                pnlTransport.Size = new Size(245, 250);
+                // pnlTransport.Size= new Size(248,190);
+                pnlTransport.Size = new Size(248, 340);
                 //  pnlOther.Visible = false;
 
             }
             else
             {
-                pnlTransport.Size = new Size(245, 120);
+                pnlTransport.Size = new Size(248, 120);
                 // pnlOther.Visible = true;
             }
         }
 
-        private void ucBoat11_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ucBoat12_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ucBoat7_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ucBoat9_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ucBoat8_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ucBoat10_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void xtraTabControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnMoveUp_V_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnMoveDown_V_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBuffer6Down_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBuffer3Down_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnTube3Down_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBuffer6Up_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnBuffer3Up_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnTube3Up_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnNegative_Limit_V_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelControl2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void xtraTabControl1_Enter(object sender, EventArgs e)
         {
-            pnlHorizon.Size = new Size(245, 145);
-            pnlVertical.Size = new Size(245, 145);
-            pnlTransport.Size = new Size(245, 120);
-            pnlDoorLock.Size = new Size(245, 70);
-            pnlOther.Size = new Size(245, 110);
+            pnlHorizon.Size = new Size(248, 120);
+            pnlVertical.Size = new Size(248, 120);
+            pnlTransport.Size = new Size(248, 120);
+            pnlDoorLock.Size = new Size(248, 70);
+            pnlOther.Size = new Size(248, 110);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tpInput_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void ucIO_Input1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl28_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textEdit5_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textEdit4_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textEdit3_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textEdit2_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textEdit1_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tpStation_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void labelControl21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gcBoatManage_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gridSplitContainer1Grid_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gridControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gridControl1_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
