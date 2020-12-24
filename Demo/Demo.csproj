@@ -50,7 +50,10 @@
     <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Spreadsheet.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.TreeMap.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.Utils.v16.2\v4.0_16.2.5.0__b88d1754d700e49a\DevExpress.Utils.v16.2.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Utils.v16.2.UI, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -136,12 +139,6 @@
     <Compile Include="UserControl\Loader\ucBoat.Designer.cs">
       <DependentUpon>ucBoat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,9 +205,6 @@
     <EmbeddedResource Include="Forms\Loader\XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,6 +265,7 @@
   <ItemGroup>
     <Content Include="image\close.png" />
     <Content Include="image\colorbarIndicators.bmp" />
+    <Content Include="image\DefSplashImage.png" />
     <Content Include="image\gps1.png" />
     <Content Include="image\gps_postion.png" />
     <Content Include="image\img_notifier.png" />
@@ -284,6 +279,20 @@
     <Content Include="image\notifier.png" />
     <Content Include="image\wind.png" />
     <Content Include="image\wind_postion.png" />
+    <Content Include="lib\CIPCompolet.dll" />
+    <Content Include="lib\CIPCompolet64.dll" />
+    <Content Include="lib\CIPCompoletProxyLib.dll" />
+    <Content Include="lib\CIPCompoletProxyServer.exe" />
+    <Content Include="lib\log4net.dll" />
+    <Content Include="lib\MySql.Data.dll" />
+    <Content Include="lib\SQLite.Interop.dll" />
+    <Content Include="lib\sqlite3.dll" />
+    <Content Include="lib\SunnyUI.dll" />
+    <Content Include="lib\SysmacCipService.dll" />
+    <Content Include="lib\System.Data.SQLite.dll" />
+    <Content Include="lib\System.Data.SQLite.EF6.dll" />
+    <Content Include="lib\System.Data.SQLite.Linq.dll" />
+    <None Include="Resources\DefSplashImage.png" />
     <None Include="Resources\下拉箭头3.png" />
     <None Include="Resources\下拉箭头2.png" />
     <None Include="Resources\下拉箭头.png" />
@@ -309,6 +318,11 @@
       <Name>com.FunctionDAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="lib\其他\" />
+    <Folder Include="lib\控件\" />
+    <Folder Include="lib\数据库\" />
+    <Folder Include="lib\通讯\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

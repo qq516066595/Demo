@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace com.DataBaseDAL
+namespace com.TubeServices
 {
-    public class Class1
+    public class TubeDiService
     {
+
     }
 }
