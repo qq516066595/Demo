@@ -275,6 +275,34 @@
     <EmbeddedResource Include="UserControl\Tube\ucSetMFC.resx">
       <DependentUpon>ucSetMFC.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\config\alarm.config" />
+    <None Include="bin\Debug\config\com.properties" />
+    <None Include="bin\Debug\config\confD_LPCVD_G_1.config" />
+    <None Include="bin\Debug\config\confD_RPB_G_1.config" />
+    <None Include="bin\Debug\config\confD_RPP_G_1.config" />
+    <None Include="bin\Debug\config\confD_TEST_G.config" />
+    <None Include="bin\Debug\config\confT1.properties" />
+    <None Include="bin\Debug\config\confT2.properties" />
+    <None Include="bin\Debug\config\confT3.properties" />
+    <None Include="bin\Debug\config\confT4.properties" />
+    <None Include="bin\Debug\database\db_Sys.sqlite" />
+    <None Include="bin\Debug\database\db_Sys.sqlite-journal" />
+    <None Include="bin\Debug\database\db_T1.sqlite" />
+    <None Include="bin\Debug\database\db_T1.sqlite-journal" />
+    <None Include="bin\Debug\database\db_T2.sqlite" />
+    <None Include="bin\Debug\database\db_T3.sqlite" />
+    <None Include="bin\Debug\database\db_T4.sqlite" />
+    <None Include="bin\Debug\recipe\Tube1\recipe1.csv" />
+    <None Include="bin\Debug\recipe\Tube2\recipe2.csv" />
+    <None Include="bin\Debug\recipe\Tube3\recipe3.csv" />
+    <None Include="bin\Debug\recipe\Tube4\recipe4.csv" />
+    <None Include="bin\Debug\recipe\Tube5\recipe5.csv" />
+    <None Include="bin\Debug\工艺历史数据\Tube1\recipe1.csv" />
+    <None Include="bin\Debug\工艺历史数据\Tube2\recipe2.csv" />
+    <None Include="bin\Debug\工艺历史数据\Tube3\recipe3.csv" />
+    <None Include="bin\Debug\工艺历史数据\Tube4\recipe4.csv" />
+    <None Include="bin\Debug\工艺历史数据\Tube5\recipe5.csv" />
+    <None Include="bin\Debug\工艺历史数据\工艺名称+工艺时长+运行次数.csv" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
