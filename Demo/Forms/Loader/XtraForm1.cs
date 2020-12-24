@@ -17,5 +17,10 @@ namespace Demo.Forms.Loader
         {
             InitializeComponent();
         }
+
+        private void labelControl107_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

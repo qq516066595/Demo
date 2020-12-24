@@ -160,21 +160,29 @@
             this.pnlDoorLock = new DevExpress.XtraEditors.PanelControl();
             this.tsDoor = new DevExpress.XtraEditors.ToggleSwitch();
             this.tsAuto_Manual = new DevExpress.XtraEditors.ToggleSwitch();
-            this.label3 = new System.Windows.Forms.Label();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.lblDoor = new System.Windows.Forms.Label();
+            this.lblLight_UpperMid = new DevExpress.XtraEditors.LabelControl();
+            this.lblLight_DownLeft = new DevExpress.XtraEditors.LabelControl();
+            this.lblLight_DownRight = new DevExpress.XtraEditors.LabelControl();
             this.lblLight_UpperLeft = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.lblLight_DownMid = new DevExpress.XtraEditors.LabelControl();
+            this.lblLight_UpperRight = new DevExpress.XtraEditors.LabelControl();
             this.pnlVertical = new DevExpress.XtraEditors.PanelControl();
+            this.lblMagnetic_Scale_V = new DevExpress.XtraEditors.LabelControl();
+            this.lblTorque_V = new DevExpress.XtraEditors.LabelControl();
+            this.lblVelocity_V = new DevExpress.XtraEditors.LabelControl();
+            this.txtJogSpeed_V = new DevExpress.XtraEditors.TextEdit();
+            this.lblLightOrigin_V = new DevExpress.XtraEditors.LabelControl();
+            this.lblLightLimit_N_V = new DevExpress.XtraEditors.LabelControl();
+            this.lblLightLimit_P_V = new DevExpress.XtraEditors.LabelControl();
             this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
             this.btnBuffer6Down = new DevExpress.XtraEditors.SimpleButton();
             this.btnMoveUp_V = new DevExpress.XtraEditors.SimpleButton();
+            this.lblNameMagnetic_Scale_V = new DevExpress.XtraEditors.LabelControl();
             this.btnBuffer6Up = new DevExpress.XtraEditors.SimpleButton();
+            this.lblNameTorque_V = new DevExpress.XtraEditors.LabelControl();
             this.btnBuffer5Down = new DevExpress.XtraEditors.SimpleButton();
             this.btnBuffer3Down = new DevExpress.XtraEditors.SimpleButton();
-            this.btnNegative_Limit_V = new DevExpress.XtraEditors.SimpleButton();
             this.btnBuffer5Up = new DevExpress.XtraEditors.SimpleButton();
             this.btnBuffer4Up = new DevExpress.XtraEditors.SimpleButton();
             this.picDropDown_V = new DevExpress.XtraEditors.PictureEdit();
@@ -182,25 +190,18 @@
             this.btnBuffer2Down = new DevExpress.XtraEditors.SimpleButton();
             this.btnBuffer3Up = new DevExpress.XtraEditors.SimpleButton();
             this.lblJogSpeed_V = new DevExpress.XtraEditors.LabelControl();
-            this.btnPositive_Limit_V = new DevExpress.XtraEditors.SimpleButton();
-            this.txtJogSpeed_V = new DevExpress.XtraEditors.TextEdit();
             this.btnBuffer1Up = new DevExpress.XtraEditors.SimpleButton();
             this.btnBuffer2Up = new DevExpress.XtraEditors.SimpleButton();
             this.btnMoveDown_V = new DevExpress.XtraEditors.SimpleButton();
             this.btnBuffer1Down = new DevExpress.XtraEditors.SimpleButton();
-            this.btnOrigin_V = new DevExpress.XtraEditors.SimpleButton();
             this.btnTube3Down = new DevExpress.XtraEditors.SimpleButton();
-            this.lblNameOrigin_V = new DevExpress.XtraEditors.LabelControl();
             this.btnTube5Down = new DevExpress.XtraEditors.SimpleButton();
-            this.lblNameMagnetic_Scale_V = new DevExpress.XtraEditors.LabelControl();
             this.btnTube2Down = new DevExpress.XtraEditors.SimpleButton();
-            this.lblNameTorque_V = new DevExpress.XtraEditors.LabelControl();
+            this.lblNameOrigin_V = new DevExpress.XtraEditors.LabelControl();
             this.lblNameVelocity_V = new DevExpress.XtraEditors.LabelControl();
-            this.lblOrigin_V = new DevExpress.XtraEditors.LabelControl();
-            this.lblMagnetic_Scale_V = new DevExpress.XtraEditors.LabelControl();
-            this.lblTorque_V = new DevExpress.XtraEditors.LabelControl();
-            this.lblVelocity_V = new DevExpress.XtraEditors.LabelControl();
+            this.lblNameLimit_N_V = new DevExpress.XtraEditors.LabelControl();
             this.lblPosition_V = new DevExpress.XtraEditors.LabelControl();
+            this.lblNameLimit_P_V = new DevExpress.XtraEditors.LabelControl();
             this.lblNamePosition_V = new DevExpress.XtraEditors.LabelControl();
             this.btnTube3Up = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
@@ -212,35 +213,33 @@
             this.btnTube4Up = new DevExpress.XtraEditors.SimpleButton();
             this.btnTube2Up = new DevExpress.XtraEditors.SimpleButton();
             this.btnTube4Down = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.lblVertical = new DevExpress.XtraEditors.LabelControl();
             this.pnlHorizon = new DevExpress.XtraEditors.PanelControl();
+            this.txtJogSpeed_H = new DevExpress.XtraEditors.TextEdit();
+            this.lblJogSpeed_H = new DevExpress.XtraEditors.LabelControl();
+            this.lblLightOrigin_H = new DevExpress.XtraEditors.LabelControl();
+            this.lblLightLimit_N_H = new DevExpress.XtraEditors.LabelControl();
+            this.lblLightLimit_P_H = new DevExpress.XtraEditors.LabelControl();
+            this.lblNameOrigin_H = new DevExpress.XtraEditors.LabelControl();
+            this.lblNameLimit_N_H = new DevExpress.XtraEditors.LabelControl();
+            this.lblNameLimit_P_H = new DevExpress.XtraEditors.LabelControl();
             this.btnPassagePos = new DevExpress.XtraEditors.SimpleButton();
+            this.lblTorque_H = new DevExpress.XtraEditors.LabelControl();
             this.btnBuffer6WorkPos = new DevExpress.XtraEditors.SimpleButton();
+            this.lblVelocity_H = new DevExpress.XtraEditors.LabelControl();
             this.btnTransportPos = new DevExpress.XtraEditors.SimpleButton();
-            this.btnNegative_Limit_H = new DevExpress.XtraEditors.SimpleButton();
             this.btnBuffer5WorkPos = new DevExpress.XtraEditors.SimpleButton();
-            this.btnOrigin_H = new DevExpress.XtraEditors.SimpleButton();
             this.btnBuffer3WorkPos = new DevExpress.XtraEditors.SimpleButton();
             this.btnBuffer4WorkPos = new DevExpress.XtraEditors.SimpleButton();
             this.btnMoveIn_H = new DevExpress.XtraEditors.SimpleButton();
-            this.lblJogSpeed_H = new DevExpress.XtraEditors.LabelControl();
             this.btnBuffer2WorkPosv = new DevExpress.XtraEditors.SimpleButton();
             this.picDropDown_H = new DevExpress.XtraEditors.PictureEdit();
-            this.txtJogSpeed_H = new DevExpress.XtraEditors.TextEdit();
+            this.lblNameTorque_H = new DevExpress.XtraEditors.LabelControl();
             this.btnMoveOut_H = new DevExpress.XtraEditors.SimpleButton();
             this.btnBuffer1WorkPos = new DevExpress.XtraEditors.SimpleButton();
-            this.btnPositive_Limit_H = new DevExpress.XtraEditors.SimpleButton();
             this.btnTube5WorkPos = new DevExpress.XtraEditors.SimpleButton();
             this.btnTube3WorkPos = new DevExpress.XtraEditors.SimpleButton();
-            this.lblNameOrigin_H = new DevExpress.XtraEditors.LabelControl();
-            this.lblOrigin_H = new DevExpress.XtraEditors.LabelControl();
-            this.lblNameTorque_H = new DevExpress.XtraEditors.LabelControl();
-            this.lblTorque_H = new DevExpress.XtraEditors.LabelControl();
-            this.lblNameVelocity_H = new DevExpress.XtraEditors.LabelControl();
-            this.lblVelocity_H = new DevExpress.XtraEditors.LabelControl();
-            this.lblNamePosition_H = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.lblPosition_H = new DevExpress.XtraEditors.LabelControl();
+            this.lblHorizon = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.btnTube2WorkPos = new DevExpress.XtraEditors.SimpleButton();
             this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
@@ -248,31 +247,31 @@
             this.btnTube4WorkPos = new DevExpress.XtraEditors.SimpleButton();
             this.btnEnable_H = new DevExpress.XtraEditors.SimpleButton();
             this.btnTube1WorkPos = new DevExpress.XtraEditors.SimpleButton();
+            this.lblPosition_H = new DevExpress.XtraEditors.LabelControl();
+            this.lblNameVelocity_H = new DevExpress.XtraEditors.LabelControl();
+            this.lblNamePosition_H = new DevExpress.XtraEditors.LabelControl();
             this.pnlTransport = new DevExpress.XtraEditors.PanelControl();
-            this.btnMoveAhead_T = new DevExpress.XtraEditors.SimpleButton();
-            this.picDropDown_L = new DevExpress.XtraEditors.PictureEdit();
-            this.lblJogSpeed_T = new DevExpress.XtraEditors.LabelControl();
-            this.txtJogSpeed_T = new DevExpress.XtraEditors.TextEdit();
-            this.btnMoveBack_T = new DevExpress.XtraEditors.SimpleButton();
-            this.btnEnable_T = new DevExpress.XtraEditors.SimpleButton();
-            this.lblTorque_T = new DevExpress.XtraEditors.LabelControl();
-            this.lblNameTorque_T = new DevExpress.XtraEditors.LabelControl();
-            this.btnUnlock_T = new DevExpress.XtraEditors.SimpleButton();
-            this.lblVelocity_T = new DevExpress.XtraEditors.LabelControl();
-            this.lblPosition_T = new DevExpress.XtraEditors.LabelControl();
-            this.lblNameVelocity_T = new DevExpress.XtraEditors.LabelControl();
-            this.lblNamePosition_T = new DevExpress.XtraEditors.LabelControl();
+            this.txtJogSpeed_C = new DevExpress.XtraEditors.TextEdit();
+            this.lblJogSpeed_C = new DevExpress.XtraEditors.LabelControl();
+            this.lblTorque_C = new DevExpress.XtraEditors.LabelControl();
+            this.lblVelocity_C = new DevExpress.XtraEditors.LabelControl();
+            this.lblPosition_C = new DevExpress.XtraEditors.LabelControl();
+            this.lblNameVelocity_C = new DevExpress.XtraEditors.LabelControl();
+            this.lblNameTorque_C = new DevExpress.XtraEditors.LabelControl();
+            this.btnMoveAhead_C = new DevExpress.XtraEditors.SimpleButton();
+            this.picDropDown_C = new DevExpress.XtraEditors.PictureEdit();
+            this.btnMoveBack_C = new DevExpress.XtraEditors.SimpleButton();
+            this.btnEnable_C = new DevExpress.XtraEditors.SimpleButton();
+            this.btnUnlock_C = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.lblConvery = new DevExpress.XtraEditors.LabelControl();
+            this.lblNamePosition_C = new DevExpress.XtraEditors.LabelControl();
             this.pnlOther = new DevExpress.XtraEditors.PanelControl();
-            this.lblTailAcid_S = new DevExpress.XtraEditors.LabelControl();
-            this.lblNameTailAcid_S = new DevExpress.XtraEditors.LabelControl();
+            this.separatorControl3 = new DevExpress.XtraEditors.SeparatorControl();
             this.lblTailAcid_A = new DevExpress.XtraEditors.LabelControl();
             this.lblNameTailAcid_A = new DevExpress.XtraEditors.LabelControl();
             this.lblElectricity = new DevExpress.XtraEditors.LabelControl();
             this.lblNameElectricity = new DevExpress.XtraEditors.LabelControl();
-            this.lblMouthAcid_S = new DevExpress.XtraEditors.LabelControl();
-            this.lblNameMouthAcid_S = new DevExpress.XtraEditors.LabelControl();
             this.lblMouthAcid_A = new DevExpress.XtraEditors.LabelControl();
             this.lblNameMouthAcid_A = new DevExpress.XtraEditors.LabelControl();
             this.lblCPower = new DevExpress.XtraEditors.LabelControl();
@@ -283,7 +282,7 @@
             this.lblTotalPower = new DevExpress.XtraEditors.LabelControl();
             this.lblNameAPower = new DevExpress.XtraEditors.LabelControl();
             this.lblNameTotalPower = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
+            this.lblOther = new DevExpress.XtraEditors.LabelControl();
             this.tpIO = new DevExpress.XtraTab.XtraTabPage();
             this.tcIO = new DevExpress.XtraTab.XtraTabControl();
             this.tpInput = new DevExpress.XtraTab.XtraTabPage();
@@ -675,20 +674,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.tsAuto_Manual.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlVertical)).BeginInit();
             this.pnlVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtJogSpeed_V.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDropDown_V.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtJogSpeed_V.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlHorizon)).BeginInit();
             this.pnlHorizon.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDropDown_H.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJogSpeed_H.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDropDown_H.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTransport)).BeginInit();
             this.pnlTransport.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDropDown_L.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtJogSpeed_T.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtJogSpeed_C.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDropDown_C.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlOther)).BeginInit();
             this.pnlOther.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).BeginInit();
             this.tpIO.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tcIO)).BeginInit();
             this.tcIO.SuspendLayout();
@@ -1627,13 +1627,13 @@
             // 
             this.pnlDoorLock.Controls.Add(this.tsDoor);
             this.pnlDoorLock.Controls.Add(this.tsAuto_Manual);
-            this.pnlDoorLock.Controls.Add(this.label3);
-            this.pnlDoorLock.Controls.Add(this.labelControl4);
-            this.pnlDoorLock.Controls.Add(this.labelControl3);
-            this.pnlDoorLock.Controls.Add(this.labelControl7);
+            this.pnlDoorLock.Controls.Add(this.lblDoor);
+            this.pnlDoorLock.Controls.Add(this.lblLight_UpperMid);
+            this.pnlDoorLock.Controls.Add(this.lblLight_DownLeft);
+            this.pnlDoorLock.Controls.Add(this.lblLight_DownRight);
             this.pnlDoorLock.Controls.Add(this.lblLight_UpperLeft);
-            this.pnlDoorLock.Controls.Add(this.labelControl5);
-            this.pnlDoorLock.Controls.Add(this.labelControl6);
+            this.pnlDoorLock.Controls.Add(this.lblLight_DownMid);
+            this.pnlDoorLock.Controls.Add(this.lblLight_UpperRight);
             this.pnlDoorLock.Location = new System.Drawing.Point(7, 21);
             this.pnlDoorLock.Name = "pnlDoorLock";
             this.pnlDoorLock.Size = new System.Drawing.Size(285, 91);
@@ -1658,86 +1658,94 @@
             this.tsAuto_Manual.Size = new System.Drawing.Size(122, 29);
             this.tsAuto_Manual.TabIndex = 6;
             // 
-            // label3
+            // lblDoor
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label3.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 46);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "门禁\r\n状态";
+            this.lblDoor.AutoSize = true;
+            this.lblDoor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblDoor.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDoor.Location = new System.Drawing.Point(12, 20);
+            this.lblDoor.Name = "lblDoor";
+            this.lblDoor.Size = new System.Drawing.Size(50, 46);
+            this.lblDoor.TabIndex = 2;
+            this.lblDoor.Text = "门禁\r\n状态";
             // 
-            // labelControl4
+            // lblLight_UpperMid
             // 
-            this.labelControl4.Appearance.BackColor = System.Drawing.Color.Lime;
-            this.labelControl4.Appearance.Options.UseBackColor = true;
-            this.labelControl4.Location = new System.Drawing.Point(96, 18);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(20, 18);
-            this.labelControl4.TabIndex = 5;
-            this.labelControl4.Text = "    ";
+            this.lblLight_UpperMid.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.lblLight_UpperMid.Appearance.Options.UseBackColor = true;
+            this.lblLight_UpperMid.Location = new System.Drawing.Point(94, 18);
+            this.lblLight_UpperMid.Name = "lblLight_UpperMid";
+            this.lblLight_UpperMid.Size = new System.Drawing.Size(20, 18);
+            this.lblLight_UpperMid.TabIndex = 5;
+            this.lblLight_UpperMid.Text = "    ";
             // 
-            // labelControl3
+            // lblLight_DownLeft
             // 
-            this.labelControl3.Appearance.BackColor = System.Drawing.Color.Lime;
-            this.labelControl3.Appearance.Options.UseBackColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(71, 53);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(20, 18);
-            this.labelControl3.TabIndex = 5;
-            this.labelControl3.Text = "    ";
+            this.lblLight_DownLeft.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.lblLight_DownLeft.Appearance.Options.UseBackColor = true;
+            this.lblLight_DownLeft.Location = new System.Drawing.Point(69, 53);
+            this.lblLight_DownLeft.Name = "lblLight_DownLeft";
+            this.lblLight_DownLeft.Size = new System.Drawing.Size(20, 18);
+            this.lblLight_DownLeft.TabIndex = 5;
+            this.lblLight_DownLeft.Text = "    ";
             // 
-            // labelControl7
+            // lblLight_DownRight
             // 
-            this.labelControl7.Appearance.BackColor = System.Drawing.Color.Lime;
-            this.labelControl7.Appearance.Options.UseBackColor = true;
-            this.labelControl7.Location = new System.Drawing.Point(121, 53);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(20, 18);
-            this.labelControl7.TabIndex = 5;
-            this.labelControl7.Text = "    ";
+            this.lblLight_DownRight.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.lblLight_DownRight.Appearance.Options.UseBackColor = true;
+            this.lblLight_DownRight.Location = new System.Drawing.Point(119, 53);
+            this.lblLight_DownRight.Name = "lblLight_DownRight";
+            this.lblLight_DownRight.Size = new System.Drawing.Size(20, 18);
+            this.lblLight_DownRight.TabIndex = 5;
+            this.lblLight_DownRight.Text = "    ";
             // 
             // lblLight_UpperLeft
             // 
             this.lblLight_UpperLeft.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblLight_UpperLeft.Appearance.Options.UseBackColor = true;
-            this.lblLight_UpperLeft.Location = new System.Drawing.Point(71, 18);
+            this.lblLight_UpperLeft.Location = new System.Drawing.Point(69, 18);
             this.lblLight_UpperLeft.Name = "lblLight_UpperLeft";
             this.lblLight_UpperLeft.Size = new System.Drawing.Size(20, 18);
             this.lblLight_UpperLeft.TabIndex = 5;
             this.lblLight_UpperLeft.Text = "    ";
             // 
-            // labelControl5
+            // lblLight_DownMid
             // 
-            this.labelControl5.Appearance.BackColor = System.Drawing.Color.Lime;
-            this.labelControl5.Appearance.Options.UseBackColor = true;
-            this.labelControl5.Location = new System.Drawing.Point(96, 53);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(20, 18);
-            this.labelControl5.TabIndex = 5;
-            this.labelControl5.Text = "    ";
+            this.lblLight_DownMid.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.lblLight_DownMid.Appearance.Options.UseBackColor = true;
+            this.lblLight_DownMid.Location = new System.Drawing.Point(94, 53);
+            this.lblLight_DownMid.Name = "lblLight_DownMid";
+            this.lblLight_DownMid.Size = new System.Drawing.Size(20, 18);
+            this.lblLight_DownMid.TabIndex = 5;
+            this.lblLight_DownMid.Text = "    ";
             // 
-            // labelControl6
+            // lblLight_UpperRight
             // 
-            this.labelControl6.Appearance.BackColor = System.Drawing.Color.Lime;
-            this.labelControl6.Appearance.Options.UseBackColor = true;
-            this.labelControl6.Location = new System.Drawing.Point(121, 18);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(20, 18);
-            this.labelControl6.TabIndex = 5;
-            this.labelControl6.Text = "    ";
+            this.lblLight_UpperRight.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.lblLight_UpperRight.Appearance.Options.UseBackColor = true;
+            this.lblLight_UpperRight.Location = new System.Drawing.Point(119, 18);
+            this.lblLight_UpperRight.Name = "lblLight_UpperRight";
+            this.lblLight_UpperRight.Size = new System.Drawing.Size(20, 18);
+            this.lblLight_UpperRight.TabIndex = 5;
+            this.lblLight_UpperRight.Text = "    ";
             // 
             // pnlVertical
             // 
+            this.pnlVertical.Controls.Add(this.lblMagnetic_Scale_V);
+            this.pnlVertical.Controls.Add(this.lblTorque_V);
+            this.pnlVertical.Controls.Add(this.lblVelocity_V);
+            this.pnlVertical.Controls.Add(this.txtJogSpeed_V);
+            this.pnlVertical.Controls.Add(this.lblLightOrigin_V);
+            this.pnlVertical.Controls.Add(this.lblLightLimit_N_V);
+            this.pnlVertical.Controls.Add(this.lblLightLimit_P_V);
             this.pnlVertical.Controls.Add(this.separatorControl1);
             this.pnlVertical.Controls.Add(this.btnBuffer6Down);
             this.pnlVertical.Controls.Add(this.btnMoveUp_V);
+            this.pnlVertical.Controls.Add(this.lblNameMagnetic_Scale_V);
             this.pnlVertical.Controls.Add(this.btnBuffer6Up);
+            this.pnlVertical.Controls.Add(this.lblNameTorque_V);
             this.pnlVertical.Controls.Add(this.btnBuffer5Down);
             this.pnlVertical.Controls.Add(this.btnBuffer3Down);
-            this.pnlVertical.Controls.Add(this.btnNegative_Limit_V);
             this.pnlVertical.Controls.Add(this.btnBuffer5Up);
             this.pnlVertical.Controls.Add(this.btnBuffer4Up);
             this.pnlVertical.Controls.Add(this.picDropDown_V);
@@ -1745,25 +1753,18 @@
             this.pnlVertical.Controls.Add(this.btnBuffer2Down);
             this.pnlVertical.Controls.Add(this.btnBuffer3Up);
             this.pnlVertical.Controls.Add(this.lblJogSpeed_V);
-            this.pnlVertical.Controls.Add(this.btnPositive_Limit_V);
-            this.pnlVertical.Controls.Add(this.txtJogSpeed_V);
             this.pnlVertical.Controls.Add(this.btnBuffer1Up);
             this.pnlVertical.Controls.Add(this.btnBuffer2Up);
             this.pnlVertical.Controls.Add(this.btnMoveDown_V);
             this.pnlVertical.Controls.Add(this.btnBuffer1Down);
-            this.pnlVertical.Controls.Add(this.btnOrigin_V);
             this.pnlVertical.Controls.Add(this.btnTube3Down);
-            this.pnlVertical.Controls.Add(this.lblNameOrigin_V);
             this.pnlVertical.Controls.Add(this.btnTube5Down);
-            this.pnlVertical.Controls.Add(this.lblNameMagnetic_Scale_V);
             this.pnlVertical.Controls.Add(this.btnTube2Down);
-            this.pnlVertical.Controls.Add(this.lblNameTorque_V);
+            this.pnlVertical.Controls.Add(this.lblNameOrigin_V);
             this.pnlVertical.Controls.Add(this.lblNameVelocity_V);
-            this.pnlVertical.Controls.Add(this.lblOrigin_V);
-            this.pnlVertical.Controls.Add(this.lblMagnetic_Scale_V);
-            this.pnlVertical.Controls.Add(this.lblTorque_V);
-            this.pnlVertical.Controls.Add(this.lblVelocity_V);
+            this.pnlVertical.Controls.Add(this.lblNameLimit_N_V);
             this.pnlVertical.Controls.Add(this.lblPosition_V);
+            this.pnlVertical.Controls.Add(this.lblNameLimit_P_V);
             this.pnlVertical.Controls.Add(this.lblNamePosition_V);
             this.pnlVertical.Controls.Add(this.btnTube3Up);
             this.pnlVertical.Controls.Add(this.labelControl8);
@@ -1775,11 +1776,79 @@
             this.pnlVertical.Controls.Add(this.btnTube4Up);
             this.pnlVertical.Controls.Add(this.btnTube2Up);
             this.pnlVertical.Controls.Add(this.btnTube4Down);
-            this.pnlVertical.Controls.Add(this.labelControl2);
+            this.pnlVertical.Controls.Add(this.lblVertical);
             this.pnlVertical.Location = new System.Drawing.Point(7, 113);
             this.pnlVertical.Name = "pnlVertical";
             this.pnlVertical.Size = new System.Drawing.Size(285, 713);
             this.pnlVertical.TabIndex = 30;
+            // 
+            // lblMagnetic_Scale_V
+            // 
+            this.lblMagnetic_Scale_V.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMagnetic_Scale_V.Appearance.Options.UseFont = true;
+            this.lblMagnetic_Scale_V.Location = new System.Drawing.Point(201, 87);
+            this.lblMagnetic_Scale_V.Name = "lblMagnetic_Scale_V";
+            this.lblMagnetic_Scale_V.Size = new System.Drawing.Size(32, 18);
+            this.lblMagnetic_Scale_V.TabIndex = 12;
+            this.lblMagnetic_Scale_V.Text = "9999";
+            // 
+            // lblTorque_V
+            // 
+            this.lblTorque_V.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTorque_V.Appearance.Options.UseFont = true;
+            this.lblTorque_V.Location = new System.Drawing.Point(54, 87);
+            this.lblTorque_V.Name = "lblTorque_V";
+            this.lblTorque_V.Size = new System.Drawing.Size(32, 18);
+            this.lblTorque_V.TabIndex = 12;
+            this.lblTorque_V.Text = "9999";
+            // 
+            // lblVelocity_V
+            // 
+            this.lblVelocity_V.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVelocity_V.Appearance.Options.UseFont = true;
+            this.lblVelocity_V.Location = new System.Drawing.Point(188, 55);
+            this.lblVelocity_V.Name = "lblVelocity_V";
+            this.lblVelocity_V.Size = new System.Drawing.Size(32, 18);
+            this.lblVelocity_V.TabIndex = 12;
+            this.lblVelocity_V.Text = "9999";
+            // 
+            // txtJogSpeed_V
+            // 
+            this.txtJogSpeed_V.EditValue = "9999";
+            this.txtJogSpeed_V.Location = new System.Drawing.Point(59, 222);
+            this.txtJogSpeed_V.Name = "txtJogSpeed_V";
+            this.txtJogSpeed_V.Size = new System.Drawing.Size(41, 24);
+            this.txtJogSpeed_V.TabIndex = 15;
+            // 
+            // lblLightOrigin_V
+            // 
+            this.lblLightOrigin_V.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.lblLightOrigin_V.Appearance.Options.UseBackColor = true;
+            this.lblLightOrigin_V.Location = new System.Drawing.Point(147, 157);
+            this.lblLightOrigin_V.Name = "lblLightOrigin_V";
+            this.lblLightOrigin_V.Size = new System.Drawing.Size(20, 18);
+            this.lblLightOrigin_V.TabIndex = 5;
+            this.lblLightOrigin_V.Text = "    ";
+            // 
+            // lblLightLimit_N_V
+            // 
+            this.lblLightLimit_N_V.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.lblLightLimit_N_V.Appearance.Options.UseBackColor = true;
+            this.lblLightLimit_N_V.Location = new System.Drawing.Point(243, 157);
+            this.lblLightLimit_N_V.Name = "lblLightLimit_N_V";
+            this.lblLightLimit_N_V.Size = new System.Drawing.Size(20, 18);
+            this.lblLightLimit_N_V.TabIndex = 5;
+            this.lblLightLimit_N_V.Text = "    ";
+            // 
+            // lblLightLimit_P_V
+            // 
+            this.lblLightLimit_P_V.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.lblLightLimit_P_V.Appearance.Options.UseBackColor = true;
+            this.lblLightLimit_P_V.Location = new System.Drawing.Point(53, 157);
+            this.lblLightLimit_P_V.Name = "lblLightLimit_P_V";
+            this.lblLightLimit_P_V.Size = new System.Drawing.Size(20, 18);
+            this.lblLightLimit_P_V.TabIndex = 5;
+            this.lblLightLimit_P_V.Text = "    ";
             // 
             // separatorControl1
             // 
@@ -1806,6 +1875,14 @@
             this.btnMoveUp_V.TabIndex = 19;
             this.btnMoveUp_V.Text = "上升";
             // 
+            // lblNameMagnetic_Scale_V
+            // 
+            this.lblNameMagnetic_Scale_V.Location = new System.Drawing.Point(146, 87);
+            this.lblNameMagnetic_Scale_V.Name = "lblNameMagnetic_Scale_V";
+            this.lblNameMagnetic_Scale_V.Size = new System.Drawing.Size(133, 18);
+            this.lblNameMagnetic_Scale_V.TabIndex = 9;
+            this.lblNameMagnetic_Scale_V.Text = "磁栅尺:         (mm)";
+            // 
             // btnBuffer6Up
             // 
             this.btnBuffer6Up.Location = new System.Drawing.Point(154, 630);
@@ -1813,6 +1890,14 @@
             this.btnBuffer6Up.Size = new System.Drawing.Size(100, 30);
             this.btnBuffer6Up.TabIndex = 21;
             this.btnBuffer6Up.Text = "缓存6上";
+            // 
+            // lblNameTorque_V
+            // 
+            this.lblNameTorque_V.Location = new System.Drawing.Point(5, 87);
+            this.lblNameTorque_V.Name = "lblNameTorque_V";
+            this.lblNameTorque_V.Size = new System.Drawing.Size(130, 18);
+            this.lblNameTorque_V.TabIndex = 10;
+            this.lblNameTorque_V.Text = " 扭矩:          (N·m)";
             // 
             // btnBuffer5Down
             // 
@@ -1829,14 +1914,6 @@
             this.btnBuffer3Down.Size = new System.Drawing.Size(100, 30);
             this.btnBuffer3Down.TabIndex = 21;
             this.btnBuffer3Down.Text = "缓存3下";
-            // 
-            // btnNegative_Limit_V
-            // 
-            this.btnNegative_Limit_V.Location = new System.Drawing.Point(199, 155);
-            this.btnNegative_Limit_V.Name = "btnNegative_Limit_V";
-            this.btnNegative_Limit_V.Size = new System.Drawing.Size(71, 30);
-            this.btnNegative_Limit_V.TabIndex = 19;
-            this.btnNegative_Limit_V.Text = "负极限";
             // 
             // btnBuffer5Up
             // 
@@ -1894,27 +1971,11 @@
             // 
             // lblJogSpeed_V
             // 
-            this.lblJogSpeed_V.Location = new System.Drawing.Point(14, 216);
+            this.lblJogSpeed_V.Location = new System.Drawing.Point(15, 225);
             this.lblJogSpeed_V.Name = "lblJogSpeed_V";
-            this.lblJogSpeed_V.Size = new System.Drawing.Size(60, 36);
+            this.lblJogSpeed_V.Size = new System.Drawing.Size(156, 18);
             this.lblJogSpeed_V.TabIndex = 12;
-            this.lblJogSpeed_V.Text = "点动速度\r\n (mm/s)";
-            // 
-            // btnPositive_Limit_V
-            // 
-            this.btnPositive_Limit_V.Location = new System.Drawing.Point(9, 155);
-            this.btnPositive_Limit_V.Name = "btnPositive_Limit_V";
-            this.btnPositive_Limit_V.Size = new System.Drawing.Size(71, 30);
-            this.btnPositive_Limit_V.TabIndex = 19;
-            this.btnPositive_Limit_V.Text = "正极限";
-            // 
-            // txtJogSpeed_V
-            // 
-            this.txtJogSpeed_V.EditValue = "9999";
-            this.txtJogSpeed_V.Location = new System.Drawing.Point(107, 222);
-            this.txtJogSpeed_V.Name = "txtJogSpeed_V";
-            this.txtJogSpeed_V.Size = new System.Drawing.Size(64, 24);
-            this.txtJogSpeed_V.TabIndex = 15;
+            this.lblJogSpeed_V.Text = "速度：            (mm/s)";
             // 
             // btnBuffer1Up
             // 
@@ -1948,14 +2009,6 @@
             this.btnBuffer1Down.TabIndex = 21;
             this.btnBuffer1Down.Text = "缓存1下";
             // 
-            // btnOrigin_V
-            // 
-            this.btnOrigin_V.Location = new System.Drawing.Point(104, 155);
-            this.btnOrigin_V.Name = "btnOrigin_V";
-            this.btnOrigin_V.Size = new System.Drawing.Size(71, 30);
-            this.btnOrigin_V.TabIndex = 19;
-            this.btnOrigin_V.Text = "原点";
-            // 
             // btnTube3Down
             // 
             this.btnTube3Down.Location = new System.Drawing.Point(31, 447);
@@ -1963,14 +2016,6 @@
             this.btnTube3Down.Size = new System.Drawing.Size(100, 30);
             this.btnTube3Down.TabIndex = 21;
             this.btnTube3Down.Text = "炉管3下";
-            // 
-            // lblNameOrigin_V
-            // 
-            this.lblNameOrigin_V.Location = new System.Drawing.Point(231, 47);
-            this.lblNameOrigin_V.Name = "lblNameOrigin_V";
-            this.lblNameOrigin_V.Size = new System.Drawing.Size(38, 36);
-            this.lblNameOrigin_V.TabIndex = 8;
-            this.lblNameOrigin_V.Text = " 原点\r\n(mm)";
             // 
             // btnTube5Down
             // 
@@ -1980,14 +2025,6 @@
             this.btnTube5Down.TabIndex = 21;
             this.btnTube5Down.Text = "炉管5下";
             // 
-            // lblNameMagnetic_Scale_V
-            // 
-            this.lblNameMagnetic_Scale_V.Location = new System.Drawing.Point(176, 47);
-            this.lblNameMagnetic_Scale_V.Name = "lblNameMagnetic_Scale_V";
-            this.lblNameMagnetic_Scale_V.Size = new System.Drawing.Size(45, 36);
-            this.lblNameMagnetic_Scale_V.TabIndex = 9;
-            this.lblNameMagnetic_Scale_V.Text = "磁栅尺\r\n (mm)";
-            // 
             // btnTube2Down
             // 
             this.btnTube2Down.Location = new System.Drawing.Point(31, 378);
@@ -1996,79 +2033,55 @@
             this.btnTube2Down.TabIndex = 21;
             this.btnTube2Down.Text = "炉管2下";
             // 
-            // lblNameTorque_V
+            // lblNameOrigin_V
             // 
-            this.lblNameTorque_V.Location = new System.Drawing.Point(123, 47);
-            this.lblNameTorque_V.Name = "lblNameTorque_V";
-            this.lblNameTorque_V.Size = new System.Drawing.Size(40, 36);
-            this.lblNameTorque_V.TabIndex = 10;
-            this.lblNameTorque_V.Text = " 扭矩\r\n(N·m)";
+            this.lblNameOrigin_V.Location = new System.Drawing.Point(109, 157);
+            this.lblNameOrigin_V.Name = "lblNameOrigin_V";
+            this.lblNameOrigin_V.Size = new System.Drawing.Size(30, 18);
+            this.lblNameOrigin_V.TabIndex = 12;
+            this.lblNameOrigin_V.Text = "原点";
             // 
             // lblNameVelocity_V
             // 
-            this.lblNameVelocity_V.Location = new System.Drawing.Point(62, 47);
+            this.lblNameVelocity_V.Location = new System.Drawing.Point(134, 55);
             this.lblNameVelocity_V.Name = "lblNameVelocity_V";
-            this.lblNameVelocity_V.Size = new System.Drawing.Size(51, 36);
+            this.lblNameVelocity_V.Size = new System.Drawing.Size(146, 18);
             this.lblNameVelocity_V.TabIndex = 11;
-            this.lblNameVelocity_V.Text = "  速度\r\n(mm/s)";
+            this.lblNameVelocity_V.Text = "  速度:          (mm/s)";
             // 
-            // lblOrigin_V
+            // lblNameLimit_N_V
             // 
-            this.lblOrigin_V.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrigin_V.Appearance.Options.UseFont = true;
-            this.lblOrigin_V.Location = new System.Drawing.Point(234, 92);
-            this.lblOrigin_V.Name = "lblOrigin_V";
-            this.lblOrigin_V.Size = new System.Drawing.Size(32, 18);
-            this.lblOrigin_V.TabIndex = 12;
-            this.lblOrigin_V.Text = "9999";
-            // 
-            // lblMagnetic_Scale_V
-            // 
-            this.lblMagnetic_Scale_V.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMagnetic_Scale_V.Appearance.Options.UseFont = true;
-            this.lblMagnetic_Scale_V.Location = new System.Drawing.Point(182, 92);
-            this.lblMagnetic_Scale_V.Name = "lblMagnetic_Scale_V";
-            this.lblMagnetic_Scale_V.Size = new System.Drawing.Size(32, 18);
-            this.lblMagnetic_Scale_V.TabIndex = 12;
-            this.lblMagnetic_Scale_V.Text = "9999";
-            // 
-            // lblTorque_V
-            // 
-            this.lblTorque_V.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTorque_V.Appearance.Options.UseFont = true;
-            this.lblTorque_V.Location = new System.Drawing.Point(127, 92);
-            this.lblTorque_V.Name = "lblTorque_V";
-            this.lblTorque_V.Size = new System.Drawing.Size(32, 18);
-            this.lblTorque_V.TabIndex = 12;
-            this.lblTorque_V.Text = "9999";
-            // 
-            // lblVelocity_V
-            // 
-            this.lblVelocity_V.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVelocity_V.Appearance.Options.UseFont = true;
-            this.lblVelocity_V.Location = new System.Drawing.Point(71, 92);
-            this.lblVelocity_V.Name = "lblVelocity_V";
-            this.lblVelocity_V.Size = new System.Drawing.Size(32, 18);
-            this.lblVelocity_V.TabIndex = 12;
-            this.lblVelocity_V.Text = "9999";
+            this.lblNameLimit_N_V.Location = new System.Drawing.Point(205, 157);
+            this.lblNameLimit_N_V.Name = "lblNameLimit_N_V";
+            this.lblNameLimit_N_V.Size = new System.Drawing.Size(30, 18);
+            this.lblNameLimit_N_V.TabIndex = 12;
+            this.lblNameLimit_N_V.Text = "负限";
             // 
             // lblPosition_V
             // 
             this.lblPosition_V.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPosition_V.Appearance.Options.UseFont = true;
-            this.lblPosition_V.Location = new System.Drawing.Point(17, 92);
+            this.lblPosition_V.Location = new System.Drawing.Point(54, 55);
             this.lblPosition_V.Name = "lblPosition_V";
             this.lblPosition_V.Size = new System.Drawing.Size(32, 18);
             this.lblPosition_V.TabIndex = 12;
             this.lblPosition_V.Text = "9999";
             // 
+            // lblNameLimit_P_V
+            // 
+            this.lblNameLimit_P_V.Location = new System.Drawing.Point(15, 157);
+            this.lblNameLimit_P_V.Name = "lblNameLimit_P_V";
+            this.lblNameLimit_P_V.Size = new System.Drawing.Size(30, 18);
+            this.lblNameLimit_P_V.TabIndex = 12;
+            this.lblNameLimit_P_V.Text = "正限";
+            // 
             // lblNamePosition_V
             // 
-            this.lblNamePosition_V.Location = new System.Drawing.Point(14, 47);
+            this.lblNamePosition_V.Location = new System.Drawing.Point(5, 55);
             this.lblNamePosition_V.Name = "lblNamePosition_V";
-            this.lblNamePosition_V.Size = new System.Drawing.Size(38, 36);
+            this.lblNamePosition_V.Size = new System.Drawing.Size(128, 18);
             this.lblNamePosition_V.TabIndex = 12;
-            this.lblNamePosition_V.Text = " 位置\r\n(mm)";
+            this.lblNamePosition_V.Text = " 位置:          (mm)";
             // 
             // btnTube3Up
             // 
@@ -2149,47 +2162,45 @@
             this.btnTube4Down.TabIndex = 21;
             this.btnTube4Down.Text = "炉管4下";
             // 
-            // labelControl2
+            // lblVertical
             // 
-            this.labelControl2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseBackColor = true;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(12, 13);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(72, 23);
-            this.labelControl2.TabIndex = 12;
-            this.labelControl2.Text = " 垂直轴 ";
+            this.lblVertical.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblVertical.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVertical.Appearance.Options.UseBackColor = true;
+            this.lblVertical.Appearance.Options.UseFont = true;
+            this.lblVertical.Location = new System.Drawing.Point(12, 13);
+            this.lblVertical.Name = "lblVertical";
+            this.lblVertical.Size = new System.Drawing.Size(72, 23);
+            this.lblVertical.TabIndex = 12;
+            this.lblVertical.Text = " 垂直轴 ";
             // 
             // pnlHorizon
             // 
+            this.pnlHorizon.Controls.Add(this.txtJogSpeed_H);
+            this.pnlHorizon.Controls.Add(this.lblJogSpeed_H);
+            this.pnlHorizon.Controls.Add(this.lblLightOrigin_H);
+            this.pnlHorizon.Controls.Add(this.lblLightLimit_N_H);
+            this.pnlHorizon.Controls.Add(this.lblLightLimit_P_H);
+            this.pnlHorizon.Controls.Add(this.lblNameOrigin_H);
+            this.pnlHorizon.Controls.Add(this.lblNameLimit_N_H);
+            this.pnlHorizon.Controls.Add(this.lblNameLimit_P_H);
             this.pnlHorizon.Controls.Add(this.btnPassagePos);
+            this.pnlHorizon.Controls.Add(this.lblTorque_H);
             this.pnlHorizon.Controls.Add(this.btnBuffer6WorkPos);
+            this.pnlHorizon.Controls.Add(this.lblVelocity_H);
             this.pnlHorizon.Controls.Add(this.btnTransportPos);
-            this.pnlHorizon.Controls.Add(this.btnNegative_Limit_H);
             this.pnlHorizon.Controls.Add(this.btnBuffer5WorkPos);
-            this.pnlHorizon.Controls.Add(this.btnOrigin_H);
             this.pnlHorizon.Controls.Add(this.btnBuffer3WorkPos);
             this.pnlHorizon.Controls.Add(this.btnBuffer4WorkPos);
             this.pnlHorizon.Controls.Add(this.btnMoveIn_H);
-            this.pnlHorizon.Controls.Add(this.lblJogSpeed_H);
             this.pnlHorizon.Controls.Add(this.btnBuffer2WorkPosv);
             this.pnlHorizon.Controls.Add(this.picDropDown_H);
-            this.pnlHorizon.Controls.Add(this.txtJogSpeed_H);
+            this.pnlHorizon.Controls.Add(this.lblNameTorque_H);
             this.pnlHorizon.Controls.Add(this.btnMoveOut_H);
             this.pnlHorizon.Controls.Add(this.btnBuffer1WorkPos);
-            this.pnlHorizon.Controls.Add(this.btnPositive_Limit_H);
             this.pnlHorizon.Controls.Add(this.btnTube5WorkPos);
             this.pnlHorizon.Controls.Add(this.btnTube3WorkPos);
-            this.pnlHorizon.Controls.Add(this.lblNameOrigin_H);
-            this.pnlHorizon.Controls.Add(this.lblOrigin_H);
-            this.pnlHorizon.Controls.Add(this.lblNameTorque_H);
-            this.pnlHorizon.Controls.Add(this.lblTorque_H);
-            this.pnlHorizon.Controls.Add(this.lblNameVelocity_H);
-            this.pnlHorizon.Controls.Add(this.lblVelocity_H);
-            this.pnlHorizon.Controls.Add(this.lblNamePosition_H);
-            this.pnlHorizon.Controls.Add(this.labelControl1);
-            this.pnlHorizon.Controls.Add(this.lblPosition_H);
+            this.pnlHorizon.Controls.Add(this.lblHorizon);
             this.pnlHorizon.Controls.Add(this.labelControl14);
             this.pnlHorizon.Controls.Add(this.btnTube2WorkPos);
             this.pnlHorizon.Controls.Add(this.separatorControl2);
@@ -2197,10 +2208,83 @@
             this.pnlHorizon.Controls.Add(this.btnTube4WorkPos);
             this.pnlHorizon.Controls.Add(this.btnEnable_H);
             this.pnlHorizon.Controls.Add(this.btnTube1WorkPos);
+            this.pnlHorizon.Controls.Add(this.lblPosition_H);
+            this.pnlHorizon.Controls.Add(this.lblNameVelocity_H);
+            this.pnlHorizon.Controls.Add(this.lblNamePosition_H);
             this.pnlHorizon.Location = new System.Drawing.Point(7, 270);
             this.pnlHorizon.Name = "pnlHorizon";
             this.pnlHorizon.Size = new System.Drawing.Size(285, 562);
             this.pnlHorizon.TabIndex = 29;
+            // 
+            // txtJogSpeed_H
+            // 
+            this.txtJogSpeed_H.EditValue = "9999";
+            this.txtJogSpeed_H.Location = new System.Drawing.Point(63, 229);
+            this.txtJogSpeed_H.Name = "txtJogSpeed_H";
+            this.txtJogSpeed_H.Size = new System.Drawing.Size(41, 24);
+            this.txtJogSpeed_H.TabIndex = 30;
+            // 
+            // lblJogSpeed_H
+            // 
+            this.lblJogSpeed_H.Location = new System.Drawing.Point(19, 232);
+            this.lblJogSpeed_H.Name = "lblJogSpeed_H";
+            this.lblJogSpeed_H.Size = new System.Drawing.Size(156, 18);
+            this.lblJogSpeed_H.TabIndex = 29;
+            this.lblJogSpeed_H.Text = "速度：            (mm/s)";
+            // 
+            // lblLightOrigin_H
+            // 
+            this.lblLightOrigin_H.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.lblLightOrigin_H.Appearance.Options.UseBackColor = true;
+            this.lblLightOrigin_H.Location = new System.Drawing.Point(147, 159);
+            this.lblLightOrigin_H.Name = "lblLightOrigin_H";
+            this.lblLightOrigin_H.Size = new System.Drawing.Size(20, 18);
+            this.lblLightOrigin_H.TabIndex = 23;
+            this.lblLightOrigin_H.Text = "    ";
+            // 
+            // lblLightLimit_N_H
+            // 
+            this.lblLightLimit_N_H.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.lblLightLimit_N_H.Appearance.Options.UseBackColor = true;
+            this.lblLightLimit_N_H.Location = new System.Drawing.Point(239, 159);
+            this.lblLightLimit_N_H.Name = "lblLightLimit_N_H";
+            this.lblLightLimit_N_H.Size = new System.Drawing.Size(20, 18);
+            this.lblLightLimit_N_H.TabIndex = 24;
+            this.lblLightLimit_N_H.Text = "    ";
+            // 
+            // lblLightLimit_P_H
+            // 
+            this.lblLightLimit_P_H.Appearance.BackColor = System.Drawing.Color.Lime;
+            this.lblLightLimit_P_H.Appearance.Options.UseBackColor = true;
+            this.lblLightLimit_P_H.Location = new System.Drawing.Point(57, 159);
+            this.lblLightLimit_P_H.Name = "lblLightLimit_P_H";
+            this.lblLightLimit_P_H.Size = new System.Drawing.Size(20, 18);
+            this.lblLightLimit_P_H.TabIndex = 25;
+            this.lblLightLimit_P_H.Text = "    ";
+            // 
+            // lblNameOrigin_H
+            // 
+            this.lblNameOrigin_H.Location = new System.Drawing.Point(109, 159);
+            this.lblNameOrigin_H.Name = "lblNameOrigin_H";
+            this.lblNameOrigin_H.Size = new System.Drawing.Size(30, 18);
+            this.lblNameOrigin_H.TabIndex = 26;
+            this.lblNameOrigin_H.Text = "原点";
+            // 
+            // lblNameLimit_N_H
+            // 
+            this.lblNameLimit_N_H.Location = new System.Drawing.Point(201, 159);
+            this.lblNameLimit_N_H.Name = "lblNameLimit_N_H";
+            this.lblNameLimit_N_H.Size = new System.Drawing.Size(30, 18);
+            this.lblNameLimit_N_H.TabIndex = 27;
+            this.lblNameLimit_N_H.Text = "负限";
+            // 
+            // lblNameLimit_P_H
+            // 
+            this.lblNameLimit_P_H.Location = new System.Drawing.Point(19, 159);
+            this.lblNameLimit_P_H.Name = "lblNameLimit_P_H";
+            this.lblNameLimit_P_H.Size = new System.Drawing.Size(30, 18);
+            this.lblNameLimit_P_H.TabIndex = 28;
+            this.lblNameLimit_P_H.Text = "正限";
             // 
             // btnPassagePos
             // 
@@ -2210,6 +2294,16 @@
             this.btnPassagePos.TabIndex = 21;
             this.btnPassagePos.Text = "通道位";
             // 
+            // lblTorque_H
+            // 
+            this.lblTorque_H.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTorque_H.Appearance.Options.UseFont = true;
+            this.lblTorque_H.Location = new System.Drawing.Point(54, 85);
+            this.lblTorque_H.Name = "lblTorque_H";
+            this.lblTorque_H.Size = new System.Drawing.Size(32, 18);
+            this.lblTorque_H.TabIndex = 12;
+            this.lblTorque_H.Text = "9999";
+            // 
             // btnBuffer6WorkPos
             // 
             this.btnBuffer6WorkPos.Location = new System.Drawing.Point(156, 474);
@@ -2217,6 +2311,16 @@
             this.btnBuffer6WorkPos.Size = new System.Drawing.Size(98, 30);
             this.btnBuffer6WorkPos.TabIndex = 21;
             this.btnBuffer6WorkPos.Text = "缓存6工位";
+            // 
+            // lblVelocity_H
+            // 
+            this.lblVelocity_H.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVelocity_H.Appearance.Options.UseFont = true;
+            this.lblVelocity_H.Location = new System.Drawing.Point(188, 53);
+            this.lblVelocity_H.Name = "lblVelocity_H";
+            this.lblVelocity_H.Size = new System.Drawing.Size(32, 18);
+            this.lblVelocity_H.TabIndex = 12;
+            this.lblVelocity_H.Text = "9999";
             // 
             // btnTransportPos
             // 
@@ -2226,14 +2330,6 @@
             this.btnTransportPos.TabIndex = 21;
             this.btnTransportPos.Text = "传送位";
             // 
-            // btnNegative_Limit_H
-            // 
-            this.btnNegative_Limit_H.Location = new System.Drawing.Point(196, 154);
-            this.btnNegative_Limit_H.Name = "btnNegative_Limit_H";
-            this.btnNegative_Limit_H.Size = new System.Drawing.Size(71, 30);
-            this.btnNegative_Limit_H.TabIndex = 19;
-            this.btnNegative_Limit_H.Text = "负极限";
-            // 
             // btnBuffer5WorkPos
             // 
             this.btnBuffer5WorkPos.Location = new System.Drawing.Point(156, 435);
@@ -2241,14 +2337,6 @@
             this.btnBuffer5WorkPos.Size = new System.Drawing.Size(98, 30);
             this.btnBuffer5WorkPos.TabIndex = 21;
             this.btnBuffer5WorkPos.Text = "缓存5工位";
-            // 
-            // btnOrigin_H
-            // 
-            this.btnOrigin_H.Location = new System.Drawing.Point(105, 154);
-            this.btnOrigin_H.Name = "btnOrigin_H";
-            this.btnOrigin_H.Size = new System.Drawing.Size(71, 30);
-            this.btnOrigin_H.TabIndex = 19;
-            this.btnOrigin_H.Text = "原点";
             // 
             // btnBuffer3WorkPos
             // 
@@ -2274,14 +2362,6 @@
             this.btnMoveIn_H.TabIndex = 19;
             this.btnMoveIn_H.Text = "向里";
             // 
-            // lblJogSpeed_H
-            // 
-            this.lblJogSpeed_H.Location = new System.Drawing.Point(10, 223);
-            this.lblJogSpeed_H.Name = "lblJogSpeed_H";
-            this.lblJogSpeed_H.Size = new System.Drawing.Size(60, 36);
-            this.lblJogSpeed_H.TabIndex = 12;
-            this.lblJogSpeed_H.Text = "点动速度\r\n (mm/s)";
-            // 
             // btnBuffer2WorkPosv
             // 
             this.btnBuffer2WorkPosv.Location = new System.Drawing.Point(156, 318);
@@ -2304,13 +2384,13 @@
             this.picDropDown_H.TabIndex = 18;
             this.picDropDown_H.Click += new System.EventHandler(this.picDropDown_Horizon_Click);
             // 
-            // txtJogSpeed_H
+            // lblNameTorque_H
             // 
-            this.txtJogSpeed_H.EditValue = "9999";
-            this.txtJogSpeed_H.Location = new System.Drawing.Point(106, 229);
-            this.txtJogSpeed_H.Name = "txtJogSpeed_H";
-            this.txtJogSpeed_H.Size = new System.Drawing.Size(64, 24);
-            this.txtJogSpeed_H.TabIndex = 15;
+            this.lblNameTorque_H.Location = new System.Drawing.Point(5, 85);
+            this.lblNameTorque_H.Name = "lblNameTorque_H";
+            this.lblNameTorque_H.Size = new System.Drawing.Size(130, 18);
+            this.lblNameTorque_H.TabIndex = 10;
+            this.lblNameTorque_H.Text = " 扭矩:          (N·m)";
             // 
             // btnMoveOut_H
             // 
@@ -2328,14 +2408,6 @@
             this.btnBuffer1WorkPos.TabIndex = 21;
             this.btnBuffer1WorkPos.Text = "缓存1工位";
             // 
-            // btnPositive_Limit_H
-            // 
-            this.btnPositive_Limit_H.Location = new System.Drawing.Point(14, 154);
-            this.btnPositive_Limit_H.Name = "btnPositive_Limit_H";
-            this.btnPositive_Limit_H.Size = new System.Drawing.Size(71, 30);
-            this.btnPositive_Limit_H.TabIndex = 19;
-            this.btnPositive_Limit_H.Text = "正极限";
-            // 
             // btnTube5WorkPos
             // 
             this.btnTube5WorkPos.Location = new System.Drawing.Point(32, 435);
@@ -2352,89 +2424,17 @@
             this.btnTube3WorkPos.TabIndex = 21;
             this.btnTube3WorkPos.Text = "炉管3工位";
             // 
-            // lblNameOrigin_H
+            // lblHorizon
             // 
-            this.lblNameOrigin_H.Location = new System.Drawing.Point(230, 46);
-            this.lblNameOrigin_H.Name = "lblNameOrigin_H";
-            this.lblNameOrigin_H.Size = new System.Drawing.Size(38, 36);
-            this.lblNameOrigin_H.TabIndex = 8;
-            this.lblNameOrigin_H.Text = " 原点\r\n(mm)";
-            // 
-            // lblOrigin_H
-            // 
-            this.lblOrigin_H.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrigin_H.Appearance.Options.UseFont = true;
-            this.lblOrigin_H.Location = new System.Drawing.Point(233, 90);
-            this.lblOrigin_H.Name = "lblOrigin_H";
-            this.lblOrigin_H.Size = new System.Drawing.Size(32, 18);
-            this.lblOrigin_H.TabIndex = 8;
-            this.lblOrigin_H.Text = "9999";
-            // 
-            // lblNameTorque_H
-            // 
-            this.lblNameTorque_H.Location = new System.Drawing.Point(161, 46);
-            this.lblNameTorque_H.Name = "lblNameTorque_H";
-            this.lblNameTorque_H.Size = new System.Drawing.Size(40, 36);
-            this.lblNameTorque_H.TabIndex = 10;
-            this.lblNameTorque_H.Text = " 扭矩\r\n(N·m)";
-            // 
-            // lblTorque_H
-            // 
-            this.lblTorque_H.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTorque_H.Appearance.Options.UseFont = true;
-            this.lblTorque_H.Location = new System.Drawing.Point(165, 90);
-            this.lblTorque_H.Name = "lblTorque_H";
-            this.lblTorque_H.Size = new System.Drawing.Size(32, 18);
-            this.lblTorque_H.TabIndex = 10;
-            this.lblTorque_H.Text = "9999";
-            // 
-            // lblNameVelocity_H
-            // 
-            this.lblNameVelocity_H.Location = new System.Drawing.Point(81, 46);
-            this.lblNameVelocity_H.Name = "lblNameVelocity_H";
-            this.lblNameVelocity_H.Size = new System.Drawing.Size(51, 36);
-            this.lblNameVelocity_H.TabIndex = 11;
-            this.lblNameVelocity_H.Text = "  速度\r\n(mm/s)";
-            // 
-            // lblVelocity_H
-            // 
-            this.lblVelocity_H.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVelocity_H.Appearance.Options.UseFont = true;
-            this.lblVelocity_H.Location = new System.Drawing.Point(90, 90);
-            this.lblVelocity_H.Name = "lblVelocity_H";
-            this.lblVelocity_H.Size = new System.Drawing.Size(32, 18);
-            this.lblVelocity_H.TabIndex = 11;
-            this.lblVelocity_H.Text = "9999";
-            // 
-            // lblNamePosition_H
-            // 
-            this.lblNamePosition_H.Location = new System.Drawing.Point(14, 46);
-            this.lblNamePosition_H.Name = "lblNamePosition_H";
-            this.lblNamePosition_H.Size = new System.Drawing.Size(38, 36);
-            this.lblNamePosition_H.TabIndex = 12;
-            this.lblNamePosition_H.Text = " 位置\r\n(mm)";
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseBackColor = true;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(12, 12);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(72, 23);
-            this.labelControl1.TabIndex = 12;
-            this.labelControl1.Text = " 水平轴 ";
-            // 
-            // lblPosition_H
-            // 
-            this.lblPosition_H.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosition_H.Appearance.Options.UseFont = true;
-            this.lblPosition_H.Location = new System.Drawing.Point(17, 90);
-            this.lblPosition_H.Name = "lblPosition_H";
-            this.lblPosition_H.Size = new System.Drawing.Size(32, 18);
-            this.lblPosition_H.TabIndex = 12;
-            this.lblPosition_H.Text = "9999";
+            this.lblHorizon.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblHorizon.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHorizon.Appearance.Options.UseBackColor = true;
+            this.lblHorizon.Appearance.Options.UseFont = true;
+            this.lblHorizon.Location = new System.Drawing.Point(12, 12);
+            this.lblHorizon.Name = "lblHorizon";
+            this.lblHorizon.Size = new System.Drawing.Size(72, 23);
+            this.lblHorizon.TabIndex = 12;
+            this.lblHorizon.Text = " 水平轴 ";
             // 
             // labelControl14
             // 
@@ -2492,143 +2492,161 @@
             this.btnTube1WorkPos.TabIndex = 21;
             this.btnTube1WorkPos.Text = "炉管1工位";
             // 
+            // lblPosition_H
+            // 
+            this.lblPosition_H.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosition_H.Appearance.Options.UseFont = true;
+            this.lblPosition_H.Location = new System.Drawing.Point(54, 53);
+            this.lblPosition_H.Name = "lblPosition_H";
+            this.lblPosition_H.Size = new System.Drawing.Size(32, 18);
+            this.lblPosition_H.TabIndex = 12;
+            this.lblPosition_H.Text = "9999";
+            // 
+            // lblNameVelocity_H
+            // 
+            this.lblNameVelocity_H.Location = new System.Drawing.Point(134, 53);
+            this.lblNameVelocity_H.Name = "lblNameVelocity_H";
+            this.lblNameVelocity_H.Size = new System.Drawing.Size(146, 18);
+            this.lblNameVelocity_H.TabIndex = 11;
+            this.lblNameVelocity_H.Text = "  速度:          (mm/s)";
+            // 
+            // lblNamePosition_H
+            // 
+            this.lblNamePosition_H.Location = new System.Drawing.Point(5, 53);
+            this.lblNamePosition_H.Name = "lblNamePosition_H";
+            this.lblNamePosition_H.Size = new System.Drawing.Size(128, 18);
+            this.lblNamePosition_H.TabIndex = 12;
+            this.lblNamePosition_H.Text = " 位置:          (mm)";
+            // 
             // pnlTransport
             // 
-            this.pnlTransport.Controls.Add(this.btnMoveAhead_T);
-            this.pnlTransport.Controls.Add(this.picDropDown_L);
-            this.pnlTransport.Controls.Add(this.lblJogSpeed_T);
-            this.pnlTransport.Controls.Add(this.txtJogSpeed_T);
-            this.pnlTransport.Controls.Add(this.btnMoveBack_T);
-            this.pnlTransport.Controls.Add(this.btnEnable_T);
-            this.pnlTransport.Controls.Add(this.lblTorque_T);
-            this.pnlTransport.Controls.Add(this.lblNameTorque_T);
-            this.pnlTransport.Controls.Add(this.btnUnlock_T);
-            this.pnlTransport.Controls.Add(this.lblVelocity_T);
-            this.pnlTransport.Controls.Add(this.lblPosition_T);
-            this.pnlTransport.Controls.Add(this.lblNameVelocity_T);
-            this.pnlTransport.Controls.Add(this.lblNamePosition_T);
+            this.pnlTransport.Controls.Add(this.txtJogSpeed_C);
+            this.pnlTransport.Controls.Add(this.lblJogSpeed_C);
+            this.pnlTransport.Controls.Add(this.lblTorque_C);
+            this.pnlTransport.Controls.Add(this.lblVelocity_C);
+            this.pnlTransport.Controls.Add(this.lblPosition_C);
+            this.pnlTransport.Controls.Add(this.lblNameVelocity_C);
+            this.pnlTransport.Controls.Add(this.lblNameTorque_C);
+            this.pnlTransport.Controls.Add(this.btnMoveAhead_C);
+            this.pnlTransport.Controls.Add(this.picDropDown_C);
+            this.pnlTransport.Controls.Add(this.btnMoveBack_C);
+            this.pnlTransport.Controls.Add(this.btnEnable_C);
+            this.pnlTransport.Controls.Add(this.btnUnlock_C);
             this.pnlTransport.Controls.Add(this.labelControl13);
-            this.pnlTransport.Controls.Add(this.labelControl9);
+            this.pnlTransport.Controls.Add(this.lblConvery);
+            this.pnlTransport.Controls.Add(this.lblNamePosition_C);
             this.pnlTransport.Location = new System.Drawing.Point(7, 427);
             this.pnlTransport.Name = "pnlTransport";
             this.pnlTransport.Size = new System.Drawing.Size(285, 411);
             this.pnlTransport.TabIndex = 29;
             // 
-            // btnMoveAhead_T
+            // txtJogSpeed_C
             // 
-            this.btnMoveAhead_T.Location = new System.Drawing.Point(196, 156);
-            this.btnMoveAhead_T.Name = "btnMoveAhead_T";
-            this.btnMoveAhead_T.Size = new System.Drawing.Size(71, 30);
-            this.btnMoveAhead_T.TabIndex = 19;
-            this.btnMoveAhead_T.Text = "向里";
+            this.txtJogSpeed_C.EditValue = "9999";
+            this.txtJogSpeed_C.Location = new System.Drawing.Point(62, 193);
+            this.txtJogSpeed_C.Name = "txtJogSpeed_C";
+            this.txtJogSpeed_C.Size = new System.Drawing.Size(41, 24);
+            this.txtJogSpeed_C.TabIndex = 32;
             // 
-            // picDropDown_L
+            // lblJogSpeed_C
             // 
-            this.picDropDown_L.Cursor = System.Windows.Forms.Cursors.Default;
-            this.picDropDown_L.Location = new System.Drawing.Point(12, 118);
-            this.picDropDown_L.Name = "picDropDown_L";
-            this.picDropDown_L.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.picDropDown_L.Properties.Appearance.Options.UseBackColor = true;
-            this.picDropDown_L.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.picDropDown_L.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.picDropDown_L.Properties.ZoomAccelerationFactor = 1D;
-            this.picDropDown_L.Size = new System.Drawing.Size(255, 21);
-            this.picDropDown_L.TabIndex = 18;
-            this.picDropDown_L.Click += new System.EventHandler(this.picDropDown_L_Click);
+            this.lblJogSpeed_C.Location = new System.Drawing.Point(18, 196);
+            this.lblJogSpeed_C.Name = "lblJogSpeed_C";
+            this.lblJogSpeed_C.Size = new System.Drawing.Size(156, 18);
+            this.lblJogSpeed_C.TabIndex = 31;
+            this.lblJogSpeed_C.Text = "速度：            (mm/s)";
             // 
-            // lblJogSpeed_T
+            // lblTorque_C
             // 
-            this.lblJogSpeed_T.Location = new System.Drawing.Point(19, 189);
-            this.lblJogSpeed_T.Name = "lblJogSpeed_T";
-            this.lblJogSpeed_T.Size = new System.Drawing.Size(60, 36);
-            this.lblJogSpeed_T.TabIndex = 12;
-            this.lblJogSpeed_T.Text = "点动速度\r\n (mm/s)";
+            this.lblTorque_C.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTorque_C.Appearance.Options.UseFont = true;
+            this.lblTorque_C.Location = new System.Drawing.Point(54, 82);
+            this.lblTorque_C.Name = "lblTorque_C";
+            this.lblTorque_C.Size = new System.Drawing.Size(32, 18);
+            this.lblTorque_C.TabIndex = 12;
+            this.lblTorque_C.Text = "9999";
             // 
-            // txtJogSpeed_T
+            // lblVelocity_C
             // 
-            this.txtJogSpeed_T.EditValue = "9999";
-            this.txtJogSpeed_T.Location = new System.Drawing.Point(107, 193);
-            this.txtJogSpeed_T.Name = "txtJogSpeed_T";
-            this.txtJogSpeed_T.Size = new System.Drawing.Size(64, 24);
-            this.txtJogSpeed_T.TabIndex = 15;
+            this.lblVelocity_C.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVelocity_C.Appearance.Options.UseFont = true;
+            this.lblVelocity_C.Location = new System.Drawing.Point(188, 50);
+            this.lblVelocity_C.Name = "lblVelocity_C";
+            this.lblVelocity_C.Size = new System.Drawing.Size(32, 18);
+            this.lblVelocity_C.TabIndex = 12;
+            this.lblVelocity_C.Text = "9999";
             // 
-            // btnMoveBack_T
+            // lblPosition_C
             // 
-            this.btnMoveBack_T.Location = new System.Drawing.Point(196, 190);
-            this.btnMoveBack_T.Name = "btnMoveBack_T";
-            this.btnMoveBack_T.Size = new System.Drawing.Size(71, 30);
-            this.btnMoveBack_T.TabIndex = 19;
-            this.btnMoveBack_T.Text = "向外";
+            this.lblPosition_C.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosition_C.Appearance.Options.UseFont = true;
+            this.lblPosition_C.Location = new System.Drawing.Point(54, 50);
+            this.lblPosition_C.Name = "lblPosition_C";
+            this.lblPosition_C.Size = new System.Drawing.Size(32, 18);
+            this.lblPosition_C.TabIndex = 12;
+            this.lblPosition_C.Text = "9999";
             // 
-            // btnEnable_T
+            // lblNameVelocity_C
             // 
-            this.btnEnable_T.Location = new System.Drawing.Point(12, 156);
-            this.btnEnable_T.Name = "btnEnable_T";
-            this.btnEnable_T.Size = new System.Drawing.Size(71, 30);
-            this.btnEnable_T.TabIndex = 21;
-            this.btnEnable_T.Text = "使能";
+            this.lblNameVelocity_C.Location = new System.Drawing.Point(134, 50);
+            this.lblNameVelocity_C.Name = "lblNameVelocity_C";
+            this.lblNameVelocity_C.Size = new System.Drawing.Size(146, 18);
+            this.lblNameVelocity_C.TabIndex = 11;
+            this.lblNameVelocity_C.Text = "  速度:          (mm/s)";
             // 
-            // lblTorque_T
+            // lblNameTorque_C
             // 
-            this.lblTorque_T.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTorque_T.Appearance.Options.UseFont = true;
-            this.lblTorque_T.Location = new System.Drawing.Point(230, 92);
-            this.lblTorque_T.Name = "lblTorque_T";
-            this.lblTorque_T.Size = new System.Drawing.Size(32, 18);
-            this.lblTorque_T.TabIndex = 10;
-            this.lblTorque_T.Text = "9999";
+            this.lblNameTorque_C.Location = new System.Drawing.Point(5, 82);
+            this.lblNameTorque_C.Name = "lblNameTorque_C";
+            this.lblNameTorque_C.Size = new System.Drawing.Size(130, 18);
+            this.lblNameTorque_C.TabIndex = 10;
+            this.lblNameTorque_C.Text = " 扭矩:          (N·m)";
             // 
-            // lblNameTorque_T
+            // btnMoveAhead_C
             // 
-            this.lblNameTorque_T.Location = new System.Drawing.Point(226, 48);
-            this.lblNameTorque_T.Name = "lblNameTorque_T";
-            this.lblNameTorque_T.Size = new System.Drawing.Size(40, 36);
-            this.lblNameTorque_T.TabIndex = 10;
-            this.lblNameTorque_T.Text = " 扭矩\r\n(N·m)";
+            this.btnMoveAhead_C.Location = new System.Drawing.Point(196, 156);
+            this.btnMoveAhead_C.Name = "btnMoveAhead_C";
+            this.btnMoveAhead_C.Size = new System.Drawing.Size(71, 30);
+            this.btnMoveAhead_C.TabIndex = 19;
+            this.btnMoveAhead_C.Text = "向里";
             // 
-            // btnUnlock_T
+            // picDropDown_C
             // 
-            this.btnUnlock_T.Location = new System.Drawing.Point(104, 156);
-            this.btnUnlock_T.Name = "btnUnlock_T";
-            this.btnUnlock_T.Size = new System.Drawing.Size(71, 30);
-            this.btnUnlock_T.TabIndex = 20;
-            this.btnUnlock_T.Text = "解除联锁";
+            this.picDropDown_C.Cursor = System.Windows.Forms.Cursors.Default;
+            this.picDropDown_C.Location = new System.Drawing.Point(12, 118);
+            this.picDropDown_C.Name = "picDropDown_C";
+            this.picDropDown_C.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.picDropDown_C.Properties.Appearance.Options.UseBackColor = true;
+            this.picDropDown_C.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picDropDown_C.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.picDropDown_C.Properties.ZoomAccelerationFactor = 1D;
+            this.picDropDown_C.Size = new System.Drawing.Size(255, 21);
+            this.picDropDown_C.TabIndex = 18;
+            this.picDropDown_C.Click += new System.EventHandler(this.picDropDown_L_Click);
             // 
-            // lblVelocity_T
+            // btnMoveBack_C
             // 
-            this.lblVelocity_T.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVelocity_T.Appearance.Options.UseFont = true;
-            this.lblVelocity_T.Location = new System.Drawing.Point(120, 92);
-            this.lblVelocity_T.Name = "lblVelocity_T";
-            this.lblVelocity_T.Size = new System.Drawing.Size(32, 18);
-            this.lblVelocity_T.TabIndex = 11;
-            this.lblVelocity_T.Text = "9999";
+            this.btnMoveBack_C.Location = new System.Drawing.Point(196, 190);
+            this.btnMoveBack_C.Name = "btnMoveBack_C";
+            this.btnMoveBack_C.Size = new System.Drawing.Size(71, 30);
+            this.btnMoveBack_C.TabIndex = 19;
+            this.btnMoveBack_C.Text = "向外";
             // 
-            // lblPosition_T
+            // btnEnable_C
             // 
-            this.lblPosition_T.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosition_T.Appearance.Options.UseFont = true;
-            this.lblPosition_T.Location = new System.Drawing.Point(17, 92);
-            this.lblPosition_T.Name = "lblPosition_T";
-            this.lblPosition_T.Size = new System.Drawing.Size(32, 18);
-            this.lblPosition_T.TabIndex = 12;
-            this.lblPosition_T.Text = "9999";
+            this.btnEnable_C.Location = new System.Drawing.Point(12, 156);
+            this.btnEnable_C.Name = "btnEnable_C";
+            this.btnEnable_C.Size = new System.Drawing.Size(71, 30);
+            this.btnEnable_C.TabIndex = 21;
+            this.btnEnable_C.Text = "使能";
             // 
-            // lblNameVelocity_T
+            // btnUnlock_C
             // 
-            this.lblNameVelocity_T.Location = new System.Drawing.Point(111, 48);
-            this.lblNameVelocity_T.Name = "lblNameVelocity_T";
-            this.lblNameVelocity_T.Size = new System.Drawing.Size(51, 36);
-            this.lblNameVelocity_T.TabIndex = 11;
-            this.lblNameVelocity_T.Text = "  速度\r\n(mm/s)";
-            // 
-            // lblNamePosition_T
-            // 
-            this.lblNamePosition_T.Location = new System.Drawing.Point(14, 48);
-            this.lblNamePosition_T.Name = "lblNamePosition_T";
-            this.lblNamePosition_T.Size = new System.Drawing.Size(38, 36);
-            this.lblNamePosition_T.TabIndex = 12;
-            this.lblNamePosition_T.Text = " 位置\r\n(mm)";
+            this.btnUnlock_C.Location = new System.Drawing.Point(104, 156);
+            this.btnUnlock_C.Name = "btnUnlock_C";
+            this.btnUnlock_C.Size = new System.Drawing.Size(71, 30);
+            this.btnUnlock_C.TabIndex = 20;
+            this.btnUnlock_C.Text = "解除联锁";
             // 
             // labelControl13
             // 
@@ -2637,29 +2655,34 @@
             this.labelControl13.Size = new System.Drawing.Size(0, 18);
             this.labelControl13.TabIndex = 7;
             // 
-            // labelControl9
+            // lblConvery
             // 
-            this.labelControl9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Appearance.Options.UseBackColor = true;
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(12, 14);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(72, 23);
-            this.labelControl9.TabIndex = 12;
-            this.labelControl9.Text = " 输送机 ";
+            this.lblConvery.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblConvery.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConvery.Appearance.Options.UseBackColor = true;
+            this.lblConvery.Appearance.Options.UseFont = true;
+            this.lblConvery.Location = new System.Drawing.Point(12, 14);
+            this.lblConvery.Name = "lblConvery";
+            this.lblConvery.Size = new System.Drawing.Size(72, 23);
+            this.lblConvery.TabIndex = 12;
+            this.lblConvery.Text = " 输送机 ";
+            // 
+            // lblNamePosition_C
+            // 
+            this.lblNamePosition_C.Location = new System.Drawing.Point(5, 50);
+            this.lblNamePosition_C.Name = "lblNamePosition_C";
+            this.lblNamePosition_C.Size = new System.Drawing.Size(128, 18);
+            this.lblNamePosition_C.TabIndex = 12;
+            this.lblNamePosition_C.Text = " 位置:          (mm)";
             // 
             // pnlOther
             // 
             this.pnlOther.AutoSize = true;
-            this.pnlOther.Controls.Add(this.lblTailAcid_S);
-            this.pnlOther.Controls.Add(this.lblNameTailAcid_S);
+            this.pnlOther.Controls.Add(this.separatorControl3);
             this.pnlOther.Controls.Add(this.lblTailAcid_A);
             this.pnlOther.Controls.Add(this.lblNameTailAcid_A);
             this.pnlOther.Controls.Add(this.lblElectricity);
             this.pnlOther.Controls.Add(this.lblNameElectricity);
-            this.pnlOther.Controls.Add(this.lblMouthAcid_S);
-            this.pnlOther.Controls.Add(this.lblNameMouthAcid_S);
             this.pnlOther.Controls.Add(this.lblMouthAcid_A);
             this.pnlOther.Controls.Add(this.lblNameMouthAcid_A);
             this.pnlOther.Controls.Add(this.lblCPower);
@@ -2670,35 +2693,24 @@
             this.pnlOther.Controls.Add(this.lblTotalPower);
             this.pnlOther.Controls.Add(this.lblNameAPower);
             this.pnlOther.Controls.Add(this.lblNameTotalPower);
-            this.pnlOther.Controls.Add(this.labelControl17);
+            this.pnlOther.Controls.Add(this.lblOther);
             this.pnlOther.Location = new System.Drawing.Point(7, 584);
             this.pnlOther.Name = "pnlOther";
             this.pnlOther.Size = new System.Drawing.Size(285, 263);
             this.pnlOther.TabIndex = 31;
             // 
-            // lblTailAcid_S
+            // separatorControl3
             // 
-            this.lblTailAcid_S.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTailAcid_S.Appearance.Options.UseFont = true;
-            this.lblTailAcid_S.Location = new System.Drawing.Point(156, 169);
-            this.lblTailAcid_S.Name = "lblTailAcid_S";
-            this.lblTailAcid_S.Size = new System.Drawing.Size(32, 18);
-            this.lblTailAcid_S.TabIndex = 12;
-            this.lblTailAcid_S.Text = "9999";
-            // 
-            // lblNameTailAcid_S
-            // 
-            this.lblNameTailAcid_S.Location = new System.Drawing.Point(156, 145);
-            this.lblNameTailAcid_S.Name = "lblNameTailAcid_S";
-            this.lblNameTailAcid_S.Size = new System.Drawing.Size(120, 18);
-            this.lblNameTailAcid_S.TabIndex = 12;
-            this.lblNameTailAcid_S.Text = "炉尾酸排设置压力";
+            this.separatorControl3.Location = new System.Drawing.Point(10, 152);
+            this.separatorControl3.Name = "separatorControl3";
+            this.separatorControl3.Size = new System.Drawing.Size(210, 23);
+            this.separatorControl3.TabIndex = 13;
             // 
             // lblTailAcid_A
             // 
             this.lblTailAcid_A.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTailAcid_A.Appearance.Options.UseFont = true;
-            this.lblTailAcid_A.Location = new System.Drawing.Point(156, 219);
+            this.lblTailAcid_A.Location = new System.Drawing.Point(156, 204);
             this.lblTailAcid_A.Name = "lblTailAcid_A";
             this.lblTailAcid_A.Size = new System.Drawing.Size(32, 18);
             this.lblTailAcid_A.TabIndex = 12;
@@ -2706,7 +2718,7 @@
             // 
             // lblNameTailAcid_A
             // 
-            this.lblNameTailAcid_A.Location = new System.Drawing.Point(156, 195);
+            this.lblNameTailAcid_A.Location = new System.Drawing.Point(156, 180);
             this.lblNameTailAcid_A.Name = "lblNameTailAcid_A";
             this.lblNameTailAcid_A.Size = new System.Drawing.Size(120, 18);
             this.lblNameTailAcid_A.TabIndex = 12;
@@ -2716,7 +2728,7 @@
             // 
             this.lblElectricity.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblElectricity.Appearance.Options.UseFont = true;
-            this.lblElectricity.Location = new System.Drawing.Point(108, 117);
+            this.lblElectricity.Location = new System.Drawing.Point(108, 131);
             this.lblElectricity.Name = "lblElectricity";
             this.lblElectricity.Size = new System.Drawing.Size(32, 18);
             this.lblElectricity.TabIndex = 12;
@@ -2724,35 +2736,17 @@
             // 
             // lblNameElectricity
             // 
-            this.lblNameElectricity.Location = new System.Drawing.Point(108, 93);
+            this.lblNameElectricity.Location = new System.Drawing.Point(108, 107);
             this.lblNameElectricity.Name = "lblNameElectricity";
             this.lblNameElectricity.Size = new System.Drawing.Size(67, 18);
             this.lblNameElectricity.TabIndex = 12;
             this.lblNameElectricity.Text = "电能(kwh)";
             // 
-            // lblMouthAcid_S
-            // 
-            this.lblMouthAcid_S.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMouthAcid_S.Appearance.Options.UseFont = true;
-            this.lblMouthAcid_S.Location = new System.Drawing.Point(19, 169);
-            this.lblMouthAcid_S.Name = "lblMouthAcid_S";
-            this.lblMouthAcid_S.Size = new System.Drawing.Size(32, 18);
-            this.lblMouthAcid_S.TabIndex = 12;
-            this.lblMouthAcid_S.Text = "9999";
-            // 
-            // lblNameMouthAcid_S
-            // 
-            this.lblNameMouthAcid_S.Location = new System.Drawing.Point(19, 145);
-            this.lblNameMouthAcid_S.Name = "lblNameMouthAcid_S";
-            this.lblNameMouthAcid_S.Size = new System.Drawing.Size(120, 18);
-            this.lblNameMouthAcid_S.TabIndex = 12;
-            this.lblNameMouthAcid_S.Text = "炉口酸排设置压力";
-            // 
             // lblMouthAcid_A
             // 
             this.lblMouthAcid_A.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMouthAcid_A.Appearance.Options.UseFont = true;
-            this.lblMouthAcid_A.Location = new System.Drawing.Point(19, 219);
+            this.lblMouthAcid_A.Location = new System.Drawing.Point(19, 204);
             this.lblMouthAcid_A.Name = "lblMouthAcid_A";
             this.lblMouthAcid_A.Size = new System.Drawing.Size(32, 18);
             this.lblMouthAcid_A.TabIndex = 12;
@@ -2760,7 +2754,7 @@
             // 
             // lblNameMouthAcid_A
             // 
-            this.lblNameMouthAcid_A.Location = new System.Drawing.Point(19, 195);
+            this.lblNameMouthAcid_A.Location = new System.Drawing.Point(19, 180);
             this.lblNameMouthAcid_A.Name = "lblNameMouthAcid_A";
             this.lblNameMouthAcid_A.Size = new System.Drawing.Size(120, 18);
             this.lblNameMouthAcid_A.TabIndex = 12;
@@ -2770,7 +2764,7 @@
             // 
             this.lblCPower.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCPower.Appearance.Options.UseFont = true;
-            this.lblCPower.Location = new System.Drawing.Point(197, 66);
+            this.lblCPower.Location = new System.Drawing.Point(197, 75);
             this.lblCPower.Name = "lblCPower";
             this.lblCPower.Size = new System.Drawing.Size(32, 18);
             this.lblCPower.TabIndex = 12;
@@ -2778,7 +2772,7 @@
             // 
             // lblNameCPower
             // 
-            this.lblNameCPower.Location = new System.Drawing.Point(197, 42);
+            this.lblNameCPower.Location = new System.Drawing.Point(197, 51);
             this.lblNameCPower.Name = "lblNameCPower";
             this.lblNameCPower.Size = new System.Drawing.Size(76, 18);
             this.lblNameCPower.TabIndex = 12;
@@ -2788,7 +2782,7 @@
             // 
             this.lblBPower.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBPower.Appearance.Options.UseFont = true;
-            this.lblBPower.Location = new System.Drawing.Point(108, 66);
+            this.lblBPower.Location = new System.Drawing.Point(108, 75);
             this.lblBPower.Name = "lblBPower";
             this.lblBPower.Size = new System.Drawing.Size(32, 18);
             this.lblBPower.TabIndex = 12;
@@ -2796,7 +2790,7 @@
             // 
             // lblNameBPower
             // 
-            this.lblNameBPower.Location = new System.Drawing.Point(108, 42);
+            this.lblNameBPower.Location = new System.Drawing.Point(108, 51);
             this.lblNameBPower.Name = "lblNameBPower";
             this.lblNameBPower.Size = new System.Drawing.Size(76, 18);
             this.lblNameBPower.TabIndex = 12;
@@ -2806,7 +2800,7 @@
             // 
             this.lblAPower.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAPower.Appearance.Options.UseFont = true;
-            this.lblAPower.Location = new System.Drawing.Point(19, 66);
+            this.lblAPower.Location = new System.Drawing.Point(19, 75);
             this.lblAPower.Name = "lblAPower";
             this.lblAPower.Size = new System.Drawing.Size(32, 18);
             this.lblAPower.TabIndex = 12;
@@ -2816,7 +2810,7 @@
             // 
             this.lblTotalPower.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalPower.Appearance.Options.UseFont = true;
-            this.lblTotalPower.Location = new System.Drawing.Point(19, 117);
+            this.lblTotalPower.Location = new System.Drawing.Point(19, 131);
             this.lblTotalPower.Name = "lblTotalPower";
             this.lblTotalPower.Size = new System.Drawing.Size(32, 18);
             this.lblTotalPower.TabIndex = 12;
@@ -2824,7 +2818,7 @@
             // 
             // lblNameAPower
             // 
-            this.lblNameAPower.Location = new System.Drawing.Point(19, 42);
+            this.lblNameAPower.Location = new System.Drawing.Point(19, 51);
             this.lblNameAPower.Name = "lblNameAPower";
             this.lblNameAPower.Size = new System.Drawing.Size(76, 18);
             this.lblNameAPower.TabIndex = 12;
@@ -2832,23 +2826,23 @@
             // 
             // lblNameTotalPower
             // 
-            this.lblNameTotalPower.Location = new System.Drawing.Point(19, 93);
+            this.lblNameTotalPower.Location = new System.Drawing.Point(19, 107);
             this.lblNameTotalPower.Name = "lblNameTotalPower";
             this.lblNameTotalPower.Size = new System.Drawing.Size(67, 18);
             this.lblNameTotalPower.TabIndex = 12;
             this.lblNameTotalPower.Text = "功率和(w)";
             // 
-            // labelControl17
+            // lblOther
             // 
-            this.labelControl17.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl17.Appearance.Options.UseBackColor = true;
-            this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.Location = new System.Drawing.Point(12, 12);
-            this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(92, 23);
-            this.labelControl17.TabIndex = 12;
-            this.labelControl17.Text = " 其他参数 ";
+            this.lblOther.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.lblOther.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOther.Appearance.Options.UseBackColor = true;
+            this.lblOther.Appearance.Options.UseFont = true;
+            this.lblOther.Location = new System.Drawing.Point(12, 12);
+            this.lblOther.Name = "lblOther";
+            this.lblOther.Size = new System.Drawing.Size(92, 23);
+            this.lblOther.TabIndex = 12;
+            this.lblOther.Text = " 其他参数 ";
             // 
             // tpIO
             // 
@@ -5445,7 +5439,7 @@
             // 
             // tsBuffer6Type_Setting
             // 
-            this.tsBuffer6Type_Setting.Location = new System.Drawing.Point(640, 243);
+            this.tsBuffer6Type_Setting.Location = new System.Drawing.Point(660, 243);
             this.tsBuffer6Type_Setting.Name = "tsBuffer6Type_Setting";
             this.tsBuffer6Type_Setting.Properties.OffText = "冷舟";
             this.tsBuffer6Type_Setting.Properties.OnText = "热舟";
@@ -5454,7 +5448,7 @@
             // 
             // tsBuffer6Lock_Setting
             // 
-            this.tsBuffer6Lock_Setting.Location = new System.Drawing.Point(374, 243);
+            this.tsBuffer6Lock_Setting.Location = new System.Drawing.Point(513, 243);
             this.tsBuffer6Lock_Setting.Name = "tsBuffer6Lock_Setting";
             this.tsBuffer6Lock_Setting.Properties.OffText = "启用";
             this.tsBuffer6Lock_Setting.Properties.OnText = "禁用";
@@ -5463,7 +5457,7 @@
             // 
             // tsBuffer5Type_Setting
             // 
-            this.tsBuffer5Type_Setting.Location = new System.Drawing.Point(640, 208);
+            this.tsBuffer5Type_Setting.Location = new System.Drawing.Point(660, 208);
             this.tsBuffer5Type_Setting.Name = "tsBuffer5Type_Setting";
             this.tsBuffer5Type_Setting.Properties.OffText = "冷舟";
             this.tsBuffer5Type_Setting.Properties.OnText = "热舟";
@@ -5472,7 +5466,7 @@
             // 
             // tsBuffer5Lock_Setting
             // 
-            this.tsBuffer5Lock_Setting.Location = new System.Drawing.Point(374, 208);
+            this.tsBuffer5Lock_Setting.Location = new System.Drawing.Point(513, 208);
             this.tsBuffer5Lock_Setting.Name = "tsBuffer5Lock_Setting";
             this.tsBuffer5Lock_Setting.Properties.OffText = "启用";
             this.tsBuffer5Lock_Setting.Properties.OnText = "禁用";
@@ -5481,7 +5475,7 @@
             // 
             // tsBuffer4Type_Setting
             // 
-            this.tsBuffer4Type_Setting.Location = new System.Drawing.Point(640, 173);
+            this.tsBuffer4Type_Setting.Location = new System.Drawing.Point(660, 173);
             this.tsBuffer4Type_Setting.Name = "tsBuffer4Type_Setting";
             this.tsBuffer4Type_Setting.Properties.OffText = "冷舟";
             this.tsBuffer4Type_Setting.Properties.OnText = "热舟";
@@ -5490,7 +5484,7 @@
             // 
             // tsBuffer4Lock_Setting
             // 
-            this.tsBuffer4Lock_Setting.Location = new System.Drawing.Point(374, 173);
+            this.tsBuffer4Lock_Setting.Location = new System.Drawing.Point(513, 173);
             this.tsBuffer4Lock_Setting.Name = "tsBuffer4Lock_Setting";
             this.tsBuffer4Lock_Setting.Properties.OffText = "启用";
             this.tsBuffer4Lock_Setting.Properties.OnText = "禁用";
@@ -5499,7 +5493,7 @@
             // 
             // tsBuffer3Type_Setting
             // 
-            this.tsBuffer3Type_Setting.Location = new System.Drawing.Point(640, 138);
+            this.tsBuffer3Type_Setting.Location = new System.Drawing.Point(660, 138);
             this.tsBuffer3Type_Setting.Name = "tsBuffer3Type_Setting";
             this.tsBuffer3Type_Setting.Properties.OffText = "冷舟";
             this.tsBuffer3Type_Setting.Properties.OnText = "热舟";
@@ -5508,7 +5502,7 @@
             // 
             // tsBuffer3Lock_Setting
             // 
-            this.tsBuffer3Lock_Setting.Location = new System.Drawing.Point(374, 138);
+            this.tsBuffer3Lock_Setting.Location = new System.Drawing.Point(513, 138);
             this.tsBuffer3Lock_Setting.Name = "tsBuffer3Lock_Setting";
             this.tsBuffer3Lock_Setting.Properties.OffText = "启用";
             this.tsBuffer3Lock_Setting.Properties.OnText = "禁用";
@@ -5517,7 +5511,7 @@
             // 
             // tsBuffer2Type_Setting
             // 
-            this.tsBuffer2Type_Setting.Location = new System.Drawing.Point(640, 103);
+            this.tsBuffer2Type_Setting.Location = new System.Drawing.Point(660, 103);
             this.tsBuffer2Type_Setting.Name = "tsBuffer2Type_Setting";
             this.tsBuffer2Type_Setting.Properties.OffText = "冷舟";
             this.tsBuffer2Type_Setting.Properties.OnText = "热舟";
@@ -5526,7 +5520,7 @@
             // 
             // tsBuffer2Lock_Setting
             // 
-            this.tsBuffer2Lock_Setting.Location = new System.Drawing.Point(374, 103);
+            this.tsBuffer2Lock_Setting.Location = new System.Drawing.Point(513, 103);
             this.tsBuffer2Lock_Setting.Name = "tsBuffer2Lock_Setting";
             this.tsBuffer2Lock_Setting.Properties.OffText = "启用";
             this.tsBuffer2Lock_Setting.Properties.OnText = "禁用";
@@ -5535,7 +5529,7 @@
             // 
             // tsBuffer1Type_Setting
             // 
-            this.tsBuffer1Type_Setting.Location = new System.Drawing.Point(640, 64);
+            this.tsBuffer1Type_Setting.Location = new System.Drawing.Point(660, 68);
             this.tsBuffer1Type_Setting.Name = "tsBuffer1Type_Setting";
             this.tsBuffer1Type_Setting.Properties.OffText = "冷舟";
             this.tsBuffer1Type_Setting.Properties.OnText = "热舟";
@@ -5544,7 +5538,7 @@
             // 
             // tsBuffer1Lock_Setting
             // 
-            this.tsBuffer1Lock_Setting.Location = new System.Drawing.Point(374, 64);
+            this.tsBuffer1Lock_Setting.Location = new System.Drawing.Point(513, 68);
             this.tsBuffer1Lock_Setting.MenuManager = this.xrDesignBarManager1;
             this.tsBuffer1Lock_Setting.Name = "tsBuffer1Lock_Setting";
             this.tsBuffer1Lock_Setting.Properties.OffText = "启用";
@@ -5554,14 +5548,14 @@
             // 
             // txtBuffer6CD_Setting
             // 
-            this.txtBuffer6CD_Setting.Location = new System.Drawing.Point(515, 245);
+            this.txtBuffer6CD_Setting.Location = new System.Drawing.Point(385, 245);
             this.txtBuffer6CD_Setting.Name = "txtBuffer6CD_Setting";
             this.txtBuffer6CD_Setting.Size = new System.Drawing.Size(100, 24);
             this.txtBuffer6CD_Setting.TabIndex = 4;
             // 
             // txtBuffer5CD_Setting
             // 
-            this.txtBuffer5CD_Setting.Location = new System.Drawing.Point(515, 210);
+            this.txtBuffer5CD_Setting.Location = new System.Drawing.Point(385, 210);
             this.txtBuffer5CD_Setting.Name = "txtBuffer5CD_Setting";
             this.txtBuffer5CD_Setting.Size = new System.Drawing.Size(100, 24);
             this.txtBuffer5CD_Setting.TabIndex = 4;
@@ -5575,7 +5569,7 @@
             // 
             // txtBuffer4CD_Setting
             // 
-            this.txtBuffer4CD_Setting.Location = new System.Drawing.Point(515, 175);
+            this.txtBuffer4CD_Setting.Location = new System.Drawing.Point(385, 175);
             this.txtBuffer4CD_Setting.Name = "txtBuffer4CD_Setting";
             this.txtBuffer4CD_Setting.Size = new System.Drawing.Size(100, 24);
             this.txtBuffer4CD_Setting.TabIndex = 4;
@@ -5589,7 +5583,7 @@
             // 
             // txtBuffer3CD_Setting
             // 
-            this.txtBuffer3CD_Setting.Location = new System.Drawing.Point(515, 140);
+            this.txtBuffer3CD_Setting.Location = new System.Drawing.Point(385, 140);
             this.txtBuffer3CD_Setting.Name = "txtBuffer3CD_Setting";
             this.txtBuffer3CD_Setting.Size = new System.Drawing.Size(100, 24);
             this.txtBuffer3CD_Setting.TabIndex = 4;
@@ -5603,7 +5597,7 @@
             // 
             // txtBuffer2CD_Setting
             // 
-            this.txtBuffer2CD_Setting.Location = new System.Drawing.Point(515, 105);
+            this.txtBuffer2CD_Setting.Location = new System.Drawing.Point(385, 105);
             this.txtBuffer2CD_Setting.Name = "txtBuffer2CD_Setting";
             this.txtBuffer2CD_Setting.Size = new System.Drawing.Size(100, 24);
             this.txtBuffer2CD_Setting.TabIndex = 4;
@@ -5617,21 +5611,21 @@
             // 
             // txtBuffer1CD_Setting
             // 
-            this.txtBuffer1CD_Setting.Location = new System.Drawing.Point(515, 69);
+            this.txtBuffer1CD_Setting.Location = new System.Drawing.Point(385, 70);
             this.txtBuffer1CD_Setting.Name = "txtBuffer1CD_Setting";
             this.txtBuffer1CD_Setting.Size = new System.Drawing.Size(100, 24);
             this.txtBuffer1CD_Setting.TabIndex = 4;
             // 
             // txtTube1CD_Setting
             // 
-            this.txtTube1CD_Setting.Location = new System.Drawing.Point(119, 69);
+            this.txtTube1CD_Setting.Location = new System.Drawing.Point(119, 70);
             this.txtTube1CD_Setting.Name = "txtTube1CD_Setting";
             this.txtTube1CD_Setting.Size = new System.Drawing.Size(100, 24);
             this.txtTube1CD_Setting.TabIndex = 4;
             // 
             // btnBuffer6_Clean_Setting
             // 
-            this.btnBuffer6_Clean_Setting.Location = new System.Drawing.Point(777, 242);
+            this.btnBuffer6_Clean_Setting.Location = new System.Drawing.Point(806, 242);
             this.btnBuffer6_Clean_Setting.Name = "btnBuffer6_Clean_Setting";
             this.btnBuffer6_Clean_Setting.Size = new System.Drawing.Size(86, 31);
             this.btnBuffer6_Clean_Setting.TabIndex = 3;
@@ -5639,7 +5633,7 @@
             // 
             // btnBuffer5_Clean_Setting
             // 
-            this.btnBuffer5_Clean_Setting.Location = new System.Drawing.Point(777, 207);
+            this.btnBuffer5_Clean_Setting.Location = new System.Drawing.Point(806, 207);
             this.btnBuffer5_Clean_Setting.Name = "btnBuffer5_Clean_Setting";
             this.btnBuffer5_Clean_Setting.Size = new System.Drawing.Size(86, 31);
             this.btnBuffer5_Clean_Setting.TabIndex = 3;
@@ -5647,7 +5641,7 @@
             // 
             // btnBuffer4_Clean_Setting
             // 
-            this.btnBuffer4_Clean_Setting.Location = new System.Drawing.Point(777, 172);
+            this.btnBuffer4_Clean_Setting.Location = new System.Drawing.Point(806, 172);
             this.btnBuffer4_Clean_Setting.Name = "btnBuffer4_Clean_Setting";
             this.btnBuffer4_Clean_Setting.Size = new System.Drawing.Size(86, 31);
             this.btnBuffer4_Clean_Setting.TabIndex = 3;
@@ -5655,7 +5649,7 @@
             // 
             // btnBuffer3_Clean_Setting
             // 
-            this.btnBuffer3_Clean_Setting.Location = new System.Drawing.Point(777, 137);
+            this.btnBuffer3_Clean_Setting.Location = new System.Drawing.Point(806, 137);
             this.btnBuffer3_Clean_Setting.Name = "btnBuffer3_Clean_Setting";
             this.btnBuffer3_Clean_Setting.Size = new System.Drawing.Size(86, 31);
             this.btnBuffer3_Clean_Setting.TabIndex = 3;
@@ -5663,7 +5657,7 @@
             // 
             // btnBuffer2_Clean_Setting
             // 
-            this.btnBuffer2_Clean_Setting.Location = new System.Drawing.Point(777, 102);
+            this.btnBuffer2_Clean_Setting.Location = new System.Drawing.Point(806, 102);
             this.btnBuffer2_Clean_Setting.Name = "btnBuffer2_Clean_Setting";
             this.btnBuffer2_Clean_Setting.Size = new System.Drawing.Size(86, 31);
             this.btnBuffer2_Clean_Setting.TabIndex = 3;
@@ -5671,7 +5665,7 @@
             // 
             // btnBuffer1_Clean_Setting
             // 
-            this.btnBuffer1_Clean_Setting.Location = new System.Drawing.Point(777, 62);
+            this.btnBuffer1_Clean_Setting.Location = new System.Drawing.Point(806, 67);
             this.btnBuffer1_Clean_Setting.Name = "btnBuffer1_Clean_Setting";
             this.btnBuffer1_Clean_Setting.Size = new System.Drawing.Size(86, 31);
             this.btnBuffer1_Clean_Setting.TabIndex = 3;
@@ -5681,7 +5675,7 @@
             // 
             this.lblNameBufferClean_Setting.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameBufferClean_Setting.Appearance.Options.UseFont = true;
-            this.lblNameBufferClean_Setting.Location = new System.Drawing.Point(800, 35);
+            this.lblNameBufferClean_Setting.Location = new System.Drawing.Point(829, 35);
             this.lblNameBufferClean_Setting.Name = "lblNameBufferClean_Setting";
             this.lblNameBufferClean_Setting.Size = new System.Drawing.Size(38, 23);
             this.lblNameBufferClean_Setting.TabIndex = 2;
@@ -5691,7 +5685,7 @@
             // 
             this.lblNameBufferCD_Setting.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameBufferCD_Setting.Appearance.Options.UseFont = true;
-            this.lblNameBufferCD_Setting.Location = new System.Drawing.Point(513, 35);
+            this.lblNameBufferCD_Setting.Location = new System.Drawing.Point(383, 35);
             this.lblNameBufferCD_Setting.Name = "lblNameBufferCD_Setting";
             this.lblNameBufferCD_Setting.Size = new System.Drawing.Size(98, 23);
             this.lblNameBufferCD_Setting.TabIndex = 2;
@@ -5701,7 +5695,7 @@
             // 
             this.lblNameBufferType_Setting.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameBufferType_Setting.Appearance.Options.UseFont = true;
-            this.lblNameBufferType_Setting.Location = new System.Drawing.Point(660, 35);
+            this.lblNameBufferType_Setting.Location = new System.Drawing.Point(680, 35);
             this.lblNameBufferType_Setting.Name = "lblNameBufferType_Setting";
             this.lblNameBufferType_Setting.Size = new System.Drawing.Size(38, 23);
             this.lblNameBufferType_Setting.TabIndex = 2;
@@ -5721,7 +5715,7 @@
             // 
             this.lblNameBufferLock_Setting.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameBufferLock_Setting.Appearance.Options.UseFont = true;
-            this.lblNameBufferLock_Setting.Location = new System.Drawing.Point(397, 35);
+            this.lblNameBufferLock_Setting.Location = new System.Drawing.Point(534, 35);
             this.lblNameBufferLock_Setting.Name = "lblNameBufferLock_Setting";
             this.lblNameBufferLock_Setting.Size = new System.Drawing.Size(38, 23);
             this.lblNameBufferLock_Setting.TabIndex = 2;
@@ -6790,23 +6784,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnlVertical)).EndInit();
             this.pnlVertical.ResumeLayout(false);
             this.pnlVertical.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtJogSpeed_V.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDropDown_V.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtJogSpeed_V.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlHorizon)).EndInit();
             this.pnlHorizon.ResumeLayout(false);
             this.pnlHorizon.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDropDown_H.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtJogSpeed_H.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDropDown_H.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTransport)).EndInit();
             this.pnlTransport.ResumeLayout(false);
             this.pnlTransport.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picDropDown_L.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtJogSpeed_T.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtJogSpeed_C.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDropDown_C.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnlOther)).EndInit();
             this.pnlOther.ResumeLayout(false);
             this.pnlOther.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl3)).EndInit();
             this.tpIO.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tcIO)).EndInit();
             this.tcIO.ResumeLayout(false);
@@ -6917,17 +6912,14 @@
         private System.Windows.Forms.Label lblTakeBoat;
         private System.Windows.Forms.Label lblSetBoat;
         private DevExpress.XtraEditors.LabelControl lblLight_UpperLeft;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl lblLight_UpperMid;
+        private DevExpress.XtraEditors.LabelControl lblLight_DownRight;
+        private DevExpress.XtraEditors.LabelControl lblLight_UpperRight;
+        private DevExpress.XtraEditors.LabelControl lblLight_DownMid;
+        private DevExpress.XtraEditors.LabelControl lblLight_DownLeft;
         private DevExpress.XtraTab.XtraTabPage tpIO;
         private DevExpress.XtraEditors.PanelControl pblBoatMove_Mannual;
         private DevExpress.XtraEditors.PanelControl pnlAxisControl;
-        private DevExpress.XtraEditors.SimpleButton btnNegative_Limit_H;
-        private DevExpress.XtraEditors.SimpleButton btnPositive_Limit_H;
-        private DevExpress.XtraEditors.SimpleButton btnOrigin_H;
         private DevExpress.XtraEditors.SimpleButton btnMoveUp_V;
         private DevExpress.XtraEditors.LabelControl lblJogSpeed_V;
         private DevExpress.XtraEditors.TextEdit txtJogSpeed_V;
@@ -6935,35 +6927,22 @@
         private DevExpress.XtraEditors.SimpleButton btnEnable_V;
         private DevExpress.XtraEditors.SimpleButton btnUnlock_V;
         private DevExpress.XtraEditors.PanelControl pnlTransport;
-        private DevExpress.XtraEditors.PictureEdit picDropDown_L;
-        private DevExpress.XtraEditors.LabelControl lblNameTorque_T;
-        private DevExpress.XtraEditors.LabelControl lblNameVelocity_T;
-        private DevExpress.XtraEditors.LabelControl lblNamePosition_T;
+        private DevExpress.XtraEditors.PictureEdit picDropDown_C;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.PanelControl pnlHorizon;
         private DevExpress.XtraEditors.PictureEdit picDropDown_H;
-        private DevExpress.XtraEditors.LabelControl lblOrigin_H;
-        private DevExpress.XtraEditors.LabelControl lblTorque_H;
-        private DevExpress.XtraEditors.LabelControl lblVelocity_H;
-        private DevExpress.XtraEditors.LabelControl lblPosition_H;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.PanelControl pnlVertical;
-        private DevExpress.XtraEditors.SimpleButton btnNegative_Limit_V;
         private DevExpress.XtraEditors.PictureEdit picDropDown_V;
-        private DevExpress.XtraEditors.SimpleButton btnPositive_Limit_V;
-        private DevExpress.XtraEditors.SimpleButton btnOrigin_V;
-        private DevExpress.XtraEditors.LabelControl lblNameOrigin_V;
         private DevExpress.XtraEditors.LabelControl lblNameMagnetic_Scale_V;
         private DevExpress.XtraEditors.LabelControl lblNameTorque_V;
         private DevExpress.XtraEditors.LabelControl lblNameVelocity_V;
         private DevExpress.XtraEditors.LabelControl lblNamePosition_V;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.SimpleButton btnMoveAhead_T;
-        private DevExpress.XtraEditors.LabelControl lblJogSpeed_T;
-        private DevExpress.XtraEditors.TextEdit txtJogSpeed_T;
-        private DevExpress.XtraEditors.SimpleButton btnMoveBack_T;
-        private DevExpress.XtraEditors.SimpleButton btnEnable_T;
-        private DevExpress.XtraEditors.SimpleButton btnUnlock_T;
+        private DevExpress.XtraEditors.SimpleButton btnMoveAhead_C;
+        private DevExpress.XtraEditors.SimpleButton btnMoveBack_C;
+        private DevExpress.XtraEditors.SimpleButton btnEnable_C;
+        private DevExpress.XtraEditors.SimpleButton btnUnlock_C;
         private DevExpress.XtraEditors.SimpleButton btnTube3Down;
         private DevExpress.XtraEditors.SimpleButton btnTube2Down;
         private DevExpress.XtraEditors.SimpleButton btnTube3Up;
@@ -6987,8 +6966,6 @@
         private DevExpress.XtraEditors.SimpleButton btnBuffer1Up;
         private DevExpress.XtraEditors.SimpleButton btnTube4Up;
         private DevExpress.XtraEditors.SimpleButton btnMoveIn_H;
-        private DevExpress.XtraEditors.LabelControl lblJogSpeed_H;
-        private DevExpress.XtraEditors.TextEdit txtJogSpeed_H;
         private DevExpress.XtraEditors.SimpleButton btnMoveOut_H;
         private DevExpress.XtraEditors.SimpleButton btnBuffer6WorkPos;
         private DevExpress.XtraEditors.SimpleButton btnBuffer5WorkPos;
@@ -7009,10 +6986,10 @@
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
         private DevExpress.XtraEditors.LabelControl lblBackGround1;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl lblConvery;
+        private DevExpress.XtraEditors.LabelControl lblHorizon;
         private DevExpress.XtraEditors.SeparatorControl separatorControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl lblVertical;
         private DevExpress.XtraEditors.SeparatorControl separatorControl1;
         private DevExpress.XtraEditors.PanelControl pnlDoorLock;
         private DevExpress.XtraEditors.PanelControl pnlManipulator;
@@ -7187,7 +7164,7 @@
         private DevExpress.XtraEditors.LabelControl lblNameTakeBoat_P;
         private DevExpress.XtraEditors.LabelControl lblName2HeartBeat;
         private DevExpress.XtraEditors.LabelControl lblName3Manipulator;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblDoor;
         private DevExpress.XtraTab.XtraTabPage tpSetting;
         private DevExpress.XtraTab.XtraTabControl tcSetting;
         private DevExpress.XtraTab.XtraTabPage tpInitialization;
@@ -7250,9 +7227,7 @@
         private DevExpress.XtraEditors.LabelControl lblNameTailAcid_A;
         private DevExpress.XtraEditors.LabelControl lblNameElectricity;
         private DevExpress.XtraEditors.LabelControl lblNameMouthAcid_A;
-        private DevExpress.XtraEditors.LabelControl labelControl17;
-        private DevExpress.XtraEditors.LabelControl lblNameTailAcid_S;
-        private DevExpress.XtraEditors.LabelControl lblNameMouthAcid_S;
+        private DevExpress.XtraEditors.LabelControl lblOther;
         private DevExpress.XtraReports.UserDesigner.XRDesignMdiController reportDesigner1;
         private DevExpress.XtraReports.UserDesigner.XRDesignBarManager xrDesignBarManager1;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
@@ -7362,22 +7337,12 @@
         private DevExpress.XtraEditors.LabelControl lblNameBPower;
         private DevExpress.XtraEditors.LabelControl lblNameAPower;
         private DevExpress.XtraEditors.LabelControl lblNameTotalPower;
-        private DevExpress.XtraEditors.LabelControl lblOrigin_V;
         private DevExpress.XtraEditors.LabelControl lblMagnetic_Scale_V;
         private DevExpress.XtraEditors.LabelControl lblTorque_V;
         private DevExpress.XtraEditors.LabelControl lblVelocity_V;
         private DevExpress.XtraEditors.LabelControl lblPosition_V;
-        private DevExpress.XtraEditors.LabelControl lblTorque_T;
-        private DevExpress.XtraEditors.LabelControl lblVelocity_T;
-        private DevExpress.XtraEditors.LabelControl lblPosition_T;
-        private DevExpress.XtraEditors.LabelControl lblNameOrigin_H;
-        private DevExpress.XtraEditors.LabelControl lblNameTorque_H;
-        private DevExpress.XtraEditors.LabelControl lblNameVelocity_H;
-        private DevExpress.XtraEditors.LabelControl lblNamePosition_H;
-        private DevExpress.XtraEditors.LabelControl lblTailAcid_S;
         private DevExpress.XtraEditors.LabelControl lblTailAcid_A;
         private DevExpress.XtraEditors.LabelControl lblElectricity;
-        private DevExpress.XtraEditors.LabelControl lblMouthAcid_S;
         private DevExpress.XtraEditors.LabelControl lblMouthAcid_A;
         private DevExpress.XtraEditors.LabelControl lblCPower;
         private DevExpress.XtraEditors.LabelControl lblBPower;
@@ -7476,5 +7441,34 @@
         private UserControl.Loader.ucIO2 ucIO2Output_2;
         private UserControl.Loader.ucIO2 ucIO2Output_4;
         private UserControl.Loader.ucIO2 ucIO2Output_1;
+        private DevExpress.XtraEditors.LabelControl lblLightOrigin_V;
+        private DevExpress.XtraEditors.LabelControl lblLightLimit_N_V;
+        private DevExpress.XtraEditors.LabelControl lblLightLimit_P_V;
+        private DevExpress.XtraEditors.LabelControl lblNameOrigin_V;
+        private DevExpress.XtraEditors.LabelControl lblNameLimit_N_V;
+        private DevExpress.XtraEditors.LabelControl lblNameLimit_P_V;
+        private DevExpress.XtraEditors.LabelControl lblTorque_H;
+        private DevExpress.XtraEditors.LabelControl lblVelocity_H;
+        private DevExpress.XtraEditors.LabelControl lblNameTorque_H;
+        private DevExpress.XtraEditors.LabelControl lblPosition_H;
+        private DevExpress.XtraEditors.LabelControl lblNameVelocity_H;
+        private DevExpress.XtraEditors.LabelControl lblNamePosition_H;
+        private DevExpress.XtraEditors.LabelControl lblLightOrigin_H;
+        private DevExpress.XtraEditors.LabelControl lblLightLimit_N_H;
+        private DevExpress.XtraEditors.LabelControl lblLightLimit_P_H;
+        private DevExpress.XtraEditors.LabelControl lblNameOrigin_H;
+        private DevExpress.XtraEditors.LabelControl lblNameLimit_N_H;
+        private DevExpress.XtraEditors.LabelControl lblNameLimit_P_H;
+        private DevExpress.XtraEditors.SeparatorControl separatorControl3;
+        private DevExpress.XtraEditors.LabelControl lblTorque_C;
+        private DevExpress.XtraEditors.LabelControl lblVelocity_C;
+        private DevExpress.XtraEditors.LabelControl lblPosition_C;
+        private DevExpress.XtraEditors.LabelControl lblNameVelocity_C;
+        private DevExpress.XtraEditors.LabelControl lblNameTorque_C;
+        private DevExpress.XtraEditors.LabelControl lblNamePosition_C;
+        private DevExpress.XtraEditors.TextEdit txtJogSpeed_H;
+        private DevExpress.XtraEditors.LabelControl lblJogSpeed_H;
+        private DevExpress.XtraEditors.TextEdit txtJogSpeed_C;
+        private DevExpress.XtraEditors.LabelControl lblJogSpeed_C;
     }
 }
