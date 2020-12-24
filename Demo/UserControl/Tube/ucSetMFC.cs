@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace Demo.UserControl.Tube
 {
-    public partial class ucRoad : DevExpress.XtraEditors.XtraUserControl
+    public partial class ucSetMFC : DevExpress.XtraEditors.XtraUserControl
     {
-        public ucRoad()
+        public ucSetMFC()
         {
             InitializeComponent();
         }

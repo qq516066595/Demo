@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace com.CommunicationDAL
+namespace com.DataBaseModels
 {
-    public class Class1
+   public class TubeMaint
     {
+         
+        private DoInfo mDoTO;
+        private DiInfo mDiTO;
+
+
     }
 }

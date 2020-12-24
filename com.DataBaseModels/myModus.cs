@@ -133,6 +133,7 @@ namespace com.DataBaseModels
             public bool bFlow_Check;     //流量监控
             public bool bPressure_Check;    //压力监控 
         }
+
         StTempZone[] StTempZoneArray = new StTempZone[7];
         public struct StTempZone
         {
