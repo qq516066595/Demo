@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton11 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.lblAxisActSpeed = new DevExpress.XtraEditors.LabelControl();
+            this.lblAxisActTorque = new DevExpress.XtraEditors.LabelControl();
+            this.lblAxisRulerPos = new DevExpress.XtraEditors.LabelControl();
+            this.lblAxisActPos = new DevExpress.XtraEditors.LabelControl();
+            this.btnHMI_ColseDoor = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAxisHMI_BoatOut = new DevExpress.XtraEditors.SimpleButton();
+            this.btnHMI_OpenDoor = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAxisHMI_BoatIn = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAxisProcessPos = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAxisLayBoatPos = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAxisTakeBoatPos = new DevExpress.XtraEditors.SimpleButton();
+            this.btnJog_B = new DevExpress.XtraEditors.SimpleButton();
+            this.btnJog_F = new DevExpress.XtraEditors.SimpleButton();
+            this.btnBoatPush_Unlock = new DevExpress.XtraEditors.SimpleButton();
+            this.btnHMI_PowerOff = new DevExpress.XtraEditors.SimpleButton();
+            this.lblAxisP_OT = new DevExpress.XtraEditors.LabelControl();
+            this.lblAxisHome_SW = new DevExpress.XtraEditors.LabelControl();
+            this.lblAxisN_OT = new DevExpress.XtraEditors.LabelControl();
+            this.txtHMI_JogSpeed = new System.Windows.Forms.TextBox();
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
@@ -55,7 +55,6 @@
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
@@ -65,219 +64,247 @@
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
+            this.btnPushpullDoorHMI_Out = new DevExpress.XtraEditors.SimpleButton();
+            this.btnPushpullDoorHMI_Back = new DevExpress.XtraEditors.SimpleButton();
+            this.btnColseDoorHMI_Out = new DevExpress.XtraEditors.SimpleButton();
+            this.btnColseDoorHMI_Back = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).BeginInit();
             this.SuspendLayout();
             // 
             // separatorControl2
             // 
-            this.separatorControl2.Location = new System.Drawing.Point(11, 211);
+            this.separatorControl2.Location = new System.Drawing.Point(16, 332);
+            this.separatorControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.separatorControl2.Name = "separatorControl2";
-            this.separatorControl2.Size = new System.Drawing.Size(327, 18);
+            this.separatorControl2.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.separatorControl2.Size = new System.Drawing.Size(467, 28);
             this.separatorControl2.TabIndex = 44;
             // 
-            // labelControl15
+            // lblAxisActSpeed
             // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl15.Location = new System.Drawing.Point(229, 34);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(55, 17);
-            this.labelControl15.TabIndex = 43;
-            this.labelControl15.Text = "0000.00";
+            this.lblAxisActSpeed.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAxisActSpeed.Appearance.Options.UseFont = true;
+            this.lblAxisActSpeed.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblAxisActSpeed.Location = new System.Drawing.Point(327, 53);
+            this.lblAxisActSpeed.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblAxisActSpeed.Name = "lblAxisActSpeed";
+            this.lblAxisActSpeed.Size = new System.Drawing.Size(79, 27);
+            this.lblAxisActSpeed.TabIndex = 43;
+            this.lblAxisActSpeed.Text = "0000.00";
             // 
-            // labelControl17
+            // lblAxisActTorque
             // 
-            this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl17.Location = new System.Drawing.Point(229, 62);
-            this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(55, 17);
-            this.labelControl17.TabIndex = 42;
-            this.labelControl17.Text = "0000.00";
+            this.lblAxisActTorque.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAxisActTorque.Appearance.Options.UseFont = true;
+            this.lblAxisActTorque.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblAxisActTorque.Location = new System.Drawing.Point(327, 97);
+            this.lblAxisActTorque.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblAxisActTorque.Name = "lblAxisActTorque";
+            this.lblAxisActTorque.Size = new System.Drawing.Size(79, 27);
+            this.lblAxisActTorque.TabIndex = 42;
+            this.lblAxisActTorque.Text = "0000.00";
             // 
-            // labelControl19
+            // lblAxisRulerPos
             // 
-            this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl19.Appearance.Options.UseFont = true;
-            this.labelControl19.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl19.Location = new System.Drawing.Point(66, 61);
-            this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(55, 17);
-            this.labelControl19.TabIndex = 41;
-            this.labelControl19.Text = "0000.00";
+            this.lblAxisRulerPos.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAxisRulerPos.Appearance.Options.UseFont = true;
+            this.lblAxisRulerPos.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblAxisRulerPos.Location = new System.Drawing.Point(94, 96);
+            this.lblAxisRulerPos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblAxisRulerPos.Name = "lblAxisRulerPos";
+            this.lblAxisRulerPos.Size = new System.Drawing.Size(79, 27);
+            this.lblAxisRulerPos.TabIndex = 41;
+            this.lblAxisRulerPos.Text = "0000.00";
             // 
-            // labelControl12
+            // lblAxisActPos
             // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl12.Location = new System.Drawing.Point(66, 35);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(55, 17);
-            this.labelControl12.TabIndex = 40;
-            this.labelControl12.Text = "0000.00";
+            this.lblAxisActPos.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAxisActPos.Appearance.Options.UseFont = true;
+            this.lblAxisActPos.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblAxisActPos.Location = new System.Drawing.Point(94, 55);
+            this.lblAxisActPos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblAxisActPos.Name = "lblAxisActPos";
+            this.lblAxisActPos.Size = new System.Drawing.Size(79, 27);
+            this.lblAxisActPos.TabIndex = 40;
+            this.lblAxisActPos.Text = "0000.00";
             // 
-            // simpleButton11
+            // btnHMI_ColseDoor
             // 
-            this.simpleButton11.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton11.Appearance.Options.UseFont = true;
-            this.simpleButton11.Location = new System.Drawing.Point(238, 315);
-            this.simpleButton11.Name = "simpleButton11";
-            this.simpleButton11.Size = new System.Drawing.Size(100, 35);
-            this.simpleButton11.TabIndex = 31;
-            this.simpleButton11.Text = "炉门关闭联动";
+            this.btnHMI_ColseDoor.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHMI_ColseDoor.Appearance.Options.UseFont = true;
+            this.btnHMI_ColseDoor.Location = new System.Drawing.Point(340, 495);
+            this.btnHMI_ColseDoor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHMI_ColseDoor.Name = "btnHMI_ColseDoor";
+            this.btnHMI_ColseDoor.Size = new System.Drawing.Size(143, 55);
+            this.btnHMI_ColseDoor.TabIndex = 31;
+            this.btnHMI_ColseDoor.Text = "炉门关闭联动";
             // 
-            // simpleButton6
+            // btnAxisHMI_BoatOut
             // 
-            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton6.Appearance.Options.UseFont = true;
-            this.simpleButton6.Location = new System.Drawing.Point(117, 315);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(100, 35);
-            this.simpleButton6.TabIndex = 32;
-            this.simpleButton6.Text = "手动出舟联动";
+            this.btnAxisHMI_BoatOut.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAxisHMI_BoatOut.Appearance.Options.UseFont = true;
+            this.btnAxisHMI_BoatOut.Location = new System.Drawing.Point(174, 495);
+            this.btnAxisHMI_BoatOut.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAxisHMI_BoatOut.Name = "btnAxisHMI_BoatOut";
+            this.btnAxisHMI_BoatOut.Size = new System.Drawing.Size(143, 55);
+            this.btnAxisHMI_BoatOut.TabIndex = 32;
+            this.btnAxisHMI_BoatOut.Text = "手动出舟联动";
             // 
-            // simpleButton10
+            // btnHMI_OpenDoor
             // 
-            this.simpleButton10.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton10.Appearance.Options.UseFont = true;
-            this.simpleButton10.Location = new System.Drawing.Point(238, 257);
-            this.simpleButton10.Name = "simpleButton10";
-            this.simpleButton10.Size = new System.Drawing.Size(100, 35);
-            this.simpleButton10.TabIndex = 34;
-            this.simpleButton10.Text = "炉门打开联动";
+            this.btnHMI_OpenDoor.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHMI_OpenDoor.Appearance.Options.UseFont = true;
+            this.btnHMI_OpenDoor.Location = new System.Drawing.Point(340, 404);
+            this.btnHMI_OpenDoor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHMI_OpenDoor.Name = "btnHMI_OpenDoor";
+            this.btnHMI_OpenDoor.Size = new System.Drawing.Size(143, 55);
+            this.btnHMI_OpenDoor.TabIndex = 34;
+            this.btnHMI_OpenDoor.Text = "炉门打开联动";
             // 
-            // simpleButton5
+            // btnAxisHMI_BoatIn
             // 
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.Location = new System.Drawing.Point(117, 257);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(100, 35);
-            this.simpleButton5.TabIndex = 33;
-            this.simpleButton5.Text = "手动进舟联动";
+            this.btnAxisHMI_BoatIn.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAxisHMI_BoatIn.Appearance.Options.UseFont = true;
+            this.btnAxisHMI_BoatIn.Location = new System.Drawing.Point(174, 404);
+            this.btnAxisHMI_BoatIn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAxisHMI_BoatIn.Name = "btnAxisHMI_BoatIn";
+            this.btnAxisHMI_BoatIn.Size = new System.Drawing.Size(143, 55);
+            this.btnAxisHMI_BoatIn.TabIndex = 33;
+            this.btnAxisHMI_BoatIn.Text = "手动进舟联动";
             // 
-            // simpleButton9
+            // btnAxisProcessPos
             // 
-            this.simpleButton9.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton9.Appearance.Options.UseFont = true;
-            this.simpleButton9.Location = new System.Drawing.Point(11, 323);
-            this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.Size = new System.Drawing.Size(84, 27);
-            this.simpleButton9.TabIndex = 39;
-            this.simpleButton9.Text = "工艺位";
+            this.btnAxisProcessPos.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAxisProcessPos.Appearance.Options.UseFont = true;
+            this.btnAxisProcessPos.Location = new System.Drawing.Point(9, 508);
+            this.btnAxisProcessPos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAxisProcessPos.Name = "btnAxisProcessPos";
+            this.btnAxisProcessPos.Size = new System.Drawing.Size(143, 42);
+            this.btnAxisProcessPos.TabIndex = 39;
+            this.btnAxisProcessPos.Text = "工艺位";
             // 
-            // simpleButton8
+            // btnAxisLayBoatPos
             // 
-            this.simpleButton8.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton8.Appearance.Options.UseFont = true;
-            this.simpleButton8.Location = new System.Drawing.Point(11, 290);
-            this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.Size = new System.Drawing.Size(84, 27);
-            this.simpleButton8.TabIndex = 35;
-            this.simpleButton8.Text = "放舟位";
+            this.btnAxisLayBoatPos.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAxisLayBoatPos.Appearance.Options.UseFont = true;
+            this.btnAxisLayBoatPos.Location = new System.Drawing.Point(9, 456);
+            this.btnAxisLayBoatPos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAxisLayBoatPos.Name = "btnAxisLayBoatPos";
+            this.btnAxisLayBoatPos.Size = new System.Drawing.Size(143, 42);
+            this.btnAxisLayBoatPos.TabIndex = 35;
+            this.btnAxisLayBoatPos.Text = "放舟位";
             // 
-            // simpleButton7
+            // btnAxisTakeBoatPos
             // 
-            this.simpleButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton7.Appearance.Options.UseFont = true;
-            this.simpleButton7.Location = new System.Drawing.Point(11, 257);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(84, 27);
-            this.simpleButton7.TabIndex = 36;
-            this.simpleButton7.Text = "取舟位";
+            this.btnAxisTakeBoatPos.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAxisTakeBoatPos.Appearance.Options.UseFont = true;
+            this.btnAxisTakeBoatPos.Location = new System.Drawing.Point(9, 404);
+            this.btnAxisTakeBoatPos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAxisTakeBoatPos.Name = "btnAxisTakeBoatPos";
+            this.btnAxisTakeBoatPos.Size = new System.Drawing.Size(143, 42);
+            this.btnAxisTakeBoatPos.TabIndex = 36;
+            this.btnAxisTakeBoatPos.Text = "取舟位";
             // 
-            // simpleButton4
+            // btnJog_B
             // 
-            this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton4.Appearance.Options.UseFont = true;
-            this.simpleButton4.Location = new System.Drawing.Point(238, 179);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(100, 27);
-            this.simpleButton4.TabIndex = 37;
-            this.simpleButton4.Text = "后退";
+            this.btnJog_B.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJog_B.Appearance.Options.UseFont = true;
+            this.btnJog_B.Location = new System.Drawing.Point(340, 285);
+            this.btnJog_B.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnJog_B.Name = "btnJog_B";
+            this.btnJog_B.Size = new System.Drawing.Size(143, 42);
+            this.btnJog_B.TabIndex = 37;
+            this.btnJog_B.Text = "后退";
             // 
-            // simpleButton3
+            // btnJog_F
             // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.Location = new System.Drawing.Point(238, 145);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(100, 27);
-            this.simpleButton3.TabIndex = 38;
-            this.simpleButton3.Text = "前进";
+            this.btnJog_F.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJog_F.Appearance.Options.UseFont = true;
+            this.btnJog_F.Location = new System.Drawing.Point(339, 234);
+            this.btnJog_F.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnJog_F.Name = "btnJog_F";
+            this.btnJog_F.Size = new System.Drawing.Size(143, 42);
+            this.btnJog_F.TabIndex = 38;
+            this.btnJog_F.Text = "前进";
             // 
-            // simpleButton2
+            // btnBoatPush_Unlock
             // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Location = new System.Drawing.Point(117, 170);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(100, 35);
-            this.simpleButton2.TabIndex = 30;
-            this.simpleButton2.Text = "解除联锁";
+            this.btnBoatPush_Unlock.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBoatPush_Unlock.Appearance.Options.UseFont = true;
+            this.btnBoatPush_Unlock.Location = new System.Drawing.Point(174, 234);
+            this.btnBoatPush_Unlock.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBoatPush_Unlock.Name = "btnBoatPush_Unlock";
+            this.btnBoatPush_Unlock.Size = new System.Drawing.Size(143, 42);
+            this.btnBoatPush_Unlock.TabIndex = 30;
+            this.btnBoatPush_Unlock.Text = "解除联锁";
             // 
-            // simpleButton1
+            // btnHMI_PowerOff
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(117, 122);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(100, 35);
-            this.simpleButton1.TabIndex = 29;
-            this.simpleButton1.Text = "使能";
+            this.btnHMI_PowerOff.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHMI_PowerOff.Appearance.Options.UseFont = true;
+            this.btnHMI_PowerOff.Location = new System.Drawing.Point(9, 234);
+            this.btnHMI_PowerOff.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHMI_PowerOff.Name = "btnHMI_PowerOff";
+            this.btnHMI_PowerOff.Size = new System.Drawing.Size(143, 42);
+            this.btnHMI_PowerOff.TabIndex = 29;
+            this.btnHMI_PowerOff.Text = "使能";
             // 
-            // labelControl10
+            // lblAxisP_OT
             // 
-            this.labelControl10.Appearance.BackColor = System.Drawing.Color.White;
-            this.labelControl10.Appearance.Options.UseBackColor = true;
-            this.labelControl10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl10.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.labelControl10.Location = new System.Drawing.Point(75, 186);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(20, 20);
-            this.labelControl10.TabIndex = 28;
+            this.lblAxisP_OT.Appearance.BackColor = System.Drawing.Color.White;
+            this.lblAxisP_OT.Appearance.Options.UseBackColor = true;
+            this.lblAxisP_OT.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblAxisP_OT.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.lblAxisP_OT.Location = new System.Drawing.Point(431, 192);
+            this.lblAxisP_OT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblAxisP_OT.Name = "lblAxisP_OT";
+            this.lblAxisP_OT.Size = new System.Drawing.Size(29, 31);
+            this.lblAxisP_OT.TabIndex = 28;
             // 
-            // labelControl9
+            // lblAxisHome_SW
             // 
-            this.labelControl9.Appearance.BackColor = System.Drawing.Color.White;
-            this.labelControl9.Appearance.Options.UseBackColor = true;
-            this.labelControl9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.labelControl9.Location = new System.Drawing.Point(75, 154);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(20, 20);
-            this.labelControl9.TabIndex = 27;
+            this.lblAxisHome_SW.Appearance.BackColor = System.Drawing.Color.White;
+            this.lblAxisHome_SW.Appearance.Options.UseBackColor = true;
+            this.lblAxisHome_SW.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblAxisHome_SW.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.lblAxisHome_SW.Location = new System.Drawing.Point(248, 191);
+            this.lblAxisHome_SW.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblAxisHome_SW.Name = "lblAxisHome_SW";
+            this.lblAxisHome_SW.Size = new System.Drawing.Size(29, 31);
+            this.lblAxisHome_SW.TabIndex = 27;
             // 
-            // labelControl8
+            // lblAxisN_OT
             // 
-            this.labelControl8.Appearance.BackColor = System.Drawing.Color.White;
-            this.labelControl8.Appearance.Options.UseBackColor = true;
-            this.labelControl8.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl8.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.labelControl8.Location = new System.Drawing.Point(75, 122);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(20, 20);
-            this.labelControl8.TabIndex = 26;
+            this.lblAxisN_OT.Appearance.BackColor = System.Drawing.Color.White;
+            this.lblAxisN_OT.Appearance.Options.UseBackColor = true;
+            this.lblAxisN_OT.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblAxisN_OT.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.lblAxisN_OT.Location = new System.Drawing.Point(107, 192);
+            this.lblAxisN_OT.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblAxisN_OT.Name = "lblAxisN_OT";
+            this.lblAxisN_OT.Size = new System.Drawing.Size(29, 31);
+            this.lblAxisN_OT.TabIndex = 26;
             // 
-            // textBox5
+            // txtHMI_JogSpeed
             // 
-            this.textBox5.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(260, 116);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(43, 24);
-            this.textBox5.TabIndex = 25;
-            this.textBox5.Text = "5";
+            this.txtHMI_JogSpeed.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHMI_JogSpeed.Location = new System.Drawing.Point(174, 291);
+            this.txtHMI_JogSpeed.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtHMI_JogSpeed.Name = "txtHMI_JogSpeed";
+            this.txtHMI_JogSpeed.Size = new System.Drawing.Size(143, 33);
+            this.txtHMI_JogSpeed.TabIndex = 25;
+            this.txtHMI_JogSpeed.Text = "5";
             // 
             // labelControl23
             // 
             this.labelControl23.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl23.Appearance.Options.UseFont = true;
-            this.labelControl23.Location = new System.Drawing.Point(238, 234);
+            this.labelControl23.Location = new System.Drawing.Point(340, 368);
+            this.labelControl23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl23.Name = "labelControl23";
-            this.labelControl23.Size = new System.Drawing.Size(30, 17);
+            this.labelControl23.Size = new System.Drawing.Size(44, 25);
             this.labelControl23.TabIndex = 23;
             this.labelControl23.Text = "炉门";
             // 
@@ -285,9 +312,10 @@
             // 
             this.labelControl22.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl22.Appearance.Options.UseFont = true;
-            this.labelControl22.Location = new System.Drawing.Point(118, 234);
+            this.labelControl22.Location = new System.Drawing.Point(169, 368);
+            this.labelControl22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl22.Name = "labelControl22";
-            this.labelControl22.Size = new System.Drawing.Size(30, 17);
+            this.labelControl22.Size = new System.Drawing.Size(44, 25);
             this.labelControl22.TabIndex = 22;
             this.labelControl22.Text = "联动";
             // 
@@ -295,9 +323,10 @@
             // 
             this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl21.Appearance.Options.UseFont = true;
-            this.labelControl21.Location = new System.Drawing.Point(11, 234);
+            this.labelControl21.Location = new System.Drawing.Point(16, 368);
+            this.labelControl21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(30, 17);
+            this.labelControl21.Size = new System.Drawing.Size(44, 25);
             this.labelControl21.TabIndex = 21;
             this.labelControl21.Text = "定位";
             // 
@@ -305,9 +334,10 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(27, 187);
+            this.labelControl7.Location = new System.Drawing.Point(363, 194);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(42, 17);
+            this.labelControl7.Size = new System.Drawing.Size(63, 25);
             this.labelControl7.TabIndex = 20;
             this.labelControl7.Text = "正极限";
             // 
@@ -315,9 +345,10 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(41, 155);
+            this.labelControl6.Location = new System.Drawing.Point(200, 193);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(28, 17);
+            this.labelControl6.Size = new System.Drawing.Size(42, 25);
             this.labelControl6.TabIndex = 19;
             this.labelControl6.Text = "原点";
             // 
@@ -325,9 +356,10 @@
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(27, 123);
+            this.labelControl5.Location = new System.Drawing.Point(39, 193);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(42, 17);
+            this.labelControl5.Size = new System.Drawing.Size(63, 25);
             this.labelControl5.TabIndex = 18;
             this.labelControl5.Text = "负极限";
             // 
@@ -335,39 +367,32 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(18, 62);
+            this.labelControl4.Location = new System.Drawing.Point(26, 97);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(42, 17);
+            this.labelControl4.Size = new System.Drawing.Size(63, 25);
             this.labelControl4.TabIndex = 24;
             this.labelControl4.Text = "磁尺：";
-            // 
-            // labelControl20
-            // 
-            this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl20.Appearance.Options.UseFont = true;
-            this.labelControl20.Location = new System.Drawing.Point(309, 123);
-            this.labelControl20.Name = "labelControl20";
-            this.labelControl20.Size = new System.Drawing.Size(35, 17);
-            this.labelControl20.TabIndex = 17;
-            this.labelControl20.Text = "mm/s";
             // 
             // labelControl11
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(221, 123);
+            this.labelControl11.Location = new System.Drawing.Point(16, 296);
+            this.labelControl11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(42, 17);
+            this.labelControl11.Size = new System.Drawing.Size(132, 25);
             this.labelControl11.TabIndex = 16;
-            this.labelControl11.Text = "点动：";
+            this.labelControl11.Text = "点动(mm/s)：";
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(181, 62);
+            this.labelControl3.Location = new System.Drawing.Point(259, 97);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(42, 17);
+            this.labelControl3.Size = new System.Drawing.Size(63, 25);
             this.labelControl3.TabIndex = 15;
             this.labelControl3.Text = "扭矩：";
             // 
@@ -375,9 +400,10 @@
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Location = new System.Drawing.Point(290, 34);
+            this.labelControl14.Location = new System.Drawing.Point(414, 53);
+            this.labelControl14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(35, 17);
+            this.labelControl14.Size = new System.Drawing.Size(53, 25);
             this.labelControl14.TabIndex = 10;
             this.labelControl14.Text = "mm/s";
             // 
@@ -385,9 +411,10 @@
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Location = new System.Drawing.Point(290, 62);
+            this.labelControl16.Location = new System.Drawing.Point(414, 97);
+            this.labelControl16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(26, 17);
+            this.labelControl16.Size = new System.Drawing.Size(39, 25);
             this.labelControl16.TabIndex = 11;
             this.labelControl16.Text = "N·m";
             // 
@@ -395,9 +422,10 @@
             // 
             this.labelControl18.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl18.Appearance.Options.UseFont = true;
-            this.labelControl18.Location = new System.Drawing.Point(127, 61);
+            this.labelControl18.Location = new System.Drawing.Point(181, 96);
+            this.labelControl18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(24, 17);
+            this.labelControl18.Size = new System.Drawing.Size(36, 25);
             this.labelControl18.TabIndex = 13;
             this.labelControl18.Text = "mm";
             // 
@@ -405,9 +433,10 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(181, 34);
+            this.labelControl2.Location = new System.Drawing.Point(259, 53);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(42, 17);
+            this.labelControl2.Size = new System.Drawing.Size(63, 25);
             this.labelControl2.TabIndex = 14;
             this.labelControl2.Text = "速度：";
             // 
@@ -415,9 +444,10 @@
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(127, 35);
+            this.labelControl13.Location = new System.Drawing.Point(181, 55);
+            this.labelControl13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(24, 17);
+            this.labelControl13.Size = new System.Drawing.Size(36, 25);
             this.labelControl13.TabIndex = 12;
             this.labelControl13.Text = "mm";
             // 
@@ -425,9 +455,10 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(18, 35);
+            this.labelControl1.Location = new System.Drawing.Point(26, 55);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(42, 17);
+            this.labelControl1.Size = new System.Drawing.Size(63, 25);
             this.labelControl1.TabIndex = 9;
             this.labelControl1.Text = "位置：";
             // 
@@ -435,45 +466,117 @@
             // 
             this.labelControl24.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl24.Appearance.Options.UseFont = true;
-            this.labelControl24.Location = new System.Drawing.Point(11, 3);
+            this.labelControl24.Location = new System.Drawing.Point(16, 5);
+            this.labelControl24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl24.Name = "labelControl24";
-            this.labelControl24.Size = new System.Drawing.Size(92, 17);
+            this.labelControl24.Size = new System.Drawing.Size(136, 25);
             this.labelControl24.TabIndex = 21;
             this.labelControl24.Text = "-- 轴控单元 --";
             // 
+            // labelControl20
+            // 
+            this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl20.Appearance.Options.UseFont = true;
+            this.labelControl20.Location = new System.Drawing.Point(26, 560);
+            this.labelControl20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelControl20.Name = "labelControl20";
+            this.labelControl20.Size = new System.Drawing.Size(88, 25);
+            this.labelControl20.TabIndex = 21;
+            this.labelControl20.Text = "推拉气缸";
+            // 
+            // labelControl25
+            // 
+            this.labelControl25.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl25.Appearance.Options.UseFont = true;
+            this.labelControl25.Location = new System.Drawing.Point(327, 560);
+            this.labelControl25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelControl25.Name = "labelControl25";
+            this.labelControl25.Size = new System.Drawing.Size(88, 25);
+            this.labelControl25.TabIndex = 21;
+            this.labelControl25.Text = "关闭气缸";
+            // 
+            // btnPushpullDoorHMI_Out
+            // 
+            this.btnPushpullDoorHMI_Out.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPushpullDoorHMI_Out.Appearance.Options.UseFont = true;
+            this.btnPushpullDoorHMI_Out.Location = new System.Drawing.Point(9, 595);
+            this.btnPushpullDoorHMI_Out.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPushpullDoorHMI_Out.Name = "btnPushpullDoorHMI_Out";
+            this.btnPushpullDoorHMI_Out.Size = new System.Drawing.Size(143, 42);
+            this.btnPushpullDoorHMI_Out.TabIndex = 38;
+            this.btnPushpullDoorHMI_Out.Text = "关门:伸出";
+            // 
+            // btnPushpullDoorHMI_Back
+            // 
+            this.btnPushpullDoorHMI_Back.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPushpullDoorHMI_Back.Appearance.Options.UseFont = true;
+            this.btnPushpullDoorHMI_Back.Location = new System.Drawing.Point(9, 646);
+            this.btnPushpullDoorHMI_Back.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPushpullDoorHMI_Back.Name = "btnPushpullDoorHMI_Back";
+            this.btnPushpullDoorHMI_Back.Size = new System.Drawing.Size(143, 42);
+            this.btnPushpullDoorHMI_Back.TabIndex = 37;
+            this.btnPushpullDoorHMI_Back.Text = "开门:缩回";
+            // 
+            // btnColseDoorHMI_Out
+            // 
+            this.btnColseDoorHMI_Out.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColseDoorHMI_Out.Appearance.Options.UseFont = true;
+            this.btnColseDoorHMI_Out.Location = new System.Drawing.Point(339, 595);
+            this.btnColseDoorHMI_Out.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnColseDoorHMI_Out.Name = "btnColseDoorHMI_Out";
+            this.btnColseDoorHMI_Out.Size = new System.Drawing.Size(143, 42);
+            this.btnColseDoorHMI_Out.TabIndex = 38;
+            this.btnColseDoorHMI_Out.Text = "开门:伸出";
+            // 
+            // btnColseDoorHMI_Back
+            // 
+            this.btnColseDoorHMI_Back.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColseDoorHMI_Back.Appearance.Options.UseFont = true;
+            this.btnColseDoorHMI_Back.Location = new System.Drawing.Point(340, 646);
+            this.btnColseDoorHMI_Back.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnColseDoorHMI_Back.Name = "btnColseDoorHMI_Back";
+            this.btnColseDoorHMI_Back.Size = new System.Drawing.Size(143, 42);
+            this.btnColseDoorHMI_Back.TabIndex = 37;
+            this.btnColseDoorHMI_Back.Text = "关门:缩回";
+            // 
             // ucAxisX
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.separatorControl2);
-            this.Controls.Add(this.labelControl15);
-            this.Controls.Add(this.labelControl17);
-            this.Controls.Add(this.labelControl19);
-            this.Controls.Add(this.labelControl12);
-            this.Controls.Add(this.simpleButton11);
-            this.Controls.Add(this.simpleButton6);
-            this.Controls.Add(this.simpleButton10);
-            this.Controls.Add(this.simpleButton5);
-            this.Controls.Add(this.simpleButton9);
-            this.Controls.Add(this.simpleButton8);
-            this.Controls.Add(this.simpleButton7);
-            this.Controls.Add(this.simpleButton4);
-            this.Controls.Add(this.simpleButton3);
-            this.Controls.Add(this.simpleButton2);
-            this.Controls.Add(this.simpleButton1);
-            this.Controls.Add(this.labelControl10);
-            this.Controls.Add(this.labelControl9);
-            this.Controls.Add(this.labelControl8);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.lblAxisActSpeed);
+            this.Controls.Add(this.lblAxisActTorque);
+            this.Controls.Add(this.lblAxisRulerPos);
+            this.Controls.Add(this.lblAxisActPos);
+            this.Controls.Add(this.btnHMI_ColseDoor);
+            this.Controls.Add(this.btnAxisHMI_BoatOut);
+            this.Controls.Add(this.btnHMI_OpenDoor);
+            this.Controls.Add(this.btnAxisHMI_BoatIn);
+            this.Controls.Add(this.btnAxisProcessPos);
+            this.Controls.Add(this.btnAxisLayBoatPos);
+            this.Controls.Add(this.btnAxisTakeBoatPos);
+            this.Controls.Add(this.btnColseDoorHMI_Back);
+            this.Controls.Add(this.btnPushpullDoorHMI_Back);
+            this.Controls.Add(this.btnColseDoorHMI_Out);
+            this.Controls.Add(this.btnPushpullDoorHMI_Out);
+            this.Controls.Add(this.btnJog_B);
+            this.Controls.Add(this.btnJog_F);
+            this.Controls.Add(this.btnBoatPush_Unlock);
+            this.Controls.Add(this.btnHMI_PowerOff);
+            this.Controls.Add(this.lblAxisP_OT);
+            this.Controls.Add(this.lblAxisHome_SW);
+            this.Controls.Add(this.lblAxisN_OT);
+            this.Controls.Add(this.txtHMI_JogSpeed);
             this.Controls.Add(this.labelControl23);
             this.Controls.Add(this.labelControl22);
             this.Controls.Add(this.labelControl24);
+            this.Controls.Add(this.labelControl25);
+            this.Controls.Add(this.labelControl20);
             this.Controls.Add(this.labelControl21);
             this.Controls.Add(this.labelControl7);
             this.Controls.Add(this.labelControl6);
             this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.labelControl20);
             this.Controls.Add(this.labelControl11);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl14);
@@ -482,8 +585,9 @@
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl13);
             this.Controls.Add(this.labelControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ucAxisX";
-            this.Size = new System.Drawing.Size(349, 352);
+            this.Size = new System.Drawing.Size(499, 694);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -492,25 +596,25 @@
 
         #endregion
         private DevExpress.XtraEditors.SeparatorControl separatorControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.LabelControl labelControl17;
-        private DevExpress.XtraEditors.LabelControl labelControl19;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.SimpleButton simpleButton11;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton10;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton8;
-        private DevExpress.XtraEditors.SimpleButton simpleButton7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private System.Windows.Forms.TextBox textBox5;
+        private DevExpress.XtraEditors.LabelControl lblAxisActSpeed;
+        private DevExpress.XtraEditors.LabelControl lblAxisActTorque;
+        private DevExpress.XtraEditors.LabelControl lblAxisRulerPos;
+        private DevExpress.XtraEditors.LabelControl lblAxisActPos;
+        private DevExpress.XtraEditors.SimpleButton btnHMI_ColseDoor;
+        private DevExpress.XtraEditors.SimpleButton btnAxisHMI_BoatOut;
+        private DevExpress.XtraEditors.SimpleButton btnHMI_OpenDoor;
+        private DevExpress.XtraEditors.SimpleButton btnAxisHMI_BoatIn;
+        private DevExpress.XtraEditors.SimpleButton btnAxisProcessPos;
+        private DevExpress.XtraEditors.SimpleButton btnAxisLayBoatPos;
+        private DevExpress.XtraEditors.SimpleButton btnAxisTakeBoatPos;
+        private DevExpress.XtraEditors.SimpleButton btnJog_B;
+        private DevExpress.XtraEditors.SimpleButton btnJog_F;
+        private DevExpress.XtraEditors.SimpleButton btnBoatPush_Unlock;
+        private DevExpress.XtraEditors.SimpleButton btnHMI_PowerOff;
+        private DevExpress.XtraEditors.LabelControl lblAxisP_OT;
+        private DevExpress.XtraEditors.LabelControl lblAxisHome_SW;
+        private DevExpress.XtraEditors.LabelControl lblAxisN_OT;
+        private System.Windows.Forms.TextBox txtHMI_JogSpeed;
         private DevExpress.XtraEditors.LabelControl labelControl23;
         private DevExpress.XtraEditors.LabelControl labelControl22;
         private DevExpress.XtraEditors.LabelControl labelControl21;
@@ -518,7 +622,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl20;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl14;
@@ -528,5 +631,11 @@
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl24;
+        private DevExpress.XtraEditors.LabelControl labelControl20;
+        private DevExpress.XtraEditors.LabelControl labelControl25;
+        private DevExpress.XtraEditors.SimpleButton btnPushpullDoorHMI_Out;
+        private DevExpress.XtraEditors.SimpleButton btnPushpullDoorHMI_Back;
+        private DevExpress.XtraEditors.SimpleButton btnColseDoorHMI_Out;
+        private DevExpress.XtraEditors.SimpleButton btnColseDoorHMI_Back;
     }
 }

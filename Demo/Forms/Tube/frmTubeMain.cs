@@ -36,7 +36,8 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnShowMVAndSP_Click(object sender, EventArgs e)
         {
-            Fold(165,115,"上下",pcTempZone,btnShowMVAndSP);
+            Fold(165, 115, "上下", pcTempZone, btnShowMVAndSP);
+            MessageBox.Show(this.Tag.ToString());
         }
         /// <summary>
         /// 主界面--轴控单元操作按钮显示与隐藏
@@ -45,7 +46,7 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnShowAxis_Click(object sender, EventArgs e)
         {
-            Fold(357, 115, "上下", pcAxis, btnShowAxis);
+            Fold(465, 115, "上下", pcAxis, btnShowAxis);
         }
         #endregion
 
@@ -57,7 +58,7 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnShowInit_Click(object sender, EventArgs e)
         {
-           Fold(290, 25, "上下", pcInit, btnShowInit);
+            Fold(290, 25, "上下", pcInit, btnShowInit);
         }
         /// <summary>
         /// 设置--气路系统
@@ -66,7 +67,7 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnShowSetMFC_Click(object sender, EventArgs e)
         {
-          Fold(445, 25, "上下", pcSetMFC, btnShowSetMFC);
+            Fold(445, 25, "上下", pcSetMFC, btnShowSetMFC);
         }
         /// <summary>
         /// 设置--真空系统和运动控制
@@ -75,16 +76,7 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnSetAxisPara_Click(object sender, EventArgs e)
         {
-           Fold(360, 25, "上下", pcSetAxisPara, btnSetAxisPara);
-        }
-        /// <summary>
-        /// 设置-气缸参数和补偿参数
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnSetCylinderAnOther_Click(object sender, EventArgs e)
-        {
-            Fold(270, 25, "上下", pcSetCylinderAnOther, btnSetCylinderAnOther);
+            Fold(360, 25, "上下", pcSetAxisPara, btnSetAxisPara);
         }
         #endregion
 
@@ -95,7 +87,7 @@ namespace Demo.Forms.Tube
         /// <param name="showHight">展开高度</param>
         /// <param name="hideHight">收缩高度</param>
         /// <param name="direction">方向（上下 或 左右）</param>
-        private void Fold(int showHight,int hideHight,string direction,PanelControl pannelName,SimpleButton btnName)
+        private void Fold(int showHight, int hideHight, string direction, PanelControl pannelName, SimpleButton btnName)
         {
             if (direction == "上下")
             {
@@ -126,5 +118,44 @@ namespace Demo.Forms.Tube
         }
 
         #endregion
+
+        #region 获取炉管号
+        /// <summary>
+        /// 将本窗体的tag值传递出去
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void frmTubeMain_Load(object sender, EventArgs e)
+        {
+            int a = (Int32)this.Tag;
+            if (a == 1)//炉管一
+                gettag(1);
+            else if (a == 2)//炉管二
+                gettag(2);
+            else if (a == 3)//炉管三
+                gettag(3);
+            else if (a == 4)//炉管四
+                gettag(4);
+            else if (a == 5)//炉管五
+                gettag(5);
+        }
+
+        public void gettag(int index)
+        {
+           
+        }
+        #endregion
+
+        /// <summary>
+        /// 开启加热弹窗
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void lblHeating_Click(object sender, EventArgs e)
+        {
+            frmHeating frmheat = new frmHeating();
+            frmheat.frmIndex = (int)this.Tag;
+            frmheat.ShowDialog();
+        }
     }
 }
