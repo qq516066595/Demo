@@ -37,48 +37,8 @@
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo5 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo6 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.FieldInfo fieldInfo7 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo8 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo9 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo10 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo11 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo12 = new DevExpress.DataAccess.Excel.FieldInfo();
             DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings1 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
             DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions1 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings1);
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo13 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo14 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo15 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo16 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo17 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo18 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo19 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings2 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
-            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions2 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings2);
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo20 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo21 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo22 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo23 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo24 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo25 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo26 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings3 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
-            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions3 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings3);
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo27 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo28 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo29 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo30 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo31 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo32 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo33 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo34 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo35 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings4 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
-            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions4 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings4);
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo36 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo37 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo38 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.FieldInfo fieldInfo39 = new DevExpress.DataAccess.Excel.FieldInfo();
-            DevExpress.DataAccess.Excel.ExcelWorksheetSettings excelWorksheetSettings5 = new DevExpress.DataAccess.Excel.ExcelWorksheetSettings();
-            DevExpress.DataAccess.Excel.ExcelSourceOptions excelSourceOptions5 = new DevExpress.DataAccess.Excel.ExcelSourceOptions(excelWorksheetSettings5);
             DevExpress.XtraReports.UserDesigner.XRDesignPanelListener xrDesignPanelListener1 = new DevExpress.XtraReports.UserDesigner.XRDesignPanelListener();
             this.xrDesignBarManager1 = new DevExpress.XtraReports.UserDesigner.XRDesignBarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
@@ -573,7 +533,6 @@
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnPreCautionSetting = new DevExpress.XtraEditors.SimpleButton();
             this.gcBoatManage = new DevExpress.XtraGrid.GridControl();
-            this.excelDataSource1 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.col舟管理 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.col序号 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -591,7 +550,6 @@
             this.tcAlm = new DevExpress.XtraTab.XtraTabControl();
             this.tpCurrentAlarm = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.excelDataSource2 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.col操作时间 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.col用户 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -625,7 +583,6 @@
             this.lblEndTime_Mnl = new DevExpress.XtraEditors.LabelControl();
             this.lblStartTime_Mnl = new DevExpress.XtraEditors.LabelControl();
             this.gridControl3 = new DevExpress.XtraGrid.GridControl();
-            this.excelDataSource4 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.col时间 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.col用户2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -638,7 +595,6 @@
             this.lblEndTime_Run = new DevExpress.XtraEditors.LabelControl();
             this.lblStartTime_Run = new DevExpress.XtraEditors.LabelControl();
             this.gridControl4 = new DevExpress.XtraGrid.GridControl();
-            this.excelDataSource5 = new DevExpress.DataAccess.Excel.ExcelDataSource();
             this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.col时间1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.col用户3 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -5896,7 +5852,6 @@
             // 
             // gcBoatManage
             // 
-            this.gcBoatManage.DataSource = this.excelDataSource1;
             this.gcBoatManage.Location = new System.Drawing.Point(9, 55);
             this.gcBoatManage.MainView = this.gridView1;
             this.gcBoatManage.MenuManager = this.xrDesignBarManager1;
@@ -5905,53 +5860,6 @@
             this.gcBoatManage.TabIndex = 0;
             this.gcBoatManage.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            // 
-            // excelDataSource1
-            // 
-            this.excelDataSource1.FileName = "E:\\工作\\项目\\02VS\\12.14\\Demo\\Demo\\Resources\\舟管理.xlsx";
-            this.excelDataSource1.Name = "excelDataSource1";
-            this.excelDataSource1.ResultSchemaSerializable = resources.GetString("excelDataSource1.ResultSchemaSerializable");
-            fieldInfo1.Name = "舟管理";
-            fieldInfo1.Type = typeof(string);
-            fieldInfo2.Name = "序号";
-            fieldInfo2.Type = typeof(string);
-            fieldInfo3.Name = "舟编号";
-            fieldInfo3.Type = typeof(string);
-            fieldInfo4.Name = "生成日期";
-            fieldInfo4.Type = typeof(string);
-            fieldInfo5.Name = "生成天数";
-            fieldInfo5.Type = typeof(string);
-            fieldInfo6.Name = "上线时间";
-            fieldInfo6.Type = typeof(string);
-            fieldInfo7.Name = "使用次数";
-            fieldInfo7.Type = typeof(string);
-            fieldInfo8.Name = "使用天数";
-            fieldInfo8.Type = typeof(string);
-            fieldInfo9.Name = "工艺选择";
-            fieldInfo9.Type = typeof(string);
-            fieldInfo10.Name = "去往管号";
-            fieldInfo10.Type = typeof(string);
-            fieldInfo11.Name = "管工艺名称";
-            fieldInfo11.Type = typeof(string);
-            fieldInfo12.Name = "下线清洗";
-            fieldInfo12.Type = typeof(string);
-            this.excelDataSource1.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
-            fieldInfo1,
-            fieldInfo2,
-            fieldInfo3,
-            fieldInfo4,
-            fieldInfo5,
-            fieldInfo6,
-            fieldInfo7,
-            fieldInfo8,
-            fieldInfo9,
-            fieldInfo10,
-            fieldInfo11,
-            fieldInfo12});
-            excelWorksheetSettings1.CellRange = null;
-            excelWorksheetSettings1.WorksheetName = "Sheet1";
-            excelSourceOptions1.ImportSettings = excelWorksheetSettings1;
-            this.excelDataSource1.SourceOptions = excelSourceOptions1;
             // 
             // gridView1
             // 
@@ -6087,7 +5995,6 @@
             // 
             // gridControl2
             // 
-            this.gridControl2.DataSource = this.excelDataSource2;
             this.gridControl2.Location = new System.Drawing.Point(9, 9);
             this.gridControl2.MainView = this.gridView3;
             this.gridControl2.MenuManager = this.xrDesignBarManager1;
@@ -6096,38 +6003,6 @@
             this.gridControl2.TabIndex = 0;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
-            // 
-            // excelDataSource2
-            // 
-            this.excelDataSource2.FileName = "E:\\工作\\项目\\02VS\\12.14\\Demo\\Demo\\Resources\\报警.xlsx";
-            this.excelDataSource2.Name = "excelDataSource2";
-            this.excelDataSource2.ResultSchemaSerializable = resources.GetString("excelDataSource2.ResultSchemaSerializable");
-            fieldInfo13.Name = "操作时间";
-            fieldInfo13.Type = typeof(string);
-            fieldInfo14.Name = "用户";
-            fieldInfo14.Type = typeof(string);
-            fieldInfo15.Name = "操作模式";
-            fieldInfo15.Type = typeof(string);
-            fieldInfo16.Name = "设备名称";
-            fieldInfo16.Type = typeof(string);
-            fieldInfo17.Name = "舟号";
-            fieldInfo17.Type = typeof(string);
-            fieldInfo18.Name = "舟状态";
-            fieldInfo18.Type = typeof(string);
-            fieldInfo19.Name = "描述";
-            fieldInfo19.Type = typeof(string);
-            this.excelDataSource2.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
-            fieldInfo13,
-            fieldInfo14,
-            fieldInfo15,
-            fieldInfo16,
-            fieldInfo17,
-            fieldInfo18,
-            fieldInfo19});
-            excelWorksheetSettings2.CellRange = null;
-            excelWorksheetSettings2.WorksheetName = "当前报警";
-            excelSourceOptions2.ImportSettings = excelWorksheetSettings2;
-            this.excelDataSource2.SourceOptions = excelSourceOptions2;
             // 
             // gridView3
             // 
@@ -6288,32 +6163,32 @@
             this.excelDataSource3.FileName = "E:\\工作\\项目\\02VS\\12.14\\Demo\\Demo\\Resources\\报警.xlsx";
             this.excelDataSource3.Name = "excelDataSource3";
             this.excelDataSource3.ResultSchemaSerializable = resources.GetString("excelDataSource3.ResultSchemaSerializable");
-            fieldInfo20.Name = "操作时间";
-            fieldInfo20.Type = typeof(string);
-            fieldInfo21.Name = "用户";
-            fieldInfo21.Type = typeof(string);
-            fieldInfo22.Name = "操作模式";
-            fieldInfo22.Type = typeof(string);
-            fieldInfo23.Name = "设备名称";
-            fieldInfo23.Type = typeof(string);
-            fieldInfo24.Name = "舟号";
-            fieldInfo24.Type = typeof(string);
-            fieldInfo25.Name = "舟状态";
-            fieldInfo25.Type = typeof(string);
-            fieldInfo26.Name = "描述";
-            fieldInfo26.Type = typeof(string);
+            fieldInfo1.Name = "操作时间";
+            fieldInfo1.Type = typeof(string);
+            fieldInfo2.Name = "用户";
+            fieldInfo2.Type = typeof(string);
+            fieldInfo3.Name = "操作模式";
+            fieldInfo3.Type = typeof(string);
+            fieldInfo4.Name = "设备名称";
+            fieldInfo4.Type = typeof(string);
+            fieldInfo5.Name = "舟号";
+            fieldInfo5.Type = typeof(string);
+            fieldInfo6.Name = "舟状态";
+            fieldInfo6.Type = typeof(string);
+            fieldInfo7.Name = "描述";
+            fieldInfo7.Type = typeof(string);
             this.excelDataSource3.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
-            fieldInfo20,
-            fieldInfo21,
-            fieldInfo22,
-            fieldInfo23,
-            fieldInfo24,
-            fieldInfo25,
-            fieldInfo26});
-            excelWorksheetSettings3.CellRange = null;
-            excelWorksheetSettings3.WorksheetName = "历史报警";
-            excelSourceOptions3.ImportSettings = excelWorksheetSettings3;
-            this.excelDataSource3.SourceOptions = excelSourceOptions3;
+            fieldInfo1,
+            fieldInfo2,
+            fieldInfo3,
+            fieldInfo4,
+            fieldInfo5,
+            fieldInfo6,
+            fieldInfo7});
+            excelWorksheetSettings1.CellRange = null;
+            excelWorksheetSettings1.WorksheetName = "历史报警";
+            excelSourceOptions1.ImportSettings = excelWorksheetSettings1;
+            this.excelDataSource3.SourceOptions = excelSourceOptions1;
             // 
             // gridView2
             // 
@@ -6477,7 +6352,6 @@
             // 
             // gridControl3
             // 
-            this.gridControl3.DataSource = this.excelDataSource4;
             this.gridControl3.Location = new System.Drawing.Point(9, 50);
             this.gridControl3.MainView = this.gridView4;
             this.gridControl3.MenuManager = this.xrDesignBarManager1;
@@ -6486,49 +6360,6 @@
             this.gridControl3.TabIndex = 0;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4});
-            // 
-            // excelDataSource4
-            // 
-            this.excelDataSource4.FileName = "E:\\工作\\项目\\02VS\\12.14\\Demo\\Demo\\Resources\\事件.xlsx";
-            this.excelDataSource4.Name = "excelDataSource4";
-            this.excelDataSource4.ResultSchemaSerializable = resources.GetString("excelDataSource4.ResultSchemaSerializable");
-            fieldInfo27.Name = "时间";
-            fieldInfo27.Type = typeof(string);
-            fieldInfo28.Name = "用户";
-            fieldInfo28.Type = typeof(string);
-            fieldInfo29.Name = "详情";
-            fieldInfo29.Type = typeof(string);
-            fieldInfo30.Name = "描述";
-            fieldInfo30.Type = typeof(string);
-            fieldInfo31.Name = "Column5";
-            fieldInfo31.Selected = false;
-            fieldInfo31.Type = typeof(string);
-            fieldInfo32.Name = "Column6";
-            fieldInfo32.Selected = false;
-            fieldInfo32.Type = typeof(string);
-            fieldInfo33.Name = "Column7";
-            fieldInfo33.Selected = false;
-            fieldInfo33.Type = typeof(string);
-            fieldInfo34.Name = "Column8";
-            fieldInfo34.Selected = false;
-            fieldInfo34.Type = typeof(string);
-            fieldInfo35.Name = "Column9";
-            fieldInfo35.Selected = false;
-            fieldInfo35.Type = typeof(string);
-            this.excelDataSource4.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
-            fieldInfo27,
-            fieldInfo28,
-            fieldInfo29,
-            fieldInfo30,
-            fieldInfo31,
-            fieldInfo32,
-            fieldInfo33,
-            fieldInfo34,
-            fieldInfo35});
-            excelWorksheetSettings4.CellRange = null;
-            excelWorksheetSettings4.WorksheetName = "操作记录";
-            excelSourceOptions4.ImportSettings = excelWorksheetSettings4;
-            this.excelDataSource4.SourceOptions = excelSourceOptions4;
             // 
             // gridView4
             // 
@@ -6646,7 +6477,6 @@
             // 
             // gridControl4
             // 
-            this.gridControl4.DataSource = this.excelDataSource5;
             this.gridControl4.Location = new System.Drawing.Point(9, 50);
             this.gridControl4.MainView = this.gridView5;
             this.gridControl4.MenuManager = this.xrDesignBarManager1;
@@ -6655,29 +6485,6 @@
             this.gridControl4.TabIndex = 0;
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView5});
-            // 
-            // excelDataSource5
-            // 
-            this.excelDataSource5.FileName = "E:\\工作\\项目\\02VS\\12.14\\Demo\\Demo\\Resources\\事件.xlsx";
-            this.excelDataSource5.Name = "excelDataSource5";
-            this.excelDataSource5.ResultSchemaSerializable = resources.GetString("excelDataSource5.ResultSchemaSerializable");
-            fieldInfo36.Name = "时间";
-            fieldInfo36.Type = typeof(string);
-            fieldInfo37.Name = "用户";
-            fieldInfo37.Type = typeof(string);
-            fieldInfo38.Name = "详情";
-            fieldInfo38.Type = typeof(string);
-            fieldInfo39.Name = "描述";
-            fieldInfo39.Type = typeof(string);
-            this.excelDataSource5.Schema.AddRange(new DevExpress.DataAccess.Excel.FieldInfo[] {
-            fieldInfo36,
-            fieldInfo37,
-            fieldInfo38,
-            fieldInfo39});
-            excelWorksheetSettings5.CellRange = null;
-            excelWorksheetSettings5.WorksheetName = "运行记录";
-            excelSourceOptions5.ImportSettings = excelWorksheetSettings5;
-            this.excelDataSource5.SourceOptions = excelSourceOptions5;
             // 
             // gridView5
             // 
@@ -7238,7 +7045,6 @@
         private DevExpress.XtraReports.UserDesigner.DesignRepositoryItemComboBox designRepositoryItemComboBox1;
         private DevExpress.XtraTab.XtraTabPage tpBoatManage;
         private DevExpress.XtraGrid.GridControl gcBoatManage;
-        private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn col舟管理;
         private DevExpress.XtraGrid.Columns.GridColumn col序号;
@@ -7263,7 +7069,6 @@
         private DevExpress.XtraGrid.GridControl gridControl2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
         private DevExpress.XtraTab.XtraTabPage tpHistoryAlarm;
-        private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource2;
         private DevExpress.XtraGrid.Columns.GridColumn col操作时间;
         private DevExpress.XtraGrid.Columns.GridColumn col用户;
         private DevExpress.XtraGrid.Columns.GridColumn col操作模式;
@@ -7289,7 +7094,6 @@
         private DevExpress.XtraTab.XtraTabControl tcEvent;
         private DevExpress.XtraTab.XtraTabPage tpRecord_Manual;
         private DevExpress.XtraGrid.GridControl gridControl3;
-        private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource4;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
         private DevExpress.XtraGrid.Columns.GridColumn col时间;
         private DevExpress.XtraGrid.Columns.GridColumn col用户2;
@@ -7297,7 +7101,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn col描述2;
         private DevExpress.XtraTab.XtraTabPage tpRecord_Running;
         private DevExpress.XtraGrid.GridControl gridControl4;
-        private DevExpress.DataAccess.Excel.ExcelDataSource excelDataSource5;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
         private DevExpress.XtraGrid.Columns.GridColumn col时间1;
         private DevExpress.XtraGrid.Columns.GridColumn col用户3;
