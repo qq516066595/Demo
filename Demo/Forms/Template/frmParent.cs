@@ -137,7 +137,7 @@ namespace Demo.Forms.Template
             ActivateOrAddForm(" 第 三 组 ", "Demo.Forms.Tube.frmTubeMain",3);
             ActivateOrAddForm(" 第 四 组 ", "Demo.Forms.Tube.frmTubeMain",4);
             ActivateOrAddForm(" 第 五 组 ", "Demo.Forms.Tube.frmTubeMain",5);
-            //ActivateOrAddForm(" 机 械 手 ", "Demo.Forms.Loader.frmHanderMain",6);
+           //  ActivateOrAddForm(" 机 械 手 ", "Demo.Forms.Loader.frmHanderMain",6);
         }
         #endregion
 

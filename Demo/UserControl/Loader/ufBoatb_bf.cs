@@ -1,28 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
+using System.Data;
 using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
-namespace Demo.Forms
+namespace Demo.UserControl.Loader
 {
-    public partial class Main : Form
+    public partial class ufBoatb_bf : DevExpress.XtraEditors.XtraUserControl
     {
-        public Main()
+        public ufBoatb_bf()
         {
             InitializeComponent();
-        }
-
-        private void Main_Load(object sender, EventArgs e)
-        {
-
-
-
-
         }
     }
 }

@@ -50,7 +50,10 @@
     <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Spreadsheet.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.TreeMap.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.Utils.v16.2\v4.0_16.2.5.0__b88d1754d700e49a\DevExpress.Utils.v16.2.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Utils.v16.2.UI, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -124,11 +127,11 @@
     <Compile Include="Forms\Loader\XtraForm1.Designer.cs">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Tube\frmHeating.cs">
-      <SubType>Form</SubType>
+    <Compile Include="UserControl\Loader\ucAxisPos.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Tube\frmHeating.Designer.cs">
-      <DependentUpon>frmHeating.cs</DependentUpon>
+    <Compile Include="UserControl\Loader\ucAxisPos.Designer.cs">
+      <DependentUpon>ucAxisPos.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Loader\ucAxis_Setting.cs">
       <SubType>UserControl</SubType>
@@ -141,12 +144,6 @@
     </Compile>
     <Compile Include="UserControl\Loader\ucBoat.Designer.cs">
       <DependentUpon>ucBoat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Main.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
@@ -166,6 +163,12 @@
     <Compile Include="Forms\Tube\frmTubeMain.Designer.cs">
       <DependentUpon>frmTubeMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\Loader\ucExtendPara.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Loader\ucExtendPara.Designer.cs">
+      <DependentUpon>ucExtendPara.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Loader\ucIO.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -183,6 +186,12 @@
     </Compile>
     <Compile Include="UserControl\Loader\ucServoPara.Designer.cs">
       <DependentUpon>ucServoPara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Loader\ucServoPara2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Loader\ucServoPara2.Designer.cs">
+      <DependentUpon>ucServoPara2.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Tube\ucAxisX.cs">
       <SubType>UserControl</SubType>
@@ -214,22 +223,15 @@
     <EmbeddedResource Include="Forms\Loader\XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Template\frmParent.resx">
       <DependentUpon>frmParent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Tube\frmHeating.resx">
-      <DependentUpon>frmHeating.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tube\frmTubeMain.resx">
       <DependentUpon>frmTubeMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -240,11 +242,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl\Loader\ucAxisPos.resx">
+      <DependentUpon>ucAxisPos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Loader\ucAxis_Setting.resx">
       <DependentUpon>ucAxis_Setting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Loader\ucBoat.resx">
       <DependentUpon>ucBoat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Loader\ucExtendPara.resx">
+      <DependentUpon>ucExtendPara.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Loader\ucIO.resx">
       <DependentUpon>ucIO.cs</DependentUpon>
@@ -255,6 +263,9 @@
     <EmbeddedResource Include="UserControl\Loader\ucServoPara.resx">
       <DependentUpon>ucServoPara.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Loader\ucServoPara2.resx">
+      <DependentUpon>ucServoPara2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Tube\ucAxisX.resx">
       <DependentUpon>ucAxisX.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,6 +275,34 @@
     <EmbeddedResource Include="UserControl\Tube\ucSetMFC.resx">
       <DependentUpon>ucSetMFC.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\config\alarm.config" />
+    <None Include="bin\Debug\config\com.properties" />
+    <None Include="bin\Debug\config\confD_LPCVD_G_1.config" />
+    <None Include="bin\Debug\config\confD_RPB_G_1.config" />
+    <None Include="bin\Debug\config\confD_RPP_G_1.config" />
+    <None Include="bin\Debug\config\confD_TEST_G.config" />
+    <None Include="bin\Debug\config\confT1.properties" />
+    <None Include="bin\Debug\config\confT2.properties" />
+    <None Include="bin\Debug\config\confT3.properties" />
+    <None Include="bin\Debug\config\confT4.properties" />
+    <None Include="bin\Debug\database\db_Sys.sqlite" />
+    <None Include="bin\Debug\database\db_Sys.sqlite-journal" />
+    <None Include="bin\Debug\database\db_T1.sqlite" />
+    <None Include="bin\Debug\database\db_T1.sqlite-journal" />
+    <None Include="bin\Debug\database\db_T2.sqlite" />
+    <None Include="bin\Debug\database\db_T3.sqlite" />
+    <None Include="bin\Debug\database\db_T4.sqlite" />
+    <None Include="bin\Debug\recipe\Tube1\recipe1.csv" />
+    <None Include="bin\Debug\recipe\Tube2\recipe2.csv" />
+    <None Include="bin\Debug\recipe\Tube3\recipe3.csv" />
+    <None Include="bin\Debug\recipe\Tube4\recipe4.csv" />
+    <None Include="bin\Debug\recipe\Tube5\recipe5.csv" />
+    <None Include="bin\Debug\工艺历史数据\Tube1\recipe1.csv" />
+    <None Include="bin\Debug\工艺历史数据\Tube2\recipe2.csv" />
+    <None Include="bin\Debug\工艺历史数据\Tube3\recipe3.csv" />
+    <None Include="bin\Debug\工艺历史数据\Tube4\recipe4.csv" />
+    <None Include="bin\Debug\工艺历史数据\Tube5\recipe5.csv" />
+    <None Include="bin\Debug\工艺历史数据\工艺名称+工艺时长+运行次数.csv" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -280,6 +319,7 @@
   <ItemGroup>
     <Content Include="image\close.png" />
     <Content Include="image\colorbarIndicators.bmp" />
+    <Content Include="image\DefSplashImage.png" />
     <Content Include="image\gps1.png" />
     <Content Include="image\gps_postion.png" />
     <Content Include="image\img_notifier.png" />
@@ -293,6 +333,20 @@
     <Content Include="image\notifier.png" />
     <Content Include="image\wind.png" />
     <Content Include="image\wind_postion.png" />
+    <Content Include="lib\CIPCompolet.dll" />
+    <Content Include="lib\CIPCompolet64.dll" />
+    <Content Include="lib\CIPCompoletProxyLib.dll" />
+    <Content Include="lib\CIPCompoletProxyServer.exe" />
+    <Content Include="lib\log4net.dll" />
+    <Content Include="lib\MySql.Data.dll" />
+    <Content Include="lib\SQLite.Interop.dll" />
+    <Content Include="lib\sqlite3.dll" />
+    <Content Include="lib\SunnyUI.dll" />
+    <Content Include="lib\SysmacCipService.dll" />
+    <Content Include="lib\System.Data.SQLite.dll" />
+    <Content Include="lib\System.Data.SQLite.EF6.dll" />
+    <Content Include="lib\System.Data.SQLite.Linq.dll" />
+    <None Include="Resources\DefSplashImage.png" />
     <None Include="Resources\下拉箭头3.png" />
     <None Include="Resources\下拉箭头2.png" />
     <None Include="Resources\下拉箭头.png" />
@@ -318,6 +372,11 @@
       <Name>com.FunctionDAL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="lib\其他\" />
+    <Folder Include="lib\控件\" />
+    <Folder Include="lib\数据库\" />
+    <Folder Include="lib\通讯\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

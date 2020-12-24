@@ -1,4 +1,5 @@
 ﻿
+using Demo.Forms.Loader;
 using Demo.Forms.Template;
 using Sunny.UI;
 using System;
@@ -23,7 +24,8 @@ namespace Demo
             DevExpress.Skins.SkinManager.EnableMdiFormSkins();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmParent());
-           
+          //  Application.Run(new XtraForm1());
+
         }
     }
 }
