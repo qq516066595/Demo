@@ -121,37 +121,13 @@
     <value>408, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>52</value>
+    <value>154</value>
   </metadata>
-  <metadata name="excelDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>624, 17</value>
-  </metadata>
-  <data name="excelDataSource1.ResultSchemaSerializable" xml:space="preserve">
-    <value>PFZpZXc+PEZpZWxkIE5hbWU9IuiIn+euoeeQhiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSLluo/lj7ciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0i6Iif57yW5Y+3IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IueUn+aIkOaXpeacnyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSLnlJ/miJDlpKnmlbAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0i5LiK57q/5pe26Ze0IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IuS9v+eUqOasoeaVsCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSLkvb/nlKjlpKnmlbAiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0i5bel6Im66YCJ5oupIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IuWOu+W+gOeuoeWPtyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSLnrqHlt6XoibrlkI3np7AiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0i5LiL57q/5riF5rSXIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3Pg==</value>
-  </data>
-  <metadata name="excelDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>812, 17</value>
-  </metadata>
-  <data name="excelDataSource2.ResultSchemaSerializable" xml:space="preserve">
-    <value>PFZpZXc+PEZpZWxkIE5hbWU9IuaTjeS9nOaXtumXtCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSLnlKjmiLciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0i5pON5L2c5qih5byPIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IuiuvuWkh+WQjeensCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSLoiJ/lj7ciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0i6Iif54q25oCBIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IuaPj+i/sCIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz4=</value>
-  </data>
   <metadata name="excelDataSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1000, 17</value>
   </metadata>
   <data name="excelDataSource3.ResultSchemaSerializable" xml:space="preserve">
     <value>PFZpZXc+PEZpZWxkIE5hbWU9IuaTjeS9nOaXtumXtCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSLnlKjmiLciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0i5pON5L2c5qih5byPIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IuiuvuWkh+WQjeensCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSLoiJ/lj7ciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0i6Iif54q25oCBIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IuaPj+i/sCIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz4=</value>
-  </data>
-  <metadata name="excelDataSource4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 59</value>
-  </metadata>
-  <data name="excelDataSource4.ResultSchemaSerializable" xml:space="preserve">
-    <value>PFZpZXc+PEZpZWxkIE5hbWU9IuaXtumXtCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSLnlKjmiLciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0i6K+m5oOFIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IuaPj+i/sCIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz4=</value>
-  </data>
-  <metadata name="excelDataSource5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>205, 59</value>
-  </metadata>
-  <data name="excelDataSource5.ResultSchemaSerializable" xml:space="preserve">
-    <value>PFZpZXc+PEZpZWxkIE5hbWU9IuaXtumXtCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSLnlKjmiLciIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0i6K+m5oOFIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IuaPj+i/sCIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz4=</value>
   </data>
   <assembly alias="DevExpress.Utils.v16.2" name="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   <data name="xrDesignBarManager1.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v16.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
