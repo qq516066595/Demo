@@ -114,6 +114,12 @@
     <Compile Include="Forms\frmHomePage.Designer.cs">
       <DependentUpon>frmHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Loader\AssistTool.cs" />
     <Compile Include="Forms\Loader\frmHanderMain.cs">
       <SubType>Form</SubType>
@@ -127,12 +133,27 @@
     <Compile Include="Forms\Loader\XtraForm1.Designer.cs">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Template\frmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Template\frmLoading.Designer.cs">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Template\frmParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Template\frmParent.Designer.cs">
+      <DependentUpon>frmParent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Tube\frmHeating.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Tube\frmHeating.Designer.cs">
       <DependentUpon>frmHeating.cs</DependentUpon>
     </Compile>
+    <Compile Include="model\ModelHelper.cs" />
+    <Compile Include="model\TubeDoConfViewModel.cs" />
+    <Compile Include="model\TubeViewModelFactory.cs" />
     <Compile Include="UserControl\Loader\ucAxisPos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -150,14 +171,6 @@
     </Compile>
     <Compile Include="UserControl\Loader\ucBoat.Designer.cs">
       <DependentUpon>ucBoat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\LoginForm.cs" />
-    <Compile Include="Forms\LoginForm.Designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmParent.cs" />
-    <Compile Include="Forms\frmParent.Designer.cs">
-      <DependentUpon>frmParent.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Tube\frmTubeMain.cs">
       <SubType>Form</SubType>
@@ -218,16 +231,19 @@
     <EmbeddedResource Include="Forms\frmHomePage.resx">
       <DependentUpon>frmHomePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Loader\frmHanderMain.resx">
       <DependentUpon>frmHanderMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Loader\XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Template\frmLoading.resx">
+      <DependentUpon>frmLoading.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmParent.resx">
+    <EmbeddedResource Include="Forms\Template\frmParent.resx">
       <DependentUpon>frmParent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tube\frmHeating.resx">
