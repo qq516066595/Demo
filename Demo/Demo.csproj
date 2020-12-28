@@ -151,16 +151,12 @@
     <Compile Include="UserControl\Loader\ucBoat.Designer.cs">
       <DependentUpon>ucBoat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\LoginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Forms\LoginForm.cs" />
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Template\frmParent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Template\frmParent.Designer.cs">
+    <Compile Include="Forms\frmParent.cs" />
+    <Compile Include="Forms\frmParent.Designer.cs">
       <DependentUpon>frmParent.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Tube\frmTubeMain.cs">
@@ -217,7 +213,6 @@
     <Compile Include="UserControl\Tube\ucSetMFC.Designer.cs">
       <DependentUpon>ucSetMFC.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\frmHomePage.resx">
@@ -232,7 +227,7 @@
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Template\frmParent.resx">
+    <EmbeddedResource Include="Forms\frmParent.resx">
       <DependentUpon>frmParent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tube\frmHeating.resx">
@@ -296,9 +291,7 @@
     <None Include="bin\Debug\config\confT3.properties" />
     <None Include="bin\Debug\config\confT4.properties" />
     <None Include="bin\Debug\database\db_Sys.sqlite" />
-    <None Include="bin\Debug\database\db_Sys.sqlite-journal" />
     <None Include="bin\Debug\database\db_T1.sqlite" />
-    <None Include="bin\Debug\database\db_T1.sqlite-journal" />
     <None Include="bin\Debug\database\db_T2.sqlite" />
     <None Include="bin\Debug\database\db_T3.sqlite" />
     <None Include="bin\Debug\database\db_T4.sqlite" />
@@ -373,7 +366,7 @@
       <Project>{5B454594-3F89-4968-84E5-C6F673F87DAD}</Project>
       <Name>com.FunctionModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\com.TubeServices\com.TubeServices.csproj">
+    <ProjectReference Include="..\com.TubeServices\com.Services.csproj">
       <Project>{A9A14334-CABD-40FC-9D42-648F038D15E3}</Project>
       <Name>com.TubeServices</Name>
     </ProjectReference>

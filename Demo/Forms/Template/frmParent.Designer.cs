@@ -28,53 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::Demo.Forms.Template.frmLoading), true, true);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmParent));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.picLogo = new DevExpress.XtraEditors.PictureEdit();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager();
-            this.imageCollection1 = new DevExpress.Utils.ImageCollection();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.picUserInfo = new DevExpress.XtraEditors.PictureEdit();
+            this.picAbout = new DevExpress.XtraEditors.PictureEdit();
+            this.picExit = new DevExpress.XtraEditors.PictureEdit();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.pnAlarmShield = new DevExpress.XtraEditors.PanelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
+            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.lblSkinsThree = new System.Windows.Forms.Label();
             this.lblSkinsOne = new System.Windows.Forms.Label();
             this.lblSkinsTwo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
-            this.picLogo = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.picUserInfo = new DevExpress.XtraEditors.PictureEdit();
-            this.picAbout = new DevExpress.XtraEditors.PictureEdit();
-            this.picExit = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserInfo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAbout.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnAlarmShield)).BeginInit();
             this.pnAlarmShield.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
             this.panelControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUserInfo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAbout.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picExit.Properties)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 500;
             // 
             // panelControl1
             // 
@@ -87,6 +93,23 @@
             this.panelControl1.Size = new System.Drawing.Size(1280, 50);
             this.panelControl1.TabIndex = 1;
             // 
+            // picLogo
+            // 
+            this.picLogo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.picLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.picLogo.EditValue = ((object)(resources.GetObject("picLogo.EditValue")));
+            this.picLogo.Location = new System.Drawing.Point(2, 2);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.picLogo.Properties.Appearance.Options.UseBackColor = true;
+            this.picLogo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.picLogo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picLogo.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            this.picLogo.Properties.ZoomAccelerationFactor = 1D;
+            this.picLogo.Size = new System.Drawing.Size(170, 46);
+            this.picLogo.TabIndex = 3;
+            // 
             // panelControl3
             // 
             this.panelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
@@ -95,11 +118,84 @@
             this.panelControl3.Controls.Add(this.picAbout);
             this.panelControl3.Controls.Add(this.picExit);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl3.Location = new System.Drawing.Point(1062, 2);
+            this.panelControl3.Location = new System.Drawing.Point(1071, 2);
             this.panelControl3.Margin = new System.Windows.Forms.Padding(2);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(216, 46);
+            this.panelControl3.Size = new System.Drawing.Size(207, 46);
             this.panelControl3.TabIndex = 1;
+            // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+            this.pictureEdit1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit1.Size = new System.Drawing.Size(52, 46);
+            this.pictureEdit1.TabIndex = 8;
+            this.pictureEdit1.Click += new System.EventHandler(this.pictureEdit1_Click);
+            // 
+            // picUserInfo
+            // 
+            this.picUserInfo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.picUserInfo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picUserInfo.EditValue = ((object)(resources.GetObject("picUserInfo.EditValue")));
+            this.picUserInfo.Location = new System.Drawing.Point(51, 0);
+            this.picUserInfo.Margin = new System.Windows.Forms.Padding(2);
+            this.picUserInfo.Name = "picUserInfo";
+            this.picUserInfo.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.picUserInfo.Properties.Appearance.Options.UseBackColor = true;
+            this.picUserInfo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.picUserInfo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picUserInfo.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.picUserInfo.Properties.ZoomAccelerationFactor = 1D;
+            this.picUserInfo.Size = new System.Drawing.Size(52, 46);
+            this.picUserInfo.TabIndex = 7;
+            this.picUserInfo.Click += new System.EventHandler(this.picUserInfo_Click);
+            // 
+            // picAbout
+            // 
+            this.picAbout.Cursor = System.Windows.Forms.Cursors.Default;
+            this.picAbout.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picAbout.EditValue = ((object)(resources.GetObject("picAbout.EditValue")));
+            this.picAbout.Location = new System.Drawing.Point(103, 0);
+            this.picAbout.Margin = new System.Windows.Forms.Padding(2);
+            this.picAbout.Name = "picAbout";
+            this.picAbout.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.picAbout.Properties.Appearance.Options.UseBackColor = true;
+            this.picAbout.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.picAbout.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picAbout.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.picAbout.Properties.ZoomAccelerationFactor = 1D;
+            this.picAbout.Size = new System.Drawing.Size(52, 46);
+            this.picAbout.TabIndex = 6;
+            this.picAbout.Click += new System.EventHandler(this.picAbout_Click);
+            // 
+            // picExit
+            // 
+            this.picExit.Cursor = System.Windows.Forms.Cursors.Default;
+            this.picExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.picExit.EditValue = ((object)(resources.GetObject("picExit.EditValue")));
+            this.picExit.Location = new System.Drawing.Point(155, 0);
+            this.picExit.Margin = new System.Windows.Forms.Padding(2);
+            this.picExit.Name = "picExit";
+            this.picExit.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.picExit.Properties.Appearance.Options.UseBackColor = true;
+            this.picExit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.picExit.Properties.InitialImage = ((System.Drawing.Image)(resources.GetObject("picExit.Properties.InitialImage")));
+            this.picExit.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picExit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.picExit.Properties.ZoomAccelerationFactor = 1D;
+            this.picExit.Size = new System.Drawing.Size(52, 46);
+            this.picExit.TabIndex = 5;
+            this.picExit.Click += new System.EventHandler(this.picExit_Click);
             // 
             // imageCollection1
             // 
@@ -139,6 +235,38 @@
             this.labelControl2.Size = new System.Drawing.Size(56, 20);
             this.labelControl2.TabIndex = 4;
             this.labelControl2.Text = "报警消声";
+            // 
+            // pictureEdit3
+            // 
+            this.pictureEdit3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
+            this.pictureEdit3.Location = new System.Drawing.Point(3, 3);
+            this.pictureEdit3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureEdit3.Name = "pictureEdit3";
+            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit3.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit3.Size = new System.Drawing.Size(35, 24);
+            this.pictureEdit3.TabIndex = 3;
+            // 
+            // pictureEdit2
+            // 
+            this.pictureEdit2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
+            this.pictureEdit2.Location = new System.Drawing.Point(9, 4);
+            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureEdit2.Name = "pictureEdit2";
+            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit2.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit2.Size = new System.Drawing.Size(24, 22);
+            this.pictureEdit2.TabIndex = 1;
             // 
             // labelControl1
             // 
@@ -238,128 +366,6 @@
             this.label1.Text = "深圳市拉普拉斯能源技术有限公司 版权©2020-12";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureEdit3
-            // 
-            this.pictureEdit3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(3, 3);
-            this.pictureEdit3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureEdit3.Name = "pictureEdit3";
-            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit3.Properties.ZoomAccelerationFactor = 1D;
-            this.pictureEdit3.Size = new System.Drawing.Size(35, 24);
-            this.pictureEdit3.TabIndex = 3;
-            // 
-            // pictureEdit2
-            // 
-            this.pictureEdit2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
-            this.pictureEdit2.Location = new System.Drawing.Point(9, 4);
-            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureEdit2.Name = "pictureEdit2";
-            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit2.Properties.ZoomAccelerationFactor = 1D;
-            this.pictureEdit2.Size = new System.Drawing.Size(24, 22);
-            this.pictureEdit2.TabIndex = 1;
-            // 
-            // picLogo
-            // 
-            this.picLogo.Cursor = System.Windows.Forms.Cursors.Default;
-            this.picLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.picLogo.EditValue = ((object)(resources.GetObject("picLogo.EditValue")));
-            this.picLogo.Location = new System.Drawing.Point(2, 2);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(2);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.picLogo.Properties.Appearance.Options.UseBackColor = true;
-            this.picLogo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.picLogo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.picLogo.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.picLogo.Properties.ZoomAccelerationFactor = 1D;
-            this.picLogo.Size = new System.Drawing.Size(170, 46);
-            this.picLogo.TabIndex = 3;
-            // 
-            // pictureEdit1
-            // 
-            this.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(8, 0);
-            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
-            this.pictureEdit1.Size = new System.Drawing.Size(52, 46);
-            this.pictureEdit1.TabIndex = 8;
-            this.pictureEdit1.Click += new System.EventHandler(this.pictureEdit1_Click);
-            // 
-            // picUserInfo
-            // 
-            this.picUserInfo.Cursor = System.Windows.Forms.Cursors.Default;
-            this.picUserInfo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picUserInfo.EditValue = ((object)(resources.GetObject("picUserInfo.EditValue")));
-            this.picUserInfo.Location = new System.Drawing.Point(60, 0);
-            this.picUserInfo.Margin = new System.Windows.Forms.Padding(2);
-            this.picUserInfo.Name = "picUserInfo";
-            this.picUserInfo.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.picUserInfo.Properties.Appearance.Options.UseBackColor = true;
-            this.picUserInfo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.picUserInfo.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.picUserInfo.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.picUserInfo.Properties.ZoomAccelerationFactor = 1D;
-            this.picUserInfo.Size = new System.Drawing.Size(52, 46);
-            this.picUserInfo.TabIndex = 7;
-            this.picUserInfo.Click += new System.EventHandler(this.picUserInfo_Click);
-            // 
-            // picAbout
-            // 
-            this.picAbout.Cursor = System.Windows.Forms.Cursors.Default;
-            this.picAbout.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picAbout.EditValue = ((object)(resources.GetObject("picAbout.EditValue")));
-            this.picAbout.Location = new System.Drawing.Point(112, 0);
-            this.picAbout.Margin = new System.Windows.Forms.Padding(2);
-            this.picAbout.Name = "picAbout";
-            this.picAbout.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.picAbout.Properties.Appearance.Options.UseBackColor = true;
-            this.picAbout.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.picAbout.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.picAbout.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.picAbout.Properties.ZoomAccelerationFactor = 1D;
-            this.picAbout.Size = new System.Drawing.Size(52, 46);
-            this.picAbout.TabIndex = 6;
-            this.picAbout.Click += new System.EventHandler(this.picAbout_Click);
-            // 
-            // picExit
-            // 
-            this.picExit.Cursor = System.Windows.Forms.Cursors.Default;
-            this.picExit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.picExit.EditValue = ((object)(resources.GetObject("picExit.EditValue")));
-            this.picExit.Location = new System.Drawing.Point(164, 0);
-            this.picExit.Margin = new System.Windows.Forms.Padding(2);
-            this.picExit.Name = "picExit";
-            this.picExit.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.picExit.Properties.Appearance.Options.UseBackColor = true;
-            this.picExit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.picExit.Properties.InitialImage = ((System.Drawing.Image)(resources.GetObject("picExit.Properties.InitialImage")));
-            this.picExit.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.picExit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.picExit.Properties.ZoomAccelerationFactor = 1D;
-            this.picExit.Size = new System.Drawing.Size(52, 46);
-            this.picExit.TabIndex = 5;
-            this.picExit.Click += new System.EventHandler(this.picExit_Click);
-            // 
             // frmParent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -380,8 +386,13 @@
             this.Layout += new System.Windows.Forms.LayoutEventHandler(this.frmParent_Layout);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserInfo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAbout.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
@@ -390,19 +401,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnAlarmShield)).EndInit();
             this.pnAlarmShield.ResumeLayout(false);
             this.pnAlarmShield.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
             this.panelControl5.ResumeLayout(false);
             this.panelControl5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUserInfo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAbout.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picExit.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

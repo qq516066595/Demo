@@ -1,4 +1,5 @@
 ﻿using com.CommonHelper;
+using com.DataBaseModels.Tube.setting;
 using com.FunctionModels;
 using log4net;
 using System;
@@ -29,11 +30,12 @@ namespace FunctionDAL.File
             }
         }
 
+
         public List<DiConf> GetDiConfInfos(int tubeIndex)
         {
             List<DiConf> diConfVOs = new List<DiConf>();
 
-            Properties config = new Properties("config/confT" + tubeIndex + ".properties");
+            Properties config = new  Properties("config/confT" + tubeIndex + ".properties");
             for (int i = 0; i < 32; ++i)
             {
                 DiConf diConfVO = new DiConf();
@@ -56,7 +58,7 @@ namespace FunctionDAL.File
 
         public void PutDiConfInfo(int tubeIndex, List<DiConf> diInfoVOs)
         {
-           Properties config = new Properties("config/confT" + tubeIndex + ".properties");
+             Properties config = new  Properties("config/confT" + tubeIndex + ".properties");
             if (diInfoVOs != null)
             {
                 for (int i = 0; i < diInfoVOs.Count; ++i)

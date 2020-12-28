@@ -285,13 +285,13 @@ namespace com.DataBaseModels
         //写真空泵数据结构体
         public struct stPump_Write 
         {
-            public ushort rActPressure;     //写真空泵数据结构体
-            public ushort rActSpeed;        //读抽速度0-100Hz
+            public double rActPressure;     //写真空泵数据结构体
+            public double rActSpeed;        //读抽速度0-100Hz
             public int nStatusAlarm;        //0:正常1:故障
             public bool bStartPump;         //1：停止2：启动
-            public ushort rSetPressure;     //写真空泵数据压力
+            public double rSetPressure;     //写真空泵数据压力
             public bool bSetFunMode;        //2：真空模式1：速度模式
-            public ushort rSetSpeed;        //设定抽速
+            public double rSetSpeed;        //设定抽速
             public bool bCheckDiff_Enable;  //使能检测差值  
         }
 
