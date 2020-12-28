@@ -114,11 +114,17 @@
     <Compile Include="Forms\frmHomePage.Designer.cs">
       <DependentUpon>frmHomePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmLogin.cs">
+    <Compile Include="Forms\frmLoading.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="Forms\frmLoading.designer.cs">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmParent.Designer.cs">
+      <DependentUpon>frmParent.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Loader\AssistTool.cs" />
     <Compile Include="Forms\Loader\frmHanderMain.cs">
@@ -133,27 +139,12 @@
     <Compile Include="Forms\Loader\XtraForm1.Designer.cs">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Template\frmLoading.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Template\frmLoading.Designer.cs">
-      <DependentUpon>frmLoading.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Template\frmParent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Template\frmParent.Designer.cs">
-      <DependentUpon>frmParent.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Tube\frmHeating.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Tube\frmHeating.Designer.cs">
       <DependentUpon>frmHeating.cs</DependentUpon>
     </Compile>
-    <Compile Include="model\ModelHelper.cs" />
-    <Compile Include="model\TubeDoConfViewModel.cs" />
-    <Compile Include="model\TubeViewModelFactory.cs" />
     <Compile Include="UserControl\Loader\ucAxisPos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -177,12 +168,6 @@
     </Compile>
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Template\frmParent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Template\frmParent.Designer.cs">
-      <DependentUpon>frmParent.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Tube\frmTubeMain.cs">
       <SubType>Form</SubType>
@@ -243,8 +228,11 @@
     <EmbeddedResource Include="Forms\frmHomePage.resx">
       <DependentUpon>frmHomePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmLoading.resx">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmParent.resx">
+      <DependentUpon>frmParent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Loader\frmHanderMain.resx">
       <DependentUpon>frmHanderMain.cs</DependentUpon>
@@ -252,18 +240,13 @@
     <EmbeddedResource Include="Forms\Loader\XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Template\frmLoading.resx">
-      <DependentUpon>frmLoading.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmParent.resx">
-      <DependentUpon>frmParent.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tube\frmHeating.resx">
       <DependentUpon>frmHeating.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tube\frmTubeMain.resx">
       <DependentUpon>frmTubeMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -395,7 +378,7 @@
     </ProjectReference>
     <ProjectReference Include="..\com.TubeServices\com.Services.csproj">
       <Project>{A9A14334-CABD-40FC-9D42-648F038D15E3}</Project>
-      <Name>com.TubeServices</Name>
+      <Name>com.Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\FunctionDAL\com.FunctionDAL.csproj">
       <Project>{DFC291AD-795A-4058-AE72-1BE92205CDE4}</Project>
@@ -407,6 +390,7 @@
     <Folder Include="lib\控件\" />
     <Folder Include="lib\数据库\" />
     <Folder Include="lib\通讯\" />
+    <Folder Include="model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

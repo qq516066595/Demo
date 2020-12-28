@@ -1,5 +1,4 @@
-﻿
-using com.DataBaseDAL;
+﻿using com.DataBaseDAL;
 using com.FunctionModels;
 using System;
 using System.Collections.Generic;
