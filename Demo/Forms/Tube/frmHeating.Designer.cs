@@ -39,52 +39,58 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(84, 55);
+            this.labelControl1.Location = new System.Drawing.Point(59, 35);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(105, 22);
+            this.labelControl1.Size = new System.Drawing.Size(71, 14);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "设定温度(℃)";
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(86, 108);
+            this.labelControl2.Location = new System.Drawing.Point(60, 69);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(104, 22);
+            this.labelControl2.Size = new System.Drawing.Size(70, 14);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "设定斜率(%)";
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(195, 52);
+            this.textEdit1.Location = new System.Drawing.Point(136, 33);
+            this.textEdit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(169, 28);
+            this.textEdit1.Size = new System.Drawing.Size(118, 20);
             this.textEdit1.TabIndex = 2;
             // 
             // textEdit2
             // 
-            this.textEdit2.Location = new System.Drawing.Point(195, 105);
+            this.textEdit2.Location = new System.Drawing.Point(136, 67);
+            this.textEdit2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(169, 28);
+            this.textEdit2.Size = new System.Drawing.Size(118, 20);
             this.textEdit2.TabIndex = 2;
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(165, 152);
+            this.simpleButton1.Location = new System.Drawing.Point(115, 97);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(100, 41);
+            this.simpleButton1.Size = new System.Drawing.Size(70, 26);
             this.simpleButton1.TabIndex = 3;
             this.simpleButton1.Text = "确认";
             // 
             // frmHeating
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 229);
+            this.ClientSize = new System.Drawing.Size(307, 146);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.textEdit2);
             this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmHeating";
             this.Text = "frmHeating";
             this.Load += new System.EventHandler(this.frmHeating_Load);

@@ -28,91 +28,78 @@ namespace Demo.Forms.Loader
         public frmHanderMain()
         {
             InitializeComponent();
-    
-            
 
+            //初始化轴参数
+            pnlHorizon.Size = new Size(286, 120);
+            pnlVertical.Size = new Size(286, 120);
+            pnlTransport.Size = new Size(286, 120);
+            pnlDoorLock.Size = new Size(286, 70);
+            
         }
 
 
-       
+        #region 垂直轴收缩条
+        bool bDropDown_Vertical = false; //定义变量
+        /// <summary>
 
-
-
-        bool bDropDown_Vertical = false;
-
-        /* Button btn = new Button(bDropDown_Horizon, @"E:\工作\项目\02VS\12.14\Demo\Demo\Resources\静音 红.png", @"E:\工作\项目\02VS\12.14\Demo\Demo\Resources\静音.png", picAuto_Manual);
-         */
-        private void picDropDown_Vertical_Click(object sender, EventArgs e)
+        private void picDropDown_Vertical_Click(object sender, EventArgs e) //定义下拉条点击事件
         {
-            //  btn.Click();
+
             bDropDown_Vertical = !bDropDown_Vertical;
-            pnlHorizon.Size = new Size(248, 120);
-            pnlTransport.Size = new Size(248, 120);
-            bDropDown_Horizon = bDropDown_Transport = false;
+            pnlHorizon.Size = new Size(286, 120); //点击后复位其他下拉条
+            pnlTransport.Size = new Size(286, 120);//点击后复位其他下拉条
+            bDropDown_Horizon = bDropDown_Transport = false;//点击后复位其他下拉条
             if (bDropDown_Vertical)
             {
-                // pnlVertical.Size = new Size(248, 445);
-                pnlVertical.Size = new Size(248, 575);
-                //  pnlOther.Visible = false;
+
+                pnlVertical.Size = new Size(286, 741);
+
             }
             else
             {
-                pnlVertical.Size = new Size(248, 120);
-                // pnlOther.Visible = true;
+                pnlVertical.Size = new Size(286, 120);
+
             }
         }
+        #endregion
 
-        bool bDropDown_Horizon = false;
-        private void picDropDown_Horizon_Click(object sender, EventArgs e)
+        #region 水平轴收缩条
+        bool bDropDown_Horizon = false; //定义变量
+        private void picDropDown_Horizon_Click(object sender, EventArgs e) //定义下拉条点击事件
         {
             bDropDown_Horizon = !bDropDown_Horizon;
-            pnlVertical.Size = new Size(248, 120);
-            pnlTransport.Size = new Size(248, 120);
-            bDropDown_Vertical = bDropDown_Transport = false;
+            pnlVertical.Size = new Size(286, 120); //点击后复位其他下拉条
+            pnlTransport.Size = new Size(286, 120);//点击后复位其他下拉条
+            bDropDown_Vertical = bDropDown_Transport = false;//点击后复位其他下拉条
             if (bDropDown_Horizon)
             {
-                // pnlHorizon.Size = new Size(248, 360);
-                pnlHorizon.Size = new Size(248, 455);
-                // pnlOther.Visible = false;
-
+                pnlHorizon.Size = new Size(286, 619);
             }
             else
             {
-                pnlHorizon.Size = new Size(248, 120);
-                //  pnlOther.Visible = true;
+                pnlHorizon.Size = new Size(286, 120);
             }
         }
+        #endregion
 
-        bool bDropDown_Transport = false;
-        private void picDropDown_L_Click(object sender, EventArgs e)
+        #region 输送机收缩条
+        bool bDropDown_Transport = false; //定义变量
+        private void picDropDown_L_Click(object sender, EventArgs e) //定义下拉条点击事件
         {
             bDropDown_Transport = !bDropDown_Transport;
-            pnlHorizon.Size = new Size(248, 120);
-            pnlVertical.Size = new Size(248, 120);
-            bDropDown_Vertical = bDropDown_Horizon = false;
+            pnlHorizon.Size = new Size(286, 120);//点击后复位其他下拉条
+            pnlVertical.Size = new Size(286, 120);//点击后复位其他下拉条
+            bDropDown_Vertical = bDropDown_Horizon = false;//点击后复位其他下拉条
             if (bDropDown_Transport)
             {
-                // pnlTransport.Size= new Size(248,190);
-                pnlTransport.Size = new Size(248, 340);
-                //  pnlOther.Visible = false;
-
+                pnlTransport.Size = new Size(286, 497);
             }
             else
             {
-                pnlTransport.Size = new Size(248, 120);
-                // pnlOther.Visible = true;
+                pnlTransport.Size = new Size(286, 120);
             }
         }
-
-
-        private void xtraTabControl1_Enter(object sender, EventArgs e)
-        {
-            pnlHorizon.Size = new Size(248, 120);
-            pnlVertical.Size = new Size(248, 120);
-            pnlTransport.Size = new Size(248, 120);
-            pnlDoorLock.Size = new Size(248, 70);
-            pnlOther.Size = new Size(248, 110);
-        }
-
+        #endregion
+       
     }
 }

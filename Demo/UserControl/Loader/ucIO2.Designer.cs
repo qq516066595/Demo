@@ -83,9 +83,10 @@
             this.lblIOLight_16.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_16.Appearance.Options.UseBackColor = true;
             this.lblIOLight_16.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_16.Location = new System.Drawing.Point(185, 211);
+            this.lblIOLight_16.Location = new System.Drawing.Point(162, 166);
+            this.lblIOLight_16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_16.Name = "lblIOLight_16";
-            this.lblIOLight_16.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_16.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_16.TabIndex = 47;
             this.lblIOLight_16.Text = "                     ";
             // 
@@ -94,9 +95,10 @@
             this.lblIOLight_15.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_15.Appearance.Options.UseBackColor = true;
             this.lblIOLight_15.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_15.Location = new System.Drawing.Point(157, 211);
+            this.lblIOLight_15.Location = new System.Drawing.Point(137, 166);
+            this.lblIOLight_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_15.Name = "lblIOLight_15";
-            this.lblIOLight_15.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_15.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_15.TabIndex = 46;
             this.lblIOLight_15.Text = "                     ";
             // 
@@ -105,9 +107,10 @@
             this.lblIOLight_14.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_14.Appearance.Options.UseBackColor = true;
             this.lblIOLight_14.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_14.Location = new System.Drawing.Point(185, 186);
+            this.lblIOLight_14.Location = new System.Drawing.Point(162, 147);
+            this.lblIOLight_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_14.Name = "lblIOLight_14";
-            this.lblIOLight_14.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_14.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_14.TabIndex = 45;
             this.lblIOLight_14.Text = "                     ";
             // 
@@ -116,9 +119,10 @@
             this.lblIOLight_13.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_13.Appearance.Options.UseBackColor = true;
             this.lblIOLight_13.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_13.Location = new System.Drawing.Point(157, 186);
+            this.lblIOLight_13.Location = new System.Drawing.Point(137, 147);
+            this.lblIOLight_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_13.Name = "lblIOLight_13";
-            this.lblIOLight_13.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_13.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_13.TabIndex = 44;
             this.lblIOLight_13.Text = "                     ";
             // 
@@ -127,9 +131,10 @@
             this.lblIOLight_12.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_12.Appearance.Options.UseBackColor = true;
             this.lblIOLight_12.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_12.Location = new System.Drawing.Point(185, 161);
+            this.lblIOLight_12.Location = new System.Drawing.Point(162, 127);
+            this.lblIOLight_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_12.Name = "lblIOLight_12";
-            this.lblIOLight_12.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_12.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_12.TabIndex = 43;
             this.lblIOLight_12.Text = "                     ";
             // 
@@ -138,9 +143,10 @@
             this.lblIOLight_11.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_11.Appearance.Options.UseBackColor = true;
             this.lblIOLight_11.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_11.Location = new System.Drawing.Point(157, 161);
+            this.lblIOLight_11.Location = new System.Drawing.Point(137, 127);
+            this.lblIOLight_11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_11.Name = "lblIOLight_11";
-            this.lblIOLight_11.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_11.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_11.TabIndex = 42;
             this.lblIOLight_11.Text = "                     ";
             // 
@@ -149,9 +155,10 @@
             this.lblIOLight_10.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_10.Appearance.Options.UseBackColor = true;
             this.lblIOLight_10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_10.Location = new System.Drawing.Point(185, 136);
+            this.lblIOLight_10.Location = new System.Drawing.Point(162, 108);
+            this.lblIOLight_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_10.Name = "lblIOLight_10";
-            this.lblIOLight_10.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_10.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_10.TabIndex = 41;
             this.lblIOLight_10.Text = "                     ";
             // 
@@ -160,9 +167,10 @@
             this.lblIOLight_9.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_9.Appearance.Options.UseBackColor = true;
             this.lblIOLight_9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_9.Location = new System.Drawing.Point(157, 136);
+            this.lblIOLight_9.Location = new System.Drawing.Point(137, 108);
+            this.lblIOLight_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_9.Name = "lblIOLight_9";
-            this.lblIOLight_9.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_9.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_9.TabIndex = 40;
             this.lblIOLight_9.Text = "                     ";
             // 
@@ -171,9 +179,10 @@
             this.lblIOLight_8.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_8.Appearance.Options.UseBackColor = true;
             this.lblIOLight_8.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_8.Location = new System.Drawing.Point(185, 100);
+            this.lblIOLight_8.Location = new System.Drawing.Point(162, 80);
+            this.lblIOLight_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_8.Name = "lblIOLight_8";
-            this.lblIOLight_8.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_8.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_8.TabIndex = 39;
             this.lblIOLight_8.Text = "                     ";
             // 
@@ -182,9 +191,10 @@
             this.lblIOLight_7.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_7.Appearance.Options.UseBackColor = true;
             this.lblIOLight_7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_7.Location = new System.Drawing.Point(157, 100);
+            this.lblIOLight_7.Location = new System.Drawing.Point(137, 80);
+            this.lblIOLight_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_7.Name = "lblIOLight_7";
-            this.lblIOLight_7.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_7.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_7.TabIndex = 38;
             this.lblIOLight_7.Text = "                     ";
             // 
@@ -193,9 +203,10 @@
             this.lblIOLight_6.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_6.Appearance.Options.UseBackColor = true;
             this.lblIOLight_6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_6.Location = new System.Drawing.Point(185, 75);
+            this.lblIOLight_6.Location = new System.Drawing.Point(162, 61);
+            this.lblIOLight_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_6.Name = "lblIOLight_6";
-            this.lblIOLight_6.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_6.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_6.TabIndex = 37;
             this.lblIOLight_6.Text = "                     ";
             // 
@@ -204,9 +215,10 @@
             this.lblIOLight_5.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_5.Appearance.Options.UseBackColor = true;
             this.lblIOLight_5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_5.Location = new System.Drawing.Point(157, 75);
+            this.lblIOLight_5.Location = new System.Drawing.Point(137, 61);
+            this.lblIOLight_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_5.Name = "lblIOLight_5";
-            this.lblIOLight_5.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_5.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_5.TabIndex = 36;
             this.lblIOLight_5.Text = "                     ";
             // 
@@ -215,9 +227,10 @@
             this.lblIOLight_4.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_4.Appearance.Options.UseBackColor = true;
             this.lblIOLight_4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_4.Location = new System.Drawing.Point(185, 50);
+            this.lblIOLight_4.Location = new System.Drawing.Point(162, 41);
+            this.lblIOLight_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_4.Name = "lblIOLight_4";
-            this.lblIOLight_4.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_4.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_4.TabIndex = 35;
             this.lblIOLight_4.Text = "                     ";
             // 
@@ -226,9 +239,10 @@
             this.lblIOLight_3.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_3.Appearance.Options.UseBackColor = true;
             this.lblIOLight_3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_3.Location = new System.Drawing.Point(157, 50);
+            this.lblIOLight_3.Location = new System.Drawing.Point(137, 41);
+            this.lblIOLight_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_3.Name = "lblIOLight_3";
-            this.lblIOLight_3.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_3.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_3.TabIndex = 34;
             this.lblIOLight_3.Text = "                     ";
             // 
@@ -237,9 +251,10 @@
             this.lblIOLight_2.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_2.Appearance.Options.UseBackColor = true;
             this.lblIOLight_2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_2.Location = new System.Drawing.Point(185, 25);
+            this.lblIOLight_2.Location = new System.Drawing.Point(162, 22);
+            this.lblIOLight_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_2.Name = "lblIOLight_2";
-            this.lblIOLight_2.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_2.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_2.TabIndex = 48;
             this.lblIOLight_2.Text = "                     ";
             // 
@@ -248,201 +263,216 @@
             this.lblIOLight_1.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_1.Appearance.Options.UseBackColor = true;
             this.lblIOLight_1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_1.Location = new System.Drawing.Point(157, 25);
+            this.lblIOLight_1.Location = new System.Drawing.Point(137, 22);
+            this.lblIOLight_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_1.Name = "lblIOLight_1";
-            this.lblIOLight_1.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_1.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_1.TabIndex = 33;
             this.lblIOLight_1.Text = "                     ";
             // 
             // txtIO_1
             // 
             this.txtIO_1.EditValue = "机械手收到放舟信号";
-            this.txtIO_1.Location = new System.Drawing.Point(10, 23);
+            this.txtIO_1.Location = new System.Drawing.Point(9, 18);
+            this.txtIO_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_1.Name = "txtIO_1";
-            this.txtIO_1.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_1.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtIO_1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtIO_1.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_1.Size = new System.Drawing.Size(125, 18);
             this.txtIO_1.TabIndex = 65;
             // 
             // txtIO_3
             // 
             this.txtIO_3.EditValue = "机械手收到放舟信号";
-            this.txtIO_3.Location = new System.Drawing.Point(10, 48);
+            this.txtIO_3.Location = new System.Drawing.Point(9, 37);
+            this.txtIO_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_3.Name = "txtIO_3";
-            this.txtIO_3.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_3.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_3.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtIO_3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtIO_3.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_3.Size = new System.Drawing.Size(125, 18);
             this.txtIO_3.TabIndex = 65;
             // 
             // txtIO_5
             // 
             this.txtIO_5.EditValue = "机械手收到放舟信号";
-            this.txtIO_5.Location = new System.Drawing.Point(10, 73);
+            this.txtIO_5.Location = new System.Drawing.Point(9, 57);
+            this.txtIO_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_5.Name = "txtIO_5";
-            this.txtIO_5.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_5.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_5.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_5.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtIO_5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtIO_5.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_5.Size = new System.Drawing.Size(125, 18);
             this.txtIO_5.TabIndex = 65;
             // 
             // txtIO_7
             // 
             this.txtIO_7.EditValue = "机械手收到放舟信号";
-            this.txtIO_7.Location = new System.Drawing.Point(10, 98);
+            this.txtIO_7.Location = new System.Drawing.Point(9, 76);
+            this.txtIO_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_7.Name = "txtIO_7";
-            this.txtIO_7.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_7.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_7.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_7.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtIO_7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtIO_7.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_7.Size = new System.Drawing.Size(125, 18);
             this.txtIO_7.TabIndex = 65;
             // 
             // txtIO_2
             // 
             this.txtIO_2.EditValue = "机械手收到放舟信号";
-            this.txtIO_2.Location = new System.Drawing.Point(207, 23);
+            this.txtIO_2.Location = new System.Drawing.Point(181, 18);
+            this.txtIO_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_2.Name = "txtIO_2";
-            this.txtIO_2.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_2.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtIO_2.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_2.Size = new System.Drawing.Size(125, 18);
             this.txtIO_2.TabIndex = 65;
             // 
             // txtIO_4
             // 
             this.txtIO_4.EditValue = "机械手收到放舟信号";
-            this.txtIO_4.Location = new System.Drawing.Point(207, 48);
+            this.txtIO_4.Location = new System.Drawing.Point(181, 37);
+            this.txtIO_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_4.Name = "txtIO_4";
-            this.txtIO_4.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_4.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_4.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtIO_4.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_4.Size = new System.Drawing.Size(125, 18);
             this.txtIO_4.TabIndex = 65;
             // 
             // txtIO_6
             // 
             this.txtIO_6.EditValue = "机械手收到放舟信号";
-            this.txtIO_6.Location = new System.Drawing.Point(207, 73);
+            this.txtIO_6.Location = new System.Drawing.Point(181, 57);
+            this.txtIO_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_6.Name = "txtIO_6";
-            this.txtIO_6.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_6.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_6.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_6.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtIO_6.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_6.Size = new System.Drawing.Size(125, 18);
             this.txtIO_6.TabIndex = 65;
             // 
             // txtIO_8
             // 
             this.txtIO_8.EditValue = "机械手收到放舟信号";
-            this.txtIO_8.Location = new System.Drawing.Point(207, 98);
+            this.txtIO_8.Location = new System.Drawing.Point(181, 76);
+            this.txtIO_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_8.Name = "txtIO_8";
-            this.txtIO_8.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_8.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_8.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_8.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtIO_8.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_8.Size = new System.Drawing.Size(125, 18);
             this.txtIO_8.TabIndex = 65;
             // 
             // txtIO_9
             // 
             this.txtIO_9.EditValue = "机械手收到放舟信号";
-            this.txtIO_9.Location = new System.Drawing.Point(10, 134);
+            this.txtIO_9.Location = new System.Drawing.Point(9, 104);
+            this.txtIO_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_9.Name = "txtIO_9";
-            this.txtIO_9.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_9.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_9.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_9.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtIO_9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtIO_9.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_9.Size = new System.Drawing.Size(125, 18);
             this.txtIO_9.TabIndex = 65;
             // 
             // txtIO_10
             // 
             this.txtIO_10.EditValue = "机械手收到放舟信号";
-            this.txtIO_10.Location = new System.Drawing.Point(207, 134);
+            this.txtIO_10.Location = new System.Drawing.Point(181, 104);
+            this.txtIO_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_10.Name = "txtIO_10";
-            this.txtIO_10.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_10.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_10.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_10.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtIO_10.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_10.Size = new System.Drawing.Size(125, 18);
             this.txtIO_10.TabIndex = 65;
             // 
             // txtIO_11
             // 
             this.txtIO_11.EditValue = "机械手收到放舟信号";
-            this.txtIO_11.Location = new System.Drawing.Point(10, 159);
+            this.txtIO_11.Location = new System.Drawing.Point(9, 124);
+            this.txtIO_11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_11.Name = "txtIO_11";
-            this.txtIO_11.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_11.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_11.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_11.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtIO_11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtIO_11.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_11.Size = new System.Drawing.Size(125, 18);
             this.txtIO_11.TabIndex = 65;
             // 
             // txtIO_12
             // 
             this.txtIO_12.EditValue = "机械手收到放舟信号";
-            this.txtIO_12.Location = new System.Drawing.Point(207, 159);
+            this.txtIO_12.Location = new System.Drawing.Point(181, 124);
+            this.txtIO_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_12.Name = "txtIO_12";
-            this.txtIO_12.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_12.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_12.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_12.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtIO_12.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_12.Size = new System.Drawing.Size(125, 18);
             this.txtIO_12.TabIndex = 65;
             // 
             // txtIO_13
             // 
             this.txtIO_13.EditValue = "机械手收到放舟信号";
-            this.txtIO_13.Location = new System.Drawing.Point(10, 184);
+            this.txtIO_13.Location = new System.Drawing.Point(9, 143);
+            this.txtIO_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_13.Name = "txtIO_13";
-            this.txtIO_13.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_13.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_13.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_13.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtIO_13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtIO_13.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_13.Size = new System.Drawing.Size(125, 18);
             this.txtIO_13.TabIndex = 65;
             // 
             // txtIO_14
             // 
             this.txtIO_14.EditValue = "机械手收到放舟信号";
-            this.txtIO_14.Location = new System.Drawing.Point(207, 184);
+            this.txtIO_14.Location = new System.Drawing.Point(181, 143);
+            this.txtIO_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_14.Name = "txtIO_14";
-            this.txtIO_14.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_14.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_14.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_14.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtIO_14.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_14.Size = new System.Drawing.Size(125, 18);
             this.txtIO_14.TabIndex = 65;
             // 
             // txtIO_15
             // 
             this.txtIO_15.EditValue = "机械手收到放舟信号";
-            this.txtIO_15.Location = new System.Drawing.Point(10, 209);
+            this.txtIO_15.Location = new System.Drawing.Point(9, 163);
+            this.txtIO_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_15.Name = "txtIO_15";
-            this.txtIO_15.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_15.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_15.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_15.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.txtIO_15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtIO_15.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_15.Size = new System.Drawing.Size(125, 18);
             this.txtIO_15.TabIndex = 65;
             // 
             // txtIO_16
             // 
             this.txtIO_16.EditValue = "机械手收到放舟信号";
-            this.txtIO_16.Location = new System.Drawing.Point(207, 209);
+            this.txtIO_16.Location = new System.Drawing.Point(181, 163);
+            this.txtIO_16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIO_16.Name = "txtIO_16";
-            this.txtIO_16.Properties.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.txtIO_16.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.txtIO_16.Properties.Appearance.Options.UseBackColor = true;
             this.txtIO_16.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtIO_16.Size = new System.Drawing.Size(143, 22);
+            this.txtIO_16.Size = new System.Drawing.Size(125, 18);
             this.txtIO_16.TabIndex = 65;
             // 
             // ucIO2
             // 
-            this.Appearance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.txtIO_16);
             this.Controls.Add(this.txtIO_8);
@@ -476,8 +506,9 @@
             this.Controls.Add(this.lblIOLight_3);
             this.Controls.Add(this.lblIOLight_2);
             this.Controls.Add(this.lblIOLight_1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ucIO2";
-            this.Size = new System.Drawing.Size(364, 251);
+            this.Size = new System.Drawing.Size(318, 195);
             this.Load += new System.EventHandler(this.ucIO2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtIO_1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtIO_3.Properties)).EndInit();
