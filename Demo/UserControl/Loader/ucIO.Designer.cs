@@ -67,9 +67,10 @@
             this.lblIOLight_1.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_1.Appearance.Options.UseBackColor = true;
             this.lblIOLight_1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_1.Location = new System.Drawing.Point(157, 24);
+            this.lblIOLight_1.Location = new System.Drawing.Point(126, 10);
+            this.lblIOLight_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_1.Name = "lblIOLight_1";
-            this.lblIOLight_1.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_1.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_1.TabIndex = 31;
             this.lblIOLight_1.Text = "                     ";
             // 
@@ -78,9 +79,10 @@
             this.lblIOLight_2.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_2.Appearance.Options.UseBackColor = true;
             this.lblIOLight_2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_2.Location = new System.Drawing.Point(181, 24);
+            this.lblIOLight_2.Location = new System.Drawing.Point(147, 10);
+            this.lblIOLight_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_2.Name = "lblIOLight_2";
-            this.lblIOLight_2.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_2.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_2.TabIndex = 31;
             this.lblIOLight_2.Text = "                     ";
             // 
@@ -89,9 +91,10 @@
             this.lblIOLight_3.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_3.Appearance.Options.UseBackColor = true;
             this.lblIOLight_3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_3.Location = new System.Drawing.Point(157, 49);
+            this.lblIOLight_3.Location = new System.Drawing.Point(126, 29);
+            this.lblIOLight_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_3.Name = "lblIOLight_3";
-            this.lblIOLight_3.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_3.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_3.TabIndex = 31;
             this.lblIOLight_3.Text = "                     ";
             // 
@@ -100,9 +103,10 @@
             this.lblIOLight_4.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_4.Appearance.Options.UseBackColor = true;
             this.lblIOLight_4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_4.Location = new System.Drawing.Point(181, 49);
+            this.lblIOLight_4.Location = new System.Drawing.Point(147, 29);
+            this.lblIOLight_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_4.Name = "lblIOLight_4";
-            this.lblIOLight_4.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_4.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_4.TabIndex = 31;
             this.lblIOLight_4.Text = "                     ";
             // 
@@ -111,9 +115,10 @@
             this.lblIOLight_5.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_5.Appearance.Options.UseBackColor = true;
             this.lblIOLight_5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_5.Location = new System.Drawing.Point(157, 74);
+            this.lblIOLight_5.Location = new System.Drawing.Point(126, 49);
+            this.lblIOLight_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_5.Name = "lblIOLight_5";
-            this.lblIOLight_5.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_5.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_5.TabIndex = 31;
             this.lblIOLight_5.Text = "                     ";
             // 
@@ -122,9 +127,10 @@
             this.lblIOLight_6.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_6.Appearance.Options.UseBackColor = true;
             this.lblIOLight_6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_6.Location = new System.Drawing.Point(181, 74);
+            this.lblIOLight_6.Location = new System.Drawing.Point(147, 49);
+            this.lblIOLight_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_6.Name = "lblIOLight_6";
-            this.lblIOLight_6.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_6.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_6.TabIndex = 31;
             this.lblIOLight_6.Text = "                     ";
             // 
@@ -133,9 +139,10 @@
             this.lblIOLight_7.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_7.Appearance.Options.UseBackColor = true;
             this.lblIOLight_7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_7.Location = new System.Drawing.Point(157, 99);
+            this.lblIOLight_7.Location = new System.Drawing.Point(126, 68);
+            this.lblIOLight_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_7.Name = "lblIOLight_7";
-            this.lblIOLight_7.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_7.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_7.TabIndex = 31;
             this.lblIOLight_7.Text = "                     ";
             // 
@@ -144,9 +151,10 @@
             this.lblIOLight_8.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_8.Appearance.Options.UseBackColor = true;
             this.lblIOLight_8.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_8.Location = new System.Drawing.Point(181, 99);
+            this.lblIOLight_8.Location = new System.Drawing.Point(147, 68);
+            this.lblIOLight_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_8.Name = "lblIOLight_8";
-            this.lblIOLight_8.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_8.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_8.TabIndex = 31;
             this.lblIOLight_8.Text = "                     ";
             // 
@@ -155,9 +163,10 @@
             this.lblIOLight_9.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_9.Appearance.Options.UseBackColor = true;
             this.lblIOLight_9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_9.Location = new System.Drawing.Point(157, 135);
+            this.lblIOLight_9.Location = new System.Drawing.Point(126, 96);
+            this.lblIOLight_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_9.Name = "lblIOLight_9";
-            this.lblIOLight_9.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_9.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_9.TabIndex = 31;
             this.lblIOLight_9.Text = "                     ";
             // 
@@ -166,9 +175,10 @@
             this.lblIOLight_10.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_10.Appearance.Options.UseBackColor = true;
             this.lblIOLight_10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_10.Location = new System.Drawing.Point(181, 135);
+            this.lblIOLight_10.Location = new System.Drawing.Point(147, 96);
+            this.lblIOLight_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_10.Name = "lblIOLight_10";
-            this.lblIOLight_10.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_10.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_10.TabIndex = 31;
             this.lblIOLight_10.Text = "                     ";
             // 
@@ -177,9 +187,10 @@
             this.lblIOLight_11.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_11.Appearance.Options.UseBackColor = true;
             this.lblIOLight_11.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_11.Location = new System.Drawing.Point(157, 160);
+            this.lblIOLight_11.Location = new System.Drawing.Point(126, 115);
+            this.lblIOLight_11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_11.Name = "lblIOLight_11";
-            this.lblIOLight_11.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_11.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_11.TabIndex = 31;
             this.lblIOLight_11.Text = "                     ";
             // 
@@ -188,9 +199,10 @@
             this.lblIOLight_12.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_12.Appearance.Options.UseBackColor = true;
             this.lblIOLight_12.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_12.Location = new System.Drawing.Point(181, 160);
+            this.lblIOLight_12.Location = new System.Drawing.Point(147, 115);
+            this.lblIOLight_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_12.Name = "lblIOLight_12";
-            this.lblIOLight_12.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_12.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_12.TabIndex = 31;
             this.lblIOLight_12.Text = "                     ";
             // 
@@ -199,9 +211,10 @@
             this.lblIOLight_13.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_13.Appearance.Options.UseBackColor = true;
             this.lblIOLight_13.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_13.Location = new System.Drawing.Point(157, 185);
+            this.lblIOLight_13.Location = new System.Drawing.Point(126, 135);
+            this.lblIOLight_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_13.Name = "lblIOLight_13";
-            this.lblIOLight_13.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_13.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_13.TabIndex = 31;
             this.lblIOLight_13.Text = "                     ";
             // 
@@ -210,9 +223,10 @@
             this.lblIOLight_14.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_14.Appearance.Options.UseBackColor = true;
             this.lblIOLight_14.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_14.Location = new System.Drawing.Point(181, 185);
+            this.lblIOLight_14.Location = new System.Drawing.Point(147, 135);
+            this.lblIOLight_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_14.Name = "lblIOLight_14";
-            this.lblIOLight_14.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_14.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_14.TabIndex = 31;
             this.lblIOLight_14.Text = "                     ";
             // 
@@ -221,9 +235,10 @@
             this.lblIOLight_15.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_15.Appearance.Options.UseBackColor = true;
             this.lblIOLight_15.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_15.Location = new System.Drawing.Point(157, 210);
+            this.lblIOLight_15.Location = new System.Drawing.Point(126, 154);
+            this.lblIOLight_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_15.Name = "lblIOLight_15";
-            this.lblIOLight_15.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_15.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_15.TabIndex = 31;
             this.lblIOLight_15.Text = "                     ";
             // 
@@ -232,145 +247,154 @@
             this.lblIOLight_16.Appearance.BackColor = System.Drawing.Color.Lime;
             this.lblIOLight_16.Appearance.Options.UseBackColor = true;
             this.lblIOLight_16.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblIOLight_16.Location = new System.Drawing.Point(181, 210);
+            this.lblIOLight_16.Location = new System.Drawing.Point(147, 154);
+            this.lblIOLight_16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOLight_16.Name = "lblIOLight_16";
-            this.lblIOLight_16.Size = new System.Drawing.Size(18, 18);
+            this.lblIOLight_16.Size = new System.Drawing.Size(16, 14);
             this.lblIOLight_16.TabIndex = 31;
             this.lblIOLight_16.Text = "                     ";
             // 
             // lblIOText_1
             // 
-            this.lblIOText_1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblIOText_1.Location = new System.Drawing.Point(16, 24);
+            this.lblIOText_1.Location = new System.Drawing.Point(11, 10);
+            this.lblIOText_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_1.Name = "lblIOText_1";
-            this.lblIOText_1.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_1.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_1.TabIndex = 32;
             this.lblIOText_1.Text = "机械手收到放舟信号";
             // 
             // lblIOText_3
             // 
-            this.lblIOText_3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblIOText_3.Location = new System.Drawing.Point(16, 49);
+            this.lblIOText_3.Location = new System.Drawing.Point(11, 29);
+            this.lblIOText_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_3.Name = "lblIOText_3";
-            this.lblIOText_3.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_3.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_3.TabIndex = 32;
             this.lblIOText_3.Text = "机械手收到放舟信号";
             // 
             // lblIOText_5
             // 
-            this.lblIOText_5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblIOText_5.Location = new System.Drawing.Point(16, 74);
+            this.lblIOText_5.Location = new System.Drawing.Point(11, 49);
+            this.lblIOText_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_5.Name = "lblIOText_5";
-            this.lblIOText_5.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_5.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_5.TabIndex = 32;
             this.lblIOText_5.Text = "机械手收到放舟信号";
             // 
             // lblIOText_7
             // 
-            this.lblIOText_7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblIOText_7.Location = new System.Drawing.Point(16, 99);
+            this.lblIOText_7.Location = new System.Drawing.Point(11, 68);
+            this.lblIOText_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_7.Name = "lblIOText_7";
-            this.lblIOText_7.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_7.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_7.TabIndex = 32;
             this.lblIOText_7.Text = "机械手收到放舟信号";
             // 
             // lblIOText_9
             // 
-            this.lblIOText_9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblIOText_9.Location = new System.Drawing.Point(16, 135);
+            this.lblIOText_9.Location = new System.Drawing.Point(11, 96);
+            this.lblIOText_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_9.Name = "lblIOText_9";
-            this.lblIOText_9.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_9.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_9.TabIndex = 32;
             this.lblIOText_9.Text = "机械手收到放舟信号";
             // 
             // lblIOText_11
             // 
-            this.lblIOText_11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblIOText_11.Location = new System.Drawing.Point(16, 160);
+            this.lblIOText_11.Location = new System.Drawing.Point(11, 115);
+            this.lblIOText_11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_11.Name = "lblIOText_11";
-            this.lblIOText_11.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_11.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_11.TabIndex = 32;
             this.lblIOText_11.Text = "机械手收到放舟信号";
             // 
             // lblIOText_13
             // 
-            this.lblIOText_13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblIOText_13.Location = new System.Drawing.Point(16, 185);
+            this.lblIOText_13.Location = new System.Drawing.Point(11, 135);
+            this.lblIOText_13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_13.Name = "lblIOText_13";
-            this.lblIOText_13.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_13.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_13.TabIndex = 32;
             this.lblIOText_13.Text = "机械手收到放舟信号";
             // 
             // lblIOText_15
             // 
-            this.lblIOText_15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblIOText_15.Location = new System.Drawing.Point(16, 210);
+            this.lblIOText_15.Location = new System.Drawing.Point(11, 154);
+            this.lblIOText_15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_15.Name = "lblIOText_15";
-            this.lblIOText_15.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_15.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_15.TabIndex = 32;
             this.lblIOText_15.Text = "机械手收到放舟信号";
             // 
             // lblIOText_2
             // 
-            this.lblIOText_2.Location = new System.Drawing.Point(205, 24);
+            this.lblIOText_2.Location = new System.Drawing.Point(168, 10);
+            this.lblIOText_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_2.Name = "lblIOText_2";
-            this.lblIOText_2.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_2.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_2.TabIndex = 32;
             this.lblIOText_2.Text = "机械手收到放舟信号";
             // 
             // lblIOText_4
             // 
-            this.lblIOText_4.Location = new System.Drawing.Point(205, 49);
+            this.lblIOText_4.Location = new System.Drawing.Point(168, 29);
+            this.lblIOText_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_4.Name = "lblIOText_4";
-            this.lblIOText_4.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_4.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_4.TabIndex = 32;
             this.lblIOText_4.Text = "机械手收到放舟信号";
             // 
             // lblIOText_6
             // 
-            this.lblIOText_6.Location = new System.Drawing.Point(205, 74);
+            this.lblIOText_6.Location = new System.Drawing.Point(168, 49);
+            this.lblIOText_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_6.Name = "lblIOText_6";
-            this.lblIOText_6.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_6.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_6.TabIndex = 32;
             this.lblIOText_6.Text = "机械手收到放舟信号";
             // 
             // lblIOText_8
             // 
-            this.lblIOText_8.Location = new System.Drawing.Point(205, 99);
+            this.lblIOText_8.Location = new System.Drawing.Point(168, 68);
+            this.lblIOText_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_8.Name = "lblIOText_8";
-            this.lblIOText_8.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_8.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_8.TabIndex = 32;
             this.lblIOText_8.Text = "机械手收到放舟信号";
             // 
             // lblIOText_10
             // 
-            this.lblIOText_10.Location = new System.Drawing.Point(205, 135);
+            this.lblIOText_10.Location = new System.Drawing.Point(168, 96);
+            this.lblIOText_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_10.Name = "lblIOText_10";
-            this.lblIOText_10.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_10.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_10.TabIndex = 32;
             this.lblIOText_10.Text = "机械手收到放舟信号";
             // 
             // lblIOText_12
             // 
-            this.lblIOText_12.Location = new System.Drawing.Point(205, 160);
+            this.lblIOText_12.Location = new System.Drawing.Point(168, 115);
+            this.lblIOText_12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_12.Name = "lblIOText_12";
-            this.lblIOText_12.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_12.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_12.TabIndex = 32;
             this.lblIOText_12.Text = "机械手收到放舟信号";
             // 
             // lblIOText_14
             // 
-            this.lblIOText_14.Location = new System.Drawing.Point(205, 185);
+            this.lblIOText_14.Location = new System.Drawing.Point(168, 135);
+            this.lblIOText_14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_14.Name = "lblIOText_14";
-            this.lblIOText_14.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_14.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_14.TabIndex = 32;
             this.lblIOText_14.Text = "机械手收到放舟信号";
             // 
             // lblIOText_16
             // 
-            this.lblIOText_16.Location = new System.Drawing.Point(205, 210);
+            this.lblIOText_16.Location = new System.Drawing.Point(168, 154);
+            this.lblIOText_16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblIOText_16.Name = "lblIOText_16";
-            this.lblIOText_16.Size = new System.Drawing.Size(135, 18);
+            this.lblIOText_16.Size = new System.Drawing.Size(108, 14);
             this.lblIOText_16.TabIndex = 32;
             this.lblIOText_16.Text = "机械手收到放舟信号";
             // 
@@ -378,7 +402,7 @@
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblIOText_16);
             this.Controls.Add(this.lblIOText_15);
@@ -412,8 +436,9 @@
             this.Controls.Add(this.lblIOLight_3);
             this.Controls.Add(this.lblIOLight_2);
             this.Controls.Add(this.lblIOLight_1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ucIO";
-            this.Size = new System.Drawing.Size(360, 242);
+            this.Size = new System.Drawing.Size(287, 179);
             this.ResumeLayout(false);
             this.PerformLayout();
 
