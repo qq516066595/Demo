@@ -30,7 +30,7 @@ namespace Demo.Forms.Template
             InitializeComponent();
             MRF = this;
             MRF.IsMdiContainer = true;
-            defaultLookAndFeel1.LookAndFeel.SkinName = "DevExpress Style";//窗体默认皮肤
+            defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2007 Black";//窗体默认皮肤
 
             //设置tab子窗体不可关闭
             xtraTabbedMdiManager1.PageAdded += (s, ei) =>
@@ -137,43 +137,43 @@ namespace Demo.Forms.Template
             ActivateOrAddForm(" 第 三 组 ", "Demo.Forms.Tube.frmTubeMain",3);
             ActivateOrAddForm(" 第 四 组 ", "Demo.Forms.Tube.frmTubeMain",4);
             ActivateOrAddForm(" 第 五 组 ", "Demo.Forms.Tube.frmTubeMain",5);
-            ActivateOrAddForm(" 机 械 手 ", "Demo.Forms.Loader.frmHanderMain",6);
+           // ActivateOrAddForm(" 机 械 手 ", "Demo.Forms.Loader.frmHanderMain",6);
         }
         #endregion
 
-        #region Dev换肤设置，可优化
+        #region Dev换肤设置，可优化(已注释，商讨是否无需换肤后决定是否删除)
         /// <summary>
         /// 换肤
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void lblSkinsOne_Click(object sender, EventArgs e)
-        {
-            Skins("DevExpress Style"); 
-            lblSkinsOne.BackColor = Color.LightBlue;
-            lblSkinsTwo.BackColor = DefaultBackColor;
-            lblSkinsThree.BackColor = DefaultBackColor; 
-        }
-        private void lblSkinsTwo_Click(object sender, EventArgs e)
-        {
-            Skins("Caramel");
-            lblSkinsTwo.BackColor = Color.LightBlue;
-            lblSkinsOne.BackColor = DefaultBackColor;
-            lblSkinsThree.BackColor = DefaultBackColor;
-        }
-        private void lblSkinsThree_Click(object sender, EventArgs e)
-        {
-            Skins("Office 2007 Black");
-            lblSkinsThree.BackColor = Color.LightBlue;
-            lblSkinsOne.BackColor = DefaultBackColor;
-            lblSkinsTwo.BackColor = DefaultBackColor;
-        }
-        private void Skins(string SkinName)
-        {
-            defaultLookAndFeel1.LookAndFeel.UseWindowsXPTheme = false;
-            defaultLookAndFeel1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Skin;
-            defaultLookAndFeel1.LookAndFeel.SkinName = SkinName;
-        }
+        //private void lblSkinsOne_Click(object sender, EventArgs e)
+        //{
+        //    Skins("DevExpress Style"); 
+        //    lblSkinsOne.BackColor = Color.LightBlue;
+        //    lblSkinsTwo.BackColor = DefaultBackColor;
+        //    lblSkinsThree.BackColor = DefaultBackColor; 
+        //}
+        //private void lblSkinsTwo_Click(object sender, EventArgs e)
+        //{
+        //    Skins("Caramel");
+        //    lblSkinsTwo.BackColor = Color.LightBlue;
+        //    lblSkinsOne.BackColor = DefaultBackColor;
+        //    lblSkinsThree.BackColor = DefaultBackColor;
+        //}
+        //private void lblSkinsThree_Click(object sender, EventArgs e)
+        //{
+        //    Skins("Office 2007 Black");
+        //    lblSkinsThree.BackColor = Color.LightBlue;
+        //    lblSkinsOne.BackColor = DefaultBackColor;
+        //    lblSkinsTwo.BackColor = DefaultBackColor;
+        //}
+        //private void Skins(string SkinName)
+        //{
+        //    defaultLookAndFeel1.LookAndFeel.UseWindowsXPTheme = false;
+        //    defaultLookAndFeel1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Skin;
+        //    defaultLookAndFeel1.LookAndFeel.SkinName = SkinName;
+        //}
         #endregion
     }
 }

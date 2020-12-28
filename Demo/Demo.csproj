@@ -157,10 +157,10 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Template\frmParent.cs">
+    <Compile Include="Forms\frmParent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Template\frmParent.Designer.cs">
+    <Compile Include="Forms\frmParent.Designer.cs">
       <DependentUpon>frmParent.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Tube\frmTubeMain.cs">
@@ -232,7 +232,7 @@
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Template\frmParent.resx">
+    <EmbeddedResource Include="Forms\frmParent.resx">
       <DependentUpon>frmParent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tube\frmHeating.resx">
@@ -241,7 +241,6 @@
     <EmbeddedResource Include="Forms\Tube\frmTubeMain.resx">
       <DependentUpon>frmTubeMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -296,9 +295,7 @@
     <None Include="bin\Debug\config\confT3.properties" />
     <None Include="bin\Debug\config\confT4.properties" />
     <None Include="bin\Debug\database\db_Sys.sqlite" />
-    <None Include="bin\Debug\database\db_Sys.sqlite-journal" />
     <None Include="bin\Debug\database\db_T1.sqlite" />
-    <None Include="bin\Debug\database\db_T1.sqlite-journal" />
     <None Include="bin\Debug\database\db_T2.sqlite" />
     <None Include="bin\Debug\database\db_T3.sqlite" />
     <None Include="bin\Debug\database\db_T4.sqlite" />

@@ -37,7 +37,6 @@ namespace Demo.Forms.Tube
         private void btnShowMVAndSP_Click(object sender, EventArgs e)
         {
             Fold(165, 115, "上下", pcTempZone, btnShowMVAndSP);
-            MessageBox.Show(this.Tag.ToString());
         }
         /// <summary>
         /// 主界面--轴控单元操作按钮显示与隐藏
@@ -46,7 +45,7 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnShowAxis_Click(object sender, EventArgs e)
         {
-            Fold(465, 115, "上下", pcAxis, btnShowAxis);
+            Fold(490, 115, "上下", pcAxis, btnShowAxis);
         }
         #endregion
 
