@@ -114,6 +114,12 @@
     <Compile Include="Forms\frmHomePage.Designer.cs">
       <DependentUpon>frmHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Loader\AssistTool.cs" />
     <Compile Include="Forms\Loader\frmHanderMain.cs">
       <SubType>Form</SubType>
@@ -127,12 +133,27 @@
     <Compile Include="Forms\Loader\XtraForm1.Designer.cs">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Template\frmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Template\frmLoading.Designer.cs">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Template\frmParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Template\frmParent.Designer.cs">
+      <DependentUpon>frmParent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Tube\frmHeating.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Tube\frmHeating.Designer.cs">
       <DependentUpon>frmHeating.cs</DependentUpon>
     </Compile>
+    <Compile Include="model\ModelHelper.cs" />
+    <Compile Include="model\TubeDoConfViewModel.cs" />
+    <Compile Include="model\TubeViewModelFactory.cs" />
     <Compile Include="UserControl\Loader\ucAxisPos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -157,10 +178,10 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmParent.cs">
+    <Compile Include="Forms\Template\frmParent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmParent.Designer.cs">
+    <Compile Include="Forms\Template\frmParent.Designer.cs">
       <DependentUpon>frmParent.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Tube\frmTubeMain.cs">
@@ -217,11 +238,13 @@
     <Compile Include="UserControl\Tube\ucSetMFC.Designer.cs">
       <DependentUpon>ucSetMFC.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\frmHomePage.resx">
       <DependentUpon>frmHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Loader\frmHanderMain.resx">
       <DependentUpon>frmHanderMain.cs</DependentUpon>
@@ -229,8 +252,8 @@
     <EmbeddedResource Include="Forms\Loader\XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Template\frmLoading.resx">
+      <DependentUpon>frmLoading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmParent.resx">
       <DependentUpon>frmParent.cs</DependentUpon>
@@ -370,7 +393,7 @@
       <Project>{5B454594-3F89-4968-84E5-C6F673F87DAD}</Project>
       <Name>com.FunctionModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\com.TubeServices\com.TubeServices.csproj">
+    <ProjectReference Include="..\com.TubeServices\com.Services.csproj">
       <Project>{A9A14334-CABD-40FC-9D42-648F038D15E3}</Project>
       <Name>com.TubeServices</Name>
     </ProjectReference>
