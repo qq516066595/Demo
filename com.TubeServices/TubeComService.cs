@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace com.TubeServices
 {
+    //炉管通讯链接
    public class TubeComService
     {
 

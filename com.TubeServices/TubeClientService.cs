@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace com.TubeServices
 {
+    //炉管通讯交互层
    public class TubeClientService
     {
         public static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

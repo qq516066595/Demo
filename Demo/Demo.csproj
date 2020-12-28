@@ -376,7 +376,7 @@
       <Project>{5B454594-3F89-4968-84E5-C6F673F87DAD}</Project>
       <Name>com.FunctionModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\com.TubeServices\com.Services.csproj">
+    <ProjectReference Include="..\com.TubeServices\com.TubeServices.csproj">
       <Project>{A9A14334-CABD-40FC-9D42-648F038D15E3}</Project>
       <Name>com.Services</Name>
     </ProjectReference>

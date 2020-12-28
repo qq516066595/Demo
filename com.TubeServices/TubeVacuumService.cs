@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace com.TubeServices
 {
-    //机械手通讯交互层
-    public class LoaderClientService
+   public class TubeVacuumService
     {
+
 
 
 
