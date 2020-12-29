@@ -143,7 +143,11 @@ namespace com.DataBaseDAL
             
 
 
-         
+            MyModus.stMFC_Ctrl sd = new MyModus.stMFC_Ctrl();
+            sd.bCheckDiff_Enable = true;
+            MyModus.stRecipeArrary[1].bOpen_Valve_1 = true;
+
+            
 
 
 

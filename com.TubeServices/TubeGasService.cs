@@ -32,7 +32,8 @@ namespace com.TubeServices
 
         public void GetGasInfo(int tubeIndex)
         { 
-          
+            MyModus.AxisParaEx sd = new MyModus.AxisParaEx();
+            sd.bAutoCalcEnable = false;
         }
 
 

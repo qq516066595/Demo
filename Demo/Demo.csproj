@@ -114,18 +114,6 @@
     <Compile Include="Forms\frmHomePage.Designer.cs">
       <DependentUpon>frmHomePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmLoading.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmLoading.designer.cs">
-      <DependentUpon>frmLoading.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmParent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmParent.Designer.cs">
-      <DependentUpon>frmParent.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Loader\AssistTool.cs" />
     <Compile Include="Forms\Loader\frmHanderMain.cs">
       <SubType>Form</SubType>
@@ -144,6 +132,12 @@
     </Compile>
     <Compile Include="Forms\Tube\frmHeating.Designer.cs">
       <DependentUpon>frmHeating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tube\frmUnlockPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tube\frmUnlockPwd.Designer.cs">
+      <DependentUpon>frmUnlockPwd.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Loader\ucAxisPos.cs">
       <SubType>UserControl</SubType>
@@ -168,6 +162,12 @@
     </Compile>
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmParent.Designer.cs">
+      <DependentUpon>frmParent.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Tube\frmTubeMain.cs">
       <SubType>Form</SubType>
@@ -223,16 +223,11 @@
     <Compile Include="UserControl\Tube\ucSetMFC.Designer.cs">
       <DependentUpon>ucSetMFC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\frmHomePage.resx">
       <DependentUpon>frmHomePage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmLoading.resx">
-      <DependentUpon>frmLoading.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmParent.resx">
-      <DependentUpon>frmParent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Loader\frmHanderMain.resx">
       <DependentUpon>frmHanderMain.cs</DependentUpon>
@@ -240,11 +235,20 @@
     <EmbeddedResource Include="Forms\Loader\XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmParent.resx">
+      <DependentUpon>frmParent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tube\frmHeating.resx">
       <DependentUpon>frmHeating.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tube\frmTubeMain.resx">
       <DependentUpon>frmTubeMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tube\frmUnlockPwd.resx">
+      <DependentUpon>frmUnlockPwd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -359,6 +363,7 @@
     <Content Include="lib\System.Data.SQLite.dll" />
     <Content Include="lib\System.Data.SQLite.EF6.dll" />
     <Content Include="lib\System.Data.SQLite.Linq.dll" />
+    <None Include="Resources\Danger.png" />
     <None Include="Resources\DefSplashImage.png" />
     <None Include="Resources\下拉箭头3.png" />
     <None Include="Resources\下拉箭头2.png" />
@@ -372,13 +377,17 @@
     <None Include="Resources\静音 红.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\com.DataBaseModels\com.DataBaseModels.csproj">
+      <Project>{B715FD74-B066-4C5D-86BB-A1A700BA8795}</Project>
+      <Name>com.DataBaseModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\com.FunctionModels\com.FunctionModels.csproj">
       <Project>{5B454594-3F89-4968-84E5-C6F673F87DAD}</Project>
       <Name>com.FunctionModels</Name>
     </ProjectReference>
     <ProjectReference Include="..\com.TubeServices\com.Services.csproj">
       <Project>{A9A14334-CABD-40FC-9D42-648F038D15E3}</Project>
-      <Name>com.Services</Name>
+      <Name>com.TubeServices</Name>
     </ProjectReference>
     <ProjectReference Include="..\FunctionDAL\com.FunctionDAL.csproj">
       <Project>{DFC291AD-795A-4058-AE72-1BE92205CDE4}</Project>
@@ -390,7 +399,6 @@
     <Folder Include="lib\控件\" />
     <Folder Include="lib\数据库\" />
     <Folder Include="lib\通讯\" />
-    <Folder Include="model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,24 +7,40 @@ using System.Threading.Tasks;
 
 namespace com.DataBaseModels
 {
-    public   class myModus
+    public class MyModus
     {
-       private static myModus instance;
+        private static MyModus instance;
 
-        public static myModus Instance
+        public static MyModus Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new myModus();
+                    instance = new MyModus();
                 }
                 return instance;
             }
         }
 
+        #region 操作命令
+        //操作命令结构体
+        public struct OP_Cmd
+        {
+            public bool bReset;                     //复位按钮
+            public bool bStart;                     //启动按钮
+            public bool bStop;                      //停止按钮
+            public bool bSpare;                     //备用
+            public bool bAutoSelect;                //自动按钮
+            public bool bHalt;                      //暂停按钮
+            public bool bEM_Stop;                   //急停按钮 
+        }
 
+        //系统模式：0 未联机，1 手动模式，2 待机模式，3 运行模式，4 暂停模式，5 故障模式
+        public int OP_Mode;
+        #endregion
 
+        #region 配方
         private static string TableHead(int index)
         {
             string[] ss = new string[39];
@@ -34,7 +50,6 @@ namespace com.DataBaseModels
             ss[2] = "工艺段总时间";
 
             ss[3] = "温度1设定温度";
-
             ss[4] = "温度2设定温度";
             ss[5] = "温度3设定温度";
             ss[6] = "温度4设定温度";
@@ -75,7 +90,7 @@ namespace com.DataBaseModels
 
         public static sStRecipePara[] stRecipeArrary = new sStRecipePara[5];
 
-        public   struct sStRecipePara
+        public struct sStRecipePara
         {
 
             public int ename;      //配方步名称
@@ -133,8 +148,10 @@ namespace com.DataBaseModels
             public bool bFlow_Check;     //流量监控
             public bool bPressure_Check;    //压力监控 
         }
+        #endregion
 
-        StTempZone[] StTempZoneArray = new StTempZone[7];
+        #region 温区
+        public StTempZone[] StTempZoneArray = new StTempZone[8];
         public struct StTempZone
         {
             public double rInternal_Temp;            //内偶温度
@@ -146,6 +163,64 @@ namespace com.DataBaseModels
             public bool bTempRump_Enable;            //斜坡升温有效
             public double rRunStep_T;
         }
+
+        public double[] grTemp_SPArray = new double[8];//过渡值
+
+        public static double grHMI_TempSV;//设定温度
+
+        public static double grHMI_TempRump;//设定斜率
+
+        public static bool gbHMI_Temp_Enable;//温度使能？
+
+        public static bool DI_HeatSwitch;//加热吸合器
+
+        public static double grCooling_PV1;//水冷温度1
+
+        #endregion
+
+        #region 气路
+        //ddss
+        stMFC_Ctrl[] stMFCC = new stMFC_Ctrl[12];
+        public struct stMFC_Ctrl
+        {
+            public bool bReset;              //复位
+            public bool bExcute;             //触发
+            public bool bCheckDiff_Enable;   //使能检测差值
+            public bool bRun_Condition;      //动作条件
+            public ushort SV;                //设定值
+            public ushort PV;                //实际值
+            public double nAddress;          //地址
+            public bool bWarn;               //流量偏差警示，完成当前工艺后停止
+            public bool bAlarm;              //总报警输出
+            public int ErrorCode;            //错误编码 
+        }
+        stMFC_Para[] stMFCP = new stMFC_Para[12];
+        public struct stMFC_Para
+        {
+            public double rWarnDiff_Persent;
+            public double rAlmDiff_Persent;
+            public uint nMaxRange;
+            public bool bShield;
+        }
+
+        stValve_Ctrl[] stValveC = new stValve_Ctrl[24];
+        public struct stValve_Ctrl
+        {
+            public bool bHMI_Trigger;
+            public bool bOpenCmd;
+            public bool bOpen_Condition;
+            public bool bClose_Condition;
+            public bool bOpenFinish;
+            public bool bCloseFinish;
+            public bool bDO_Open;
+            public bool bDO_Close;
+            public bool bAlarm;
+            public int nErrorCode;
+        }
+        #endregion
+
+        #region 轴控
+
         //机械手X轴参数结构体
         public struct AxisParaEx
         {
@@ -161,47 +236,6 @@ namespace com.DataBaseModels
             public double rBoatOut_AlmOffsetPos;    //出舟时有舟位与无舟位的最大偏差
             public double rBoatPush_SV_MaxT;        //推舟轴最大力矩
         }
-        //操作命令结构体
-        public struct OP_Cmd
-        {
-            public bool bReset;                     //复位按钮
-            public bool bStart;                     //启动按钮
-            public bool bStop;                      //停止按钮
-            public bool bSpare;                     //备用
-            public bool bAutoSelect;                //自动按钮
-            public bool bHalt;                      //暂停按钮
-            public bool bEM_Stop;                   //急停按钮 
-        }
-        //当前工艺控制
-        public struct stCurrentRecipeCtrl
-        {
-            public bool bFinish;
-            public bool bAlarm;
-            public double nWorking_Time;            //工艺进行时间
-            public double nRemain_Time;             //工艺剩余时间
-            public double eName;
-            public double nDuration;                //工艺段总时间
-        }
-
-        //真空规控制结构体
-        public struct stVG1_Ctrl
-        {
-            public double IN;                 //模块实际输入
-            public double Q;                  //换算后的实际值
-            public double bAlarm;             //报警标志位
-            public double nErrorCode;         //报警代码
-        }
-        //真空规参数结构体
-        public struct stVG1_Para
-        {
-            public int FilterN;             //滤波数量
-            public int PeakN;               //毛刺监控数量
-            public double rMinAct;          //输入最下肢对应的实际值
-            public double rMinOriginal;     //原始值最小值
-            public double rMaxAct;          //输入最大值对对应的实际值
-            public double rMaxOriginal;     //原始值最大值 
-        }
-
         //推舟机械手舟信息
         public struct stTube_BoatInfo
         {
@@ -212,6 +246,59 @@ namespace com.DataBaseModels
             public bool bAlarm;           //舟工位报警 
         }
 
+        public static bool gbBoatPush_Unlock; //轴解除联锁
+        public static bool gbValve_Unlock; //阀解除联锁
+        #endregion
+
+        #region 工艺信息
+        //当前工艺控制
+        public struct stCurrentRecipeCtrl
+        {
+            public bool bFinish;
+            public bool bAlarm;
+            public double nWorking_Time;            //步运行时间
+            public double nRemain_Time;             //步剩余时间
+            public double eName;                    //步名称
+            public double nDuration;                //步总时间
+        }
+
+        public bool gbProcess_Busy;                 //工艺忙信号
+
+        public int giRecipe_ID;                     //步号
+
+        public uint gnProcessRemainTime;            //工艺剩余时间
+        public uint gnProcessTotalTime;             //工艺总时间
+        public uint gnProcessWorkingTime;           //工艺运行时间
+        #endregion
+
+        #region 真空
+        //读真空泵数据结构体
+        public struct stPump_Read
+        {
+            public double rActPressure;     //读真空泵数据结构体
+            public double rActSpeed;        //抽速-0-100Hz
+            public int nStatusAlarm;        //0：正常1：故障
+            public bool bStartPump;         //1：停止2启动
+            public double rSetPressure;     //读真空泵压力
+            public bool bSetFunMode;        //2:真空模式1:速度模式
+            public double rSetSpeed;        //0-100Hz
+            public bool bCheckDiff_Enable;  //使能检测差值
+        }
+        //写真空泵数据结构体
+        public struct stPump_Write
+        {
+            public ushort rActPressure;     //写真空泵数据结构体
+            public ushort rActSpeed;        //读抽速度0-100Hz
+            public int nStatusAlarm;        //0:正常1:故障
+            public bool bStartPump;         //1：停止2：启动
+            public ushort rSetPressure;     //写真空泵数据压力
+            public bool bSetFunMode;        //2：真空模式1：速度模式
+            public ushort rSetSpeed;        //设定抽速
+            public bool bCheckDiff_Enable;  //使能检测差值  
+        }
+        #endregion
+
+        #region IO
         //炉管和机械手通讯
         public struct stComm_from_Tube
         {
@@ -235,7 +322,9 @@ namespace com.DataBaseModels
             public bool bLayBoat_Finish;    //机械手向炉管放舟完成
         }
         stTempPara_Mini8[] stTempPara_Mini = new stTempPara_Mini8[8];
+        #endregion
 
+        #region 温控系统参数
         //mini8通讯
         public struct stTempPara_Mini8
         {
@@ -254,52 +343,32 @@ namespace com.DataBaseModels
             public ushort nAlmDiff;     //报警偏差值
             public bool bShield;        //当前通道屏蔽
         }
-        //stMFC_Ctrl[] stMFC = new stMFC_Ctrl[12];
-         
 
-        public  struct stMFC_Ctrl
-        { 
-           public bool bReset;              //复位
-           public bool bExcute;             //触发
-           public bool bCheckDiff_Enable;   //使能检测差值
-           public bool bRun_Condition;      //动作条件
-           public ushort SV;                //设定值
-           public ushort PV;                //实际值
-           public double nAddress;          //地址
-           public bool bWarn;               //流量偏差警示，完成当前工艺后停止
-           public bool bAlarm;              //总报警输出
-           public int ErrorCode;            //错误编码 
-        }
-        //读真空泵数据结构体
-        public struct stPump_Read
-        { 
-            public double rActPressure;     //读真空泵数据结构体
-            public double rActSpeed;        //抽速-0-100Hz
-            public int nStatusAlarm;        //0：正常1：故障
-            public bool bStartPump;         //1：停止2启动
-            public double rSetPressure;     //读真空泵压力
-            public bool bSetFunMode;        //2:真空模式1:速度模式
-            public double rSetSpeed;        //0-100Hz
-            public bool bCheckDiff_Enable;  //使能检测差值
-        }
-        //写真空泵数据结构体
-        public struct stPump_Write 
+        //山武需要预留
+
+
+        #endregion
+
+        #region 真空系统参数
+        //真空规控制结构体
+        public struct stVG1_Ctrl
         {
-            public double rActPressure;     //写真空泵数据结构体
-            public double rActSpeed;        //读抽速度0-100Hz
-            public int nStatusAlarm;        //0:正常1:故障
-            public bool bStartPump;         //1：停止2：启动
-            public double rSetPressure;     //写真空泵数据压力
-            public bool bSetFunMode;        //2：真空模式1：速度模式
-            public double rSetSpeed;        //设定抽速
-            public bool bCheckDiff_Enable;  //使能检测差值  
+            public double IN;                 //模块实际输入
+            public double Q;                  //换算后的实际值
+            public double bAlarm;             //报警标志位
+            public double nErrorCode;         //报警代码
         }
-
-
-
-
-
-
+        //真空规参数结构体
+        public struct stVG1_Para
+        {
+            public int FilterN;             //滤波数量
+            public int PeakN;               //毛刺监控数量
+            public double rMinAct;          //输入最下肢对应的实际值
+            public double rMinOriginal;     //原始值最小值
+            public double rMaxAct;          //输入最大值对对应的实际值
+            public double rMaxOriginal;     //原始值最大值 
+        }
+        #endregion
 
     }
 }
