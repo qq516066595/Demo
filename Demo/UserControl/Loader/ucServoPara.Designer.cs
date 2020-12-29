@@ -46,91 +46,97 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(24, 24);
+            this.labelControl1.Location = new System.Drawing.Point(30, 19);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(189, 18);
+            this.labelControl1.Size = new System.Drawing.Size(151, 14);
             this.labelControl1.TabIndex = 31;
             this.labelControl1.Text = " 加速度：             (mm/s2)";
-            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // textEdit2
             // 
             this.textEdit2.EditValue = "9999.9";
-            this.textEdit2.Location = new System.Drawing.Point(83, 21);
+            this.textEdit2.Location = new System.Drawing.Point(82, 16);
+            this.textEdit2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(54, 24);
+            this.textEdit2.Size = new System.Drawing.Size(47, 20);
             this.textEdit2.TabIndex = 32;
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(34, 145);
+            this.simpleButton1.Location = new System.Drawing.Point(39, 128);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(141, 29);
+            this.simpleButton1.Size = new System.Drawing.Size(123, 23);
             this.simpleButton1.TabIndex = 33;
             this.simpleButton1.Text = "扭矩保护使能";
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(15, 54);
+            this.labelControl5.Location = new System.Drawing.Point(22, 45);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(178, 18);
+            this.labelControl5.Size = new System.Drawing.Size(142, 14);
             this.labelControl5.TabIndex = 31;
             this.labelControl5.Text = "正软极限:               (mm)";
-            this.labelControl5.Click += new System.EventHandler(this.labelControl5_Click);
             // 
             // textEdit5
             // 
             this.textEdit5.EditValue = "50";
-            this.textEdit5.Location = new System.Drawing.Point(83, 51);
+            this.textEdit5.Location = new System.Drawing.Point(82, 42);
+            this.textEdit5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(54, 24);
+            this.textEdit5.Size = new System.Drawing.Size(47, 20);
             this.textEdit5.TabIndex = 32;
             // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(15, 84);
+            this.labelControl6.Location = new System.Drawing.Point(22, 71);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(178, 18);
+            this.labelControl6.Size = new System.Drawing.Size(142, 14);
             this.labelControl6.TabIndex = 31;
             this.labelControl6.Text = "负软极限:               (mm)";
-            this.labelControl6.Click += new System.EventHandler(this.labelControl6_Click);
             // 
             // textEdit6
             // 
             this.textEdit6.EditValue = "50";
-            this.textEdit6.Location = new System.Drawing.Point(83, 81);
+            this.textEdit6.Location = new System.Drawing.Point(82, 68);
+            this.textEdit6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Size = new System.Drawing.Size(54, 24);
+            this.textEdit6.Size = new System.Drawing.Size(47, 20);
             this.textEdit6.TabIndex = 32;
-            this.textEdit6.EditValueChanged += new System.EventHandler(this.textEdit6_EditValueChanged);
             // 
             // textEdit4
             // 
             this.textEdit4.EditValue = "50";
-            this.textEdit4.Location = new System.Drawing.Point(83, 111);
+            this.textEdit4.Location = new System.Drawing.Point(82, 94);
+            this.textEdit4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(54, 24);
+            this.textEdit4.Size = new System.Drawing.Size(47, 20);
             this.textEdit4.TabIndex = 32;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(15, 114);
+            this.labelControl3.Location = new System.Drawing.Point(22, 97);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(167, 18);
+            this.labelControl3.Size = new System.Drawing.Size(134, 14);
             this.labelControl3.TabIndex = 31;
             this.labelControl3.Text = "最大力矩:               (%)";
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(34, 180);
+            this.simpleButton2.Location = new System.Drawing.Point(39, 161);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(141, 29);
+            this.simpleButton2.Size = new System.Drawing.Size(123, 23);
             this.simpleButton2.TabIndex = 33;
             this.simpleButton2.Text = "原点";
             // 
             // ucServoPara
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.simpleButton1);
@@ -142,8 +148,9 @@
             this.Controls.Add(this.labelControl6);
             this.Controls.Add(this.labelControl5);
             this.Controls.Add(this.labelControl3);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ucServoPara";
-            this.Size = new System.Drawing.Size(233, 220);
+            this.Size = new System.Drawing.Size(204, 195);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();

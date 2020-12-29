@@ -18,24 +18,6 @@ namespace Demo.UserControl.Loader
             InitializeComponent();
         }
 
-        private void labelControl6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textEdit6_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }
