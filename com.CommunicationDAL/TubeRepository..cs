@@ -10,7 +10,7 @@ namespace com.CommunicationDAL
     public class TubeRepository
     {
     
-        public myModus[] myModus=new myModus[5];
+       
 
     }
 }
