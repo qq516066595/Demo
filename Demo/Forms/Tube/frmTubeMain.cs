@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using com.DataBaseModels;
 /*
 * namespace：Demo.Forms
 * className：frmHomePage
@@ -29,6 +30,7 @@ namespace Demo.Forms.Tube
         }
 
         #region 主界面
+        #region 温区
         /// <summary>
         /// 主界面--过渡值与功率输出显示与隐藏
         /// </summary>
@@ -38,6 +40,43 @@ namespace Demo.Forms.Tube
         {
             Fold(165, 115, "上下", pcTempZone, btnShowMVAndSP);
         }
+
+        /// <summary>
+        /// 温度内容绑定
+        /// </summary>
+        private void TempBindings(MyModus modus)
+        {
+            foreach (Control control in this.pcTempZone.Controls)
+            {
+                if (control is LabelControl)
+                {
+                    for (int i = 1; i <= 7; i++)
+                    {
+                        if (control.Name.Equals("lblZoneEx" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//外偶
+                            ((LabelControl)control).Text = modus.StTempZoneArray[i].rExternal_Temp.ToString();
+                        else if (control.Name.Equals("lblZoneIn" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//内偶
+                            ((LabelControl)control).Text = modus.StTempZoneArray[i].rInternal_Temp.ToString();
+                        else if (control.Name.Equals("lblZoneMV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//功率
+                            ((LabelControl)control).Text = modus.StTempZoneArray[i].rMV.ToString();
+                        else if (control.Name.Equals("lblZoneSP" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//
+                            ((LabelControl)control).Text = modus.grTemp_SPArray[i].ToString();
+                    }
+                    //水冷
+                }
+                //设定值
+                if (control is TextEdit)
+                {
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if (control.Name.Equals("txtZoneSV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//设定值
+                            ((TextEdit)control).Text = modus.StTempZoneArray[i].rSet_Temp.ToString();
+                    }
+                }
+            }
+        }
+        #endregion
+
+        #region 轴控
         /// <summary>
         /// 主界面--轴控单元操作按钮显示与隐藏
         /// </summary>
@@ -47,6 +86,8 @@ namespace Demo.Forms.Tube
         {
             Fold(490, 115, "上下", pcAxis, btnShowAxis);
         }
+        #endregion
+
         #endregion
 
         #region 设置
@@ -126,22 +167,40 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void frmTubeMain_Load(object sender, EventArgs e)
         {
-            int a = (Int32)this.Tag;
-            if (a == 1)//炉管一
-                gettag(1);
-            else if (a == 2)//炉管二
-                gettag(2);
-            else if (a == 3)//炉管三
-                gettag(3);
-            else if (a == 4)//炉管四
-                gettag(4);
-            else if (a == 5)//炉管五
-                gettag(5);
+            //int a = (Int32)this.Tag;
+            //if (a == 1)//炉管一
+            //    gettag(1);
+            //else if (a == 2)//炉管二
+            //    gettag(2);
+            //else if (a == 3)//炉管三
+            //    gettag(3);
+            //else if (a == 4)//炉管四
+            //    gettag(4);
+            //else if (a == 5)//炉管五
+            //    gettag(5);
+
+
+            //2020-12-29 hhf 测试使用；需写到委托事件中实时刷新数据
+            
+            MyModus modus = new MyModus();
+            modus.grTemp_SPArray[1] = 91;
+            modus.grTemp_SPArray[2] = 92;
+            modus.grTemp_SPArray[3] = 93;
+            modus.grTemp_SPArray[4] = 94;
+            modus.grTemp_SPArray[5] = 95;
+            modus.grTemp_SPArray[6] = 96;
+            modus.grTemp_SPArray[7] = 97;
+            modus.StTempZoneArray[1].rMV = 11;
+            modus.StTempZoneArray[1].rSet_Temp = 500;
+            modus.StTempZoneArray[1].rExternal_Temp = 300;
+            modus.StTempZoneArray[1].rInternal_Temp = 289.4;
+            //温区值绑定
+            TempBindings(modus);
         }
 
         public void gettag(int index)
         {
-           
+
         }
         #endregion
 

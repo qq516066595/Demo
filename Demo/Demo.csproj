@@ -133,6 +133,12 @@
     <Compile Include="Forms\Tube\frmHeating.Designer.cs">
       <DependentUpon>frmHeating.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Tube\frmUnlockPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tube\frmUnlockPwd.Designer.cs">
+      <DependentUpon>frmUnlockPwd.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\Loader\ucAxisPos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -241,6 +247,10 @@
     <EmbeddedResource Include="Forms\Tube\frmTubeMain.resx">
       <DependentUpon>frmTubeMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tube\frmUnlockPwd.resx">
+      <DependentUpon>frmUnlockPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -353,6 +363,7 @@
     <Content Include="lib\System.Data.SQLite.dll" />
     <Content Include="lib\System.Data.SQLite.EF6.dll" />
     <Content Include="lib\System.Data.SQLite.Linq.dll" />
+    <None Include="Resources\Danger.png" />
     <None Include="Resources\DefSplashImage.png" />
     <None Include="Resources\下拉箭头3.png" />
     <None Include="Resources\下拉箭头2.png" />
@@ -366,6 +377,10 @@
     <None Include="Resources\静音 红.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\com.DataBaseModels\com.DataBaseModels.csproj">
+      <Project>{B715FD74-B066-4C5D-86BB-A1A700BA8795}</Project>
+      <Name>com.DataBaseModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\com.FunctionModels\com.FunctionModels.csproj">
       <Project>{5B454594-3F89-4968-84E5-C6F673F87DAD}</Project>
       <Name>com.FunctionModels</Name>

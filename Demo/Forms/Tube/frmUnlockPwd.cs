@@ -10,33 +10,24 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using com.DataBaseModels;
 /*
-* namespace：Demo.Forms
-* className：frmHeating
+* namespace：Demo.Forms.Tube
+* className：frmUnlockPwd
 * 
 * Version：HMI_RPxx_V001_202012
 * Author：hehf
-* Date：2020-12-28 15:57:58
-* Desc：温区-开启加热弹窗，设置设定温度、设定斜率
+* Date：2020-12-28 18:21:59
+* Desc：解除联锁,目前为设置固定密码<123321>；如需设置可配置化则再完善
 * 
 * Remarks：权限控制待完善
 */
 namespace Demo.Forms.Tube
 {
-    public partial class frmHeating : DevExpress.XtraEditors.XtraForm
+    public partial class frmUnlockPwd : DevExpress.XtraEditors.XtraForm
     {
-        public int frmIndex;
-
-        public frmHeating()
+        public frmUnlockPwd()
         {
             InitializeComponent();
         }
-
-        int TubeIndex = 0;
-        private void frmHeating_Load(object sender, EventArgs e)
-        {
-            TubeIndex = frmIndex;//获取主界面的tag值
-        }
-
         /// <summary>
         /// 确认
         /// </summary>
@@ -44,12 +35,22 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnOK_Click(object sender, EventArgs e)
         {
-            MyModus.grHMI_TempSV =  Convert.ToDouble(txtTempSV.Text);
-            MyModus.grHMI_TempRump = Convert.ToDouble(txtTempRump.Text);
-            MyModus.gbHMI_Temp_Enable = true;
-            this.Close();
+            if(txtPwd.Text == "123321")
+            {
+                MyModus.gbBoatPush_Unlock = true;
+                this.Close();
+            }
+            else
+            {
+                txtPwd.Text = "";
+                picError.Visible = true;
+            }
         }
 
+        private void txtPwd_EditValueChanged(object sender, EventArgs e)
+        {
+            picError.Visible = false;
+        }
         /// <summary>
         /// 取消
         /// </summary>

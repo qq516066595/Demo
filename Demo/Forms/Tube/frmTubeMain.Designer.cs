@@ -5104,7 +5104,7 @@
             this.tabNavigationPage2.Controls.Add(this.panelControl1);
             this.tabNavigationPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabNavigationPage2.Name = "tabNavigationPage2";
-            this.tabNavigationPage2.Size = new System.Drawing.Size(1781, 1281);
+            this.tabNavigationPage2.Size = new System.Drawing.Size(1793, 1316);
             // 
             // panelControl4
             // 
@@ -5112,7 +5112,7 @@
             this.panelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl4.Location = new System.Drawing.Point(0, 53);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1781, 1228);
+            this.panelControl4.Size = new System.Drawing.Size(1793, 1263);
             this.panelControl4.TabIndex = 1;
             // 
             // gridControl3
@@ -5121,7 +5121,7 @@
             this.gridControl3.Location = new System.Drawing.Point(3, 3);
             this.gridControl3.MainView = this.gridView3;
             this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(1775, 1222);
+            this.gridControl3.Size = new System.Drawing.Size(1787, 1257);
             this.gridControl3.TabIndex = 0;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
@@ -5142,7 +5142,7 @@
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1781, 53);
+            this.panelControl1.Size = new System.Drawing.Size(1793, 53);
             this.panelControl1.TabIndex = 0;
             // 
             // btnAlmSelect
@@ -5341,7 +5341,7 @@
             this.tabNavigationPage4.Controls.Add(this.panelControl12);
             this.tabNavigationPage4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabNavigationPage4.Name = "tabNavigationPage4";
-            this.tabNavigationPage4.Size = new System.Drawing.Size(1781, 1281);
+            this.tabNavigationPage4.Size = new System.Drawing.Size(1793, 1316);
             // 
             // panelControl13
             // 
@@ -5349,7 +5349,7 @@
             this.panelControl13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl13.Location = new System.Drawing.Point(0, 53);
             this.panelControl13.Name = "panelControl13";
-            this.panelControl13.Size = new System.Drawing.Size(1781, 1228);
+            this.panelControl13.Size = new System.Drawing.Size(1793, 1263);
             this.panelControl13.TabIndex = 2;
             // 
             // gridControl4
@@ -5358,7 +5358,7 @@
             this.gridControl4.Location = new System.Drawing.Point(3, 3);
             this.gridControl4.MainView = this.gridView4;
             this.gridControl4.Name = "gridControl4";
-            this.gridControl4.Size = new System.Drawing.Size(1775, 1222);
+            this.gridControl4.Size = new System.Drawing.Size(1787, 1257);
             this.gridControl4.TabIndex = 0;
             this.gridControl4.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView4});
@@ -5379,7 +5379,7 @@
             this.panelControl12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl12.Location = new System.Drawing.Point(0, 0);
             this.panelControl12.Name = "panelControl12";
-            this.panelControl12.Size = new System.Drawing.Size(1781, 53);
+            this.panelControl12.Size = new System.Drawing.Size(1793, 53);
             this.panelControl12.TabIndex = 1;
             // 
             // btnEventSelect
