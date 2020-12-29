@@ -1,12 +1,15 @@
-﻿using System;
+﻿using com.DataBaseModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FunctionDAL
+namespace com.CommunicationDAL
 {
-    public class Class1
+    public class TubeInitDAL
     {
+     
+
     }
 }

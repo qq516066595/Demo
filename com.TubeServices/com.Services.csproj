@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LoaderClientService.cs" />
+    <Compile Include="ModelHelperService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TubeAlarmService.cs" />
     <Compile Include="TubeAnaService.cs" />

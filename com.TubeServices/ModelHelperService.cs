@@ -5,37 +5,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace com.CommunicationDAL
+namespace com.TubeServices
 {
-   public class TubeDoComRepository
+   public  class ModelHelperService
     {
         public static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        private static TubeDoComRepository instance;
+        private static ModelHelperService instance;
 
-        private TubeDoComRepository() { }
+        private ModelHelperService() { }
 
-        public static TubeDoComRepository Instance
+        public static ModelHelperService Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new TubeDoComRepository();
+                    instance = new ModelHelperService();
                 }
                 return instance;
             }
         }
 
-        public List<bool> GetDos(int tubeIndex)
-        {
 
-            return null;
-        }
 
-        public void PutDos(int tubeIndex, List<bool> dos)
-        {
-           
-        }
+
+
     }
 }

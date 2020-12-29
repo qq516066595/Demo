@@ -7,38 +7,35 @@ using System.Threading.Tasks;
 
 namespace com.CommunicationDAL
 {
-    //PLC交互
-  public   class TubeDiComRepository
+   public class TubeDoComDAL
     {
         public static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        private static TubeDiComRepository instance;
+        private static TubeDoComDAL instance;
 
-        private TubeDiComRepository() { }
+        private TubeDoComDAL() { }
 
-        public static TubeDiComRepository Instance
+        public static TubeDoComDAL Instance
         {
             get
             {
                 if (instance == null)
                 {
-                    instance = new TubeDiComRepository();
+                    instance = new TubeDoComDAL();
                 }
                 return instance;
             }
         }
 
-        public List<bool> GetDiConfValues(int tubeIndex)
+        public List<bool> GetDos(int tubeIndex)
         {
+
             return null;
         }
 
-        public void PutDiConfValues(int tubeIndex, List<bool> diConfValues)
+        public void PutDos(int tubeIndex, List<bool> dos)
         {
-
-
+           
         }
-
-
-   }
+    }
 }

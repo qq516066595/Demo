@@ -38,16 +38,16 @@ namespace FunctionDAL.File
             {
                 DiConf diConfVO = new DiConf();
                 diConfVO.ID = (i + 1);
-                diConfVO.DiName = config.get("Di" + (i + 1) + "DiName");
-                diConfVO.DiAliaName = config.get("Di" + (i + 1) + "AliaName");
+                diConfVO.DiName = config.get("Di" + (i + 1) + "DiName");               //输入名称1
+                diConfVO.DiAliaName = config.get("Di" + (i + 1) + "AliaName");         //别名1
                 short value;
-                short.TryParse(config.get("Di" + (i + 1) + "NameIndex"), out value);
+                short.TryParse(config.get("Di" + (i + 1) + "NameIndex"), out value);   //所在界面的下标
                 diConfVO.NameIndex = value;
                 bool critical;
-                bool.TryParse(config.get("Di" + (i + 1) + "Critical"), out critical);
+                bool.TryParse(config.get("Di" + (i + 1) + "Critical"), out critical); //报警？
                 diConfVO.DiValue = critical;
                 bool show;
-                bool.TryParse(config.get("Di" + (i + 1) + "Show"), out show);
+                bool.TryParse(config.get("Di" + (i + 1) + "Show"), out show);         //显示或隐藏
                 diConfVO.DiShow = show;
                 diConfVOs.Add(diConfVO);
             }
