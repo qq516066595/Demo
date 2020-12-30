@@ -15,7 +15,7 @@ namespace com.DataBaseModels.Tube.config
         private int mAnaEdit;       //可否编辑
         private bool mAnaShow;      //是否显示
 
-
+       
         public AnaConf() { }
 
         public string AnaName

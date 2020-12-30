@@ -83,5 +83,9 @@
       <Name>com.FunctionModels</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Loader\" />
+    <Folder Include="TUBE\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
