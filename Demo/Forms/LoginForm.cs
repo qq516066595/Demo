@@ -1,4 +1,5 @@
-﻿using com.FunctionModels; 
+﻿using com.FunctionModels;
+using Demo.Forms.Template;
 using Demo.Properties;
 using FunctionDAL;
 using Sunny.UI.Properties;
@@ -83,7 +84,9 @@ namespace Sunny.UI
 
                  if (UserService.Instance.Login(user))
                  {
-                    UIMessageBox.Show("登录成功！");
+                    frmParent fm = new frmParent();
+                    this.Hide();
+                    fm.Show();
                  }
 
                 IsLogin = OnLogin != null && OnLogin(txtUser.Text, txtPassword.Text) ; 

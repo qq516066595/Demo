@@ -59,9 +59,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TubeDiComRepository.cs" />
-    <Compile Include="TubeDoComRepository.cs" />
-    <Compile Include="TubeRepository..cs" />
+    <Compile Include="TubeDiComDAL.cs" />
+    <Compile Include="TubeDoComDAL.cs" />
+    <Compile Include="TubeInitDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

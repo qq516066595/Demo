@@ -59,15 +59,16 @@
             // 
             this.pictureEdit2.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureEdit2.EditValue = global::Demo.Properties.Resources.DefSplashImage;
-            this.pictureEdit2.Location = new System.Drawing.Point(2, 0);
+            this.pictureEdit2.Location = new System.Drawing.Point(-36, -75);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.AllowFocused = false;
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit2.Properties.ShowMenu = false;
+            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit2.Properties.ZoomAccelerationFactor = 1D;
-            this.pictureEdit2.Size = new System.Drawing.Size(525, 352);
+            this.pictureEdit2.Size = new System.Drawing.Size(610, 452);
             this.pictureEdit2.TabIndex = 9;
             // 
             // labelControl1
@@ -75,22 +76,22 @@
             this.labelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.labelControl1.Appearance.Options.UseBackColor = true;
             this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl1.Location = new System.Drawing.Point(200, 303);
+            this.labelControl1.Location = new System.Drawing.Point(203, 297);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(139, 14);
             this.labelControl1.TabIndex = 6;
             this.labelControl1.Text = "Copyright © laplace-2020";
             // 
-            // SplashScreen1
+            // frmLoading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 354);
+            this.ClientSize = new System.Drawing.Size(541, 318);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.marqueeProgressBarControl1);
             this.Controls.Add(this.pictureEdit2);
-            this.Name = "SplashScreen1";
+            this.Name = "frmLoading";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();

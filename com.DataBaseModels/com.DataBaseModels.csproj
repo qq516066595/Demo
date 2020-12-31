@@ -42,19 +42,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseTemplateExtend.cs" />
+    <Compile Include="LoaderModus.cs" />
     <Compile Include="Loader\Alarm.cs" />
     <Compile Include="Loader\DiInfo.cs" />
     <Compile Include="Loader\DoInfo.cs" />
     <Compile Include="Loader\DTSU.cs" />
     <Compile Include="Loader\Event.cs" />
-    <Compile Include="Loader\JigEvent.cs" />
-    <Compile Include="myModus.cs" />
+    <Compile Include="Loader\JigInfo.cs" />
+    <Compile Include="MyModus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tube\alarm\TubeAlarmViewModel.cs" />
-    <Compile Include="Tube\event\TubeEventViewModel.cs" />
-    <Compile Include="Tube\recipe\TubeRecipeModifyViewModel.cs" />
-    <Compile Include="Tube\setting\DiConf.cs" />
-    <Compile Include="Tube\TubeMaint.cs" />
+    <Compile Include="Tube\config\AnaConf.cs" />
+    <Compile Include="Tube\config\DiConf.cs" />
+    <Compile Include="Tube\config\DoConf.cs" />
+    <Compile Include="Tube\config\EvConf.cs" />
+    <Compile Include="Tube\config\ParaConf.cs" />
+    <Compile Include="Tube\config\PidConf.cs" />
+    <Compile Include="Tube\config\TempConf.cs" />
+    <Compile Include="Tube\config\VacuumConf.cs" />
+    <Compile Include="TubeAlarm.cs" />
+    <Compile Include="TubeEvent.cs" />
+    <Compile Include="Tube\DiConf.cs" />
+    <Compile Include="TubeMaint.cs" />
     <Compile Include="ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,7 +72,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Tube\trend\" />
+    <Folder Include="Tube\data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

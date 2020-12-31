@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LoaderClientService.cs" />
+    <Compile Include="ModelHelperService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TubeAlarmService.cs" />
     <Compile Include="TubeAnaService.cs" />
@@ -81,6 +82,10 @@
       <Project>{5B454594-3F89-4968-84E5-C6F673F87DAD}</Project>
       <Name>com.FunctionModels</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Loader\" />
+    <Folder Include="TUBE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

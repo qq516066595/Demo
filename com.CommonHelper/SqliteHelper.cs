@@ -30,6 +30,7 @@
                 return instance;
             }
         }
+
         public void ExecuteSql(int tubeIndex, string sql)
         {
             try
@@ -54,18 +55,19 @@
 
 
 
+        #region 数据库封装
 
         /**//// <summary>
             /// 执行SQL语句,返回受影响的行数
             /// </summary>
             /// <param name="cmdText">需要被执行的SQL语句</param>
             /// <returns>受影响的行数</returns>
-        public   int ExecuteNonQuery(int tubeIndex, string sql)
+        public int ExecuteNonQuery(int tubeIndex, string sql)
         {
             return ExecuteNonQuery(connectionStrings[tubeIndex], sql);
         }
-          
-         
+
+
         /**//// <summary>
             /// 执行SQL语句,返回受影响的行数
             /// </summary>
@@ -192,6 +194,7 @@
             }
         }
 
+        #endregion
 
 
 

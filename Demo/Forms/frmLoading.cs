@@ -28,5 +28,7 @@ namespace Demo.Forms.Template
         public enum SplashScreenCommand
         {
         }
+
+       
     }
 }
