@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraTab;
+using Demo.Forms.Tube;
+using DevExpress.XtraTabbedMdi;
 /*
 * namespace：Demo.Forms.Template
 * className：frmParent
@@ -37,6 +39,29 @@ namespace Demo.Forms.Template
             {
                 ei.Page.ShowCloseButton = DevExpress.Utils.DefaultBoolean.False;
             };
+            xtraTabbedMdiManager1.MouseUp += XtraTabbedMdiManager1_MouseUp;
+        }
+
+        public int xtraTabIndex;//赋值一级菜单对象唯一值
+
+        private void XtraTabbedMdiManager1_MouseUp(object sender, MouseEventArgs e)
+        {
+            //获取打开对象，加载打开数据
+            XtraMdiTabPage curPage = (sender as XtraTabbedMdiManager).SelectedPage;
+            if (curPage.Text == "  总  览  ")
+                xtraTabIndex = 0;
+            else if (curPage.Text == " 第 一 组 ")
+                xtraTabIndex = 1;
+            else if (curPage.Text == " 第 二 组 ")
+                xtraTabIndex = 2;
+            else if (curPage.Text == " 第 三 组 ")
+                xtraTabIndex = 3;
+            else if (curPage.Text == " 第 四 组 ")
+                xtraTabIndex = 4;
+            else if (curPage.Text == " 第 五 组 ")
+                xtraTabIndex = 5;
+            else if (curPage.Text == " 机 械 手 ")
+                xtraTabIndex = 6;
         }
 
         /// <summary>
@@ -107,7 +132,7 @@ namespace Demo.Forms.Template
         /// <param name="caption">打开tab页的名称</param>
         /// <param name="ViewType">窗体路径</param>
         /// <param name="groupNum">借用tag值进行传值，区分管和机械手：替换变量</param>
-        private void ActivateOrAddForm(string caption, string ViewType,int groupNum)
+        private void ActivateOrAddForm(string caption, string ViewType, int groupNum)
         {
             foreach (Form subForm in MRF.MdiChildren)
             {
@@ -123,7 +148,7 @@ namespace Demo.Forms.Template
             fm.Tag = groupNum;
             fm.Show();
         }
-        
+
         /// <summary>
         /// 父窗体打开时，默认加载所有子窗体画面
         /// </summary>
@@ -131,13 +156,14 @@ namespace Demo.Forms.Template
         /// <param name="e"></param>
         private void frmParent_Load(object sender, EventArgs e)
         {
-            ActivateOrAddForm("  总  览  ", "Demo.Forms.frmHomePage",0);
-            ActivateOrAddForm(" 第 一 组 ", "Demo.Forms.Tube.frmTubeMain",1);
-            ActivateOrAddForm(" 第 二 组 ", "Demo.Forms.Tube.frmTubeMain",2);
-            ActivateOrAddForm(" 第 三 组 ", "Demo.Forms.Tube.frmTubeMain",3);
-            ActivateOrAddForm(" 第 四 组 ", "Demo.Forms.Tube.frmTubeMain",4);
-            ActivateOrAddForm(" 第 五 组 ", "Demo.Forms.Tube.frmTubeMain",5);
-            ActivateOrAddForm(" 机 械 手 ", "Demo.Forms.Loader.frmHanderMain",6);
+            ActivateOrAddForm("  总  览  ", "Demo.Forms.frmHomePage", 0);
+            ActivateOrAddForm(" 第 一 组 ", "Demo.Forms.Tube.frmTubeMain", 1);
+            ActivateOrAddForm(" 第 二 组 ", "Demo.Forms.Tube.frmTubeMain", 2);
+            ActivateOrAddForm(" 第 三 组 ", "Demo.Forms.Tube.frmTubeMain", 3);
+            ActivateOrAddForm(" 第 四 组 ", "Demo.Forms.Tube.frmTubeMain", 4);
+            ActivateOrAddForm(" 第 五 组 ", "Demo.Forms.Tube.frmTubeMain", 5);
+            ActivateOrAddForm(" 机 械 手 ", "Demo.Forms.Loader.frmHanderMain", 6);
+
         }
         #endregion
 

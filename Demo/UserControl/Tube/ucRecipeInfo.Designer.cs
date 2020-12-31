@@ -52,15 +52,15 @@
             this.separatorControl3 = new DevExpress.XtraEditors.SeparatorControl();
             this.pbcStepBar = new DevExpress.XtraEditors.ProgressBarControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
+            this.lblRecipeName = new DevExpress.XtraEditors.LabelControl();
+            this.lblRecipeTotalTime = new DevExpress.XtraEditors.LabelControl();
+            this.lblRecipeWorkTime = new DevExpress.XtraEditors.LabelControl();
+            this.lblRecipeRemainTime = new DevExpress.XtraEditors.LabelControl();
+            this.lblStepID = new DevExpress.XtraEditors.LabelControl();
+            this.lblStepName = new DevExpress.XtraEditors.LabelControl();
+            this.lblStepTotalTime = new DevExpress.XtraEditors.LabelControl();
+            this.lblStepWorkTime = new DevExpress.XtraEditors.LabelControl();
+            this.lblStepRemainTime = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.cmbBoatState = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -79,36 +79,42 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(42, 102);
+            this.labelControl1.Location = new System.Drawing.Point(60, 160);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(68, 19);
+            this.labelControl1.Size = new System.Drawing.Size(100, 29);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "工艺设置";
             // 
             // tsAutoSelect
             // 
-            this.tsAutoSelect.Location = new System.Drawing.Point(42, 8);
+            this.tsAutoSelect.Location = new System.Drawing.Point(60, 13);
+            this.tsAutoSelect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tsAutoSelect.Name = "tsAutoSelect";
             this.tsAutoSelect.Properties.OffText = "";
             this.tsAutoSelect.Properties.OnText = "";
             this.tsAutoSelect.Properties.ShowText = false;
-            this.tsAutoSelect.Size = new System.Drawing.Size(76, 25);
+            this.tsAutoSelect.Size = new System.Drawing.Size(109, 34);
             this.tsAutoSelect.TabIndex = 3;
+            this.tsAutoSelect.Toggled += new System.EventHandler(this.tsAutoSelect_Toggled);
             // 
             // separatorControl1
             // 
-            this.separatorControl1.Location = new System.Drawing.Point(5, 31);
+            this.separatorControl1.Location = new System.Drawing.Point(7, 49);
+            this.separatorControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.separatorControl1.Name = "separatorControl1";
-            this.separatorControl1.Size = new System.Drawing.Size(146, 19);
+            this.separatorControl1.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.separatorControl1.Size = new System.Drawing.Size(209, 30);
             this.separatorControl1.TabIndex = 4;
             // 
             // btnStart
             // 
             this.btnStart.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.Appearance.Options.UseFont = true;
-            this.btnStart.Location = new System.Drawing.Point(31, 130);
+            this.btnStart.Location = new System.Drawing.Point(44, 204);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(95, 30);
+            this.btnStart.Size = new System.Drawing.Size(136, 47);
             this.btnStart.TabIndex = 5;
             this.btnStart.Text = "开始";
             // 
@@ -116,9 +122,10 @@
             // 
             this.btnHold.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHold.Appearance.Options.UseFont = true;
-            this.btnHold.Location = new System.Drawing.Point(31, 165);
+            this.btnHold.Location = new System.Drawing.Point(44, 259);
+            this.btnHold.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnHold.Name = "btnHold";
-            this.btnHold.Size = new System.Drawing.Size(95, 30);
+            this.btnHold.Size = new System.Drawing.Size(136, 47);
             this.btnHold.TabIndex = 5;
             this.btnHold.Text = "保持";
             // 
@@ -126,9 +133,10 @@
             // 
             this.btnJumpStep.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnJumpStep.Appearance.Options.UseFont = true;
-            this.btnJumpStep.Location = new System.Drawing.Point(31, 200);
+            this.btnJumpStep.Location = new System.Drawing.Point(44, 314);
+            this.btnJumpStep.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnJumpStep.Name = "btnJumpStep";
-            this.btnJumpStep.Size = new System.Drawing.Size(95, 30);
+            this.btnJumpStep.Size = new System.Drawing.Size(136, 47);
             this.btnJumpStep.TabIndex = 5;
             this.btnJumpStep.Text = "跳步";
             // 
@@ -136,9 +144,10 @@
             // 
             this.btnAbort.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbort.Appearance.Options.UseFont = true;
-            this.btnAbort.Location = new System.Drawing.Point(31, 235);
+            this.btnAbort.Location = new System.Drawing.Point(44, 369);
+            this.btnAbort.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAbort.Name = "btnAbort";
-            this.btnAbort.Size = new System.Drawing.Size(95, 30);
+            this.btnAbort.Size = new System.Drawing.Size(136, 47);
             this.btnAbort.TabIndex = 5;
             this.btnAbort.Text = "中断";
             // 
@@ -146,26 +155,30 @@
             // 
             this.btnFinish.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinish.Appearance.Options.UseFont = true;
-            this.btnFinish.Location = new System.Drawing.Point(31, 270);
+            this.btnFinish.Location = new System.Drawing.Point(44, 424);
+            this.btnFinish.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnFinish.Name = "btnFinish";
-            this.btnFinish.Size = new System.Drawing.Size(95, 30);
+            this.btnFinish.Size = new System.Drawing.Size(136, 47);
             this.btnFinish.TabIndex = 5;
             this.btnFinish.Text = "结束";
             // 
             // separatorControl2
             // 
-            this.separatorControl2.Location = new System.Drawing.Point(7, 340);
+            this.separatorControl2.Location = new System.Drawing.Point(10, 534);
+            this.separatorControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.separatorControl2.Name = "separatorControl2";
-            this.separatorControl2.Size = new System.Drawing.Size(144, 19);
+            this.separatorControl2.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.separatorControl2.Size = new System.Drawing.Size(206, 30);
             this.separatorControl2.TabIndex = 4;
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(42, 365);
+            this.labelControl4.Location = new System.Drawing.Point(60, 574);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(68, 19);
+            this.labelControl4.Size = new System.Drawing.Size(100, 29);
             this.labelControl4.TabIndex = 0;
             this.labelControl4.Text = "工艺信息";
             // 
@@ -175,29 +188,32 @@
             this.btnTubeDisable.Appearance.ForeColor = System.Drawing.Color.Red;
             this.btnTubeDisable.Appearance.Options.UseFont = true;
             this.btnTubeDisable.Appearance.Options.UseForeColor = true;
-            this.btnTubeDisable.Location = new System.Drawing.Point(31, 305);
+            this.btnTubeDisable.Location = new System.Drawing.Point(44, 479);
+            this.btnTubeDisable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTubeDisable.Name = "btnTubeDisable";
-            this.btnTubeDisable.Size = new System.Drawing.Size(95, 30);
+            this.btnTubeDisable.Size = new System.Drawing.Size(136, 47);
             this.btnTubeDisable.TabIndex = 5;
             this.btnTubeDisable.Text = "锁管";
             // 
             // pbcRecipeBar
             // 
             this.pbcRecipeBar.EditValue = "10";
-            this.pbcRecipeBar.Location = new System.Drawing.Point(7, 396);
+            this.pbcRecipeBar.Location = new System.Drawing.Point(10, 622);
+            this.pbcRecipeBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbcRecipeBar.Name = "pbcRecipeBar";
             this.pbcRecipeBar.Properties.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pbcRecipeBar.Properties.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pbcRecipeBar.Size = new System.Drawing.Size(144, 18);
+            this.pbcRecipeBar.Size = new System.Drawing.Size(206, 28);
             this.pbcRecipeBar.TabIndex = 6;
             // 
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(7, 431);
+            this.labelControl5.Location = new System.Drawing.Point(10, 677);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(28, 17);
+            this.labelControl5.Size = new System.Drawing.Size(42, 25);
             this.labelControl5.TabIndex = 1;
             this.labelControl5.Text = "名称";
             // 
@@ -205,9 +221,10 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(7, 467);
+            this.labelControl6.Location = new System.Drawing.Point(10, 734);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(28, 17);
+            this.labelControl6.Size = new System.Drawing.Size(42, 25);
             this.labelControl6.TabIndex = 1;
             this.labelControl6.Text = "总时";
             // 
@@ -215,9 +232,10 @@
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(7, 503);
+            this.labelControl7.Location = new System.Drawing.Point(10, 790);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(28, 17);
+            this.labelControl7.Size = new System.Drawing.Size(42, 25);
             this.labelControl7.TabIndex = 1;
             this.labelControl7.Text = "运行";
             // 
@@ -225,9 +243,10 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(7, 539);
+            this.labelControl8.Location = new System.Drawing.Point(10, 847);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(28, 17);
+            this.labelControl8.Size = new System.Drawing.Size(42, 25);
             this.labelControl8.TabIndex = 1;
             this.labelControl8.Text = "剩余";
             // 
@@ -235,9 +254,10 @@
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(51, 591);
+            this.labelControl9.Location = new System.Drawing.Point(73, 929);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(51, 19);
+            this.labelControl9.Size = new System.Drawing.Size(75, 29);
             this.labelControl9.TabIndex = 0;
             this.labelControl9.Text = "步信息";
             // 
@@ -245,9 +265,10 @@
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(7, 652);
+            this.labelControl10.Location = new System.Drawing.Point(10, 1025);
+            this.labelControl10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(28, 17);
+            this.labelControl10.Size = new System.Drawing.Size(42, 25);
             this.labelControl10.TabIndex = 1;
             this.labelControl10.Text = "步号";
             // 
@@ -255,9 +276,10 @@
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(7, 687);
+            this.labelControl11.Location = new System.Drawing.Point(10, 1080);
+            this.labelControl11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(28, 17);
+            this.labelControl11.Size = new System.Drawing.Size(42, 25);
             this.labelControl11.TabIndex = 1;
             this.labelControl11.Text = "名称";
             // 
@@ -265,9 +287,10 @@
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(7, 722);
+            this.labelControl12.Location = new System.Drawing.Point(10, 1135);
+            this.labelControl12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(28, 17);
+            this.labelControl12.Size = new System.Drawing.Size(42, 25);
             this.labelControl12.TabIndex = 1;
             this.labelControl12.Text = "总时";
             // 
@@ -275,145 +298,160 @@
             // 
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(7, 757);
+            this.labelControl13.Location = new System.Drawing.Point(10, 1190);
+            this.labelControl13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(28, 17);
+            this.labelControl13.Size = new System.Drawing.Size(42, 25);
             this.labelControl13.TabIndex = 1;
             this.labelControl13.Text = "运行";
             // 
             // separatorControl3
             // 
-            this.separatorControl3.Location = new System.Drawing.Point(5, 566);
+            this.separatorControl3.Location = new System.Drawing.Point(7, 889);
+            this.separatorControl3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.separatorControl3.Name = "separatorControl3";
-            this.separatorControl3.Size = new System.Drawing.Size(146, 19);
+            this.separatorControl3.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.separatorControl3.Size = new System.Drawing.Size(209, 30);
             this.separatorControl3.TabIndex = 4;
             // 
             // pbcStepBar
             // 
             this.pbcStepBar.EditValue = "73";
-            this.pbcStepBar.Location = new System.Drawing.Point(7, 618);
+            this.pbcStepBar.Location = new System.Drawing.Point(10, 971);
+            this.pbcStepBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbcStepBar.Name = "pbcStepBar";
             this.pbcStepBar.Properties.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.pbcStepBar.Properties.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.pbcStepBar.Size = new System.Drawing.Size(144, 18);
+            this.pbcStepBar.Size = new System.Drawing.Size(206, 28);
             this.pbcStepBar.TabIndex = 6;
             // 
             // labelControl14
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Location = new System.Drawing.Point(5, 792);
+            this.labelControl14.Location = new System.Drawing.Point(7, 1245);
+            this.labelControl14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(32, 19);
+            this.labelControl14.Size = new System.Drawing.Size(48, 29);
             this.labelControl14.TabIndex = 1;
             this.labelControl14.Text = "剩余";
             // 
-            // labelControl15
+            // lblRecipeName
             // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl15.Location = new System.Drawing.Point(49, 433);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(102, 14);
-            this.labelControl15.TabIndex = 9;
-            this.labelControl15.Text = "无";
+            this.lblRecipeName.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecipeName.Appearance.Options.UseFont = true;
+            this.lblRecipeName.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblRecipeName.Location = new System.Drawing.Point(70, 680);
+            this.lblRecipeName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblRecipeName.Name = "lblRecipeName";
+            this.lblRecipeName.Size = new System.Drawing.Size(146, 22);
+            this.lblRecipeName.TabIndex = 9;
+            this.lblRecipeName.Text = "无";
             // 
-            // labelControl16
+            // lblRecipeTotalTime
             // 
-            this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl16.Location = new System.Drawing.Point(49, 469);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(102, 14);
-            this.labelControl16.TabIndex = 9;
-            this.labelControl16.Text = "00 min 00 s";
+            this.lblRecipeTotalTime.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecipeTotalTime.Appearance.Options.UseFont = true;
+            this.lblRecipeTotalTime.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblRecipeTotalTime.Location = new System.Drawing.Point(70, 737);
+            this.lblRecipeTotalTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblRecipeTotalTime.Name = "lblRecipeTotalTime";
+            this.lblRecipeTotalTime.Size = new System.Drawing.Size(146, 22);
+            this.lblRecipeTotalTime.TabIndex = 9;
+            this.lblRecipeTotalTime.Text = "00 min 00 s";
             // 
-            // labelControl17
+            // lblRecipeWorkTime
             // 
-            this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl17.Location = new System.Drawing.Point(49, 505);
-            this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(102, 14);
-            this.labelControl17.TabIndex = 9;
-            this.labelControl17.Text = "00 min 00 s";
+            this.lblRecipeWorkTime.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecipeWorkTime.Appearance.Options.UseFont = true;
+            this.lblRecipeWorkTime.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblRecipeWorkTime.Location = new System.Drawing.Point(70, 794);
+            this.lblRecipeWorkTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblRecipeWorkTime.Name = "lblRecipeWorkTime";
+            this.lblRecipeWorkTime.Size = new System.Drawing.Size(146, 22);
+            this.lblRecipeWorkTime.TabIndex = 9;
+            this.lblRecipeWorkTime.Text = "00 min 00 s";
             // 
-            // labelControl18
+            // lblRecipeRemainTime
             // 
-            this.labelControl18.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl18.Appearance.Options.UseFont = true;
-            this.labelControl18.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl18.Location = new System.Drawing.Point(49, 541);
-            this.labelControl18.Name = "labelControl18";
-            this.labelControl18.Size = new System.Drawing.Size(102, 14);
-            this.labelControl18.TabIndex = 9;
-            this.labelControl18.Text = "00 min 00 s";
+            this.lblRecipeRemainTime.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecipeRemainTime.Appearance.Options.UseFont = true;
+            this.lblRecipeRemainTime.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblRecipeRemainTime.Location = new System.Drawing.Point(70, 850);
+            this.lblRecipeRemainTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblRecipeRemainTime.Name = "lblRecipeRemainTime";
+            this.lblRecipeRemainTime.Size = new System.Drawing.Size(146, 22);
+            this.lblRecipeRemainTime.TabIndex = 9;
+            this.lblRecipeRemainTime.Text = "00 min 00 s";
             // 
-            // labelControl19
+            // lblStepID
             // 
-            this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl19.Appearance.Options.UseFont = true;
-            this.labelControl19.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl19.Location = new System.Drawing.Point(49, 654);
-            this.labelControl19.Name = "labelControl19";
-            this.labelControl19.Size = new System.Drawing.Size(102, 14);
-            this.labelControl19.TabIndex = 9;
-            this.labelControl19.Text = "无";
+            this.lblStepID.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStepID.Appearance.Options.UseFont = true;
+            this.lblStepID.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblStepID.Location = new System.Drawing.Point(70, 1028);
+            this.lblStepID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblStepID.Name = "lblStepID";
+            this.lblStepID.Size = new System.Drawing.Size(146, 22);
+            this.lblStepID.TabIndex = 9;
+            this.lblStepID.Text = "无";
             // 
-            // labelControl20
+            // lblStepName
             // 
-            this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl20.Appearance.Options.UseFont = true;
-            this.labelControl20.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl20.Location = new System.Drawing.Point(49, 690);
-            this.labelControl20.Name = "labelControl20";
-            this.labelControl20.Size = new System.Drawing.Size(102, 14);
-            this.labelControl20.TabIndex = 9;
-            this.labelControl20.Text = "无";
+            this.lblStepName.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStepName.Appearance.Options.UseFont = true;
+            this.lblStepName.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblStepName.Location = new System.Drawing.Point(70, 1084);
+            this.lblStepName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblStepName.Name = "lblStepName";
+            this.lblStepName.Size = new System.Drawing.Size(146, 22);
+            this.lblStepName.TabIndex = 9;
+            this.lblStepName.Text = "无";
             // 
-            // labelControl21
+            // lblStepTotalTime
             // 
-            this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl21.Appearance.Options.UseFont = true;
-            this.labelControl21.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl21.Location = new System.Drawing.Point(49, 726);
-            this.labelControl21.Name = "labelControl21";
-            this.labelControl21.Size = new System.Drawing.Size(102, 14);
-            this.labelControl21.TabIndex = 9;
-            this.labelControl21.Text = "00 min 00 s";
+            this.lblStepTotalTime.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStepTotalTime.Appearance.Options.UseFont = true;
+            this.lblStepTotalTime.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblStepTotalTime.Location = new System.Drawing.Point(70, 1141);
+            this.lblStepTotalTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblStepTotalTime.Name = "lblStepTotalTime";
+            this.lblStepTotalTime.Size = new System.Drawing.Size(146, 22);
+            this.lblStepTotalTime.TabIndex = 9;
+            this.lblStepTotalTime.Text = "00 min 00 s";
             // 
-            // labelControl22
+            // lblStepWorkTime
             // 
-            this.labelControl22.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl22.Appearance.Options.UseFont = true;
-            this.labelControl22.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl22.Location = new System.Drawing.Point(49, 762);
-            this.labelControl22.Name = "labelControl22";
-            this.labelControl22.Size = new System.Drawing.Size(102, 14);
-            this.labelControl22.TabIndex = 9;
-            this.labelControl22.Text = "00 min 00 s";
+            this.lblStepWorkTime.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStepWorkTime.Appearance.Options.UseFont = true;
+            this.lblStepWorkTime.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblStepWorkTime.Location = new System.Drawing.Point(70, 1197);
+            this.lblStepWorkTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblStepWorkTime.Name = "lblStepWorkTime";
+            this.lblStepWorkTime.Size = new System.Drawing.Size(146, 22);
+            this.lblStepWorkTime.TabIndex = 9;
+            this.lblStepWorkTime.Text = "00 min 00 s";
             // 
-            // labelControl23
+            // lblStepRemainTime
             // 
-            this.labelControl23.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl23.Appearance.Options.UseFont = true;
-            this.labelControl23.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl23.Location = new System.Drawing.Point(49, 798);
-            this.labelControl23.Name = "labelControl23";
-            this.labelControl23.Size = new System.Drawing.Size(102, 14);
-            this.labelControl23.TabIndex = 9;
-            this.labelControl23.Text = "00 min 00 s";
+            this.lblStepRemainTime.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStepRemainTime.Appearance.Options.UseFont = true;
+            this.lblStepRemainTime.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblStepRemainTime.Location = new System.Drawing.Point(70, 1254);
+            this.lblStepRemainTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblStepRemainTime.Name = "lblStepRemainTime";
+            this.lblStepRemainTime.Size = new System.Drawing.Size(146, 22);
+            this.lblStepRemainTime.TabIndex = 9;
+            this.lblStepRemainTime.Text = "00 min 00 s";
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(10, 11);
+            this.labelControl2.Location = new System.Drawing.Point(14, 17);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(28, 17);
+            this.labelControl2.Size = new System.Drawing.Size(42, 25);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "手动";
             // 
@@ -421,15 +459,17 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(120, 11);
+            this.labelControl3.Location = new System.Drawing.Point(171, 17);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(28, 17);
+            this.labelControl3.Size = new System.Drawing.Size(42, 25);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "自动";
             // 
             // cmbBoatState
             // 
-            this.cmbBoatState.Location = new System.Drawing.Point(31, 52);
+            this.cmbBoatState.Location = new System.Drawing.Point(44, 82);
+            this.cmbBoatState.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cmbBoatState.Name = "cmbBoatState";
             this.cmbBoatState.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBoatState.Properties.Appearance.Options.UseFont = true;
@@ -446,30 +486,32 @@
             "饱和完成",
             "正在工艺",
             "待清洗舟"});
-            this.cmbBoatState.Size = new System.Drawing.Size(95, 26);
+            this.cmbBoatState.Size = new System.Drawing.Size(136, 36);
             this.cmbBoatState.TabIndex = 10;
             // 
             // separatorControl4
             // 
-            this.separatorControl4.Location = new System.Drawing.Point(5, 80);
+            this.separatorControl4.Location = new System.Drawing.Point(7, 126);
+            this.separatorControl4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.separatorControl4.Name = "separatorControl4";
-            this.separatorControl4.Size = new System.Drawing.Size(146, 19);
+            this.separatorControl4.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
+            this.separatorControl4.Size = new System.Drawing.Size(209, 30);
             this.separatorControl4.TabIndex = 4;
             // 
             // ucRecipeInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cmbBoatState);
-            this.Controls.Add(this.labelControl23);
-            this.Controls.Add(this.labelControl22);
-            this.Controls.Add(this.labelControl21);
-            this.Controls.Add(this.labelControl20);
-            this.Controls.Add(this.labelControl19);
-            this.Controls.Add(this.labelControl18);
-            this.Controls.Add(this.labelControl17);
-            this.Controls.Add(this.labelControl16);
-            this.Controls.Add(this.labelControl15);
+            this.Controls.Add(this.lblStepRemainTime);
+            this.Controls.Add(this.lblStepWorkTime);
+            this.Controls.Add(this.lblStepTotalTime);
+            this.Controls.Add(this.lblStepName);
+            this.Controls.Add(this.lblStepID);
+            this.Controls.Add(this.lblRecipeRemainTime);
+            this.Controls.Add(this.lblRecipeWorkTime);
+            this.Controls.Add(this.lblRecipeTotalTime);
+            this.Controls.Add(this.lblRecipeName);
             this.Controls.Add(this.pbcStepBar);
             this.Controls.Add(this.pbcRecipeBar);
             this.Controls.Add(this.btnTubeDisable);
@@ -497,8 +539,10 @@
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.labelControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ucRecipeInfo";
-            this.Size = new System.Drawing.Size(158, 825);
+            this.Size = new System.Drawing.Size(226, 1296);
+            this.Load += new System.EventHandler(this.ucRecipeInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tsAutoSelect.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
@@ -538,15 +582,15 @@
         private DevExpress.XtraEditors.SeparatorControl separatorControl3;
         private DevExpress.XtraEditors.ProgressBarControl pbcStepBar;
         private DevExpress.XtraEditors.LabelControl labelControl14;
-        private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.LabelControl labelControl16;
-        private DevExpress.XtraEditors.LabelControl labelControl17;
-        private DevExpress.XtraEditors.LabelControl labelControl18;
-        private DevExpress.XtraEditors.LabelControl labelControl19;
-        private DevExpress.XtraEditors.LabelControl labelControl20;
-        private DevExpress.XtraEditors.LabelControl labelControl21;
-        private DevExpress.XtraEditors.LabelControl labelControl22;
-        private DevExpress.XtraEditors.LabelControl labelControl23;
+        private DevExpress.XtraEditors.LabelControl lblRecipeName;
+        private DevExpress.XtraEditors.LabelControl lblRecipeTotalTime;
+        private DevExpress.XtraEditors.LabelControl lblRecipeWorkTime;
+        private DevExpress.XtraEditors.LabelControl lblRecipeRemainTime;
+        private DevExpress.XtraEditors.LabelControl lblStepID;
+        private DevExpress.XtraEditors.LabelControl lblStepName;
+        private DevExpress.XtraEditors.LabelControl lblStepTotalTime;
+        private DevExpress.XtraEditors.LabelControl lblStepWorkTime;
+        private DevExpress.XtraEditors.LabelControl lblStepRemainTime;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.ComboBoxEdit cmbBoatState;

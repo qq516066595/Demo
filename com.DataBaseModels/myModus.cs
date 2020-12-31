@@ -9,19 +9,6 @@ namespace com.DataBaseModels
 {
     public class MyModus
     {
-        private static MyModus instance;
-
-        public static MyModus Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new MyModus();
-                }
-                return instance;
-            }
-        }
 
         #region 操作命令
         //操作命令结构体
@@ -164,6 +151,7 @@ namespace com.DataBaseModels
             public double rRunStep_T;
         }
 
+
         public double[] grTemp_SPArray = new double[8];//过渡值
 
         public static double grHMI_TempSV;//设定温度
@@ -174,7 +162,8 @@ namespace com.DataBaseModels
 
         public static bool DI_HeatSwitch;//加热吸合器
 
-        public static double grCooling_PV1;//水冷温度1
+        public double grCooling_PV1;//水冷温度1
+        public double grCooling_PV2;//水冷温度2
 
         #endregion
 
@@ -236,6 +225,7 @@ namespace com.DataBaseModels
             public double rBoatOut_AlmOffsetPos;    //出舟时有舟位与无舟位的最大偏差
             public double rBoatPush_SV_MaxT;        //推舟轴最大力矩
         }
+        public stTube_BoatInfo stTube_BoatInfos = new stTube_BoatInfo();
         //推舟机械手舟信息
         public struct stTube_BoatInfo
         {
@@ -251,15 +241,16 @@ namespace com.DataBaseModels
         #endregion
 
         #region 工艺信息
+        public stCurrentRecipeCtrl stcurrentRecipeCtrl = new stCurrentRecipeCtrl();
         //当前工艺控制
         public struct stCurrentRecipeCtrl
         {
             public bool bFinish;
             public bool bAlarm;
-            public double nWorking_Time;            //步运行时间
-            public double nRemain_Time;             //步剩余时间
-            public double eName;                    //步名称
-            public double nDuration;                //步总时间
+            public uint nWorking_Time;            //步运行时间
+            public uint nRemain_Time;             //步剩余时间
+            public int eName;                       //步名称
+            public uint nDuration;                //步总时间
         }
 
         public bool gbProcess_Busy;                 //工艺忙信号
@@ -269,6 +260,8 @@ namespace com.DataBaseModels
         public uint gnProcessRemainTime;            //工艺剩余时间
         public uint gnProcessTotalTime;             //工艺总时间
         public uint gnProcessWorkingTime;           //工艺运行时间
+
+        public string sCurrentRecipeName;           //炉管当前工艺名称
         #endregion
 
         #region 真空

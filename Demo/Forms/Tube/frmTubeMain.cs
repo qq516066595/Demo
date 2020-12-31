@@ -27,6 +27,8 @@ namespace Demo.Forms.Tube
         public frmTubeMain()
         {
             InitializeComponent();
+
+            lblZoneEx1.Text = this.Tag.ToString();
         }
 
         #region 主界面
@@ -58,10 +60,12 @@ namespace Demo.Forms.Tube
                             ((LabelControl)control).Text = modus.StTempZoneArray[i].rInternal_Temp.ToString();
                         else if (control.Name.Equals("lblZoneMV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//功率
                             ((LabelControl)control).Text = modus.StTempZoneArray[i].rMV.ToString();
-                        else if (control.Name.Equals("lblZoneSP" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//
+                        else if (control.Name.Equals("lblZoneSP" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//过渡
                             ((LabelControl)control).Text = modus.grTemp_SPArray[i].ToString();
                     }
                     //水冷
+                    lblWaterCooling1.Text = modus.grCooling_PV1.ToString();
+                    lblWaterCooling2.Text = modus.grCooling_PV2.ToString();
                 }
                 //设定值
                 if (control is TextEdit)
@@ -165,6 +169,11 @@ namespace Demo.Forms.Tube
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        MyModus myModus1 = new MyModus();
+        MyModus myModus2 = new MyModus();
+        MyModus myModus3 = new MyModus();
+        MyModus myModus4 = new MyModus();
+        MyModus myModus5 = new MyModus();
         private void frmTubeMain_Load(object sender, EventArgs e)
         {
             //int a = (Int32)this.Tag;
@@ -181,27 +190,47 @@ namespace Demo.Forms.Tube
 
 
             //2020-12-29 hhf 测试使用；需写到委托事件中实时刷新数据
-            
-            MyModus modus = new MyModus();
-            modus.grTemp_SPArray[1] = 91;
-            modus.grTemp_SPArray[2] = 92;
-            modus.grTemp_SPArray[3] = 93;
-            modus.grTemp_SPArray[4] = 94;
-            modus.grTemp_SPArray[5] = 95;
-            modus.grTemp_SPArray[6] = 96;
-            modus.grTemp_SPArray[7] = 97;
-            modus.StTempZoneArray[1].rMV = 11;
-            modus.StTempZoneArray[1].rSet_Temp = 500;
-            modus.StTempZoneArray[1].rExternal_Temp = 300;
-            modus.StTempZoneArray[1].rInternal_Temp = 289.4;
+            //MyModus[] myModus = new MyModus[5];
+            //MyModus mys = new MyModus();
+            //int index = Convert.ToInt32(this.Tag) - 1;
+            //myModus[index] = mys;
+            myModus1.giRecipe_ID = 1;
+            myModus2.giRecipe_ID = 2;
+            myModus3.giRecipe_ID = 3;
+            myModus4.giRecipe_ID = 4;
+            myModus5.giRecipe_ID = 5;
+
+            MyModus mys = new MyModus();
+            int index = Convert.ToInt32(this.Tag);
+            if (index == 1)
+                mys = myModus1;
+            else if (index == 2)
+                mys = myModus2;
+            else if (index == 3)
+                mys = myModus3;
+            else if (index == 4)
+                mys = myModus4;
+            else if (index == 5)
+                mys = myModus5;
+            else
+                return;
+            mys.grTemp_SPArray[0] = 91;
+            mys.grTemp_SPArray[1] = 92;
+            mys.grTemp_SPArray[2] = 93;
+            mys.grTemp_SPArray[3] = 94;
+            mys.grTemp_SPArray[4] = 95;
+            mys.grTemp_SPArray[5] = 96;
+            mys.grTemp_SPArray[6] = 97;
+            mys.StTempZoneArray[0].rMV = 11;
+            mys.StTempZoneArray[0].rSet_Temp = 500;
+            mys.StTempZoneArray[0].rExternal_Temp = 300;
+            mys.StTempZoneArray[0].rInternal_Temp = 289.4;
+
             //温区值绑定
-            TempBindings(modus);
+            TempBindings(mys);
+            ucRecipeInfo1.ucRecipe(mys);
         }
 
-        public void gettag(int index)
-        {
-
-        }
         #endregion
 
         /// <summary>
