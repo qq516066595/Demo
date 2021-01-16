@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=20.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.20.12.0\lib\net40\Aspose.Cells.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.BonusSkins.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Charts.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.CodeParser.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -142,7 +139,7 @@
     <Compile Include="Forms\Loader\XtraForm1.Designer.cs">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Tube\TubeHelpClass.cs" />
+    <Compile Include="Forms\Tube\FormatHelpClass.cs" />
     <Compile Include="Forms\Tube\frmHeating.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +151,12 @@
     </Compile>
     <Compile Include="Forms\Tube\frmUnlockPwd.Designer.cs">
       <DependentUpon>frmUnlockPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\键盘.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\键盘.Designer.cs">
+      <DependentUpon>键盘.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Loader\ucAxisPos.cs">
       <SubType>UserControl</SubType>
@@ -262,6 +265,9 @@
     <EmbeddedResource Include="Forms\Tube\frmUnlockPwd.resx">
       <DependentUpon>frmUnlockPwd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\键盘.resx">
+      <DependentUpon>键盘.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -332,7 +338,6 @@
     <None Include="bin\Debug\工艺历史数据\Tube4\recipe4.csv" />
     <None Include="bin\Debug\工艺历史数据\Tube5\recipe5.csv" />
     <None Include="bin\Debug\工艺历史数据\工艺名称+工艺时长+运行次数.csv" />
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -363,8 +368,6 @@
     <Content Include="image\notifier.png" />
     <Content Include="image\wind.png" />
     <Content Include="image\wind_postion.png" />
-    <Content Include="lib\Aspose.Cells.dll" />
-    <Content Include="lib\Aspose.Cells.xml" />
     <Content Include="lib\CIPCompolet.dll" />
     <Content Include="lib\CIPCompolet64.dll" />
     <Content Include="lib\CIPCompoletProxyLib.dll" />
@@ -378,6 +381,7 @@
     <Content Include="lib\System.Data.SQLite.dll" />
     <Content Include="lib\System.Data.SQLite.EF6.dll" />
     <Content Include="lib\System.Data.SQLite.Linq.dll" />
+    <Content Include="lib\通讯\MoonsCommLib.dll" />
     <None Include="Resources\DefSplashImage.png" />
     <None Include="Resources\下拉箭头3.png" />
     <None Include="Resources\下拉箭头2.png" />
@@ -412,11 +416,7 @@
     <Folder Include="lib\其他\" />
     <Folder Include="lib\控件\" />
     <Folder Include="lib\数据库\" />
-    <Folder Include="lib\通讯\" />
     <Folder Include="model\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
