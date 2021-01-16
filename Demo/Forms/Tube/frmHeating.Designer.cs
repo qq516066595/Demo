@@ -119,6 +119,7 @@
             this.Controls.Add(this.labelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmHeating";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHeating";
             this.Load += new System.EventHandler(this.frmHeating_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtTempSV.Properties)).EndInit();

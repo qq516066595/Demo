@@ -141,29 +141,29 @@ namespace com.DataBaseModels
         public StTempZone[] StTempZoneArray = new StTempZone[8];
         public struct StTempZone
         {
-            public double rInternal_Temp;            //内偶温度
-            public double rExternal_Temp;            //外偶温度
-            public double rMV;                       //输出功率
-            public double rSet_Temp;                 //设定温度
-            public double rCal_Rump;                 //计算所得温度斜率
+            public float rInternal_Temp;            //内偶温度
+            public float rExternal_Temp;            //外偶温度
+            public float rMV;                       //输出功率
+            public float rSet_Temp;                 //设定温度
+            public float rCal_Rump;                 //计算所得温度斜率
             public bool bRun;                        //启动加热
             public bool bTempRump_Enable;            //斜坡升温有效
-            public double rRunStep_T;
+            public float rRunStep_T;
         }
 
 
-        public double[] grTemp_SPArray = new double[8];//过渡值
+        public float[] grTemp_SPArray = new float[8];//过渡值
 
-        public static double grHMI_TempSV;//设定温度
+        public static float grHMI_TempSV;//设定温度
 
-        public static double grHMI_TempRump;//设定斜率
+        public static float grHMI_TempRump;//设定斜率
 
         public static bool gbHMI_Temp_Enable;//温度使能？
 
         public static bool DI_HeatSwitch;//加热吸合器
 
-        public double grCooling_PV1;//水冷温度1
-        public double grCooling_PV2;//水冷温度2
+        public float grCooling_PV1;//水冷温度1
+        public float grCooling_PV2;//水冷温度2
 
         #endregion
 
@@ -178,7 +178,7 @@ namespace com.DataBaseModels
             public bool bRun_Condition;      //动作条件
             public ushort SV;                //设定值
             public ushort PV;                //实际值
-            public double nAddress;          //地址
+            public float nAddress;          //地址
             public bool bWarn;               //流量偏差警示，完成当前工艺后停止
             public bool bAlarm;              //总报警输出
             public int ErrorCode;            //错误编码 
@@ -186,8 +186,8 @@ namespace com.DataBaseModels
         stMFC_Para[] stMFCP = new stMFC_Para[12];
         public struct stMFC_Para
         {
-            public double rWarnDiff_Persent;
-            public double rAlmDiff_Persent;
+            public float rWarnDiff_Persent;
+            public float rAlmDiff_Persent;
             public uint nMaxRange;
             public bool bShield;
         }
@@ -206,24 +206,28 @@ namespace com.DataBaseModels
             public bool bAlarm;
             public int nErrorCode;
         }
+
+        public bool DI_TubePressure_Normal;//炉管常压检测
+        public bool DI_TubePressure_Vacuum;//炉管真空检测
         #endregion
 
         #region 轴控
 
         //机械手X轴参数结构体
+        public AxisParaEx axisParaEx = new AxisParaEx();
         public struct AxisParaEx
         {
-            public double rBoatIn_SlowPos;          //进舟减速判断位
-            public double rBoatIn_ClosePos;         //进舟关炉门判断位
-            public double rBoatOut_OpenPos;         //出舟开炉门判断位
-            public double rBoatOut_FastPos;         //出舟快速判断位
-            public double rBoatOut_OffsetPos;       //出舟时，根据传感器定位舟
+            public float rBoatIn_SlowPos;          //进舟减速判断位
+            public float rBoatIn_ClosePos;         //进舟关炉门判断位
+            public float rBoatOut_OpenPos;         //出舟开炉门判断位
+            public float rBoatOut_FastPos;         //出舟快速判断位
+            public float rBoatOut_OffsetPos;       //出舟时，根据传感器定位舟
             public bool bAutoCalcEnable;          //使能自动计算力矩
-            public double rFollow_StartT;           //随动启动力矩
-            public double rFollow_StopT;            //随动停止力矩
-            public double rFollow_MaxOffsetPos;     //随动最大允许的偏移距离
-            public double rBoatOut_AlmOffsetPos;    //出舟时有舟位与无舟位的最大偏差
-            public double rBoatPush_SV_MaxT;        //推舟轴最大力矩
+            public float rFollow_StartT;           //随动启动力矩
+            public float rFollow_StopT;            //随动停止力矩
+            public float rFollow_MaxOffsetPos;     //随动最大允许的偏移距离
+            public float rBoatOut_AlmOffsetPos;    //出舟时有舟位与无舟位的最大偏差
+            public float rBoatPush_SV_MaxT;        //推舟轴最大力矩
         }
         public stTube_BoatInfo stTube_BoatInfos = new stTube_BoatInfo();
         //推舟机械手舟信息
@@ -231,13 +235,87 @@ namespace com.DataBaseModels
         {
             public string ID;               //舟托编号  
             public int eBoatState;       //舟状态
-            public double rActStoreTime;    //实际存放时间
+            public float rActStoreTime;    //实际存放时间
             public int iUseCount;        //使用次数
             public bool bAlarm;           //舟工位报警 
         }
+        public Hand_X_SV_Ctrl hand_X_SV_Ctrl = new Hand_X_SV_Ctrl();
+        public struct Hand_X_SV_Ctrl
+        {
+            public bool bHMI_PowerOff;
+            public bool bAuto_PowerOff;
+            public bool bHome_PowerOff;
+            public bool bPowerStatus;
+            public bool bStandStill;
+            public bool bMinPos_Reached;
+            public bool bMaxPos_Reached;
+            public bool bHome_Excute;
+            public bool bHome_Condition;
+            public bool bHMI_JogF;
+            public bool bHMI_JogB;
+            public bool bAuto_JogF;
+            public bool bAuto_JogB;
+            public bool bJogF_Condition;
+            public bool bJogB_Condition;
+            public bool bReset_Execute;
+            public bool bStop_Execute;
+            public float rOverride;
+            public float rActPos;
+            public float rActSpeed;
+            public float rAct_Torque;
+            public float rLimit_Torque;
+            public bool bP_OT;
+            public bool bN_OT;
+            public bool bHome_SW;
+            public bool bAlarm;
+            public uint nErrorCode;
+        }
+        public bool[] boatPush_SV_Ctrl_bAbs_Execute = new bool[32];
+        public bool[] boatPush_SV_Ctrl_bAbs_Condition = new bool[32];
+        public bool[] boatPush_SV_Ctrl_bPos_Reached = new bool[32];
+        public bool gbHMI_BoatIn;//手动联动进舟
+        public bool gbHMI_BoatOut;//手动联动出舟
+        public float grRulerPos;//磁栅尺位置
+        public bool gbBoatPush_Unlock; //轴解除联锁
+        public bool gbValve_Unlock; //阀解除联锁
+        #endregion
 
-        public static bool gbBoatPush_Unlock; //轴解除联锁
-        public static bool gbValve_Unlock; //阀解除联锁
+        #region 气缸
+        public bool gbHMI_OpenDoor;
+        public bool gbHMI_CloseDoor;
+        public Struct_YV_Ctrl PushpullDoor_YV_Ctrl = new Struct_YV_Ctrl();//炉门推拉气缸控制结构体
+        public Struct_YV_Ctrl CloseDoor_YV_Ctrl = new Struct_YV_Ctrl();//炉门关闭气缸控制结构体
+        public struct Struct_YV_Ctrl
+        {
+            public bool bHMI_Out;
+            public bool bHMI_Back;
+            public bool bAuto_Out;
+            public bool bAuto_Back;
+            public bool bOut_Condition;
+            public bool bBack_Condition;
+            public bool bOutPos_Reached;
+            public bool bDI_OutPos;
+            public bool bDI_BackPos;
+            public bool bDO_Out;
+            public bool bDO_Back;
+            public bool bAlarm;
+            public bool nErrorCode;
+        }
+        public Struct_YV_Para CloseDoor_YV_Para = new Struct_YV_Para();//炉门关闭气缸参数结构体
+        public Struct_YV_Para PushpullDoor_YV_Para = new Struct_YV_Para();//炉门推拉气缸参数结构体
+
+        public struct Struct_YV_Para
+        {
+            public uint nOut_ReachTime;
+            public uint nBack_ReachTime;
+            public uint nOut_AlmTime;
+            public uint nBack_AlmTime;
+            public bool bDefaultPos;
+            public bool bControlType;
+            public bool bOut_has_SW;
+            public bool bBack_has_SW;
+            public bool bMonDisable;
+        }
         #endregion
 
         #region 工艺信息
@@ -262,19 +340,27 @@ namespace com.DataBaseModels
         public uint gnProcessWorkingTime;           //工艺运行时间
 
         public string sCurrentRecipeName;           //炉管当前工艺名称
+
+        public bool gbHMI_Recipe_Start;             //开始
+        public bool gbHMI_Recipe_Hold;              //保持
+        public bool gbHMI_Recipe_Abort;             //中止
+        public bool gbHMI_Recipe_Finish;            //结束
+        public uint gnHMI_Hold_Time;                //保持时间
+
+        public bool gbTube_Disable;                 //锁管
         #endregion
 
         #region 真空
         //读真空泵数据结构体
         public struct stPump_Read
         {
-            public double rActPressure;     //读真空泵数据结构体
-            public double rActSpeed;        //抽速-0-100Hz
+            public float rActPressure;     //读真空泵数据结构体
+            public float rActSpeed;        //抽速-0-100Hz
             public int nStatusAlarm;        //0：正常1：故障
             public bool bStartPump;         //1：停止2启动
-            public double rSetPressure;     //读真空泵压力
+            public float rSetPressure;     //读真空泵压力
             public bool bSetFunMode;        //2:真空模式1:速度模式
-            public double rSetSpeed;        //0-100Hz
+            public float rSetSpeed;        //0-100Hz
             public bool bCheckDiff_Enable;  //使能检测差值
         }
         //写真空泵数据结构体
@@ -289,6 +375,36 @@ namespace com.DataBaseModels
             public ushort rSetSpeed;        //设定抽速
             public bool bCheckDiff_Enable;  //使能检测差值  
         }
+
+        public bool gbHMI_LeakCheck;//一键检漏
+        public float grActLeakRate;//漏率
+
+        public Struct_FXL_HWCs_Ctrl stHWCs_Ctrl = new Struct_FXL_HWCs_Ctrl();
+        public struct Struct_FXL_HWCs_Ctrl
+        {
+            public float rActTemperature;
+            public float rSetTempReturn;
+            public float rSetTemperature;
+            public uint nWeightStatus_1;
+            public uint nWeightStatus_2;
+            public uint nWeightStatus_3;
+            public uint nWeightStatus_4;
+            public uint nWeightStatus_5;
+            public uint nWeightStatus_6;
+            public uint nTempState;
+            public uint nCompressorState;
+            public uint nGasState;
+            public uint nRunningState;
+            public uint nLevel_1;
+            public uint nLevel_2;
+            public uint nLevel_3;
+            public uint nLevel_4;
+            public uint nLevel_5;
+            public uint nLevel_6;
+            public uint GasConcentration;
+        }
+        public int giSource_Counter;//源瓶使用次数
+        public float Comm_rHCSPV;//恒温槽监控温度
         #endregion
 
         #region IO
@@ -346,22 +462,21 @@ namespace com.DataBaseModels
         //真空规控制结构体
         public struct stVG1_Ctrl
         {
-            public double IN;                 //模块实际输入
-            public double Q;                  //换算后的实际值
-            public double bAlarm;             //报警标志位
-            public double nErrorCode;         //报警代码
+            public float IN;                 //模块实际输入
+            public float Q;                  //换算后的实际值
+            public float bAlarm;             //报警标志位
+            public float nErrorCode;         //报警代码
         }
         //真空规参数结构体
         public struct stVG1_Para
         {
             public int FilterN;             //滤波数量
             public int PeakN;               //毛刺监控数量
-            public double rMinAct;          //输入最下肢对应的实际值
-            public double rMinOriginal;     //原始值最小值
-            public double rMaxAct;          //输入最大值对对应的实际值
-            public double rMaxOriginal;     //原始值最大值 
+            public float rMinAct;          //输入最下肢对应的实际值
+            public float rMinOriginal;     //原始值最小值
+            public float rMaxAct;          //输入最大值对对应的实际值
+            public float rMaxOriginal;     //原始值最大值 
         }
         #endregion
-
     }
 }

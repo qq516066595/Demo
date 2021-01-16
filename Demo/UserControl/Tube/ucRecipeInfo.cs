@@ -11,10 +11,22 @@ using DevExpress.XtraEditors;
 using com.DataBaseModels;
 using Demo.Forms.Tube;
 
+/*
+* namespace：Demo.Forms.Tube
+* className：ColorHelpClass
+* 
+* Version：HMI_RPxx_V001_202012
+* Author：hehf
+* Date：2020/12/28 11:39:22
+* Desc：炉管工艺信息显示与操作。
+* 
+* Remarks：待完善：操作权限、到达信号量按钮变绿、按钮操作条件是否满足
+*/
 namespace Demo.UserControl.Tube
 {
     public partial class ucRecipeInfo : DevExpress.XtraEditors.XtraUserControl
     {
+        TubeHelpClass help = new TubeHelpClass();
         public ucRecipeInfo()
         {
             InitializeComponent();
@@ -24,20 +36,20 @@ namespace Demo.UserControl.Tube
             modus = myModus;
             tsAutoSelect.IsOn = modus.OP_Mode == 1 ? false : modus.OP_Mode == 3 ? true : false;
             lblRecipeName.Text = modus.sCurrentRecipeName;
-            lblRecipeTotalTime.Text = FormatHelpClass.timeFormatIntToString(modus.gnProcessWorkingTime);
-            lblRecipeWorkTime.Text = FormatHelpClass.timeFormatIntToString(modus.gnProcessWorkingTime);
-            lblRecipeRemainTime.Text = FormatHelpClass.timeFormatIntToString(modus.gnProcessRemainTime);
+            lblRecipeTotalTime.Text = help.timeFormatIntToString(modus.gnProcessWorkingTime);
+            lblRecipeWorkTime.Text = help.timeFormatIntToString(modus.gnProcessWorkingTime);
+            lblRecipeRemainTime.Text = help.timeFormatIntToString(modus.gnProcessRemainTime);
             lblStepID.Text = modus.giRecipe_ID.ToString();
-            lblStepName.Text = FormatHelpClass.KSrecipeNameFormatIntToString(modus.stcurrentRecipeCtrl.eName);
-            lblStepTotalTime.Text = FormatHelpClass.timeFormatIntToString(modus.stcurrentRecipeCtrl.nDuration);
-            lblStepWorkTime.Text = FormatHelpClass.timeFormatIntToString(modus.stcurrentRecipeCtrl.nWorking_Time);
-            lblStepRemainTime.Text = FormatHelpClass.timeFormatIntToString(modus.stcurrentRecipeCtrl.nRemain_Time);
+            lblStepName.Text = help.KSrecipeNameFormatIntToString(modus.stcurrentRecipeCtrl.eName);
+            lblStepTotalTime.Text = help.timeFormatIntToString(modus.stcurrentRecipeCtrl.nDuration);
+            lblStepWorkTime.Text = help.timeFormatIntToString(modus.stcurrentRecipeCtrl.nWorking_Time);
+            lblStepRemainTime.Text = help.timeFormatIntToString(modus.stcurrentRecipeCtrl.nRemain_Time);
 
             cmbBoatState.SelectedIndexChanged += CmbBoatState_SelectedIndexChanged;
             btnStart.Click += BtnStart_Click;
         }
 
-        
+
 
         MyModus modus = new MyModus();
 
@@ -50,15 +62,7 @@ namespace Demo.UserControl.Tube
         {
             modus.stTube_BoatInfos.eBoatState = cmbBoatState.SelectedIndex;
         }
-        /// <summary>
-        /// 开始
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void BtnStart_Click(object sender, EventArgs e)
-        {
-            
-        }
+
         /// <summary>
         /// 手自动切换
         /// </summary>
@@ -79,6 +83,71 @@ namespace Demo.UserControl.Tube
         private void ucRecipeInfo_Load(object sender, EventArgs e)
         {
 
+        }
+
+        /// <summary>
+        /// 开始
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BtnStart_Click(object sender, EventArgs e)
+        {
+            modus.gbHMI_Recipe_Start = !modus.gbHMI_Recipe_Start;
+            help.SetbtnClickBackColor(btnStart, Color.Lime, modus.gbHMI_Recipe_Start);
+        }
+        /// <summary>
+        /// 保持
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnHold_Click(object sender, EventArgs e)
+        {
+            modus.gbHMI_Recipe_Hold = !modus.gbHMI_Recipe_Hold;
+            help.SetbtnClickBackColor(btnHold, Color.Yellow, modus.gbHMI_Recipe_Hold);
+        }
+        /// <summary>
+        /// 跳步
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnJumpStep_Click(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// 中止
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnAbort_Click(object sender, EventArgs e)
+        {
+            modus.gbHMI_Recipe_Abort = !modus.gbHMI_Recipe_Abort;
+            help.SetbtnClickBackColor(btnAbort, Color.Red, modus.gbHMI_Recipe_Abort);
+        }
+        /// <summary>
+        /// 结束
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnFinish_Click(object sender, EventArgs e)
+        {
+            modus.gbHMI_Recipe_Finish = !modus.gbHMI_Recipe_Finish;
+            help.SetbtnClickBackColor(btnFinish, Color.Yellow, modus.gbHMI_Recipe_Finish);
+        }
+        /// <summary>
+        /// 锁管
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnTubeDisable_Click(object sender, EventArgs e)
+        {
+            btnTubeDisable.Appearance.Options.UseBackColor = true;
+            modus.gbTube_Disable = !modus.gbTube_Disable;
+            help.SetbtnClickBackColor(btnTubeDisable, Color.Red, modus.gbTube_Disable);
+            if (modus.gbTube_Disable)
+                btnTubeDisable.ForeColor = Color.Black;
+            else
+                btnTubeDisable.ForeColor = Color.Red;
         }
     }
 }

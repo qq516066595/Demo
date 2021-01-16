@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTubeMain));
+            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem11 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
@@ -44,27 +47,25 @@
             DevExpress.Utils.ToolTipItem toolTipItem6 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem7 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series8 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView8 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series9 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView9 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series10 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView10 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series11 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView11 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series12 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView12 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series13 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView13 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series14 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView14 = new DevExpress.XtraCharts.LineSeriesView();
             DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem8 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView1 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView2 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView3 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView4 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView5 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView6 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series7 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView7 = new DevExpress.XtraCharts.LineSeriesView();
             DevExpress.Utils.SuperToolTip superToolTip9 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem9 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem10 = new DevExpress.Utils.ToolTipItem();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
@@ -174,8 +175,13 @@
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.pcData = new DevExpress.XtraEditors.PanelControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridRecipe = new DevExpress.XtraGrid.GridControl();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.InsertRow = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeleteRow = new System.Windows.Forms.ToolStripMenuItem();
+            this.CopyRow = new System.Windows.Forms.ToolStripMenuItem();
+            this.PasteRow = new System.Windows.Forms.ToolStripMenuItem();
+            this.gridRecipeView = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.Step = new DevExpress.XtraGrid.Columns.GridColumn();
             this.eName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
@@ -246,7 +252,7 @@
             this.picDefaultRecipe = new DevExpress.XtraEditors.PictureEdit();
             this.picCheckRecipe = new DevExpress.XtraEditors.PictureEdit();
             this.picUploadRecipe = new DevExpress.XtraEditors.PictureEdit();
-            this.cmbRecipeName = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.lblRecipeName = new DevExpress.XtraEditors.LabelControl();
             this.lblCurrentRecipeName = new DevExpress.XtraEditors.LabelControl();
             this.labelControl31 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
@@ -525,8 +531,9 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcData)).BeginInit();
             this.pcData.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridRecipe)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridRecipeView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).BeginInit();
@@ -542,7 +549,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picDefaultRecipe.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCheckRecipe.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUploadRecipe.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbRecipeName.Properties)).BeginInit();
             this.xtraTabPage3.SuspendLayout();
             this.xtraTabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
@@ -550,21 +556,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl8)).BeginInit();
             this.panelControl8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).BeginInit();
             this.panelControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtFilePath.Properties)).BeginInit();
@@ -869,6 +875,7 @@
             this.btnHWCLeakCheck.Size = new System.Drawing.Size(110, 39);
             this.btnHWCLeakCheck.TabIndex = 18;
             this.btnHWCLeakCheck.Text = "一键检漏";
+            this.btnHWCLeakCheck.Click += new System.EventHandler(this.btnHWCLeakCheck_Click);
             // 
             // lblHWCTempPV
             // 
@@ -2048,7 +2055,7 @@
             // 
             // pcData
             // 
-            this.pcData.Controls.Add(this.gridControl1);
+            this.pcData.Controls.Add(this.gridRecipe);
             this.pcData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pcData.Location = new System.Drawing.Point(3, 56);
             this.pcData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -2056,26 +2063,70 @@
             this.pcData.Size = new System.Drawing.Size(1817, 1318);
             this.pcData.TabIndex = 1;
             // 
-            // gridControl1
+            // gridRecipe
             // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gridControl1.Location = new System.Drawing.Point(3, 3);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.gridRecipe.ContextMenuStrip = this.contextMenuStrip1;
+            this.gridRecipe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridRecipe.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gridRecipe.Location = new System.Drawing.Point(3, 3);
+            this.gridRecipe.MainView = this.gridRecipeView;
+            this.gridRecipe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gridRecipe.Name = "gridRecipe";
+            this.gridRecipe.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemComboBox1,
             this.repositoryItemCheckEdit1,
             this.repositoryItemButtonEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(1811, 1312);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
+            this.gridRecipe.Size = new System.Drawing.Size(1811, 1312);
+            this.gridRecipe.TabIndex = 0;
+            this.gridRecipe.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridRecipeView});
             // 
-            // gridView1
+            // contextMenuStrip1
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.InsertRow,
+            this.DeleteRow,
+            this.CopyRow,
+            this.PasteRow});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(135, 116);
+            // 
+            // InsertRow
+            // 
+            this.InsertRow.Name = "InsertRow";
+            this.InsertRow.Size = new System.Drawing.Size(240, 28);
+            this.InsertRow.Text = "插入行";
+            this.InsertRow.Click += new System.EventHandler(this.InsertRow_Click);
+            // 
+            // DeleteRow
+            // 
+            this.DeleteRow.Name = "DeleteRow";
+            this.DeleteRow.Size = new System.Drawing.Size(240, 28);
+            this.DeleteRow.Text = "删除行";
+            this.DeleteRow.Click += new System.EventHandler(this.DeleteRow_Click);
+            // 
+            // CopyRow
+            // 
+            this.CopyRow.Name = "CopyRow";
+            this.CopyRow.Size = new System.Drawing.Size(240, 28);
+            this.CopyRow.Text = "复制行";
+            this.CopyRow.Click += new System.EventHandler(this.CopyRow_Click);
+            // 
+            // PasteRow
+            // 
+            this.PasteRow.Name = "PasteRow";
+            this.PasteRow.Size = new System.Drawing.Size(240, 28);
+            this.PasteRow.Text = "粘贴行";
+            this.PasteRow.Click += new System.EventHandler(this.PasteRow_Click);
+            // 
+            // gridRecipeView
+            // 
+            this.gridRecipeView.Appearance.EvenRow.BackColor = System.Drawing.Color.Gainsboro;
+            this.gridRecipeView.Appearance.EvenRow.Options.UseBackColor = true;
+            this.gridRecipeView.AppearancePrint.Row.Font = new System.Drawing.Font("宋体", 9F);
+            this.gridRecipeView.AppearancePrint.Row.Options.UseFont = true;
+            this.gridRecipeView.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.Step,
             this.eName,
             this.bConditionCheck,
@@ -2133,26 +2184,36 @@
             this.bTempCheck,
             this.bFlowCheck,
             this.bPressureCheck});
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridRecipeView.GridControl = this.gridRecipe;
+            this.gridRecipeView.GroupCount = 1;
+            this.gridRecipeView.Name = "gridRecipeView";
+            this.gridRecipeView.OptionsSelection.MultiSelect = true;
+            this.gridRecipeView.OptionsView.ColumnAutoWidth = false;
+            this.gridRecipeView.OptionsView.EnableAppearanceOddRow = true;
+            this.gridRecipeView.OptionsView.ShowGroupPanel = false;
+            this.gridRecipeView.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
+            new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.bConditionCheck, DevExpress.Data.ColumnSortOrder.Ascending)});
             // 
             // Step
             // 
             this.Step.Caption = "步号";
+            this.Step.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.Step.Name = "Step";
+            this.Step.OptionsColumn.AllowEdit = false;
             this.Step.Visible = true;
             this.Step.VisibleIndex = 0;
-            this.Step.Width = 20;
+            this.Step.Width = 50;
             // 
             // eName
             // 
             this.eName.Caption = "执行动作";
             this.eName.ColumnEdit = this.repositoryItemComboBox1;
+            this.eName.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.eName.Name = "eName";
+            this.eName.OptionsColumn.AllowMove = false;
             this.eName.Visible = true;
             this.eName.VisibleIndex = 1;
-            this.eName.Width = 100;
+            this.eName.Width = 90;
             // 
             // repositoryItemComboBox1
             // 
@@ -2186,457 +2247,491 @@
             this.bConditionCheck.Name = "bConditionCheck";
             this.bConditionCheck.Visible = true;
             this.bConditionCheck.VisibleIndex = 2;
-            this.bConditionCheck.Width = 20;
+            this.bConditionCheck.Width = 50;
             // 
             // repositoryItemCheckEdit1
             // 
             this.repositoryItemCheckEdit1.AutoHeight = false;
             this.repositoryItemCheckEdit1.Name = "repositoryItemCheckEdit1";
+            this.repositoryItemCheckEdit1.NullStyle = DevExpress.XtraEditors.Controls.StyleIndeterminate.Unchecked;
             // 
             // nDuration
             // 
             this.nDuration.Caption = "步时间(s)";
             this.nDuration.Name = "nDuration";
             this.nDuration.Visible = true;
-            this.nDuration.VisibleIndex = 3;
-            this.nDuration.Width = 46;
+            this.nDuration.VisibleIndex = 2;
+            this.nDuration.Width = 90;
             // 
             // rTempZone1_SV
             // 
             this.rTempZone1_SV.Caption = "温区一(℃)";
             this.rTempZone1_SV.Name = "rTempZone1_SV";
             this.rTempZone1_SV.Visible = true;
-            this.rTempZone1_SV.VisibleIndex = 4;
-            this.rTempZone1_SV.Width = 22;
+            this.rTempZone1_SV.VisibleIndex = 3;
+            this.rTempZone1_SV.Width = 100;
             // 
             // rTempZone2_SV
             // 
             this.rTempZone2_SV.Caption = "温区二(℃)";
             this.rTempZone2_SV.Name = "rTempZone2_SV";
             this.rTempZone2_SV.Visible = true;
-            this.rTempZone2_SV.VisibleIndex = 5;
-            this.rTempZone2_SV.Width = 20;
+            this.rTempZone2_SV.VisibleIndex = 4;
+            this.rTempZone2_SV.Width = 100;
             // 
             // rTempZone3_SV
             // 
             this.rTempZone3_SV.Caption = "温区三(℃)";
             this.rTempZone3_SV.Name = "rTempZone3_SV";
             this.rTempZone3_SV.Visible = true;
-            this.rTempZone3_SV.VisibleIndex = 6;
-            this.rTempZone3_SV.Width = 20;
+            this.rTempZone3_SV.VisibleIndex = 5;
+            this.rTempZone3_SV.Width = 100;
             // 
             // rTempZone4_SV
             // 
             this.rTempZone4_SV.Caption = "温区四(℃)";
             this.rTempZone4_SV.Name = "rTempZone4_SV";
             this.rTempZone4_SV.Visible = true;
-            this.rTempZone4_SV.VisibleIndex = 7;
-            this.rTempZone4_SV.Width = 20;
+            this.rTempZone4_SV.VisibleIndex = 6;
+            this.rTempZone4_SV.Width = 100;
             // 
             // rTempZone5_SV
             // 
             this.rTempZone5_SV.Caption = "温区五(℃)";
             this.rTempZone5_SV.Name = "rTempZone5_SV";
             this.rTempZone5_SV.Visible = true;
-            this.rTempZone5_SV.VisibleIndex = 8;
-            this.rTempZone5_SV.Width = 20;
+            this.rTempZone5_SV.VisibleIndex = 7;
+            this.rTempZone5_SV.Width = 100;
             // 
             // rTempZone6_SV
             // 
             this.rTempZone6_SV.Caption = "温区六(℃)";
             this.rTempZone6_SV.Name = "rTempZone6_SV";
             this.rTempZone6_SV.Visible = true;
-            this.rTempZone6_SV.VisibleIndex = 9;
-            this.rTempZone6_SV.Width = 20;
+            this.rTempZone6_SV.VisibleIndex = 8;
+            this.rTempZone6_SV.Width = 100;
             // 
             // rTempZone7_SV
             // 
             this.rTempZone7_SV.Caption = "温区七(℃)";
+            this.rTempZone7_SV.MaxWidth = 100;
+            this.rTempZone7_SV.MinWidth = 50;
             this.rTempZone7_SV.Name = "rTempZone7_SV";
             this.rTempZone7_SV.Visible = true;
-            this.rTempZone7_SV.VisibleIndex = 10;
-            this.rTempZone7_SV.Width = 20;
+            this.rTempZone7_SV.VisibleIndex = 9;
+            this.rTempZone7_SV.Width = 100;
             // 
             // rTempZone8_SV
             // 
             this.rTempZone8_SV.Caption = "温区八(℃)";
             this.rTempZone8_SV.Name = "rTempZone8_SV";
             this.rTempZone8_SV.Visible = true;
-            this.rTempZone8_SV.VisibleIndex = 11;
-            this.rTempZone8_SV.Width = 20;
+            this.rTempZone8_SV.VisibleIndex = 10;
+            this.rTempZone8_SV.Width = 100;
             // 
             // bTempRumpEnable
             // 
             this.bTempRumpEnable.Caption = "斜率";
             this.bTempRumpEnable.Name = "bTempRumpEnable";
             this.bTempRumpEnable.Visible = true;
-            this.bTempRumpEnable.VisibleIndex = 12;
-            this.bTempRumpEnable.Width = 20;
+            this.bTempRumpEnable.VisibleIndex = 11;
+            this.bTempRumpEnable.Width = 50;
             // 
             // rTubeSetPressure
             // 
             this.rTubeSetPressure.Caption = "压力(mBar)";
             this.rTubeSetPressure.Name = "rTubeSetPressure";
             this.rTubeSetPressure.Visible = true;
-            this.rTubeSetPressure.VisibleIndex = 13;
-            this.rTubeSetPressure.Width = 20;
+            this.rTubeSetPressure.VisibleIndex = 12;
+            this.rTubeSetPressure.Width = 110;
             // 
             // rLeakRateLimit
             // 
             this.rLeakRateLimit.Caption = "真空漏率(mBar/min)";
             this.rLeakRateLimit.Name = "rLeakRateLimit";
             this.rLeakRateLimit.Visible = true;
-            this.rLeakRateLimit.VisibleIndex = 14;
-            this.rLeakRateLimit.Width = 20;
+            this.rLeakRateLimit.VisibleIndex = 13;
+            this.rLeakRateLimit.Width = 180;
             // 
             // LoopCounter
             // 
             this.LoopCounter.Caption = "循环次数";
             this.LoopCounter.Name = "LoopCounter";
             this.LoopCounter.Visible = true;
-            this.LoopCounter.VisibleIndex = 15;
-            this.LoopCounter.Width = 20;
+            this.LoopCounter.VisibleIndex = 14;
+            this.LoopCounter.Width = 95;
             // 
             // LoopStartStep
             // 
             this.LoopStartStep.Caption = "循环起始步";
             this.LoopStartStep.Name = "LoopStartStep";
             this.LoopStartStep.Visible = true;
-            this.LoopStartStep.VisibleIndex = 16;
-            this.LoopStartStep.Width = 20;
+            this.LoopStartStep.VisibleIndex = 15;
+            this.LoopStartStep.Width = 110;
             // 
             // 打开气路图
             // 
-            this.打开气路图.Caption = "阀开关操作";
+            this.打开气路图.Caption = "阀开关";
             this.打开气路图.ColumnEdit = this.repositoryItemButtonEdit1;
             this.打开气路图.Name = "打开气路图";
             this.打开气路图.Visible = true;
-            this.打开气路图.VisibleIndex = 17;
-            this.打开气路图.Width = 20;
+            this.打开气路图.VisibleIndex = 16;
+            this.打开气路图.Width = 80;
             // 
             // repositoryItemButtonEdit1
             // 
+            this.repositoryItemButtonEdit1.AppearanceDisabled.Options.UseTextOptions = true;
+            this.repositoryItemButtonEdit1.AppearanceDisabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.repositoryItemButtonEdit1.AutoHeight = false;
             this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "编辑", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
+            this.repositoryItemButtonEdit1.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
+            this.repositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             // 
             // rMFC1FlowRate
             // 
             this.rMFC1FlowRate.Caption = "MFC1";
             this.rMFC1FlowRate.Name = "rMFC1FlowRate";
             this.rMFC1FlowRate.Visible = true;
-            this.rMFC1FlowRate.VisibleIndex = 18;
-            this.rMFC1FlowRate.Width = 20;
+            this.rMFC1FlowRate.VisibleIndex = 17;
+            this.rMFC1FlowRate.Width = 90;
             // 
             // rMFC2FlowRate
             // 
             this.rMFC2FlowRate.Caption = "MFC2";
             this.rMFC2FlowRate.Name = "rMFC2FlowRate";
             this.rMFC2FlowRate.Visible = true;
-            this.rMFC2FlowRate.VisibleIndex = 19;
-            this.rMFC2FlowRate.Width = 20;
+            this.rMFC2FlowRate.VisibleIndex = 18;
+            this.rMFC2FlowRate.Width = 90;
             // 
             // rMFC3FlowRate
             // 
             this.rMFC3FlowRate.Caption = "MFC3";
             this.rMFC3FlowRate.Name = "rMFC3FlowRate";
             this.rMFC3FlowRate.Visible = true;
-            this.rMFC3FlowRate.VisibleIndex = 20;
-            this.rMFC3FlowRate.Width = 20;
+            this.rMFC3FlowRate.VisibleIndex = 19;
+            this.rMFC3FlowRate.Width = 90;
             // 
             // rMFC4FlowRate
             // 
             this.rMFC4FlowRate.Caption = "MFC4";
             this.rMFC4FlowRate.Name = "rMFC4FlowRate";
             this.rMFC4FlowRate.Visible = true;
-            this.rMFC4FlowRate.VisibleIndex = 21;
-            this.rMFC4FlowRate.Width = 20;
+            this.rMFC4FlowRate.VisibleIndex = 20;
+            this.rMFC4FlowRate.Width = 90;
             // 
             // rMFC5FlowRate
             // 
             this.rMFC5FlowRate.Caption = "MFC5";
             this.rMFC5FlowRate.Name = "rMFC5FlowRate";
             this.rMFC5FlowRate.Visible = true;
-            this.rMFC5FlowRate.VisibleIndex = 22;
-            this.rMFC5FlowRate.Width = 20;
+            this.rMFC5FlowRate.VisibleIndex = 21;
+            this.rMFC5FlowRate.Width = 90;
             // 
             // rMFC6FlowRate
             // 
             this.rMFC6FlowRate.Caption = "MFC6";
             this.rMFC6FlowRate.Name = "rMFC6FlowRate";
             this.rMFC6FlowRate.Visible = true;
-            this.rMFC6FlowRate.VisibleIndex = 23;
-            this.rMFC6FlowRate.Width = 20;
+            this.rMFC6FlowRate.VisibleIndex = 22;
+            this.rMFC6FlowRate.Width = 90;
             // 
             // rMFC7FlowRate
             // 
             this.rMFC7FlowRate.Caption = "MFC7";
             this.rMFC7FlowRate.Name = "rMFC7FlowRate";
             this.rMFC7FlowRate.Visible = true;
-            this.rMFC7FlowRate.VisibleIndex = 24;
-            this.rMFC7FlowRate.Width = 20;
+            this.rMFC7FlowRate.VisibleIndex = 23;
+            this.rMFC7FlowRate.Width = 90;
             // 
             // rMFC8FlowRate
             // 
             this.rMFC8FlowRate.Caption = "MFC8";
             this.rMFC8FlowRate.Name = "rMFC8FlowRate";
             this.rMFC8FlowRate.Visible = true;
-            this.rMFC8FlowRate.VisibleIndex = 25;
-            this.rMFC8FlowRate.Width = 20;
+            this.rMFC8FlowRate.VisibleIndex = 24;
+            this.rMFC8FlowRate.Width = 90;
             // 
             // rMFC9FlowRate
             // 
             this.rMFC9FlowRate.Caption = "MFC9";
             this.rMFC9FlowRate.Name = "rMFC9FlowRate";
             this.rMFC9FlowRate.Visible = true;
-            this.rMFC9FlowRate.VisibleIndex = 26;
-            this.rMFC9FlowRate.Width = 20;
+            this.rMFC9FlowRate.VisibleIndex = 25;
+            this.rMFC9FlowRate.Width = 90;
             // 
             // rMFC10FlowRate
             // 
             this.rMFC10FlowRate.Caption = "MFC10";
             this.rMFC10FlowRate.Name = "rMFC10FlowRate";
             this.rMFC10FlowRate.Visible = true;
-            this.rMFC10FlowRate.VisibleIndex = 27;
-            this.rMFC10FlowRate.Width = 20;
+            this.rMFC10FlowRate.VisibleIndex = 26;
+            this.rMFC10FlowRate.Width = 90;
             // 
             // rMFC11FlowRate
             // 
             this.rMFC11FlowRate.Caption = "MFC11";
             this.rMFC11FlowRate.Name = "rMFC11FlowRate";
             this.rMFC11FlowRate.Visible = true;
-            this.rMFC11FlowRate.VisibleIndex = 28;
-            this.rMFC11FlowRate.Width = 20;
+            this.rMFC11FlowRate.VisibleIndex = 27;
+            this.rMFC11FlowRate.Width = 90;
             // 
             // rMFC12FlowRate
             // 
             this.rMFC12FlowRate.Caption = "MFC12";
             this.rMFC12FlowRate.Name = "rMFC12FlowRate";
             this.rMFC12FlowRate.Visible = true;
-            this.rMFC12FlowRate.VisibleIndex = 29;
-            this.rMFC12FlowRate.Width = 20;
+            this.rMFC12FlowRate.VisibleIndex = 28;
+            this.rMFC12FlowRate.Width = 90;
             // 
             // bOpenValve1
             // 
             this.bOpenValve1.Caption = "V1";
+            this.bOpenValve1.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve1.Name = "bOpenValve1";
             this.bOpenValve1.Visible = true;
-            this.bOpenValve1.VisibleIndex = 30;
-            this.bOpenValve1.Width = 20;
+            this.bOpenValve1.VisibleIndex = 29;
+            this.bOpenValve1.Width = 50;
             // 
             // bOpenValve2
             // 
             this.bOpenValve2.Caption = "V2";
+            this.bOpenValve2.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve2.Name = "bOpenValve2";
             this.bOpenValve2.Visible = true;
-            this.bOpenValve2.VisibleIndex = 31;
-            this.bOpenValve2.Width = 20;
+            this.bOpenValve2.VisibleIndex = 30;
+            this.bOpenValve2.Width = 50;
             // 
             // bOpenValve3
             // 
             this.bOpenValve3.Caption = "V3";
+            this.bOpenValve3.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve3.Name = "bOpenValve3";
             this.bOpenValve3.Visible = true;
-            this.bOpenValve3.VisibleIndex = 32;
-            this.bOpenValve3.Width = 20;
+            this.bOpenValve3.VisibleIndex = 31;
+            this.bOpenValve3.Width = 50;
             // 
             // bOpenValve4
             // 
             this.bOpenValve4.Caption = "V4";
+            this.bOpenValve4.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve4.Name = "bOpenValve4";
             this.bOpenValve4.Visible = true;
-            this.bOpenValve4.VisibleIndex = 33;
-            this.bOpenValve4.Width = 20;
+            this.bOpenValve4.VisibleIndex = 32;
+            this.bOpenValve4.Width = 50;
             // 
             // bOpenValve5
             // 
             this.bOpenValve5.Caption = "V5";
+            this.bOpenValve5.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve5.Name = "bOpenValve5";
             this.bOpenValve5.Visible = true;
-            this.bOpenValve5.VisibleIndex = 34;
-            this.bOpenValve5.Width = 20;
+            this.bOpenValve5.VisibleIndex = 33;
+            this.bOpenValve5.Width = 50;
             // 
             // bOpenValve6
             // 
             this.bOpenValve6.Caption = "V6";
+            this.bOpenValve6.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve6.Name = "bOpenValve6";
             this.bOpenValve6.Visible = true;
-            this.bOpenValve6.VisibleIndex = 35;
-            this.bOpenValve6.Width = 20;
+            this.bOpenValve6.VisibleIndex = 34;
+            this.bOpenValve6.Width = 50;
             // 
             // bOpenValve7
             // 
             this.bOpenValve7.Caption = "V7";
+            this.bOpenValve7.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve7.Name = "bOpenValve7";
             this.bOpenValve7.Visible = true;
-            this.bOpenValve7.VisibleIndex = 36;
-            this.bOpenValve7.Width = 20;
+            this.bOpenValve7.VisibleIndex = 35;
+            this.bOpenValve7.Width = 50;
             // 
             // bOpenValve8
             // 
             this.bOpenValve8.Caption = "V8";
+            this.bOpenValve8.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve8.Name = "bOpenValve8";
             this.bOpenValve8.Visible = true;
-            this.bOpenValve8.VisibleIndex = 37;
-            this.bOpenValve8.Width = 20;
+            this.bOpenValve8.VisibleIndex = 36;
+            this.bOpenValve8.Width = 50;
             // 
             // bOpenValve9
             // 
             this.bOpenValve9.Caption = "V9";
+            this.bOpenValve9.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve9.Name = "bOpenValve9";
             this.bOpenValve9.Visible = true;
-            this.bOpenValve9.VisibleIndex = 38;
-            this.bOpenValve9.Width = 20;
+            this.bOpenValve9.VisibleIndex = 37;
+            this.bOpenValve9.Width = 50;
             // 
             // bOpenValve10
             // 
             this.bOpenValve10.Caption = "V10";
+            this.bOpenValve10.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve10.Name = "bOpenValve10";
             this.bOpenValve10.Visible = true;
-            this.bOpenValve10.VisibleIndex = 39;
-            this.bOpenValve10.Width = 20;
+            this.bOpenValve10.VisibleIndex = 38;
+            this.bOpenValve10.Width = 50;
             // 
             // bOpenValve11
             // 
             this.bOpenValve11.Caption = "V11";
+            this.bOpenValve11.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve11.Name = "bOpenValve11";
             this.bOpenValve11.Visible = true;
-            this.bOpenValve11.VisibleIndex = 40;
-            this.bOpenValve11.Width = 20;
+            this.bOpenValve11.VisibleIndex = 39;
+            this.bOpenValve11.Width = 50;
             // 
             // bOpenValve12
             // 
             this.bOpenValve12.Caption = "V12";
+            this.bOpenValve12.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve12.Name = "bOpenValve12";
             this.bOpenValve12.Visible = true;
-            this.bOpenValve12.VisibleIndex = 41;
-            this.bOpenValve12.Width = 20;
+            this.bOpenValve12.VisibleIndex = 40;
+            this.bOpenValve12.Width = 50;
             // 
             // bOpenValve13
             // 
             this.bOpenValve13.Caption = "V13";
+            this.bOpenValve13.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve13.Name = "bOpenValve13";
             this.bOpenValve13.Visible = true;
-            this.bOpenValve13.VisibleIndex = 42;
-            this.bOpenValve13.Width = 20;
+            this.bOpenValve13.VisibleIndex = 41;
+            this.bOpenValve13.Width = 50;
             // 
             // bOpenValve14
             // 
             this.bOpenValve14.Caption = "V14";
+            this.bOpenValve14.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve14.Name = "bOpenValve14";
             this.bOpenValve14.Visible = true;
-            this.bOpenValve14.VisibleIndex = 43;
-            this.bOpenValve14.Width = 20;
+            this.bOpenValve14.VisibleIndex = 42;
+            this.bOpenValve14.Width = 50;
             // 
             // bOpenValve15
             // 
             this.bOpenValve15.Caption = "V15";
+            this.bOpenValve15.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve15.Name = "bOpenValve15";
             this.bOpenValve15.Visible = true;
-            this.bOpenValve15.VisibleIndex = 44;
-            this.bOpenValve15.Width = 20;
+            this.bOpenValve15.VisibleIndex = 43;
+            this.bOpenValve15.Width = 50;
             // 
             // bOpenValve16
             // 
             this.bOpenValve16.Caption = "V16";
+            this.bOpenValve16.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve16.Name = "bOpenValve16";
             this.bOpenValve16.Visible = true;
-            this.bOpenValve16.VisibleIndex = 45;
-            this.bOpenValve16.Width = 20;
+            this.bOpenValve16.VisibleIndex = 44;
+            this.bOpenValve16.Width = 50;
             // 
             // bOpenValve17
             // 
             this.bOpenValve17.Caption = "V17";
+            this.bOpenValve17.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve17.Name = "bOpenValve17";
             this.bOpenValve17.Visible = true;
-            this.bOpenValve17.VisibleIndex = 46;
-            this.bOpenValve17.Width = 20;
+            this.bOpenValve17.VisibleIndex = 45;
+            this.bOpenValve17.Width = 50;
             // 
             // bOpenValve18
             // 
             this.bOpenValve18.Caption = "V18";
+            this.bOpenValve18.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve18.Name = "bOpenValve18";
             this.bOpenValve18.Visible = true;
-            this.bOpenValve18.VisibleIndex = 47;
-            this.bOpenValve18.Width = 20;
+            this.bOpenValve18.VisibleIndex = 46;
+            this.bOpenValve18.Width = 50;
             // 
             // bOpenValve19
             // 
             this.bOpenValve19.Caption = "V19";
+            this.bOpenValve19.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve19.Name = "bOpenValve19";
             this.bOpenValve19.Visible = true;
-            this.bOpenValve19.VisibleIndex = 48;
-            this.bOpenValve19.Width = 20;
+            this.bOpenValve19.VisibleIndex = 47;
+            this.bOpenValve19.Width = 50;
             // 
             // bOpenValve20
             // 
             this.bOpenValve20.Caption = "V20";
+            this.bOpenValve20.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve20.Name = "bOpenValve20";
             this.bOpenValve20.Visible = true;
-            this.bOpenValve20.VisibleIndex = 49;
-            this.bOpenValve20.Width = 20;
+            this.bOpenValve20.VisibleIndex = 48;
+            this.bOpenValve20.Width = 50;
             // 
             // bOpenValve21
             // 
             this.bOpenValve21.Caption = "V21";
+            this.bOpenValve21.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve21.Name = "bOpenValve21";
             this.bOpenValve21.Visible = true;
-            this.bOpenValve21.VisibleIndex = 50;
-            this.bOpenValve21.Width = 20;
+            this.bOpenValve21.VisibleIndex = 49;
+            this.bOpenValve21.Width = 50;
             // 
             // bOpenValve22
             // 
             this.bOpenValve22.Caption = "V22";
+            this.bOpenValve22.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve22.Name = "bOpenValve22";
             this.bOpenValve22.Visible = true;
-            this.bOpenValve22.VisibleIndex = 51;
-            this.bOpenValve22.Width = 20;
+            this.bOpenValve22.VisibleIndex = 50;
+            this.bOpenValve22.Width = 50;
             // 
             // bOpenValve23
             // 
             this.bOpenValve23.Caption = "V23";
+            this.bOpenValve23.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve23.Name = "bOpenValve23";
             this.bOpenValve23.Visible = true;
-            this.bOpenValve23.VisibleIndex = 52;
-            this.bOpenValve23.Width = 20;
+            this.bOpenValve23.VisibleIndex = 51;
+            this.bOpenValve23.Width = 50;
             // 
             // bOpenValve24
             // 
             this.bOpenValve24.Caption = "V24";
+            this.bOpenValve24.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bOpenValve24.Name = "bOpenValve24";
             this.bOpenValve24.Visible = true;
-            this.bOpenValve24.VisibleIndex = 53;
-            this.bOpenValve24.Width = 20;
+            this.bOpenValve24.VisibleIndex = 52;
+            this.bOpenValve24.Width = 50;
             // 
             // bTempCheck
             // 
             this.bTempCheck.Caption = "温度监控";
+            this.bTempCheck.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bTempCheck.Name = "bTempCheck";
             this.bTempCheck.Visible = true;
-            this.bTempCheck.VisibleIndex = 54;
-            this.bTempCheck.Width = 20;
+            this.bTempCheck.VisibleIndex = 53;
+            this.bTempCheck.Width = 100;
             // 
             // bFlowCheck
             // 
             this.bFlowCheck.Caption = "流量监控";
+            this.bFlowCheck.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bFlowCheck.Name = "bFlowCheck";
             this.bFlowCheck.Visible = true;
-            this.bFlowCheck.VisibleIndex = 55;
-            this.bFlowCheck.Width = 20;
+            this.bFlowCheck.VisibleIndex = 54;
+            this.bFlowCheck.Width = 100;
             // 
             // bPressureCheck
             // 
             this.bPressureCheck.Caption = "压力监控";
+            this.bPressureCheck.ColumnEdit = this.repositoryItemCheckEdit1;
             this.bPressureCheck.Name = "bPressureCheck";
             this.bPressureCheck.Visible = true;
-            this.bPressureCheck.VisibleIndex = 56;
-            this.bPressureCheck.Width = 20;
+            this.bPressureCheck.VisibleIndex = 55;
+            this.bPressureCheck.Width = 110;
             // 
             // pcEdit
             // 
             this.pcEdit.Controls.Add(this.panelControl5);
-            this.pcEdit.Controls.Add(this.cmbRecipeName);
+            this.pcEdit.Controls.Add(this.lblRecipeName);
             this.pcEdit.Controls.Add(this.lblCurrentRecipeName);
             this.pcEdit.Controls.Add(this.labelControl31);
             this.pcEdit.Controls.Add(this.labelControl30);
@@ -2678,14 +2773,15 @@
             this.picRefreshRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picRefreshRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picRefreshRecipe.Size = new System.Drawing.Size(63, 44);
-            superToolTip1.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            toolTipItem1.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            toolTipItem1.Appearance.Options.UseImage = true;
-            toolTipItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem1.Image")));
-            toolTipItem1.Text = "\r\n刷新配方";
-            superToolTip1.Items.Add(toolTipItem1);
-            this.picRefreshRecipe.SuperTip = superToolTip1;
+            superToolTip11.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem11.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            toolTipItem11.Appearance.Options.UseImage = true;
+            toolTipItem11.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem11.Image")));
+            toolTipItem11.Text = "\r\n刷新配方";
+            superToolTip11.Items.Add(toolTipItem11);
+            this.picRefreshRecipe.SuperTip = superToolTip11;
             this.picRefreshRecipe.TabIndex = 3;
+            this.picRefreshRecipe.Click += new System.EventHandler(this.picRefreshRecipe_Click);
             // 
             // picAddRecipe
             // 
@@ -2700,14 +2796,15 @@
             this.picAddRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picAddRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picAddRecipe.Size = new System.Drawing.Size(63, 44);
-            superToolTip2.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            toolTipItem2.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            toolTipItem2.Appearance.Options.UseImage = true;
-            toolTipItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem2.Image")));
-            toolTipItem2.Text = "\r\n新建配方";
-            superToolTip2.Items.Add(toolTipItem2);
-            this.picAddRecipe.SuperTip = superToolTip2;
+            superToolTip1.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem1.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            toolTipItem1.Appearance.Options.UseImage = true;
+            toolTipItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem1.Image")));
+            toolTipItem1.Text = "\r\n新建配方";
+            superToolTip1.Items.Add(toolTipItem1);
+            this.picAddRecipe.SuperTip = superToolTip1;
             this.picAddRecipe.TabIndex = 3;
+            this.picAddRecipe.Click += new System.EventHandler(this.picAddRecipe_Click);
             // 
             // picOpenFile
             // 
@@ -2722,14 +2819,15 @@
             this.picOpenFile.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picOpenFile.Properties.ZoomAccelerationFactor = 1D;
             this.picOpenFile.Size = new System.Drawing.Size(63, 44);
-            superToolTip3.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            toolTipItem3.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            toolTipItem3.Appearance.Options.UseImage = true;
-            toolTipItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem3.Image")));
-            toolTipItem3.Text = "\r\n打开配方";
-            superToolTip3.Items.Add(toolTipItem3);
-            this.picOpenFile.SuperTip = superToolTip3;
+            superToolTip2.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem2.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            toolTipItem2.Appearance.Options.UseImage = true;
+            toolTipItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem2.Image")));
+            toolTipItem2.Text = "\r\n打开配方";
+            superToolTip2.Items.Add(toolTipItem2);
+            this.picOpenFile.SuperTip = superToolTip2;
             this.picOpenFile.TabIndex = 3;
+            this.picOpenFile.Click += new System.EventHandler(this.picOpenFile_Click);
             // 
             // picSaveRecipe
             // 
@@ -2744,13 +2842,14 @@
             this.picSaveRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picSaveRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picSaveRecipe.Size = new System.Drawing.Size(63, 44);
-            toolTipItem4.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            toolTipItem4.Appearance.Options.UseImage = true;
-            toolTipItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem4.Image")));
-            toolTipItem4.Text = "\r\n保存配方";
-            superToolTip4.Items.Add(toolTipItem4);
-            this.picSaveRecipe.SuperTip = superToolTip4;
+            toolTipItem3.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            toolTipItem3.Appearance.Options.UseImage = true;
+            toolTipItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem3.Image")));
+            toolTipItem3.Text = "\r\n保存配方";
+            superToolTip3.Items.Add(toolTipItem3);
+            this.picSaveRecipe.SuperTip = superToolTip3;
             this.picSaveRecipe.TabIndex = 2;
+            this.picSaveRecipe.Click += new System.EventHandler(this.picSaveRecipe_Click);
             // 
             // picDownloadRecipe
             // 
@@ -2765,13 +2864,14 @@
             this.picDownloadRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picDownloadRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picDownloadRecipe.Size = new System.Drawing.Size(63, 44);
-            toolTipItem5.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            toolTipItem5.Appearance.Options.UseImage = true;
-            toolTipItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem5.Image")));
-            toolTipItem5.Text = "\r\n下载配方";
-            superToolTip5.Items.Add(toolTipItem5);
-            this.picDownloadRecipe.SuperTip = superToolTip5;
+            toolTipItem4.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            toolTipItem4.Appearance.Options.UseImage = true;
+            toolTipItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem4.Image")));
+            toolTipItem4.Text = "\r\n下载配方";
+            superToolTip4.Items.Add(toolTipItem4);
+            this.picDownloadRecipe.SuperTip = superToolTip4;
             this.picDownloadRecipe.TabIndex = 1;
+            this.picDownloadRecipe.Click += new System.EventHandler(this.picDownloadRecipe_Click);
             // 
             // picDefaultRecipe
             // 
@@ -2786,13 +2886,14 @@
             this.picDefaultRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picDefaultRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picDefaultRecipe.Size = new System.Drawing.Size(63, 44);
-            toolTipItem6.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
-            toolTipItem6.Appearance.Options.UseImage = true;
-            toolTipItem6.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem6.Image")));
-            toolTipItem6.Text = "\r\n默认配方";
-            superToolTip6.Items.Add(toolTipItem6);
-            this.picDefaultRecipe.SuperTip = superToolTip6;
+            toolTipItem5.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            toolTipItem5.Appearance.Options.UseImage = true;
+            toolTipItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem5.Image")));
+            toolTipItem5.Text = "\r\n默认配方";
+            superToolTip5.Items.Add(toolTipItem5);
+            this.picDefaultRecipe.SuperTip = superToolTip5;
             this.picDefaultRecipe.TabIndex = 0;
+            this.picDefaultRecipe.Click += new System.EventHandler(this.picDefaultRecipe_Click);
             // 
             // picCheckRecipe
             // 
@@ -2807,13 +2908,14 @@
             this.picCheckRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picCheckRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picCheckRecipe.Size = new System.Drawing.Size(63, 44);
-            toolTipItem7.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
-            toolTipItem7.Appearance.Options.UseImage = true;
-            toolTipItem7.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem7.Image")));
-            toolTipItem7.Text = "\r\n校验配方";
-            superToolTip7.Items.Add(toolTipItem7);
-            this.picCheckRecipe.SuperTip = superToolTip7;
+            toolTipItem6.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            toolTipItem6.Appearance.Options.UseImage = true;
+            toolTipItem6.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem6.Image")));
+            toolTipItem6.Text = "\r\n校验配方";
+            superToolTip6.Items.Add(toolTipItem6);
+            this.picCheckRecipe.SuperTip = superToolTip6;
             this.picCheckRecipe.TabIndex = 0;
+            this.picCheckRecipe.Click += new System.EventHandler(this.picCheckRecipe_Click);
             // 
             // picUploadRecipe
             // 
@@ -2828,23 +2930,25 @@
             this.picUploadRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picUploadRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picUploadRecipe.Size = new System.Drawing.Size(63, 44);
-            toolTipItem8.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
-            toolTipItem8.Appearance.Options.UseImage = true;
-            toolTipItem8.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem8.Image")));
-            toolTipItem8.Text = "\r\n读取设备";
-            superToolTip8.Items.Add(toolTipItem8);
-            this.picUploadRecipe.SuperTip = superToolTip8;
+            toolTipItem7.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            toolTipItem7.Appearance.Options.UseImage = true;
+            toolTipItem7.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem7.Image")));
+            toolTipItem7.Text = "\r\n读取设备";
+            superToolTip7.Items.Add(toolTipItem7);
+            this.picUploadRecipe.SuperTip = superToolTip7;
             this.picUploadRecipe.TabIndex = 0;
+            this.picUploadRecipe.Click += new System.EventHandler(this.picUploadRecipe_Click);
             // 
-            // cmbRecipeName
+            // lblRecipeName
             // 
-            this.cmbRecipeName.Location = new System.Drawing.Point(514, 13);
-            this.cmbRecipeName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cmbRecipeName.Name = "cmbRecipeName";
-            this.cmbRecipeName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbRecipeName.Size = new System.Drawing.Size(143, 28);
-            this.cmbRecipeName.TabIndex = 1;
+            this.lblRecipeName.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecipeName.Appearance.Options.UseFont = true;
+            this.lblRecipeName.Location = new System.Drawing.Point(561, 14);
+            this.lblRecipeName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lblRecipeName.Name = "lblRecipeName";
+            this.lblRecipeName.Size = new System.Drawing.Size(73, 25);
+            this.lblRecipeName.TabIndex = 0;
+            this.lblRecipeName.Text = "Recipe1";
             // 
             // lblCurrentRecipeName
             // 
@@ -2875,9 +2979,9 @@
             this.labelControl30.Location = new System.Drawing.Point(406, 14);
             this.labelControl30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl30.Name = "labelControl30";
-            this.labelControl30.Size = new System.Drawing.Size(105, 25);
+            this.labelControl30.Size = new System.Drawing.Size(147, 25);
             this.labelControl30.TabIndex = 0;
-            this.labelControl30.Text = "工艺名称：";
+            this.labelControl30.Text = "列表工艺名称：";
             // 
             // xtraTabPage3
             // 
@@ -3060,36 +3164,36 @@
             // chartControl1
             // 
             this.chartControl1.DataBindings = null;
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram1;
+            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl1.Diagram = xyDiagram2;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl1.Legend.Name = "Default Legend";
             this.chartControl1.Location = new System.Drawing.Point(3, 3);
             this.chartControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chartControl1.Name = "chartControl1";
-            series1.Name = "温区1实际值";
-            series1.View = lineSeriesView1;
-            series2.Name = "温区2实际值";
-            series2.View = lineSeriesView2;
-            series3.Name = "温区3实际值";
-            series3.View = lineSeriesView3;
-            series4.Name = "温区4实际值";
-            series4.View = lineSeriesView4;
-            series5.Name = "温区5实际值";
-            series5.View = lineSeriesView5;
-            series6.Name = "温区6实际值";
-            series6.View = lineSeriesView6;
-            series7.Name = "温区7实际值";
-            series7.View = lineSeriesView7;
+            series8.Name = "温区1实际值";
+            series8.View = lineSeriesView8;
+            series9.Name = "温区2实际值";
+            series9.View = lineSeriesView9;
+            series10.Name = "温区3实际值";
+            series10.View = lineSeriesView10;
+            series11.Name = "温区4实际值";
+            series11.View = lineSeriesView11;
+            series12.Name = "温区5实际值";
+            series12.View = lineSeriesView12;
+            series13.Name = "温区6实际值";
+            series13.View = lineSeriesView13;
+            series14.Name = "温区7实际值";
+            series14.View = lineSeriesView14;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1,
-        series2,
-        series3,
-        series4,
-        series5,
-        series6,
-        series7};
+        series8,
+        series9,
+        series10,
+        series11,
+        series12,
+        series13,
+        series14};
             this.chartControl1.Size = new System.Drawing.Size(1811, 1312);
             this.chartControl1.TabIndex = 0;
             // 
@@ -3128,7 +3232,6 @@
             // pictureEdit2
             // 
             this.pictureEdit2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
             this.pictureEdit2.Location = new System.Drawing.Point(73, 5);
             this.pictureEdit2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureEdit2.Name = "pictureEdit2";
@@ -3138,19 +3241,16 @@
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit2.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit2.Size = new System.Drawing.Size(63, 44);
-            superToolTip9.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            toolTipItem9.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
-            toolTipItem9.Appearance.Options.UseImage = true;
-            toolTipItem9.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem9.Image")));
-            toolTipItem9.Text = "\r\n报表";
-            superToolTip9.Items.Add(toolTipItem9);
-            this.pictureEdit2.SuperTip = superToolTip9;
+            superToolTip8.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem8.Appearance.Options.UseImage = true;
+            toolTipItem8.Text = "\r\n报表";
+            superToolTip8.Items.Add(toolTipItem8);
+            this.pictureEdit2.SuperTip = superToolTip8;
             this.pictureEdit2.TabIndex = 4;
             // 
             // pictureEdit1
             // 
             this.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
             this.pictureEdit1.Location = new System.Drawing.Point(7, 5);
             this.pictureEdit1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureEdit1.Name = "pictureEdit1";
@@ -3160,13 +3260,11 @@
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
             this.pictureEdit1.Size = new System.Drawing.Size(63, 44);
-            superToolTip10.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            toolTipItem10.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
-            toolTipItem10.Appearance.Options.UseImage = true;
-            toolTipItem10.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem10.Image")));
-            toolTipItem10.Text = "\r\n曲线";
-            superToolTip10.Items.Add(toolTipItem10);
-            this.pictureEdit1.SuperTip = superToolTip10;
+            superToolTip9.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem9.Appearance.Options.UseImage = true;
+            toolTipItem9.Text = "\r\n曲线";
+            superToolTip9.Items.Add(toolTipItem9);
+            this.pictureEdit1.SuperTip = superToolTip9;
             this.pictureEdit1.TabIndex = 4;
             // 
             // xtraTabPage5
@@ -5235,7 +5333,7 @@
             this.tabNavigationPage3.Controls.Add(this.panelControl15);
             this.tabNavigationPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabNavigationPage3.Name = "tabNavigationPage3";
-            this.tabNavigationPage3.Size = new System.Drawing.Size(1674, 932);
+            this.tabNavigationPage3.Size = new System.Drawing.Size(1793, 1316);
             // 
             // panelControl16
             // 
@@ -5243,7 +5341,7 @@
             this.panelControl16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl16.Location = new System.Drawing.Point(0, 53);
             this.panelControl16.Name = "panelControl16";
-            this.panelControl16.Size = new System.Drawing.Size(1674, 879);
+            this.panelControl16.Size = new System.Drawing.Size(1793, 1263);
             this.panelControl16.TabIndex = 3;
             // 
             // gridControl5
@@ -5252,7 +5350,7 @@
             this.gridControl5.Location = new System.Drawing.Point(3, 3);
             this.gridControl5.MainView = this.gridView5;
             this.gridControl5.Name = "gridControl5";
-            this.gridControl5.Size = new System.Drawing.Size(1668, 873);
+            this.gridControl5.Size = new System.Drawing.Size(1787, 1257);
             this.gridControl5.TabIndex = 0;
             this.gridControl5.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView5});
@@ -5273,7 +5371,7 @@
             this.panelControl15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl15.Location = new System.Drawing.Point(0, 0);
             this.panelControl15.Name = "panelControl15";
-            this.panelControl15.Size = new System.Drawing.Size(1674, 53);
+            this.panelControl15.Size = new System.Drawing.Size(1793, 53);
             this.panelControl15.TabIndex = 2;
             // 
             // simpleButton23
@@ -5494,8 +5592,9 @@
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcData)).EndInit();
             this.pcData.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridRecipe)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridRecipeView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemButtonEdit1)).EndInit();
@@ -5512,28 +5611,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.picDefaultRecipe.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCheckRecipe.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picUploadRecipe.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbRecipeName.Properties)).EndInit();
             this.xtraTabPage3.ResumeLayout(false);
             this.xtraTabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
             this.panelControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl8)).EndInit();
             this.panelControl8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).EndInit();
             this.panelControl7.ResumeLayout(false);
@@ -5706,11 +5804,10 @@
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.PanelControl pcData;
         private DevExpress.XtraEditors.PanelControl pcEdit;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl gridRecipe;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridRecipeView;
         private DevExpress.XtraGrid.Columns.GridColumn Step;
         private DevExpress.XtraEditors.LabelControl labelControl30;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbRecipeName;
         private DevExpress.XtraEditors.PanelControl panelControl5;
         private DevExpress.XtraEditors.PictureEdit picOpenFile;
         private DevExpress.XtraEditors.PictureEdit picSaveRecipe;
@@ -6115,5 +6212,11 @@
         private UserControl.Loader.ucIO ucIO9;
         private UserControl.Loader.ucIO ucIO5;
         private UserControl.Loader.ucIO ucIO1;
+        private DevExpress.XtraEditors.LabelControl lblRecipeName;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem InsertRow;
+        private System.Windows.Forms.ToolStripMenuItem DeleteRow;
+        private System.Windows.Forms.ToolStripMenuItem CopyRow;
+        private System.Windows.Forms.ToolStripMenuItem PasteRow;
     }
 }

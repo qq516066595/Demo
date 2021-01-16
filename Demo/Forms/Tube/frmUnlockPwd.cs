@@ -24,9 +24,14 @@ namespace Demo.Forms.Tube
 {
     public partial class frmUnlockPwd : DevExpress.XtraEditors.XtraForm
     {
+        MyModus modus = new MyModus();
         public frmUnlockPwd()
         {
             InitializeComponent();
+        }
+        public frmUnlockPwd(MyModus mys)
+        {
+            
         }
         /// <summary>
         /// 确认
@@ -37,7 +42,7 @@ namespace Demo.Forms.Tube
         {
             if(txtPwd.Text == "123321")
             {
-                MyModus.gbBoatPush_Unlock = true;
+                modus.gbBoatPush_Unlock = true;
                 this.Close();
             }
             else

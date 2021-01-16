@@ -109,7 +109,9 @@
             // 
             // btnStart
             // 
+            this.btnStart.Appearance.BackColor = System.Drawing.Color.Lime;
             this.btnStart.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Appearance.Options.UseBackColor = true;
             this.btnStart.Appearance.Options.UseFont = true;
             this.btnStart.Location = new System.Drawing.Point(44, 204);
             this.btnStart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -120,7 +122,9 @@
             // 
             // btnHold
             // 
+            this.btnHold.Appearance.BackColor = System.Drawing.Color.Yellow;
             this.btnHold.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHold.Appearance.Options.UseBackColor = true;
             this.btnHold.Appearance.Options.UseFont = true;
             this.btnHold.Location = new System.Drawing.Point(44, 259);
             this.btnHold.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -128,6 +132,7 @@
             this.btnHold.Size = new System.Drawing.Size(136, 47);
             this.btnHold.TabIndex = 5;
             this.btnHold.Text = "保持";
+            this.btnHold.Click += new System.EventHandler(this.btnHold_Click);
             // 
             // btnJumpStep
             // 
@@ -139,10 +144,13 @@
             this.btnJumpStep.Size = new System.Drawing.Size(136, 47);
             this.btnJumpStep.TabIndex = 5;
             this.btnJumpStep.Text = "跳步";
+            this.btnJumpStep.Click += new System.EventHandler(this.btnJumpStep_Click);
             // 
             // btnAbort
             // 
+            this.btnAbort.Appearance.BackColor = System.Drawing.Color.Red;
             this.btnAbort.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbort.Appearance.Options.UseBackColor = true;
             this.btnAbort.Appearance.Options.UseFont = true;
             this.btnAbort.Location = new System.Drawing.Point(44, 369);
             this.btnAbort.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -150,10 +158,13 @@
             this.btnAbort.Size = new System.Drawing.Size(136, 47);
             this.btnAbort.TabIndex = 5;
             this.btnAbort.Text = "中断";
+            this.btnAbort.Click += new System.EventHandler(this.btnAbort_Click);
             // 
             // btnFinish
             // 
+            this.btnFinish.Appearance.BackColor = System.Drawing.Color.Red;
             this.btnFinish.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinish.Appearance.Options.UseBackColor = true;
             this.btnFinish.Appearance.Options.UseFont = true;
             this.btnFinish.Location = new System.Drawing.Point(44, 424);
             this.btnFinish.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -161,6 +172,7 @@
             this.btnFinish.Size = new System.Drawing.Size(136, 47);
             this.btnFinish.TabIndex = 5;
             this.btnFinish.Text = "结束";
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // separatorControl2
             // 
@@ -184,8 +196,10 @@
             // 
             // btnTubeDisable
             // 
+            this.btnTubeDisable.Appearance.BackColor = System.Drawing.Color.Red;
             this.btnTubeDisable.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTubeDisable.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.btnTubeDisable.Appearance.Options.UseBackColor = true;
             this.btnTubeDisable.Appearance.Options.UseFont = true;
             this.btnTubeDisable.Appearance.Options.UseForeColor = true;
             this.btnTubeDisable.Location = new System.Drawing.Point(44, 479);
@@ -194,6 +208,7 @@
             this.btnTubeDisable.Size = new System.Drawing.Size(136, 47);
             this.btnTubeDisable.TabIndex = 5;
             this.btnTubeDisable.Text = "锁管";
+            this.btnTubeDisable.Click += new System.EventHandler(this.btnTubeDisable_Click);
             // 
             // pbcRecipeBar
             // 

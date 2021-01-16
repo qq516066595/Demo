@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using com.DataBaseModels;
+using DevExpress.XtraGrid.Views.Base;
 /*
 * namespace：Demo.Forms
 * className：frmHomePage
@@ -24,11 +25,13 @@ namespace Demo.Forms.Tube
 {
     public partial class frmTubeMain : DevExpress.XtraEditors.XtraForm
     {
+        TubeHelpClass help = new TubeHelpClass();
         public frmTubeMain()
         {
             InitializeComponent();
 
             lblZoneEx1.Text = this.Tag.ToString();
+            this.gridRecipeView.InitNewRow += GridRecipeView_InitNewRow;
         }
 
         #region 主界面
@@ -78,6 +81,17 @@ namespace Demo.Forms.Tube
                 }
             }
         }
+        /// <summary>
+        /// 开启加热弹窗
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void lblHeating_Click(object sender, EventArgs e)
+        {
+            frmHeating frmheat = new frmHeating();
+            frmheat.frmIndex = (int)this.Tag;
+            frmheat.ShowDialog();
+        }
         #endregion
 
         #region 轴控
@@ -89,6 +103,328 @@ namespace Demo.Forms.Tube
         private void btnShowAxis_Click(object sender, EventArgs e)
         {
             Fold(490, 115, "上下", pcAxis, btnShowAxis);
+        }
+        #endregion
+
+        #region 恒温槽
+        /// <summary>
+        /// 一键检漏
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnHWCLeakCheck_Click(object sender, EventArgs e)
+        {
+            mys.gbHMI_LeakCheck = true;
+            help.SetbtnClickBackColor(btnHWCLeakCheck, Color.Lime, mys.gbHMI_LeakCheck);
+        }
+        public void HWCsDataBinding()
+        {
+            lblHWCTempPV.Text = mys.stHWCs_Ctrl.rActTemperature.ToString();//实际温度
+            txtHWCTempSV.Text = mys.stHWCs_Ctrl.rSetTemperature.ToString();//设定温度
+            lblHWCWeight.Text = mys.Comm_rHCSPV.ToString();//液位重量
+        }
+        #endregion
+
+        #region 真空
+
+        #endregion
+
+        #region 气路
+
+        #endregion
+
+        #endregion
+
+        #region 配方
+        /// <summary>
+        /// 刷新配方
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void picRefreshRecipe_Click(object sender, EventArgs e)
+        {
+            this.gridRecipe.RefreshDataSource();
+        }
+        /// <summary>
+        /// 新建配方
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void picAddRecipe_Click(object sender, EventArgs e)
+        {
+            lblRecipeName.Text = "NewRecipe";
+            dt.Rows.Clear();
+            gridRecipe.DataSource = dt;
+            for (int i = 0; i < 40; i++)
+            {
+                this.gridRecipeView.AddNewRow();//新增一行数据
+            }
+        }
+        /// <summary>
+        /// 添加行
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void GridRecipeView_InitNewRow(object sender, DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs e)
+        {
+            foreach (DevExpress.XtraGrid.Columns.GridColumn column in gridRecipeView.Columns)
+            {
+                string value = "";
+                if (column.FieldName == "步号")
+                { value = gridRecipeView.RowCount.ToString(); column.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left; column.OptionsColumn.AllowEdit = false; }
+                if (column.FieldName == "执行动作")
+                { column.ColumnEdit = repositoryItemComboBox1; column.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left; }
+                if (column.FieldName == "阀开关")
+                    column.ColumnEdit = repositoryItemButtonEdit1;
+                gridRecipeView.SetRowCellValue(e.RowHandle, gridRecipeView.Columns[column.FieldName], value);
+            }
+        }
+        /// <summary>
+        /// 为gridControl绑定数据源
+        /// </summary>
+        DataTable dt = new DataTable();
+        public void addGridBindings()
+        {
+            //配方
+            //设置数据结构
+            foreach (DevExpress.XtraGrid.Columns.GridColumn groupColumn in this.gridRecipeView.Columns)
+            {
+                string type = "";
+                if (groupColumn.ColumnEdit == repositoryItemCheckEdit1)
+                    type = "System.Boolean";
+                else if (groupColumn.ColumnEdit == repositoryItemComboBox1)
+                    type = "System.String";
+                else
+                    type = "System.String";
+                dt.Columns.Add(groupColumn.Caption, Type.GetType(type));
+            }
+            this.gridRecipe.DataSource = dt;
+            gridRecipe.MainView.PopulateColumns();
+        }
+        /// <summary>
+        /// 打开配方文件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void picOpenFile_Click(object sender, EventArgs e)
+        {
+            gridRecipeView.OptionsSelection.MultiSelect = true;
+            string fileTypeName = "\\recipe\\Tube" + this.Tag.ToString();
+            DataTable dt = help.AsposeCells(fileTypeName);
+            if (dt.Rows.Count > 0)
+            {
+                string val = TubeHelpClass.fileName.Substring(TubeHelpClass.fileName.LastIndexOf("\\") + 1, TubeHelpClass.fileName.Length - TubeHelpClass.fileName.LastIndexOf("\\") - 5);
+                lblRecipeName.Text = val;
+                gridRecipeView.Columns.Clear();
+                gridRecipe.DataMember = dt.TableName;
+                gridRecipe.DataSource = dt;
+                foreach (DevExpress.XtraGrid.Columns.GridColumn column in gridRecipeView.Columns)
+                {
+                    if (column.FieldName == "步号")
+                    { column.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left; column.OptionsColumn.AllowEdit = false; }
+                    if (column.FieldName == "执行动作")
+                    { column.ColumnEdit = repositoryItemComboBox1; column.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left; }
+                    if (column.FieldName == "阀开关")
+                        column.ColumnEdit = repositoryItemButtonEdit1;
+                    if (column.FieldName == "条件")
+                        column.ColumnEdit = repositoryItemCheckEdit1;
+                    if (column.FieldName.Contains("V") || column.FieldName.Contains("监控"))
+                        column.ColumnEdit = repositoryItemCheckEdit1;
+                }
+            }
+        }
+        /// <summary>
+        /// 保存配方
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void picSaveRecipe_Click(object sender, EventArgs e)
+        {
+            //自己写的方法导出，导出打开文件夹填写配方名
+            string filerecipeName = lblRecipeName.Text;
+            string fileTypeName = "\\recipe\\Tube" + Tag.ToString();
+            help.ExportGridToFile(this.gridRecipeView, filerecipeName, fileTypeName, null);
+            lblRecipeName.Text = TubeHelpClass.fileName.Substring(TubeHelpClass.fileName.LastIndexOf("\\") + 1, TubeHelpClass.fileName.Length - TubeHelpClass.fileName.LastIndexOf("\\") - 5);
+        }
+        /// <summary>
+        /// 写入设备
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void picDownloadRecipe_Click(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// 读取设备
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void picUploadRecipe_Click(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// 配方校验
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void picCheckRecipe_Click(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// 默认配方
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void picDefaultRecipe_Click(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// 打开气路图
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RepositoryItemButtonEdit1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(gridRecipeView.GetFocusedDataSourceRowIndex().ToString());
+        }
+        /// <summary>
+        /// 复选框多选
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void repositoryItemCheckEdit1_QueryCheckStateByValue(object sender, DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventArgs e)
+        {
+            string val = "";
+            if (e.Value != null)
+            {
+                val = e.Value.ToString();
+            }
+            else
+            {
+                val = "Flase";//默认为选中
+            }
+            switch (val)
+            {
+                case "True":
+                    e.CheckState = CheckState.Checked;
+                    break;
+                case "False":
+                    e.CheckState = CheckState.Unchecked;
+                    break;
+                case "Yes":
+                    goto
+                        case "True";
+                case "No":
+                    goto
+                        case "False";
+                case "1":
+                    goto
+                        case "True";
+                case "0":
+                    goto
+                        case "False";
+                default:
+                    e.CheckState = CheckState.Unchecked;
+                    break;
+            }
+            e.Handled = true;
+        }
+
+        #region 配方右键菜单
+        /// <summary>
+        /// 插入行
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void InsertRow_Click(object sender, EventArgs e)
+        {
+            int index = gridRecipeView.GetFocusedDataSourceRowIndex();
+            if (index >= 0)
+            {
+                DataRow dr1 = dt.NewRow();
+                dt.Rows.InsertAt(dr1, index);
+                dt.Rows.Remove(dt.Rows[34]);
+                for (int i = index; i <= 34; i++)
+                {
+                    dt.Rows[i]["步号"] = i + 1;
+                }
+            }
+            else
+            {
+                MessageBox.Show("当前未选中任何行！");
+            }
+        }
+        /// <summary>
+        /// 删除行
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DeleteRow_Click(object sender, EventArgs e)
+        {
+            int index = gridRecipeView.GetFocusedDataSourceRowIndex();
+            if (index >= 0)
+            {
+                dt.Rows.Remove(dt.Rows[index]);
+                dt.Rows.Add(34);
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    dt.Rows[i]["步号"] = i + 1;
+                }
+            }
+            else
+            {
+                MessageBox.Show("当前未选中任何行！");
+            }
+        }
+        /// <summary>
+        /// 复制行
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        DataRow copyRow = null;
+        private void CopyRow_Click(object sender, EventArgs e)
+        {
+            int index = gridRecipeView.GetFocusedDataSourceRowIndex();
+            if (index >= 0)
+            {
+                copyRow = dt.Rows[index];
+            }
+            else
+            {
+                MessageBox.Show("当前未选中任何行！");
+            }
+        }
+        /// <summary>
+        /// 粘贴行
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PasteRow_Click(object sender, EventArgs e)
+        {
+            int index = gridRecipeView.GetFocusedDataSourceRowIndex();
+            if (index >= 0 && copyRow != null)
+            {
+                for (int i = 0; i < dt.Columns.Count; i++)
+                {
+
+                    if (dt.Columns[i].ColumnName != "步号")
+                    {
+                        dt.Rows[index][i] = copyRow[i];
+                    }
+                }
+                gridRecipeView.RefreshData();
+            }
+            else
+            {
+                if (index < 0)
+                    MessageBox.Show("当前未选中任何行！");
+                else
+                    MessageBox.Show("请先复制行,再进行粘贴行操作！");
+            }
         }
         #endregion
 
@@ -174,6 +510,7 @@ namespace Demo.Forms.Tube
         MyModus myModus3 = new MyModus();
         MyModus myModus4 = new MyModus();
         MyModus myModus5 = new MyModus();
+        MyModus mys = new MyModus();
         private void frmTubeMain_Load(object sender, EventArgs e)
         {
             //int a = (Int32)this.Tag;
@@ -200,7 +537,6 @@ namespace Demo.Forms.Tube
             myModus4.giRecipe_ID = 4;
             myModus5.giRecipe_ID = 5;
 
-            MyModus mys = new MyModus();
             int index = Convert.ToInt32(this.Tag);
             if (index == 1)
                 mys = myModus1;
@@ -214,35 +550,33 @@ namespace Demo.Forms.Tube
                 mys = myModus5;
             else
                 return;
-            mys.grTemp_SPArray[0] = 91;
-            mys.grTemp_SPArray[1] = 92;
-            mys.grTemp_SPArray[2] = 93;
-            mys.grTemp_SPArray[3] = 94;
-            mys.grTemp_SPArray[4] = 95;
-            mys.grTemp_SPArray[5] = 96;
-            mys.grTemp_SPArray[6] = 97;
-            mys.StTempZoneArray[0].rMV = 11;
-            mys.StTempZoneArray[0].rSet_Temp = 500;
-            mys.StTempZoneArray[0].rExternal_Temp = 300;
-            mys.StTempZoneArray[0].rInternal_Temp = 289.4;
+
+            myModus1.grTemp_SPArray[0] = 91;
+            myModus1.grTemp_SPArray[1] = 92;
+            myModus1.grTemp_SPArray[2] = 93;
+            myModus1.grTemp_SPArray[3] = 94;
+            myModus1.grTemp_SPArray[4] = 95;
+            myModus1.grTemp_SPArray[5] = 96;
+            myModus1.grTemp_SPArray[6] = 97;
+            myModus1.StTempZoneArray[0].rMV = 11;
+            myModus1.StTempZoneArray[0].rSet_Temp = 500;
+            myModus1.StTempZoneArray[0].rExternal_Temp = 300;
+            myModus1.StTempZoneArray[0].rInternal_Temp = 289.4F;
 
             //温区值绑定
             TempBindings(mys);
+            //工艺信息
             ucRecipeInfo1.ucRecipe(mys);
+            //轴信息
+            ucAxisX1.ucAxis(mys);
+            //配方数据源绑定
+            addGridBindings();
+            repositoryItemButtonEdit1.Click += RepositoryItemButtonEdit1_Click;
+            repositoryItemCheckEdit1.QueryCheckStateByValue += new DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventHandler(repositoryItemCheckEdit1_QueryCheckStateByValue);
         }
+
 
         #endregion
 
-        /// <summary>
-        /// 开启加热弹窗
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void lblHeating_Click(object sender, EventArgs e)
-        {
-            frmHeating frmheat = new frmHeating();
-            frmheat.frmIndex = (int)this.Tag;
-            frmheat.ShowDialog();
-        }
     }
 }
