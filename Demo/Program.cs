@@ -23,7 +23,7 @@ namespace Demo
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.Skins.SkinManager.EnableMdiFormSkins();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new frmParent());
           //  Application.Run(new XtraForm1());
 
         }
