@@ -251,9 +251,13 @@ namespace Demo.Forms.Tube
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        object obj;
+        byte[] b1 = new byte[] { 1,2,3,4,5};
         private void picDownloadRecipe_Click(object sender, EventArgs e)
         {
-
+            obj = 77;
+            b1 = help.SerializeObject(obj);
+            MessageBox.Show(b1.ToString());
         }
         /// <summary>
         /// 读取设备
@@ -262,7 +266,8 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void picUploadRecipe_Click(object sender, EventArgs e)
         {
-
+            obj = help.DeserializeObject<int>(b1);
+            MessageBox.Show(obj.ToString());
         }
         /// <summary>
         /// 配方校验
@@ -280,7 +285,8 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void picDefaultRecipe_Click(object sender, EventArgs e)
         {
-
+            frmDefaultRecipe frmDeRec = new frmDefaultRecipe(this.Tag.ToString(),mys);
+            frmDeRec.ShowDialog();
         }
         /// <summary>
         /// 打开气路图
