@@ -31,7 +31,7 @@ namespace Demo.UserControl.Tube
         {
             InitializeComponent();
         }
-        public void ucRecipe(MyModus myModus)
+        public void ucRecipe(PlcModels myModus)
         {
             modus = myModus;
             tsAutoSelect.IsOn = modus.OP_Mode == 1 ? false : modus.OP_Mode == 3 ? true : false;
@@ -51,7 +51,7 @@ namespace Demo.UserControl.Tube
 
 
 
-        MyModus modus = new MyModus();
+        PlcModels modus = new PlcModels();
 
         /// <summary>
         /// 舟状态改变

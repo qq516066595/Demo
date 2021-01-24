@@ -19,8 +19,8 @@ namespace Demo.Forms.Tube
             InitializeComponent();
         }
         string tubeID = "1";
-        com.DataBaseModels.MyModus modus;
-        public frmDefaultRecipe(string tubeId, com.DataBaseModels.MyModus mys)
+        com.DataBaseModels.PlcModels modus;
+        public frmDefaultRecipe(string tubeId, com.DataBaseModels.PlcModels mys)
         {
             InitializeComponent();
             tubeID = tubeId;

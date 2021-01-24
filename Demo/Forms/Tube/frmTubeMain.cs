@@ -49,7 +49,7 @@ namespace Demo.Forms.Tube
         /// <summary>
         /// 温度内容绑定
         /// </summary>
-        private void TempBindings(MyModus modus)
+        private void TempBindings(PlcModels modus)
         {
             foreach (Control control in this.pcTempZone.Controls)
             {
@@ -511,12 +511,12 @@ namespace Demo.Forms.Tube
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        MyModus myModus1 = new MyModus();
-        MyModus myModus2 = new MyModus();
-        MyModus myModus3 = new MyModus();
-        MyModus myModus4 = new MyModus();
-        MyModus myModus5 = new MyModus();
-        MyModus mys = new MyModus();
+        PlcModels myModus1 = new PlcModels();
+        PlcModels myModus2 = new PlcModels();
+        PlcModels myModus3 = new PlcModels();
+        PlcModels myModus4 = new PlcModels();
+        PlcModels myModus5 = new PlcModels();
+        PlcModels mys = new PlcModels();
         private void frmTubeMain_Load(object sender, EventArgs e)
         {
             //int a = (Int32)this.Tag;

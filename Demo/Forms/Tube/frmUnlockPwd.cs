@@ -24,12 +24,12 @@ namespace Demo.Forms.Tube
 {
     public partial class frmUnlockPwd : DevExpress.XtraEditors.XtraForm
     {
-        MyModus modus = new MyModus();
+        PlcModels modus = new PlcModels();
         public frmUnlockPwd()
         {
             InitializeComponent();
         }
-        public frmUnlockPwd(MyModus mys)
+        public frmUnlockPwd(PlcModels mys)
         {
             
         }

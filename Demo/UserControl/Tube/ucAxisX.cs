@@ -36,7 +36,7 @@ namespace Demo.UserControl.Tube
         /// 数据显示到界面
         /// </summary>
         /// <param name="myModus"></param>
-        public void ucAxis(MyModus myModus)
+        public void ucAxis(PlcModels myModus)
         {
             modus = myModus;
             lblAxisActPos.Text = modus.hand_X_SV_Ctrl.rActPos.ToString();
@@ -70,7 +70,7 @@ namespace Demo.UserControl.Tube
                 btnJog_B.Enabled = false;
             }
         }
-        MyModus modus = new MyModus();
+        PlcModels modus = new PlcModels();
         /// <summary>
         /// 信号灯变化
         /// </summary>
