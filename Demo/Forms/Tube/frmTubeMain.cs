@@ -69,6 +69,7 @@ namespace Demo.Forms.Tube
                     //水冷
                     lblWaterCooling1.Text = modus.grCooling_PV1.ToString();
                     lblWaterCooling2.Text = modus.grCooling_PV2.ToString();
+                    
                 }
                 //设定值
                 if (control is TextEdit)
