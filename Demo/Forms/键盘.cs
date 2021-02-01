@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Demo.Forms
 {
-    public partial class 键盘 : DevExpress.XtraEditors.XtraForm
+    public partial class 键盘 : Form
     {
         public 键盘()
         {
