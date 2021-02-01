@@ -72,7 +72,7 @@ namespace com.DataBaseModels
 
         }
 
-        #region 炉管结构体定义
+        #region ------------------------------炉管结构体定义---------------------------------------
         //******************配方结构体************************
         [Serializable]
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
@@ -90,7 +90,7 @@ namespace com.DataBaseModels
             public UInt16 nTempZone6_SV;     //温度6设定温度
             public UInt16 nTempZone7_SV;     //温度7设定温度
             public UInt16 nTempZone8_SV;     //温度7设定温度
-            public bool bTempRump_Enable;    //斜率有效
+            public bool bTempRump_Enable;  //斜率有效
             public float rSetPressure;      //炉管设定压力
             public float rLeakRateLimit;    //真空漏率
 
@@ -174,30 +174,10 @@ namespace com.DataBaseModels
             public bool bTakeBoat_Finish;   //机械手向炉管取舟完成
             public bool bLayBoat_Finish;    //机械手向炉管放舟完成
         }
+        #endregion ------------------------------炉管结构体定义---------------------------------------
 
-        //报警结构体
-        [Serializable]
-        [StructLayout(LayoutKind.Sequential, Pack = 1)]
-        public struct TubeErr
-        {
-            public UInt32 nSys;
-            public UInt32 nProcess;
-            public UInt32 nBoatPush1;
-            public UInt32 nBoatPush2;
-            public UInt32 nHeat1;
-            public UInt32 nHeat2;
-            public UInt32 nVacumm1;
-            public UInt32 nVacumm2;
-            public UInt32 nGas1;
-            public UInt32 nGas2;
-            
-        }
-        
-
-            #endregion ------------------------------炉管结构体定义---------------------------------------
-
-        #region 机械手结构体定义
-            public enum BoatState
+        #region ------------------------------机械手结构体定义---------------------------------------
+        public enum BoatState
         {
             DISABLE,
             NO_BOAT,
@@ -231,26 +211,28 @@ namespace com.DataBaseModels
         public struct BoatInfo
         {
             [MarshalAs(UnmanagedType.LPStr, SizeConst = 10)]
-            public string ID;                    //舟托编号  
-            public BoatState eBoatState;         //舟状态
-            public WaferMode eWaferMode;         //硅片状态
-            public Int16 iFromTubeNum;           //来自哪个管
-            public Int16 iToTubeNum;             //去往哪个管
-            public bool bCoolingFinish;          //冷却完成标志位
-            public UInt16 nStoreTime;            //存储时间
-            public UInt16 nRemainCoolTime;       //剩余冷却时间
-            public bool bAlarm;                   //工位报警
+            public string ID;                   //舟托编号  
+            public BoatState eBoatState;       //舟状态
+            public WaferMode eWaferMode;      //硅片状态
+            public Int16 iFromTubeNum;          //来自哪个管
+            public Int16 iToTubeNum;            //去往哪个管
 
         }
-        
-        //[Serializable]
-       // [StructLayout(LayoutKind.Sequential, Pack = 1)]
-        public struct StationPara
+        [Serializable]
+        [StructLayout(LayoutKind.Sequential, Pack = 1)]
+        public struct BoatCtrl
+        {
+            public UInt16 nStoreTime;       //舟存放时间
+            public UInt16 nRemainCoolTime;  //舟剩余冷却时间
+            public bool bCoolFinish;      //舟冷却完成
+            public bool bAlarm;           //舟工位报警 
+        }
+        [Serializable]
+        [StructLayout(LayoutKind.Sequential, Pack = 1)]
+        public struct stStationPara
         {
             public UInt16 nSetCoolTime;      //设定冷却时间
             public StationMode eStationMode; //工位状态，冷舟，热舟
-            public bool bSheild;            //工位屏蔽
-           
         }
         [Serializable]
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
@@ -309,37 +291,9 @@ namespace com.DataBaseModels
             public bool bPause;
             public bool bReceiveComplete;
         }
-
-        //报警结构体
-        [Serializable]
-        [StructLayout(LayoutKind.Sequential, Pack = 1)]
-        public struct JhtErr
-        {
-            public UInt32 nSys;
-            public UInt32 nHand1;
-            public UInt32 nHand2;
-            public UInt32 nHand3;
-            public UInt32 nHand4;
-            public UInt32 nHand5;
-            public UInt32 nCommWithTube;
-            public UInt32 nConveyer1;
-            public UInt32 nConveyer2;
-            public UInt32 nSafe;
-            
-        }
         #endregion ---------------------------机械手结构体定义--------------------------------------- 
 
-        #region 库文件结构体定义
-        public enum OP_MODE
-        {
-            NO_MODE,
-            MANUAL_MODE,
-            AUTO_MODE,
-            AUTO_RUN_MODE,
-            HALT_MODE,
-            EM_MODE
-
-        }
+        #region ------------------------------库文件结构体定义---------------------------------------
         //****************操作命令结构体****************
         [Serializable]
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
