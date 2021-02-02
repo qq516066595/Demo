@@ -51,36 +51,36 @@ namespace Demo.Forms.Tube
         /// </summary>
         private void TempBindings(PlcModels modus)
         {
-            foreach (Control control in this.pcTempZone.Controls)
-            {
-                if (control is LabelControl)
-                {
-                    for (int i = 1; i <= 7; i++)
-                    {
-                        if (control.Name.Equals("lblZoneEx" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//外偶
-                            ((LabelControl)control).Text = modus.StTempZoneArray[i].rExternal_Temp.ToString();
-                        else if (control.Name.Equals("lblZoneIn" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//内偶
-                            ((LabelControl)control).Text = modus.StTempZoneArray[i].rInternal_Temp.ToString();
-                        else if (control.Name.Equals("lblZoneMV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//功率
-                            ((LabelControl)control).Text = modus.StTempZoneArray[i].rMV.ToString();
-                        else if (control.Name.Equals("lblZoneSP" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//过渡
-                            ((LabelControl)control).Text = modus.grTemp_SPArray[i].ToString();
-                    }
-                    //水冷
-                    lblWaterCooling1.Text = modus.grCooling_PV1.ToString();
-                    lblWaterCooling2.Text = modus.grCooling_PV2.ToString();
+            //foreach (Control control in this.pcTempZone.Controls)
+            //{
+            //    if (control is LabelControl)
+            //    {
+            //        for (int i = 1; i <= 7; i++)
+            //        {
+            //            if (control.Name.Equals("lblZoneEx" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//外偶
+            //                ((LabelControl)control).Text = modus.StTempZoneArray[i].rExternal_Temp.ToString();
+            //            else if (control.Name.Equals("lblZoneIn" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//内偶
+            //                ((LabelControl)control).Text = modus.StTempZoneArray[i].rInternal_Temp.ToString();
+            //            else if (control.Name.Equals("lblZoneMV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//功率
+            //                ((LabelControl)control).Text = modus.StTempZoneArray[i].rMV.ToString();
+            //            else if (control.Name.Equals("lblZoneSP" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//过渡
+            //                ((LabelControl)control).Text = modus.grTemp_SPArray[i].ToString();
+            //        }
+            //        //水冷
+            //        lblWaterCooling1.Text = modus.grCooling_PV1.ToString();
+            //        lblWaterCooling2.Text = modus.grCooling_PV2.ToString();
                     
-                }
-                //设定值
-                if (control is TextEdit)
-                {
-                    for (int i = 1; i < 7; i++)
-                    {
-                        if (control.Name.Equals("txtZoneSV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//设定值
-                            ((TextEdit)control).Text = modus.StTempZoneArray[i].rSet_Temp.ToString();
-                    }
-                }
-            }
+            //    }
+            //    //设定值
+            //    if (control is TextEdit)
+            //    {
+            //        for (int i = 1; i < 7; i++)
+            //        {
+            //            if (control.Name.Equals("txtZoneSV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//设定值
+            //                ((TextEdit)control).Text = modus.StTempZoneArray[i].rSet_Temp.ToString();
+            //        }
+            //    }
+            //}
         }
         /// <summary>
         /// 开启加热弹窗
@@ -115,14 +115,14 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnHWCLeakCheck_Click(object sender, EventArgs e)
         {
-            mys.gbHMI_LeakCheck = true;
-            help.SetbtnClickBackColor(btnHWCLeakCheck, Color.Lime, mys.gbHMI_LeakCheck);
+            //mys.gbHMI_LeakCheck = true;
+            //help.SetbtnClickBackColor(btnHWCLeakCheck, Color.Lime, mys.gbHMI_LeakCheck);
         }
         public void HWCsDataBinding()
         {
-            lblHWCTempPV.Text = mys.stHWCs_Ctrl.rActTemperature.ToString();//实际温度
-            txtHWCTempSV.Text = mys.stHWCs_Ctrl.rSetTemperature.ToString();//设定温度
-            lblHWCWeight.Text = mys.Comm_rHCSPV.ToString();//液位重量
+            //lblHWCTempPV.Text = mys.stHWCs_Ctrl.rActTemperature.ToString();//实际温度
+            //txtHWCTempSV.Text = mys.stHWCs_Ctrl.rSetTemperature.ToString();//设定温度
+            //lblHWCWeight.Text = mys.Comm_rHCSPV.ToString();//液位重量
         }
         #endregion
 
@@ -538,11 +538,12 @@ namespace Demo.Forms.Tube
             //MyModus mys = new MyModus();
             //int index = Convert.ToInt32(this.Tag) - 1;
             //myModus[index] = mys;
-            myModus1.giRecipe_ID = 1;
-            myModus2.giRecipe_ID = 2;
-            myModus3.giRecipe_ID = 3;
-            myModus4.giRecipe_ID = 4;
-            myModus5.giRecipe_ID = 5;
+
+            //myModus1.giRecipe_ID = 1;
+            //myModus2.giRecipe_ID = 2;
+            //myModus3.giRecipe_ID = 3;
+            //myModus4.giRecipe_ID = 4;
+            //myModus5.giRecipe_ID = 5;
 
             int index = Convert.ToInt32(this.Tag);
             if (index == 1)
@@ -558,17 +559,17 @@ namespace Demo.Forms.Tube
             else
                 return;
 
-            myModus1.grTemp_SPArray[0] = 91;
-            myModus1.grTemp_SPArray[1] = 92;
-            myModus1.grTemp_SPArray[2] = 93;
-            myModus1.grTemp_SPArray[3] = 94;
-            myModus1.grTemp_SPArray[4] = 95;
-            myModus1.grTemp_SPArray[5] = 96;
-            myModus1.grTemp_SPArray[6] = 97;
-            myModus1.StTempZoneArray[0].rMV = 11;
-            myModus1.StTempZoneArray[0].rSet_Temp = 500;
-            myModus1.StTempZoneArray[0].rExternal_Temp = 300;
-            myModus1.StTempZoneArray[0].rInternal_Temp = 289.4F;
+            //myModus1.grTemp_SPArray[0] = 91;
+            //myModus1.grTemp_SPArray[1] = 92;
+            //myModus1.grTemp_SPArray[2] = 93;
+            //myModus1.grTemp_SPArray[3] = 94;
+            //myModus1.grTemp_SPArray[4] = 95;
+            //myModus1.grTemp_SPArray[5] = 96;
+            //myModus1.grTemp_SPArray[6] = 97;
+            //myModus1.StTempZoneArray[0].rMV = 11;
+            //myModus1.StTempZoneArray[0].rSet_Temp = 500;
+            //myModus1.StTempZoneArray[0].rExternal_Temp = 300;
+            //myModus1.StTempZoneArray[0].rInternal_Temp = 289.4F;
 
             //温区值绑定
             TempBindings(mys);
