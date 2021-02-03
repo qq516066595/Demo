@@ -33,7 +33,8 @@ namespace Demo.Forms.Tube
             lblZoneEx1.Text = this.Tag.ToString();
             this.gridRecipeView.InitNewRow += GridRecipeView_InitNewRow;
         }
-
+        
+        
         #region 主界面
         #region 温区
         /// <summary>
@@ -49,8 +50,10 @@ namespace Demo.Forms.Tube
         /// <summary>
         /// 温度内容绑定
         /// </summary>
-        private void TempBindings(PlcModels modus)
+        private void TempBindings()
         {
+            
+            
             foreach (Control control in this.pcTempZone.Controls)
             {
                 if (control is LabelControl)
@@ -58,7 +61,7 @@ namespace Demo.Forms.Tube
                     for (int i = 1; i <= 7; i++)
                     {
                         if (control.Name.Equals("lblZoneEx" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//外偶
-                            ((LabelControl)control).Text = modus.StTempZoneArray[i].rExternal_Temp.ToString();
+                            ((LabelControl)control).Text = TubeVar.stTempZone[i].rExternal_Temp.ToString();
                         else if (control.Name.Equals("lblZoneIn" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//内偶
                             ((LabelControl)control).Text = modus.StTempZoneArray[i].rInternal_Temp.ToString();
                         else if (control.Name.Equals("lblZoneMV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//功率

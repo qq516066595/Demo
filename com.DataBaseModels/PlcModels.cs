@@ -80,7 +80,7 @@ namespace com.DataBaseModels
         {
 
             public int eName;                //配方步名称
-            public bool bCondition_Check;    //条件判断使能
+            //public bool bCondition_Check;    //条件判断使能
             public UInt16 nDuration;         //工艺段总时间
             public UInt16 nTempZone1_SV;     //温度1设定温度
             public UInt16 nTempZone2_SV;     //温度2设定温度
@@ -106,7 +106,6 @@ namespace com.DataBaseModels
             public UInt16 nMFC10_SV;
             public UInt16 nMFC11_SV;
             public UInt16 nMFC12_SV;
-
 
             public bool bTemp_Check;     //温度监控
             public bool bFlow_Check;     //流量监控
@@ -451,6 +450,26 @@ namespace com.DataBaseModels
             public float rMax_Torque;
             public float rMin_Torque;
         }
+        //****************伺服控制结构体****************
+        [Serializable]
+        [StructLayout(LayoutKind.Sequential, Pack = 1)]
+        public struct YV_Ctrl
+        {
+            public bool bHMI_Out;
+            public bool bHMI_Back;
+            public bool bAuto_Out;
+            public bool bAuto_Back;
+            public bool bOut_Condition;
+            public bool bBack_Condition;
+            public bool bOutPos_Reached;
+            public bool bBackPos_Reached;
+            public bool bDI_OutPos;
+            public bool bDI_BackPos;
+            public bool bDO_Out;
+            public bool bDO_Back;
+            public bool bAlarm;
+            public Int16 nErrorCode;
+        }
         //温控模块通讯参数结构体
         [Serializable]
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
@@ -509,7 +528,18 @@ namespace com.DataBaseModels
             public float rCheckValue;
             public UInt16 nCheckTime;
         }
-
+        //隔膜阀控制结构体
+        [Serializable]
+        [StructLayout(LayoutKind.Sequential, Pack = 1)]
+        public struct Valve_Ctrl
+        {
+            public bool bHMI_Trigger;
+            public bool bOpenCmd;
+            public bool bOpen_Condition;
+            public bool bDO_Open;
+            public bool bDO_Close;
+            public Int16 nErrorCode;
+        }
         //正泰电表
         [Serializable]
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
@@ -521,6 +551,34 @@ namespace com.DataBaseModels
             public UInt32 nPc;
             public UInt32 nEnergyFw;
         }
+        //福雪莱恒温柜
+        [Serializable]
+        [StructLayout(LayoutKind.Sequential, Pack = 1)]
+        public struct FXL_HWCs_Ctrl
+        {
+            public float rActTemperature;
+            public float rSetTempReturn;
+            public float rSetTemperature;
+            public UInt16 nWeightStatus_1;
+            public UInt16 nWeightStatus_2;
+            public UInt16 nWeightStatus_3;
+            public UInt16 nWeightStatus_4;
+            public UInt16 nWeightStatus_5;
+            public UInt16 nWeightStatus_6;
+            public UInt16 nTempState;
+            public UInt16 nCompressorState;
+            public UInt16 nGasState;
+            public UInt16 nRunningState;
+            public UInt16 nNetWeight_1;
+            public UInt16 nNetWeight_2;
+            public UInt16 nNetWeight_3;
+            public UInt16 nNetWeight_4;
+            public UInt16 nNetWeight_5;
+            public UInt16 nNetWeight_6;
+            public UInt16 GasConcentration;
+        }
+
+        FXL_HWCs_Ctrl FXL_HWCs_Ctrl_1;
         #endregion ---------------------------库文件结构体定义---------------------------------------
 
 
