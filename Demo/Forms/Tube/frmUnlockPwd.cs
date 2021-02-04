@@ -42,7 +42,7 @@ namespace Demo.Forms.Tube
         {
             if(txtPwd.Text == "123321")
             {
-                modus.gbBoatPush_Unlock = true;
+                //modus.gbBoatPush_Unlock = true;
                 this.Close();
             }
             else
