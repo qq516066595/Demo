@@ -52,38 +52,36 @@ namespace Demo.Forms.Tube
         /// </summary>
         private void TempBindings()
         {
-            
-            
-            foreach (Control control in this.pcTempZone.Controls)
-            {
-                if (control is LabelControl)
-                {
-                    for (int i = 1; i <= 7; i++)
-                    {
-                        if (control.Name.Equals("lblZoneEx" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//外偶
-                            ((LabelControl)control).Text = TubeVar.stTempZone[i].rExternal_Temp.ToString();
-                        else if (control.Name.Equals("lblZoneIn" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//内偶
-                            ((LabelControl)control).Text = modus.StTempZoneArray[i].rInternal_Temp.ToString();
-                        else if (control.Name.Equals("lblZoneMV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//功率
-                            ((LabelControl)control).Text = modus.StTempZoneArray[i].rMV.ToString();
-                        else if (control.Name.Equals("lblZoneSP" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//过渡
-                            ((LabelControl)control).Text = modus.grTemp_SPArray[i].ToString();
-                    }
-                    //水冷
-                    lblWaterCooling1.Text = modus.grCooling_PV1.ToString();
-                    lblWaterCooling2.Text = modus.grCooling_PV2.ToString();
+            //foreach (Control control in this.pcTempZone.Controls)
+            //{
+            //    if (control is LabelControl)
+            //    {
+            //        for (int i = 1; i <= 7; i++)
+            //        {
+            //            if (control.Name.Equals("lblZoneEx" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//外偶
+            //                ((LabelControl)control).Text = modus.StTempZoneArray[i].rExternal_Temp.ToString();
+            //            else if (control.Name.Equals("lblZoneIn" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//内偶
+            //                ((LabelControl)control).Text = modus.StTempZoneArray[i].rInternal_Temp.ToString();
+            //            else if (control.Name.Equals("lblZoneMV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//功率
+            //                ((LabelControl)control).Text = modus.StTempZoneArray[i].rMV.ToString();
+            //            else if (control.Name.Equals("lblZoneSP" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//过渡
+            //                ((LabelControl)control).Text = modus.grTemp_SPArray[i].ToString();
+            //        }
+            //        //水冷
+            //        lblWaterCooling1.Text = modus.grCooling_PV1.ToString();
+            //        lblWaterCooling2.Text = modus.grCooling_PV2.ToString();
                     
-                }
-                //设定值
-                if (control is TextEdit)
-                {
-                    for (int i = 1; i < 7; i++)
-                    {
-                        if (control.Name.Equals("txtZoneSV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//设定值
-                            ((TextEdit)control).Text = modus.StTempZoneArray[i].rSet_Temp.ToString();
-                    }
-                }
-            }
+            //    }
+            //    //设定值
+            //    if (control is TextEdit)
+            //    {
+            //        for (int i = 1; i < 7; i++)
+            //        {
+            //            if (control.Name.Equals("txtZoneSV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//设定值
+            //                ((TextEdit)control).Text = modus.StTempZoneArray[i].rSet_Temp.ToString();
+            //        }
+            //    }
+            //}
         }
         /// <summary>
         /// 开启加热弹窗
