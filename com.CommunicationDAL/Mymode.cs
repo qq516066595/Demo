@@ -81,7 +81,7 @@ namespace com.CommunicationDAL
 
         #region Form_
         
-         public static  BeifuPlc[] PLC = new BeifuPlc[5];  
+         public static  PlcBeckhoffAds[] PLC = new PlcBeckhoffAds[5];  
          public static MoonsCommLibHelper[] MoonsComm = new MoonsCommLibHelper[5];
 
         #endregion

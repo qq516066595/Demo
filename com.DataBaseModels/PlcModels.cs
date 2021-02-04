@@ -583,4 +583,142 @@ namespace com.DataBaseModels
 
 
     }
+    public class PlcJht
+    {
+
+        public bool gbBeepSheild;//蜂鸣屏蔽
+        public bool gbDoorSheild;//门禁屏蔽
+        public bool gbManual_Path_Start;//手动搬舟启动
+        public bool gbWSL_EWH_Exchange;//手动与自动化传舟
+        public bool gbConveyer_EWH_HasTask;//输送位正在传舟
+        public bool gbHand_InitStart;//机械手初始化启动
+        public bool gbHand_InitDone;//机械手初始化完成
+        public bool gbConveyer_InitStart;//输送机初始化启动
+        public bool gbConveyer_InitDone;//输送机初始化完成
+        public bool gbHand_HasTask;//机械手有搬舟任务
+        public bool gbHand_X_Unlock;//机械手X轴初级解除联锁
+        public bool gbHand_Z_Unlock;//机械手Z轴初级解除联锁
+        public bool gbHand_X_Unlock_1;//机械手X轴高级解除联锁
+        public bool gbHand_Z_Unlock_1;//机械手Z轴高级解除联锁
+        public bool gbConveyer_Unlock; //输送位解除联锁
+        public float grHand_Z_RulerPos;//机械手Z轴磁栅尺位置
+        public string[] gsVersion = new string[32];//软件版本号
+        public bool gbLicense_OK;//注册ok标志位
+        public Int32 giSN;//PLC序列号
+        public Int32 giLicense_Code;//PLC注册码
+        public Int16 giLayBoatPos;//取舟位置
+        public Int16 giTakeBoatPos;//放舟位置
+        public PlcModels.JhtErr stJhtAlm;//报警结构体
+        public PlcModels.JhtErr stJhtWarn;//警示结构体
+        public PlcModels.JhtErr stJhtCaution;//提示结构体
+        public PlcModels.WSL_and_EWH WSL_to_EWH;//主机到自动化的通讯
+        public PlcModels.WSL_and_EWH EWH_to_WSL;//自动化到主机的通讯
+        public PlcModels.HandAxisParaEx AxisParaEx;//轴扩展参数结构体
+        public PlcModels.OP_MODE OP_Mode;//系统模式枚举
+        public PlcModels.OP_Cmd OP_Cmd;//系统模式操作
+        public PlcModels.BoatList[] garrBoatList = new PlcModels.BoatList[20];//舟列表
+        public PlcModels.BoatInfo[] stBuffer_BoatInfo = new PlcModels.BoatInfo[6];//缓存位舟信息
+        public PlcModels.BoatInfo[] stTube_BoatInfo = new PlcModels.BoatInfo[5];//炉管舟信息
+        public PlcModels.BoatInfo stConveyer_BoatInfo;//输送位舟信息
+        public PlcModels.BoatInfo stHand_BoatInfo;//机械手舟信息
+        public PlcModels.StationPara[] stBufferPara = new PlcModels.StationPara[6];//缓存位参数
+        public PlcModels.StationPara[] stTubePara = new PlcModels.StationPara[5];//炉管位参数
+        public PlcModels.SV_Ctrl Hand_X_SV_Ctrl;//机械手X轴控制结构体
+        public PlcModels.SV_Para Hand_X_SV_Para;//机械手X轴参数结构体
+        public PlcModels.SV_Ctrl Hand_Z_SV_Ctrl;//机械手Z轴控制结构体
+        public PlcModels.SV_Para Hand_Z_SV_Para;//机械手Z轴参数结构体
+        public PlcModels.Comm_to_Tube[] stComm_to_Tube = new PlcModels.Comm_to_Tube[5];//到炉管的通讯
+        public PlcModels.Comm_from_Tube[] stComm_from_Tube = new PlcModels.Comm_from_Tube[5];//来自炉管的通讯
+        public PlcModels.DTSU666 stEnergyValue;//电能数据
+        public PlcModels.FXL_HWCs_Ctrl stHWCs_Ctrl;
+    }
+
+    public class PlcTube
+    {
+        public PlcModels.TubeErr stTubeAlm;
+        public PlcModels.TubeErr stTubeWarn;
+        public PlcModels.TubeErr stTubeCaution;
+        public bool gbHMI_OpenDoor;
+        public bool gbHMI_CloseDoor;
+        public bool gbHMI_BoatIn;
+        public bool gbHMI_BoatOut;
+        public string[] gsVersion = new string[32];//软件版本号
+        public bool gbLicense_OK;//注册ok标志位
+        public Int32 giSN;//PLC序列号
+        public Int32 giLicense_Code;//PLC注册码
+        public bool gbHMI_Tube_Disable;
+        public bool gbHMI_Recipe_Start;
+        public bool gbHMI_Recipe_Hold;
+        public bool gbHMI_Recipe_Finish;
+        public bool gbHMI_Recipe_Abort;
+        public UInt16 gnHMI_Hold_Time;
+
+        public PlcModels.RecipePara[] stRecipePara = new PlcModels.RecipePara[46];
+        public PlcModels.RecipeCtrl stCurrentRecipeCtrl;
+        public Int16 giRecipe_ID;
+        public Int16 giTubeRunCount;
+        public bool gbProcess_Busy;
+        public UInt16 gnProcessTotalTime;
+        public UInt16 gnProcessWorkingTime;
+        public UInt16 gnProcessRemainTime;
+        public PlcModels.OP_MODE OP_Mode;//系统模式枚举
+        public PlcModels.OP_Cmd OP_Cmd;//系统模式操作
+        public PlcModels.BoatInfo stTube_BoatInfo;//舟信息
+
+        public bool gbProcess_InitStart;
+        public bool gbProcess_InitDone;
+        public bool gbBoatPush_InitStart;
+        public bool gbBoatPush_InitDone;
+        public bool gbBoatPush_Unlock;
+
+        public bool gbTubeDoor_Close;
+        public float grBoatOut_TouchPos;
+        public PlcModels.BoatPushAxisParaEx AxisParaEx;
+        public PlcModels.SV_Ctrl BoatPush_SV_Ctrl;//推舟轴控制结构体
+        public PlcModels.SV_Para BoatPush_SV_Para;//推舟轴参数结构体
+        public PlcModels.YV_Ctrl CloseDoor_YV_Ctrl;
+        public PlcModels.YV_Ctrl PushpullDoor_YV_Ctrl;
+        public PlcModels.Comm_from_Tube stComm_from_Tube;
+        public PlcModels.Comm_to_Tube stComm_to_Tube;
+        public float grHMI_TempSV;
+        public float grHMI_TempRump;
+        public bool gbHMI_Temp_Enable;
+        public float grTubeTail_Temp;
+        public PlcModels.TempZone[] stTempZone = new PlcModels.TempZone[8];
+        public PlcModels.HeatModelPara stTempPara;
+        public float grTube_ActPressure;
+        public float grActLeakRate;
+        public bool gbHMI_LeakCheck;
+        public PlcModels.Pump_Para stPump_Para;
+        public PlcModels.Pump_Ctrl stPump_Ctrl;
+
+        public bool gbValve_Unlock;
+        public PlcModels.MFC_Para[] stMFC_Para = new PlcModels.MFC_Para[12];
+        public PlcModels.MFC_Value[] stMFC_Value = new PlcModels.MFC_Value[12];
+        public PlcModels.Valve_Ctrl[] stValve_Ctrl = new PlcModels.Valve_Ctrl[24];
+        public float grButterFly_ActPos;
+
+    }
+    public class PlcVar
+    {
+        public static PlcJht Jht;
+        public static PlcTube[] Tube = new PlcTube[5];
+    }
+    public class frmID
+    {
+        public enum eFunctionMode
+        {
+            MAIN_FRAME,
+            IO,
+            CONFIG,
+            RECIPE,
+            DATA_LIST,
+            LOGGER,
+            BOAT_MANAGE,
+            ABOUT
+        }
+        public static byte Tube;//炉管ID
+        public static eFunctionMode eFunction;//功能界面ID
+
+    }
 }
