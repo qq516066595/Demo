@@ -116,14 +116,14 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnHWCLeakCheck_Click(object sender, EventArgs e)
         {
-            mys.gbHMI_LeakCheck = true;
-            help.SetbtnClickBackColor(btnHWCLeakCheck, Color.Lime, mys.gbHMI_LeakCheck);
+            //mys.gbHMI_LeakCheck = true;
+            //help.SetbtnClickBackColor(btnHWCLeakCheck, Color.Lime, mys.gbHMI_LeakCheck);
         }
         public void HWCsDataBinding()
         {
-            lblHWCTempPV.Text = mys.stHWCs_Ctrl.rActTemperature.ToString();//实际温度
-            txtHWCTempSV.Text = mys.stHWCs_Ctrl.rSetTemperature.ToString();//设定温度
-            lblHWCWeight.Text = mys.Comm_rHCSPV.ToString();//液位重量
+            //lblHWCTempPV.Text = mys.stHWCs_Ctrl.rActTemperature.ToString();//实际温度
+            //txtHWCTempSV.Text = mys.stHWCs_Ctrl.rSetTemperature.ToString();//设定温度
+            //lblHWCWeight.Text = mys.Comm_rHCSPV.ToString();//液位重量
         }
         #endregion
 
@@ -257,9 +257,11 @@ namespace Demo.Forms.Tube
         byte[] b1 = new byte[] { 1,2,3,4,5};
         private void picDownloadRecipe_Click(object sender, EventArgs e)
         {
+            this.ShowWait();
             obj = 77;
             b1 = help.SerializeObject(obj);
             MessageBox.Show(b1.ToString());
+            this.CloseWait();
         }
         /// <summary>
         /// 读取设备
@@ -521,66 +523,66 @@ namespace Demo.Forms.Tube
         PlcModels mys = new PlcModels();
         private void frmTubeMain_Load(object sender, EventArgs e)
         {
-            //int a = (Int32)this.Tag;
-            //if (a == 1)//炉管一
-            //    gettag(1);
-            //else if (a == 2)//炉管二
-            //    gettag(2);
-            //else if (a == 3)//炉管三
-            //    gettag(3);
-            //else if (a == 4)//炉管四
-            //    gettag(4);
-            //else if (a == 5)//炉管五
-            //    gettag(5);
+            ////int a = (Int32)this.Tag;
+            ////if (a == 1)//炉管一
+            ////    gettag(1);
+            ////else if (a == 2)//炉管二
+            ////    gettag(2);
+            ////else if (a == 3)//炉管三
+            ////    gettag(3);
+            ////else if (a == 4)//炉管四
+            ////    gettag(4);
+            ////else if (a == 5)//炉管五
+            ////    gettag(5);
 
 
-            //2020-12-29 hhf 测试使用；需写到委托事件中实时刷新数据
-            //MyModus[] myModus = new MyModus[5];
-            //MyModus mys = new MyModus();
-            //int index = Convert.ToInt32(this.Tag) - 1;
-            //myModus[index] = mys;
-            myModus1.giRecipe_ID = 1;
-            myModus2.giRecipe_ID = 2;
-            myModus3.giRecipe_ID = 3;
-            myModus4.giRecipe_ID = 4;
-            myModus5.giRecipe_ID = 5;
+            ////2020-12-29 hhf 测试使用；需写到委托事件中实时刷新数据
+            ////MyModus[] myModus = new MyModus[5];
+            ////MyModus mys = new MyModus();
+            ////int index = Convert.ToInt32(this.Tag) - 1;
+            ////myModus[index] = mys;
+            //myModus1.giRecipe_ID = 1;
+            //myModus2.giRecipe_ID = 2;
+            //myModus3.giRecipe_ID = 3;
+            //myModus4.giRecipe_ID = 4;
+            //myModus5.giRecipe_ID = 5;
 
-            int index = Convert.ToInt32(this.Tag);
-            if (index == 1)
-                mys = myModus1;
-            else if (index == 2)
-                mys = myModus2;
-            else if (index == 3)
-                mys = myModus3;
-            else if (index == 4)
-                mys = myModus4;
-            else if (index == 5)
-                mys = myModus5;
-            else
-                return;
+            //int index = Convert.ToInt32(this.Tag);
+            //if (index == 1)
+            //    mys = myModus1;
+            //else if (index == 2)
+            //    mys = myModus2;
+            //else if (index == 3)
+            //    mys = myModus3;
+            //else if (index == 4)
+            //    mys = myModus4;
+            //else if (index == 5)
+            //    mys = myModus5;
+            //else
+            //    return;
 
-            myModus1.grTemp_SPArray[0] = 91;
-            myModus1.grTemp_SPArray[1] = 92;
-            myModus1.grTemp_SPArray[2] = 93;
-            myModus1.grTemp_SPArray[3] = 94;
-            myModus1.grTemp_SPArray[4] = 95;
-            myModus1.grTemp_SPArray[5] = 96;
-            myModus1.grTemp_SPArray[6] = 97;
-            myModus1.StTempZoneArray[0].rMV = 11;
-            myModus1.StTempZoneArray[0].rSet_Temp = 500;
-            myModus1.StTempZoneArray[0].rExternal_Temp = 300;
-            myModus1.StTempZoneArray[0].rInternal_Temp = 289.4F;
+            //myModus1.grTemp_SPArray[0] = 91;
+            //myModus1.grTemp_SPArray[1] = 92;
+            //myModus1.grTemp_SPArray[2] = 93;
+            //myModus1.grTemp_SPArray[3] = 94;
+            //myModus1.grTemp_SPArray[4] = 95;
+            //myModus1.grTemp_SPArray[5] = 96;
+            //myModus1.grTemp_SPArray[6] = 97;
+            //myModus1.StTempZoneArray[0].rMV = 11;
+            //myModus1.StTempZoneArray[0].rSet_Temp = 500;
+            //myModus1.StTempZoneArray[0].rExternal_Temp = 300;
+            //myModus1.StTempZoneArray[0].rInternal_Temp = 289.4F;
 
-            //温区值绑定
-            TempBindings(mys);
-            //工艺信息
-            ucRecipeInfo1.ucRecipe(mys);
-            //轴信息
-            ucAxisX1.ucAxis(mys);
-            //配方数据源绑定
-            addGridBindings();
-            repositoryItemButtonEdit1.Click += RepositoryItemButtonEdit1_Click;
-            repositoryItemCheckEdit1.QueryCheckStateByValue += new DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventHandler(repositoryItemCheckEdit1_QueryCheckStateByValue);
+            ////温区值绑定
+            //TempBindings(mys);
+            ////工艺信息
+            //ucRecipeInfo1.ucRecipe(mys);
+            ////轴信息
+            //ucAxisX1.ucAxis(mys);
+            ////配方数据源绑定
+            //addGridBindings();
+            //repositoryItemButtonEdit1.Click += RepositoryItemButtonEdit1_Click;
+            //repositoryItemCheckEdit1.QueryCheckStateByValue += new DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventHandler(repositoryItemCheckEdit1_QueryCheckStateByValue);
         }
 
 
