@@ -53,7 +53,7 @@ namespace Demo.Forms.Tube
         private void btnOK_Click(object sender, EventArgs e)
         {
             //备份值
-            modus.defaultRecipeName = cmbDefaultRecipe.Text;
+            //modus.defaultRecipeName = cmbDefaultRecipe.Text;
             this.Close();
         }
     }

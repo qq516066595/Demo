@@ -143,9 +143,9 @@ namespace com.DataBaseDAL
             
 
 
-            PlcModels.stMFC_Ctrl sd = new PlcModels.stMFC_Ctrl();
-            sd.bCheckDiff_Enable = true;
-            PlcModels.stRecipeArrary[1].bOpen_Valve_1 = true;
+            //PlcModels.stMFC_Ctrl sd = new PlcModels.stMFC_Ctrl();
+            //sd.bCheckDiff_Enable = true;
+            //PlcModels.stRecipeArrary[1].bOpen_Valve_1 = true;
 
             
 
