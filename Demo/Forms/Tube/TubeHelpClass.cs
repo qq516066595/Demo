@@ -490,5 +490,39 @@ namespace Demo.Forms.Tube
             return obj;
         }
         #endregion
+
+
+    }
+    public static class Common
+    {
+        #region 等待窗体
+        private static DevExpress.XtraSplashScreen.SplashScreenManager splashScreen;
+        public static void ShowWait(this XtraForm form, string caption = "请等待", string description = "下载中...")
+        {
+            splashScreen = new DevExpress.XtraSplashScreen.SplashScreenManager(form, typeof(frmWaitForm), true, true);
+            splashScreen.ShowWaitForm();
+            splashScreen.SetWaitFormCaption(caption);
+            splashScreen.SetWaitFormDescription(description);
+        }
+
+        public static void ShowWait<T>(this XtraForm form,string caption ="请等待",string description="下载中...")
+        {
+            //打开等待窗体
+            splashScreen = new DevExpress.XtraSplashScreen.SplashScreenManager(form, typeof(frmWaitForm), true, true);
+            splashScreen.ShowWaitForm();
+            splashScreen.SetWaitFormCaption(caption);
+            splashScreen.SetWaitFormDescription(description);
+
+            Type type = typeof(T);//检测类型
+            XtraForm f = (XtraForm)Activator.CreateInstance(type);//new
+            f.ShowDialog();
+            splashScreen.CloseWaitForm();
+        }
+
+        public static void CloseWait(this XtraForm form)
+        {
+            splashScreen.CloseWaitForm();
+        }
+        #endregion
     }
 }

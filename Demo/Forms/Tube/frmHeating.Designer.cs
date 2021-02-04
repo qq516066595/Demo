@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHeating));
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtTempSV = new DevExpress.XtraEditors.TextEdit();
             this.txtTempRump = new DevExpress.XtraEditors.TextEdit();
-            this.btnOK = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.btnCancel = new DevExpress.XtraEditors.SimpleButton();
+            this.btnOK = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.txtTempSV.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTempRump.Properties)).BeginInit();
             this.SuspendLayout();
@@ -70,24 +71,6 @@
             this.txtTempRump.Size = new System.Drawing.Size(115, 28);
             this.txtTempRump.TabIndex = 2;
             // 
-            // btnOK
-            // 
-            this.btnOK.Location = new System.Drawing.Point(37, 139);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(110, 40);
-            this.btnOK.TabIndex = 3;
-            this.btnOK.Text = "确认";
-            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(205, 139);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(110, 40);
-            this.btnCancel.TabIndex = 3;
-            this.btnCancel.Text = "取消";
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
             // labelControl3
             // 
             this.labelControl3.Location = new System.Drawing.Point(258, 30);
@@ -103,6 +86,26 @@
             this.labelControl4.Size = new System.Drawing.Size(54, 22);
             this.labelControl4.TabIndex = 1;
             this.labelControl4.Text = "℃/Min";
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.Location = new System.Drawing.Point(205, 139);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(110, 40);
+            this.btnCancel.TabIndex = 3;
+            this.btnCancel.Text = "取消";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnOK
+            // 
+            this.btnOK.Image = ((System.Drawing.Image)(resources.GetObject("btnOK.Image")));
+            this.btnOK.Location = new System.Drawing.Point(37, 139);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(110, 40);
+            this.btnOK.TabIndex = 3;
+            this.btnOK.Text = "确认";
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // frmHeating
             // 

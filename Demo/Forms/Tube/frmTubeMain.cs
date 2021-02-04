@@ -23,6 +23,7 @@ using DevExpress.XtraGrid.Views.Base;
 */
 namespace Demo.Forms.Tube
 {
+    public delegate void MyDelegate(bool b);
     public partial class frmTubeMain : DevExpress.XtraEditors.XtraForm
     {
         TubeHelpClass help = new TubeHelpClass();
@@ -69,7 +70,7 @@ namespace Demo.Forms.Tube
             //        //水冷
             //        lblWaterCooling1.Text = modus.grCooling_PV1.ToString();
             //        lblWaterCooling2.Text = modus.grCooling_PV2.ToString();
-                    
+
             //    }
             //    //设定值
             //    if (control is TextEdit)
@@ -245,7 +246,8 @@ namespace Demo.Forms.Tube
             string filerecipeName = lblRecipeName.Text;
             string fileTypeName = "\\recipe\\Tube" + Tag.ToString();
             help.ExportGridToFile(this.gridRecipeView, filerecipeName, fileTypeName, null);
-            lblRecipeName.Text = TubeHelpClass.fileName.Substring(TubeHelpClass.fileName.LastIndexOf("\\") + 1, TubeHelpClass.fileName.Length - TubeHelpClass.fileName.LastIndexOf("\\") - 5);
+            if (TubeHelpClass.fileName.Length > 0)
+                lblRecipeName.Text = TubeHelpClass.fileName.Substring(TubeHelpClass.fileName.LastIndexOf("\\") + 1, TubeHelpClass.fileName.Length - TubeHelpClass.fileName.LastIndexOf("\\") - 5);
         }
         /// <summary>
         /// 写入设备
@@ -253,12 +255,20 @@ namespace Demo.Forms.Tube
         /// <param name="sender"></param>
         /// <param name="e"></param>
         object obj;
-        byte[] b1 = new byte[] { 1,2,3,4,5};
+        byte[] b1 = new byte[] { 1, 2, 3, 4, 5 };
         private void picDownloadRecipe_Click(object sender, EventArgs e)
         {
-            obj = 77;
-            b1 = help.SerializeObject(obj);
-            MessageBox.Show(b1.ToString());
+            //打开等待加载窗体
+            this.ShowWait();
+            //下载
+
+            //obj = 77;
+            //b1 = help.SerializeObject(obj);
+            //MessageBox.Show(b1.ToString());
+
+            //关闭等待加载窗体
+            this.CloseWait();
+
         }
         /// <summary>
         /// 读取设备
@@ -286,7 +296,7 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void picDefaultRecipe_Click(object sender, EventArgs e)
         {
-            frmDefaultRecipe frmDeRec = new frmDefaultRecipe(this.Tag.ToString(),mys);
+            frmDefaultRecipe frmDeRec = new frmDefaultRecipe(this.Tag.ToString(), mys);
             frmDeRec.ShowDialog();
         }
         /// <summary>
@@ -585,6 +595,5 @@ namespace Demo.Forms.Tube
 
 
         #endregion
-
     }
 }
