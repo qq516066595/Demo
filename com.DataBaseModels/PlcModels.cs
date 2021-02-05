@@ -702,11 +702,11 @@ namespace com.DataBaseModels
     public class PlcVar
     {
         public static PlcJht Jht;
-        public static PlcTube[] Tube = new PlcTube[5];
+        public static PlcTube[] Tube = new PlcTube[6];
     }
     public class frmID
     {
-        public enum eFunctionMode
+        public enum eFunctionID
         {
             MAIN_FRAME,
             IO,
@@ -717,8 +717,9 @@ namespace com.DataBaseModels
             BOAT_MANAGE,
             ABOUT
         }
-        public static byte Tube;//炉管ID
-        public static eFunctionMode eFunction;//功能界面ID
+        
+        public static int Unit;//0:净化台  1：管1  2：管2  3：管3  4：管4  5：管5
+        public static eFunctionID eFunction;//功能界面ID
 
     }
 }
