@@ -24,6 +24,7 @@ namespace Demo
             DevExpress.Skins.SkinManager.EnableMdiFormSkins();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmParent());
+
             //Application.Run(new XtraForm1());
             
         }
