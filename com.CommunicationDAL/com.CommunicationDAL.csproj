@@ -31,6 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CIPCompolet64">
+      <HintPath>..\Demo\lib\CIPCompolet64.dll</HintPath>
+    </Reference>
+    <Reference Include="CIPCompoletProxyLib">
+      <HintPath>..\Demo\lib\CIPCompoletProxyLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CIPCompoletProxyServer">
+      <HintPath>..\Demo\lib\CIPCompoletProxyServer.exe</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Demo\lib\log4net.dll</HintPath>
@@ -61,11 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BeifuPlc.cs" />
+    <Compile Include="PlcBeckhoffAds.cs" />
     <Compile Include="DogIni.cs" />
     <Compile Include="MoonsCommLibHelper.cs" />
     <Compile Include="Mydog.cs" />
     <Compile Include="Mymode.cs" />
+    <Compile Include="PlcOmronCip.cs" />
     <Compile Include="TubeDiComDAL.cs" />
     <Compile Include="TubeDoComDAL.cs" />
     <Compile Include="TubeInitDAL.cs" />

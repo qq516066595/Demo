@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace com.CommunicationDAL
 {
-   public class BeifuPlc
+   public class PlcBeckhoffAds
     {
         private SerialPort FX;
 
@@ -66,7 +66,7 @@ namespace com.CommunicationDAL
             }
         }
 
-        public BeifuPlc()
+        public PlcBeckhoffAds()
         {
             this.FX = new SerialPort();
             this.FX.ReadTimeout = 1000;

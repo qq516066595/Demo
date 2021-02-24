@@ -24,24 +24,15 @@ namespace Demo
             DevExpress.Skins.SkinManager.EnableMdiFormSkins();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmParent());
-            //  Application.Run(new XtraForm1());
+
+            //Application.Run(new XtraForm1());
             
         }
     }
 }
 
-public sealed class Global
-{
-    public static byte TubeID;
-    
 
-}
 
-public sealed class PlcVar
-{
-    public static PlcJhtVar Jht;
-    public static PlcTubeVar[] Tube = new PlcTubeVar[5];
 
-}
 
 

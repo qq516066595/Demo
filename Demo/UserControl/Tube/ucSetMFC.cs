@@ -28,7 +28,7 @@ namespace Demo.UserControl.Tube
         {
             //stMFC_Para1.rWarnDiff_Persent = (float)Convert.ToDouble(txtSetGasWarnDiff.Text);
             //stMFC_Para.Add(stMFC_Para1);
-            PlcVar.Tube[Global.TubeID].stMFC_Para[MFC_ID].rAlmDiff_Persent = (float)Convert.ToDouble(txtSetGasWarnDiff.Text);
+            PlcVar.Tube[frmID.Unit].stMFC_Para[MFC_ID].rAlmDiff_Persent = (float)Convert.ToDouble(txtSetGasWarnDiff.Text);
         }
     }    
 }
