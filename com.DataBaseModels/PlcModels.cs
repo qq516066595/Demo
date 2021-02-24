@@ -579,6 +579,7 @@ namespace com.DataBaseModels
         }
 
         FXL_HWCs_Ctrl FXL_HWCs_Ctrl_1;
+
         #endregion ---------------------------库文件结构体定义---------------------------------------
 
 
@@ -632,7 +633,7 @@ namespace com.DataBaseModels
         public PlcModels.DTSU666 stEnergyValue;//电能数据
         public PlcModels.FXL_HWCs_Ctrl stHWCs_Ctrl;
     }
-
+  
     public class PlcTube
     {
         public PlcModels.TubeErr stTubeAlm;

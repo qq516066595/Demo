@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using com.DataBaseModels;
 using Demo.Forms.Tube;
+using com.TubeServices;
 
 /*
 * namespace：Demo.Forms.Tube
@@ -148,6 +149,11 @@ namespace Demo.UserControl.Tube
             //    btnTubeDisable.ForeColor = Color.Black;
             //else
             //    btnTubeDisable.ForeColor = Color.Red;
+        }
+
+        private void btnStart_Click_1(object sender, EventArgs e)
+        {
+          
         }
     }
 }

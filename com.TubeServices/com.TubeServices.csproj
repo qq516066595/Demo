@@ -31,12 +31,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CIPCompolet, Version=1.7.2.0, Culture=neutral, PublicKeyToken=f3505d5782c23c5d" />
+    <Reference Include="CIPCompolet64, Version=1.7.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Demo\lib\CIPCompolet64.dll</HintPath>
+    </Reference>
+    <Reference Include="CIPCompoletProxyServer">
+      <HintPath>..\Demo\lib\CIPCompoletProxyServer.exe</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Demo\lib\log4net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,6 +68,9 @@
     <Compile Include="TubeEventService.cs" />
     <Compile Include="TubeEvService.cs" />
     <Compile Include="TubeGasService.cs" />
+    <Compile Include="TUBEisTEST.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TubeVacuumService.cs" />
     <Compile Include="UserService.cs" />
   </ItemGroup>
@@ -86,6 +99,11 @@
   <ItemGroup>
     <Folder Include="Loader\" />
     <Folder Include="TUBE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TUBEisTEST.resx">
+      <DependentUpon>TUBEisTEST.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

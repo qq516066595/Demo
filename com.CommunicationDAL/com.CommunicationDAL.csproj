@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CIPCompolet, Version=1.7.2.0, Culture=neutral, PublicKeyToken=f3505d5782c23c5d" />
     <Reference Include="CIPCompolet64">
       <HintPath>..\Demo\lib\CIPCompolet64.dll</HintPath>
     </Reference>
@@ -49,6 +50,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Demo\lib\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="SysmacCipService, Version=1.7.2.0, Culture=neutral, PublicKeyToken=f3505d5782c23c5d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Demo\lib\SysmacCipService.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
@@ -61,6 +66,7 @@
     <Reference Include="System.Data.SQLite.Linq">
       <HintPath>..\Demo\lib\System.Data.SQLite.Linq.dll</HintPath>
     </Reference>
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -70,6 +76,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NXCompolet.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="PlcBeckhoffAds.cs" />
     <Compile Include="DogIni.cs" />
     <Compile Include="MoonsCommLibHelper.cs" />
@@ -80,6 +89,7 @@
     <Compile Include="TubeDoComDAL.cs" />
     <Compile Include="TubeInitDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VariableInfo.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
