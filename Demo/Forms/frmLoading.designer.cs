@@ -42,16 +42,18 @@
             // marqueeProgressBarControl1
             // 
             this.marqueeProgressBarControl1.EditValue = 0;
-            this.marqueeProgressBarControl1.Location = new System.Drawing.Point(41, 217);
+            this.marqueeProgressBarControl1.Location = new System.Drawing.Point(62, 326);
+            this.marqueeProgressBarControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.marqueeProgressBarControl1.Name = "marqueeProgressBarControl1";
-            this.marqueeProgressBarControl1.Size = new System.Drawing.Size(444, 11);
+            this.marqueeProgressBarControl1.Size = new System.Drawing.Size(666, 16);
             this.marqueeProgressBarControl1.TabIndex = 5;
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(239, 197);
+            this.labelControl2.Location = new System.Drawing.Point(358, 296);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(55, 14);
+            this.labelControl2.Size = new System.Drawing.Size(76, 22);
             this.labelControl2.TabIndex = 7;
             this.labelControl2.Text = "Starting...";
             // 
@@ -59,7 +61,8 @@
             // 
             this.pictureEdit2.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureEdit2.EditValue = global::Demo.Properties.Resources.DefSplashImage;
-            this.pictureEdit2.Location = new System.Drawing.Point(-36, -75);
+            this.pictureEdit2.Location = new System.Drawing.Point(-54, -112);
+            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.AllowFocused = false;
             this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -68,7 +71,7 @@
             this.pictureEdit2.Properties.ShowMenu = false;
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.pictureEdit2.Properties.ZoomAccelerationFactor = 1D;
-            this.pictureEdit2.Size = new System.Drawing.Size(610, 452);
+            this.pictureEdit2.Size = new System.Drawing.Size(915, 678);
             this.pictureEdit2.TabIndex = 9;
             // 
             // labelControl1
@@ -76,21 +79,23 @@
             this.labelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.labelControl1.Appearance.Options.UseBackColor = true;
             this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelControl1.Location = new System.Drawing.Point(203, 297);
+            this.labelControl1.Location = new System.Drawing.Point(304, 446);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(139, 14);
+            this.labelControl1.Size = new System.Drawing.Size(205, 22);
             this.labelControl1.TabIndex = 6;
             this.labelControl1.Text = "Copyright © laplace-2020";
             // 
             // frmLoading
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 318);
+            this.ClientSize = new System.Drawing.Size(812, 477);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.marqueeProgressBarControl1);
             this.Controls.Add(this.pictureEdit2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmLoading";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl1.Properties)).EndInit();
