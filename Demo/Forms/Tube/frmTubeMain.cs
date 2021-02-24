@@ -33,8 +33,8 @@ namespace Demo.Forms.Tube
             lblZoneEx1.Text = this.Tag.ToString();
             this.gridRecipeView.InitNewRow += GridRecipeView_InitNewRow;
         }
-        
-        
+
+
         #region 主界面
         #region 温区
         /// <summary>
@@ -70,7 +70,7 @@ namespace Demo.Forms.Tube
             //        //水冷
             //        lblWaterCooling1.Text = modus.grCooling_PV1.ToString();
             //        lblWaterCooling2.Text = modus.grCooling_PV2.ToString();
-                    
+
             //    }
             //    //设定值
             //    if (control is TextEdit)
@@ -254,7 +254,7 @@ namespace Demo.Forms.Tube
         /// <param name="sender"></param>
         /// <param name="e"></param>
         object obj;
-        byte[] b1 = new byte[] { 1,2,3,4,5};
+        byte[] b1 = new byte[] { 1, 2, 3, 4, 5 };
         private void picDownloadRecipe_Click(object sender, EventArgs e)
         {
             this.ShowWait();
@@ -289,7 +289,7 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void picDefaultRecipe_Click(object sender, EventArgs e)
         {
-            frmDefaultRecipe frmDeRec = new frmDefaultRecipe(this.Tag.ToString(),mys);
+            frmDefaultRecipe frmDeRec = new frmDefaultRecipe(this.Tag.ToString(), mys);
             frmDeRec.ShowDialog();
         }
         /// <summary>
@@ -470,6 +470,79 @@ namespace Demo.Forms.Tube
         }
         #endregion
 
+        #region 报表
+
+        //待完善项：①X轴设置为时间轴；②显示与隐藏曲线：修改属性即可useCheckItem；③曲线缩小放大
+        private void picChart_Click(object sender, EventArgs e)
+        {
+            spcChart.Panel1Collapsed = false;
+            spcChart.Panel2Collapsed = true;
+            if (txtFilePath.Text == "C:\\\\")
+            {
+                MessageBox.Show("当前未选中文件！");
+                return;
+            }
+            // DataTable _dt = ChartBingingData();
+
+            chartTube.Series.Clear();
+            chartTube.Titles.Clear();
+
+            string colName = "";
+            for (int i = 0; i < dtchartOrtable.Columns.Count; i++)
+            {
+                colName = dtchartOrtable.Columns[i].ColumnName;
+                if (colName != "时间" && colName != "步号" && colName != "步名称")//判断数据类型
+                {
+                    Common.CreateSeries(chartTube, colName, DevExpress.XtraCharts.ViewType.Spline, dtchartOrtable, "时间", colName, null);
+                }
+            }
+            
+        }
+
+        private void picTable_Click(object sender, EventArgs e)
+        {
+            spcChart.Panel1Collapsed = true;
+            spcChart.Panel2Collapsed = false;
+            gridViewReport.Columns.Clear();
+            if (txtFilePath.Text == "C:\\\\")
+            {
+                MessageBox.Show("当前未选中文件！");
+                return;
+            }
+            gridReport.DataMember = dtchartOrtable.TableName;
+            gridReport.DataSource = dtchartOrtable;
+            gridReport.MainView.PopulateColumns();
+        }
+
+        public DataTable dtchartOrtable;
+        private void btnOpenFile_Click(object sender, EventArgs e)
+        {
+            string fileTypeName = "\\工艺历史数据\\Tube" + this.Tag.ToString();
+            dtchartOrtable = help.AsposeCells(fileTypeName);
+            txtFilePath.Text = Application.StartupPath + fileTypeName;
+            chartTube.DataSource = dtchartOrtable;
+            gridReport.DataSource = dtchartOrtable;
+        }
+
+        public DataTable ChartBingingData()
+        {
+            DataTable _testData = new DataTable();
+            _testData.Columns.Add(new DataColumn("time", typeof(string)));
+            _testData.Columns.Add(new DataColumn("Power", typeof(decimal)));
+            _testData.Columns.Add(new DataColumn("ActulPower", typeof(decimal)));
+            Random _rm = new Random();
+            for (int i = 0; i < 24; i++)
+            {
+                DataRow _drNew = _testData.NewRow();
+                _drNew["time"] = string.Format(DateTime.Now.ToString("yyyy-MM-dd") + " {0}:00", i);
+                _drNew["Power"] = _rm.Next(150, 350);
+                _drNew["ActulPower"] = _rm.Next(220, 245);
+                _testData.Rows.Add(_drNew);
+            }
+            return _testData;
+        }
+        #endregion
+
         #region 调用方法
         /// <summary>
         /// 收缩与展开
@@ -583,10 +656,13 @@ namespace Demo.Forms.Tube
             //addGridBindings();
             //repositoryItemButtonEdit1.Click += RepositoryItemButtonEdit1_Click;
             //repositoryItemCheckEdit1.QueryCheckStateByValue += new DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventHandler(repositoryItemCheckEdit1_QueryCheckStateByValue);
+
+            //图表加载
+            spcChart.Panel1Collapsed = false;
+            spcChart.Panel2Collapsed = true;
         }
 
 
         #endregion
-
     }
 }

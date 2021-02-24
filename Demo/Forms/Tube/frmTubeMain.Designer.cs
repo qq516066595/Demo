@@ -272,12 +272,15 @@
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl8 = new DevExpress.XtraEditors.PanelControl();
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.spcChart = new System.Windows.Forms.SplitContainer();
+            this.chartTube = new DevExpress.XtraCharts.ChartControl();
+            this.gridReport = new DevExpress.XtraGrid.GridControl();
+            this.gridViewReport = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelControl7 = new DevExpress.XtraEditors.PanelControl();
             this.txtFilePath = new DevExpress.XtraEditors.TextEdit();
             this.btnOpenFile = new DevExpress.XtraEditors.SimpleButton();
-            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.picTable = new DevExpress.XtraEditors.PictureEdit();
+            this.picChart = new DevExpress.XtraEditors.PictureEdit();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
             this.pcSetMFC = new DevExpress.XtraEditors.PanelControl();
             this.ucSetMFC12 = new Demo.UserControl.Tube.ucSetMFC();
@@ -555,7 +558,11 @@
             this.panelControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl8)).BeginInit();
             this.panelControl8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spcChart)).BeginInit();
+            this.spcChart.Panel1.SuspendLayout();
+            this.spcChart.Panel2.SuspendLayout();
+            this.spcChart.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTube)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).BeginInit();
@@ -571,11 +578,13 @@
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridReport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewReport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).BeginInit();
             this.panelControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtFilePath.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTable.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picChart.Properties)).BeginInit();
             this.xtraTabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcSetMFC)).BeginInit();
             this.pcSetMFC.SuspendLayout();
@@ -3153,7 +3162,7 @@
             // 
             // panelControl8
             // 
-            this.panelControl8.Controls.Add(this.chartControl1);
+            this.panelControl8.Controls.Add(this.spcChart);
             this.panelControl8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl8.Location = new System.Drawing.Point(3, 56);
             this.panelControl8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -3161,17 +3170,40 @@
             this.panelControl8.Size = new System.Drawing.Size(1817, 1318);
             this.panelControl8.TabIndex = 1;
             // 
-            // chartControl1
+            // spcChart
             // 
-            this.chartControl1.DataBindings = null;
+            this.spcChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.spcChart.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.spcChart.Location = new System.Drawing.Point(3, 3);
+            this.spcChart.Name = "spcChart";
+            // 
+            // spcChart.Panel1
+            // 
+            this.spcChart.Panel1.Controls.Add(this.chartTube);
+            // 
+            // spcChart.Panel2
+            // 
+            this.spcChart.Panel2.Controls.Add(this.gridReport);
+            this.spcChart.Size = new System.Drawing.Size(1811, 1312);
+            this.spcChart.SplitterDistance = 975;
+            this.spcChart.TabIndex = 0;
+            // 
+            // chartTube
+            // 
+            this.chartTube.DataBindings = null;
+            xyDiagram1.AxisX.CrosshairAxisLabelOptions.Pattern = "{A}";
+            xyDiagram1.AxisX.NumericScaleOptions.AutoGrid = false;
+            xyDiagram1.AxisX.NumericScaleOptions.GridAlignment = DevExpress.XtraCharts.NumericGridAlignment.Custom;
+            xyDiagram1.AxisX.NumericScaleOptions.GridSpacing = 2D;
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram1;
-            this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chartControl1.Legend.Name = "Default Legend";
-            this.chartControl1.Location = new System.Drawing.Point(3, 3);
-            this.chartControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chartControl1.Name = "chartControl1";
+            this.chartTube.Diagram = xyDiagram1;
+            this.chartTube.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartTube.Legend.Name = "Default Legend";
+            this.chartTube.Legend.UseCheckBoxes = true;
+            this.chartTube.Location = new System.Drawing.Point(0, 0);
+            this.chartTube.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chartTube.Name = "chartTube";
             series1.Name = "温区1实际值";
             series1.View = lineSeriesView1;
             series2.Name = "温区2实际值";
@@ -3186,7 +3218,7 @@
             series6.View = lineSeriesView6;
             series7.Name = "温区7实际值";
             series7.View = lineSeriesView7;
-            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+            this.chartTube.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1,
         series2,
         series3,
@@ -3194,15 +3226,32 @@
         series5,
         series6,
         series7};
-            this.chartControl1.Size = new System.Drawing.Size(1811, 1312);
-            this.chartControl1.TabIndex = 0;
+            this.chartTube.Size = new System.Drawing.Size(975, 1312);
+            this.chartTube.TabIndex = 1;
+            // 
+            // gridReport
+            // 
+            this.gridReport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridReport.Location = new System.Drawing.Point(0, 0);
+            this.gridReport.MainView = this.gridViewReport;
+            this.gridReport.Name = "gridReport";
+            this.gridReport.Size = new System.Drawing.Size(832, 1312);
+            this.gridReport.TabIndex = 0;
+            this.gridReport.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridViewReport});
+            // 
+            // gridViewReport
+            // 
+            this.gridViewReport.GridControl = this.gridReport;
+            this.gridViewReport.Name = "gridViewReport";
+            this.gridViewReport.OptionsView.ShowGroupPanel = false;
             // 
             // panelControl7
             // 
             this.panelControl7.Controls.Add(this.txtFilePath);
             this.panelControl7.Controls.Add(this.btnOpenFile);
-            this.panelControl7.Controls.Add(this.pictureEdit2);
-            this.panelControl7.Controls.Add(this.pictureEdit1);
+            this.panelControl7.Controls.Add(this.picTable);
+            this.panelControl7.Controls.Add(this.picChart);
             this.panelControl7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl7.Location = new System.Drawing.Point(3, 3);
             this.panelControl7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -3228,44 +3277,53 @@
             this.btnOpenFile.Size = new System.Drawing.Size(124, 39);
             this.btnOpenFile.TabIndex = 5;
             this.btnOpenFile.Text = "打开文件";
+            this.btnOpenFile.Click += new System.EventHandler(this.btnOpenFile_Click);
             // 
-            // pictureEdit2
+            // picTable
             // 
-            this.pictureEdit2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit2.Location = new System.Drawing.Point(73, 5);
-            this.pictureEdit2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureEdit2.Name = "pictureEdit2";
-            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit2.Properties.ZoomAccelerationFactor = 1D;
-            this.pictureEdit2.Size = new System.Drawing.Size(63, 44);
+            this.picTable.Cursor = System.Windows.Forms.Cursors.Default;
+            this.picTable.EditValue = ((object)(resources.GetObject("picTable.EditValue")));
+            this.picTable.Location = new System.Drawing.Point(73, 5);
+            this.picTable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picTable.Name = "picTable";
+            this.picTable.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.picTable.Properties.Appearance.Options.UseBackColor = true;
+            this.picTable.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picTable.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.picTable.Properties.ZoomAccelerationFactor = 1D;
+            this.picTable.Size = new System.Drawing.Size(63, 44);
             superToolTip9.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem9.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
             toolTipItem9.Appearance.Options.UseImage = true;
+            toolTipItem9.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem9.Image")));
             toolTipItem9.Text = "\r\n报表";
             superToolTip9.Items.Add(toolTipItem9);
-            this.pictureEdit2.SuperTip = superToolTip9;
-            this.pictureEdit2.TabIndex = 4;
+            this.picTable.SuperTip = superToolTip9;
+            this.picTable.TabIndex = 4;
+            this.picTable.Click += new System.EventHandler(this.picTable_Click);
             // 
-            // pictureEdit1
+            // picChart
             // 
-            this.pictureEdit1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit1.Location = new System.Drawing.Point(7, 5);
-            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit1.Properties.ZoomAccelerationFactor = 1D;
-            this.pictureEdit1.Size = new System.Drawing.Size(63, 44);
+            this.picChart.Cursor = System.Windows.Forms.Cursors.Default;
+            this.picChart.EditValue = ((object)(resources.GetObject("picChart.EditValue")));
+            this.picChart.Location = new System.Drawing.Point(7, 5);
+            this.picChart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.picChart.Name = "picChart";
+            this.picChart.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.picChart.Properties.Appearance.Options.UseBackColor = true;
+            this.picChart.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.picChart.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.picChart.Properties.ZoomAccelerationFactor = 1D;
+            this.picChart.Size = new System.Drawing.Size(63, 44);
             superToolTip10.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem10.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
             toolTipItem10.Appearance.Options.UseImage = true;
+            toolTipItem10.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem10.Image")));
             toolTipItem10.Text = "\r\n曲线";
             superToolTip10.Items.Add(toolTipItem10);
-            this.pictureEdit1.SuperTip = superToolTip10;
-            this.pictureEdit1.TabIndex = 4;
+            this.picChart.SuperTip = superToolTip10;
+            this.picChart.TabIndex = 4;
+            this.picChart.Click += new System.EventHandler(this.picChart_Click);
             // 
             // xtraTabPage5
             // 
@@ -3308,6 +3366,7 @@
             // 
             this.ucSetMFC12.Location = new System.Drawing.Point(1083, 486);
             this.ucSetMFC12.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.ucSetMFC12.MFC_ID = 0;
             this.ucSetMFC12.Name = "ucSetMFC12";
             this.ucSetMFC12.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC12.TabIndex = 13;
@@ -3316,6 +3375,7 @@
             // 
             this.ucSetMFC11.Location = new System.Drawing.Point(743, 486);
             this.ucSetMFC11.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.ucSetMFC11.MFC_ID = 0;
             this.ucSetMFC11.Name = "ucSetMFC11";
             this.ucSetMFC11.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC11.TabIndex = 13;
@@ -3324,6 +3384,7 @@
             // 
             this.ucSetMFC10.Location = new System.Drawing.Point(390, 486);
             this.ucSetMFC10.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.ucSetMFC10.MFC_ID = 0;
             this.ucSetMFC10.Name = "ucSetMFC10";
             this.ucSetMFC10.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC10.TabIndex = 13;
@@ -3332,6 +3393,7 @@
             // 
             this.ucSetMFC5.Location = new System.Drawing.Point(50, 486);
             this.ucSetMFC5.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.ucSetMFC5.MFC_ID = 0;
             this.ucSetMFC5.Name = "ucSetMFC5";
             this.ucSetMFC5.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC5.TabIndex = 13;
@@ -3340,6 +3402,7 @@
             // 
             this.ucSetMFC9.Location = new System.Drawing.Point(1084, 266);
             this.ucSetMFC9.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.ucSetMFC9.MFC_ID = 0;
             this.ucSetMFC9.Name = "ucSetMFC9";
             this.ucSetMFC9.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC9.TabIndex = 13;
@@ -3348,6 +3411,7 @@
             // 
             this.ucSetMFC4.Location = new System.Drawing.Point(1083, 44);
             this.ucSetMFC4.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.ucSetMFC4.MFC_ID = 0;
             this.ucSetMFC4.Name = "ucSetMFC4";
             this.ucSetMFC4.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC4.TabIndex = 13;
@@ -3356,6 +3420,7 @@
             // 
             this.ucSetMFC8.Location = new System.Drawing.Point(743, 266);
             this.ucSetMFC8.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.ucSetMFC8.MFC_ID = 0;
             this.ucSetMFC8.Name = "ucSetMFC8";
             this.ucSetMFC8.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC8.TabIndex = 13;
@@ -3364,6 +3429,7 @@
             // 
             this.ucSetMFC3.Location = new System.Drawing.Point(741, 44);
             this.ucSetMFC3.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.ucSetMFC3.MFC_ID = 0;
             this.ucSetMFC3.Name = "ucSetMFC3";
             this.ucSetMFC3.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC3.TabIndex = 13;
@@ -3372,6 +3438,7 @@
             // 
             this.ucSetMFC7.Location = new System.Drawing.Point(390, 266);
             this.ucSetMFC7.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.ucSetMFC7.MFC_ID = 0;
             this.ucSetMFC7.Name = "ucSetMFC7";
             this.ucSetMFC7.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC7.TabIndex = 13;
@@ -3380,6 +3447,7 @@
             // 
             this.ucSetMFC2.Location = new System.Drawing.Point(389, 44);
             this.ucSetMFC2.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.ucSetMFC2.MFC_ID = 0;
             this.ucSetMFC2.Name = "ucSetMFC2";
             this.ucSetMFC2.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC2.TabIndex = 13;
@@ -3388,6 +3456,7 @@
             // 
             this.ucSetMFC6.Location = new System.Drawing.Point(51, 266);
             this.ucSetMFC6.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.ucSetMFC6.MFC_ID = 0;
             this.ucSetMFC6.Name = "ucSetMFC6";
             this.ucSetMFC6.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC6.TabIndex = 13;
@@ -3396,6 +3465,7 @@
             // 
             this.ucSetMFC1.Location = new System.Drawing.Point(50, 44);
             this.ucSetMFC1.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.ucSetMFC1.MFC_ID = 0;
             this.ucSetMFC1.Name = "ucSetMFC1";
             this.ucSetMFC1.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC1.TabIndex = 13;
@@ -5617,6 +5687,10 @@
             this.panelControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl8)).EndInit();
             this.panelControl8.ResumeLayout(false);
+            this.spcChart.Panel1.ResumeLayout(false);
+            this.spcChart.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.spcChart)).EndInit();
+            this.spcChart.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
@@ -5632,12 +5706,14 @@
             ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTube)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridReport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewReport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).EndInit();
             this.panelControl7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtFilePath.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTable.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picChart.Properties)).EndInit();
             this.xtraTabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pcSetMFC)).EndInit();
             this.pcSetMFC.ResumeLayout(false);
@@ -5881,11 +5957,10 @@
         private DevExpress.XtraEditors.PanelControl panelControl6;
         private DevExpress.XtraEditors.PanelControl panelControl8;
         private DevExpress.XtraEditors.PanelControl panelControl7;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit2;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.PictureEdit picTable;
+        private DevExpress.XtraEditors.PictureEdit picChart;
         private DevExpress.XtraEditors.SimpleButton btnOpenFile;
         private DevExpress.XtraEditors.TextEdit txtFilePath;
-        private DevExpress.XtraCharts.ChartControl chartControl1;
         private DevExpress.XtraEditors.PanelControl pcInit;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
@@ -6218,5 +6293,9 @@
         private System.Windows.Forms.ToolStripMenuItem DeleteRow;
         private System.Windows.Forms.ToolStripMenuItem CopyRow;
         private System.Windows.Forms.ToolStripMenuItem PasteRow;
+        private System.Windows.Forms.SplitContainer spcChart;
+        private DevExpress.XtraCharts.ChartControl chartTube;
+        private DevExpress.XtraGrid.GridControl gridReport;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridViewReport;
     }
 }
