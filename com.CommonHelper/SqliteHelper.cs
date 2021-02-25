@@ -1,10 +1,12 @@
 ﻿namespace System.Data.SQLite
 {
+    using log4net;
     using System.Data;
     using System.Data.SQLite;
     using System.IO;
     public class SqliteHelper
     {
+        public static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         private static string pwd = "PWD"; 
         private static string path = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase) + "\\sqliteTest.db";
         private static string connString = string.Format("Data Source =\"{0}\"", path, pwd);
@@ -46,10 +48,10 @@
                 }
                
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-               
-                throw e;
+                log.Error("执行ExecuteSql执行出现异常：" + ex);
+                throw new Exception("执行EExecuteSql执行出现异常：", ex);
             }
         }
 
@@ -91,14 +93,23 @@
             /// <returns>受影响的行数</returns>
         public static int ExecuteNonQuery(SQLiteConnection connection, string cmdText, params SQLiteParameter[] parameters)
         {
-            int val = 0;
-            using (SQLiteCommand cmd = new SQLiteCommand())
+            try
             {
-                PrepareCommand(cmd, connection, null, cmdText, parameters);
-                val = cmd.ExecuteNonQuery();
-                cmd.Parameters.Clear();
+                int val = 0;
+                using (SQLiteCommand cmd = new SQLiteCommand())
+                {
+                    PrepareCommand(cmd, connection, null, cmdText, parameters);
+                    val = cmd.ExecuteNonQuery();
+                    cmd.Parameters.Clear();
+                }
+                return val;
             }
-            return val;
+            catch (Exception ex)
+            {
+                log.Error("执行ExecuteNonQuery执行出现异常：" + ex);
+                throw new Exception("执行ExecuteNonQuery执行出现异常：", ex);
+            }
+
         }
         /**//// <summary>
             /// 执行查询,并返回结果集的第一行的第一列.其他所有的行和列被忽略.
@@ -130,13 +141,22 @@
             /// <returns>第一行的第一列的值</returns>
         public static object ExecuteScalar(SQLiteConnection connection, string cmdText)
         {
-            object val;
-            using (SQLiteCommand cmd = new SQLiteCommand())
+            try
             {
-                PrepareCommand(cmd, connection, null, cmdText);
-                val = cmd.ExecuteScalar();
+                object val;
+                using (SQLiteCommand cmd = new SQLiteCommand())
+                {
+                    PrepareCommand(cmd, connection, null, cmdText);
+                    val = cmd.ExecuteScalar();
+                }
+                return val;
             }
-            return val;
+            catch (Exception ex)
+            {
+                log.Error("执行ExecuteScalar执行出现异常：" + ex);
+                throw new Exception("执行ExecuteScalar执行出现异常：", ex);
+            }
+
         }
         /**//// <summary>
             /// 执行SQL语句,返回结果集的DataReader
@@ -166,10 +186,11 @@
                 cmd.Parameters.Clear();
                 return rdr;
             }
-            catch
+            catch (Exception ex)
             {
                 conn.Close();
-                throw;
+                log.Error("执行ExecuteReader执行出现异常：" + ex);
+                throw new Exception("执行ExecuteReader执行出现异常：", ex);
             }
         }
         /**//// <summary>
