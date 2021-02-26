@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace com.CommunicationDAL
 {
-    internal static class Mymode
+    public static class MyModu
     {
         public static string LoginUser;
         public static int Level;

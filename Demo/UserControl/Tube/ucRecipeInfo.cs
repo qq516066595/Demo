@@ -63,16 +63,16 @@ namespace Demo.UserControl.Tube
 
         private void ucRecipeInfo_Load(object sender, EventArgs e)
         {
-            tsAutoSelect.IsOn = PlcVar.Tube[frmID.Unit].OP_Mode == (PlcModels.OP_MODE)1 ? false : PlcVar.Tube[frmID.Unit].OP_Mode == (PlcModels.OP_MODE)3 ? true : false;
-            lblRecipeName.Text = PlcVar.Tube[frmID.Unit].stCurrentRecipeName;
-            lblRecipeTotalTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
-            lblRecipeWorkTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
-            lblRecipeRemainTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessRemainTime);
-            lblStepID.Text = PlcVar.Tube[frmID.Unit].giRecipe_ID.ToString();
-            lblStepName.Text = help.KSrecipeNameFormatIntToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.eName);
-            lblStepTotalTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nDuration);
-            lblStepWorkTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nWorking_Time);
-            lblStepRemainTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nRemain_Time);
+            //tsAutoSelect.IsOn = PlcVar.Tube[frmID.Unit].OP_Mode == (PlcModels.OP_MODE)1 ? false : PlcVar.Tube[frmID.Unit].OP_Mode == (PlcModels.OP_MODE)3 ? true : false;
+            //lblRecipeName.Text = PlcVar.Tube[frmID.Unit].stCurrentRecipeName;
+            //lblRecipeTotalTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
+            //lblRecipeWorkTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
+            //lblRecipeRemainTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessRemainTime);
+            //lblStepID.Text = PlcVar.Tube[frmID.Unit].giRecipe_ID.ToString();
+            //lblStepName.Text = help.KSrecipeNameFormatIntToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.eName);
+            //lblStepTotalTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nDuration);
+            //lblStepWorkTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nWorking_Time);
+            //lblStepRemainTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nRemain_Time);
         }
 
         /// <summary>

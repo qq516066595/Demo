@@ -743,6 +743,28 @@ namespace Demo.Forms.Tube
                 MessageBox.Show("Set Failed:" + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void txtPumpSpeed_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                键盘.DefaultInstance.Text = "温度设置2";
+                MyModu.MinSet = 0;
+                MyModu.MaxSet = 1200;
+                键盘.DefaultInstance.ShowDialog();
+                if (MyModu.Gyedit != "cancel")
+                {
+                    tube.WiteVariable(6, "OP_Mode", MyModu.Gyedit);
+                }
+                MyModu.LogEvent(6, "温度设置2", MyModu.Gyedit);
+                return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Set Failed:" + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
      
 }
