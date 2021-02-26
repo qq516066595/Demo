@@ -33,11 +33,24 @@ namespace Demo.Forms.Tube
         /// </summary>
         /// <param name="time"></param>
         /// <returns></returns>
-        public string timeFormatIntToString(uint time)
+        public string timeFormatFloatToString(float time)
         {
             try
             {
-                string newTime = ((Int32)time / 60).ToString() + " Min " + ((Int32)time % 60).ToString() + " s";
+                string newTime = ((float)time / 60).ToString() + " Min " + ((float)time % 60).ToString() + " s";
+                return newTime;
+            }
+            catch (Exception e)
+            {
+                log.Error("秒转分钟", e);
+                return "";
+            }
+        }
+        public string timeFormatUshortToString(ushort time)
+        {
+            try
+            {
+                string newTime = ((ushort)time / 60).ToString() + " Min " + ((ushort)time % 60).ToString() + " s";
                 return newTime;
             }
             catch (Exception e)

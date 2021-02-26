@@ -1,6 +1,6 @@
 ﻿namespace Demo.Forms
 {
-    internal partial class 键盘
+    partial class 键盘
     {
         /// <summary>
         /// Required designer variable.
@@ -119,7 +119,6 @@
             this.SKB_14.Tag = "14";
             this.SKB_14.Text = "确定";
             this.SKB_14.UseVisualStyleBackColor = false;
-            this.SKB_14.Click += new System.EventHandler(this.SKB_14_Click);
             // 
             // SKB_15
             // 
@@ -150,7 +149,6 @@
             this.SKB_0.Tag = "0";
             this.SKB_0.Text = "0";
             this.SKB_0.UseVisualStyleBackColor = false;
-            this.SKB_0.Click += new System.EventHandler(this.SKB_14_Click);
             // 
             // SKB_9
             // 
@@ -166,7 +164,6 @@
             this.SKB_9.Tag = "9";
             this.SKB_9.Text = "9";
             this.SKB_9.UseVisualStyleBackColor = false;
-            this.SKB_9.Click += new System.EventHandler(this.SKB_14_Click);
             // 
             // SKB_8
             // 
@@ -182,7 +179,6 @@
             this.SKB_8.Tag = "8";
             this.SKB_8.Text = "8";
             this.SKB_8.UseVisualStyleBackColor = false;
-            this.SKB_8.Click += new System.EventHandler(this.SKB_14_Click);
             // 
             // SKB_7
             // 
@@ -198,7 +194,6 @@
             this.SKB_7.Tag = "7";
             this.SKB_7.Text = "7";
             this.SKB_7.UseVisualStyleBackColor = false;
-            this.SKB_7.Click += new System.EventHandler(this.SKB_14_Click);
             // 
             // SKB_6
             // 
@@ -214,7 +209,6 @@
             this.SKB_6.Tag = "6";
             this.SKB_6.Text = "6";
             this.SKB_6.UseVisualStyleBackColor = false;
-            this.SKB_6.Click += new System.EventHandler(this.SKB_14_Click);
             // 
             // SKB_5
             // 
@@ -230,7 +224,6 @@
             this.SKB_5.Tag = "5";
             this.SKB_5.Text = "5";
             this.SKB_5.UseVisualStyleBackColor = false;
-            this.SKB_5.Click += new System.EventHandler(this.SKB_14_Click);
             // 
             // SKB_4
             // 
@@ -246,7 +239,6 @@
             this.SKB_4.Tag = "4";
             this.SKB_4.Text = "4";
             this.SKB_4.UseVisualStyleBackColor = false;
-            this.SKB_4.Click += new System.EventHandler(this.SKB_14_Click);
             // 
             // SKB_3
             // 
@@ -262,7 +254,6 @@
             this.SKB_3.Tag = "3";
             this.SKB_3.Text = "3";
             this.SKB_3.UseVisualStyleBackColor = false;
-            this.SKB_3.Click += new System.EventHandler(this.SKB_14_Click);
             // 
             // SKB_2
             // 
@@ -278,7 +269,6 @@
             this.SKB_2.Tag = "2";
             this.SKB_2.Text = "2";
             this.SKB_2.UseVisualStyleBackColor = false;
-            this.SKB_2.Click += new System.EventHandler(this.SKB_14_Click);
             // 
             // SKB_1
             // 
@@ -294,7 +284,6 @@
             this.SKB_1.Tag = "1";
             this.SKB_1.Text = "1";
             this.SKB_1.UseVisualStyleBackColor = false;
-            this.SKB_1.Click += new System.EventHandler(this.SKB_14_Click);
             // 
             // 键盘
             // 
@@ -320,7 +309,6 @@
             this.Name = "键盘";
             this.Text = "键盘";
             this.Load += new System.EventHandler(this.键盘_Load);
-            this.Shown += new System.EventHandler(this.键盘_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,18 +332,5 @@
         public System.Windows.Forms.Button SKB_3;
         public System.Windows.Forms.Button SKB_2;
         public System.Windows.Forms.Button SKB_1;
-
-        private static 键盘 _DefaultInstance;
-        public static 键盘 DefaultInstance
-        {
-            get
-            {
-                if (_DefaultInstance == null)
-                    _DefaultInstance = new 键盘();
-
-                return _DefaultInstance;
-
-            }
-        }
     }
 }
