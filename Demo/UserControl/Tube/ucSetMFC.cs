@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using com.DataBaseModels;
+
 namespace Demo.UserControl.Tube
 {
     public partial class ucSetMFC : DevExpress.XtraEditors.XtraUserControl
@@ -29,6 +30,11 @@ namespace Demo.UserControl.Tube
             //stMFC_Para1.rWarnDiff_Persent = (float)Convert.ToDouble(txtSetGasWarnDiff.Text);
             //stMFC_Para.Add(stMFC_Para1);
             PlcVar.Tube[frmID.Unit].stMFC_Para[MFC_ID].rAlmDiff_Persent = (float)Convert.ToDouble(txtSetGasWarnDiff.Text);
+        }
+
+        private void ucSetMFC_Load(object sender, EventArgs e)
+        {
+            txtSetGasWarnDiff.Text = PlcVar.Tube[frmID.Unit].stMFC_Para[MFC_ID].rAlmDiff_Persent.ToString();
         }
     }    
 }

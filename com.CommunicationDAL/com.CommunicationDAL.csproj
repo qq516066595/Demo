@@ -83,7 +83,7 @@
     <Compile Include="DogIni.cs" />
     <Compile Include="MoonsCommLibHelper.cs" />
     <Compile Include="Mydog.cs" />
-    <Compile Include="MyModu.cs" />
+    <Compile Include="Mymode.cs" />
     <Compile Include="PlcOmronCip.cs" />
     <Compile Include="TubeDiComDAL.cs" />
     <Compile Include="TubeDoComDAL.cs" />
