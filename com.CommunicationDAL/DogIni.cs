@@ -4,6 +4,7 @@ using System.Text;
 
 namespace com.CommunicationDAL
 {
+
     public class DogIni
     {
         public string FileName;
