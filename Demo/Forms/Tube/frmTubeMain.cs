@@ -37,7 +37,6 @@ namespace Demo.Forms.Tube
             this.gridRecipeView.InitNewRow += GridRecipeView_InitNewRow;
         }
 
-
         #region 主界面
         #region 温区
         /// <summary>
@@ -55,36 +54,35 @@ namespace Demo.Forms.Tube
         /// </summary>
         private void TempBindings()
         {
-            //foreach (Control control in this.pcTempZone.Controls)
-            //{
-            //    if (control is LabelControl)
-            //    {
-            //        for (int i = 1; i <= 7; i++)
-            //        {
-            //            if (control.Name.Equals("lblZoneEx" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//外偶
-            //                ((LabelControl)control).Text = modus.StTempZoneArray[i].rExternal_Temp.ToString();
-            //            else if (control.Name.Equals("lblZoneIn" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//内偶
-            //                ((LabelControl)control).Text = modus.StTempZoneArray[i].rInternal_Temp.ToString();
-            //            else if (control.Name.Equals("lblZoneMV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//功率
-            //                ((LabelControl)control).Text = modus.StTempZoneArray[i].rMV.ToString();
-            //            else if (control.Name.Equals("lblZoneSP" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//过渡
-            //                ((LabelControl)control).Text = modus.grTemp_SPArray[i].ToString();
-            //        }
-            //        //水冷
-            //        lblWaterCooling1.Text = modus.grCooling_PV1.ToString();
-            //        lblWaterCooling2.Text = modus.grCooling_PV2.ToString();
-
-            //    }
-            //    //设定值
-            //    if (control is TextEdit)
-            //    {
-            //        for (int i = 1; i < 7; i++)
-            //        {
-            //            if (control.Name.Equals("txtZoneSV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//设定值
-            //                ((TextEdit)control).Text = modus.StTempZoneArray[i].rSet_Temp.ToString();
-            //        }
-            //    }
-            //}
+            foreach (Control control in this.pcTempZone.Controls)
+            {
+                if (control is LabelControl)
+                {
+                    for (int i = 1; i <= 7; i++) 
+                    {
+                        if (control.Name.Equals("lblZoneEx" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//外偶
+                            ((LabelControl)control).Text = PlcVar.Tube[frmID.Unit].stTempZone[i].rExternal_Temp.ToString();
+                        else if (control.Name.Equals("lblZoneIn" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//内偶
+                            ((LabelControl)control).Text = PlcVar.Tube[frmID.Unit].stTempZone[i].rInternal_Temp.ToString();
+                        else if (control.Name.Equals("lblZoneMV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//功率
+                            ((LabelControl)control).Text = PlcVar.Tube[frmID.Unit].stTempZone[i].rMV.ToString();
+                        //else if (control.Name.Equals("lblZoneSP" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//过渡
+                        //((LabelControl)control).Text = modus.grTemp_SPArray[i].ToString();
+                    }
+                    //水冷
+                    //lblWaterCooling1.Text = modus.grCooling_PV1.ToString();
+                    //lblWaterCooling2.Text = modus.grCooling_PV2.ToString();
+                }
+                //设定值
+                if (control is TextEdit)
+                {
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if (control.Name.Equals("txtZoneSV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//设定值
+                            ((TextEdit)control).Text = PlcVar.Tube[frmID.Unit].stTempZone[i].rCurrent_SV.ToString();
+                    }
+                }
+            }
         }
         /// <summary>
         /// 开启加热弹窗
@@ -119,14 +117,36 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnHWCLeakCheck_Click(object sender, EventArgs e)
         {
-            //mys.gbHMI_LeakCheck = true;
-            //help.SetbtnClickBackColor(btnHWCLeakCheck, Color.Lime, mys.gbHMI_LeakCheck);
+            PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck = true;
+            help.SetbtnClickBackColor(btnHWCLeakCheck, Color.Lime, PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck);
         }
         public void HWCsDataBinding()
         {
-            //lblHWCTempPV.Text = mys.stHWCs_Ctrl.rActTemperature.ToString();//实际温度
-            //txtHWCTempSV.Text = mys.stHWCs_Ctrl.rSetTemperature.ToString();//设定温度
-            //lblHWCWeight.Text = mys.Comm_rHCSPV.ToString();//液位重量
+            lblHWCTempPV.Text = PlcJht.stHWCs_Ctrl.rActTemperature.ToString();//实际温度
+            txtHWCTempSV.Text = PlcJht.stHWCs_Ctrl.rSetTemperature.ToString();//设定温度
+            string nNetWeight = "0";
+            int frmtag = (Int32)this.Tag;
+            switch (frmtag)
+            {
+                case 1:
+                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_1.ToString();//液位重量
+                    break;
+                case 2:
+                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_2.ToString();//液位重量
+                    break;
+                case 3:
+                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_3.ToString();//液位重量
+                    break;
+                case 4:
+                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_4.ToString();//液位重量
+                    break;
+                case 5:
+                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_5.ToString();//液位重量
+                    break;
+                default:
+                    break;
+            }
+            lblHWCWeight.Text = nNetWeight;//液位重量
         }
         #endregion
 
@@ -598,7 +618,12 @@ namespace Demo.Forms.Tube
         PlcModels myModus5 = new PlcModels();
         PlcModels mys = new PlcModels();
         private void frmTubeMain_Load(object sender, EventArgs e)
-        { 
+        {
+
+
+
+
+
 
             ////int a = (Int32)this.Tag;
             ////if (a == 1)//炉管一
@@ -679,7 +704,6 @@ namespace Demo.Forms.Tube
 
         } 
         Thread th1;
-        Thread th2;
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (th1 == null)
@@ -695,7 +719,6 @@ namespace Demo.Forms.Tube
                     th1.Start();
                 }
             }
-
             txtPumpSpeed.Text = test1; 
         }
 
@@ -720,8 +743,6 @@ namespace Demo.Forms.Tube
                 MessageBox.Show("Set Failed:" + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
-       
     }
      
 }

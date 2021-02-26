@@ -189,14 +189,14 @@ namespace com.DataBaseModels
             public UInt32 nVacumm2;
             public UInt32 nGas1;
             public UInt32 nGas2;
-            
-        }
-        
 
-            #endregion ------------------------------炉管结构体定义---------------------------------------
+        }
+
+
+        #endregion ------------------------------炉管结构体定义---------------------------------------
 
         #region 机械手结构体定义
-            public enum BoatState
+        public enum BoatState
         {
             DISABLE,
             NO_BOAT,
@@ -241,15 +241,15 @@ namespace com.DataBaseModels
             public bool bAlarm;                   //工位报警
 
         }
-        
+
         //[Serializable]
-       // [StructLayout(LayoutKind.Sequential, Pack = 1)]
+        // [StructLayout(LayoutKind.Sequential, Pack = 1)]
         public struct StationPara
         {
             public UInt16 nSetCoolTime;      //设定冷却时间
             public StationMode eStationMode; //工位状态，冷舟，热舟
             public bool bSheild;            //工位屏蔽
-           
+
         }
         [Serializable]
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
@@ -324,7 +324,7 @@ namespace com.DataBaseModels
             public UInt32 nConveyer1;
             public UInt32 nConveyer2;
             public UInt32 nSafe;
-            
+
         }
         #endregion ---------------------------机械手结构体定义--------------------------------------- 
 
@@ -631,7 +631,7 @@ namespace com.DataBaseModels
         public PlcModels.Comm_to_Tube[] stComm_to_Tube = new PlcModels.Comm_to_Tube[5];//到炉管的通讯
         public PlcModels.Comm_from_Tube[] stComm_from_Tube = new PlcModels.Comm_from_Tube[5];//来自炉管的通讯
         public PlcModels.DTSU666 stEnergyValue;//电能数据
-        public PlcModels.FXL_HWCs_Ctrl stHWCs_Ctrl;
+        public static PlcModels.FXL_HWCs_Ctrl stHWCs_Ctrl;
     }
   
     public class PlcTube
@@ -653,6 +653,7 @@ namespace com.DataBaseModels
         public bool gbHMI_Recipe_Finish;
         public bool gbHMI_Recipe_Abort;
         public UInt16 gnHMI_Hold_Time;
+        public string stCurrentRecipeName;
 
         public PlcModels.RecipePara[] stRecipePara = new PlcModels.RecipePara[46];
         public PlcModels.RecipeCtrl stCurrentRecipeCtrl;
@@ -679,6 +680,8 @@ namespace com.DataBaseModels
         public PlcModels.SV_Para BoatPush_SV_Para;//推舟轴参数结构体
         public PlcModels.YV_Ctrl CloseDoor_YV_Ctrl;
         public PlcModels.YV_Ctrl PushpullDoor_YV_Ctrl;
+        public float grHand_X_RulerPos;//推舟X轴磁栅尺位置
+        public float grHand_Z_RulerPos;//推舟Z轴磁栅尺位置
         public PlcModels.Comm_from_Tube stComm_from_Tube;
         public PlcModels.Comm_to_Tube stComm_to_Tube;
         public float grHMI_TempSV;
@@ -718,7 +721,7 @@ namespace com.DataBaseModels
             BOAT_MANAGE,
             ABOUT
         }
-        
+
         public static int Unit;//0:净化台  1：管1  2：管2  3：管3  4：管4  5：管5
         public static eFunctionID eFunction;//功能界面ID
 

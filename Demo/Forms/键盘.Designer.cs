@@ -1,6 +1,6 @@
 ﻿namespace Demo.Forms
 {
-    internal partial class 键盘
+    partial class 键盘
     {
         /// <summary>
         /// Required designer variable.
@@ -320,7 +320,6 @@
             this.Name = "键盘";
             this.Text = "键盘";
             this.Load += new System.EventHandler(this.键盘_Load);
-            this.Shown += new System.EventHandler(this.键盘_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,7 +343,6 @@
         public System.Windows.Forms.Button SKB_3;
         public System.Windows.Forms.Button SKB_2;
         public System.Windows.Forms.Button SKB_1;
-
         private static 键盘 _DefaultInstance;
         public static 键盘 DefaultInstance
         {

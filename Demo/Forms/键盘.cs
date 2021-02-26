@@ -12,7 +12,7 @@ using com.CommunicationDAL;
 
 namespace Demo.Forms
 {
-    internal partial class 键盘 : Form
+    public partial class 键盘 : Form
     {
         public 键盘()
         {
@@ -23,6 +23,7 @@ namespace Demo.Forms
         {
 
         }
+
 
         private void SKB_14_Click(object sender, EventArgs e)
         {
@@ -73,7 +74,7 @@ namespace Demo.Forms
 
         private void CheckIt()
         {
-            
+
             double Value = 0;
             Value = Microsoft.VisualBasic.Conversion.Val(Text1.Text);
             if (Value > MyModu.MaxSet | Value < MyModu.MinSet)
@@ -92,6 +93,6 @@ namespace Demo.Forms
             MyModu.Gyedit = "cancel";
         }
 
-       
+        
     }
 }
