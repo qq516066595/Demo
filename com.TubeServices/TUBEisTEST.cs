@@ -14,13 +14,14 @@ namespace com.TubeServices
     public class TUBEisTEST : Form
     {
         private System.ComponentModel.IContainer components;
-        private Button button1; 
+        private Button button1;
         private CommunicationDAL.NXCompolet nxCompolet1;
         private CommunicationDAL.NXCompolet nxCompolet2;
         private CommunicationDAL.NXCompolet nxCompolet3;
         private CommunicationDAL.NXCompolet nxCompolet4;
         private CommunicationDAL.NXCompolet nxCompolet5;
         private CommunicationDAL.NXCompolet nxCompolet6;
+        public string test;
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -31,41 +32,29 @@ namespace com.TubeServices
                 }
             }
             this.nxCompolet1.Active = false;
+            this.nxCompolet2.Active = false;
+            this.nxCompolet3.Active = false;
+            this.nxCompolet4.Active = false;
+            this.nxCompolet5.Active = false;
+            this.nxCompolet6.Active = false;
             base.Dispose(disposing);
         }
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.nxCompolet1 = new com.CommunicationDAL.NXCompolet(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.nxCompolet1 = new CommunicationDAL.NXCompolet(this.components);
+            this.nxCompolet2 = new CommunicationDAL.NXCompolet(this.components);
+            this.nxCompolet3 = new CommunicationDAL.NXCompolet(this.components);
+            this.nxCompolet4 = new CommunicationDAL.NXCompolet(this.components);
+            this.nxCompolet5 = new CommunicationDAL.NXCompolet(this.components);
+            this.nxCompolet6 = new CommunicationDAL.NXCompolet(this.components);
             this.SuspendLayout();
-            // 
-            // nxCompolet1
-            // 
-            //this.nxCompolet1.Active = false;
-            //this.nxCompolet1.ConnectionType = OMRON.Compolet.CIPCompolet64.ConnectionType.UCMM;
-            //this.nxCompolet1.DontFragment = false;
-            //this.nxCompolet1.LocalPort = 2;
-            //this.nxCompolet1.PeerAddress = "";
-            //this.nxCompolet1.ReceiveTimeLimit = ((long)(750));
-            //this.nxCompolet1.RoutePath = "";
-            //this.nxCompolet1.UseRoutePath = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(76, 95);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // TUBEisTEST
             // 
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.button1);
             this.Name = "TUBEisTEST";
+            this.Load += new System.EventHandler(this.TUBEisTEST_Load);
             this.ResumeLayout(false);
 
         }
@@ -74,9 +63,19 @@ namespace com.TubeServices
 
         public TUBEisTEST()
         {
-            InitializeComponent();
-             
-
+            InitializeComponent(); 
+            this.nxCompolet1.PeerAddress = "192.168.50.10";
+            this.nxCompolet1.Active = true;
+            this.nxCompolet2.PeerAddress = "192.168.50.20";
+            this.nxCompolet2.Active = true;
+            this.nxCompolet3.PeerAddress = "192.168.50.30";
+            this.nxCompolet3.Active = true;
+            this.nxCompolet4.PeerAddress = "192.168.50.40";
+            this.nxCompolet4.Active = true;
+            this.nxCompolet5.PeerAddress = "192.168.50.50";
+            this.nxCompolet5.Active = true;
+            this.nxCompolet6.PeerAddress = "192.168.50.100";
+            this.nxCompolet6.Active = true;
         }
 
         public bool[] iscContinue(int index)
@@ -140,9 +139,45 @@ namespace com.TubeServices
             try
             {
                 string[] variableList = new string[1];
-                variableList[0] = varName;
-                Hashtable retValue = this.nxCompolet1.ReadVariableMultiple(variableList);
-                  val = retValue[varName];
+           
+                if (index == 1)
+                {
+                    variableList[0] = varName;
+                    Hashtable retValue = this.nxCompolet1.ReadVariableMultiple(variableList);
+                    val = retValue[varName];
+                } else if (index ==2 ) {
+                    variableList[0] = varName;
+                    Hashtable retValue = this.nxCompolet2.ReadVariableMultiple(variableList);
+                    val = retValue[varName];
+                } else if (index ==3 )
+                {
+                    variableList[0] = varName;
+                    Hashtable retValue = this.nxCompolet3.ReadVariableMultiple(variableList);
+                    val = retValue[varName];
+                } else if (index ==4 )
+                {
+                    variableList[0] = varName;
+                    Hashtable retValue = this.nxCompolet4.ReadVariableMultiple(variableList);
+                    val = retValue[varName];
+
+                } else if (index ==5 )
+                {
+                    variableList[0] = varName;
+                    Hashtable retValue = this.nxCompolet5.ReadVariableMultiple(variableList);
+                    val = retValue[varName];
+
+                } else if (index ==6)
+                {
+                    variableList[0] = varName;
+                    Hashtable retValue = this.nxCompolet6.ReadVariableMultiple(variableList);
+                    val = retValue[varName];
+
+                }
+
+                Array.Clear(variableList, 0, variableList.Length);
+
+
+
             }
             catch (Exception ex )
             {
@@ -162,7 +197,28 @@ namespace com.TubeServices
 
             try
             {
-                this.nxCompolet1.WriteVariable(varName, witeValue);
+                if (index == 1)
+                {
+                    this.nxCompolet1.WriteVariable(varName, witeValue);
+                } else if (index == 2)
+                {
+                    this.nxCompolet2.WriteVariable(varName, witeValue);
+                }
+                else if (index == 3)
+                {
+                    this.nxCompolet3.WriteVariable(varName, witeValue);
+                }
+                else if (index == 4)
+                {
+                    this.nxCompolet4.WriteVariable(varName, witeValue);
+                }
+                else if (index == 5)
+                {
+                    this.nxCompolet5.WriteVariable(varName, witeValue);
+                } else if (index == 6)
+                {
+                    this.nxCompolet6.WriteVariable(varName, witeValue);
+                }
             }
             catch (Exception ex)
             { 
@@ -185,13 +241,13 @@ namespace com.TubeServices
             {
                 MessageBox.Show(string.Format("ReadVariableMultiple数据为空"));
                 varName = BitConverter.ToString(data, 0, data.Length).Replace("-", " ");
-            } 
+            }
             return data;
         }
 
+        private void TUBEisTEST_Load(object sender, EventArgs e)
+        {
 
-
-
-
+        }
     }
 }
