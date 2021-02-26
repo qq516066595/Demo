@@ -3366,7 +3366,7 @@
             // 
             this.ucSetMFC12.Location = new System.Drawing.Point(1083, 486);
             this.ucSetMFC12.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.ucSetMFC12.MFC_ID = 0;
+            this.ucSetMFC12.MFC_ID = 12;
             this.ucSetMFC12.Name = "ucSetMFC12";
             this.ucSetMFC12.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC12.TabIndex = 13;
@@ -3375,7 +3375,7 @@
             // 
             this.ucSetMFC11.Location = new System.Drawing.Point(743, 486);
             this.ucSetMFC11.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.ucSetMFC11.MFC_ID = 0;
+            this.ucSetMFC11.MFC_ID = 11;
             this.ucSetMFC11.Name = "ucSetMFC11";
             this.ucSetMFC11.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC11.TabIndex = 13;
@@ -3384,7 +3384,7 @@
             // 
             this.ucSetMFC10.Location = new System.Drawing.Point(390, 486);
             this.ucSetMFC10.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.ucSetMFC10.MFC_ID = 0;
+            this.ucSetMFC10.MFC_ID = 10;
             this.ucSetMFC10.Name = "ucSetMFC10";
             this.ucSetMFC10.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC10.TabIndex = 13;
@@ -3393,7 +3393,7 @@
             // 
             this.ucSetMFC5.Location = new System.Drawing.Point(50, 486);
             this.ucSetMFC5.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.ucSetMFC5.MFC_ID = 0;
+            this.ucSetMFC5.MFC_ID = 5;
             this.ucSetMFC5.Name = "ucSetMFC5";
             this.ucSetMFC5.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC5.TabIndex = 13;
@@ -3402,7 +3402,7 @@
             // 
             this.ucSetMFC9.Location = new System.Drawing.Point(1084, 266);
             this.ucSetMFC9.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.ucSetMFC9.MFC_ID = 0;
+            this.ucSetMFC9.MFC_ID = 9;
             this.ucSetMFC9.Name = "ucSetMFC9";
             this.ucSetMFC9.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC9.TabIndex = 13;
@@ -3420,7 +3420,7 @@
             // 
             this.ucSetMFC8.Location = new System.Drawing.Point(743, 266);
             this.ucSetMFC8.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.ucSetMFC8.MFC_ID = 0;
+            this.ucSetMFC8.MFC_ID = 8;
             this.ucSetMFC8.Name = "ucSetMFC8";
             this.ucSetMFC8.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC8.TabIndex = 13;
@@ -3429,7 +3429,7 @@
             // 
             this.ucSetMFC3.Location = new System.Drawing.Point(741, 44);
             this.ucSetMFC3.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.ucSetMFC3.MFC_ID = 0;
+            this.ucSetMFC3.MFC_ID = 3;
             this.ucSetMFC3.Name = "ucSetMFC3";
             this.ucSetMFC3.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC3.TabIndex = 13;
@@ -3438,7 +3438,7 @@
             // 
             this.ucSetMFC7.Location = new System.Drawing.Point(390, 266);
             this.ucSetMFC7.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.ucSetMFC7.MFC_ID = 0;
+            this.ucSetMFC7.MFC_ID = 7;
             this.ucSetMFC7.Name = "ucSetMFC7";
             this.ucSetMFC7.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC7.TabIndex = 13;
@@ -3447,7 +3447,7 @@
             // 
             this.ucSetMFC2.Location = new System.Drawing.Point(389, 44);
             this.ucSetMFC2.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.ucSetMFC2.MFC_ID = 0;
+            this.ucSetMFC2.MFC_ID = 2;
             this.ucSetMFC2.Name = "ucSetMFC2";
             this.ucSetMFC2.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC2.TabIndex = 13;
@@ -3456,7 +3456,7 @@
             // 
             this.ucSetMFC6.Location = new System.Drawing.Point(51, 266);
             this.ucSetMFC6.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.ucSetMFC6.MFC_ID = 0;
+            this.ucSetMFC6.MFC_ID = 6;
             this.ucSetMFC6.Name = "ucSetMFC6";
             this.ucSetMFC6.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC6.TabIndex = 13;
@@ -3465,7 +3465,7 @@
             // 
             this.ucSetMFC1.Location = new System.Drawing.Point(50, 44);
             this.ucSetMFC1.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.ucSetMFC1.MFC_ID = 0;
+            this.ucSetMFC1.MFC_ID = 1;
             this.ucSetMFC1.Name = "ucSetMFC1";
             this.ucSetMFC1.Size = new System.Drawing.Size(320, 204);
             this.ucSetMFC1.TabIndex = 13;

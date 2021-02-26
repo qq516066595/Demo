@@ -305,6 +305,7 @@
             this.txtHMI_JogSpeed.Size = new System.Drawing.Size(110, 33);
             this.txtHMI_JogSpeed.TabIndex = 25;
             this.txtHMI_JogSpeed.Text = "5";
+            this.txtHMI_JogSpeed.TextChanged += new System.EventHandler(this.txtHMI_JogSpeed_TextChanged);
             // 
             // labelControl23
             // 
@@ -601,6 +602,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ucAxisX";
             this.Size = new System.Drawing.Size(419, 765);
+            this.Load += new System.EventHandler(this.ucAxisX_Load);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

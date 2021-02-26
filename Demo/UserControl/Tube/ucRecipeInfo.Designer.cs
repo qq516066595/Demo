@@ -119,6 +119,7 @@
             this.btnStart.Size = new System.Drawing.Size(136, 47);
             this.btnStart.TabIndex = 5;
             this.btnStart.Text = "开始";
+            this.btnStart.Click += new System.EventHandler(this.BtnStart_Click);
             // 
             // btnHold
             // 
@@ -503,6 +504,7 @@
             "待清洗舟"});
             this.cmbBoatState.Size = new System.Drawing.Size(136, 36);
             this.cmbBoatState.TabIndex = 10;
+            this.cmbBoatState.SelectedIndexChanged += new System.EventHandler(this.CmbBoatState_SelectedIndexChanged);
             // 
             // separatorControl4
             // 
