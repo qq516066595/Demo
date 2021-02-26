@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTubeMain));
+            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem11 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
@@ -44,27 +46,25 @@
             DevExpress.Utils.ToolTipItem toolTipItem6 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem7 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series8 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView8 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series9 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView9 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series10 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView10 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series11 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView11 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series12 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView12 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series13 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView13 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series14 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView14 = new DevExpress.XtraCharts.LineSeriesView();
             DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem8 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView1 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView2 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView3 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView4 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView5 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView6 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series7 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView7 = new DevExpress.XtraCharts.LineSeriesView();
             DevExpress.Utils.SuperToolTip superToolTip9 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem9 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem10 = new DevExpress.Utils.ToolTipItem();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
@@ -563,21 +563,21 @@
             this.spcChart.Panel2.SuspendLayout();
             this.spcChart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTube)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridReport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewReport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).BeginInit();
@@ -1149,7 +1149,6 @@
             this.txtPumpSpeed.Properties.Appearance.Options.UseFont = true;
             this.txtPumpSpeed.Size = new System.Drawing.Size(77, 24);
             this.txtPumpSpeed.TabIndex = 15;
-            this.txtPumpSpeed.Click += new System.EventHandler(this.txtPumpSpeed_Click);
             // 
             // labelControl119
             // 
@@ -2288,7 +2287,7 @@
             this.repositoryItemButtonEdit1.AppearanceDisabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
             this.repositoryItemButtonEdit1.AutoHeight = false;
             this.repositoryItemButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "编辑", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "编辑", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
             this.repositoryItemButtonEdit1.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.repositoryItemButtonEdit1.Name = "repositoryItemButtonEdit1";
             this.repositoryItemButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
@@ -2674,13 +2673,13 @@
             this.picRefreshRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picRefreshRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picRefreshRecipe.Size = new System.Drawing.Size(44, 28);
-            superToolTip1.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            toolTipItem1.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            toolTipItem1.Appearance.Options.UseImage = true;
-            toolTipItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem1.Image")));
-            toolTipItem1.Text = "\r\n刷新配方";
-            superToolTip1.Items.Add(toolTipItem1);
-            this.picRefreshRecipe.SuperTip = superToolTip1;
+            superToolTip11.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem11.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            toolTipItem11.Appearance.Options.UseImage = true;
+            toolTipItem11.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem11.Image")));
+            toolTipItem11.Text = "\r\n刷新配方";
+            superToolTip11.Items.Add(toolTipItem11);
+            this.picRefreshRecipe.SuperTip = superToolTip11;
             this.picRefreshRecipe.TabIndex = 3;
             this.picRefreshRecipe.Click += new System.EventHandler(this.picRefreshRecipe_Click);
             // 
@@ -2696,13 +2695,13 @@
             this.picAddRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picAddRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picAddRecipe.Size = new System.Drawing.Size(44, 28);
-            superToolTip2.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            toolTipItem2.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            toolTipItem2.Appearance.Options.UseImage = true;
-            toolTipItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem2.Image")));
-            toolTipItem2.Text = "\r\n新建配方";
-            superToolTip2.Items.Add(toolTipItem2);
-            this.picAddRecipe.SuperTip = superToolTip2;
+            superToolTip1.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem1.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
+            toolTipItem1.Appearance.Options.UseImage = true;
+            toolTipItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem1.Image")));
+            toolTipItem1.Text = "\r\n新建配方";
+            superToolTip1.Items.Add(toolTipItem1);
+            this.picAddRecipe.SuperTip = superToolTip1;
             this.picAddRecipe.TabIndex = 3;
             this.picAddRecipe.Click += new System.EventHandler(this.picAddRecipe_Click);
             // 
@@ -2718,13 +2717,13 @@
             this.picOpenFile.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picOpenFile.Properties.ZoomAccelerationFactor = 1D;
             this.picOpenFile.Size = new System.Drawing.Size(44, 28);
-            superToolTip3.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            toolTipItem3.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            toolTipItem3.Appearance.Options.UseImage = true;
-            toolTipItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem3.Image")));
-            toolTipItem3.Text = "\r\n打开配方";
-            superToolTip3.Items.Add(toolTipItem3);
-            this.picOpenFile.SuperTip = superToolTip3;
+            superToolTip2.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem2.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            toolTipItem2.Appearance.Options.UseImage = true;
+            toolTipItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem2.Image")));
+            toolTipItem2.Text = "\r\n打开配方";
+            superToolTip2.Items.Add(toolTipItem2);
+            this.picOpenFile.SuperTip = superToolTip2;
             this.picOpenFile.TabIndex = 3;
             this.picOpenFile.Click += new System.EventHandler(this.picOpenFile_Click);
             // 
@@ -2740,12 +2739,12 @@
             this.picSaveRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picSaveRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picSaveRecipe.Size = new System.Drawing.Size(44, 28);
-            toolTipItem4.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            toolTipItem4.Appearance.Options.UseImage = true;
-            toolTipItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem4.Image")));
-            toolTipItem4.Text = "\r\n保存配方";
-            superToolTip4.Items.Add(toolTipItem4);
-            this.picSaveRecipe.SuperTip = superToolTip4;
+            toolTipItem3.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            toolTipItem3.Appearance.Options.UseImage = true;
+            toolTipItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem3.Image")));
+            toolTipItem3.Text = "\r\n保存配方";
+            superToolTip3.Items.Add(toolTipItem3);
+            this.picSaveRecipe.SuperTip = superToolTip3;
             this.picSaveRecipe.TabIndex = 2;
             this.picSaveRecipe.Click += new System.EventHandler(this.picSaveRecipe_Click);
             // 
@@ -2761,12 +2760,12 @@
             this.picDownloadRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picDownloadRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picDownloadRecipe.Size = new System.Drawing.Size(44, 28);
-            toolTipItem5.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            toolTipItem5.Appearance.Options.UseImage = true;
-            toolTipItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem5.Image")));
-            toolTipItem5.Text = "\r\n下载配方";
-            superToolTip5.Items.Add(toolTipItem5);
-            this.picDownloadRecipe.SuperTip = superToolTip5;
+            toolTipItem4.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
+            toolTipItem4.Appearance.Options.UseImage = true;
+            toolTipItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem4.Image")));
+            toolTipItem4.Text = "\r\n下载配方";
+            superToolTip4.Items.Add(toolTipItem4);
+            this.picDownloadRecipe.SuperTip = superToolTip4;
             this.picDownloadRecipe.TabIndex = 1;
             this.picDownloadRecipe.Click += new System.EventHandler(this.picDownloadRecipe_Click);
             // 
@@ -2782,12 +2781,12 @@
             this.picDefaultRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picDefaultRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picDefaultRecipe.Size = new System.Drawing.Size(44, 28);
-            toolTipItem6.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
-            toolTipItem6.Appearance.Options.UseImage = true;
-            toolTipItem6.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem6.Image")));
-            toolTipItem6.Text = "\r\n默认配方";
-            superToolTip6.Items.Add(toolTipItem6);
-            this.picDefaultRecipe.SuperTip = superToolTip6;
+            toolTipItem5.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            toolTipItem5.Appearance.Options.UseImage = true;
+            toolTipItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem5.Image")));
+            toolTipItem5.Text = "\r\n默认配方";
+            superToolTip5.Items.Add(toolTipItem5);
+            this.picDefaultRecipe.SuperTip = superToolTip5;
             this.picDefaultRecipe.TabIndex = 0;
             this.picDefaultRecipe.Click += new System.EventHandler(this.picDefaultRecipe_Click);
             // 
@@ -2803,12 +2802,12 @@
             this.picCheckRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picCheckRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picCheckRecipe.Size = new System.Drawing.Size(44, 28);
-            toolTipItem7.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
-            toolTipItem7.Appearance.Options.UseImage = true;
-            toolTipItem7.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem7.Image")));
-            toolTipItem7.Text = "\r\n校验配方";
-            superToolTip7.Items.Add(toolTipItem7);
-            this.picCheckRecipe.SuperTip = superToolTip7;
+            toolTipItem6.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image6")));
+            toolTipItem6.Appearance.Options.UseImage = true;
+            toolTipItem6.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem6.Image")));
+            toolTipItem6.Text = "\r\n校验配方";
+            superToolTip6.Items.Add(toolTipItem6);
+            this.picCheckRecipe.SuperTip = superToolTip6;
             this.picCheckRecipe.TabIndex = 0;
             this.picCheckRecipe.Click += new System.EventHandler(this.picCheckRecipe_Click);
             // 
@@ -2824,12 +2823,12 @@
             this.picUploadRecipe.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picUploadRecipe.Properties.ZoomAccelerationFactor = 1D;
             this.picUploadRecipe.Size = new System.Drawing.Size(44, 28);
-            toolTipItem8.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
-            toolTipItem8.Appearance.Options.UseImage = true;
-            toolTipItem8.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem8.Image")));
-            toolTipItem8.Text = "\r\n读取设备";
-            superToolTip8.Items.Add(toolTipItem8);
-            this.picUploadRecipe.SuperTip = superToolTip8;
+            toolTipItem7.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image7")));
+            toolTipItem7.Appearance.Options.UseImage = true;
+            toolTipItem7.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem7.Image")));
+            toolTipItem7.Text = "\r\n读取设备";
+            superToolTip7.Items.Add(toolTipItem7);
+            this.picUploadRecipe.SuperTip = superToolTip7;
             this.picUploadRecipe.TabIndex = 0;
             this.picUploadRecipe.Click += new System.EventHandler(this.picUploadRecipe_Click);
             // 
@@ -3074,40 +3073,40 @@
             // chartTube
             // 
             this.chartTube.DataBindings = null;
-            xyDiagram1.AxisX.CrosshairAxisLabelOptions.Pattern = "{A}";
-            xyDiagram1.AxisX.NumericScaleOptions.AutoGrid = false;
-            xyDiagram1.AxisX.NumericScaleOptions.GridAlignment = DevExpress.XtraCharts.NumericGridAlignment.Custom;
-            xyDiagram1.AxisX.NumericScaleOptions.GridSpacing = 2D;
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartTube.Diagram = xyDiagram1;
+            xyDiagram2.AxisX.CrosshairAxisLabelOptions.Pattern = "{A}";
+            xyDiagram2.AxisX.NumericScaleOptions.AutoGrid = false;
+            xyDiagram2.AxisX.NumericScaleOptions.GridAlignment = DevExpress.XtraCharts.NumericGridAlignment.Custom;
+            xyDiagram2.AxisX.NumericScaleOptions.GridSpacing = 2D;
+            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartTube.Diagram = xyDiagram2;
             this.chartTube.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartTube.Legend.Name = "Default Legend";
             this.chartTube.Legend.UseCheckBoxes = true;
             this.chartTube.Location = new System.Drawing.Point(0, 0);
             this.chartTube.Name = "chartTube";
-            series1.Name = "温区1实际值";
-            series1.View = lineSeriesView1;
-            series2.Name = "温区2实际值";
-            series2.View = lineSeriesView2;
-            series3.Name = "温区3实际值";
-            series3.View = lineSeriesView3;
-            series4.Name = "温区4实际值";
-            series4.View = lineSeriesView4;
-            series5.Name = "温区5实际值";
-            series5.View = lineSeriesView5;
-            series6.Name = "温区6实际值";
-            series6.View = lineSeriesView6;
-            series7.Name = "温区7实际值";
-            series7.View = lineSeriesView7;
+            series8.Name = "温区1实际值";
+            series8.View = lineSeriesView8;
+            series9.Name = "温区2实际值";
+            series9.View = lineSeriesView9;
+            series10.Name = "温区3实际值";
+            series10.View = lineSeriesView10;
+            series11.Name = "温区4实际值";
+            series11.View = lineSeriesView11;
+            series12.Name = "温区5实际值";
+            series12.View = lineSeriesView12;
+            series13.Name = "温区6实际值";
+            series13.View = lineSeriesView13;
+            series14.Name = "温区7实际值";
+            series14.View = lineSeriesView14;
             this.chartTube.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1,
-        series2,
-        series3,
-        series4,
-        series5,
-        series6,
-        series7};
+        series8,
+        series9,
+        series10,
+        series11,
+        series12,
+        series13,
+        series14};
             this.chartTube.Size = new System.Drawing.Size(975, 607);
             this.chartTube.TabIndex = 1;
             // 
@@ -3172,13 +3171,13 @@
             this.picTable.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picTable.Properties.ZoomAccelerationFactor = 1D;
             this.picTable.Size = new System.Drawing.Size(44, 28);
-            superToolTip9.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            toolTipItem9.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
-            toolTipItem9.Appearance.Options.UseImage = true;
-            toolTipItem9.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem9.Image")));
-            toolTipItem9.Text = "\r\n报表";
-            superToolTip9.Items.Add(toolTipItem9);
-            this.picTable.SuperTip = superToolTip9;
+            superToolTip8.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem8.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image8")));
+            toolTipItem8.Appearance.Options.UseImage = true;
+            toolTipItem8.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem8.Image")));
+            toolTipItem8.Text = "\r\n报表";
+            superToolTip8.Items.Add(toolTipItem8);
+            this.picTable.SuperTip = superToolTip8;
             this.picTable.TabIndex = 4;
             this.picTable.Click += new System.EventHandler(this.picTable_Click);
             // 
@@ -3194,13 +3193,13 @@
             this.picChart.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picChart.Properties.ZoomAccelerationFactor = 1D;
             this.picChart.Size = new System.Drawing.Size(44, 28);
-            superToolTip10.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
-            toolTipItem10.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
-            toolTipItem10.Appearance.Options.UseImage = true;
-            toolTipItem10.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem10.Image")));
-            toolTipItem10.Text = "\r\n曲线";
-            superToolTip10.Items.Add(toolTipItem10);
-            this.picChart.SuperTip = superToolTip10;
+            superToolTip9.AllowHtmlText = DevExpress.Utils.DefaultBoolean.True;
+            toolTipItem9.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
+            toolTipItem9.Appearance.Options.UseImage = true;
+            toolTipItem9.Image = ((System.Drawing.Image)(resources.GetObject("toolTipItem9.Image")));
+            toolTipItem9.Text = "\r\n曲线";
+            superToolTip9.Items.Add(toolTipItem9);
+            this.picChart.SuperTip = superToolTip9;
             this.picChart.TabIndex = 4;
             this.picChart.Click += new System.EventHandler(this.picChart_Click);
             // 
@@ -5483,21 +5482,21 @@
             this.spcChart.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.spcChart)).EndInit();
             this.spcChart.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTube)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridReport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewReport)).EndInit();

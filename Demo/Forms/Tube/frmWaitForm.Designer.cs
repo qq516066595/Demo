@@ -44,12 +44,12 @@
             this.progressPanel1.BarAnimationElementThickness = 2;
             this.progressPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.progressPanel1.ImageHorzOffset = 20;
-            this.progressPanel1.Location = new System.Drawing.Point(0, 16);
+            this.progressPanel1.Location = new System.Drawing.Point(0, 23);
             this.progressPanel1.LookAndFeel.SkinName = "Valentine";
             this.progressPanel1.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.progressPanel1.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.progressPanel1.Margin = new System.Windows.Forms.Padding(0, 4, 0, 4);
             this.progressPanel1.Name = "progressPanel1";
-            this.progressPanel1.Size = new System.Drawing.Size(246, 35);
+            this.progressPanel1.Size = new System.Drawing.Size(369, 55);
             this.progressPanel1.TabIndex = 0;
             this.progressPanel1.Text = "progressPanel1";
             // 
@@ -63,22 +63,24 @@
             this.tableLayoutPanel1.Controls.Add(this.progressPanel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 13, 0, 13);
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 19, 0, 19);
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(246, 67);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(369, 101);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // frmWaitForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(246, 67);
+            this.ClientSize = new System.Drawing.Size(369, 101);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmWaitForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";

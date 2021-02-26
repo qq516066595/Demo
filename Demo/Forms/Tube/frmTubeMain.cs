@@ -12,7 +12,6 @@ using com.DataBaseModels;
 using DevExpress.XtraGrid.Views.Base;
 using com.TubeServices;
 using System.Threading;
-using com.CommunicationDAL;
 /*
 * namespace：Demo.Forms
 * className：frmHomePage
@@ -598,7 +597,12 @@ namespace Demo.Forms.Tube
         PlcModels myModus5 = new PlcModels();
         PlcModels mys = new PlcModels();
         private void frmTubeMain_Load(object sender, EventArgs e)
-        { 
+        {
+
+
+
+
+
 
             ////int a = (Int32)this.Tag;
             ////if (a == 1)//炉管一
@@ -679,7 +683,6 @@ namespace Demo.Forms.Tube
 
         } 
         Thread th1;
-        Thread th2;
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (th1 == null)
@@ -695,33 +698,9 @@ namespace Demo.Forms.Tube
                     th1.Start();
                 }
             }
-
             txtPumpSpeed.Text = test1; 
         }
 
-        private void txtPumpSpeed_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                键盘.DefaultInstance.Text = "温度设置2";
-                MyModu.MinSet = 0;
-                MyModu.MaxSet = 1200;
-                键盘.DefaultInstance.ShowDialog();
-                if (MyModu.Gyedit != "cancel")
-                {
-                    tube.WiteVariable(6, "OP_Mode", MyModu.Gyedit);
-                }
-                MyModu.LogEvent(6, "温度设置2", MyModu.Gyedit);
-                return;
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Set Failed:" + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-       
     }
      
 }

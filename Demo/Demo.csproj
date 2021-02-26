@@ -89,7 +89,6 @@
     <Reference Include="log4net">
       <HintPath>lib\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\MySql.Data.dll</HintPath>
@@ -422,10 +421,6 @@
     <None Include="Resources\静音 红.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\com.CommunicationDAL\com.CommunicationDAL.csproj">
-      <Project>{e34c4230-911e-47fb-83b4-d5d1cfd0fcc4}</Project>
-      <Name>com.CommunicationDAL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\com.DataBaseModels\com.DataBaseModels.csproj">
       <Project>{b715fd74-b066-4c5d-86bb-a1a700ba8795}</Project>
       <Name>com.DataBaseModels</Name>
