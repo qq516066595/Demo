@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace com.CommunicationDAL
 {
+   //倍福
    public class PlcBeckhoffAds
     {
         private SerialPort FX;

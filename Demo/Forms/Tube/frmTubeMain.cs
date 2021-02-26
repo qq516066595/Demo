@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using com.DataBaseModels;
 using DevExpress.XtraGrid.Views.Base;
+using com.TubeServices;
+using System.Threading;
 /*
 * namespace：Demo.Forms
 * className：frmHomePage
@@ -616,6 +618,12 @@ namespace Demo.Forms.Tube
         PlcModels mys = new PlcModels();
         private void frmTubeMain_Load(object sender, EventArgs e)
         {
+
+
+
+
+
+
             ////int a = (Int32)this.Tag;
             ////if (a == 1)//炉管一
             ////    gettag(1);
@@ -683,6 +691,46 @@ namespace Demo.Forms.Tube
         }
 
 
-        #endregion
+        TUBEisTEST tube = new TUBEisTEST();
+        string test1; 
+        private void intIT()
+        {   
+
+            if (Convert.ToInt32(this.Tag) == 1)
+            { 
+               test1 = tube.GetVariableInfo(6, "OP_Mode"); 
+            }
+
+        } 
+        Thread th1;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (th1 == null)
+            {
+                th1 = new Thread(intIT);
+                th1.Start();
+            }
+            else
+            {
+                if (th1.ThreadState == System.Threading.ThreadState.Stopped)
+                {
+                    th1 = new Thread(intIT);
+                    th1.Start();
+                }
+            }
+            txtPumpSpeed.Text = test1; 
+        }
+
     }
+     
 }
+
+
+        #endregion
+     
+
+        
+
+
+
+ 

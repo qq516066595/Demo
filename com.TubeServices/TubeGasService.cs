@@ -10,31 +10,33 @@ using System.Threading.Tasks;
 namespace com.TubeServices
 {
 
-   public class TubeGasService
+   public static class TubeGasService
     {
         public static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        public static string test;
 
-        private static TubeGasService instance;
+        //private static TubeGasService instance;
 
-        private TubeGasService() { }
+        //public TubeGasService() { }
 
-        public static TubeGasService Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new TubeGasService();
-                }
-                return instance;
-            }
-        }
 
-        public void GetGasInfo(int tubeIndex)
-        { 
-            //PlcModels.AxisParaEx sd = new PlcModels.AxisParaEx();
-            //sd.bAutoCalcEnable = false;
-        }
+        //public static TubeGasService Instance
+        //{
+        //    get
+        //    {
+        //        if (instance == null)
+        //        {
+        //            instance = new TubeGasService();
+        //        }
+        //        return instance;
+        //    }
+        //}
+
+        //public void GetGasInfo(int tubeIndex)
+        //{ 
+        //    //PlcModels.AxisParaEx sd = new PlcModels.AxisParaEx();
+        //    //sd.bAutoCalcEnable = false;
+        //}
 
 
 

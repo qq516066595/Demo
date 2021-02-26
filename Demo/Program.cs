@@ -23,8 +23,8 @@ namespace Demo
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.Skins.SkinManager.EnableMdiFormSkins();
             Application.SetCompatibleTextRenderingDefault(false);
+            log4net.Config.XmlConfigurator.Configure();
             Application.Run(new frmParent());
-
             //Application.Run(new XtraForm1());
             
         }
