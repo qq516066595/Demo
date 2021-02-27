@@ -115,7 +115,7 @@ namespace com.DataBaseModels
             public int Loop_Counter;
             public int Loop_Start_Step;
         }
-        //public static stRecipePara[] stRecipeArray = new stRecipePara[45];
+       
         //****************当前工艺控制****************
         [Serializable]
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
@@ -229,7 +229,7 @@ namespace com.DataBaseModels
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
         public struct BoatInfo
         {
-            [MarshalAs(UnmanagedType.LPStr, SizeConst = 10)]
+            //[MarshalAs(UnmanagedType.LPStr, SizeConst = 10)]
             public string ID;                    //舟托编号  
             public BoatState eBoatState;         //舟状态
             public WaferMode eWaferMode;         //硅片状态
@@ -255,19 +255,13 @@ namespace com.DataBaseModels
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
         public struct BoatList
         {
-            [MarshalAs(UnmanagedType.LPStr, SizeConst = 10)]
+            //[MarshalAs(UnmanagedType.LPStr, SizeConst = 10)]
             public string ID;
             public Int16 iToTubeNum;     //去往哪个管
             public bool bCleanFlag;
 
         }
-        public struct mydemo
-        {
-            [MarshalAs(UnmanagedType.LPStr, SizeConst = 21)]
-            public string str1;
-            [MarshalAs(UnmanagedType.LPArray, SizeConst = 20)]
-            public byte[] by;
-        }
+        
         //****************机械手轴扩展参数结构体****************
         public struct HandAxisParaEx
         {
@@ -297,7 +291,7 @@ namespace com.DataBaseModels
         public struct WSL_and_EWH
         {
             public byte nHeartBeat;
-            [MarshalAs(UnmanagedType.LPStr, SizeConst = 10)]
+            //[MarshalAs(UnmanagedType.LPStr, SizeConst = 10)]
             public string ID;
             public Int16 iFromTubeNum;          //来自哪个管
             public BoatState eBoatState;       //舟状态
@@ -409,20 +403,21 @@ namespace com.DataBaseModels
             public bool bJogB_Condition;
             public bool bReset_Execute;
             public bool bStop_Execute;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 30)]
+
+            public bool P_SW;
+            public bool N_SW;
+            public bool O_SW;
+            //[MarshalAs(UnmanagedType.ByValArray, SizeConst = 30)]
             public bool[] bAbs_Execute;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 30)]
+            //[MarshalAs(UnmanagedType.ByValArray, SizeConst = 30)]
             public bool[] bAbs_Condition;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 30)]
+            //[MarshalAs(UnmanagedType.ByValArray, SizeConst = 30)]
             public bool[] bPos_Reached;
             public float rOverride;
             public float rActPos;
             public float rActSpeed;
             public float rAct_Torque;
-            public bool P_SW;
-            public bool N_SW;
-            public bool O_SW;
-            public bool bAlarm;
+                    
             public UInt16 nErrorCode;
             public UInt16 nECT_ErrorCode;
         }
@@ -442,9 +437,9 @@ namespace com.DataBaseModels
             public float rJerk;
             public float rMaxPos;
             public float rMinPos;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 30)]
+            //[MarshalAs(UnmanagedType.ByValArray, SizeConst = 30)]
             public float[] rAbs_Pos;
-            [MarshalAs(UnmanagedType.ByValArray, SizeConst = 30)]
+            //[MarshalAs(UnmanagedType.ByValArray, SizeConst = 30)]
             public float[] rAbs_Speed;
             public bool bEnableT_Protect;
             public float rMax_Torque;
@@ -583,7 +578,7 @@ namespace com.DataBaseModels
 
 
     }
-    public class PlcJht
+    public struct PlcJht
     {
 
         public bool gbBeepSheild;//蜂鸣屏蔽
@@ -602,7 +597,7 @@ namespace com.DataBaseModels
         public bool gbHand_Z_Unlock_1;//机械手Z轴高级解除联锁
         public bool gbConveyer_Unlock; //输送位解除联锁
         public float grHand_Z_RulerPos;//机械手Z轴磁栅尺位置
-        public string[] gsVersion = new string[32];//软件版本号
+        public string gsVersion;//软件版本号
         public bool gbLicense_OK;//注册ok标志位
         public Int32 giSN;//PLC序列号
         public Int32 giLicense_Code;//PLC注册码
@@ -616,24 +611,26 @@ namespace com.DataBaseModels
         public PlcModels.HandAxisParaEx AxisParaEx;//轴扩展参数结构体
         public PlcModels.OP_MODE OP_Mode;//系统模式枚举
         public PlcModels.OP_Cmd OP_Cmd;//系统模式操作
-        public PlcModels.BoatList[] garrBoatList = new PlcModels.BoatList[20];//舟列表
-        public PlcModels.BoatInfo[] stBuffer_BoatInfo = new PlcModels.BoatInfo[6];//缓存位舟信息
-        public PlcModels.BoatInfo[] stTube_BoatInfo = new PlcModels.BoatInfo[5];//炉管舟信息
+        public PlcModels.BoatList[] garrBoatList;//舟列表 [20]
+        public PlcModels.BoatInfo[] stBuffer_BoatInfo;//缓存位舟信息[6]
+        public PlcModels.BoatInfo[] stTube_BoatInfo;//炉管舟信息[5]
         public PlcModels.BoatInfo stConveyer_BoatInfo;//输送位舟信息
         public PlcModels.BoatInfo stHand_BoatInfo;//机械手舟信息
-        public PlcModels.StationPara[] stBufferPara = new PlcModels.StationPara[6];//缓存位参数
-        public PlcModels.StationPara[] stTubePara = new PlcModels.StationPara[5];//炉管位参数
+        public PlcModels.StationPara[] stBufferPara;//缓存位参数[6]
+        public PlcModels.StationPara[] stTubePara;//炉管位参数[5]
         public PlcModels.SV_Ctrl Hand_X_SV_Ctrl;//机械手X轴控制结构体
         public PlcModels.SV_Para Hand_X_SV_Para;//机械手X轴参数结构体
         public PlcModels.SV_Ctrl Hand_Z_SV_Ctrl;//机械手Z轴控制结构体
         public PlcModels.SV_Para Hand_Z_SV_Para;//机械手Z轴参数结构体
-        public PlcModels.Comm_to_Tube[] stComm_to_Tube = new PlcModels.Comm_to_Tube[5];//到炉管的通讯
-        public PlcModels.Comm_from_Tube[] stComm_from_Tube = new PlcModels.Comm_from_Tube[5];//来自炉管的通讯
+        public PlcModels.Comm_to_Tube[] stComm_to_Tube;//到炉管的通讯[5]
+        public PlcModels.Comm_from_Tube[] stComm_from_Tube;//来自炉管的通讯[5]
         public PlcModels.DTSU666 stEnergyValue;//电能数据
         public PlcModels.FXL_HWCs_Ctrl stHWCs_Ctrl;
+
+        public bool HmiConnected;//上位机成功连接到PLC
     }
 
-    public class PlcTube
+    public struct PlcTube
     {
         public PlcModels.TubeErr stTubeAlm;
         public PlcModels.TubeErr stTubeWarn;
@@ -642,7 +639,7 @@ namespace com.DataBaseModels
         public bool gbHMI_CloseDoor;
         public bool gbHMI_BoatIn;
         public bool gbHMI_BoatOut;
-        public string[] gsVersion = new string[32];//软件版本号
+        public string gsVersion;//软件版本号
         public bool gbLicense_OK;//注册ok标志位
         public Int32 giSN;//PLC序列号
         public Int32 giLicense_Code;//PLC注册码
@@ -653,7 +650,7 @@ namespace com.DataBaseModels
         public bool gbHMI_Recipe_Abort;
         public UInt16 gnHMI_Hold_Time;
 
-        public PlcModels.RecipePara[] stRecipePara = new PlcModels.RecipePara[46];
+        public PlcModels.RecipePara[] stRecipePara;//46个
         public PlcModels.RecipeCtrl stCurrentRecipeCtrl;
         public Int16 giRecipe_ID;
         public Int16 giTubeRunCount;
@@ -684,8 +681,8 @@ namespace com.DataBaseModels
         public float grHMI_TempRump;
         public bool gbHMI_Temp_Enable;
         public float grTubeTail_Temp;
-        public PlcModels.TempZone[] stTempZone = new PlcModels.TempZone[8];
-        public PlcModels.HeatModelPara stTempPara;
+        public PlcModels.TempZone[] stTempZone;//8 个
+        public PlcModels.HeatModelPara[] stTempPara;//8
         public float grTube_ActPressure;
         public float grActLeakRate;
         public bool gbHMI_LeakCheck;
@@ -693,16 +690,13 @@ namespace com.DataBaseModels
         public PlcModels.Pump_Ctrl stPump_Ctrl;
 
         public bool gbValve_Unlock;
-        public PlcModels.MFC_Para[] stMFC_Para = new PlcModels.MFC_Para[12];
-        public PlcModels.MFC_Value[] stMFC_Value = new PlcModels.MFC_Value[12];
-        public PlcModels.Valve_Ctrl[] stValve_Ctrl = new PlcModels.Valve_Ctrl[24];
+        public PlcModels.MFC_Para[] stMFC_Para;//12
+        public PlcModels.MFC_Value[] stMFC_Value;//12
+        public PlcModels.Valve_Ctrl[] stValve_Ctrl;//32
         public float grButterFly_ActPos;
 
-    }
-    public class PlcVar
-    {
-        public static PlcJht Jht;
-        public static PlcTube[] Tube = new PlcTube[6];
+        public bool HmiConnected;//上位机成功连接到PLC
+
     }
     public class frmID
     {
@@ -717,9 +711,59 @@ namespace com.DataBaseModels
             BOAT_MANAGE,
             ABOUT
         }
-        
+
         public static int Unit;//0:净化台  1：管1  2：管2  3：管3  4：管4  5：管5
         public static eFunctionID eFunction;//功能界面ID
 
     }
+    public static class PlcVar
+    {
+        public static PlcJht Jht;
+        public static PlcTube[] Tube = new PlcTube[6];
+        
+        //在构造函数中对变量中的数组数量初始化
+        static PlcVar()
+        {
+            Jht.Hand_X_SV_Ctrl.bAbs_Execute = new bool[32];
+            Jht.Hand_X_SV_Ctrl.bAbs_Condition = new bool[32];
+            Jht.Hand_X_SV_Ctrl.bPos_Reached = new bool[32];
+            Jht.Hand_X_SV_Para.rAbs_Pos = new float[32];
+            Jht.Hand_X_SV_Para.rAbs_Speed = new float[32];
+
+            Jht.Hand_Z_SV_Ctrl.bAbs_Execute = new bool[32];
+            Jht.Hand_Z_SV_Ctrl.bAbs_Condition = new bool[32];
+            Jht.Hand_Z_SV_Ctrl.bPos_Reached = new bool[32];
+            Jht.Hand_Z_SV_Para.rAbs_Pos = new float[32];
+            Jht.Hand_Z_SV_Para.rAbs_Speed = new float[32];
+
+            Jht.garrBoatList = new PlcModels.BoatList[20];
+            Jht.stBuffer_BoatInfo = new PlcModels.BoatInfo[6];
+            Jht.stBufferPara = new PlcModels.StationPara[6];
+            Jht.stTube_BoatInfo = new PlcModels.BoatInfo[5];
+            Jht.stTubePara = new PlcModels.StationPara[5];
+            Jht.stComm_from_Tube = new PlcModels.Comm_from_Tube[5];
+            Jht.stComm_to_Tube = new PlcModels.Comm_to_Tube[5];
+
+            
+            for (int i=0;i<6;i++)
+            {
+                Tube[i].stRecipePara = new PlcModels.RecipePara[46];
+
+                Tube[i].BoatPush_SV_Ctrl.bAbs_Execute = new bool[32];
+                Tube[i].BoatPush_SV_Ctrl.bAbs_Condition = new bool[32];
+                Tube[i].BoatPush_SV_Ctrl.bPos_Reached = new bool[32];
+                Tube[i].BoatPush_SV_Para.rAbs_Pos = new float[32];
+                Tube[i].BoatPush_SV_Para.rAbs_Speed = new float[32];
+
+                Tube[i].stTempZone = new PlcModels.TempZone[8];
+                Tube[i].stTempPara = new PlcModels.HeatModelPara[8];
+
+                Tube[i].stMFC_Para = new PlcModels.MFC_Para[12];
+                Tube[i].stMFC_Value = new PlcModels.MFC_Value[12];
+                Tube[i].stValve_Ctrl = new PlcModels.Valve_Ctrl[32];
+
+            }
+        }
+    }
+    
 }
