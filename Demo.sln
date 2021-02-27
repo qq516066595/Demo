@@ -43,7 +43,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.Controls", "com.Control
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{88A8B37F-A64C-4CAA-97F2-7E5C837C08D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.Services", "com.TubeServices\com.Services.csproj", "{A9A14334-CABD-40FC-9D42-648F038D15E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.TubeServices", "com.TubeServices\com.TubeServices.csproj", "{A9A14334-CABD-40FC-9D42-648F038D15E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.CommunicationModels", "com.CommunicationModels\com.CommunicationModels.csproj", "{BC9B43A4-F5C6-4FFB-9CEE-2EEF9230B8E8}"
 EndProject

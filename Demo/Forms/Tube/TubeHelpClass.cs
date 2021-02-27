@@ -33,11 +33,24 @@ namespace Demo.Forms.Tube
         /// </summary>
         /// <param name="time"></param>
         /// <returns></returns>
-        public string timeFormatIntToString(uint time)
+        public string timeFormatFloatToString(float time)
         {
             try
             {
-                string newTime = ((Int32)time / 60).ToString() + " Min " + ((Int32)time % 60).ToString() + " s";
+                string newTime = ((float)time / 60).ToString() + " Min " + ((float)time % 60).ToString() + " s";
+                return newTime;
+            }
+            catch (Exception e)
+            {
+                log.Error("秒转分钟", e);
+                return "";
+            }
+        }
+        public string timeFormatUshortToString(ushort time)
+        {
+            try
+            {
+                string newTime = ((ushort)time / 60).ToString() + " Min " + ((ushort)time % 60).ToString() + " s";
                 return newTime;
             }
             catch (Exception e)
@@ -393,7 +406,14 @@ namespace Demo.Forms.Tube
 
                 Cells cells = workbook.Worksheets[0].Cells;
                 //DataTable dataTable = cells.ExportDataTable(1, 0, cells.MaxDataRow, cells.MaxColumn);//没有列名
-                dt = cells.ExportDataTable(0, 0, cells.MaxDataRow + 1, cells.MaxColumn + 1, true);//有列名
+                if (cells.Count >0 )
+                    dt = cells.ExportDataTable(0, 0, cells.MaxDataRow + 1, cells.MaxColumn + 1, true);//有列名
+                else
+                    MessageBox.Show("文件内容为空！");
+            }
+            else
+            {
+                MessageBox.Show("导入失败！");
             }
             return dt;
         }
@@ -505,7 +525,7 @@ namespace Demo.Forms.Tube
             splashScreen.SetWaitFormDescription(description);
         }
 
-        public static void ShowWait<T>(this XtraForm form,string caption ="请等待",string description="下载中...")
+        public static void ShowWait<T>(this XtraForm form, string caption = "请等待", string description = "下载中...")
         {
             //打开等待窗体
             splashScreen = new DevExpress.XtraSplashScreen.SplashScreenManager(form, typeof(frmWaitForm), true, true);
@@ -522,6 +542,41 @@ namespace Demo.Forms.Tube
         public static void CloseWait(this XtraForm form)
         {
             splashScreen.CloseWaitForm();
+        }
+
+        #endregion
+
+        #region 历史曲线
+        /// <summary>
+        /// 创建Series
+        /// </summary>
+        /// <param name="chat">ChartControl</param>
+        /// <param name="seriesName">Series名字『诸如：理论电量』</param>
+        /// <param name="seriesType">seriesType『枚举』</param>
+        /// <param name="dataSource">数据源</param>
+        /// <param name="xBindName">ChartControl的X轴绑定</param>
+        /// <param name="yBindName">ChartControl的Y轴绑定</param>
+        /// <param name="createSeriesRule">Series自定义『委托』</param>
+        public static void CreateSeries(this DevExpress.XtraCharts.ChartControl chart, string seriesName, DevExpress.XtraCharts.ViewType seriesType, object dataSource, string xBindName, string yBindName, Action<DevExpress.XtraCharts.Series> createSeriesRule)
+        {
+            if (chart == null)
+                throw new ArgumentNullException("chat");
+            if (string.IsNullOrEmpty(seriesName))
+                throw new ArgumentNullException("seriesType");
+            if (string.IsNullOrEmpty(xBindName))
+                throw new ArgumentNullException("xBindName");
+            if (string.IsNullOrEmpty(yBindName))
+                throw new ArgumentNullException("yBindName");
+
+            DevExpress.XtraCharts.Series _series = new DevExpress.XtraCharts.Series(seriesName, seriesType);
+            _series.ArgumentScaleType = DevExpress.XtraCharts.ScaleType.Qualitative;
+            _series.ArgumentDataMember = xBindName;
+            _series.ValueDataMembers[0] = yBindName;
+            
+            _series.DataSource = dataSource;
+            if (createSeriesRule != null)
+                createSeriesRule(_series);
+            chart.Series.Add(_series);
         }
         #endregion
     }

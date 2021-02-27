@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using com.DataBaseModels;
 using Demo.Forms.Tube;
+using com.TubeServices;
 
 /*
 * namespace：Demo.Forms.Tube
@@ -27,31 +28,11 @@ namespace Demo.UserControl.Tube
     public partial class ucRecipeInfo : DevExpress.XtraEditors.XtraUserControl
     {
         TubeHelpClass help = new TubeHelpClass();
+        //TubeModelClass models = new TubeModelClass();
         public ucRecipeInfo()
         {
             InitializeComponent();
         }
-        public void ucRecipe(PlcModels myModus)
-        {
-            //modus = myModus;
-            //tsAutoSelect.IsOn = modus.OP_Mode == 1 ? false : modus.OP_Mode == 3 ? true : false;
-            //lblRecipeName.Text = modus.sCurrentRecipeName;
-            //lblRecipeTotalTime.Text = help.timeFormatIntToString(modus.gnProcessWorkingTime);
-            //lblRecipeWorkTime.Text = help.timeFormatIntToString(modus.gnProcessWorkingTime);
-            //lblRecipeRemainTime.Text = help.timeFormatIntToString(modus.gnProcessRemainTime);
-            //lblStepID.Text = modus.giRecipe_ID.ToString();
-            //lblStepName.Text = help.KSrecipeNameFormatIntToString(modus.stcurrentRecipeCtrl.eName);
-            //lblStepTotalTime.Text = help.timeFormatIntToString(modus.stcurrentRecipeCtrl.nDuration);
-            //lblStepWorkTime.Text = help.timeFormatIntToString(modus.stcurrentRecipeCtrl.nWorking_Time);
-            //lblStepRemainTime.Text = help.timeFormatIntToString(modus.stcurrentRecipeCtrl.nRemain_Time);
-
-            //cmbBoatState.SelectedIndexChanged += CmbBoatState_SelectedIndexChanged;
-            //btnStart.Click += BtnStart_Click;
-        }
-
-
-
-        PlcModels modus = new PlcModels();
 
         /// <summary>
         /// 舟状态改变
@@ -60,7 +41,7 @@ namespace Demo.UserControl.Tube
         /// <param name="e"></param>
         private void CmbBoatState_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // modus.stTube_BoatInfos.eBoatState = cmbBoatState.SelectedIndex;
+            PlcVar.Tube[frmID.Unit].stTube_BoatInfo.eBoatState = (PlcModels.BoatState)cmbBoatState.SelectedIndex;
         }
 
         /// <summary>
@@ -70,19 +51,28 @@ namespace Demo.UserControl.Tube
         /// <param name="e"></param>
         private void tsAutoSelect_Toggled(object sender, EventArgs e)
         {
-            //if (tsAutoSelect.IsOn)//自动
-            //{
-            //    modus.OP_Mode = 3;
-            //}
-            //else//手动
-            //{
-            //    modus.OP_Mode = 1;
-            //}
+            if (tsAutoSelect.IsOn)//自动
+            {
+                PlcVar.Tube[frmID.Unit].OP_Mode = (PlcModels.OP_MODE)3;
+            }
+            else//手动
+            {
+                PlcVar.Tube[frmID.Unit].OP_Mode = (PlcModels.OP_MODE)1;
+            }
         }
 
         private void ucRecipeInfo_Load(object sender, EventArgs e)
         {
-
+            //tsAutoSelect.IsOn = PlcVar.Tube[frmID.Unit].OP_Mode == (PlcModels.OP_MODE)1 ? false : PlcVar.Tube[frmID.Unit].OP_Mode == (PlcModels.OP_MODE)3 ? true : false;
+            //lblRecipeName.Text = PlcVar.Tube[frmID.Unit].stCurrentRecipeName;
+            //lblRecipeTotalTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
+            //lblRecipeWorkTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
+            //lblRecipeRemainTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessRemainTime);
+            //lblStepID.Text = PlcVar.Tube[frmID.Unit].giRecipe_ID.ToString();
+            //lblStepName.Text = help.KSrecipeNameFormatIntToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.eName);
+            //lblStepTotalTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nDuration);
+            //lblStepWorkTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nWorking_Time);
+            //lblStepRemainTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nRemain_Time);
         }
 
         /// <summary>
@@ -92,8 +82,8 @@ namespace Demo.UserControl.Tube
         /// <param name="e"></param>
         private void BtnStart_Click(object sender, EventArgs e)
         {
-            //modus.gbHMI_Recipe_Start = !modus.gbHMI_Recipe_Start;
-            //help.SetbtnClickBackColor(btnStart, Color.Lime, modus.gbHMI_Recipe_Start);
+            PlcVar.Tube[frmID.Unit].gbHMI_Recipe_Start = !PlcVar.Tube[frmID.Unit].gbHMI_Recipe_Start;
+            help.SetbtnClickBackColor(btnStart, Color.Lime, PlcVar.Tube[frmID.Unit].gbHMI_Recipe_Start);
         }
         /// <summary>
         /// 保持
@@ -102,8 +92,8 @@ namespace Demo.UserControl.Tube
         /// <param name="e"></param>
         private void btnHold_Click(object sender, EventArgs e)
         {
-            //modus.gbHMI_Recipe_Hold = !modus.gbHMI_Recipe_Hold;
-            //help.SetbtnClickBackColor(btnHold, Color.Yellow, modus.gbHMI_Recipe_Hold);
+            PlcVar.Tube[frmID.Unit].gbHMI_Recipe_Hold = !PlcVar.Tube[frmID.Unit].gbHMI_Recipe_Hold;
+            help.SetbtnClickBackColor(btnHold, Color.Yellow, PlcVar.Tube[frmID.Unit].gbHMI_Recipe_Hold);
         }
         /// <summary>
         /// 跳步
@@ -121,8 +111,8 @@ namespace Demo.UserControl.Tube
         /// <param name="e"></param>
         private void btnAbort_Click(object sender, EventArgs e)
         {
-            //modus.gbHMI_Recipe_Abort = !modus.gbHMI_Recipe_Abort;
-            //help.SetbtnClickBackColor(btnAbort, Color.Red, modus.gbHMI_Recipe_Abort);
+            PlcVar.Tube[frmID.Unit].gbHMI_Recipe_Abort = !PlcVar.Tube[frmID.Unit].gbHMI_Recipe_Abort;
+            help.SetbtnClickBackColor(btnAbort, Color.Red, PlcVar.Tube[frmID.Unit].gbHMI_Recipe_Abort);
         }
         /// <summary>
         /// 结束
@@ -131,8 +121,8 @@ namespace Demo.UserControl.Tube
         /// <param name="e"></param>
         private void btnFinish_Click(object sender, EventArgs e)
         {
-            //modus.gbHMI_Recipe_Finish = !modus.gbHMI_Recipe_Finish;
-            //help.SetbtnClickBackColor(btnFinish, Color.Yellow, modus.gbHMI_Recipe_Finish);
+            PlcVar.Tube[frmID.Unit].gbHMI_Recipe_Finish = !PlcVar.Tube[frmID.Unit].gbHMI_Recipe_Finish;
+            help.SetbtnClickBackColor(btnFinish, Color.Yellow, PlcVar.Tube[frmID.Unit].gbHMI_Recipe_Finish);
         }
         /// <summary>
         /// 锁管
@@ -141,13 +131,18 @@ namespace Demo.UserControl.Tube
         /// <param name="e"></param>
         private void btnTubeDisable_Click(object sender, EventArgs e)
         {
-            //btnTubeDisable.Appearance.Options.UseBackColor = true;
-            //modus.gbTube_Disable = !modus.gbTube_Disable;
-            //help.SetbtnClickBackColor(btnTubeDisable, Color.Red, modus.gbTube_Disable);
-            //if (modus.gbTube_Disable)
-            //    btnTubeDisable.ForeColor = Color.Black;
-            //else
-            //    btnTubeDisable.ForeColor = Color.Red;
+            btnTubeDisable.Appearance.Options.UseBackColor = true;
+            PlcVar.Tube[frmID.Unit].gbHMI_Tube_Disable = !PlcVar.Tube[frmID.Unit].gbHMI_Tube_Disable;
+            help.SetbtnClickBackColor(btnTubeDisable, Color.Red, PlcVar.Tube[frmID.Unit].gbHMI_Tube_Disable);
+            if (PlcVar.Tube[frmID.Unit].gbHMI_Tube_Disable)
+                btnTubeDisable.ForeColor = Color.Black;
+            else
+                btnTubeDisable.ForeColor = Color.Red;
+        }
+
+        private void btnStart_Click_1(object sender, EventArgs e)
+        {
+          
         }
     }
 }

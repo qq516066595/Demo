@@ -42,22 +42,22 @@
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.pbarTube5 = new DevExpress.XtraEditors.ProgressBarControl();
+            this.pbarTube4 = new DevExpress.XtraEditors.ProgressBarControl();
+            this.pbarTube3 = new DevExpress.XtraEditors.ProgressBarControl();
+            this.pbarTube2 = new DevExpress.XtraEditors.ProgressBarControl();
+            this.pbarTube1 = new DevExpress.XtraEditors.ProgressBarControl();
+            this.lblTube5 = new DevExpress.XtraEditors.LabelControl();
+            this.lblTube4 = new DevExpress.XtraEditors.LabelControl();
+            this.lblTube3 = new DevExpress.XtraEditors.LabelControl();
+            this.lblTube2 = new DevExpress.XtraEditors.LabelControl();
+            this.lblTube1 = new DevExpress.XtraEditors.LabelControl();
             this.pnAlarmShield = new DevExpress.XtraEditors.PanelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblTube1 = new DevExpress.XtraEditors.LabelControl();
-            this.pbarTube1 = new DevExpress.XtraEditors.ProgressBarControl();
-            this.lblTube2 = new DevExpress.XtraEditors.LabelControl();
-            this.pbarTube2 = new DevExpress.XtraEditors.ProgressBarControl();
-            this.lblTube3 = new DevExpress.XtraEditors.LabelControl();
-            this.pbarTube3 = new DevExpress.XtraEditors.ProgressBarControl();
-            this.lblTube4 = new DevExpress.XtraEditors.LabelControl();
-            this.pbarTube4 = new DevExpress.XtraEditors.ProgressBarControl();
-            this.lblTube5 = new DevExpress.XtraEditors.LabelControl();
-            this.pbarTube5 = new DevExpress.XtraEditors.ProgressBarControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo.Properties)).BeginInit();
@@ -71,17 +71,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbarTube5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbarTube4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbarTube3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbarTube2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbarTube1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnAlarmShield)).BeginInit();
             this.pnAlarmShield.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbarTube1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbarTube2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbarTube3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbarTube4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbarTube5.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // SplashManagerfrmLoading
@@ -189,7 +189,7 @@
             this.picExit.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.picExit.Properties.Appearance.Options.UseBackColor = true;
             this.picExit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.picExit.Properties.InitialImage = ((System.Drawing.Image)(resources.GetObject("picExit.Properties.InitialImage")));
+            //this.picExit.Properties.InitialImage = ((System.Drawing.Image)(resources.GetObject("picExit.Properties.InitialImage")));
             this.picExit.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.picExit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picExit.Properties.ZoomAccelerationFactor = 1D;
@@ -224,6 +224,101 @@
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(1829, 47);
             this.panelControl2.TabIndex = 1;
+            // 
+            // pbarTube5
+            // 
+            this.pbarTube5.Location = new System.Drawing.Point(895, 11);
+            this.pbarTube5.Name = "pbarTube5";
+            this.pbarTube5.Size = new System.Drawing.Size(114, 25);
+            this.pbarTube5.TabIndex = 5;
+            // 
+            // pbarTube4
+            // 
+            this.pbarTube4.Location = new System.Drawing.Point(693, 11);
+            this.pbarTube4.Name = "pbarTube4";
+            this.pbarTube4.Size = new System.Drawing.Size(114, 25);
+            this.pbarTube4.TabIndex = 5;
+            // 
+            // pbarTube3
+            // 
+            this.pbarTube3.Location = new System.Drawing.Point(490, 11);
+            this.pbarTube3.Name = "pbarTube3";
+            this.pbarTube3.Size = new System.Drawing.Size(114, 25);
+            this.pbarTube3.TabIndex = 5;
+            // 
+            // pbarTube2
+            // 
+            this.pbarTube2.Location = new System.Drawing.Point(287, 12);
+            this.pbarTube2.Name = "pbarTube2";
+            this.pbarTube2.Size = new System.Drawing.Size(114, 25);
+            this.pbarTube2.TabIndex = 5;
+            // 
+            // pbarTube1
+            // 
+            this.pbarTube1.Location = new System.Drawing.Point(84, 11);
+            this.pbarTube1.Name = "pbarTube1";
+            this.pbarTube1.Size = new System.Drawing.Size(114, 25);
+            this.pbarTube1.TabIndex = 5;
+            // 
+            // lblTube5
+            // 
+            this.lblTube5.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.lblTube5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTube5.Appearance.Options.UseBackColor = true;
+            this.lblTube5.Appearance.Options.UseFont = true;
+            this.lblTube5.Location = new System.Drawing.Point(823, 11);
+            this.lblTube5.Name = "lblTube5";
+            this.lblTube5.Size = new System.Drawing.Size(66, 25);
+            this.lblTube5.TabIndex = 4;
+            this.lblTube5.Text = "炉管五";
+            // 
+            // lblTube4
+            // 
+            this.lblTube4.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.lblTube4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTube4.Appearance.Options.UseBackColor = true;
+            this.lblTube4.Appearance.Options.UseFont = true;
+            this.lblTube4.Location = new System.Drawing.Point(621, 11);
+            this.lblTube4.Name = "lblTube4";
+            this.lblTube4.Size = new System.Drawing.Size(66, 25);
+            this.lblTube4.TabIndex = 4;
+            this.lblTube4.Text = "炉管四";
+            // 
+            // lblTube3
+            // 
+            this.lblTube3.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.lblTube3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTube3.Appearance.Options.UseBackColor = true;
+            this.lblTube3.Appearance.Options.UseFont = true;
+            this.lblTube3.Location = new System.Drawing.Point(418, 11);
+            this.lblTube3.Name = "lblTube3";
+            this.lblTube3.Size = new System.Drawing.Size(66, 25);
+            this.lblTube3.TabIndex = 4;
+            this.lblTube3.Text = "炉管三";
+            // 
+            // lblTube2
+            // 
+            this.lblTube2.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.lblTube2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTube2.Appearance.Options.UseBackColor = true;
+            this.lblTube2.Appearance.Options.UseFont = true;
+            this.lblTube2.Location = new System.Drawing.Point(215, 12);
+            this.lblTube2.Name = "lblTube2";
+            this.lblTube2.Size = new System.Drawing.Size(66, 25);
+            this.lblTube2.TabIndex = 4;
+            this.lblTube2.Text = "炉管二";
+            // 
+            // lblTube1
+            // 
+            this.lblTube1.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.lblTube1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTube1.Appearance.Options.UseBackColor = true;
+            this.lblTube1.Appearance.Options.UseFont = true;
+            this.lblTube1.Location = new System.Drawing.Point(12, 11);
+            this.lblTube1.Name = "lblTube1";
+            this.lblTube1.Size = new System.Drawing.Size(66, 25);
+            this.lblTube1.TabIndex = 4;
+            this.lblTube1.Text = "炉管一";
             // 
             // pnAlarmShield
             // 
@@ -293,101 +388,6 @@
             this.label1.Text = "深圳市拉普拉斯能源技术有限公司 版权©2020-12";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblTube1
-            // 
-            this.lblTube1.Appearance.BackColor = System.Drawing.Color.Gray;
-            this.lblTube1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTube1.Appearance.Options.UseBackColor = true;
-            this.lblTube1.Appearance.Options.UseFont = true;
-            this.lblTube1.Location = new System.Drawing.Point(12, 11);
-            this.lblTube1.Name = "lblTube1";
-            this.lblTube1.Size = new System.Drawing.Size(66, 25);
-            this.lblTube1.TabIndex = 4;
-            this.lblTube1.Text = "炉管一";
-            // 
-            // pbarTube1
-            // 
-            this.pbarTube1.Location = new System.Drawing.Point(84, 11);
-            this.pbarTube1.Name = "pbarTube1";
-            this.pbarTube1.Size = new System.Drawing.Size(114, 25);
-            this.pbarTube1.TabIndex = 5;
-            // 
-            // lblTube2
-            // 
-            this.lblTube2.Appearance.BackColor = System.Drawing.Color.Gray;
-            this.lblTube2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTube2.Appearance.Options.UseBackColor = true;
-            this.lblTube2.Appearance.Options.UseFont = true;
-            this.lblTube2.Location = new System.Drawing.Point(215, 12);
-            this.lblTube2.Name = "lblTube2";
-            this.lblTube2.Size = new System.Drawing.Size(66, 25);
-            this.lblTube2.TabIndex = 4;
-            this.lblTube2.Text = "炉管二";
-            // 
-            // pbarTube2
-            // 
-            this.pbarTube2.Location = new System.Drawing.Point(287, 12);
-            this.pbarTube2.Name = "pbarTube2";
-            this.pbarTube2.Size = new System.Drawing.Size(114, 25);
-            this.pbarTube2.TabIndex = 5;
-            // 
-            // lblTube3
-            // 
-            this.lblTube3.Appearance.BackColor = System.Drawing.Color.Gray;
-            this.lblTube3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTube3.Appearance.Options.UseBackColor = true;
-            this.lblTube3.Appearance.Options.UseFont = true;
-            this.lblTube3.Location = new System.Drawing.Point(418, 11);
-            this.lblTube3.Name = "lblTube3";
-            this.lblTube3.Size = new System.Drawing.Size(66, 25);
-            this.lblTube3.TabIndex = 4;
-            this.lblTube3.Text = "炉管三";
-            // 
-            // pbarTube3
-            // 
-            this.pbarTube3.Location = new System.Drawing.Point(490, 11);
-            this.pbarTube3.Name = "pbarTube3";
-            this.pbarTube3.Size = new System.Drawing.Size(114, 25);
-            this.pbarTube3.TabIndex = 5;
-            // 
-            // lblTube4
-            // 
-            this.lblTube4.Appearance.BackColor = System.Drawing.Color.Gray;
-            this.lblTube4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTube4.Appearance.Options.UseBackColor = true;
-            this.lblTube4.Appearance.Options.UseFont = true;
-            this.lblTube4.Location = new System.Drawing.Point(621, 11);
-            this.lblTube4.Name = "lblTube4";
-            this.lblTube4.Size = new System.Drawing.Size(66, 25);
-            this.lblTube4.TabIndex = 4;
-            this.lblTube4.Text = "炉管四";
-            // 
-            // pbarTube4
-            // 
-            this.pbarTube4.Location = new System.Drawing.Point(693, 11);
-            this.pbarTube4.Name = "pbarTube4";
-            this.pbarTube4.Size = new System.Drawing.Size(114, 25);
-            this.pbarTube4.TabIndex = 5;
-            // 
-            // lblTube5
-            // 
-            this.lblTube5.Appearance.BackColor = System.Drawing.Color.Gray;
-            this.lblTube5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTube5.Appearance.Options.UseBackColor = true;
-            this.lblTube5.Appearance.Options.UseFont = true;
-            this.lblTube5.Location = new System.Drawing.Point(823, 11);
-            this.lblTube5.Name = "lblTube5";
-            this.lblTube5.Size = new System.Drawing.Size(66, 25);
-            this.lblTube5.TabIndex = 4;
-            this.lblTube5.Text = "炉管五";
-            // 
-            // pbarTube5
-            // 
-            this.pbarTube5.Location = new System.Drawing.Point(895, 11);
-            this.pbarTube5.Name = "pbarTube5";
-            this.pbarTube5.Size = new System.Drawing.Size(114, 25);
-            this.pbarTube5.TabIndex = 5;
-            // 
             // frmParent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -420,6 +420,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
             this.panelControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbarTube5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbarTube4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbarTube3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbarTube2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbarTube1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnAlarmShield)).EndInit();
             this.pnAlarmShield.ResumeLayout(false);
             this.pnAlarmShield.PerformLayout();
@@ -427,11 +432,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbarTube1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbarTube2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbarTube3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbarTube4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbarTube5.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

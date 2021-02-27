@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using com.DataBaseModels;
 using DevExpress.XtraGrid.Views.Base;
+using com.TubeServices;
+using System.Threading;
+using com.CommunicationDAL;
 /*
 * namespace：Demo.Forms
 * className：frmHomePage
@@ -33,8 +36,7 @@ namespace Demo.Forms.Tube
             lblZoneEx1.Text = this.Tag.ToString();
             this.gridRecipeView.InitNewRow += GridRecipeView_InitNewRow;
         }
-        
-        
+
         #region 主界面
         #region 温区
         /// <summary>
@@ -52,36 +54,35 @@ namespace Demo.Forms.Tube
         /// </summary>
         private void TempBindings()
         {
-            //foreach (Control control in this.pcTempZone.Controls)
-            //{
-            //    if (control is LabelControl)
-            //    {
-            //        for (int i = 1; i <= 7; i++)
-            //        {
-            //            if (control.Name.Equals("lblZoneEx" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//外偶
-            //                ((LabelControl)control).Text = modus.StTempZoneArray[i].rExternal_Temp.ToString();
-            //            else if (control.Name.Equals("lblZoneIn" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//内偶
-            //                ((LabelControl)control).Text = modus.StTempZoneArray[i].rInternal_Temp.ToString();
-            //            else if (control.Name.Equals("lblZoneMV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//功率
-            //                ((LabelControl)control).Text = modus.StTempZoneArray[i].rMV.ToString();
-            //            else if (control.Name.Equals("lblZoneSP" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//过渡
-            //                ((LabelControl)control).Text = modus.grTemp_SPArray[i].ToString();
-            //        }
-            //        //水冷
-            //        lblWaterCooling1.Text = modus.grCooling_PV1.ToString();
-            //        lblWaterCooling2.Text = modus.grCooling_PV2.ToString();
-                    
-            //    }
-            //    //设定值
-            //    if (control is TextEdit)
-            //    {
-            //        for (int i = 1; i < 7; i++)
-            //        {
-            //            if (control.Name.Equals("txtZoneSV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//设定值
-            //                ((TextEdit)control).Text = modus.StTempZoneArray[i].rSet_Temp.ToString();
-            //        }
-            //    }
-            //}
+            foreach (Control control in this.pcTempZone.Controls)
+            {
+                if (control is LabelControl)
+                {
+                    for (int i = 1; i <= 7; i++) 
+                    {
+                        if (control.Name.Equals("lblZoneEx" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//外偶
+                            ((LabelControl)control).Text = PlcVar.Tube[frmID.Unit].stTempZone[i].rExternal_Temp.ToString();
+                        else if (control.Name.Equals("lblZoneIn" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//内偶
+                            ((LabelControl)control).Text = PlcVar.Tube[frmID.Unit].stTempZone[i].rInternal_Temp.ToString();
+                        else if (control.Name.Equals("lblZoneMV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//功率
+                            ((LabelControl)control).Text = PlcVar.Tube[frmID.Unit].stTempZone[i].rMV.ToString();
+                        //else if (control.Name.Equals("lblZoneSP" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//过渡
+                        //((LabelControl)control).Text = modus.grTemp_SPArray[i].ToString();
+                    }
+                    //水冷
+                    //lblWaterCooling1.Text = modus.grCooling_PV1.ToString();
+                    //lblWaterCooling2.Text = modus.grCooling_PV2.ToString();
+                }
+                //设定值
+                if (control is TextEdit)
+                {
+                    for (int i = 1; i < 7; i++)
+                    {
+                        if (control.Name.Equals("txtZoneSV" + i.ToString(), StringComparison.CurrentCultureIgnoreCase))//设定值
+                            ((TextEdit)control).Text = PlcVar.Tube[frmID.Unit].stTempZone[i].rCurrent_SV.ToString();
+                    }
+                }
+            }
         }
         /// <summary>
         /// 开启加热弹窗
@@ -116,14 +117,36 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnHWCLeakCheck_Click(object sender, EventArgs e)
         {
-            //mys.gbHMI_LeakCheck = true;
-            //help.SetbtnClickBackColor(btnHWCLeakCheck, Color.Lime, mys.gbHMI_LeakCheck);
+            PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck = true;
+            help.SetbtnClickBackColor(btnHWCLeakCheck, Color.Lime, PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck);
         }
         public void HWCsDataBinding()
         {
-            //lblHWCTempPV.Text = mys.stHWCs_Ctrl.rActTemperature.ToString();//实际温度
-            //txtHWCTempSV.Text = mys.stHWCs_Ctrl.rSetTemperature.ToString();//设定温度
-            //lblHWCWeight.Text = mys.Comm_rHCSPV.ToString();//液位重量
+            lblHWCTempPV.Text = PlcJht.stHWCs_Ctrl.rActTemperature.ToString();//实际温度
+            txtHWCTempSV.Text = PlcJht.stHWCs_Ctrl.rSetTemperature.ToString();//设定温度
+            string nNetWeight = "0";
+            int frmtag = (Int32)this.Tag;
+            switch (frmtag)
+            {
+                case 1:
+                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_1.ToString();//液位重量
+                    break;
+                case 2:
+                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_2.ToString();//液位重量
+                    break;
+                case 3:
+                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_3.ToString();//液位重量
+                    break;
+                case 4:
+                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_4.ToString();//液位重量
+                    break;
+                case 5:
+                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_5.ToString();//液位重量
+                    break;
+                default:
+                    break;
+            }
+            lblHWCWeight.Text = nNetWeight;//液位重量
         }
         #endregion
 
@@ -254,7 +277,7 @@ namespace Demo.Forms.Tube
         /// <param name="sender"></param>
         /// <param name="e"></param>
         object obj;
-        byte[] b1 = new byte[] { 1,2,3,4,5};
+        byte[] b1 = new byte[] { 1, 2, 3, 4, 5 };
         private void picDownloadRecipe_Click(object sender, EventArgs e)
         {
             this.ShowWait();
@@ -289,7 +312,7 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void picDefaultRecipe_Click(object sender, EventArgs e)
         {
-            frmDefaultRecipe frmDeRec = new frmDefaultRecipe(this.Tag.ToString(),mys);
+            frmDefaultRecipe frmDeRec = new frmDefaultRecipe(this.Tag.ToString(), mys);
             frmDeRec.ShowDialog();
         }
         /// <summary>
@@ -470,6 +493,79 @@ namespace Demo.Forms.Tube
         }
         #endregion
 
+        #region 报表
+
+        //待完善项：①X轴设置为时间轴；②显示与隐藏曲线：修改属性即可useCheckItem；③曲线缩小放大
+        private void picChart_Click(object sender, EventArgs e)
+        {
+            spcChart.Panel1Collapsed = false;
+            spcChart.Panel2Collapsed = true;
+            if (txtFilePath.Text == "C:\\\\")
+            {
+                MessageBox.Show("当前未选中文件！");
+                return;
+            }
+            // DataTable _dt = ChartBingingData();
+
+            chartTube.Series.Clear();
+            chartTube.Titles.Clear();
+
+            string colName = "";
+            for (int i = 0; i < dtchartOrtable.Columns.Count; i++)
+            {
+                colName = dtchartOrtable.Columns[i].ColumnName;
+                if (colName != "时间" && colName != "步号" && colName != "步名称")//判断数据类型
+                {
+                    Common.CreateSeries(chartTube, colName, DevExpress.XtraCharts.ViewType.Spline, dtchartOrtable, "时间", colName, null);
+                }
+            }
+
+        }
+
+        private void picTable_Click(object sender, EventArgs e)
+        {
+            spcChart.Panel1Collapsed = true;
+            spcChart.Panel2Collapsed = false;
+            gridViewReport.Columns.Clear();
+            if (txtFilePath.Text == "C:\\\\")
+            {
+                MessageBox.Show("当前未选中文件！");
+                return;
+            }
+            gridReport.DataMember = dtchartOrtable.TableName;
+            gridReport.DataSource = dtchartOrtable;
+            gridReport.MainView.PopulateColumns();
+        }
+
+        public DataTable dtchartOrtable;
+        private void btnOpenFile_Click(object sender, EventArgs e)
+        {
+            string fileTypeName = "\\工艺历史数据\\Tube" + this.Tag.ToString();
+            dtchartOrtable = help.AsposeCells(fileTypeName);
+            txtFilePath.Text = Application.StartupPath + fileTypeName;
+            chartTube.DataSource = dtchartOrtable;
+            gridReport.DataSource = dtchartOrtable;
+        }
+
+        public DataTable ChartBingingData()
+        {
+            DataTable _testData = new DataTable();
+            _testData.Columns.Add(new DataColumn("time", typeof(string)));
+            _testData.Columns.Add(new DataColumn("Power", typeof(decimal)));
+            _testData.Columns.Add(new DataColumn("ActulPower", typeof(decimal)));
+            Random _rm = new Random();
+            for (int i = 0; i < 24; i++)
+            {
+                DataRow _drNew = _testData.NewRow();
+                _drNew["time"] = string.Format(DateTime.Now.ToString("yyyy-MM-dd") + " {0}:00", i);
+                _drNew["Power"] = _rm.Next(150, 350);
+                _drNew["ActulPower"] = _rm.Next(220, 245);
+                _testData.Rows.Add(_drNew);
+            }
+            return _testData;
+        }
+        #endregion
+
         #region 调用方法
         /// <summary>
         /// 收缩与展开
@@ -523,6 +619,12 @@ namespace Demo.Forms.Tube
         PlcModels mys = new PlcModels();
         private void frmTubeMain_Load(object sender, EventArgs e)
         {
+
+
+
+
+
+
             ////int a = (Int32)this.Tag;
             ////if (a == 1)//炉管一
             ////    gettag(1);
@@ -583,10 +685,96 @@ namespace Demo.Forms.Tube
             //addGridBindings();
             //repositoryItemButtonEdit1.Click += RepositoryItemButtonEdit1_Click;
             //repositoryItemCheckEdit1.QueryCheckStateByValue += new DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventHandler(repositoryItemCheckEdit1_QueryCheckStateByValue);
+
+            //图表加载
+            spcChart.Panel1Collapsed = false;
+            spcChart.Panel2Collapsed = true;
         }
 
 
-        #endregion
+        TUBEisTEST tube = new TUBEisTEST();
+        string test1; 
+        private void intIT()
+        {   
 
+            if (Convert.ToInt32(this.Tag) == 1)
+            { 
+               test1 = tube.GetVariableInfo(6, "OP_Mode"); 
+            }
+
+        } 
+        Thread th1;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (th1 == null)
+            {
+                th1 = new Thread(intIT);
+                th1.Start();
+            }
+            else
+            {
+                if (th1.ThreadState == System.Threading.ThreadState.Stopped)
+                {
+                    th1 = new Thread(intIT);
+                    th1.Start();
+                }
+            }
+            txtPumpSpeed.Text = test1; 
+        }
+
+        private void txtPumpSpeed_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                键盘.DefaultInstance.Text = "温度设置2";
+                MyModu.MinSet = 0;
+                MyModu.MaxSet = 1200;
+                键盘.DefaultInstance.ShowDialog();
+                if (MyModu.Gyedit != "cancel")
+                {
+                    tube.WiteVariable(6, "OP_Mode", MyModu.Gyedit);
+                }
+                MyModu.LogEvent(6, "温度设置2", MyModu.Gyedit);
+                return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Set Failed:" + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void txtPumpSpeed_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                键盘.DefaultInstance.Text = "温度设置2";
+                MyModu.MinSet = 0;
+                MyModu.MaxSet = 1200;
+                键盘.DefaultInstance.ShowDialog();
+                if (MyModu.Gyedit != "cancel")
+                {
+                    tube.WiteVariable(6, "OP_Mode", MyModu.Gyedit);
+                }
+                MyModu.LogEvent(6, "温度设置2", MyModu.Gyedit);
+                return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Set Failed:" + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
+     
 }
+
+
+        #endregion
+     
+
+        
+
+
+
+ 

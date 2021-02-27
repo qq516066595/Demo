@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace com.TubeServices
 {
-   public class TubeEvService
+   public static class TubeEvService
     {
-
+        public static double testEv =12;
 
 
 

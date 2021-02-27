@@ -70,6 +70,7 @@
             // 
             // btnOK
             // 
+            this.btnOK.ImageUri.Uri = "Apply";
             this.btnOK.Location = new System.Drawing.Point(91, 183);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(110, 40);
@@ -79,6 +80,7 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.ImageUri.Uri = "Cancel";
             this.btnCancel.Location = new System.Drawing.Point(234, 183);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(110, 40);
