@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseTemplateExtend.cs" />
-    <Compile Include="LoaderModus.cs" />
     <Compile Include="Loader\Alarm.cs" />
     <Compile Include="Loader\DiInfo.cs" />
     <Compile Include="Loader\DoInfo.cs" />
