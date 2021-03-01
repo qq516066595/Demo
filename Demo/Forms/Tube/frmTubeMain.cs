@@ -681,10 +681,10 @@ namespace Demo.Forms.Tube
             //ucRecipeInfo1.ucRecipe(mys);
             ////轴信息
             //ucAxisX1.ucAxis(mys);
-            ////配方数据源绑定
-            //addGridBindings();
-            //repositoryItemButtonEdit1.Click += RepositoryItemButtonEdit1_Click;
-            //repositoryItemCheckEdit1.QueryCheckStateByValue += new DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventHandler(repositoryItemCheckEdit1_QueryCheckStateByValue);
+            //配方数据源绑定
+            addGridBindings();
+            repositoryItemButtonEdit1.Click += RepositoryItemButtonEdit1_Click;
+            repositoryItemCheckEdit1.QueryCheckStateByValue += new DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventHandler(repositoryItemCheckEdit1_QueryCheckStateByValue);
 
             //图表加载
             spcChart.Panel1Collapsed = false;
@@ -702,24 +702,24 @@ namespace Demo.Forms.Tube
                test1 = tube.GetVariableInfo(6, "OP_Mode"); 
             }
 
-        } 
+        }
         Thread th1;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (th1 == null)
-            {
-                th1 = new Thread(intIT);
-                th1.Start();
-            }
-            else
-            {
-                if (th1.ThreadState == System.Threading.ThreadState.Stopped)
-                {
-                    th1 = new Thread(intIT);
-                    th1.Start();
-                }
-            }
-            txtPumpSpeed.Text = test1; 
+            //if (th1 == null)
+            //{
+            //    th1 = new Thread(intIT);
+            //    th1.Start();
+            //}
+            //else
+            //{
+            //    if (th1.ThreadState == System.Threading.ThreadState.Stopped)
+            //    {
+            //        th1 = new Thread(intIT);
+            //        th1.Start();
+            //    }
+            //}
+            //txtPumpSpeed.Text = test1;
         }
 
         private void txtPumpSpeed_Click(object sender, EventArgs e)

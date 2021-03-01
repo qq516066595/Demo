@@ -633,7 +633,7 @@ namespace com.DataBaseModels
         public PlcModels.DTSU666 stEnergyValue;//电能数据
         public static PlcModels.FXL_HWCs_Ctrl stHWCs_Ctrl;
     }
-  
+
     public class PlcTube
     {
         public PlcModels.TubeErr stTubeAlm;

@@ -511,7 +511,6 @@ namespace Demo.Forms.Tube
         }
         #endregion
 
-
     }
     public static class Common
     {
@@ -577,6 +576,52 @@ namespace Demo.Forms.Tube
             if (createSeriesRule != null)
                 createSeriesRule(_series);
             chart.Series.Add(_series);
+        }
+        #endregion
+    }
+
+    public static class FileHelp
+    {
+        #region 数据备份与还原
+        /// <summary>
+        /// 文件备份
+        /// </summary>
+        /// <param name="Content"></param>
+        /// <param name="FilePath"></param>
+        public static void FileWrite(string Content,string FilePath)
+        {
+            SaveFileDialog file = new SaveFileDialog();//定义新的文件保存位置控件
+            file.Filter = "txt文件(*.txt)|*.txt";//设置文件后缀的过滤
+            FileStream aFile = new FileStream(FilePath, FileMode.Create, FileAccess.Write, FileShare.ReadWrite);
+            StreamWriter sw = new StreamWriter(aFile);
+
+            sw.Write(Content);  //写入文件中
+            sw.Flush();//清理缓冲区
+            sw.Close();//关闭文件
+        }
+
+        public static string FileRead(string FilePath)
+        {
+            string Content = "";
+            OpenFileDialog ReadAddr = new OpenFileDialog();
+            ReadAddr.Filter = "文本文件.txt|*.txt";
+            ReadAddr.FileName = FilePath;
+            if (ReadAddr.FileName == "") return null;//如果地址为空，直接退出
+
+            if (!File.Exists(ReadAddr.FileName))//验证所选文件是否存在
+            {
+                MessageBox.Show("文件不存在");
+                return null;
+            }
+            StreamReader sr = new StreamReader(ReadAddr.FileName, Encoding.Default);
+            string content;
+            while ((content = sr.ReadLine()) != null)
+            {
+                //Content += content.ToString();
+                Content = content.ToString();
+            }
+            sr.Close();
+            return Content;
         }
         #endregion
     }
