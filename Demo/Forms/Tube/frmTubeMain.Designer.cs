@@ -1149,7 +1149,7 @@
             this.txtPumpSpeed.Properties.Appearance.Options.UseFont = true;
             this.txtPumpSpeed.Size = new System.Drawing.Size(77, 24);
             this.txtPumpSpeed.TabIndex = 15;
-            this.txtPumpSpeed.Click += new System.EventHandler(this.txtPumpSpeed_Click_1);
+            this.txtPumpSpeed.Click += new System.EventHandler(this.txtPumpSpeed_Click);
             // 
             // labelControl119
             // 

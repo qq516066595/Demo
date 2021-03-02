@@ -1,5 +1,4 @@
-﻿using com.CommunicationDAL;
-using OMRON.Compolet.CIPCompolet64;
+﻿using com.CommunicationDAL; 
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using OMRON.Compolet.CIPCompolet64;
 
 namespace com.TubeServices
 {
     public class TUBEisTEST : Form
     {
         private System.ComponentModel.IContainer components;
-        private Button button1;
+   
         private CommunicationDAL.NXCompolet nxCompolet1;
         private CommunicationDAL.NXCompolet nxCompolet2;
         private CommunicationDAL.NXCompolet nxCompolet3;
@@ -56,7 +55,7 @@ namespace com.TubeServices
             this.Name = "TUBEisTEST";
             this.Load += new System.EventHandler(this.TUBEisTEST_Load);
             this.ResumeLayout(false);
-
+           
         }
 
 

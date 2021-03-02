@@ -13,6 +13,8 @@ using DevExpress.XtraGrid.Views.Base;
 using com.TubeServices;
 using System.Threading;
 using com.CommunicationDAL;
+using com.CommunicationModels;
+using LaplaceCIP;
 /*
 * namespace：Demo.Forms
 * className：frmHomePage
@@ -324,12 +326,14 @@ namespace Demo.Forms.Tube
         {
             MessageBox.Show(gridRecipeView.GetFocusedDataSourceRowIndex().ToString());
         }
+#pragma warning disable IDE1006 // 命名样式
         /// <summary>
         /// 复选框多选
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void repositoryItemCheckEdit1_QueryCheckStateByValue(object sender, DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventArgs e)
+#pragma warning restore IDE1006 // 命名样式
         {
             string val = "";
             if (e.Value != null)
@@ -620,11 +624,7 @@ namespace Demo.Forms.Tube
         private void frmTubeMain_Load(object sender, EventArgs e)
         {
 
-
-
-
-
-
+             
             ////int a = (Int32)this.Tag;
             ////if (a == 1)//炉管一
             ////    gettag(1);
@@ -691,19 +691,21 @@ namespace Demo.Forms.Tube
             spcChart.Panel2Collapsed = true;
         }
 
-
-        TUBEisTEST tube = new TUBEisTEST();
+        //读取
+        //TUBEisTEST tube = new TUBEisTEST();
+        PlcOmronCip plcOmronCip = new PlcOmronCip();
         string test1; 
         private void intIT()
         {   
 
             if (Convert.ToInt32(this.Tag) == 1)
             { 
-               test1 = tube.GetVariableInfo(6, "OP_Mode"); 
+               test1 = plcOmronCip.GetVariableInfo(1, "OP_Mode"); 
             }
 
         } 
         Thread th1;
+        //线程读取
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (th1 == null)
@@ -722,19 +724,21 @@ namespace Demo.Forms.Tube
             txtPumpSpeed.Text = test1; 
         }
 
+
+         //写入
         private void txtPumpSpeed_Click(object sender, EventArgs e)
         {
             try
             {
-                键盘.DefaultInstance.Text = "温度设置2";
+                键盘.DefaultInstance.Text = "测试";
                 MyModu.MinSet = 0;
                 MyModu.MaxSet = 1200;
                 键盘.DefaultInstance.ShowDialog();
                 if (MyModu.Gyedit != "cancel")
                 {
-                    tube.WiteVariable(6, "OP_Mode", MyModu.Gyedit);
+                    plcOmronCip.WiteVariable(1, "OP_Mode", MyModu.Gyedit);
                 }
-                MyModu.LogEvent(6, "温度设置2", MyModu.Gyedit);
+                MyModu.LogEvent(6, "测试", MyModu.Gyedit);
                 return;
 
             }
@@ -744,27 +748,8 @@ namespace Demo.Forms.Tube
             }
         }
 
-        private void txtPumpSpeed_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                键盘.DefaultInstance.Text = "温度设置2";
-                MyModu.MinSet = 0;
-                MyModu.MaxSet = 1200;
-                键盘.DefaultInstance.ShowDialog();
-                if (MyModu.Gyedit != "cancel")
-                {
-                    tube.WiteVariable(6, "OP_Mode", MyModu.Gyedit);
-                }
-                MyModu.LogEvent(6, "温度设置2", MyModu.Gyedit);
-                return;
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Set Failed:" + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
+ 
     }
      
 }
