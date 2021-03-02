@@ -53,17 +53,17 @@ namespace Demo.UserControl.Tube
         {
             if (tsAutoSelect.IsOn)//自动
             {
-                PlcVar.Tube[frmID.Unit].OP_Mode = (PlcModels.OP_MODE)3;
+                PlcVar.Tube[frmID.Unit].OP_Cmd.bAutoSelect = true;
             }
             else//手动
             {
-                PlcVar.Tube[frmID.Unit].OP_Mode = (PlcModels.OP_MODE)1;
+                PlcVar.Tube[frmID.Unit].OP_Cmd.bAutoSelect = false;
             }
         }
 
         private void ucRecipeInfo_Load(object sender, EventArgs e)
         {
-            //tsAutoSelect.IsOn = PlcVar.Tube[frmID.Unit].OP_Mode == (PlcModels.OP_MODE)1 ? false : PlcVar.Tube[frmID.Unit].OP_Mode == (PlcModels.OP_MODE)3 ? true : false;
+            //tsAutoSelect.IsOn = PlcVar.Tube[frmID.Unit].OP_Cmd.bAutoSelect;
             //lblRecipeName.Text = PlcVar.Tube[frmID.Unit].stCurrentRecipeName;
             //lblRecipeTotalTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
             //lblRecipeWorkTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
@@ -138,11 +138,6 @@ namespace Demo.UserControl.Tube
                 btnTubeDisable.ForeColor = Color.Black;
             else
                 btnTubeDisable.ForeColor = Color.Red;
-        }
-
-        private void btnStart_Click_1(object sender, EventArgs e)
-        {
-          
         }
     }
 }

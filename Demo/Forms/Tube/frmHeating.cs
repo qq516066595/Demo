@@ -44,9 +44,9 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnOK_Click(object sender, EventArgs e)
         {
-            //PlcModels.grHMI_TempSV = (float)Convert.ToDouble(txtTempSV.Text);
-            //PlcModels.grHMI_TempRump = (float)Convert.ToDouble(txtTempRump.Text);
-            //PlcModels.gbHMI_Temp_Enable = true;
+            PlcVar.Tube[frmID.Unit].grHMI_TempSV = (float)Convert.ToDouble(txtTempSV.Text);
+            PlcVar.Tube[frmID.Unit].grHMI_TempRump = (float)Convert.ToDouble(txtTempRump.Text);
+            PlcVar.Tube[frmID.Unit].gbHMI_Temp_Enable = true;
             this.Close();
         }
 
