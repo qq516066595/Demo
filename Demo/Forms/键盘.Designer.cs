@@ -135,6 +135,7 @@
             this.SKB_15.Tag = "15";
             this.SKB_15.Text = "取消";
             this.SKB_15.UseVisualStyleBackColor = false;
+            this.SKB_15.Click += new System.EventHandler(this.键盘_Shown);
             // 
             // SKB_0
             // 

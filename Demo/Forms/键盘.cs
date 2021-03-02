@@ -92,7 +92,5 @@ namespace Demo.Forms
             Text1.Clear();
             MyModu.Gyedit = "cancel";
         }
-
-        
     }
 }

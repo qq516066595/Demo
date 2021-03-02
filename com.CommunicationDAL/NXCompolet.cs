@@ -11,8 +11,8 @@ using System.Text;
 namespace com.CommunicationDAL
 {
     //欧姆龙CIP
-    [ToolboxBitmap(typeof(NXCompolet), "NXCompolet.ico")]
-   public    class NXCompolet  : Component
+   [ToolboxBitmap(typeof(NXCompolet), "NXCompolet.ico")]
+   public   class NXCompolet  : Component
     {
         public enum RunModeTypes
         {
