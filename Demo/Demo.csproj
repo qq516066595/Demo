@@ -134,6 +134,12 @@
     <Compile Include="Forms\frmParent.Designer.cs">
       <DependentUpon>frmParent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmUserManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmUserManager.Designer.cs">
+      <DependentUpon>frmUserManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Loader\AssistTool.cs" />
     <Compile Include="Forms\Loader\frmHanderMain.cs">
       <SubType>Form</SubType>
@@ -178,6 +184,11 @@
     </Compile>
     <Compile Include="Forms\键盘.Designer.cs">
       <DependentUpon>键盘.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Loader\ucAxisPos.cs">
       <SubType>UserControl</SubType>
@@ -265,6 +276,9 @@
     <EmbeddedResource Include="Forms\frmLoading.resx">
       <DependentUpon>frmLoading.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmUserManager.resx">
+      <DependentUpon>frmUserManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -298,14 +312,9 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="UserControl\Loader\ucAxisPos.resx">
       <DependentUpon>ucAxisPos.cs</DependentUpon>
     </EmbeddedResource>
@@ -409,6 +418,8 @@
     <Content Include="lib\System.Data.SQLite.EF6.dll" />
     <Content Include="lib\System.Data.SQLite.Linq.dll" />
     <Content Include="lib\通讯\MoonsCommLib.dll" />
+    <None Include="Resources\switch_off.png" />
+    <None Include="Resources\switch_on.png" />
     <None Include="Resources\DefSplashImage.png" />
     <None Include="Resources\下拉箭头3.png" />
     <None Include="Resources\下拉箭头2.png" />

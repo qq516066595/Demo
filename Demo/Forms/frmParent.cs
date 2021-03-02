@@ -49,7 +49,10 @@ namespace Demo.Forms.Template
             //获取打开对象，加载打开数据
             XtraMdiTabPage curPage = (sender as XtraTabbedMdiManager).SelectedPage;
             if (curPage.Text == "  总  览  ")
+            {
                 xtraTabIndex = 0;
+                //curPage.ShowCloseButton = DevExpress.Utils.DefaultBoolean.False;
+            }
             else if (curPage.Text == " 第 一 组 ")
                 xtraTabIndex = 1;
             else if (curPage.Text == " 第 二 组 ")
@@ -85,10 +88,6 @@ namespace Demo.Forms.Template
         {
             if (MessageBox.Show("是否确认退出系统？", "退出提示", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
-                //1.this.Close(); 只是关闭当前窗口，若不是主窗体的话，是无法退出程序的，另外若有托管线程（非主线程），也无法干净地退出；
-                //2.Application.Exit(); 强制所有消息中止，退出所有的窗体，但是若有托管线程（非主线程），也无法干净地退出；
-                //3.Application.ExitThread(); 强制中止调用线程上的所有消息，同样面临其它线程无法正确退出的问题；
-                //4.System.Environment.Exit(0); 这是最彻底的退出方式，不管什么线程都被强制退出，把程序结束的很干净。
                 System.Environment.Exit(0);
             }
             else
@@ -103,7 +102,8 @@ namespace Demo.Forms.Template
         /// <param name="e"></param>
         private void picAbout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("版本内容及帮助文档");
+            string filepath = System.IO.Directory.GetCurrentDirectory() + "\\" + "help.pdf";
+            System.Diagnostics.Process.Start(filepath);
         }
         /// <summary>
         /// 权限设置
@@ -132,7 +132,7 @@ namespace Demo.Forms.Template
         /// <param name="caption">打开tab页的名称</param>
         /// <param name="ViewType">窗体路径</param>
         /// <param name="groupNum">借用tag值进行传值，区分管和机械手：替换变量</param>
-        private void ActivateOrAddForm(string caption, string ViewType, int groupNum)
+        public void ActivateOrAddForm(string caption, string ViewType, int groupNum)
         {
             foreach (Form subForm in MRF.MdiChildren)
             {

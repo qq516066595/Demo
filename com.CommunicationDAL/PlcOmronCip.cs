@@ -12,14 +12,14 @@ namespace com.CommunicationDAL
     public  class PlcOmronCip
     {
         private static System.Timers.Timer t1=new System.Timers.Timer();
-        private OMRON.Compolet.CIPCompolet64.NXCompolet[] nxCompolet_Tube=new NXCompolet[6];
-        private OMRON.Compolet.CIPCompolet64.NXCompolet nxCompolet_Jht=new NXCompolet();
+        private OMRON.Compolet.CIPCompolet64.NXCompolet[] nxCompolet_Tube=new OMRON.Compolet.CIPCompolet64.NXCompolet[6];
+        private OMRON.Compolet.CIPCompolet64.NXCompolet nxCompolet_Jht=new OMRON.Compolet.CIPCompolet64.NXCompolet();
 
         public PlcOmronCip()
         {
             
             for (int i = 1; i <= 5; i++)
-                nxCompolet_Tube[i] = new NXCompolet();
+                nxCompolet_Tube[i] = new OMRON.Compolet.CIPCompolet64.NXCompolet();
 
             nxCompolet_Jht.PeerAddress = "192.168.50.100";
             nxCompolet_Tube[1].PeerAddress = "192.168.50.10";

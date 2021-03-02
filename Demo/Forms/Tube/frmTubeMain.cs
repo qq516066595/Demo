@@ -122,26 +122,27 @@ namespace Demo.Forms.Tube
         }
         public void HWCsDataBinding()
         {
-            lblHWCTempPV.Text = PlcJht.stHWCs_Ctrl.rActTemperature.ToString();//实际温度
-            txtHWCTempSV.Text = PlcJht.stHWCs_Ctrl.rSetTemperature.ToString();//设定温度
+            PlcJht jht = new PlcJht();
+            lblHWCTempPV.Text = jht.stHWCs_Ctrl.rActTemperature.ToString();//实际温度
+            txtHWCTempSV.Text = jht.stHWCs_Ctrl.rSetTemperature.ToString();//设定温度
             string nNetWeight = "0";
             int frmtag = (Int32)this.Tag;
             switch (frmtag)
             {
                 case 1:
-                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_1.ToString();//液位重量
+                    nNetWeight = jht.stHWCs_Ctrl.nNetWeight_1.ToString();//液位重量
                     break;
                 case 2:
-                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_2.ToString();//液位重量
+                    nNetWeight = jht.stHWCs_Ctrl.nNetWeight_2.ToString();//液位重量
                     break;
                 case 3:
-                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_3.ToString();//液位重量
+                    nNetWeight = jht.stHWCs_Ctrl.nNetWeight_3.ToString();//液位重量
                     break;
                 case 4:
-                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_4.ToString();//液位重量
+                    nNetWeight = jht.stHWCs_Ctrl.nNetWeight_4.ToString();//液位重量
                     break;
                 case 5:
-                    nNetWeight = PlcJht.stHWCs_Ctrl.nNetWeight_5.ToString();//液位重量
+                    nNetWeight = jht.stHWCs_Ctrl.nNetWeight_5.ToString();//液位重量
                     break;
                 default:
                     break;

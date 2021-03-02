@@ -27,5 +27,40 @@ namespace Demo.Forms
         {
             InitializeComponent();
         }
+
+        private void frmHomePage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblT1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lblT2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lblT3_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void lblT4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lblT5_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lblLoader_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -32,12 +32,7 @@
             DevExpress.XtraSplashScreen.SplashScreenManager SplashManagerfrmLoading = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::Demo.Forms.Template.frmLoading), true, true);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmParent));
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.picLogo = new DevExpress.XtraEditors.PictureEdit();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.picUserInfo = new DevExpress.XtraEditors.PictureEdit();
-            this.picAbout = new DevExpress.XtraEditors.PictureEdit();
-            this.picExit = new DevExpress.XtraEditors.PictureEdit();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
@@ -54,19 +49,22 @@
             this.lblTube1 = new DevExpress.XtraEditors.LabelControl();
             this.pnAlarmShield = new DevExpress.XtraEditors.PanelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
+            this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
+            this.picLogo = new DevExpress.XtraEditors.PictureEdit();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.picUserInfo = new DevExpress.XtraEditors.PictureEdit();
+            this.picAbout = new DevExpress.XtraEditors.PictureEdit();
+            this.picExit = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUserInfo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAbout.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picExit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
@@ -78,10 +76,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbarTube1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnAlarmShield)).BeginInit();
             this.pnAlarmShield.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserInfo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAbout.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // SplashManagerfrmLoading
@@ -90,6 +94,7 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Controls.Add(this.picLogo);
             this.panelControl1.Controls.Add(this.panelControl3);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -98,6 +103,247 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(1829, 79);
             this.panelControl1.TabIndex = 1;
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl3.Controls.Add(this.pictureEdit1);
+            this.panelControl3.Controls.Add(this.picUserInfo);
+            this.panelControl3.Controls.Add(this.picAbout);
+            this.panelControl3.Controls.Add(this.picExit);
+            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelControl3.Location = new System.Drawing.Point(1517, 3);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Size = new System.Drawing.Size(309, 73);
+            this.panelControl3.TabIndex = 1;
+            // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2007 Black";
+            // 
+            // imageCollection1
+            // 
+            this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
+            // 
+            // panelControl2
+            // 
+            this.panelControl2.Controls.Add(this.pbarTube5);
+            this.panelControl2.Controls.Add(this.pbarTube4);
+            this.panelControl2.Controls.Add(this.pbarTube3);
+            this.panelControl2.Controls.Add(this.pbarTube2);
+            this.panelControl2.Controls.Add(this.pbarTube1);
+            this.panelControl2.Controls.Add(this.lblTube5);
+            this.panelControl2.Controls.Add(this.lblTube4);
+            this.panelControl2.Controls.Add(this.lblTube3);
+            this.panelControl2.Controls.Add(this.lblTube2);
+            this.panelControl2.Controls.Add(this.lblTube1);
+            this.panelControl2.Controls.Add(this.pnAlarmShield);
+            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl2.Location = new System.Drawing.Point(0, 79);
+            this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(1829, 47);
+            this.panelControl2.TabIndex = 1;
+            // 
+            // pbarTube5
+            // 
+            this.pbarTube5.Location = new System.Drawing.Point(1270, 12);
+            this.pbarTube5.Name = "pbarTube5";
+            this.pbarTube5.Size = new System.Drawing.Size(114, 25);
+            this.pbarTube5.TabIndex = 5;
+            // 
+            // pbarTube4
+            // 
+            this.pbarTube4.Location = new System.Drawing.Point(1068, 12);
+            this.pbarTube4.Name = "pbarTube4";
+            this.pbarTube4.Size = new System.Drawing.Size(114, 25);
+            this.pbarTube4.TabIndex = 5;
+            // 
+            // pbarTube3
+            // 
+            this.pbarTube3.Location = new System.Drawing.Point(865, 12);
+            this.pbarTube3.Name = "pbarTube3";
+            this.pbarTube3.Size = new System.Drawing.Size(114, 25);
+            this.pbarTube3.TabIndex = 5;
+            // 
+            // pbarTube2
+            // 
+            this.pbarTube2.Location = new System.Drawing.Point(662, 13);
+            this.pbarTube2.Name = "pbarTube2";
+            this.pbarTube2.Size = new System.Drawing.Size(114, 25);
+            this.pbarTube2.TabIndex = 5;
+            // 
+            // pbarTube1
+            // 
+            this.pbarTube1.Location = new System.Drawing.Point(459, 12);
+            this.pbarTube1.Name = "pbarTube1";
+            this.pbarTube1.Size = new System.Drawing.Size(114, 25);
+            this.pbarTube1.TabIndex = 5;
+            // 
+            // lblTube5
+            // 
+            this.lblTube5.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.lblTube5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTube5.Appearance.Options.UseBackColor = true;
+            this.lblTube5.Appearance.Options.UseFont = true;
+            this.lblTube5.Location = new System.Drawing.Point(1198, 12);
+            this.lblTube5.Name = "lblTube5";
+            this.lblTube5.Size = new System.Drawing.Size(66, 25);
+            this.lblTube5.TabIndex = 4;
+            this.lblTube5.Text = "炉管五";
+            // 
+            // lblTube4
+            // 
+            this.lblTube4.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.lblTube4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTube4.Appearance.Options.UseBackColor = true;
+            this.lblTube4.Appearance.Options.UseFont = true;
+            this.lblTube4.Location = new System.Drawing.Point(996, 12);
+            this.lblTube4.Name = "lblTube4";
+            this.lblTube4.Size = new System.Drawing.Size(66, 25);
+            this.lblTube4.TabIndex = 4;
+            this.lblTube4.Text = "炉管四";
+            // 
+            // lblTube3
+            // 
+            this.lblTube3.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.lblTube3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTube3.Appearance.Options.UseBackColor = true;
+            this.lblTube3.Appearance.Options.UseFont = true;
+            this.lblTube3.Location = new System.Drawing.Point(793, 12);
+            this.lblTube3.Name = "lblTube3";
+            this.lblTube3.Size = new System.Drawing.Size(66, 25);
+            this.lblTube3.TabIndex = 4;
+            this.lblTube3.Text = "炉管三";
+            // 
+            // lblTube2
+            // 
+            this.lblTube2.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.lblTube2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTube2.Appearance.Options.UseBackColor = true;
+            this.lblTube2.Appearance.Options.UseFont = true;
+            this.lblTube2.Location = new System.Drawing.Point(590, 13);
+            this.lblTube2.Name = "lblTube2";
+            this.lblTube2.Size = new System.Drawing.Size(66, 25);
+            this.lblTube2.TabIndex = 4;
+            this.lblTube2.Text = "炉管二";
+            // 
+            // lblTube1
+            // 
+            this.lblTube1.Appearance.BackColor = System.Drawing.Color.Gray;
+            this.lblTube1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTube1.Appearance.Options.UseBackColor = true;
+            this.lblTube1.Appearance.Options.UseFont = true;
+            this.lblTube1.Location = new System.Drawing.Point(387, 12);
+            this.lblTube1.Name = "lblTube1";
+            this.lblTube1.Size = new System.Drawing.Size(66, 25);
+            this.lblTube1.TabIndex = 4;
+            this.lblTube1.Text = "炉管一";
+            // 
+            // pnAlarmShield
+            // 
+            this.pnAlarmShield.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pnAlarmShield.Controls.Add(this.pictureEdit2);
+            this.pnAlarmShield.Controls.Add(this.labelControl3);
+            this.pnAlarmShield.Controls.Add(this.labelControl2);
+            this.pnAlarmShield.Controls.Add(this.pictureEdit3);
+            this.pnAlarmShield.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnAlarmShield.Location = new System.Drawing.Point(1510, 3);
+            this.pnAlarmShield.Name = "pnAlarmShield";
+            this.pnAlarmShield.Size = new System.Drawing.Size(316, 41);
+            this.pnAlarmShield.TabIndex = 3;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(219, 5);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(84, 28);
+            this.labelControl2.TabIndex = 4;
+            this.labelControl2.Text = "报警消声";
+            // 
+            // xtraTabbedMdiManager1
+            // 
+            this.xtraTabbedMdiManager1.AppearancePage.Header.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.xtraTabbedMdiManager1.AppearancePage.Header.ForeColor = System.Drawing.Color.Black;
+            this.xtraTabbedMdiManager1.AppearancePage.Header.Options.UseFont = true;
+            this.xtraTabbedMdiManager1.AppearancePage.Header.Options.UseForeColor = true;
+            this.xtraTabbedMdiManager1.AppearancePage.HeaderActive.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.xtraTabbedMdiManager1.AppearancePage.HeaderActive.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.xtraTabbedMdiManager1.AppearancePage.HeaderActive.Options.UseFont = true;
+            this.xtraTabbedMdiManager1.AppearancePage.HeaderActive.Options.UseForeColor = true;
+            this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // panelControl4
+            // 
+            this.panelControl4.Controls.Add(this.label1);
+            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl4.Location = new System.Drawing.Point(0, 1069);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(1829, 31);
+            this.panelControl4.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1823, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "深圳市拉普拉斯能源技术有限公司 版权©2020-12";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("华文行楷", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(252, 40);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(288, 33);
+            this.labelControl1.TabIndex = 4;
+            this.labelControl1.Text = "低压水平磷扩散系统";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(59, 6);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(84, 28);
+            this.labelControl3.TabIndex = 4;
+            this.labelControl3.Text = "门禁屏蔽";
+            // 
+            // pictureEdit2
+            // 
+            this.pictureEdit2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit2.EditValue = global::Demo.Properties.Resources.switch_on;
+            this.pictureEdit2.Location = new System.Drawing.Point(7, 2);
+            this.pictureEdit2.Name = "pictureEdit2";
+            this.pictureEdit2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit2.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit2.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit2.Size = new System.Drawing.Size(50, 38);
+            this.pictureEdit2.TabIndex = 5;
+            // 
+            // pictureEdit3
+            // 
+            this.pictureEdit3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
+            this.pictureEdit3.Location = new System.Drawing.Point(164, 2);
+            this.pictureEdit3.Name = "pictureEdit3";
+            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
+            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pictureEdit3.Properties.ZoomAccelerationFactor = 1D;
+            this.pictureEdit3.Size = new System.Drawing.Size(50, 38);
+            this.pictureEdit3.TabIndex = 3;
             // 
             // picLogo
             // 
@@ -114,19 +360,6 @@
             this.picLogo.Properties.ZoomAccelerationFactor = 1D;
             this.picLogo.Size = new System.Drawing.Size(243, 73);
             this.picLogo.TabIndex = 3;
-            // 
-            // panelControl3
-            // 
-            this.panelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl3.Controls.Add(this.pictureEdit1);
-            this.panelControl3.Controls.Add(this.picUserInfo);
-            this.panelControl3.Controls.Add(this.picAbout);
-            this.panelControl3.Controls.Add(this.picExit);
-            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl3.Location = new System.Drawing.Point(1517, 3);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(309, 73);
-            this.panelControl3.TabIndex = 1;
             // 
             // pictureEdit1
             // 
@@ -189,204 +422,12 @@
             this.picExit.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.picExit.Properties.Appearance.Options.UseBackColor = true;
             this.picExit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            //this.picExit.Properties.InitialImage = ((System.Drawing.Image)(resources.GetObject("picExit.Properties.InitialImage")));
             this.picExit.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.picExit.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
             this.picExit.Properties.ZoomAccelerationFactor = 1D;
             this.picExit.Size = new System.Drawing.Size(74, 73);
             this.picExit.TabIndex = 5;
             this.picExit.Click += new System.EventHandler(this.picExit_Click);
-            // 
-            // defaultLookAndFeel1
-            // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2007 Black";
-            // 
-            // imageCollection1
-            // 
-            this.imageCollection1.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imageCollection1.ImageStream")));
-            // 
-            // panelControl2
-            // 
-            this.panelControl2.Controls.Add(this.pbarTube5);
-            this.panelControl2.Controls.Add(this.pbarTube4);
-            this.panelControl2.Controls.Add(this.pbarTube3);
-            this.panelControl2.Controls.Add(this.pbarTube2);
-            this.panelControl2.Controls.Add(this.pbarTube1);
-            this.panelControl2.Controls.Add(this.lblTube5);
-            this.panelControl2.Controls.Add(this.lblTube4);
-            this.panelControl2.Controls.Add(this.lblTube3);
-            this.panelControl2.Controls.Add(this.lblTube2);
-            this.panelControl2.Controls.Add(this.lblTube1);
-            this.panelControl2.Controls.Add(this.pnAlarmShield);
-            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl2.Location = new System.Drawing.Point(0, 79);
-            this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1829, 47);
-            this.panelControl2.TabIndex = 1;
-            // 
-            // pbarTube5
-            // 
-            this.pbarTube5.Location = new System.Drawing.Point(895, 11);
-            this.pbarTube5.Name = "pbarTube5";
-            this.pbarTube5.Size = new System.Drawing.Size(114, 25);
-            this.pbarTube5.TabIndex = 5;
-            // 
-            // pbarTube4
-            // 
-            this.pbarTube4.Location = new System.Drawing.Point(693, 11);
-            this.pbarTube4.Name = "pbarTube4";
-            this.pbarTube4.Size = new System.Drawing.Size(114, 25);
-            this.pbarTube4.TabIndex = 5;
-            // 
-            // pbarTube3
-            // 
-            this.pbarTube3.Location = new System.Drawing.Point(490, 11);
-            this.pbarTube3.Name = "pbarTube3";
-            this.pbarTube3.Size = new System.Drawing.Size(114, 25);
-            this.pbarTube3.TabIndex = 5;
-            // 
-            // pbarTube2
-            // 
-            this.pbarTube2.Location = new System.Drawing.Point(287, 12);
-            this.pbarTube2.Name = "pbarTube2";
-            this.pbarTube2.Size = new System.Drawing.Size(114, 25);
-            this.pbarTube2.TabIndex = 5;
-            // 
-            // pbarTube1
-            // 
-            this.pbarTube1.Location = new System.Drawing.Point(84, 11);
-            this.pbarTube1.Name = "pbarTube1";
-            this.pbarTube1.Size = new System.Drawing.Size(114, 25);
-            this.pbarTube1.TabIndex = 5;
-            // 
-            // lblTube5
-            // 
-            this.lblTube5.Appearance.BackColor = System.Drawing.Color.Gray;
-            this.lblTube5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTube5.Appearance.Options.UseBackColor = true;
-            this.lblTube5.Appearance.Options.UseFont = true;
-            this.lblTube5.Location = new System.Drawing.Point(823, 11);
-            this.lblTube5.Name = "lblTube5";
-            this.lblTube5.Size = new System.Drawing.Size(66, 25);
-            this.lblTube5.TabIndex = 4;
-            this.lblTube5.Text = "炉管五";
-            // 
-            // lblTube4
-            // 
-            this.lblTube4.Appearance.BackColor = System.Drawing.Color.Gray;
-            this.lblTube4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTube4.Appearance.Options.UseBackColor = true;
-            this.lblTube4.Appearance.Options.UseFont = true;
-            this.lblTube4.Location = new System.Drawing.Point(621, 11);
-            this.lblTube4.Name = "lblTube4";
-            this.lblTube4.Size = new System.Drawing.Size(66, 25);
-            this.lblTube4.TabIndex = 4;
-            this.lblTube4.Text = "炉管四";
-            // 
-            // lblTube3
-            // 
-            this.lblTube3.Appearance.BackColor = System.Drawing.Color.Gray;
-            this.lblTube3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTube3.Appearance.Options.UseBackColor = true;
-            this.lblTube3.Appearance.Options.UseFont = true;
-            this.lblTube3.Location = new System.Drawing.Point(418, 11);
-            this.lblTube3.Name = "lblTube3";
-            this.lblTube3.Size = new System.Drawing.Size(66, 25);
-            this.lblTube3.TabIndex = 4;
-            this.lblTube3.Text = "炉管三";
-            // 
-            // lblTube2
-            // 
-            this.lblTube2.Appearance.BackColor = System.Drawing.Color.Gray;
-            this.lblTube2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTube2.Appearance.Options.UseBackColor = true;
-            this.lblTube2.Appearance.Options.UseFont = true;
-            this.lblTube2.Location = new System.Drawing.Point(215, 12);
-            this.lblTube2.Name = "lblTube2";
-            this.lblTube2.Size = new System.Drawing.Size(66, 25);
-            this.lblTube2.TabIndex = 4;
-            this.lblTube2.Text = "炉管二";
-            // 
-            // lblTube1
-            // 
-            this.lblTube1.Appearance.BackColor = System.Drawing.Color.Gray;
-            this.lblTube1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTube1.Appearance.Options.UseBackColor = true;
-            this.lblTube1.Appearance.Options.UseFont = true;
-            this.lblTube1.Location = new System.Drawing.Point(12, 11);
-            this.lblTube1.Name = "lblTube1";
-            this.lblTube1.Size = new System.Drawing.Size(66, 25);
-            this.lblTube1.TabIndex = 4;
-            this.lblTube1.Text = "炉管一";
-            // 
-            // pnAlarmShield
-            // 
-            this.pnAlarmShield.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pnAlarmShield.Controls.Add(this.labelControl2);
-            this.pnAlarmShield.Controls.Add(this.pictureEdit3);
-            this.pnAlarmShield.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnAlarmShield.Location = new System.Drawing.Point(1677, 3);
-            this.pnAlarmShield.Name = "pnAlarmShield";
-            this.pnAlarmShield.Size = new System.Drawing.Size(149, 41);
-            this.pnAlarmShield.TabIndex = 3;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(59, 8);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(84, 28);
-            this.labelControl2.TabIndex = 4;
-            this.labelControl2.Text = "报警消声";
-            // 
-            // pictureEdit3
-            // 
-            this.pictureEdit3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureEdit3.EditValue = ((object)(resources.GetObject("pictureEdit3.EditValue")));
-            this.pictureEdit3.Location = new System.Drawing.Point(4, 5);
-            this.pictureEdit3.Name = "pictureEdit3";
-            this.pictureEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.pictureEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.pictureEdit3.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pictureEdit3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit3.Properties.ZoomAccelerationFactor = 1D;
-            this.pictureEdit3.Size = new System.Drawing.Size(50, 38);
-            this.pictureEdit3.TabIndex = 3;
-            // 
-            // xtraTabbedMdiManager1
-            // 
-            this.xtraTabbedMdiManager1.AppearancePage.Header.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xtraTabbedMdiManager1.AppearancePage.Header.ForeColor = System.Drawing.Color.Black;
-            this.xtraTabbedMdiManager1.AppearancePage.Header.Options.UseFont = true;
-            this.xtraTabbedMdiManager1.AppearancePage.Header.Options.UseForeColor = true;
-            this.xtraTabbedMdiManager1.AppearancePage.HeaderActive.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.xtraTabbedMdiManager1.AppearancePage.HeaderActive.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.xtraTabbedMdiManager1.AppearancePage.HeaderActive.Options.UseFont = true;
-            this.xtraTabbedMdiManager1.AppearancePage.HeaderActive.Options.UseForeColor = true;
-            this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // panelControl4
-            // 
-            this.panelControl4.Controls.Add(this.label1);
-            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl4.Location = new System.Drawing.Point(0, 1069);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1829, 31);
-            this.panelControl4.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1823, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "深圳市拉普拉斯能源技术有限公司 版权©2020-12";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmParent
             // 
@@ -408,13 +449,9 @@
             this.Layout += new System.Windows.Forms.LayoutEventHandler(this.frmParent_Layout);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo.Properties)).EndInit();
+            this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUserInfo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAbout.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picExit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
@@ -428,10 +465,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pnAlarmShield)).EndInit();
             this.pnAlarmShield.ResumeLayout(false);
             this.pnAlarmShield.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserInfo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAbout.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picExit.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -464,5 +507,8 @@
         private DevExpress.XtraEditors.LabelControl lblTube4;
         private DevExpress.XtraEditors.LabelControl lblTube3;
         private DevExpress.XtraEditors.LabelControl lblTube2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit2;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
     }
 }

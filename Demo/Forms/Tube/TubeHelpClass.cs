@@ -24,6 +24,7 @@ namespace Demo.Forms.Tube
 {
     public class TubeHelpClass
     {
+
         public static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         #region 格式转换
@@ -625,4 +626,5 @@ namespace Demo.Forms.Tube
         }
         #endregion
     }
+
 }
