@@ -115,7 +115,7 @@ namespace com.DataBaseModels
             public int Loop_Counter;
             public int Loop_Start_Step;
         }
-       
+
         //****************当前工艺控制****************
         [Serializable]
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
@@ -148,7 +148,8 @@ namespace com.DataBaseModels
         {
             public float rBoatOut_OffsetPos;       //出舟时，根据传感器定位舟
             public float rFollow_MaxOffsetPos;     //随动最大允许的偏移距离
-            public float rBoatOut_AlmOffsetPos;    //出舟时有舟位与无舟位的最大偏差          
+            public float rBoatOut_AlmOffsetPos;    //出舟时有舟位与无舟位的最大偏差   
+            public float rBoatPush_SV_MaxT;        //最大力矩
         }
 
         //炉管和机械手通讯
@@ -189,14 +190,14 @@ namespace com.DataBaseModels
             public UInt32 nVacumm2;
             public UInt32 nGas1;
             public UInt32 nGas2;
-            
-        }
-        
 
-            #endregion ------------------------------炉管结构体定义---------------------------------------
+        }
+
+
+        #endregion ------------------------------炉管结构体定义---------------------------------------
 
         #region 机械手结构体定义
-            public enum BoatState
+        public enum BoatState
         {
             DISABLE,
             NO_BOAT,
@@ -241,15 +242,15 @@ namespace com.DataBaseModels
             public bool bAlarm;                   //工位报警
 
         }
-        
+
         //[Serializable]
-       // [StructLayout(LayoutKind.Sequential, Pack = 1)]
+        // [StructLayout(LayoutKind.Sequential, Pack = 1)]
         public struct StationPara
         {
             public UInt16 nSetCoolTime;      //设定冷却时间
             public StationMode eStationMode; //工位状态，冷舟，热舟
             public bool bSheild;            //工位屏蔽
-           
+
         }
         [Serializable]
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
@@ -261,7 +262,7 @@ namespace com.DataBaseModels
             public bool bCleanFlag;
 
         }
-        
+
         //****************机械手轴扩展参数结构体****************
         public struct HandAxisParaEx
         {
@@ -318,7 +319,7 @@ namespace com.DataBaseModels
             public UInt32 nConveyer1;
             public UInt32 nConveyer2;
             public UInt32 nSafe;
-            
+
         }
         #endregion ---------------------------机械手结构体定义--------------------------------------- 
 
@@ -417,7 +418,7 @@ namespace com.DataBaseModels
             public float rActPos;
             public float rActSpeed;
             public float rAct_Torque;
-                    
+
             public UInt16 nErrorCode;
             public UInt16 nECT_ErrorCode;
         }
@@ -478,6 +479,33 @@ namespace com.DataBaseModels
             public UInt16 nWarnDiff;    //警示偏差值
             public UInt16 nAlmDiff;     //报警偏差值
             public bool bShield;        //当前通道屏蔽
+        }
+        //****************温控模块IP****************
+        [Serializable]
+        [StructLayout(LayoutKind.Sequential, Pack = 1)]
+        public struct SystemPara
+        {
+            public string TempModule1_IP;
+            public string TempModule2_IP;
+            public string TempModule3_IP;
+            public string TempModule4_IP;
+            public string HWCs_IP;
+            public string Pump_IP;
+            public float rAlmTail_Temp;
+            public int Pump_Type;
+            public float rSourceValve_Open_P;
+            public float rSourceValve_Open_T;
+            public float rNormal_Pressure;
+            public byte mini8_SlaveNum;
+            //public enum eSys_Type
+            //{
+            //    RPP,
+            //    RPB,
+            //    LP_WITH_1000T,
+            //    LP_NO_1000T,
+            //    PE,
+            //    PE_TWIN
+            //};
         }
 
         //stMFC_Ctrl[] stMFC = new stMFC_Ctrl[12];
@@ -666,6 +694,12 @@ namespace com.DataBaseModels
         public bool gbProcess_InitDone;
         public bool gbBoatPush_InitStart;
         public bool gbBoatPush_InitDone;
+        public bool gbHeating_InitStart;
+        public bool gbHeating_InitDone;
+        public bool gbGas_InitStart;
+        public bool gbGas_InitDone;
+        public bool gbVacuum_InitStart;
+        public bool gbVacuum_InitDone;
         public bool gbBoatPush_Unlock;
 
         public bool gbTubeDoor_Close;
@@ -684,11 +718,16 @@ namespace com.DataBaseModels
         public float grTubeTail_Temp;
         public PlcModels.TempZone[] stTempZone;//8 个
         public PlcModels.HeatModelPara[] stTempPara;//8
+        public PlcModels.SystemPara stSysPara;
+        public UInt16 gnMini8_Ctrl_Type;
         public float grTube_ActPressure;
         public float grActLeakRate;
+        public float grMKS_ActPos;
         public bool gbHMI_LeakCheck;
         public PlcModels.Pump_Para stPump_Para;
         public PlcModels.Pump_Ctrl stPump_Ctrl;
+        public int giSource_Counter;
+        public bool gbSourceBottle_LeakCheck;
 
         public bool gbValve_Unlock;
         public PlcModels.MFC_Para[] stMFC_Para;//12
@@ -721,7 +760,7 @@ namespace com.DataBaseModels
     {
         public static PlcJht Jht;
         public static PlcTube[] Tube = new PlcTube[6];
-        
+
         //在构造函数中对变量中的数组数量初始化
         static PlcVar()
         {
@@ -745,8 +784,8 @@ namespace com.DataBaseModels
             Jht.stComm_from_Tube = new PlcModels.Comm_from_Tube[5];
             Jht.stComm_to_Tube = new PlcModels.Comm_to_Tube[5];
 
-            
-            for (int i=0;i<6;i++)
+
+            for (int i = 0; i < 6; i++)
             {
                 Tube[i].stRecipePara = new PlcModels.RecipePara[46];
 
@@ -763,8 +802,13 @@ namespace com.DataBaseModels
                 Tube[i].stMFC_Value = new PlcModels.MFC_Value[12];
                 Tube[i].stValve_Ctrl = new PlcModels.Valve_Ctrl[32];
 
+                Tube[i].stSysPara = new PlcModels.SystemPara();
+                Tube[i].stSysPara.TempModule1_IP = "192.168.50.15";
+                Tube[i].stSysPara.TempModule2_IP = "192.168.50.25";
+                Tube[i].stSysPara.TempModule3_IP = "192.168.50.35";
+                Tube[i].stSysPara.TempModule4_IP = "192.168.50.45";
+                Tube[i].stSysPara.Pump_IP = "192.168.50.55";
             }
         }
     }
-    
 }

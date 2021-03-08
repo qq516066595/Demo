@@ -197,5 +197,81 @@ namespace Demo.Forms.Tube
             public bool bShield;
         }
         #endregion
+
+        #region 设置
+        //初始化
+        private bool gbProcess_InitDone;
+        private bool gbBoatPush_InitDone;
+        private bool gbHeating_InitDone;
+        private bool gbGas_InitDone;
+        private bool gbVacuum_InitDone;
+
+        public bool GbProcess_InitDone
+        {
+            get => gbProcess_InitDone;
+            set
+            {
+                if (gbProcess_InitDone != value)
+                {
+                    gbProcess_InitDone = value;
+                    if (InitDoneChanged != null)
+                        InitDoneChanged(this, null);
+                }
+            }
+        }
+
+        public bool GbBoatPush_InitDone
+        {
+            get => gbBoatPush_InitDone;
+            set
+            {
+                if (gbBoatPush_InitDone != value)
+                {
+                    gbBoatPush_InitDone = value;
+                    if (InitDoneChanged != null)
+                        InitDoneChanged(this, null);
+                }
+            }
+        }
+
+        public bool GbHeating_InitDone
+        {
+            get => gbHeating_InitDone; set
+            {
+                if (gbHeating_InitDone != value)
+                {
+                    gbHeating_InitDone = value;
+                    if (InitDoneChanged != null)
+                        InitDoneChanged(this, null);
+                }
+            }
+        }
+        public bool GbGas_InitDone
+        {
+            get => gbGas_InitDone; set
+            {
+                if (gbGas_InitDone != value)
+                {
+                    gbGas_InitDone = value;
+                    if (InitDoneChanged != null)
+                        InitDoneChanged(this, null);
+                }
+            }
+        }
+        public bool GbVacuum_InitDone
+        {
+            get => gbVacuum_InitDone; set
+            {
+                if (gbVacuum_InitDone != value)
+                {
+                    gbVacuum_InitDone = value;
+                    if (InitDoneChanged != null)
+                        InitDoneChanged(this, null);
+                }
+            }
+        }
+
+        public event EventHandler InitDoneChanged = null;
+        #endregion
     }
 }

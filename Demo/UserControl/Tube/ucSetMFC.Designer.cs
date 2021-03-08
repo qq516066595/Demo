@@ -117,6 +117,7 @@
             this.txtSetGasAlmDiff.Properties.Appearance.Options.UseFont = true;
             this.txtSetGasAlmDiff.Size = new System.Drawing.Size(149, 32);
             this.txtSetGasAlmDiff.TabIndex = 3;
+            this.txtSetGasAlmDiff.TextChanged += new System.EventHandler(this.txtSetGasAlmDiff_TextChanged);
             // 
             // txtSetGasMaxRange
             // 
@@ -127,10 +128,13 @@
             this.txtSetGasMaxRange.Properties.Appearance.Options.UseFont = true;
             this.txtSetGasMaxRange.Size = new System.Drawing.Size(149, 32);
             this.txtSetGasMaxRange.TabIndex = 3;
+            this.txtSetGasMaxRange.TextChanged += new System.EventHandler(this.txtSetGasMaxRange_TextChanged);
             // 
             // btnSetGasShield
             // 
+            this.btnSetGasShield.Appearance.BackColor = System.Drawing.Color.LightCoral;
             this.btnSetGasShield.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetGasShield.Appearance.Options.UseBackColor = true;
             this.btnSetGasShield.Appearance.Options.UseFont = true;
             this.btnSetGasShield.Location = new System.Drawing.Point(168, 163);
             this.btnSetGasShield.Margin = new System.Windows.Forms.Padding(2);
@@ -138,6 +142,7 @@
             this.btnSetGasShield.Size = new System.Drawing.Size(149, 38);
             this.btnSetGasShield.TabIndex = 4;
             this.btnSetGasShield.Text = "屏蔽";
+            this.btnSetGasShield.Click += new System.EventHandler(this.btnSetGasShield_Click);
             // 
             // ucSetMFC
             // 
@@ -155,7 +160,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ucSetMFC";
             this.Size = new System.Drawing.Size(320, 204);
-            this.Load += new System.EventHandler(this.ucSetMFC_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtSetGasWarnDiff.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSetGasAlmDiff.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSetGasMaxRange.Properties)).EndInit();
