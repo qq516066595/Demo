@@ -35,7 +35,7 @@ namespace Demo.Forms.Tube
         public UInt16 gnProcessTotalTime;
         public UInt16 gnProcessWorkingTime;
         public UInt16 gnProcessRemainTime;
-        public OP_MODE OP_Mode;//系统模式枚举
+        private OP_MODE oP_Mode;//系统模式枚举
         public BoatInfo stTube_BoatInfo;//舟信息
 
         public struct RecipeCtrl
@@ -271,7 +271,22 @@ namespace Demo.Forms.Tube
             }
         }
 
+        public OP_MODE OP_Mode
+        {
+            get => oP_Mode; set
+            {
+                if (OP_Mode != value)
+                {
+                    OP_Mode = value;
+                    if (DisableConditionsChanged != null)
+                        DisableConditionsChanged(this, null);
+                }
+            }
+        }
+
         public event EventHandler InitDoneChanged = null;
+        public event EventHandler DisableConditionsChanged = null;
+
         #endregion
     }
 }

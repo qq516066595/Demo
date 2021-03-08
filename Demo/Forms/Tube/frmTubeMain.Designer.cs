@@ -77,7 +77,7 @@
             this.lblTubeActPressure = new DevExpress.XtraEditors.LabelControl();
             this.lblVacuumPV = new DevExpress.XtraEditors.LabelControl();
             this.lblHWCWeight = new DevExpress.XtraEditors.LabelControl();
-            this.btnHWCLeakCheck = new DevExpress.XtraEditors.SimpleButton();
+            this.btnLeakCheck = new DevExpress.XtraEditors.SimpleButton();
             this.lblHWCTempPV = new DevExpress.XtraEditors.LabelControl();
             this.lblVacuumCheck = new DevExpress.XtraEditors.LabelControl();
             this.separatorControl2 = new DevExpress.XtraEditors.SeparatorControl();
@@ -804,7 +804,7 @@
             this.pcShowRoadPara.Controls.Add(this.lblTubeActPressure);
             this.pcShowRoadPara.Controls.Add(this.lblVacuumPV);
             this.pcShowRoadPara.Controls.Add(this.lblHWCWeight);
-            this.pcShowRoadPara.Controls.Add(this.btnHWCLeakCheck);
+            this.pcShowRoadPara.Controls.Add(this.btnLeakCheck);
             this.pcShowRoadPara.Controls.Add(this.lblHWCTempPV);
             this.pcShowRoadPara.Controls.Add(this.lblVacuumCheck);
             this.pcShowRoadPara.Controls.Add(this.separatorControl2);
@@ -835,7 +835,7 @@
             this.lblTubeActPressure.Appearance.Options.UseFont = true;
             this.lblTubeActPressure.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblTubeActPressure.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
-            this.lblTubeActPressure.Location = new System.Drawing.Point(120, 291);
+            this.lblTubeActPressure.Location = new System.Drawing.Point(120, 252);
             this.lblTubeActPressure.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblTubeActPressure.Name = "lblTubeActPressure";
             this.lblTubeActPressure.Size = new System.Drawing.Size(81, 27);
@@ -848,7 +848,7 @@
             this.lblVacuumPV.Appearance.Options.UseFont = true;
             this.lblVacuumPV.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblVacuumPV.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
-            this.lblVacuumPV.Location = new System.Drawing.Point(116, 214);
+            this.lblVacuumPV.Location = new System.Drawing.Point(116, 175);
             this.lblVacuumPV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblVacuumPV.Name = "lblVacuumPV";
             this.lblVacuumPV.Size = new System.Drawing.Size(81, 27);
@@ -868,19 +868,19 @@
             this.lblHWCWeight.TabIndex = 334;
             this.lblHWCWeight.Text = "0000.0";
             // 
-            // btnHWCLeakCheck
+            // btnLeakCheck
             // 
-            this.btnHWCLeakCheck.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnHWCLeakCheck.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHWCLeakCheck.Appearance.Options.UseBackColor = true;
-            this.btnHWCLeakCheck.Appearance.Options.UseFont = true;
-            this.btnHWCLeakCheck.Location = new System.Drawing.Point(37, 134);
-            this.btnHWCLeakCheck.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnHWCLeakCheck.Name = "btnHWCLeakCheck";
-            this.btnHWCLeakCheck.Size = new System.Drawing.Size(110, 39);
-            this.btnHWCLeakCheck.TabIndex = 18;
-            this.btnHWCLeakCheck.Text = "一键检漏";
-            this.btnHWCLeakCheck.Click += new System.EventHandler(this.btnHWCLeakCheck_Click);
+            this.btnLeakCheck.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLeakCheck.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLeakCheck.Appearance.Options.UseBackColor = true;
+            this.btnLeakCheck.Appearance.Options.UseFont = true;
+            this.btnLeakCheck.Location = new System.Drawing.Point(247, 168);
+            this.btnLeakCheck.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLeakCheck.Name = "btnLeakCheck";
+            this.btnLeakCheck.Size = new System.Drawing.Size(147, 39);
+            this.btnLeakCheck.TabIndex = 18;
+            this.btnLeakCheck.Text = "炉管检漏";
+            this.btnLeakCheck.Click += new System.EventHandler(this.btnLeakCheck_Click);
             // 
             // lblHWCTempPV
             // 
@@ -902,7 +902,7 @@
             this.lblVacuumCheck.Appearance.Options.UseBackColor = true;
             this.lblVacuumCheck.Appearance.Options.UseFont = true;
             this.lblVacuumCheck.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblVacuumCheck.Location = new System.Drawing.Point(343, 327);
+            this.lblVacuumCheck.Location = new System.Drawing.Point(343, 288);
             this.lblVacuumCheck.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblVacuumCheck.Name = "lblVacuumCheck";
             this.lblVacuumCheck.Size = new System.Drawing.Size(31, 35);
@@ -911,18 +911,18 @@
             // 
             // separatorControl2
             // 
-            this.separatorControl2.Location = new System.Drawing.Point(47, 250);
+            this.separatorControl2.Location = new System.Drawing.Point(7, 211);
             this.separatorControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.separatorControl2.Name = "separatorControl2";
             this.separatorControl2.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
-            this.separatorControl2.Size = new System.Drawing.Size(373, 36);
+            this.separatorControl2.Size = new System.Drawing.Size(413, 36);
             this.separatorControl2.TabIndex = 310;
             // 
             // labelControl16
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Location = new System.Drawing.Point(247, 332);
+            this.labelControl16.Location = new System.Drawing.Point(247, 293);
             this.labelControl16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(63, 25);
@@ -936,7 +936,7 @@
             this.lblPressureCheck.Appearance.Options.UseBackColor = true;
             this.lblPressureCheck.Appearance.Options.UseFont = true;
             this.lblPressureCheck.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblPressureCheck.Location = new System.Drawing.Point(343, 286);
+            this.lblPressureCheck.Location = new System.Drawing.Point(343, 247);
             this.lblPressureCheck.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblPressureCheck.Name = "lblPressureCheck";
             this.lblPressureCheck.Size = new System.Drawing.Size(31, 35);
@@ -945,7 +945,7 @@
             // 
             // separatorControl1
             // 
-            this.separatorControl1.Location = new System.Drawing.Point(7, 174);
+            this.separatorControl1.Location = new System.Drawing.Point(7, 135);
             this.separatorControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.separatorControl1.Name = "separatorControl1";
             this.separatorControl1.Padding = new System.Windows.Forms.Padding(13, 14, 13, 14);
@@ -954,7 +954,7 @@
             // 
             // txtTubeSetPressure
             // 
-            this.txtTubeSetPressure.Location = new System.Drawing.Point(120, 328);
+            this.txtTubeSetPressure.Location = new System.Drawing.Point(120, 289);
             this.txtTubeSetPressure.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTubeSetPressure.Name = "txtTubeSetPressure";
             this.txtTubeSetPressure.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -967,7 +967,7 @@
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.Location = new System.Drawing.Point(247, 291);
+            this.labelControl17.Location = new System.Drawing.Point(247, 252);
             this.labelControl17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(63, 25);
@@ -1000,7 +1000,7 @@
             // 
             this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl20.Appearance.Options.UseFont = true;
-            this.labelControl20.Location = new System.Drawing.Point(7, 332);
+            this.labelControl20.Location = new System.Drawing.Point(7, 293);
             this.labelControl20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl20.Name = "labelControl20";
             this.labelControl20.Size = new System.Drawing.Size(105, 25);
@@ -1011,7 +1011,7 @@
             // 
             this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl21.Appearance.Options.UseFont = true;
-            this.labelControl21.Location = new System.Drawing.Point(7, 215);
+            this.labelControl21.Location = new System.Drawing.Point(7, 176);
             this.labelControl21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl21.Name = "labelControl21";
             this.labelControl21.Size = new System.Drawing.Size(105, 25);
@@ -1033,7 +1033,7 @@
             // 
             this.labelControl23.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl23.Appearance.Options.UseFont = true;
-            this.labelControl23.Location = new System.Drawing.Point(7, 292);
+            this.labelControl23.Location = new System.Drawing.Point(7, 253);
             this.labelControl23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelControl23.Name = "labelControl23";
             this.labelControl23.Size = new System.Drawing.Size(105, 25);
@@ -1141,10 +1141,11 @@
             this.btnSourceBottleLeakCheck.Size = new System.Drawing.Size(110, 39);
             this.btnSourceBottleLeakCheck.TabIndex = 17;
             this.btnSourceBottleLeakCheck.Text = "一键检漏";
+            this.btnSourceBottleLeakCheck.Click += new System.EventHandler(this.btnSourceBottleLeakCheck_Click);
             // 
             // btnStartAndStop
             // 
-            this.btnStartAndStop.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnStartAndStop.Appearance.BackColor = System.Drawing.Color.Lime;
             this.btnStartAndStop.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStartAndStop.Appearance.Options.UseBackColor = true;
             this.btnStartAndStop.Appearance.Options.UseFont = true;
@@ -1154,6 +1155,7 @@
             this.btnStartAndStop.Size = new System.Drawing.Size(110, 39);
             this.btnStartAndStop.TabIndex = 19;
             this.btnStartAndStop.Text = "启停";
+            this.btnStartAndStop.Click += new System.EventHandler(this.btnStartAndStop_Click);
             // 
             // txtSourceBottleUseCount
             // 
@@ -1331,6 +1333,7 @@
             this.pcTempZone.Controls.Add(this.txtZoneSV5);
             this.pcTempZone.Controls.Add(this.txtZoneSV1);
             this.pcTempZone.Controls.Add(this.txtZoneSV3);
+            this.pcTempZone.Enabled = false;
             this.pcTempZone.Location = new System.Drawing.Point(3, 3);
             this.pcTempZone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pcTempZone.Name = "pcTempZone";
@@ -6226,7 +6229,7 @@
         private DevExpress.XtraEditors.LabelControl lblTubeActPressure;
         private DevExpress.XtraEditors.LabelControl lblVacuumPV;
         private DevExpress.XtraEditors.LabelControl lblHWCWeight;
-        private DevExpress.XtraEditors.SimpleButton btnHWCLeakCheck;
+        private DevExpress.XtraEditors.SimpleButton btnLeakCheck;
         private DevExpress.XtraEditors.LabelControl lblHWCTempPV;
         private DevExpress.XtraEditors.SeparatorControl separatorControl3;
         private DevExpress.XtraEditors.LabelControl lblButterfly;

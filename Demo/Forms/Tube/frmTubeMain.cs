@@ -132,6 +132,15 @@ namespace Demo.Forms.Tube
             btnVacuumInit.Click += OnMouseDown_Click;
             btnVacuumInit.Click += OnMouseUp_Click;
             tubeModelClass.InitDoneChanged += OnInitDone_Changed;
+            tubeModelClass.DisableConditionsChanged += TubeModelClass_DisableConditionsChanged;
+        }
+
+        private void TubeModelClass_DisableConditionsChanged(object sender, EventArgs e)
+        {
+            if(tubeModelClass.OP_Mode == (TubeModelClass.OP_MODE)1)
+            {
+
+            }
         }
 
         //读取
@@ -250,7 +259,7 @@ namespace Demo.Forms.Tube
             }
             lblHWCWeight.Text = nNetWeight;//液位重量
             //help.SetlblSignalBackColor(lblHWCWorkState,Color.Green, jht.stHWCs_Ctrl.nRunningState); //恒温槽工作状态
-            help.SetbtnClickBackColor(btnHWCLeakCheck,Color.DeepSkyBlue, PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck);
+            help.SetbtnClickBackColor(btnLeakCheck,Color.DeepSkyBlue, PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck);
 
             //真空
             txtPumpSpeed.Text = PlcVar.Tube[frmID.Unit].stPump_Ctrl.rActSpeed.ToString();
@@ -306,15 +315,25 @@ namespace Demo.Forms.Tube
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnHWCLeakCheck_Click(object sender, EventArgs e)
+        private void btnLeakCheck_Click(object sender, EventArgs e)
         {
-            PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck = true;
-            help.SetbtnClickBackColor(btnHWCLeakCheck, Color.Lime, PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck);
+
+            PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck = !PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck;
+            help.SetbtnClickBackColor(btnLeakCheck, Color.DeepSkyBlue, PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck);
         }
         #endregion
 
         #region 真空
-
+        private void btnStartAndStop_Click(object sender, EventArgs e)
+        {
+            PlcVar.Tube[frmID.Unit].stPump_Ctrl.bStartPump = !PlcVar.Tube[frmID.Unit].stPump_Ctrl.bStartPump;
+            help.SetbtnClickBackColor(btnStartAndStop, Color.Lime, PlcVar.Tube[frmID.Unit].stPump_Ctrl.bStartPump);
+        }
+        private void btnSourceBottleLeakCheck_Click(object sender, EventArgs e)
+        {
+            PlcVar.Tube[frmID.Unit].gbSourceBottle_LeakCheck = !PlcVar.Tube[frmID.Unit].gbSourceBottle_LeakCheck;
+            help.SetbtnClickBackColor(btnSourceBottleLeakCheck, Color.Lime, PlcVar.Tube[frmID.Unit].gbSourceBottle_LeakCheck);
+        }
         #endregion
 
         #region 气路
@@ -487,14 +506,13 @@ namespace Demo.Forms.Tube
         {
             MessageBox.Show(gridRecipeView.GetFocusedDataSourceRowIndex().ToString());
         }
-#pragma warning disable IDE1006 // 命名样式
+
         /// <summary>
         /// 复选框多选
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void repositoryItemCheckEdit1_QueryCheckStateByValue(object sender, DevExpress.XtraEditors.Controls.QueryCheckStateByValueEventArgs e)
-#pragma warning restore IDE1006 // 命名样式
         {
             string val = "";
             if (e.Value != null)
@@ -920,8 +938,9 @@ namespace Demo.Forms.Tube
                 }
             }
         }
-
+ 
         #endregion
+
     }
 
 }
