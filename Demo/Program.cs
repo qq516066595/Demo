@@ -8,6 +8,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using com.DataBaseModels;
+using com.TubeServices;
+
 namespace Demo
 {
     static class Program
@@ -22,10 +24,11 @@ namespace Demo
             DevExpress.UserSkins.BonusSkins.Register();
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.Skins.SkinManager.EnableMdiFormSkins();
-            Application.SetCompatibleTextRenderingDefault(false);
+         //  TubeClientService.Instance.StartUpdateDataServer();
+          //Application.SetCompatibleTextRenderingDefault(false);
             log4net.Config.XmlConfigurator.Configure();
             Application.Run(new frmParent());
-            //Application.Run(new XtraForm1());
+          //Application.Run(new XtraForm1());
             
         }
     }
