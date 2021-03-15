@@ -39,6 +39,9 @@
     <Reference Include="CIPCompoletProxyServer">
       <HintPath>..\Demo\lib\CIPCompoletProxyServer.exe</HintPath>
     </Reference>
+    <Reference Include="LaplaceCIP">
+      <HintPath>..\Demo\lib\LaplaceCIP.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Demo\lib\log4net.dll</HintPath>
@@ -55,7 +58,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LoaderClientService.cs" />
     <Compile Include="ModelHelperService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TubeAlarmService.cs" />
@@ -68,9 +70,6 @@
     <Compile Include="TubeEventService.cs" />
     <Compile Include="TubeEvService.cs" />
     <Compile Include="TubeGasService.cs" />
-    <Compile Include="TUBEisTEST.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="TubeVacuumService.cs" />
     <Compile Include="UserService.cs" />
   </ItemGroup>
@@ -78,6 +77,10 @@
     <ProjectReference Include="..\com.CommunicationDAL\com.CommunicationDAL.csproj">
       <Project>{E34C4230-911E-47FB-83B4-D5D1CFD0FCC4}</Project>
       <Name>com.CommunicationDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.CommunicationModels\com.CommunicationModels.csproj">
+      <Project>{BC9B43A4-F5C6-4FFB-9CEE-2EEF9230B8E8}</Project>
+      <Name>com.CommunicationModels</Name>
     </ProjectReference>
     <ProjectReference Include="..\com.DataBaseDAL\com.DataBaseDAL.csproj">
       <Project>{2D27551D-B091-4BB1-857B-D0E863E469AC}</Project>
@@ -97,13 +100,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Loader\" />
+    <Folder Include="JHT\" />
     <Folder Include="TUBE\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="TUBEisTEST.resx">
-      <DependentUpon>TUBEisTEST.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -2047,6 +2047,7 @@
             this.ucRecipeInfo1.Name = "ucRecipeInfo1";
             this.ucRecipeInfo1.Size = new System.Drawing.Size(223, 1015);
             this.ucRecipeInfo1.TabIndex = 0;
+            this.ucRecipeInfo1.Load += new System.EventHandler(this.ucRecipeInfo1_Load);
             // 
             // xtraTabPage2
             // 

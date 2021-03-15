@@ -31,8 +31,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LaplaceCIP">
+      <HintPath>..\Demo\lib\LaplaceCIP.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Demo\lib\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseTemplateExtend.cs" />
+    <Compile Include="JHTClientService.cs" />
     <Compile Include="Loader\Alarm.cs" />
     <Compile Include="Loader\DiInfo.cs" />
     <Compile Include="Loader\DoInfo.cs" />
@@ -68,6 +77,10 @@
     <ProjectReference Include="..\com.CommonHelper\com.CommonHelper.csproj">
       <Project>{053a8ed8-c9d5-4d3a-872f-affd69c23936}</Project>
       <Name>com.CommonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.CommunicationModels\com.CommunicationModels.csproj">
+      <Project>{BC9B43A4-F5C6-4FFB-9CEE-2EEF9230B8E8}</Project>
+      <Name>com.CommunicationModels</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
