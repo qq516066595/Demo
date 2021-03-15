@@ -811,7 +811,12 @@ namespace com.DataBaseModels
                 Tube[i].stMFC_Value = new PlcModels.MFC_Value[12];
                 Tube[i].stValve_Ctrl = new PlcModels.Valve_Ctrl[32];
 
-
+                Tube[i].stSysPara = new PlcModels.SystemPara();
+                Tube[i].stSysPara.TempModule1_IP = "192.168.50.15";
+                Tube[i].stSysPara.TempModule2_IP = "192.168.50.25";
+                Tube[i].stSysPara.TempModule3_IP = "192.168.50.35";
+                Tube[i].stSysPara.TempModule4_IP = "192.168.50.45";
+                Tube[i].stSysPara.Pump_IP = "192.168.50.55";
             }
             GetJHTInfo();//初始化加载
         }
