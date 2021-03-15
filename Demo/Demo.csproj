@@ -173,6 +173,12 @@
     <Compile Include="Forms\Tube\frmHeating.Designer.cs">
       <DependentUpon>frmHeating.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Tube\frmJumpStep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tube\frmJumpStep.Designer.cs">
+      <DependentUpon>frmJumpStep.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Tube\frmUnlockPwd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -306,6 +312,9 @@
     <EmbeddedResource Include="Forms\Tube\frmHeating.resx">
       <DependentUpon>frmHeating.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tube\frmJumpStep.resx">
+      <DependentUpon>frmJumpStep.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Tube\frmTubeMain.resx">
       <DependentUpon>frmTubeMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -427,6 +436,8 @@
     <Content Include="lib\System.Data.SQLite.EF6.dll" />
     <Content Include="lib\System.Data.SQLite.Linq.dll" />
     <Content Include="lib\通讯\MoonsCommLib.dll" />
+    <None Include="Resources\OpenDoor.png" />
+    <None Include="Resources\CloseDoor.png" />
     <None Include="Resources\switch_off.png" />
     <None Include="Resources\switch_on.png" />
     <None Include="Resources\DefSplashImage.png" />

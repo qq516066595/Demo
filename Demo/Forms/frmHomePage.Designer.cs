@@ -115,7 +115,7 @@
             // 
             // lblT1
             // 
-            this.lblT1.Appearance.BackColor = System.Drawing.Color.White;
+            this.lblT1.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.lblT1.Appearance.Font = new System.Drawing.Font("宋体", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblT1.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.lblT1.Appearance.Options.UseBackColor = true;
@@ -209,7 +209,7 @@
             // 
             // lblT2
             // 
-            this.lblT2.Appearance.BackColor = System.Drawing.Color.White;
+            this.lblT2.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.lblT2.Appearance.Font = new System.Drawing.Font("宋体", 24F);
             this.lblT2.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.lblT2.Appearance.Options.UseBackColor = true;
@@ -227,7 +227,7 @@
             // 
             // lblT3
             // 
-            this.lblT3.Appearance.BackColor = System.Drawing.Color.White;
+            this.lblT3.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.lblT3.Appearance.Font = new System.Drawing.Font("宋体", 24F);
             this.lblT3.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.lblT3.Appearance.Options.UseBackColor = true;
@@ -245,7 +245,7 @@
             // 
             // lblT4
             // 
-            this.lblT4.Appearance.BackColor = System.Drawing.Color.White;
+            this.lblT4.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.lblT4.Appearance.Font = new System.Drawing.Font("宋体", 24F);
             this.lblT4.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.lblT4.Appearance.Options.UseBackColor = true;
@@ -263,7 +263,7 @@
             // 
             // lblT5
             // 
-            this.lblT5.Appearance.BackColor = System.Drawing.Color.White;
+            this.lblT5.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.lblT5.Appearance.Font = new System.Drawing.Font("宋体", 24F);
             this.lblT5.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.lblT5.Appearance.Options.UseBackColor = true;
@@ -281,7 +281,7 @@
             // 
             // lblLoader
             // 
-            this.lblLoader.Appearance.BackColor = System.Drawing.Color.White;
+            this.lblLoader.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.lblLoader.Appearance.Font = new System.Drawing.Font("宋体", 24F);
             this.lblLoader.Appearance.ForeColor = System.Drawing.Color.Silver;
             this.lblLoader.Appearance.Options.UseBackColor = true;

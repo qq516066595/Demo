@@ -28,12 +28,12 @@ namespace Demo.Forms.Tube
         public bool gbHMI_Recipe_Abort;
         public UInt16 gnHMI_Hold_Time;
 
-        public RecipeCtrl stCurrentRecipeCtrl;
+        private RecipeCtrl stCurrentRecipeCtrl;
         public Int16 giRecipe_ID;
         public Int16 giTubeRunCount;
         public bool gbProcess_Busy;
         public UInt16 gnProcessTotalTime;
-        public UInt16 gnProcessWorkingTime;
+        private UInt16 gnProcessWorkingTime;
         public UInt16 gnProcessRemainTime;
         private OP_MODE oP_Mode;//系统模式枚举
         public BoatInfo stTube_BoatInfo;//舟信息
@@ -42,9 +42,20 @@ namespace Demo.Forms.Tube
         {
             public UInt16 eName;                   //步名称
             public float nDuration;                //步总时间
-            public float nWorking_Time;            //步进行时间
+            private float nWorking_Time;            //步进行时间
             public float nRemain_Time;             //步剩余时间
             public bool bFinish;                   //当前步完成
+
+            public float NWorking_Time { get => nWorking_Time; set
+                {
+                    if (nWorking_Time != value)
+                    {
+                        nWorking_Time = value;
+                        if (StepProcessBarChanged != null)
+                            StepProcessBarChanged(this, null);
+                    }
+                }
+            }
         }
 
         public struct BoatInfo
@@ -284,8 +295,22 @@ namespace Demo.Forms.Tube
             }
         }
 
+        public ushort GnProcessWorkingTime { get => gnProcessWorkingTime; set
+            {
+                if (gnProcessWorkingTime != value)
+                {
+                    gnProcessWorkingTime = value;
+                    if (ProcessBarChanged != null)
+                        ProcessBarChanged(this, null);
+                }
+            }
+        }
+
+
         public event EventHandler InitDoneChanged = null;
         public event EventHandler DisableConditionsChanged = null;
+        public event EventHandler ProcessBarChanged = null;
+        public static event EventHandler StepProcessBarChanged = null;
 
         #endregion
     }
