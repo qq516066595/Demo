@@ -142,35 +142,35 @@ namespace Demo.Forms.Tube
                 SetDesignRight(false);
         }
 
-        //读取
-        //TUBEisTEST tube = new TUBEisTEST();
+        //读取 
+
         LaplaceCIP.PlcOmronCip plcOmronCip = new LaplaceCIP.PlcOmronCip();
         string test1;
         private void intIT()
         {
             if (Convert.ToInt32(this.Tag) == 1)
-            {
-                test1 = plcOmronCip.GetVariableInfo(1, "OP_Mode");
+            { 
+                // test1 = plcOmronCip.GetVariableInfo(1, "OP_Mode");
             }
         }
         Thread th1;
         //线程读取
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //if (th1 == null)
-            //{
-            //    th1 = new Thread(intIT);
-            //    th1.Start();
-            //}
-            //else
-            //{
-            //    if (th1.ThreadState == System.Threading.ThreadState.Stopped)
-            //    {
-            //        th1 = new Thread(intIT);
-            //        th1.Start();
-            //    }
-            //}
-            //txtPumpSpeed.Text = test1;
+            if (th1 == null)
+            {
+                th1 = new Thread(intIT);
+                th1.Start();
+            }
+            else
+            {
+                if (th1.ThreadState == System.Threading.ThreadState.Stopped)
+                {
+                    th1 = new Thread(intIT);
+                    th1.Start();
+                }
+            }
+            txtPumpSpeed.Text = test1;
         }
 
         //写入
