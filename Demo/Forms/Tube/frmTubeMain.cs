@@ -145,15 +145,13 @@ namespace Demo.Forms.Tube
 
         //读取
         //TUBEisTEST tube = new TUBEisTEST();
-
-      
-       // LaplaceCIP.PlcOmronCip plcOmronCip = new LaplaceCIP.PlcOmronCip();
+        LaplaceCIP.PlcOmronCip plcOmronCip = new LaplaceCIP.PlcOmronCip();
         string test1;
         private void intIT()
         {
             if (Convert.ToInt32(this.Tag) == 1)
             {
-       //         test1 = plcOmronCip.GetVariableInfo(1, "OP_Mode");
+                test1 = plcOmronCip.GetVariableInfo(1, "OP_Mode");
             }
         }
         Thread th1;
@@ -187,7 +185,7 @@ namespace Demo.Forms.Tube
                 键盘.DefaultInstance.ShowDialog();
                 if (MyModu.Gyedit != "cancel")
                 {
-           //         plcOmronCip.WiteVariable(1, "OP_Mode", MyModu.Gyedit);
+                    plcOmronCip.WiteVariable(1, "OP_Mode", MyModu.Gyedit);
                 }
                 MyModu.LogEvent(6, "测试", MyModu.Gyedit);
                 return;
@@ -198,7 +196,6 @@ namespace Demo.Forms.Tube
                 MessageBox.Show("Set Failed:" + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
         #endregion
 
         #region 主界面

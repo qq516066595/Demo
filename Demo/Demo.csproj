@@ -193,9 +193,6 @@
     <Compile Include="Forms\键盘.Designer.cs">
       <DependentUpon>键盘.cs</DependentUpon>
     </Compile>
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -232,12 +229,6 @@
     <Compile Include="Forms\Tube\frmTubeMain.Designer.cs">
       <DependentUpon>frmTubeMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Loader\ucBuffer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\Loader\ucBuffer.Designer.cs">
-      <DependentUpon>ucBuffer.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControl\Loader\ucExtendPara.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -256,12 +247,6 @@
     <Compile Include="UserControl\Loader\ucIO2.Designer.cs">
       <DependentUpon>ucIO2.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Loader\ucIO_Menu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\Loader\ucIO_Menu.Designer.cs">
-      <DependentUpon>ucIO_Menu.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControl\Loader\ucServoPara.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -273,12 +258,6 @@
     </Compile>
     <Compile Include="UserControl\Loader\ucServoPara2.Designer.cs">
       <DependentUpon>ucServoPara2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl\Loader\ufBoatb_bf.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl\Loader\ufBoatb_bf.Designer.cs">
-      <DependentUpon>ufBoatb_bf.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl\Tube\ucAxisX.cs">
       <SubType>UserControl</SubType>
@@ -354,9 +333,6 @@
     <EmbeddedResource Include="UserControl\Loader\ucBoat.resx">
       <DependentUpon>ucBoat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Loader\ucBuffer.resx">
-      <DependentUpon>ucBuffer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Loader\ucExtendPara.resx">
       <DependentUpon>ucExtendPara.cs</DependentUpon>
     </EmbeddedResource>
@@ -366,17 +342,11 @@
     <EmbeddedResource Include="UserControl\Loader\ucIO2.resx">
       <DependentUpon>ucIO2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Loader\ucIO_Menu.resx">
-      <DependentUpon>ucIO_Menu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Loader\ucServoPara.resx">
       <DependentUpon>ucServoPara.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Loader\ucServoPara2.resx">
       <DependentUpon>ucServoPara2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\Loader\ufBoatb_bf.resx">
-      <DependentUpon>ufBoatb_bf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl\Tube\ucAxisX.resx">
       <DependentUpon>ucAxisX.cs</DependentUpon>
@@ -413,7 +383,6 @@
     <None Include="bin\Debug\工艺历史数据\Tube4\recipe4.csv" />
     <None Include="bin\Debug\工艺历史数据\Tube5\recipe5.csv" />
     <None Include="bin\Debug\工艺历史数据\工艺名称+工艺时长+运行次数.csv" />
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -444,13 +413,10 @@
     <Content Include="image\notifier.png" />
     <Content Include="image\wind.png" />
     <Content Include="image\wind_postion.png" />
-    <Content Include="lib\Aspose.Cells.dll" />
-    <Content Include="lib\Aspose.Cells.xml" />
     <Content Include="lib\CIPCompolet.dll" />
     <Content Include="lib\CIPCompolet64.dll" />
     <Content Include="lib\CIPCompoletProxyLib.dll" />
     <Content Include="lib\CIPCompoletProxyServer.exe" />
-    <Content Include="lib\LaplaceCIP.dll" />
     <Content Include="lib\log4net.dll" />
     <Content Include="lib\MySql.Data.dll" />
     <Content Include="lib\SQLite.Interop.dll" />
@@ -461,25 +427,14 @@
     <Content Include="lib\System.Data.SQLite.EF6.dll" />
     <Content Include="lib\System.Data.SQLite.Linq.dll" />
     <Content Include="lib\通讯\MoonsCommLib.dll" />
-    <Content Include="Resources\Danger.png" />
-    <Content Include="Resources\下拉2.png" />
-    <None Include="Resources\图片1.png" />
-    <None Include="Resources\图片3.png" />
-    <Content Include="Resources\菜单 %281%29.png" />
-    <Content Include="Resources\输入.png" />
-    <Content Include="Resources\输出.png" />
-    <Content Include="Resources\通讯.png" />
     <None Include="Resources\switch_off.png" />
     <None Include="Resources\switch_on.png" />
     <None Include="Resources\DefSplashImage.png" />
     <None Include="Resources\下拉箭头3.png" />
     <None Include="Resources\下拉箭头2.png" />
     <None Include="Resources\下拉箭头.png" />
-    <None Include="Resources\事件.xlsx" />
     <None Include="Resources\双手自动绿.png" />
     <None Include="Resources\双手自动红 %281%29.png" />
-    <None Include="Resources\报警.xlsx" />
-    <None Include="Resources\舟管理.xlsx" />
     <None Include="Resources\输送带单步.png" />
     <None Include="Resources\门禁管理绿.png" />
     <None Include="Resources\门禁管理红.png" />
@@ -513,7 +468,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\Release\" />
     <Folder Include="lib\其他\" />
     <Folder Include="lib\控件\" />
     <Folder Include="lib\数据库\" />

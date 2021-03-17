@@ -34,24 +34,6 @@ namespace Demo.Forms.Loader
             pnlVertical.Size = new Size(286, 120);
             pnlTransport.Size = new Size(286, 120);
             pnlDoorLock.Size = new Size(286, 70);
-
-            ucIO_Menu1.InputClick += InputClick;
-            ucIO_Menu1.OutputClick += OutputClick;
-            ucIO_Menu1.CommClick += CommClick;
-            ucIO_Menu1.MenuEnter += MenuEnter;
-            ucIO_Menu1.Size = new Size(42, 50);
-
-            ucIO_Menu2.InputClick += InputClick;
-            ucIO_Menu2.OutputClick += OutputClick;
-            ucIO_Menu2.CommClick += CommClick;
-            ucIO_Menu2.MenuEnter += MenuEnter;
-            ucIO_Menu2.Size = new Size(42, 50);
-
-            ucIO_Menu3.InputClick += InputClick;
-            ucIO_Menu3.OutputClick += OutputClick;
-            ucIO_Menu3.CommClick += CommClick;
-            ucIO_Menu3.MenuEnter += MenuEnter;
-            ucIO_Menu3.Size = new Size(42, 50);
             
         }
 
@@ -118,60 +100,6 @@ namespace Demo.Forms.Loader
             }
         }
         #endregion
-
-        private void InputClick(object sender, EventArgs e)
-        {
-
-            tcIO.SelectedTabPage = tpInput;
-            ucIO_Menu1.Size = new Size(42, 50);
-            ucIO_Menu2.Size = new Size(42, 50);
-            ucIO_Menu3.Size = new Size(42, 50);
-
-        }
-
-        private void OutputClick(object sender, EventArgs e)
-        {
-            tcIO.SelectedTabPage = tpOutput;
-            ucIO_Menu1.Size = new Size(42, 50);
-            ucIO_Menu2.Size = new Size(42, 50);
-            ucIO_Menu3.Size = new Size(42, 50);
-        }
-
-        private void CommClick(object sender, EventArgs e)
-        {
-            tcIO.SelectedTabPage = tpCommunication;
-            ucIO_Menu1.Size = new Size(42, 50);
-            ucIO_Menu2.Size = new Size(42, 50);
-            ucIO_Menu3.Size = new Size(42, 50);
-        }
-
-        private void MenuEnter(object sender, EventArgs e)
-        {
-            ucIO_Menu1.Size = new Size(139, 301);
-            ucIO_Menu2.Size = new Size(139, 301);
-            ucIO_Menu3.Size = new Size(139, 301);
-        }
-
-        private void ucIO_Menu_MouseLeave(object sender, EventArgs e)
-        {
-            ucIO_Menu1.Size = new Size(42, 50);
-            ucIO_Menu2.Size = new Size(42, 50);
-            ucIO_Menu3.Size = new Size(42, 50);
-        }
-
-        private void lblNameBuffer1_Main_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ucBoat_Buffer1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ucBuffer1_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

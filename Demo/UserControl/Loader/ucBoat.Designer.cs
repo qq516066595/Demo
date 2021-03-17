@@ -43,7 +43,7 @@
             // txtBoatID
             // 
             this.txtBoatID.EditValue = "JK0000000";
-            this.txtBoatID.Location = new System.Drawing.Point(35, 27);
+            this.txtBoatID.Location = new System.Drawing.Point(12, 19);
             this.txtBoatID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBoatID.Name = "txtBoatID";
             this.txtBoatID.Size = new System.Drawing.Size(78, 20);
@@ -56,7 +56,7 @@
             this.lblLight_R.Appearance.Options.UseBackColor = true;
             this.lblLight_R.Appearance.Options.UseFont = true;
             this.lblLight_R.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblLight_R.Location = new System.Drawing.Point(311, 36);
+            this.lblLight_R.Location = new System.Drawing.Point(235, 29);
             this.lblLight_R.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblLight_R.Name = "lblLight_R";
             this.lblLight_R.Size = new System.Drawing.Size(5, 31);
@@ -70,7 +70,7 @@
             this.lblLight_L.Appearance.Options.UseBackColor = true;
             this.lblLight_L.Appearance.Options.UseFont = true;
             this.lblLight_L.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lblLight_L.Location = new System.Drawing.Point(3, 36);
+            this.lblLight_L.Location = new System.Drawing.Point(0, 29);
             this.lblLight_L.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblLight_L.Name = "lblLight_L";
             this.lblLight_L.Size = new System.Drawing.Size(5, 31);
@@ -80,7 +80,7 @@
             // cmbBoatState
             // 
             this.cmbBoatState.EditValue = "饱和完成";
-            this.cmbBoatState.Location = new System.Drawing.Point(35, 55);
+            this.cmbBoatState.Location = new System.Drawing.Point(12, 47);
             this.cmbBoatState.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbBoatState.Name = "cmbBoatState";
             this.cmbBoatState.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -91,10 +91,8 @@
             // txtFromTube
             // 
             this.txtFromTube.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFromTube.Appearance.ForeColor = System.Drawing.Color.White;
             this.txtFromTube.Appearance.Options.UseFont = true;
-            this.txtFromTube.Appearance.Options.UseForeColor = true;
-            this.txtFromTube.Location = new System.Drawing.Point(139, 29);
+            this.txtFromTube.Location = new System.Drawing.Point(95, 21);
             this.txtFromTube.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFromTube.Name = "txtFromTube";
             this.txtFromTube.Size = new System.Drawing.Size(48, 14);
@@ -104,10 +102,8 @@
             // lblMode
             // 
             this.lblMode.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMode.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblMode.Appearance.Options.UseFont = true;
-            this.lblMode.Appearance.Options.UseForeColor = true;
-            this.lblMode.Location = new System.Drawing.Point(139, 57);
+            this.lblMode.Location = new System.Drawing.Point(95, 49);
             this.lblMode.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblMode.Name = "lblMode";
             this.lblMode.Size = new System.Drawing.Size(48, 14);
@@ -117,10 +113,8 @@
             // lblCDTime
             // 
             this.lblCDTime.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCDTime.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblCDTime.Appearance.Options.UseFont = true;
-            this.lblCDTime.Appearance.Options.UseForeColor = true;
-            this.lblCDTime.Location = new System.Drawing.Point(213, 29);
+            this.lblCDTime.Location = new System.Drawing.Point(153, 21);
             this.lblCDTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCDTime.Name = "lblCDTime";
             this.lblCDTime.Size = new System.Drawing.Size(69, 14);
@@ -130,10 +124,8 @@
             // lblStorageTime
             // 
             this.lblStorageTime.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStorageTime.Appearance.ForeColor = System.Drawing.Color.White;
             this.lblStorageTime.Appearance.Options.UseFont = true;
-            this.lblStorageTime.Appearance.Options.UseForeColor = true;
-            this.lblStorageTime.Location = new System.Drawing.Point(213, 57);
+            this.lblStorageTime.Location = new System.Drawing.Point(153, 49);
             this.lblStorageTime.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblStorageTime.Name = "lblStorageTime";
             this.lblStorageTime.Size = new System.Drawing.Size(69, 14);
@@ -142,10 +134,8 @@
             // 
             // ucBoat
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.AutoScroll = true;
-            this.BackgroundImage = global::Demo.Properties.Resources.图片1;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblStorageTime);
             this.Controls.Add(this.lblMode);
             this.Controls.Add(this.lblCDTime);
@@ -154,10 +144,9 @@
             this.Controls.Add(this.lblLight_L);
             this.Controls.Add(this.lblLight_R);
             this.Controls.Add(this.txtBoatID);
-            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ucBoat";
-            this.Size = new System.Drawing.Size(316, 102);
+            this.Size = new System.Drawing.Size(242, 76);
             ((System.ComponentModel.ISupportInitialize)(this.txtBoatID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBoatState.Properties)).EndInit();
             this.ResumeLayout(false);
