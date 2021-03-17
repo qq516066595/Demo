@@ -56,12 +56,6 @@
             this.ucBoat_Tube4 = new Demo.Forms.Loader.ucBoat();
             this.ucBoat_Tube3 = new Demo.Forms.Loader.ucBoat();
             this.ucBoat_Tube2 = new Demo.Forms.Loader.ucBoat();
-            this.ucBoat_Buffer6 = new Demo.Forms.Loader.ucBoat();
-            this.ucBoat_Buffer5 = new Demo.Forms.Loader.ucBoat();
-            this.ucBoat_Buffer4 = new Demo.Forms.Loader.ucBoat();
-            this.ucBoat_Buffer3 = new Demo.Forms.Loader.ucBoat();
-            this.ucBoat_Buffer2 = new Demo.Forms.Loader.ucBoat();
-            this.ucBoat_Buffer1 = new Demo.Forms.Loader.ucBoat();
             this.ucBoat_Tube1 = new Demo.Forms.Loader.ucBoat();
             this.pnlManipulator = new DevExpress.XtraEditors.PanelControl();
             this.txtBoatState_M = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -237,21 +231,8 @@
             this.lblOther = new DevExpress.XtraEditors.LabelControl();
             this.tpIO = new DevExpress.XtraTab.XtraTabPage();
             this.tcIO = new DevExpress.XtraTab.XtraTabControl();
-            this.tpInput = new DevExpress.XtraTab.XtraTabPage();
-            this.lblInputName_6 = new DevExpress.XtraEditors.LabelControl();
-            this.lblInputName_3 = new DevExpress.XtraEditors.LabelControl();
-            this.lblInputName_5 = new DevExpress.XtraEditors.LabelControl();
-            this.lblInputName_2 = new DevExpress.XtraEditors.LabelControl();
-            this.lblInputName_4 = new DevExpress.XtraEditors.LabelControl();
-            this.lblInputName_1 = new DevExpress.XtraEditors.LabelControl();
-            this.tpOutput = new DevExpress.XtraTab.XtraTabPage();
-            this.lblOutputName_6 = new DevExpress.XtraEditors.LabelControl();
-            this.lblOutputName_3 = new DevExpress.XtraEditors.LabelControl();
-            this.lblOutputName_5 = new DevExpress.XtraEditors.LabelControl();
-            this.lblOutputName_2 = new DevExpress.XtraEditors.LabelControl();
-            this.lblOutputName_4 = new DevExpress.XtraEditors.LabelControl();
-            this.lblOutputName_1 = new DevExpress.XtraEditors.LabelControl();
-            this.tpCommunicateion = new DevExpress.XtraTab.XtraTabPage();
+            this.tpCommunication = new DevExpress.XtraTab.XtraTabPage();
+            this.ucIO_Menu3 = new Demo.UserControl.Loader.ucIO_Menu();
             this.lblName4Manipulator = new DevExpress.XtraEditors.LabelControl();
             this.lblNameInsertion = new DevExpress.XtraEditors.LabelControl();
             this.lblArrow2 = new DevExpress.XtraEditors.LabelControl();
@@ -404,6 +385,34 @@
             this.lblNameHeartBeat = new DevExpress.XtraEditors.LabelControl();
             this.lblName3Manipulator = new DevExpress.XtraEditors.LabelControl();
             this.lblName2Manipulator = new DevExpress.XtraEditors.LabelControl();
+            this.tpInput = new DevExpress.XtraTab.XtraTabPage();
+            this.ucIO_Menu1 = new Demo.UserControl.Loader.ucIO_Menu();
+            this.lblInputName_6 = new DevExpress.XtraEditors.LabelControl();
+            this.lblInputName_3 = new DevExpress.XtraEditors.LabelControl();
+            this.lblInputName_5 = new DevExpress.XtraEditors.LabelControl();
+            this.lblInputName_2 = new DevExpress.XtraEditors.LabelControl();
+            this.lblInputName_4 = new DevExpress.XtraEditors.LabelControl();
+            this.lblInputName_1 = new DevExpress.XtraEditors.LabelControl();
+            this.ucIO2Input_6 = new Demo.UserControl.Loader.ucIO2();
+            this.ucIO2Input_3 = new Demo.UserControl.Loader.ucIO2();
+            this.ucIO2Input_4 = new Demo.UserControl.Loader.ucIO2();
+            this.ucIO2Input_2 = new Demo.UserControl.Loader.ucIO2();
+            this.ucIO2Input_5 = new Demo.UserControl.Loader.ucIO2();
+            this.ucIO2Input_1 = new Demo.UserControl.Loader.ucIO2();
+            this.tpOutput = new DevExpress.XtraTab.XtraTabPage();
+            this.ucIO_Menu2 = new Demo.UserControl.Loader.ucIO_Menu();
+            this.lblOutputName_6 = new DevExpress.XtraEditors.LabelControl();
+            this.lblOutputName_3 = new DevExpress.XtraEditors.LabelControl();
+            this.lblOutputName_5 = new DevExpress.XtraEditors.LabelControl();
+            this.lblOutputName_2 = new DevExpress.XtraEditors.LabelControl();
+            this.lblOutputName_4 = new DevExpress.XtraEditors.LabelControl();
+            this.lblOutputName_1 = new DevExpress.XtraEditors.LabelControl();
+            this.ucIO2Output_6 = new Demo.UserControl.Loader.ucIO2();
+            this.ucIO2Output_5 = new Demo.UserControl.Loader.ucIO2();
+            this.ucIO2Output_3 = new Demo.UserControl.Loader.ucIO2();
+            this.ucIO2Output_4 = new Demo.UserControl.Loader.ucIO2();
+            this.ucIO2Output_2 = new Demo.UserControl.Loader.ucIO2();
+            this.ucIO2Output_1 = new Demo.UserControl.Loader.ucIO2();
             this.tpSetting = new DevExpress.XtraTab.XtraTabPage();
             this.tcSetting = new DevExpress.XtraTab.XtraTabControl();
             this.tpInitialization = new DevExpress.XtraTab.XtraTabPage();
@@ -581,18 +590,12 @@
             this.col描述3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.reportDesigner1 = new DevExpress.XtraReports.UserDesigner.XRDesignMdiController(this.components);
-            this.ucIO2Input_1 = new Demo.UserControl.Loader.ucIO2();
-            this.ucIO2Input_5 = new Demo.UserControl.Loader.ucIO2();
-            this.ucIO2Input_3 = new Demo.UserControl.Loader.ucIO2();
-            this.ucIO2Input_4 = new Demo.UserControl.Loader.ucIO2();
-            this.ucIO2Input_6 = new Demo.UserControl.Loader.ucIO2();
-            this.ucIO2Input_2 = new Demo.UserControl.Loader.ucIO2();
-            this.ucIO2Output_1 = new Demo.UserControl.Loader.ucIO2();
-            this.ucIO2Output_2 = new Demo.UserControl.Loader.ucIO2();
-            this.ucIO2Output_3 = new Demo.UserControl.Loader.ucIO2();
-            this.ucIO2Output_4 = new Demo.UserControl.Loader.ucIO2();
-            this.ucIO2Output_5 = new Demo.UserControl.Loader.ucIO2();
-            this.ucIO2Output_6 = new Demo.UserControl.Loader.ucIO2();
+            this.ucBuffer1 = new Demo.UserControl.Loader.ucBuffer();
+            this.ucBuffer2 = new Demo.UserControl.Loader.ucBuffer();
+            this.ucBuffer3 = new Demo.UserControl.Loader.ucBuffer();
+            this.ucBuffer4 = new Demo.UserControl.Loader.ucBuffer();
+            this.ucBuffer5 = new Demo.UserControl.Loader.ucBuffer();
+            this.ucBuffer6 = new Demo.UserControl.Loader.ucBuffer();
             ((System.ComponentModel.ISupportInitialize)(this.xrDesignBarManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.recentlyUsedItemsComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.designRepositoryItemComboBox1)).BeginInit();
@@ -640,13 +643,13 @@
             this.tpIO.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tcIO)).BeginInit();
             this.tcIO.SuspendLayout();
-            this.tpInput.SuspendLayout();
-            this.tpOutput.SuspendLayout();
-            this.tpCommunicateion.SuspendLayout();
+            this.tpCommunication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlManipulator_Communication)).BeginInit();
             this.pnlManipulator_Communication.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTube_Communication)).BeginInit();
             this.pnlTube_Communication.SuspendLayout();
+            this.tpInput.SuspendLayout();
+            this.tpOutput.SuspendLayout();
             this.tpSetting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tcSetting)).BeginInit();
             this.tcSetting.SuspendLayout();
@@ -819,7 +822,7 @@
             this.tpServo.Controls.Add(this.splitContainerControl1);
             this.tpServo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpServo.Name = "tpServo";
-            this.tpServo.Size = new System.Drawing.Size(1274, 835);
+            this.tpServo.Size = new System.Drawing.Size(1275, 838);
             this.tpServo.Text = " 主 界 面 ";
             // 
             // splitContainerControl1
@@ -843,20 +846,20 @@
             this.splitContainerControl1.Panel1.Controls.Add(this.ucBoat_Tube4);
             this.splitContainerControl1.Panel1.Controls.Add(this.ucBoat_Tube3);
             this.splitContainerControl1.Panel1.Controls.Add(this.ucBoat_Tube2);
-            this.splitContainerControl1.Panel1.Controls.Add(this.ucBoat_Buffer6);
-            this.splitContainerControl1.Panel1.Controls.Add(this.ucBoat_Buffer5);
-            this.splitContainerControl1.Panel1.Controls.Add(this.ucBoat_Buffer4);
-            this.splitContainerControl1.Panel1.Controls.Add(this.ucBoat_Buffer3);
-            this.splitContainerControl1.Panel1.Controls.Add(this.ucBoat_Buffer2);
-            this.splitContainerControl1.Panel1.Controls.Add(this.ucBoat_Buffer1);
             this.splitContainerControl1.Panel1.Controls.Add(this.ucBoat_Tube1);
             this.splitContainerControl1.Panel1.Controls.Add(this.pnlManipulator);
             this.splitContainerControl1.Panel1.Controls.Add(this.pnlConveyor);
             this.splitContainerControl1.Panel1.Controls.Add(this.pblBoatMove_Mannual);
+            this.splitContainerControl1.Panel1.Controls.Add(this.ucBuffer6);
+            this.splitContainerControl1.Panel1.Controls.Add(this.ucBuffer5);
+            this.splitContainerControl1.Panel1.Controls.Add(this.ucBuffer4);
+            this.splitContainerControl1.Panel1.Controls.Add(this.ucBuffer3);
+            this.splitContainerControl1.Panel1.Controls.Add(this.ucBuffer2);
+            this.splitContainerControl1.Panel1.Controls.Add(this.ucBuffer1);
             this.splitContainerControl1.Panel1.Text = "Main";
             this.splitContainerControl1.Panel2.Controls.Add(this.pnlAxisControl);
             this.splitContainerControl1.Panel2.Text = "Axis";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1274, 835);
+            this.splitContainerControl1.Size = new System.Drawing.Size(1275, 838);
             this.splitContainerControl1.SplitterPosition = 938;
             this.splitContainerControl1.TabIndex = 29;
             this.splitContainerControl1.Text = "splitContainerControl1";
@@ -877,7 +880,7 @@
             this.lblNameTube3_Main.AutoSize = true;
             this.lblNameTube3_Main.BackColor = System.Drawing.Color.Transparent;
             this.lblNameTube3_Main.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameTube3_Main.Location = new System.Drawing.Point(64, 302);
+            this.lblNameTube3_Main.Location = new System.Drawing.Point(61, 302);
             this.lblNameTube3_Main.Name = "lblNameTube3_Main";
             this.lblNameTube3_Main.Size = new System.Drawing.Size(46, 18);
             this.lblNameTube3_Main.TabIndex = 2;
@@ -893,13 +896,14 @@
             this.lblNameBuffer1_Main.Size = new System.Drawing.Size(46, 18);
             this.lblNameBuffer1_Main.TabIndex = 2;
             this.lblNameBuffer1_Main.Text = "缓存1";
+            this.lblNameBuffer1_Main.Click += new System.EventHandler(this.lblNameBuffer1_Main_Click);
             // 
             // lblNameTube1_Main
             // 
             this.lblNameTube1_Main.AutoSize = true;
             this.lblNameTube1_Main.BackColor = System.Drawing.Color.Transparent;
             this.lblNameTube1_Main.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameTube1_Main.Location = new System.Drawing.Point(67, 34);
+            this.lblNameTube1_Main.Location = new System.Drawing.Point(64, 34);
             this.lblNameTube1_Main.Name = "lblNameTube1_Main";
             this.lblNameTube1_Main.Size = new System.Drawing.Size(46, 18);
             this.lblNameTube1_Main.TabIndex = 2;
@@ -932,7 +936,7 @@
             this.lblNameTube5_Main.AutoSize = true;
             this.lblNameTube5_Main.BackColor = System.Drawing.Color.Transparent;
             this.lblNameTube5_Main.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameTube5_Main.Location = new System.Drawing.Point(64, 570);
+            this.lblNameTube5_Main.Location = new System.Drawing.Point(61, 570);
             this.lblNameTube5_Main.Name = "lblNameTube5_Main";
             this.lblNameTube5_Main.Size = new System.Drawing.Size(46, 18);
             this.lblNameTube5_Main.TabIndex = 2;
@@ -965,7 +969,7 @@
             this.lblNameTube4_Main.AutoSize = true;
             this.lblNameTube4_Main.BackColor = System.Drawing.Color.Transparent;
             this.lblNameTube4_Main.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameTube4_Main.Location = new System.Drawing.Point(64, 436);
+            this.lblNameTube4_Main.Location = new System.Drawing.Point(61, 436);
             this.lblNameTube4_Main.Name = "lblNameTube4_Main";
             this.lblNameTube4_Main.Size = new System.Drawing.Size(46, 18);
             this.lblNameTube4_Main.TabIndex = 2;
@@ -976,7 +980,7 @@
             this.lblNameTube2_Main.AutoSize = true;
             this.lblNameTube2_Main.BackColor = System.Drawing.Color.Transparent;
             this.lblNameTube2_Main.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameTube2_Main.Location = new System.Drawing.Point(64, 168);
+            this.lblNameTube2_Main.Location = new System.Drawing.Point(61, 168);
             this.lblNameTube2_Main.Name = "lblNameTube2_Main";
             this.lblNameTube2_Main.Size = new System.Drawing.Size(46, 18);
             this.lblNameTube2_Main.TabIndex = 2;
@@ -986,121 +990,65 @@
             // 
             this.ucBoat_Tube5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.ucBoat_Tube5.Appearance.Options.UseBackColor = true;
-            this.ucBoat_Tube5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucBoat_Tube5.Location = new System.Drawing.Point(51, 580);
+            this.ucBoat_Tube5.AutoScroll = true;
+            this.ucBoat_Tube5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucBoat_Tube5.BackgroundImage")));
+            this.ucBoat_Tube5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucBoat_Tube5.Location = new System.Drawing.Point(24, 565);
             this.ucBoat_Tube5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucBoat_Tube5.Name = "ucBoat_Tube5";
-            this.ucBoat_Tube5.Size = new System.Drawing.Size(242, 77);
+            this.ucBoat_Tube5.Size = new System.Drawing.Size(319, 102);
             this.ucBoat_Tube5.TabIndex = 35;
             // 
             // ucBoat_Tube4
             // 
             this.ucBoat_Tube4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.ucBoat_Tube4.Appearance.Options.UseBackColor = true;
-            this.ucBoat_Tube4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucBoat_Tube4.Location = new System.Drawing.Point(51, 446);
+            this.ucBoat_Tube4.AutoScroll = true;
+            this.ucBoat_Tube4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucBoat_Tube4.BackgroundImage")));
+            this.ucBoat_Tube4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucBoat_Tube4.Location = new System.Drawing.Point(24, 431);
             this.ucBoat_Tube4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucBoat_Tube4.Name = "ucBoat_Tube4";
-            this.ucBoat_Tube4.Size = new System.Drawing.Size(242, 77);
+            this.ucBoat_Tube4.Size = new System.Drawing.Size(319, 102);
             this.ucBoat_Tube4.TabIndex = 35;
             // 
             // ucBoat_Tube3
             // 
             this.ucBoat_Tube3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.ucBoat_Tube3.Appearance.Options.UseBackColor = true;
-            this.ucBoat_Tube3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucBoat_Tube3.Location = new System.Drawing.Point(51, 312);
+            this.ucBoat_Tube3.AutoScroll = true;
+            this.ucBoat_Tube3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucBoat_Tube3.BackgroundImage")));
+            this.ucBoat_Tube3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucBoat_Tube3.Location = new System.Drawing.Point(24, 297);
             this.ucBoat_Tube3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucBoat_Tube3.Name = "ucBoat_Tube3";
-            this.ucBoat_Tube3.Size = new System.Drawing.Size(242, 77);
+            this.ucBoat_Tube3.Size = new System.Drawing.Size(319, 102);
             this.ucBoat_Tube3.TabIndex = 35;
             // 
             // ucBoat_Tube2
             // 
             this.ucBoat_Tube2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.ucBoat_Tube2.Appearance.Options.UseBackColor = true;
-            this.ucBoat_Tube2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucBoat_Tube2.Location = new System.Drawing.Point(51, 178);
+            this.ucBoat_Tube2.AutoScroll = true;
+            this.ucBoat_Tube2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucBoat_Tube2.BackgroundImage")));
+            this.ucBoat_Tube2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucBoat_Tube2.Location = new System.Drawing.Point(24, 163);
             this.ucBoat_Tube2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucBoat_Tube2.Name = "ucBoat_Tube2";
-            this.ucBoat_Tube2.Size = new System.Drawing.Size(242, 77);
+            this.ucBoat_Tube2.Size = new System.Drawing.Size(319, 102);
             this.ucBoat_Tube2.TabIndex = 35;
-            // 
-            // ucBoat_Buffer6
-            // 
-            this.ucBoat_Buffer6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucBoat_Buffer6.Appearance.Options.UseBackColor = true;
-            this.ucBoat_Buffer6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucBoat_Buffer6.Location = new System.Drawing.Point(647, 714);
-            this.ucBoat_Buffer6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucBoat_Buffer6.Name = "ucBoat_Buffer6";
-            this.ucBoat_Buffer6.Size = new System.Drawing.Size(242, 77);
-            this.ucBoat_Buffer6.TabIndex = 35;
-            // 
-            // ucBoat_Buffer5
-            // 
-            this.ucBoat_Buffer5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucBoat_Buffer5.Appearance.Options.UseBackColor = true;
-            this.ucBoat_Buffer5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucBoat_Buffer5.Location = new System.Drawing.Point(647, 580);
-            this.ucBoat_Buffer5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucBoat_Buffer5.Name = "ucBoat_Buffer5";
-            this.ucBoat_Buffer5.Size = new System.Drawing.Size(242, 77);
-            this.ucBoat_Buffer5.TabIndex = 35;
-            // 
-            // ucBoat_Buffer4
-            // 
-            this.ucBoat_Buffer4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucBoat_Buffer4.Appearance.Options.UseBackColor = true;
-            this.ucBoat_Buffer4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucBoat_Buffer4.Location = new System.Drawing.Point(647, 446);
-            this.ucBoat_Buffer4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucBoat_Buffer4.Name = "ucBoat_Buffer4";
-            this.ucBoat_Buffer4.Size = new System.Drawing.Size(242, 77);
-            this.ucBoat_Buffer4.TabIndex = 35;
-            // 
-            // ucBoat_Buffer3
-            // 
-            this.ucBoat_Buffer3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucBoat_Buffer3.Appearance.Options.UseBackColor = true;
-            this.ucBoat_Buffer3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucBoat_Buffer3.Location = new System.Drawing.Point(647, 312);
-            this.ucBoat_Buffer3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucBoat_Buffer3.Name = "ucBoat_Buffer3";
-            this.ucBoat_Buffer3.Size = new System.Drawing.Size(242, 77);
-            this.ucBoat_Buffer3.TabIndex = 35;
-            // 
-            // ucBoat_Buffer2
-            // 
-            this.ucBoat_Buffer2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucBoat_Buffer2.Appearance.Options.UseBackColor = true;
-            this.ucBoat_Buffer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucBoat_Buffer2.Location = new System.Drawing.Point(647, 178);
-            this.ucBoat_Buffer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucBoat_Buffer2.Name = "ucBoat_Buffer2";
-            this.ucBoat_Buffer2.Size = new System.Drawing.Size(242, 77);
-            this.ucBoat_Buffer2.TabIndex = 35;
-            // 
-            // ucBoat_Buffer1
-            // 
-            this.ucBoat_Buffer1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucBoat_Buffer1.Appearance.Options.UseBackColor = true;
-            this.ucBoat_Buffer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucBoat_Buffer1.Location = new System.Drawing.Point(647, 44);
-            this.ucBoat_Buffer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucBoat_Buffer1.Name = "ucBoat_Buffer1";
-            this.ucBoat_Buffer1.Size = new System.Drawing.Size(242, 77);
-            this.ucBoat_Buffer1.TabIndex = 35;
             // 
             // ucBoat_Tube1
             // 
             this.ucBoat_Tube1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
             this.ucBoat_Tube1.Appearance.Options.UseBackColor = true;
-            this.ucBoat_Tube1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucBoat_Tube1.Location = new System.Drawing.Point(51, 44);
+            this.ucBoat_Tube1.AutoScroll = true;
+            this.ucBoat_Tube1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucBoat_Tube1.BackgroundImage")));
+            this.ucBoat_Tube1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucBoat_Tube1.Location = new System.Drawing.Point(24, 29);
             this.ucBoat_Tube1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ucBoat_Tube1.Name = "ucBoat_Tube1";
-            this.ucBoat_Tube1.Size = new System.Drawing.Size(242, 77);
+            this.ucBoat_Tube1.Size = new System.Drawing.Size(319, 102);
             this.ucBoat_Tube1.TabIndex = 35;
             // 
             // pnlManipulator
@@ -1629,7 +1577,7 @@
             this.pnlAxisControl.Location = new System.Drawing.Point(0, 0);
             this.pnlAxisControl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlAxisControl.Name = "pnlAxisControl";
-            this.pnlAxisControl.Size = new System.Drawing.Size(331, 835);
+            this.pnlAxisControl.Size = new System.Drawing.Size(333, 838);
             this.pnlAxisControl.TabIndex = 27;
             // 
             // pnlVertical
@@ -2996,7 +2944,7 @@
             this.tpIO.Controls.Add(this.tcIO);
             this.tpIO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpIO.Name = "tpIO";
-            this.tpIO.Size = new System.Drawing.Size(1274, 835);
+            this.tpIO.Size = new System.Drawing.Size(1275, 838);
             this.tpIO.Text = " I O ";
             // 
             // tcIO
@@ -3005,198 +2953,37 @@
             this.tcIO.Location = new System.Drawing.Point(0, 0);
             this.tcIO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tcIO.Name = "tcIO";
-            this.tcIO.SelectedTabPage = this.tpInput;
-            this.tcIO.Size = new System.Drawing.Size(1274, 835);
+            this.tcIO.SelectedTabPage = this.tpCommunication;
+            this.tcIO.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
+            this.tcIO.Size = new System.Drawing.Size(1275, 838);
             this.tcIO.TabIndex = 1;
             this.tcIO.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tpInput,
             this.tpOutput,
-            this.tpCommunicateion});
+            this.tpCommunication});
             // 
-            // tpInput
+            // tpCommunication
             // 
-            this.tpInput.Controls.Add(this.lblInputName_6);
-            this.tpInput.Controls.Add(this.lblInputName_3);
-            this.tpInput.Controls.Add(this.lblInputName_5);
-            this.tpInput.Controls.Add(this.lblInputName_2);
-            this.tpInput.Controls.Add(this.lblInputName_4);
-            this.tpInput.Controls.Add(this.lblInputName_1);
-            this.tpInput.Controls.Add(this.ucIO2Input_6);
-            this.tpInput.Controls.Add(this.ucIO2Input_3);
-            this.tpInput.Controls.Add(this.ucIO2Input_4);
-            this.tpInput.Controls.Add(this.ucIO2Input_2);
-            this.tpInput.Controls.Add(this.ucIO2Input_5);
-            this.tpInput.Controls.Add(this.ucIO2Input_1);
-            this.tpInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tpInput.Name = "tpInput";
-            this.tpInput.Size = new System.Drawing.Size(1268, 806);
-            this.tpInput.Text = "输入";
+            this.tpCommunication.Controls.Add(this.ucIO_Menu3);
+            this.tpCommunication.Controls.Add(this.lblName4Manipulator);
+            this.tpCommunication.Controls.Add(this.lblNameInsertion);
+            this.tpCommunication.Controls.Add(this.lblArrow2);
+            this.tpCommunication.Controls.Add(this.lblArrow6);
+            this.tpCommunication.Controls.Add(this.lblName1Manipulator);
+            this.tpCommunication.Controls.Add(this.lblNameTube);
+            this.tpCommunication.Controls.Add(this.pnlManipulator_Communication);
+            this.tpCommunication.Controls.Add(this.pnlTube_Communication);
+            this.tpCommunication.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tpCommunication.Name = "tpCommunication";
+            this.tpCommunication.Size = new System.Drawing.Size(1270, 833);
+            this.tpCommunication.Text = "通讯";
             // 
-            // lblInputName_6
+            // ucIO_Menu3
             // 
-            this.lblInputName_6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblInputName_6.Appearance.Options.UseFont = true;
-            this.lblInputName_6.Location = new System.Drawing.Point(852, 293);
-            this.lblInputName_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblInputName_6.Name = "lblInputName_6";
-            this.lblInputName_6.Size = new System.Drawing.Size(56, 19);
-            this.lblInputName_6.TabIndex = 1;
-            this.lblInputName_6.Text = "INPUT6";
-            // 
-            // lblInputName_3
-            // 
-            this.lblInputName_3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblInputName_3.Appearance.Options.UseFont = true;
-            this.lblInputName_3.Location = new System.Drawing.Point(851, 43);
-            this.lblInputName_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblInputName_3.Name = "lblInputName_3";
-            this.lblInputName_3.Size = new System.Drawing.Size(56, 19);
-            this.lblInputName_3.TabIndex = 1;
-            this.lblInputName_3.Text = "INPUT3";
-            // 
-            // lblInputName_5
-            // 
-            this.lblInputName_5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblInputName_5.Appearance.Options.UseFont = true;
-            this.lblInputName_5.Location = new System.Drawing.Point(459, 293);
-            this.lblInputName_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblInputName_5.Name = "lblInputName_5";
-            this.lblInputName_5.Size = new System.Drawing.Size(56, 19);
-            this.lblInputName_5.TabIndex = 1;
-            this.lblInputName_5.Text = "INPUT5";
-            // 
-            // lblInputName_2
-            // 
-            this.lblInputName_2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblInputName_2.Appearance.Options.UseFont = true;
-            this.lblInputName_2.Location = new System.Drawing.Point(459, 43);
-            this.lblInputName_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblInputName_2.Name = "lblInputName_2";
-            this.lblInputName_2.Size = new System.Drawing.Size(56, 19);
-            this.lblInputName_2.TabIndex = 1;
-            this.lblInputName_2.Text = "INPUT2";
-            // 
-            // lblInputName_4
-            // 
-            this.lblInputName_4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblInputName_4.Appearance.Options.UseFont = true;
-            this.lblInputName_4.Location = new System.Drawing.Point(67, 293);
-            this.lblInputName_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblInputName_4.Name = "lblInputName_4";
-            this.lblInputName_4.Size = new System.Drawing.Size(56, 19);
-            this.lblInputName_4.TabIndex = 1;
-            this.lblInputName_4.Text = "INPUT4";
-            // 
-            // lblInputName_1
-            // 
-            this.lblInputName_1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblInputName_1.Appearance.Options.UseFont = true;
-            this.lblInputName_1.Location = new System.Drawing.Point(67, 43);
-            this.lblInputName_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblInputName_1.Name = "lblInputName_1";
-            this.lblInputName_1.Size = new System.Drawing.Size(56, 19);
-            this.lblInputName_1.TabIndex = 1;
-            this.lblInputName_1.Text = "INPUT1";
-            // 
-            // tpOutput
-            // 
-            this.tpOutput.Controls.Add(this.lblOutputName_6);
-            this.tpOutput.Controls.Add(this.lblOutputName_3);
-            this.tpOutput.Controls.Add(this.lblOutputName_5);
-            this.tpOutput.Controls.Add(this.lblOutputName_2);
-            this.tpOutput.Controls.Add(this.lblOutputName_4);
-            this.tpOutput.Controls.Add(this.lblOutputName_1);
-            this.tpOutput.Controls.Add(this.ucIO2Output_6);
-            this.tpOutput.Controls.Add(this.ucIO2Output_5);
-            this.tpOutput.Controls.Add(this.ucIO2Output_3);
-            this.tpOutput.Controls.Add(this.ucIO2Output_4);
-            this.tpOutput.Controls.Add(this.ucIO2Output_2);
-            this.tpOutput.Controls.Add(this.ucIO2Output_1);
-            this.tpOutput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tpOutput.Name = "tpOutput";
-            this.tpOutput.Size = new System.Drawing.Size(1268, 806);
-            this.tpOutput.Text = "输出";
-            // 
-            // lblOutputName_6
-            // 
-            this.lblOutputName_6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblOutputName_6.Appearance.Options.UseFont = true;
-            this.lblOutputName_6.Location = new System.Drawing.Point(851, 293);
-            this.lblOutputName_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblOutputName_6.Name = "lblOutputName_6";
-            this.lblOutputName_6.Size = new System.Drawing.Size(72, 19);
-            this.lblOutputName_6.TabIndex = 4;
-            this.lblOutputName_6.Text = "OUTPUT6";
-            // 
-            // lblOutputName_3
-            // 
-            this.lblOutputName_3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblOutputName_3.Appearance.Options.UseFont = true;
-            this.lblOutputName_3.Location = new System.Drawing.Point(851, 43);
-            this.lblOutputName_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblOutputName_3.Name = "lblOutputName_3";
-            this.lblOutputName_3.Size = new System.Drawing.Size(72, 19);
-            this.lblOutputName_3.TabIndex = 5;
-            this.lblOutputName_3.Text = "OUTPUT3";
-            // 
-            // lblOutputName_5
-            // 
-            this.lblOutputName_5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblOutputName_5.Appearance.Options.UseFont = true;
-            this.lblOutputName_5.Location = new System.Drawing.Point(459, 293);
-            this.lblOutputName_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblOutputName_5.Name = "lblOutputName_5";
-            this.lblOutputName_5.Size = new System.Drawing.Size(72, 19);
-            this.lblOutputName_5.TabIndex = 6;
-            this.lblOutputName_5.Text = "OUTPUT5";
-            // 
-            // lblOutputName_2
-            // 
-            this.lblOutputName_2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblOutputName_2.Appearance.Options.UseFont = true;
-            this.lblOutputName_2.Location = new System.Drawing.Point(459, 43);
-            this.lblOutputName_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblOutputName_2.Name = "lblOutputName_2";
-            this.lblOutputName_2.Size = new System.Drawing.Size(72, 19);
-            this.lblOutputName_2.TabIndex = 7;
-            this.lblOutputName_2.Text = "OUTPUT2";
-            // 
-            // lblOutputName_4
-            // 
-            this.lblOutputName_4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblOutputName_4.Appearance.Options.UseFont = true;
-            this.lblOutputName_4.Location = new System.Drawing.Point(67, 293);
-            this.lblOutputName_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblOutputName_4.Name = "lblOutputName_4";
-            this.lblOutputName_4.Size = new System.Drawing.Size(72, 19);
-            this.lblOutputName_4.TabIndex = 8;
-            this.lblOutputName_4.Text = "OUTPUT4";
-            // 
-            // lblOutputName_1
-            // 
-            this.lblOutputName_1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.lblOutputName_1.Appearance.Options.UseFont = true;
-            this.lblOutputName_1.Location = new System.Drawing.Point(67, 43);
-            this.lblOutputName_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblOutputName_1.Name = "lblOutputName_1";
-            this.lblOutputName_1.Size = new System.Drawing.Size(72, 19);
-            this.lblOutputName_1.TabIndex = 9;
-            this.lblOutputName_1.Text = "OUTPUT1";
-            // 
-            // tpCommunicateion
-            // 
-            this.tpCommunicateion.Controls.Add(this.lblName4Manipulator);
-            this.tpCommunicateion.Controls.Add(this.lblNameInsertion);
-            this.tpCommunicateion.Controls.Add(this.lblArrow2);
-            this.tpCommunicateion.Controls.Add(this.lblArrow6);
-            this.tpCommunicateion.Controls.Add(this.lblName1Manipulator);
-            this.tpCommunicateion.Controls.Add(this.lblNameTube);
-            this.tpCommunicateion.Controls.Add(this.pnlManipulator_Communication);
-            this.tpCommunicateion.Controls.Add(this.pnlTube_Communication);
-            this.tpCommunicateion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tpCommunicateion.Name = "tpCommunicateion";
-            this.tpCommunicateion.Size = new System.Drawing.Size(1268, 806);
-            this.tpCommunicateion.Text = "通讯";
+            this.ucIO_Menu3.Location = new System.Drawing.Point(3, 3);
+            this.ucIO_Menu3.Name = "ucIO_Menu3";
+            this.ucIO_Menu3.Size = new System.Drawing.Size(141, 301);
+            this.ucIO_Menu3.TabIndex = 35;
             // 
             // lblName4Manipulator
             // 
@@ -5024,12 +4811,330 @@
             this.lblName2Manipulator.TabIndex = 0;
             this.lblName2Manipulator.Text = "机械手";
             // 
+            // tpInput
+            // 
+            this.tpInput.Controls.Add(this.ucIO_Menu1);
+            this.tpInput.Controls.Add(this.lblInputName_6);
+            this.tpInput.Controls.Add(this.lblInputName_3);
+            this.tpInput.Controls.Add(this.lblInputName_5);
+            this.tpInput.Controls.Add(this.lblInputName_2);
+            this.tpInput.Controls.Add(this.lblInputName_4);
+            this.tpInput.Controls.Add(this.lblInputName_1);
+            this.tpInput.Controls.Add(this.ucIO2Input_6);
+            this.tpInput.Controls.Add(this.ucIO2Input_3);
+            this.tpInput.Controls.Add(this.ucIO2Input_4);
+            this.tpInput.Controls.Add(this.ucIO2Input_2);
+            this.tpInput.Controls.Add(this.ucIO2Input_5);
+            this.tpInput.Controls.Add(this.ucIO2Input_1);
+            this.tpInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tpInput.Name = "tpInput";
+            this.tpInput.Size = new System.Drawing.Size(1270, 833);
+            this.tpInput.Text = "输入";
+            // 
+            // ucIO_Menu1
+            // 
+            this.ucIO_Menu1.Location = new System.Drawing.Point(3, 3);
+            this.ucIO_Menu1.Name = "ucIO_Menu1";
+            this.ucIO_Menu1.Size = new System.Drawing.Size(141, 301);
+            this.ucIO_Menu1.TabIndex = 5;
+            // 
+            // lblInputName_6
+            // 
+            this.lblInputName_6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblInputName_6.Appearance.Options.UseFont = true;
+            this.lblInputName_6.Location = new System.Drawing.Point(852, 293);
+            this.lblInputName_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblInputName_6.Name = "lblInputName_6";
+            this.lblInputName_6.Size = new System.Drawing.Size(56, 19);
+            this.lblInputName_6.TabIndex = 1;
+            this.lblInputName_6.Text = "INPUT6";
+            // 
+            // lblInputName_3
+            // 
+            this.lblInputName_3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblInputName_3.Appearance.Options.UseFont = true;
+            this.lblInputName_3.Location = new System.Drawing.Point(851, 43);
+            this.lblInputName_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblInputName_3.Name = "lblInputName_3";
+            this.lblInputName_3.Size = new System.Drawing.Size(56, 19);
+            this.lblInputName_3.TabIndex = 1;
+            this.lblInputName_3.Text = "INPUT3";
+            // 
+            // lblInputName_5
+            // 
+            this.lblInputName_5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblInputName_5.Appearance.Options.UseFont = true;
+            this.lblInputName_5.Location = new System.Drawing.Point(459, 293);
+            this.lblInputName_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblInputName_5.Name = "lblInputName_5";
+            this.lblInputName_5.Size = new System.Drawing.Size(56, 19);
+            this.lblInputName_5.TabIndex = 1;
+            this.lblInputName_5.Text = "INPUT5";
+            // 
+            // lblInputName_2
+            // 
+            this.lblInputName_2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblInputName_2.Appearance.Options.UseFont = true;
+            this.lblInputName_2.Location = new System.Drawing.Point(459, 43);
+            this.lblInputName_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblInputName_2.Name = "lblInputName_2";
+            this.lblInputName_2.Size = new System.Drawing.Size(56, 19);
+            this.lblInputName_2.TabIndex = 1;
+            this.lblInputName_2.Text = "INPUT2";
+            // 
+            // lblInputName_4
+            // 
+            this.lblInputName_4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblInputName_4.Appearance.Options.UseFont = true;
+            this.lblInputName_4.Location = new System.Drawing.Point(67, 293);
+            this.lblInputName_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblInputName_4.Name = "lblInputName_4";
+            this.lblInputName_4.Size = new System.Drawing.Size(56, 19);
+            this.lblInputName_4.TabIndex = 1;
+            this.lblInputName_4.Text = "INPUT4";
+            // 
+            // lblInputName_1
+            // 
+            this.lblInputName_1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblInputName_1.Appearance.Options.UseFont = true;
+            this.lblInputName_1.Location = new System.Drawing.Point(67, 43);
+            this.lblInputName_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblInputName_1.Name = "lblInputName_1";
+            this.lblInputName_1.Size = new System.Drawing.Size(56, 19);
+            this.lblInputName_1.TabIndex = 1;
+            this.lblInputName_1.Text = "INPUT1";
+            // 
+            // ucIO2Input_6
+            // 
+            this.ucIO2Input_6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.ucIO2Input_6.Appearance.Options.UseBackColor = true;
+            this.ucIO2Input_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucIO2Input_6.Location = new System.Drawing.Point(836, 304);
+            this.ucIO2Input_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucIO2Input_6.Name = "ucIO2Input_6";
+            this.ucIO2Input_6.Size = new System.Drawing.Size(318, 195);
+            this.ucIO2Input_6.TabIndex = 4;
+            // 
+            // ucIO2Input_3
+            // 
+            this.ucIO2Input_3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.ucIO2Input_3.Appearance.Options.UseBackColor = true;
+            this.ucIO2Input_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucIO2Input_3.Location = new System.Drawing.Point(835, 54);
+            this.ucIO2Input_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucIO2Input_3.Name = "ucIO2Input_3";
+            this.ucIO2Input_3.Size = new System.Drawing.Size(318, 195);
+            this.ucIO2Input_3.TabIndex = 4;
+            // 
+            // ucIO2Input_4
+            // 
+            this.ucIO2Input_4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.ucIO2Input_4.Appearance.Options.UseBackColor = true;
+            this.ucIO2Input_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucIO2Input_4.Location = new System.Drawing.Point(51, 304);
+            this.ucIO2Input_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucIO2Input_4.Name = "ucIO2Input_4";
+            this.ucIO2Input_4.Size = new System.Drawing.Size(318, 195);
+            this.ucIO2Input_4.TabIndex = 4;
+            // 
+            // ucIO2Input_2
+            // 
+            this.ucIO2Input_2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.ucIO2Input_2.Appearance.Options.UseBackColor = true;
+            this.ucIO2Input_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucIO2Input_2.Location = new System.Drawing.Point(443, 54);
+            this.ucIO2Input_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucIO2Input_2.Name = "ucIO2Input_2";
+            this.ucIO2Input_2.Size = new System.Drawing.Size(318, 195);
+            this.ucIO2Input_2.TabIndex = 4;
+            // 
+            // ucIO2Input_5
+            // 
+            this.ucIO2Input_5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.ucIO2Input_5.Appearance.Options.UseBackColor = true;
+            this.ucIO2Input_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucIO2Input_5.Location = new System.Drawing.Point(443, 304);
+            this.ucIO2Input_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucIO2Input_5.Name = "ucIO2Input_5";
+            this.ucIO2Input_5.Size = new System.Drawing.Size(318, 195);
+            this.ucIO2Input_5.TabIndex = 4;
+            // 
+            // ucIO2Input_1
+            // 
+            this.ucIO2Input_1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.ucIO2Input_1.Appearance.Options.UseBackColor = true;
+            this.ucIO2Input_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucIO2Input_1.Location = new System.Drawing.Point(51, 54);
+            this.ucIO2Input_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucIO2Input_1.Name = "ucIO2Input_1";
+            this.ucIO2Input_1.Size = new System.Drawing.Size(318, 195);
+            this.ucIO2Input_1.TabIndex = 4;
+            // 
+            // tpOutput
+            // 
+            this.tpOutput.Controls.Add(this.ucIO_Menu2);
+            this.tpOutput.Controls.Add(this.lblOutputName_6);
+            this.tpOutput.Controls.Add(this.lblOutputName_3);
+            this.tpOutput.Controls.Add(this.lblOutputName_5);
+            this.tpOutput.Controls.Add(this.lblOutputName_2);
+            this.tpOutput.Controls.Add(this.lblOutputName_4);
+            this.tpOutput.Controls.Add(this.lblOutputName_1);
+            this.tpOutput.Controls.Add(this.ucIO2Output_6);
+            this.tpOutput.Controls.Add(this.ucIO2Output_5);
+            this.tpOutput.Controls.Add(this.ucIO2Output_3);
+            this.tpOutput.Controls.Add(this.ucIO2Output_4);
+            this.tpOutput.Controls.Add(this.ucIO2Output_2);
+            this.tpOutput.Controls.Add(this.ucIO2Output_1);
+            this.tpOutput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tpOutput.Name = "tpOutput";
+            this.tpOutput.Size = new System.Drawing.Size(1270, 833);
+            this.tpOutput.Text = "输出";
+            // 
+            // ucIO_Menu2
+            // 
+            this.ucIO_Menu2.Location = new System.Drawing.Point(3, 3);
+            this.ucIO_Menu2.Name = "ucIO_Menu2";
+            this.ucIO_Menu2.Size = new System.Drawing.Size(141, 301);
+            this.ucIO_Menu2.TabIndex = 17;
+            // 
+            // lblOutputName_6
+            // 
+            this.lblOutputName_6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblOutputName_6.Appearance.Options.UseFont = true;
+            this.lblOutputName_6.Location = new System.Drawing.Point(851, 293);
+            this.lblOutputName_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblOutputName_6.Name = "lblOutputName_6";
+            this.lblOutputName_6.Size = new System.Drawing.Size(72, 19);
+            this.lblOutputName_6.TabIndex = 4;
+            this.lblOutputName_6.Text = "OUTPUT6";
+            // 
+            // lblOutputName_3
+            // 
+            this.lblOutputName_3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblOutputName_3.Appearance.Options.UseFont = true;
+            this.lblOutputName_3.Location = new System.Drawing.Point(851, 43);
+            this.lblOutputName_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblOutputName_3.Name = "lblOutputName_3";
+            this.lblOutputName_3.Size = new System.Drawing.Size(72, 19);
+            this.lblOutputName_3.TabIndex = 5;
+            this.lblOutputName_3.Text = "OUTPUT3";
+            // 
+            // lblOutputName_5
+            // 
+            this.lblOutputName_5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblOutputName_5.Appearance.Options.UseFont = true;
+            this.lblOutputName_5.Location = new System.Drawing.Point(459, 293);
+            this.lblOutputName_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblOutputName_5.Name = "lblOutputName_5";
+            this.lblOutputName_5.Size = new System.Drawing.Size(72, 19);
+            this.lblOutputName_5.TabIndex = 6;
+            this.lblOutputName_5.Text = "OUTPUT5";
+            // 
+            // lblOutputName_2
+            // 
+            this.lblOutputName_2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblOutputName_2.Appearance.Options.UseFont = true;
+            this.lblOutputName_2.Location = new System.Drawing.Point(459, 43);
+            this.lblOutputName_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblOutputName_2.Name = "lblOutputName_2";
+            this.lblOutputName_2.Size = new System.Drawing.Size(72, 19);
+            this.lblOutputName_2.TabIndex = 7;
+            this.lblOutputName_2.Text = "OUTPUT2";
+            // 
+            // lblOutputName_4
+            // 
+            this.lblOutputName_4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblOutputName_4.Appearance.Options.UseFont = true;
+            this.lblOutputName_4.Location = new System.Drawing.Point(67, 293);
+            this.lblOutputName_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblOutputName_4.Name = "lblOutputName_4";
+            this.lblOutputName_4.Size = new System.Drawing.Size(72, 19);
+            this.lblOutputName_4.TabIndex = 8;
+            this.lblOutputName_4.Text = "OUTPUT4";
+            // 
+            // lblOutputName_1
+            // 
+            this.lblOutputName_1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblOutputName_1.Appearance.Options.UseFont = true;
+            this.lblOutputName_1.Location = new System.Drawing.Point(67, 43);
+            this.lblOutputName_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblOutputName_1.Name = "lblOutputName_1";
+            this.lblOutputName_1.Size = new System.Drawing.Size(72, 19);
+            this.lblOutputName_1.TabIndex = 9;
+            this.lblOutputName_1.Text = "OUTPUT1";
+            // 
+            // ucIO2Output_6
+            // 
+            this.ucIO2Output_6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.ucIO2Output_6.Appearance.Options.UseBackColor = true;
+            this.ucIO2Output_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucIO2Output_6.Location = new System.Drawing.Point(835, 304);
+            this.ucIO2Output_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucIO2Output_6.Name = "ucIO2Output_6";
+            this.ucIO2Output_6.Size = new System.Drawing.Size(318, 195);
+            this.ucIO2Output_6.TabIndex = 16;
+            // 
+            // ucIO2Output_5
+            // 
+            this.ucIO2Output_5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.ucIO2Output_5.Appearance.Options.UseBackColor = true;
+            this.ucIO2Output_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucIO2Output_5.Location = new System.Drawing.Point(443, 304);
+            this.ucIO2Output_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucIO2Output_5.Name = "ucIO2Output_5";
+            this.ucIO2Output_5.Size = new System.Drawing.Size(318, 195);
+            this.ucIO2Output_5.TabIndex = 16;
+            // 
+            // ucIO2Output_3
+            // 
+            this.ucIO2Output_3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.ucIO2Output_3.Appearance.Options.UseBackColor = true;
+            this.ucIO2Output_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucIO2Output_3.Location = new System.Drawing.Point(835, 54);
+            this.ucIO2Output_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucIO2Output_3.Name = "ucIO2Output_3";
+            this.ucIO2Output_3.Size = new System.Drawing.Size(318, 195);
+            this.ucIO2Output_3.TabIndex = 16;
+            // 
+            // ucIO2Output_4
+            // 
+            this.ucIO2Output_4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.ucIO2Output_4.Appearance.Options.UseBackColor = true;
+            this.ucIO2Output_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucIO2Output_4.Location = new System.Drawing.Point(51, 304);
+            this.ucIO2Output_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucIO2Output_4.Name = "ucIO2Output_4";
+            this.ucIO2Output_4.Size = new System.Drawing.Size(318, 195);
+            this.ucIO2Output_4.TabIndex = 16;
+            // 
+            // ucIO2Output_2
+            // 
+            this.ucIO2Output_2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.ucIO2Output_2.Appearance.Options.UseBackColor = true;
+            this.ucIO2Output_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucIO2Output_2.Location = new System.Drawing.Point(443, 54);
+            this.ucIO2Output_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucIO2Output_2.Name = "ucIO2Output_2";
+            this.ucIO2Output_2.Size = new System.Drawing.Size(318, 195);
+            this.ucIO2Output_2.TabIndex = 16;
+            // 
+            // ucIO2Output_1
+            // 
+            this.ucIO2Output_1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.ucIO2Output_1.Appearance.Options.UseBackColor = true;
+            this.ucIO2Output_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ucIO2Output_1.Location = new System.Drawing.Point(51, 54);
+            this.ucIO2Output_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ucIO2Output_1.Name = "ucIO2Output_1";
+            this.ucIO2Output_1.Size = new System.Drawing.Size(318, 195);
+            this.ucIO2Output_1.TabIndex = 16;
+            // 
             // tpSetting
             // 
             this.tpSetting.Controls.Add(this.tcSetting);
             this.tpSetting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpSetting.Name = "tpSetting";
-            this.tpSetting.Size = new System.Drawing.Size(1274, 835);
+            this.tpSetting.Size = new System.Drawing.Size(1275, 838);
             this.tpSetting.Text = " 设 置 ";
             // 
             // tcSetting
@@ -5040,7 +5145,7 @@
             this.tcSetting.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tcSetting.Name = "tcSetting";
             this.tcSetting.SelectedTabPage = this.tpInitialization;
-            this.tcSetting.Size = new System.Drawing.Size(1274, 835);
+            this.tcSetting.Size = new System.Drawing.Size(1275, 838);
             this.tcSetting.TabIndex = 0;
             this.tcSetting.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tpInitialization,
@@ -5061,7 +5166,7 @@
             this.tpInitialization.Controls.Add(this.lblTube1_Init);
             this.tpInitialization.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpInitialization.Name = "tpInitialization";
-            this.tpInitialization.Size = new System.Drawing.Size(1266, 804);
+            this.tpInitialization.Size = new System.Drawing.Size(1268, 810);
             this.tpInitialization.Text = "初始化";
             // 
             // btnTube5_Init
@@ -5203,7 +5308,7 @@
             this.tpAxisParameter.Controls.Add(this.panelControl5);
             this.tpAxisParameter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpAxisParameter.Name = "tpAxisParameter";
-            this.tpAxisParameter.Size = new System.Drawing.Size(1266, 804);
+            this.tpAxisParameter.Size = new System.Drawing.Size(1268, 810);
             this.tpAxisParameter.Text = "轴参数设置";
             // 
             // panelControl3
@@ -5688,7 +5793,7 @@
             this.tpStation.Controls.Add(this.lblNameTube_Setting);
             this.tpStation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpStation.Name = "tpStation";
-            this.tpStation.Size = new System.Drawing.Size(1266, 804);
+            this.tpStation.Size = new System.Drawing.Size(1268, 810);
             this.tpStation.Text = "工位设置";
             // 
             // tsBuffer6Type_Setting
@@ -6161,7 +6266,7 @@
             this.tpBoatManage.Controls.Add(this.gcBoatManage);
             this.tpBoatManage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpBoatManage.Name = "tpBoatManage";
-            this.tpBoatManage.Size = new System.Drawing.Size(1274, 835);
+            this.tpBoatManage.Size = new System.Drawing.Size(1275, 838);
             this.tpBoatManage.Text = " 舟 管 理 ";
             // 
             // btnSave
@@ -6324,7 +6429,7 @@
             this.tpAlarm.Controls.Add(this.tcAlm);
             this.tpAlarm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpAlarm.Name = "tpAlarm";
-            this.tpAlarm.Size = new System.Drawing.Size(1274, 835);
+            this.tpAlarm.Size = new System.Drawing.Size(1275, 838);
             this.tpAlarm.Text = " 报 警 ";
             // 
             // tcAlm
@@ -6334,7 +6439,7 @@
             this.tcAlm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tcAlm.Name = "tcAlm";
             this.tcAlm.SelectedTabPage = this.tpCurrentAlarm;
-            this.tcAlm.Size = new System.Drawing.Size(1274, 835);
+            this.tcAlm.Size = new System.Drawing.Size(1275, 838);
             this.tcAlm.TabIndex = 1;
             this.tcAlm.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tpCurrentAlarm,
@@ -6345,7 +6450,7 @@
             this.tpCurrentAlarm.Controls.Add(this.gcAlarm_Active);
             this.tpCurrentAlarm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpCurrentAlarm.Name = "tpCurrentAlarm";
-            this.tpCurrentAlarm.Size = new System.Drawing.Size(1268, 806);
+            this.tpCurrentAlarm.Size = new System.Drawing.Size(1270, 812);
             this.tpCurrentAlarm.Text = "当前报警";
             // 
             // gcAlarm_Active
@@ -6441,7 +6546,7 @@
             this.tpHistoryAlarm.Controls.Add(this.gcAlarm_History);
             this.tpHistoryAlarm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpHistoryAlarm.Name = "tpHistoryAlarm";
-            this.tpHistoryAlarm.Size = new System.Drawing.Size(1268, 806);
+            this.tpHistoryAlarm.Size = new System.Drawing.Size(1270, 812);
             this.tpHistoryAlarm.Text = "历史报警";
             // 
             // btnInquire_Alm
@@ -6597,7 +6702,7 @@
             this.tpEvent.Controls.Add(this.tcEvent);
             this.tpEvent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpEvent.Name = "tpEvent";
-            this.tpEvent.Size = new System.Drawing.Size(1274, 835);
+            this.tpEvent.Size = new System.Drawing.Size(1275, 838);
             this.tpEvent.Text = " 事 件 ";
             // 
             // tcEvent
@@ -6607,7 +6712,7 @@
             this.tcEvent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tcEvent.Name = "tcEvent";
             this.tcEvent.SelectedTabPage = this.tpRecord_Manual;
-            this.tcEvent.Size = new System.Drawing.Size(1274, 835);
+            this.tcEvent.Size = new System.Drawing.Size(1275, 838);
             this.tcEvent.TabIndex = 0;
             this.tcEvent.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.tpRecord_Manual,
@@ -6623,7 +6728,7 @@
             this.tpRecord_Manual.Controls.Add(this.gcRecord_Manual);
             this.tpRecord_Manual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpRecord_Manual.Name = "tpRecord_Manual";
-            this.tpRecord_Manual.Size = new System.Drawing.Size(1268, 806);
+            this.tpRecord_Manual.Size = new System.Drawing.Size(1270, 812);
             this.tpRecord_Manual.Text = "操作记录";
             // 
             // btnInquire_Mnl
@@ -6756,7 +6861,7 @@
             this.tpRecord_Running.Controls.Add(this.gcRecord_Running);
             this.tpRecord_Running.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tpRecord_Running.Name = "tpRecord_Running";
-            this.tpRecord_Running.Size = new System.Drawing.Size(1268, 806);
+            this.tpRecord_Running.Size = new System.Drawing.Size(1270, 812);
             this.tpRecord_Running.Text = "运行记录";
             // 
             // btnInquire_Run
@@ -6879,6 +6984,10 @@
             this.col描述3.VisibleIndex = 3;
             this.col描述3.Width = 426;
             // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2007 Black";
+            // 
             // reportDesigner1
             // 
             this.reportDesigner1.ContainerControl = null;
@@ -6887,137 +6996,65 @@
             xrDesignPanelListener1});
             this.reportDesigner1.Form = this;
             // 
-            // ucIO2Input_1
+            // ucBuffer1
             // 
-            this.ucIO2Input_1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucIO2Input_1.Appearance.Options.UseBackColor = true;
-            this.ucIO2Input_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucIO2Input_1.Location = new System.Drawing.Point(51, 54);
-            this.ucIO2Input_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIO2Input_1.Name = "ucIO2Input_1";
-            this.ucIO2Input_1.Size = new System.Drawing.Size(318, 195);
-            this.ucIO2Input_1.TabIndex = 4;
+            this.ucBuffer1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucBuffer1.BackgroundImage")));
+            this.ucBuffer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucBuffer1.Location = new System.Drawing.Point(605, 31);
+            this.ucBuffer1.Name = "ucBuffer1";
+            this.ucBuffer1.Size = new System.Drawing.Size(326, 102);
+            this.ucBuffer1.TabIndex = 36;
+            this.ucBuffer1.Load += new System.EventHandler(this.ucBuffer1_Load);
             // 
-            // ucIO2Input_5
+            // ucBuffer2
             // 
-            this.ucIO2Input_5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucIO2Input_5.Appearance.Options.UseBackColor = true;
-            this.ucIO2Input_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucIO2Input_5.Location = new System.Drawing.Point(443, 304);
-            this.ucIO2Input_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIO2Input_5.Name = "ucIO2Input_5";
-            this.ucIO2Input_5.Size = new System.Drawing.Size(318, 195);
-            this.ucIO2Input_5.TabIndex = 4;
+            this.ucBuffer2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucBuffer2.BackgroundImage")));
+            this.ucBuffer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucBuffer2.Location = new System.Drawing.Point(605, 165);
+            this.ucBuffer2.Name = "ucBuffer2";
+            this.ucBuffer2.Size = new System.Drawing.Size(326, 102);
+            this.ucBuffer2.TabIndex = 36;
+            this.ucBuffer2.Load += new System.EventHandler(this.ucBuffer1_Load);
             // 
-            // ucIO2Input_3
+            // ucBuffer3
             // 
-            this.ucIO2Input_3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucIO2Input_3.Appearance.Options.UseBackColor = true;
-            this.ucIO2Input_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucIO2Input_3.Location = new System.Drawing.Point(835, 54);
-            this.ucIO2Input_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIO2Input_3.Name = "ucIO2Input_3";
-            this.ucIO2Input_3.Size = new System.Drawing.Size(318, 195);
-            this.ucIO2Input_3.TabIndex = 4;
+            this.ucBuffer3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucBuffer3.BackgroundImage")));
+            this.ucBuffer3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucBuffer3.Location = new System.Drawing.Point(605, 299);
+            this.ucBuffer3.Name = "ucBuffer3";
+            this.ucBuffer3.Size = new System.Drawing.Size(326, 102);
+            this.ucBuffer3.TabIndex = 36;
+            this.ucBuffer3.Load += new System.EventHandler(this.ucBuffer1_Load);
             // 
-            // ucIO2Input_4
+            // ucBuffer4
             // 
-            this.ucIO2Input_4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucIO2Input_4.Appearance.Options.UseBackColor = true;
-            this.ucIO2Input_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucIO2Input_4.Location = new System.Drawing.Point(51, 304);
-            this.ucIO2Input_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIO2Input_4.Name = "ucIO2Input_4";
-            this.ucIO2Input_4.Size = new System.Drawing.Size(318, 195);
-            this.ucIO2Input_4.TabIndex = 4;
+            this.ucBuffer4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucBuffer4.BackgroundImage")));
+            this.ucBuffer4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucBuffer4.Location = new System.Drawing.Point(605, 433);
+            this.ucBuffer4.Name = "ucBuffer4";
+            this.ucBuffer4.Size = new System.Drawing.Size(326, 102);
+            this.ucBuffer4.TabIndex = 36;
+            this.ucBuffer4.Load += new System.EventHandler(this.ucBuffer1_Load);
             // 
-            // ucIO2Input_6
+            // ucBuffer5
             // 
-            this.ucIO2Input_6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucIO2Input_6.Appearance.Options.UseBackColor = true;
-            this.ucIO2Input_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucIO2Input_6.Location = new System.Drawing.Point(836, 304);
-            this.ucIO2Input_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIO2Input_6.Name = "ucIO2Input_6";
-            this.ucIO2Input_6.Size = new System.Drawing.Size(318, 195);
-            this.ucIO2Input_6.TabIndex = 4;
+            this.ucBuffer5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucBuffer5.BackgroundImage")));
+            this.ucBuffer5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucBuffer5.Location = new System.Drawing.Point(605, 567);
+            this.ucBuffer5.Name = "ucBuffer5";
+            this.ucBuffer5.Size = new System.Drawing.Size(326, 102);
+            this.ucBuffer5.TabIndex = 36;
+            this.ucBuffer5.Load += new System.EventHandler(this.ucBuffer1_Load);
             // 
-            // ucIO2Input_2
+            // ucBuffer6
             // 
-            this.ucIO2Input_2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucIO2Input_2.Appearance.Options.UseBackColor = true;
-            this.ucIO2Input_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucIO2Input_2.Location = new System.Drawing.Point(443, 54);
-            this.ucIO2Input_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIO2Input_2.Name = "ucIO2Input_2";
-            this.ucIO2Input_2.Size = new System.Drawing.Size(318, 195);
-            this.ucIO2Input_2.TabIndex = 4;
-            // 
-            // ucIO2Output_1
-            // 
-            this.ucIO2Output_1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucIO2Output_1.Appearance.Options.UseBackColor = true;
-            this.ucIO2Output_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucIO2Output_1.Location = new System.Drawing.Point(51, 54);
-            this.ucIO2Output_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIO2Output_1.Name = "ucIO2Output_1";
-            this.ucIO2Output_1.Size = new System.Drawing.Size(318, 195);
-            this.ucIO2Output_1.TabIndex = 16;
-            // 
-            // ucIO2Output_2
-            // 
-            this.ucIO2Output_2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucIO2Output_2.Appearance.Options.UseBackColor = true;
-            this.ucIO2Output_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucIO2Output_2.Location = new System.Drawing.Point(443, 54);
-            this.ucIO2Output_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIO2Output_2.Name = "ucIO2Output_2";
-            this.ucIO2Output_2.Size = new System.Drawing.Size(318, 195);
-            this.ucIO2Output_2.TabIndex = 16;
-            // 
-            // ucIO2Output_3
-            // 
-            this.ucIO2Output_3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucIO2Output_3.Appearance.Options.UseBackColor = true;
-            this.ucIO2Output_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucIO2Output_3.Location = new System.Drawing.Point(835, 54);
-            this.ucIO2Output_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIO2Output_3.Name = "ucIO2Output_3";
-            this.ucIO2Output_3.Size = new System.Drawing.Size(318, 195);
-            this.ucIO2Output_3.TabIndex = 16;
-            // 
-            // ucIO2Output_4
-            // 
-            this.ucIO2Output_4.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucIO2Output_4.Appearance.Options.UseBackColor = true;
-            this.ucIO2Output_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucIO2Output_4.Location = new System.Drawing.Point(51, 304);
-            this.ucIO2Output_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIO2Output_4.Name = "ucIO2Output_4";
-            this.ucIO2Output_4.Size = new System.Drawing.Size(318, 195);
-            this.ucIO2Output_4.TabIndex = 16;
-            // 
-            // ucIO2Output_5
-            // 
-            this.ucIO2Output_5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucIO2Output_5.Appearance.Options.UseBackColor = true;
-            this.ucIO2Output_5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucIO2Output_5.Location = new System.Drawing.Point(443, 304);
-            this.ucIO2Output_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIO2Output_5.Name = "ucIO2Output_5";
-            this.ucIO2Output_5.Size = new System.Drawing.Size(318, 195);
-            this.ucIO2Output_5.TabIndex = 16;
-            // 
-            // ucIO2Output_6
-            // 
-            this.ucIO2Output_6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.ucIO2Output_6.Appearance.Options.UseBackColor = true;
-            this.ucIO2Output_6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ucIO2Output_6.Location = new System.Drawing.Point(835, 304);
-            this.ucIO2Output_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucIO2Output_6.Name = "ucIO2Output_6";
-            this.ucIO2Output_6.Size = new System.Drawing.Size(318, 195);
-            this.ucIO2Output_6.TabIndex = 16;
+            this.ucBuffer6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucBuffer6.BackgroundImage")));
+            this.ucBuffer6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucBuffer6.Location = new System.Drawing.Point(605, 701);
+            this.ucBuffer6.Name = "ucBuffer6";
+            this.ucBuffer6.Size = new System.Drawing.Size(326, 102);
+            this.ucBuffer6.TabIndex = 36;
+            this.ucBuffer6.Load += new System.EventHandler(this.ucBuffer1_Load);
             // 
             // frmHanderMain
             // 
@@ -7091,18 +7128,18 @@
             this.tpIO.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tcIO)).EndInit();
             this.tcIO.ResumeLayout(false);
-            this.tpInput.ResumeLayout(false);
-            this.tpInput.PerformLayout();
-            this.tpOutput.ResumeLayout(false);
-            this.tpOutput.PerformLayout();
-            this.tpCommunicateion.ResumeLayout(false);
-            this.tpCommunicateion.PerformLayout();
+            this.tpCommunication.ResumeLayout(false);
+            this.tpCommunication.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlManipulator_Communication)).EndInit();
             this.pnlManipulator_Communication.ResumeLayout(false);
             this.pnlManipulator_Communication.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pnlTube_Communication)).EndInit();
             this.pnlTube_Communication.ResumeLayout(false);
             this.pnlTube_Communication.PerformLayout();
+            this.tpInput.ResumeLayout(false);
+            this.tpInput.PerformLayout();
+            this.tpOutput.ResumeLayout(false);
+            this.tpOutput.PerformLayout();
             this.tpSetting.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tcSetting)).EndInit();
             this.tcSetting.ResumeLayout(false);
@@ -7312,7 +7349,7 @@
         private DevExpress.XtraTab.XtraTabControl tcIO;
         private DevExpress.XtraTab.XtraTabPage tpInput;
         private DevExpress.XtraTab.XtraTabPage tpOutput;
-        private DevExpress.XtraTab.XtraTabPage tpCommunicateion;
+        private DevExpress.XtraTab.XtraTabPage tpCommunication;
         private DevExpress.XtraEditors.LabelControl lblInputName_6;
         private DevExpress.XtraEditors.LabelControl lblInputName_3;
         private DevExpress.XtraEditors.LabelControl lblInputName_5;
@@ -7597,12 +7634,6 @@
         private System.Windows.Forms.Label lblNameTube4_Main;
         private System.Windows.Forms.Label lblNameTube2_Main;
         private ucBoat ucBoat_Tube2;
-        private ucBoat ucBoat_Buffer6;
-        private ucBoat ucBoat_Buffer5;
-        private ucBoat ucBoat_Buffer4;
-        private ucBoat ucBoat_Buffer3;
-        private ucBoat ucBoat_Buffer2;
-        private ucBoat ucBoat_Buffer1;
         private ucBoat ucBoat_Tube1;
         private DevExpress.XtraEditors.SimpleButton btnInitial_M;
         private System.Windows.Forms.Label lblMode_M;
@@ -7752,5 +7783,14 @@
         private UserControl.Loader.ucIO2 ucIO2Output_4;
         private UserControl.Loader.ucIO2 ucIO2Output_2;
         private UserControl.Loader.ucIO2 ucIO2Output_1;
+        private UserControl.Loader.ucIO_Menu ucIO_Menu1;
+        private UserControl.Loader.ucIO_Menu ucIO_Menu2;
+        private UserControl.Loader.ucIO_Menu ucIO_Menu3;
+        private UserControl.Loader.ucBuffer ucBuffer1;
+        private UserControl.Loader.ucBuffer ucBuffer6;
+        private UserControl.Loader.ucBuffer ucBuffer5;
+        private UserControl.Loader.ucBuffer ucBuffer4;
+        private UserControl.Loader.ucBuffer ucBuffer3;
+        private UserControl.Loader.ucBuffer ucBuffer2;
     }
 }
