@@ -44,56 +44,56 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Bold);
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(9, 2);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(66, 25);
+            this.labelControl1.Size = new System.Drawing.Size(67, 28);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "MFC1:";
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(11, 44);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(142, 25);
+            this.labelControl2.Size = new System.Drawing.Size(138, 28);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "偏差警示值(%)";
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(11, 86);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(142, 25);
+            this.labelControl3.Size = new System.Drawing.Size(138, 28);
             this.labelControl3.TabIndex = 1;
             this.labelControl3.Text = "报警警示值(%)";
             // 
             // labelControl4
             // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Location = new System.Drawing.Point(6, 126);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(147, 25);
+            this.labelControl4.Size = new System.Drawing.Size(150, 28);
             this.labelControl4.TabIndex = 1;
             this.labelControl4.Text = "最大量程(sccm)";
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Location = new System.Drawing.Point(46, 167);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(105, 25);
+            this.labelControl5.Size = new System.Drawing.Size(105, 28);
             this.labelControl5.TabIndex = 1;
             this.labelControl5.Text = "流量计屏蔽";
             // 
@@ -102,9 +102,9 @@
             this.txtSetGasWarnDiff.Location = new System.Drawing.Point(168, 39);
             this.txtSetGasWarnDiff.Margin = new System.Windows.Forms.Padding(2);
             this.txtSetGasWarnDiff.Name = "txtSetGasWarnDiff";
-            this.txtSetGasWarnDiff.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSetGasWarnDiff.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.txtSetGasWarnDiff.Properties.Appearance.Options.UseFont = true;
-            this.txtSetGasWarnDiff.Size = new System.Drawing.Size(149, 32);
+            this.txtSetGasWarnDiff.Size = new System.Drawing.Size(149, 34);
             this.txtSetGasWarnDiff.TabIndex = 2;
             this.txtSetGasWarnDiff.TextChanged += new System.EventHandler(this.txtSetGasWarnDiff_TextChanged);
             // 
@@ -113,9 +113,9 @@
             this.txtSetGasAlmDiff.Location = new System.Drawing.Point(168, 79);
             this.txtSetGasAlmDiff.Margin = new System.Windows.Forms.Padding(2);
             this.txtSetGasAlmDiff.Name = "txtSetGasAlmDiff";
-            this.txtSetGasAlmDiff.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSetGasAlmDiff.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.txtSetGasAlmDiff.Properties.Appearance.Options.UseFont = true;
-            this.txtSetGasAlmDiff.Size = new System.Drawing.Size(149, 32);
+            this.txtSetGasAlmDiff.Size = new System.Drawing.Size(149, 34);
             this.txtSetGasAlmDiff.TabIndex = 3;
             this.txtSetGasAlmDiff.TextChanged += new System.EventHandler(this.txtSetGasAlmDiff_TextChanged);
             // 
@@ -124,16 +124,16 @@
             this.txtSetGasMaxRange.Location = new System.Drawing.Point(168, 121);
             this.txtSetGasMaxRange.Margin = new System.Windows.Forms.Padding(2);
             this.txtSetGasMaxRange.Name = "txtSetGasMaxRange";
-            this.txtSetGasMaxRange.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSetGasMaxRange.Properties.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.txtSetGasMaxRange.Properties.Appearance.Options.UseFont = true;
-            this.txtSetGasMaxRange.Size = new System.Drawing.Size(149, 32);
+            this.txtSetGasMaxRange.Size = new System.Drawing.Size(149, 34);
             this.txtSetGasMaxRange.TabIndex = 3;
             this.txtSetGasMaxRange.TextChanged += new System.EventHandler(this.txtSetGasMaxRange_TextChanged);
             // 
             // btnSetGasShield
             // 
             this.btnSetGasShield.Appearance.BackColor = System.Drawing.Color.LightCoral;
-            this.btnSetGasShield.Appearance.Font = new System.Drawing.Font("Tahoma", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetGasShield.Appearance.Font = new System.Drawing.Font("微软雅黑", 10.5F);
             this.btnSetGasShield.Appearance.Options.UseBackColor = true;
             this.btnSetGasShield.Appearance.Options.UseFont = true;
             this.btnSetGasShield.Location = new System.Drawing.Point(168, 163);

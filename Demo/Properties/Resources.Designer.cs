@@ -73,6 +73,16 @@ namespace Demo.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap CloseDoor {
+            get {
+                object obj = ResourceManager.GetObject("CloseDoor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap colorbarIndicators {
             get {
                 object obj = ResourceManager.GetObject("colorbarIndicators", resourceCulture);
@@ -206,6 +216,16 @@ namespace Demo.Properties {
         internal static System.Drawing.Bitmap notifier {
             get {
                 object obj = ResourceManager.GetObject("notifier", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap OpenDoor {
+            get {
+                object obj = ResourceManager.GetObject("OpenDoor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

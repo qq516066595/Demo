@@ -32,7 +32,7 @@ namespace Demo.Forms.Template
             InitializeComponent();
             MRF = this;
             MRF.IsMdiContainer = true;
-            defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2007 Black";//窗体默认皮肤
+            defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2007 Black";//窗体默认皮肤 
 
             //设置tab子窗体不可关闭
             xtraTabbedMdiManager1.PageAdded += (s, ei) =>
@@ -163,7 +163,6 @@ namespace Demo.Forms.Template
             ActivateOrAddForm(" 第 四 组 ", "Demo.Forms.Tube.frmTubeMain", 4);
             ActivateOrAddForm(" 第 五 组 ", "Demo.Forms.Tube.frmTubeMain", 5);
             ActivateOrAddForm(" 机 械 手 ", "Demo.Forms.Loader.frmHanderMain", 6);
-
         }
         #endregion
 
@@ -201,5 +200,12 @@ namespace Demo.Forms.Template
         //    defaultLookAndFeel1.LookAndFeel.SkinName = SkinName;
         //}
         #endregion
+
+        private void cmbSelectSkip_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            defaultLookAndFeel1.LookAndFeel.UseWindowsXPTheme = false;
+            defaultLookAndFeel1.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Skin;
+            defaultLookAndFeel1.LookAndFeel.SkinName = cmbSelectSkip.SelectedText;
+        }
     }
 }

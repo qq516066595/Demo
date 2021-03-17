@@ -28,7 +28,7 @@ namespace Demo.UserControl.Tube
     public partial class ucRecipeInfo : DevExpress.XtraEditors.XtraUserControl
     {
         TubeHelpClass help = new TubeHelpClass();
-        //TubeModelClass models = new TubeModelClass();
+        TubeModelClass models = new TubeModelClass();
         public ucRecipeInfo()
         {
             InitializeComponent();
@@ -73,8 +73,32 @@ namespace Demo.UserControl.Tube
             //lblStepTotalTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nDuration);
             //lblStepWorkTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nWorking_Time);
             //lblStepRemainTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nRemain_Time);
+            models.ProcessBarChanged += pbcRecipeBar_EditValueChanged;
+            TubeModelClass.StepProcessBarChanged += pbcStepBar_EditValueChanged;
         }
 
+
+        private void pbcRecipeBar_EditValueChanged(object sender, EventArgs e)
+        {
+            lblRecipeTotalTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
+            lblRecipeWorkTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
+            lblRecipeRemainTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessRemainTime);
+            uint totaltime = PlcVar.Tube[frmID.Unit].gnProcessTotalTime;
+            uint workingtime = PlcVar.Tube[frmID.Unit].gnProcessWorkingTime;
+            pbcRecipeBar.EditValue = workingtime / totaltime;
+            pbcRecipeBar.Text = (workingtime / totaltime).ToString()+"%";
+        }
+        private void pbcStepBar_EditValueChanged(object sender, EventArgs e)
+        {
+            lblStepTotalTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nDuration);
+            lblStepWorkTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nWorking_Time);
+            lblStepRemainTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nRemain_Time);
+            float totaltime = PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nDuration;
+            float workingtime = PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nWorking_Time;
+            pbcRecipeBar.EditValue = workingtime / totaltime;
+            pbcRecipeBar.Text = (workingtime / totaltime).ToString() + "%";
+        }
+                
         /// <summary>
         /// 开始
         /// </summary>
@@ -102,7 +126,9 @@ namespace Demo.UserControl.Tube
         /// <param name="e"></param>
         private void btnJumpStep_Click(object sender, EventArgs e)
         {
-
+            //打开弹窗时，还需把配方名称（下载时，备份记录的名称）传值过去
+            frmJumpStep frm = new frmJumpStep(frmID.Unit, models.stCurrentRecipeName);
+            frm.ShowDialog();
         }
         /// <summary>
         /// 中止
