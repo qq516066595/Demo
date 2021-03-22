@@ -808,6 +808,30 @@ namespace com.DataBaseModels
                 Tube[i].stSysPara.TempModule3_IP = "192.168.50.35";
                 Tube[i].stSysPara.TempModule4_IP = "192.168.50.45";
                 Tube[i].stSysPara.Pump_IP = "192.168.50.55";
+
+                //test 
+                for (int testa = 0; testa < 5; testa++)
+                {
+                    Jht.stTube_BoatInfo[testa].ID = testa.ToString();
+                    Jht.stTube_BoatInfo[testa].eBoatState = (PlcModels.BoatState)testa;
+                    Jht.stTube_BoatInfo[testa].iFromTubeNum = short.Parse(testa.ToString());
+                    Jht.stTube_BoatInfo[testa].eWaferMode = (PlcModels.WaferMode)testa;
+                    Jht.stTube_BoatInfo[testa].nRemainCoolTime = ushort.Parse(testa.ToString());
+                    Jht.stTube_BoatInfo[testa].nStoreTime = ushort.Parse(testa.ToString());
+                    
+                }
+
+                for (int testb = 0; testb < 6; testb++)
+                {
+                    Jht.stBuffer_BoatInfo[testb].ID = testb.ToString();
+                    Jht.stBuffer_BoatInfo[testb].eBoatState = (PlcModels.BoatState)testb;
+                    Jht.stBuffer_BoatInfo[testb].iFromTubeNum = short.Parse(testb.ToString());
+                    Jht.stBuffer_BoatInfo[testb].eWaferMode = (PlcModels.WaferMode)testb;
+                    Jht.stBuffer_BoatInfo[testb].nRemainCoolTime = ushort.Parse(testb.ToString());
+                    Jht.stBuffer_BoatInfo[testb].nStoreTime = ushort.Parse(testb.ToString());
+
+                }
+
             }
         }
     }

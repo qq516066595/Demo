@@ -108,6 +108,7 @@ namespace Demo.Forms.Tube
         public bool gbHMI_BoatOut = com.DataBaseModels.PlcVar.Tube[com.DataBaseModels.frmID.Unit].gbHMI_BoatOut;
         public bool gbHMI_OpenDoor = com.DataBaseModels.PlcVar.Tube[com.DataBaseModels.frmID.Unit].gbHMI_OpenDoor;
         public bool gbHMI_CloseDoor = com.DataBaseModels.PlcVar.Tube[com.DataBaseModels.frmID.Unit].gbHMI_CloseDoor;
+
         public struct BoatPushAxisParaEx
         {
             public float rBoatOut_OffsetPos;       //出舟时，根据传感器定位舟
