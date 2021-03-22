@@ -500,38 +500,6 @@ namespace Demo.Forms.Tube
         }
         #endregion
 
-        #region 二进制序列化与反序列化
-        /// <summary>
-        /// 将Int32转化成字节数组加入字节流
-        /// </summary>
-        /// <param name="num">要转化的Int32</param>
-        public byte[] SerializeObject(object obj)
-        {
-            if (obj == null)
-                return null;
-            //内存实例
-            MemoryStream ms = new MemoryStream();
-            //创建序列化的实例
-            System.Runtime.Serialization.Formatters.Binary.BinaryFormatter formatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
-            formatter.Serialize(ms, obj);//序列化对象，写入ms流中  
-            byte[] bytes = ms.GetBuffer();
-            return bytes;
-        }
-        public T DeserializeObject<T>(byte[] bytes)
-        {
-            T obj = default;//C# 7.0 中不支持功能“默认文本”。请使用 7.1 或更高的语言版本。Demo右键属性-->生成-->高级-->常规-->语言版本-->选7.1及以上的版本
-            if (bytes == null)
-                return obj;
-            //利用传来的byte[]创建一个内存流
-            MemoryStream ms = new MemoryStream(bytes);
-            ms.Position = 0;
-            System.Runtime.Serialization.Formatters.Binary.BinaryFormatter formatter = new System.Runtime.Serialization.Formatters.Binary.BinaryFormatter();
-            obj = (T)formatter.Deserialize(ms);//把内存流反序列成对象  
-            ms.Close();
-            return obj;
-        }
-        #endregion
-
     }
     public static class Common
     {

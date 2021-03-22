@@ -85,6 +85,7 @@
     <Compile Include="Mydog.cs" />
     <Compile Include="MyModu.cs" />
     <Compile Include="PlcOmronCip.cs" />
+    <Compile Include="TubeClientDAL.cs" />
     <Compile Include="TubeDiComDAL.cs" />
     <Compile Include="TubeDoComDAL.cs" />
     <Compile Include="TubeInitDAL.cs" />

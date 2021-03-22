@@ -121,59 +121,56 @@ namespace Demo.Forms.Tube
             spcChart.Panel2Collapsed = true;
             //设置-初始化
             SettingDataBings();
-            btnProcessInit.Click += OnMouseDown_Click;
-            btnProcessInit.Click += OnMouseUp_Click;
-            btnHeatingInit.Click += OnMouseDown_Click;
-            btnHeatingInit.Click += OnMouseUp_Click;
-            btnGasInit.Click += OnMouseDown_Click;
-            btnGasInit.Click += OnMouseUp_Click;
-            btnBoatPushInit.Click += OnMouseDown_Click;
-            btnBoatPushInit.Click += OnMouseUp_Click;
-            btnVacuumInit.Click += OnMouseDown_Click;
-            btnVacuumInit.Click += OnMouseUp_Click;
+            btnProcessInit.Click += OnInit_Click;
+            btnHeatingInit.Click += OnInit_Click;
+            btnGasInit.Click += OnInit_Click;
+            btnBoatPushInit.Click += OnInit_Click;
+            btnVacuumInit.MouseDown += OnInit_Click;
             tubeModelClass.InitDoneChanged += OnInitDone_Changed;
             tubeModelClass.DisableConditionsChanged += TubeModelClass_DisableConditionsChanged;
         }
-
+        /// <summary>
+        /// 系统操作模式-控件禁用
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TubeModelClass_DisableConditionsChanged(object sender, EventArgs e)
         {
-            if(tubeModelClass.OP_Mode == (TubeModelClass.OP_MODE)1)
-            {
-
-            }
+            if (PlcVar.Tube[frmID.Unit].OP_Mode == (PlcModels.OP_MODE)1)//手动模式
+                SetDesignRight(true);
+            else
+                SetDesignRight(false);
         }
 
-        //读取
-        //TUBEisTEST tube = new TUBEisTEST();
+        //读取 
 
-      
-       // LaplaceCIP.PlcOmronCip plcOmronCip = new LaplaceCIP.PlcOmronCip();
+        LaplaceCIP.PlcOmronCip plcOmronCip = new LaplaceCIP.PlcOmronCip();
         string test1;
         private void intIT()
         {
             if (Convert.ToInt32(this.Tag) == 1)
-            {
-       //         test1 = plcOmronCip.GetVariableInfo(1, "OP_Mode");
+            { 
+                // test1 = plcOmronCip.GetVariableInfo(1, "OP_Mode");
             }
         }
         Thread th1;
         //线程读取
         private void timer1_Tick(object sender, EventArgs e)
         {
-            //if (th1 == null)
-            //{
-            //    th1 = new Thread(intIT);
-            //    th1.Start();
-            //}
-            //else
-            //{
-            //    if (th1.ThreadState == System.Threading.ThreadState.Stopped)
-            //    {
-            //        th1 = new Thread(intIT);
-            //        th1.Start();
-            //    }
-            //}
-            //txtPumpSpeed.Text = test1;
+            if (th1 == null)
+            {
+                th1 = new Thread(intIT);
+                th1.Start();
+            }
+            else
+            {
+                if (th1.ThreadState == System.Threading.ThreadState.Stopped)
+                {
+                    th1 = new Thread(intIT);
+                    th1.Start();
+                }
+            }
+            txtPumpSpeed.Text = test1;
         }
 
         //写入
@@ -187,7 +184,7 @@ namespace Demo.Forms.Tube
                 键盘.DefaultInstance.ShowDialog();
                 if (MyModu.Gyedit != "cancel")
                 {
-           //         plcOmronCip.WiteVariable(1, "OP_Mode", MyModu.Gyedit);
+                    plcOmronCip.WiteVariable(1, "OP_Mode", MyModu.Gyedit);
                 }
                 MyModu.LogEvent(6, "测试", MyModu.Gyedit);
                 return;
@@ -198,7 +195,6 @@ namespace Demo.Forms.Tube
                 MessageBox.Show("Set Failed:" + ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
         #endregion
 
         #region 主界面
@@ -262,16 +258,16 @@ namespace Demo.Forms.Tube
             }
             lblHWCWeight.Text = nNetWeight;//液位重量
             //help.SetlblSignalBackColor(lblHWCWorkState,Color.Green, jht.stHWCs_Ctrl.nRunningState); //恒温槽工作状态
-            help.SetbtnClickBackColor(btnLeakCheck,Color.DeepSkyBlue, PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck);
+            help.SetbtnClickBackColor(btnLeakCheck, Color.DeepSkyBlue, PlcVar.Tube[frmID.Unit].gbHMI_LeakCheck);
 
             //真空
             txtPumpSpeed.Text = PlcVar.Tube[frmID.Unit].stPump_Ctrl.rActSpeed.ToString();
             lblButterfly.Text = PlcVar.Tube[frmID.Unit].grMKS_ActPos.ToString();
             txtLeakRate.Text = PlcVar.Tube[frmID.Unit].grActLeakRate.ToString();
-            help.SetbtnClickBackColor(btnStartAndStop,Color.DeepSkyBlue, PlcVar.Tube[frmID.Unit].stPump_Ctrl.bStartPump);
+            help.SetbtnClickBackColor(btnStartAndStop, Color.DeepSkyBlue, PlcVar.Tube[frmID.Unit].stPump_Ctrl.bStartPump);
 
             txtSourceBottleUseCount.Text = PlcVar.Tube[frmID.Unit].giSource_Counter.ToString();
-            help.SetbtnClickBackColor(btnSourceBottleLeakCheck,Color.DeepSkyBlue, PlcVar.Tube[frmID.Unit].gbSourceBottle_LeakCheck);
+            help.SetbtnClickBackColor(btnSourceBottleLeakCheck, Color.DeepSkyBlue, PlcVar.Tube[frmID.Unit].gbSourceBottle_LeakCheck);
             //气路
 
             //轴控
@@ -308,7 +304,7 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void btnShowAxis_Click(object sender, EventArgs e)
         {
-            Fold(490, 115, "上下", pcAxis, btnShowAxis);
+            Fold(545, 115, "上下", pcAxis, btnShowAxis);
         }
         #endregion
 
@@ -365,7 +361,7 @@ namespace Demo.Forms.Tube
             lblRecipeName.Text = "NewRecipe";
             dt.Rows.Clear();
             gridRecipe.DataSource = dt;
-            for (int i = 0; i < 40; i++)
+            for (int i = 0; i < 45; i++)
             {
                 this.gridRecipeView.AddNewRow();//新增一行数据
             }
@@ -382,7 +378,7 @@ namespace Demo.Forms.Tube
                 string value = "";
                 if (column.FieldName == "步号")
                 { value = gridRecipeView.RowCount.ToString(); column.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left; column.OptionsColumn.AllowEdit = false; }
-                if (column.FieldName == "执行动作")
+                if (column.FieldName == "步名称")
                 { column.ColumnEdit = repositoryItemComboBox1; column.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left; }
                 if (column.FieldName == "阀开关")
                     column.ColumnEdit = repositoryItemButtonEdit1;
@@ -420,7 +416,7 @@ namespace Demo.Forms.Tube
         {
             gridRecipeView.OptionsSelection.MultiSelect = true;
             string fileTypeName = "\\recipe\\Tube" + this.Tag.ToString();
-            DataTable dt = help.AsposeCells(fileTypeName);
+            dt = help.AsposeCells(fileTypeName);
             if (dt.Rows.Count > 0)
             {
                 string val = TubeHelpClass.fileName.Substring(TubeHelpClass.fileName.LastIndexOf("\\") + 1, TubeHelpClass.fileName.Length - TubeHelpClass.fileName.LastIndexOf("\\") - 5);
@@ -432,13 +428,13 @@ namespace Demo.Forms.Tube
                 {
                     if (column.FieldName == "步号")
                     { column.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left; column.OptionsColumn.AllowEdit = false; }
-                    if (column.FieldName == "执行动作")
+                    if (column.FieldName == "步名称")
                     { column.ColumnEdit = repositoryItemComboBox1; column.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left; }
                     if (column.FieldName == "阀开关")
                         column.ColumnEdit = repositoryItemButtonEdit1;
                     if (column.FieldName == "条件")
                         column.ColumnEdit = repositoryItemCheckEdit1;
-                    if (column.FieldName.Contains("V") || column.FieldName.Contains("监控"))
+                    if (column.FieldName.Contains("V") || column.FieldName.Contains("监控") || column.FieldName.Contains("斜率"))
                         column.ColumnEdit = repositoryItemCheckEdit1;
                 }
             }
@@ -461,14 +457,50 @@ namespace Demo.Forms.Tube
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        object obj;
-        byte[] b1 = new byte[] { 1, 2, 3, 4, 5 };
         private void picDownloadRecipe_Click(object sender, EventArgs e)
         {
             this.ShowWait();
-            obj = 77;
-            b1 = help.SerializeObject(obj);
-            MessageBox.Show(b1.ToString());
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].eName = Convert.ToInt16(dt.Rows[i]["步名称"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nDuration = Convert.ToUInt16(dt.Rows[i]["步时间"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone1_SV = Convert.ToUInt16(dt.Rows[i]["Zone1"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone2_SV = Convert.ToUInt16(dt.Rows[i]["Zone2"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone3_SV = Convert.ToUInt16(dt.Rows[i]["Zone3"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone4_SV = Convert.ToUInt16(dt.Rows[i]["Zone4"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone5_SV = Convert.ToUInt16(dt.Rows[i]["Zone5"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone6_SV = Convert.ToUInt16(dt.Rows[i]["Zone6"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone7_SV = Convert.ToUInt16(dt.Rows[i]["Zone7"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone8_SV = Convert.ToUInt16(dt.Rows[i]["Zone8"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].bTempRump_Enable = Convert.ToBoolean(dt.Rows[i]["斜率"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].rSetPressure = (float)dt.Rows[i]["压力"];
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].rLeakRateLimit = (float)dt.Rows[i]["漏率"];
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC1_SV = Convert.ToUInt16(dt.Rows[i]["MFC1"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC2_SV = Convert.ToUInt16(dt.Rows[i]["MFC2"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC3_SV = Convert.ToUInt16(dt.Rows[i]["MFC3"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC4_SV = Convert.ToUInt16(dt.Rows[i]["MFC4"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC5_SV = Convert.ToUInt16(dt.Rows[i]["MFC5"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC6_SV = Convert.ToUInt16(dt.Rows[i]["MFC6"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC7_SV = Convert.ToUInt16(dt.Rows[i]["MFC7"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC8_SV = Convert.ToUInt16(dt.Rows[i]["MFC8"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC9_SV = Convert.ToUInt16(dt.Rows[i]["MFC9"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC10_SV = Convert.ToUInt16(dt.Rows[i]["MFC10"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC11_SV = Convert.ToUInt16(dt.Rows[i]["MFC11"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC12_SV = Convert.ToUInt16(dt.Rows[i]["MFC12"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].bTemp_Check = Convert.ToBoolean(dt.Rows[i]["温度监控"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].bFlow_Check = Convert.ToBoolean(dt.Rows[i]["流量监控"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].bPressure_Check = Convert.ToBoolean(dt.Rows[i]["压力监控"]);
+
+                int result = 0;
+                for (int x = 1; x <= 32; x++)
+                {
+                    result = (result << 1) + (Convert.ToBoolean(dt.Rows[i]["V" + x]) ? 1 : 0);
+                }
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].nOpen_Valve = Convert.ToUInt32(result);
+
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].Loop_Counter = Convert.ToUInt16(dt.Rows[i]["循环次数"]);
+                PlcVar.Tube[frmID.Unit].stRecipePara[i].Loop_Start_Step = Convert.ToUInt16(dt.Rows[i]["循环起始步"]);
+            }
             this.CloseWait();
         }
         /// <summary>
@@ -478,8 +510,58 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void picUploadRecipe_Click(object sender, EventArgs e)
         {
-            obj = help.DeserializeObject<int>(b1);
-            MessageBox.Show(obj.ToString());
+            this.ShowWait();
+            for (int i = 0; i < 45; i++)
+            {
+                dt.Rows[i]["步名称"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].eName;
+                dt.Rows[i]["步时间"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nDuration;
+                dt.Rows[i]["Zone1"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone1_SV;
+                dt.Rows[i]["Zone2"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone2_SV;
+                dt.Rows[i]["Zone3"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone3_SV;
+                dt.Rows[i]["Zone4"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone4_SV;
+                dt.Rows[i]["Zone5"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone5_SV;
+                dt.Rows[i]["Zone6"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone6_SV;
+                dt.Rows[i]["Zone7"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone7_SV;
+                dt.Rows[i]["Zone8"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nTempZone8_SV;
+                dt.Rows[i]["斜率"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].bTempRump_Enable;
+                dt.Rows[i]["压力"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].rSetPressure;
+                dt.Rows[i]["漏率"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].rLeakRateLimit;
+                dt.Rows[i]["MFC1"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC1_SV;
+                dt.Rows[i]["MFC2"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC2_SV;
+                dt.Rows[i]["MFC3"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC3_SV;
+                dt.Rows[i]["MFC4"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC4_SV;
+                dt.Rows[i]["MFC5"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC5_SV;
+                dt.Rows[i]["MFC6"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC6_SV;
+                dt.Rows[i]["MFC7"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC7_SV;
+                dt.Rows[i]["MFC8"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC8_SV;
+                dt.Rows[i]["MFC9"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC9_SV;
+                dt.Rows[i]["MFC10"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC10_SV;
+                dt.Rows[i]["MFC11"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC11_SV;
+                dt.Rows[i]["MFC12"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].nMFC12_SV;
+                dt.Rows[i]["温度监控"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].bTemp_Check;
+                dt.Rows[i]["流量监控"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].bFlow_Check;
+                dt.Rows[i]["压力监控"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].bPressure_Check;
+
+                int inputNum = Convert.ToInt32(PlcVar.Tube[frmID.Unit].stRecipePara[i].nOpen_Valve);
+                int endNum;
+                for (int x = 0; x < 32; x++)
+                {
+                    endNum = 1 << x;
+                    if (endNum == (endNum & inputNum))
+                    {
+                        dt.Rows[i]["V" + x] = true;
+                    }
+                    else
+                    {
+                        dt.Rows[i]["V" + x] = false;
+                    }
+                }
+
+                dt.Rows[i]["循环次数"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].Loop_Counter;
+                dt.Rows[i]["循环起始步"] = PlcVar.Tube[frmID.Unit].stRecipePara[i].Loop_Start_Step;
+            }
+            this.CloseWait();
+            gridRecipe.DataSource = dt;
         }
         /// <summary>
         /// 配方校验
@@ -488,8 +570,17 @@ namespace Demo.Forms.Tube
         /// <param name="e"></param>
         private void picCheckRecipe_Click(object sender, EventArgs e)
         {
+            this.ShowWait();
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                if (dt.Rows[i]["执行动作"] != (object)PlcVar.Tube[frmID.Unit].stRecipePara[i].eName)
+                {
 
+                }
+            }
+            this.CloseWait();
         }
+
         /// <summary>
         /// 默认配方
         /// </summary>
@@ -669,36 +760,22 @@ namespace Demo.Forms.Tube
             help.SetbtnClickBackColor(btnGasInit, Color.Green, tubeModelClass.GbGas_InitDone);
             help.SetbtnClickBackColor(btnVacuumInit, Color.Green, tubeModelClass.GbVacuum_InitDone);
         }
-        public void OnMouseDown_Click(object sender, EventArgs e)
+        public void OnInit_Click(object sender, EventArgs e)
         {
             SimpleButton btn = (SimpleButton)sender;
 
             if (btn.Text == "工艺单元初始化")
-                PlcVar.Tube[frmID.Unit].gbProcess_InitStart = true;
+                PlcVar.Tube[frmID.Unit].gbProcess_InitStart = !PlcVar.Tube[frmID.Unit].gbProcess_InitStart;
             else if (btn.Text == "加热系统初始化")
-                PlcVar.Tube[frmID.Unit].gbHeating_InitStart = true;
+                PlcVar.Tube[frmID.Unit].gbHeating_InitStart = !PlcVar.Tube[frmID.Unit].gbHeating_InitStart;
             else if (btn.Text == "气路系统初始化")
-                PlcVar.Tube[frmID.Unit].gbGas_InitStart = true;
+                PlcVar.Tube[frmID.Unit].gbGas_InitStart = !PlcVar.Tube[frmID.Unit].gbGas_InitStart;
             else if (btn.Text == "推舟系统初始化")
-                PlcVar.Tube[frmID.Unit].gbBoatPush_InitStart = true;
+                PlcVar.Tube[frmID.Unit].gbBoatPush_InitStart = !PlcVar.Tube[frmID.Unit].gbBoatPush_InitStart;
             else if (btn.Text == "真空系统初始化")
-                PlcVar.Tube[frmID.Unit].gbVacuum_InitStart = true;
+                PlcVar.Tube[frmID.Unit].gbVacuum_InitStart = !PlcVar.Tube[frmID.Unit].gbVacuum_InitStart;
         }
-        public void OnMouseUp_Click(object sender, EventArgs e)
-        {
-            SimpleButton btn = (SimpleButton)sender;
 
-            if (btn.Text == "工艺单元初始化")
-                PlcVar.Tube[frmID.Unit].gbProcess_InitStart = false;
-            else if (btn.Text == "加热系统初始化")
-                PlcVar.Tube[frmID.Unit].gbHeating_InitStart = false;
-            else if (btn.Text == "气路系统初始化")
-                PlcVar.Tube[frmID.Unit].gbGas_InitStart = false;
-            else if (btn.Text == "推舟系统初始化")
-                PlcVar.Tube[frmID.Unit].gbBoatPush_InitStart = false;
-            else if (btn.Text == "真空系统初始化")
-                PlcVar.Tube[frmID.Unit].gbVacuum_InitStart = false;
-        }
         public void btnbShield_Click(object sender, EventArgs e)
         {
             SimpleButton btn = (SimpleButton)sender;
@@ -834,7 +911,7 @@ namespace Demo.Forms.Tube
 
         #region 报表
 
-        //待完善项：①X轴设置为时间轴；②显示与隐藏曲线：修改属性即可useCheckItem；③曲线缩小放大
+        //待完善项：①X轴设置为动态时间轴
         private void picChart_Click(object sender, EventArgs e)
         {
             spcChart.Panel1Collapsed = false;
@@ -882,8 +959,7 @@ namespace Demo.Forms.Tube
             string fileTypeName = "\\工艺历史数据\\Tube" + this.Tag.ToString();
             dtchartOrtable = help.AsposeCells(fileTypeName);
             txtFilePath.Text = Application.StartupPath + fileTypeName;
-            chartTube.DataSource = dtchartOrtable;
-            gridReport.DataSource = dtchartOrtable;
+            ChartBingingData();
         }
 
         public DataTable ChartBingingData()
@@ -941,7 +1017,26 @@ namespace Demo.Forms.Tube
                 }
             }
         }
- 
+
+        /// <summary>
+        /// 权限设置
+        /// </summary>
+        /// <param name="isVisble">是否可见</param>
+        /// <param name="isEnable">是否可编辑</param>
+        /// <param name="typeName">设置类型：0 - 系统操作模式；1 - 登陆用户；3 - 其他</param>
+       
+        private void SetDesignRight(bool val)
+        {
+            //PlcModels.OP_MODE mode = new PlcModels.OP_MODE();
+            //com.FunctionModels.UserInfo userInfo = new com.FunctionModels.UserInfo();
+            //this.txtZoneSV1.Visible = (mode==(PlcModels.OP_MODE)1 && userInfo.UserRole == 0);
+
+            foreach (Control c in this.Controls)
+            {
+                if (c is TextEdit || c is SimpleButton || c is ComboBoxEdit)
+                    c.Visible = val;
+            }
+        }
         #endregion
 
     }

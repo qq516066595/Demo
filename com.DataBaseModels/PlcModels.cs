@@ -5,10 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using static com.DataBaseModels.PlcModels;
+using com.CommunicationModels;
+using log4net;
+
 namespace com.DataBaseModels
 {
     public class PlcModels
     {
+        public static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         private static PlcModels instance;
 
         public static PlcModels Instance
@@ -21,6 +27,7 @@ namespace com.DataBaseModels
                 }
                 return instance;
             }
+        
         }
 
         private static string TableHead(int index)
@@ -115,7 +122,7 @@ namespace com.DataBaseModels
             public int Loop_Counter;
             public int Loop_Start_Step;
         }
-
+       
         //****************当前工艺控制****************
         [Serializable]
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
@@ -190,14 +197,14 @@ namespace com.DataBaseModels
             public UInt32 nVacumm2;
             public UInt32 nGas1;
             public UInt32 nGas2;
-
+            
         }
+        
 
-
-        #endregion ------------------------------炉管结构体定义---------------------------------------
+            #endregion ------------------------------炉管结构体定义---------------------------------------
 
         #region 机械手结构体定义
-        public enum BoatState
+            public enum BoatState
         {
             DISABLE,
             NO_BOAT,
@@ -242,15 +249,15 @@ namespace com.DataBaseModels
             public bool bAlarm;                   //工位报警
 
         }
-
+        
         //[Serializable]
-        // [StructLayout(LayoutKind.Sequential, Pack = 1)]
+       // [StructLayout(LayoutKind.Sequential, Pack = 1)]
         public struct StationPara
         {
             public UInt16 nSetCoolTime;      //设定冷却时间
             public StationMode eStationMode; //工位状态，冷舟，热舟
             public bool bSheild;            //工位屏蔽
-
+           
         }
         [Serializable]
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
@@ -262,7 +269,7 @@ namespace com.DataBaseModels
             public bool bCleanFlag;
 
         }
-
+        
         //****************机械手轴扩展参数结构体****************
         public struct HandAxisParaEx
         {
@@ -319,7 +326,7 @@ namespace com.DataBaseModels
             public UInt32 nConveyer1;
             public UInt32 nConveyer2;
             public UInt32 nSafe;
-
+            
         }
         #endregion ---------------------------机械手结构体定义--------------------------------------- 
 
@@ -418,7 +425,7 @@ namespace com.DataBaseModels
             public float rActPos;
             public float rActSpeed;
             public float rAct_Torque;
-
+                    
             public UInt16 nErrorCode;
             public UInt16 nECT_ErrorCode;
         }
@@ -667,10 +674,10 @@ namespace com.DataBaseModels
         public bool gbHMI_CloseDoor;
         public bool gbHMI_BoatIn;
         public bool gbHMI_BoatOut;
-        public string gsVersion;//软件版本号
-        public bool gbLicense_OK;//注册ok标志位
-        public Int32 giSN;//PLC序列号
-        public Int32 giLicense_Code;//PLC注册码
+        public string gsVersion;     //软件版本号
+        public bool gbLicense_OK;    //注册ok标志位
+        public Int32 giSN;           //PLC序列号
+        public Int32 giLicense_Code; //PLC注册码
         public bool gbHMI_Tube_Disable;
         public bool gbHMI_Recipe_Start;
         public bool gbHMI_Recipe_Hold;
@@ -757,13 +764,15 @@ namespace com.DataBaseModels
 
     }
     public static class PlcVar
-    {
+    { 
+
         public static PlcJht Jht;
         public static PlcTube[] Tube = new PlcTube[6];
-
+        
         //在构造函数中对变量中的数组数量初始化
         static PlcVar()
         {
+            
             Jht.Hand_X_SV_Ctrl.bAbs_Execute = new bool[32];
             Jht.Hand_X_SV_Ctrl.bAbs_Condition = new bool[32];
             Jht.Hand_X_SV_Ctrl.bPos_Reached = new bool[32];
@@ -784,8 +793,8 @@ namespace com.DataBaseModels
             Jht.stComm_from_Tube = new PlcModels.Comm_from_Tube[5];
             Jht.stComm_to_Tube = new PlcModels.Comm_to_Tube[5];
 
-
-            for (int i = 0; i < 6; i++)
+            
+            for (int i=0;i<6;i++)
             {
                 Tube[i].stRecipePara = new PlcModels.RecipePara[46];
 
@@ -833,6 +842,168 @@ namespace com.DataBaseModels
                 }
 
             }
+            GetJHTInfo();//初始化加载
         }
+       /// <summary>
+       /// 加载数据
+       /// </summary>
+        public static void GetJHTInfo() {
+
+             try
+             {
+                PlcVar.Jht.OP_Mode = (PlcModels.OP_MODE)Convert.ToInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "OP_Mode"));
+
+                //stTube_BoatInfo
+                for (int i = 0, j = 1; i < 4; i++, j++)
+                {
+                    PlcVar.Jht.stTube_BoatInfo[i].ID             = LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stTube_BoatInfo[" + j + "].ID");
+                    PlcVar.Jht.stTube_BoatInfo[i].eBoatState     = (PlcModels.BoatState)Convert.ToInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stTube_BoatInfo[" + j + "].eBoatState"));
+                    PlcVar.Jht.stTube_BoatInfo[i].eWaferMode     = (PlcModels.WaferMode)Convert.ToInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stTube_BoatInfo[" + j + "].eWaferMode"));
+                    PlcVar.Jht.stTube_BoatInfo[i].iFromTubeNum   = Convert.ToInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6,  "stTube_BoatInfo[" + j + "].iFromTubeNum"));
+                    PlcVar.Jht.stTube_BoatInfo[i].iToTubeNum     = Convert.ToInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6,  "stTube_BoatInfo[" + j + "].iToTubeNum"));
+                    PlcVar.Jht.stTube_BoatInfo[i].bCoolingFinish = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6,"stTube_BoatInfo[" + j + "].bCoolingFinish"));
+                    PlcVar.Jht.stTube_BoatInfo[i].nStoreTime     = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stTube_BoatInfo[" + j + "].nStoreTime"));
+                    PlcVar.Jht.stTube_BoatInfo[i].nRemainCoolTime= Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stTube_BoatInfo[" + j + "].nRemainCoolTime"));
+                    PlcVar.Jht.stTube_BoatInfo[i].bAlarm         = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6,"stTube_BoatInfo[" + j + "].bAlarm")); 
+                } 
+                //garrBoatList
+                for (int i = 0,j=1; i < 19; i++,j++)
+                {
+                    PlcVar.Jht.garrBoatList[i].ID = LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "garrBoatList[" + j + "].ID");
+                    PlcVar.Jht.garrBoatList[i].iToTubeNum = Convert.ToInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "garrBoatList[" + j + "].iToTubeNum"));
+                    PlcVar.Jht.garrBoatList[i].bCleanFlag = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "garrBoatList[" + j + "].bCleanFlag"));
+                }
+                //stBuffer_BoatInfo
+                for (int i = 0,j=1; i < 5; i++,j++)
+                {
+                    PlcVar.Jht.stBuffer_BoatInfo[i].ID             = LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stBuffer_BoatInfo[" + j + "].ID");
+                    PlcVar.Jht.stBuffer_BoatInfo[i].eBoatState     = (PlcModels.BoatState)Convert.ToInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stBuffer_BoatInfo[" + j + "].eBoatState"));
+                    PlcVar.Jht.stBuffer_BoatInfo[i].eWaferMode     = (PlcModels.WaferMode)Convert.ToInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stBuffer_BoatInfo[" + j + "].eWaferMode"));
+                    PlcVar.Jht.stBuffer_BoatInfo[i].iFromTubeNum   = Convert.ToInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stBuffer_BoatInfo[" + j + "].iFromTubeNum"));
+                    PlcVar.Jht.stBuffer_BoatInfo[i].iToTubeNum     = Convert.ToInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stBuffer_BoatInfo[" + j + "].iToTubeNum"));
+                    PlcVar.Jht.stBuffer_BoatInfo[i].bCoolingFinish = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6,"stBuffer_BoatInfo[" + j + "].bCoolingFinish"));
+                    PlcVar.Jht.stBuffer_BoatInfo[i].nStoreTime     = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stBuffer_BoatInfo[" + j + "].nStoreTime"));
+                    PlcVar.Jht.stBuffer_BoatInfo[i].nRemainCoolTime= Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stBuffer_BoatInfo[" + j + "].nRemainCoolTime"));
+                    PlcVar.Jht.stBuffer_BoatInfo[i].bAlarm         = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6,"stBuffer_BoatInfo[" + j + "].bAlarm"));
+
+                    PlcVar.Jht.stBufferPara[i].nSetCoolTime        = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stBufferPara[" + j + "].nSetCoolTime"));
+                    PlcVar.Jht.stBufferPara[i].eStationMode        = (PlcModels.StationMode)Convert.ToInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stBufferPara[" + j + "].eStationMode"));
+                    PlcVar.Jht.stBufferPara[i].bSheild             = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stBufferPara[" + j + "].bSheild")); 
+                }
+                //Hand_X_SV_Ctrl
+                PlcVar.Jht.Hand_X_SV_Ctrl.bPowerOff         = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bPowerOff"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.bPowerStatus      = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bPowerStatus"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.bStandStill       = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bStandStill"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.bMinPos_Reached   = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bMinPos_Reached"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.bHome_Condition   = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bHome_Condition"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.bJogF             = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bJogF"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.bJogB             = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bJogB"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.bJogF_Condition   = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bJogF_Condition"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.bJogB_Condition   = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bJogB_Condition"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.bReset_Execute    = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bReset_Execute"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.bStop_Execute     = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bStop_Execute"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.P_SW              = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.P_SW"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.N_SW              = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.N_SW"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.O_SW              = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.O_SW"));
+                for (int i = 0, j=1; i < 31; i++,j++)
+                {
+                    PlcVar.Jht.Hand_X_SV_Ctrl.bAbs_Execute[i]   = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bAbs_Execute["+j+"]"));
+                    PlcVar.Jht.Hand_X_SV_Ctrl.bAbs_Condition[i] = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bAbs_Condition[" + j + "]"));
+                    PlcVar.Jht.Hand_X_SV_Ctrl.bPos_Reached[i]   = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.bPos_Reached[" + j + "]"));
+                } 
+                PlcVar.Jht.Hand_X_SV_Ctrl.rOverride         = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.rOverride"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.rActPos           = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.rActPos"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.rActSpeed         = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.rActSpeed"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.rAct_Torque       = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.rAct_Torque"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.nErrorCode        = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.nErrorCode"));
+                PlcVar.Jht.Hand_X_SV_Ctrl.nECT_ErrorCode    = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Ctrl.nECT_ErrorCode"));
+                //Hand_X_SV_Para
+               
+                PlcVar.Jht.Hand_X_SV_Para.nHomeType       = Convert.ToUInt16 (LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.nHomeType"));
+                PlcVar.Jht.Hand_X_SV_Para.ID              = Convert.ToUInt32(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.ID"));
+                PlcVar.Jht.Hand_X_SV_Para.bHome_OK        = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.bHome_OK"));
+                PlcVar.Jht.Hand_X_SV_Para.rScaling_Factor = double.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.rScaling_Factor"));
+                PlcVar.Jht.Hand_X_SV_Para.rPosition_Bias  = double.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.rPosition_Bias"));
+                PlcVar.Jht.Hand_X_SV_Para.rJogSpeed       = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.rJogSpeed"));
+                PlcVar.Jht.Hand_X_SV_Para.rAcc            = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.rAcc"));
+                PlcVar.Jht.Hand_X_SV_Para.rDec            = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.rDec"));
+                PlcVar.Jht.Hand_X_SV_Para.rJerk           = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.rJerk"));
+                PlcVar.Jht.Hand_X_SV_Para.rMaxPos         = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.rMaxPos"));
+                PlcVar.Jht.Hand_X_SV_Para.rMinPos         = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.rMinPos"));
+                for (int i = 0, j = 1; i < 31; i++, j++)
+                {
+                    PlcVar.Jht.Hand_X_SV_Para.rAbs_Pos[i]     = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.rAbs_Pos[" + j+"]"));
+                    PlcVar.Jht.Hand_X_SV_Para.rAbs_Speed[i]   = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.rAbs_Speed[" + j+"]")); 
+                }
+                    PlcVar.Jht.Hand_X_SV_Para.bEnableT_Protect= Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.bEnableT_Protect"));
+                    PlcVar.Jht.Hand_X_SV_Para.rMax_Torque     = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.rMax_Torque")); 
+                    PlcVar.Jht.Hand_X_SV_Para.rMin_Torque     = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "Hand_X_SV_Para.rMin_Torque"));
+                
+            
+
+
+
+
+                //stDTSU666
+                PlcVar.Jht.stEnergyValue.nPt = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stDTSU666.nPt"));
+                PlcVar.Jht.stEnergyValue.nPa = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stDTSU666.nPa"));
+                PlcVar.Jht.stEnergyValue.nPb = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stDTSU666.nPb"));
+                PlcVar.Jht.stEnergyValue.nPc = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stDTSU666.nPc"));
+                PlcVar.Jht.stEnergyValue.nEnergyFw = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, "stDTSU666.nEnergyFw"));
+                //AxisParaEx
+                PlcVar.Jht.AxisParaEx.rHand_X_FastV      = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[0]));
+                PlcVar.Jht.AxisParaEx.rHand_X_SlowV      = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[1]));
+                PlcVar.Jht.AxisParaEx.rHand_X_SlowAcc    = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[2]));
+                PlcVar.Jht.AxisParaEx.rHand_Z_Mid_FastV  = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[3]));
+                PlcVar.Jht.AxisParaEx.rHand_Z_Mid_SlowV  = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[4]));
+                PlcVar.Jht.AxisParaEx.rHand_Z_Side_SlowV = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[5]));
+                PlcVar.Jht.AxisParaEx.rHand_Z_FastAcc    = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[6]));
+                PlcVar.Jht.AxisParaEx.rHand_Z_SlowAcc    = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[7]));
+                PlcVar.Jht.AxisParaEx.rConveyer_JogFastV = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[8]));
+                PlcVar.Jht.AxisParaEx.rConveyer_JogSlowV = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[9]));
+                PlcVar.Jht.AxisParaEx.rTakeTube_CheckOffsetPos = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[10]));
+                PlcVar.Jht.AxisParaEx.rLayTube_CheckOffsetPos  = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[11]));
+                PlcVar.Jht.AxisParaEx.rTakeBuff_CheckOffsetPos = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[12]));
+                PlcVar.Jht.AxisParaEx.rLayBuff_CheckOffsetPos  = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[13]));
+                PlcVar.Jht.AxisParaEx.rRuler_Ratio       = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[14]));
+                PlcVar.Jht.AxisParaEx.rEnc_Ruler_MaxDiff = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(6, PlcJhtNode.AxisParaEx[15]));
+               
+
+                 
+             } 
+             catch (Exception e)
+             {
+               
+                 log.Error("GetJHTInfo()========>" + e.ToString());
+                 Console.WriteLine(e.ToString());
+             } 
+
+            
+             
+        }
+
+        public static void GetTUBEInfo(int index) {
+
+            try
+            {
+               
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine(e.ToString()); ;
+            }
+
+        }
+
+
+
+
+        
+
+
+
+
     }
+    
 }
