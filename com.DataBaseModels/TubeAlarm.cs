@@ -11,9 +11,15 @@ namespace com.DataBaseModels
         private string zAlarmName;
         private string zAlarmDesc;
         private string zAlarmTime;
+        private string zUserName;
 
         public TubeAlarm()
         {
+        }
+        public string UserName
+        {
+            get { return zUserName; }
+            set { zUserName = value; }
         }
 
         public string AlarmName

@@ -92,9 +92,22 @@ namespace com.DataBaseDAL
 
         public List<TubeAlarm> GetLoaderAlarmList(int loaderIndex)
         {
-            List<TubeAlarm> alarmTOs = new List<TubeAlarm>();
-            string sql = "select * from alarm where tube_idx = " + (10 + loaderIndex) + " order by alarm_time desc";
-            using (SQLiteConnection c = new SQLiteConnection(SqliteHelper.Instance.connectionStrings[0]))
+            List<TubeAlarm> tubeAlarm = new List<TubeAlarm>();
+            return tubeAlarm;
+        }
+
+        /// <summary>
+        /// 炉管报警信息查询
+        /// </summary>
+        /// <param name="tubeIndex">炉管ID</param>
+        /// <param name="startDate">查询起始时间</param>
+        /// <param name="endDate">查询结束时间</param>
+        /// <returns></returns>
+        public List<TubeAlarm> TubeAlarmList (int tubeIndex,DateTime startDate,DateTime endDate)
+        {
+            List<TubeAlarm> tubeAlarmTOs = new List<TubeAlarm>();
+            string sql = "select * from TubeAlarmInfo where alarmTime between '" + startDate + "' and '" + endDate + "' order by alarmTime desc";
+            using (SQLiteConnection c = new SQLiteConnection(SqliteHelper.Instance.connectionStrings[tubeIndex]))
             {
                 c.Open();
                 using (SQLiteCommand cmd = new SQLiteCommand(sql, c))
@@ -103,22 +116,48 @@ namespace com.DataBaseDAL
                     {
                         while (rdr.Read())
                         {
-                            TubeAlarm alarmTO = new TubeAlarm();
-
-                            string str = rdr["alarm_name"].ToString();//分割
-
-                            string r = Regex.Replace(str, @"^[A-Za-z]+", string.Empty);
-                            alarmTO.AlarmName = r;
-                            alarmTO.AlarmDesc = rdr["alarm_desc"].ToString();
-                            alarmTO.AlarmTime = rdr["alarm_time"].ToString();
-                            alarmTOs.Add(alarmTO);
+                            TubeAlarm tubeAlarmTO = new TubeAlarm();
+                            tubeAlarmTO.UserName = rdr["userName"].ToString();
+                            tubeAlarmTO.AlarmDesc = rdr["description"].ToString();
+                            tubeAlarmTO.AlarmTime = rdr["alarmTime"].ToString();
+                            tubeAlarmTOs.Add(tubeAlarmTO);
                         }
                     }
                 }
             }
 
-            return alarmTOs;
+            return tubeAlarmTOs;
         }
+        /// <summary>
+        /// 机械手报警信息查询
+        /// </summary>
+        /// <param name="startDate">查询起始时间</param>
+        /// <param name="endDate">查询结束时间</param>
+        /// <returns></returns>
+        public List<TubeAlarm> LoaderAlarmList( DateTime startDate, DateTime endDate)
+        {
+            List<TubeAlarm> loaderAlarmTOs = new List<TubeAlarm>();
+            string sql = "select * from LoaderAlarmInfo where alarmTime between '" + startDate + "' and '" + endDate + "' order by alarmTime desc";
+            using (SQLiteConnection c = new SQLiteConnection(SqliteHelper.Instance.connectionStrings[6]))
+            {
+                c.Open();
+                using (SQLiteCommand cmd = new SQLiteCommand(sql, c))
+                {
+                    using (SQLiteDataReader rdr = cmd.ExecuteReader())
+                    {
+                        while (rdr.Read())
+                        {
+                            TubeAlarm loaderAlarmTO = new TubeAlarm();
+                            loaderAlarmTO.UserName = rdr["userName"].ToString();
+                            loaderAlarmTO.AlarmDesc = rdr["description"].ToString();
+                            loaderAlarmTO.AlarmTime = rdr["alarmTime"].ToString();
+                            loaderAlarmTOs.Add(loaderAlarmTO);
+                        }
+                    }
+                }
+            }
 
+            return loaderAlarmTOs;
+        }
     }
 }
