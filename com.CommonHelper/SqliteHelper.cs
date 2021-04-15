@@ -1,6 +1,7 @@
 ﻿namespace System.Data.SQLite
 {
     using log4net;
+    using System.Collections.Generic;
     using System.Data;
     using System.Data.SQLite;
     using System.IO;
@@ -18,7 +19,9 @@
             "Data Source=database/db_T2.sqlite;Version=3;",
             "Data Source=database/db_T3.sqlite;Version=3;",
             "Data Source=database/db_T4.sqlite;Version=3;",
-            "Data Source=database/db_T5.sqlite;Version=3;"};
+            "Data Source=database/db_T5.sqlite;Version=3;",
+            "Data Source=database/db_Loader.sqlite;Version=3;"};
+
 
 
         public static SqliteHelper Instance
@@ -50,11 +53,47 @@
             }
             catch (Exception ex)
             {
-                log.Error("执行ExecuteSql执行出现异常：" + ex);
-                throw new Exception("执行EExecuteSql执行出现异常：", ex);
+                log.Error("执行ExecuteSql执行出现异常：" + sql);
+                throw new Exception("执行ExecuteSql执行出现异常：", ex);
             }
         }
+        /// <summary>
+        /// 执行多条SQL语句
+        /// </summary>
+        /// <param name="tubeIndex">炉管ID</param>
+        /// <param name="sqls">SQL语句</param>
+        public void ExecuteNonQuery(int tubeIndex, List<string> sqls)
+        {
+            try
+            {
+                using (SQLiteConnection conn = new SQLiteConnection(connectionStrings[tubeIndex]))
+                {
+                    conn.Open();
 
+                    using (var cmd = new SQLiteCommand(conn))
+                    {
+                        using (var transaction = conn.BeginTransaction())
+                        {
+                            for (var i = 0; i < sqls.Count; i++)
+                            {
+                                cmd.CommandText = sqls[i];
+                                cmd.ExecuteNonQuery();
+                            }
+                            transaction.Commit();
+                        }
+                    }
+                    conn.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                log.Error("执行多条ExecuteNonQuery执行出现异常：" + sqls);
+                throw new Exception("执行多条ExecuteNonQuery执行出现异常：", ex);
+                
+            }
+
+            
+        }
 
 
         #region 数据库封装
@@ -106,7 +145,7 @@
             }
             catch (Exception ex)
             {
-                log.Error("执行ExecuteNonQuery执行出现异常：" + ex);
+                log.Error("执行ExecuteNonQuery执行出现异常：" + cmdText);
                 throw new Exception("执行ExecuteNonQuery执行出现异常：", ex);
             }
 
@@ -153,7 +192,7 @@
             }
             catch (Exception ex)
             {
-                log.Error("执行ExecuteScalar执行出现异常：" + ex);
+                log.Error("执行ExecuteScalar执行出现异常：" + cmdText);
                 throw new Exception("执行ExecuteScalar执行出现异常：", ex);
             }
 
@@ -189,7 +228,7 @@
             catch (Exception ex)
             {
                 conn.Close();
-                log.Error("执行ExecuteReader执行出现异常：" + ex);
+                log.Error("执行ExecuteReader执行出现异常：" + cmdText);
                 throw new Exception("执行ExecuteReader执行出现异常：", ex);
             }
         }

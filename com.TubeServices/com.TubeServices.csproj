@@ -74,6 +74,10 @@
     <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\com.CommonHelper\com.CommonHelper.csproj">
+      <Project>{053A8ED8-C9D5-4D3A-872F-AFFD69C23936}</Project>
+      <Name>com.CommonHelper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\com.CommunicationDAL\com.CommunicationDAL.csproj">
       <Project>{E34C4230-911E-47FB-83B4-D5D1CFD0FCC4}</Project>
       <Name>com.CommunicationDAL</Name>
