@@ -55,18 +55,19 @@ namespace Demo.Forms.Tube
         private void frmTubeMain_Load(object sender, EventArgs e)
         {
 
-
-            ////int a = (Int32)this.Tag;
-            ////if (a == 1)//炉管一
-            ////    gettag(1);
-            ////else if (a == 2)//炉管二
-            ////    gettag(2);
-            ////else if (a == 3)//炉管三
-            ////    gettag(3);
-            ////else if (a == 4)//炉管四
-            ////    gettag(4);
-            ////else if (a == 5)//炉管五
-            ////    gettag(5);
+           
+            //int a = (Int32)this.Tag;
+            //if (a == 1)//炉管一
+                //MessageBox.Show(""+a);
+                 
+            //else if (a == 2)//炉管二
+                //MessageBox.Show("" + a);
+            //else if (a == 3)//炉管三
+                //MessageBox.Show("" + a);
+            //else if (a == 4)//炉管四
+                //MessageBox.Show("" + a);
+            //else if (a == 5)//炉管五
+                //MessageBox.Show("" + a);
 
 
             ////2020-12-29 hhf 测试使用；需写到委托事件中实时刷新数据

@@ -11,6 +11,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraTab;
 using Demo.Forms.Tube;
 using DevExpress.XtraTabbedMdi;
+using com.DataBaseModels;
 /*
 * namespace：Demo.Forms.Template
 * className：frmParent
@@ -51,20 +52,21 @@ namespace Demo.Forms.Template
             if (curPage.Text == "  总  览  ")
             {
                 xtraTabIndex = 0;
+                
                 //curPage.ShowCloseButton = DevExpress.Utils.DefaultBoolean.False;
             }
             else if (curPage.Text == " 第 一 组 ")
-                xtraTabIndex = 1;
+                frmID.Unit  = 1;
             else if (curPage.Text == " 第 二 组 ")
-                xtraTabIndex = 2;
+                frmID.Unit = 2;
             else if (curPage.Text == " 第 三 组 ")
-                xtraTabIndex = 3;
+                frmID.Unit = 3;
             else if (curPage.Text == " 第 四 组 ")
-                xtraTabIndex = 4;
+                frmID.Unit = 4;
             else if (curPage.Text == " 第 五 组 ")
-                xtraTabIndex = 5;
+                frmID.Unit = 5;
             else if (curPage.Text == " 机 械 手 ")
-                xtraTabIndex = 6;
+                frmID.Unit = 6;
         }
 
         /// <summary>
