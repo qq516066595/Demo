@@ -69,6 +69,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Reactive, Version=5.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Reactive.5.0.0\lib\netstandard2.0\System.Reactive.dll</HintPath>
     </Reference>
@@ -1299,6 +1303,10 @@
     <ProjectReference Include="..\com.DataBaseModels\com.DataBaseModels.csproj">
       <Project>{b715fd74-b066-4c5d-86bb-a1a700ba8795}</Project>
       <Name>com.DataBaseModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\com.TubeServices\com.TubeServices.csproj">
+      <Project>{a9a14334-cabd-40fc-9d42-648f038d15e3}</Project>
+      <Name>com.TubeServices</Name>
     </ProjectReference>
     <ProjectReference Include="..\HZH_Controls\HZH_Controls.csproj">
       <Project>{AF32E163-C577-4CBC-A072-0DC1CE0E1DA3}</Project>

@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtEndTime = new System.Windows.Forms.DateTimePicker();
+            this.dtStartTime = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvJournal = new System.Windows.Forms.DataGridView();
             this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RecoveryTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJournal)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -48,33 +48,37 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(713, 1);
+            this.label1.Size = new System.Drawing.Size(1070, 2);
             this.label1.TabIndex = 29;
             // 
-            // dateTimePicker2
+            // dtEndTime
             // 
-            this.dateTimePicker2.CustomFormat = "yyyy-MM-dd HH:MM:SS";
-            this.dateTimePicker2.Location = new System.Drawing.Point(333, 3);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 21);
-            this.dateTimePicker2.TabIndex = 6;
+            this.dtEndTime.CustomFormat = "yyyy-MM-dd HH:MM:SS";
+            this.dtEndTime.Location = new System.Drawing.Point(500, 4);
+            this.dtEndTime.Margin = new System.Windows.Forms.Padding(4);
+            this.dtEndTime.Name = "dtEndTime";
+            this.dtEndTime.Size = new System.Drawing.Size(298, 28);
+            this.dtEndTime.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // dtStartTime
             // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:MM:SS";
-            this.dateTimePicker1.Location = new System.Drawing.Point(65, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 21);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dtStartTime.CustomFormat = "yyyy-MM-dd HH:MM:SS";
+            this.dtStartTime.Location = new System.Drawing.Point(98, 4);
+            this.dtStartTime.Margin = new System.Windows.Forms.Padding(4);
+            this.dtStartTime.Name = "dtStartTime";
+            this.dtStartTime.Size = new System.Drawing.Size(298, 28);
+            this.dtStartTime.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(271, 5);
+            this.label3.Location = new System.Drawing.Point(406, 8);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 17);
+            this.label3.Size = new System.Drawing.Size(82, 24);
             this.label3.TabIndex = 4;
             this.label3.Text = "结束时间";
             // 
@@ -82,40 +86,43 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(3, 6);
+            this.label2.Location = new System.Drawing.Point(4, 9);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 17);
+            this.label2.Size = new System.Drawing.Size(82, 24);
             this.label2.TabIndex = 5;
             this.label2.Text = "开始时间";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dateTimePicker2);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.dtEndTime);
+            this.panel1.Controls.Add(this.dtStartTime);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(713, 24);
+            this.panel1.Size = new System.Drawing.Size(1070, 36);
             this.panel1.TabIndex = 30;
             // 
-            // dataGridView1
+            // dgvJournal
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvJournal.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvJournal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvJournal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvJournal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Time,
             this.UserName,
             this.RecoveryTime,
             this.Desc});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 25);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(713, 571);
-            this.dataGridView1.TabIndex = 31;
+            this.dgvJournal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvJournal.Location = new System.Drawing.Point(0, 38);
+            this.dgvJournal.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvJournal.Name = "dgvJournal";
+            this.dgvJournal.RowTemplate.Height = 23;
+            this.dgvJournal.Size = new System.Drawing.Size(1070, 856);
+            this.dgvJournal.TabIndex = 31;
             // 
             // Time
             // 
@@ -144,31 +151,33 @@
             // 
             // UCJournal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvJournal);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCJournal";
-            this.Size = new System.Drawing.Size(713, 596);
+            this.Size = new System.Drawing.Size(1070, 894);
+            this.Load += new System.EventHandler(this.UCJournal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvJournal)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        public System.Windows.Forms.DateTimePicker dtEndTime;
+        public System.Windows.Forms.DateTimePicker dtStartTime;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Time;
-        private System.Windows.Forms.DataGridViewTextBoxColumn UserName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RecoveryTime;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Desc;
+        public System.Windows.Forms.DataGridView dgvJournal;
+        public System.Windows.Forms.DataGridViewTextBoxColumn Time;
+        public System.Windows.Forms.DataGridViewTextBoxColumn UserName;
+        public System.Windows.Forms.DataGridViewTextBoxColumn RecoveryTime;
+        public System.Windows.Forms.DataGridViewTextBoxColumn Desc;
     }
 }

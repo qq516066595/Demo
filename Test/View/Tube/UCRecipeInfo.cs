@@ -36,7 +36,7 @@ namespace Test.View.Tube
             this.ucBoatState.Source = lstCom;
             this.ucBoatState.SelectedIndex = 0;
             lblRecipeInfoTitle.Text = "工艺设置-管";
-
+            comm.OnNumChanged += Identify1_OnIdentifyTimeChanged;
         }
 
         private void btnStart_Click(object sender, EventArgs e)

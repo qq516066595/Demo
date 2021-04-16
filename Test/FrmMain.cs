@@ -17,7 +17,7 @@ namespace Test
     public partial class FrmMain : FrmWithTitle
     {
         public static View.Common.CommonClass comm = null;
-        public static View.Tube.UCMain ucMain = null;
+        //public static View.Tube.UCMain ucMain = null;
         public FrmMain()
         {
             InitializeComponent();
@@ -44,7 +44,7 @@ namespace Test
             PlcVar.Tube[2].gnProcessWorkingTime = 3;
             PlcVar.Tube[3].gnProcessWorkingTime = 4;
             PlcVar.Tube[4].gnProcessWorkingTime = 5;
-            comm.OnNumChanged += recipeInfo.Identify1_OnIdentifyTimeChanged;
+
         }
         public void TreeConentLoad()
         {
@@ -93,9 +93,27 @@ namespace Test
             tnJournal.Nodes.Add("报警");
             this.tvMenu.Nodes.Add(tnJournal);
             this.tvMenu.Nodes.Add(" 关于");
+
+            for (int i = 0; i < tvMenu.Nodes.Count; i++)
+            {
+                if (tvMenu.Nodes[i].Text.Trim() == "主页")
+                    tvMenu.SelectedNode = tvMenu.Nodes[i];//选中
+
+                //for (int j = 0; j < tvMenu.Nodes[i].Nodes.Count; j++)
+                //{
+                //    if (tvMenu.Nodes[i].Nodes[j].Text == "首页")
+                //    {
+                //        tvMenu.SelectedNode = tvMenu.Nodes[i].Nodes[j];//选中
+                //        //treeView.Nodes[i].Nodes[j].Checked = true;
+                //        tvMenu.Nodes[i].Expand();//展开父级
+                //        return;
+                //    }
+                //}
+            }
         }
         private void tvMenu_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            View.Tube.UCMain ucMain = null;
             panControl.Controls.Clear();
             string strName = e.Node.Text.Trim();
             this.Title = "磷扩散控制系统--" + strName;
@@ -235,7 +253,7 @@ namespace Test
             this.panControl.Controls.Add(c);
         }
 
-        View.Tube.UCRecipeInfo recipeInfo = new View.Tube.UCRecipeInfo();
+        //View.Tube.UCRecipeInfo recipeInfo = new View.Tube.UCRecipeInfo();
         private void Lable_Click(object sender, EventArgs e)
         {
             #region 字体设置
@@ -280,38 +298,59 @@ namespace Test
         public void DataBings()
         {
             View.Common.TubeHelpClass help = new View.Common.TubeHelpClass();
-
-            var bodyManin = this.panControl.Controls.Find("UCMain", false);
-            foreach (var item in bodyManin[0].Controls)
+            string strName = tvMenu.SelectedNode.Text.Trim();
+            switch (strName)
             {
-                if (item is View.Tube.UCRecipeInfo)//工艺信息
-                {
-                    var recipeInfo = item as View.Tube.UCRecipeInfo;
-                    //lblRecipeInfoTitle.lblRecipeInfoTitle.Text = num.ToString();
-                    recipeInfo.lblRecipeInfoTitle.Text = PlcVar.Tube[frmID.Unit].giRecipe_ID.ToString();
-                    recipeInfo.ucSwitch.Checked = PlcVar.Tube[frmID.Unit].OP_Cmd.bAutoSelect;
-                    //recipeInfo.lblRecipeName.Text = PlcVar.Tube[frmID.Unit].stCurrentRecipeName;
-                    recipeInfo.lblRecipeTotalTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
-                    recipeInfo.lblRecipeWorkTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
-                    recipeInfo.lblRecipeRemainTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessRemainTime);
-                    recipeInfo.lblStepId.Text = PlcVar.Tube[frmID.Unit].giRecipe_ID.ToString();
-                    recipeInfo.lblStepName.Text = help.KSrecipeNameFormatIntToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.eName);
-                    recipeInfo.lblStepTotalTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nDuration);
-                    recipeInfo.lblStepWorkTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nWorking_Time);
-                    recipeInfo.lblStepRemainTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nRemain_Time);
-                }
-                if (item is View.Tube.UCBoatPush)//推舟
-                {
+                case "主页":
+                    var bodyMain = this.panControl.Controls.Find("UCMain", false);
+                    if (bodyMain != null)
+                        foreach (var item in bodyMain[0].Controls)
+                        {
+                            if (item is View.Tube.UCRecipeInfo)//工艺信息
+                            {
+                                var recipeInfo = item as View.Tube.UCRecipeInfo;
+                                //lblRecipeInfoTitle.lblRecipeInfoTitle.Text = num.ToString();
+                                recipeInfo.lblRecipeInfoTitle.Text = PlcVar.Tube[frmID.Unit].giRecipe_ID.ToString();
+                                recipeInfo.ucSwitch.Checked = PlcVar.Tube[frmID.Unit].OP_Cmd.bAutoSelect;
+                                //recipeInfo.lblRecipeName.Text = PlcVar.Tube[frmID.Unit].stCurrentRecipeName;
+                                recipeInfo.lblRecipeTotalTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
+                                recipeInfo.lblRecipeWorkTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessWorkingTime);
+                                recipeInfo.lblRecipeRemainTime.Text = help.timeFormatUshortToString(PlcVar.Tube[frmID.Unit].gnProcessRemainTime);
+                                recipeInfo.lblStepId.Text = PlcVar.Tube[frmID.Unit].giRecipe_ID.ToString();
+                                recipeInfo.lblStepName.Text = help.KSrecipeNameFormatIntToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.eName);
+                                recipeInfo.lblStepTotalTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nDuration);
+                                recipeInfo.lblStepWorkTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nWorking_Time);
+                                recipeInfo.lblStepRemainTime.Text = help.timeFormatFloatToString(PlcVar.Tube[frmID.Unit].stCurrentRecipeCtrl.nRemain_Time);
+                            }
+                            if (item is View.Tube.UCBoatPush)//推舟
+                            {
 
-                }
-                if (item is View.Tube.UCZone)//温区
-                {
+                            }
+                            if (item is View.Tube.UCZone)//温区
+                            {
 
-                }
-                if (item is View.Tube.UCRoad)//气路
-                {
+                            }
+                            if (item is View.Tube.UCRoad)//气路
+                            {
 
-                }
+                            }
+                        }
+                    break;
+                case "日志":
+                case "事件":
+                    var bodyJournal = this.panControl.Controls.Find("UCJournal", false);
+                    if (bodyJournal != null && bodyJournal[0].Controls.Owner is View.Common.UCJournal)
+                    {
+                        //foreach (var item in bodyJournal[0].Controls)
+                        //{
+                        //    var a = bodyJournal[0].Controls.Owner;
+                        //    if (item is View.Common.UCJournal)//工艺信息
+                        //    {
+                        var journalInfo = bodyJournal[0].Controls.Owner as View.Common.UCJournal;
+                        journalInfo.dgvJournal.DataSource = com.TubeServices.TubeAlarmService.Instance.GetTubeAlarmList(frmID.Unit, journalInfo.dtStartTime.Value, journalInfo.dtEndTime.Value);
+                       
+                    }
+                    break;
             }
         }
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
