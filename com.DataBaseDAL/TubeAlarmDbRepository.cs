@@ -106,7 +106,7 @@ namespace com.DataBaseDAL
         public List<TubeAlarm> TubeAlarmList (int tubeIndex,DateTime startDate,DateTime endDate)
         {
             List<TubeAlarm> tubeAlarmTOs = new List<TubeAlarm>();
-            string sql = "select * from TubeAlarmInfo where alarmTime between '" + startDate + "' and '" + endDate + "' order by alarmTime desc";
+            string sql = "select * from TubeAlarmInfo where alarmTime between '" + startDate.ToString("yyyy-MM-dd HH:MM:ss") + "' and '" + endDate.ToString("yyyy-MM-dd HH:MM:ss") + "' order by alarmTime desc";
             using (SQLiteConnection c = new SQLiteConnection(SqliteHelper.Instance.connectionStrings[tubeIndex]))
             {
                 c.Open();
