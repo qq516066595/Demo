@@ -28,462 +28,495 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.ucSignalLamp16 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp14 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp12 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp10 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp8 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp5 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp3 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp15 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp13 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp11 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp9 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp7 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp4 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp2 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp1 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp6 = new HZH_Controls.Controls.UCSignalLamp();
+            this.lblIOName1 = new System.Windows.Forms.Label();
+            this.lblIOName9 = new System.Windows.Forms.Label();
+            this.lblIOName2 = new System.Windows.Forms.Label();
+            this.lblIOName10 = new System.Windows.Forms.Label();
+            this.lblIOName3 = new System.Windows.Forms.Label();
+            this.lblIOName11 = new System.Windows.Forms.Label();
+            this.lblIOName4 = new System.Windows.Forms.Label();
+            this.lblIOName12 = new System.Windows.Forms.Label();
+            this.lblIOName5 = new System.Windows.Forms.Label();
+            this.lblIOName13 = new System.Windows.Forms.Label();
+            this.lblIOName6 = new System.Windows.Forms.Label();
+            this.lblIOName14 = new System.Windows.Forms.Label();
+            this.lblIOName7 = new System.Windows.Forms.Label();
+            this.lblIOName15 = new System.Windows.Forms.Label();
+            this.lblIOName8 = new System.Windows.Forms.Label();
+            this.lblIOName16 = new System.Windows.Forms.Label();
+            this.ucSL16 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL15 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL14 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL13 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL12 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL11 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL10 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL8 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL7 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL6 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL5 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL4 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL3 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL2 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL9 = new HZH_Controls.Controls.UCSignalLamp();
+            this.ucSL1 = new HZH_Controls.Controls.UCSignalLamp();
             this.SuspendLayout();
             // 
-            // label1
+            // lblIOName1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(24, 3);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(99, 20);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "##########";
+            this.lblIOName1.AutoSize = true;
+            this.lblIOName1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName1.Location = new System.Drawing.Point(36, 4);
+            this.lblIOName1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName1.Name = "lblIOName1";
+            this.lblIOName1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName1.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName1.TabIndex = 30;
+            this.lblIOName1.Text = "##########";
             // 
-            // label2
+            // lblIOName9
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(148, 3);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(99, 20);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "##########";
+            this.lblIOName9.AutoSize = true;
+            this.lblIOName9.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName9.Location = new System.Drawing.Point(222, 4);
+            this.lblIOName9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName9.Name = "lblIOName9";
+            this.lblIOName9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName9.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName9.TabIndex = 30;
+            this.lblIOName9.Text = "##########";
             // 
-            // label3
+            // lblIOName2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(24, 26);
-            this.label3.Name = "label3";
-            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label3.Size = new System.Drawing.Size(99, 20);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "##########";
+            this.lblIOName2.AutoSize = true;
+            this.lblIOName2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName2.Location = new System.Drawing.Point(36, 39);
+            this.lblIOName2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName2.Name = "lblIOName2";
+            this.lblIOName2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName2.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName2.TabIndex = 30;
+            this.lblIOName2.Text = "##########";
             // 
-            // label4
+            // lblIOName10
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(148, 26);
-            this.label4.Name = "label4";
-            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label4.Size = new System.Drawing.Size(99, 20);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "##########";
+            this.lblIOName10.AutoSize = true;
+            this.lblIOName10.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName10.Location = new System.Drawing.Point(222, 39);
+            this.lblIOName10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName10.Name = "lblIOName10";
+            this.lblIOName10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName10.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName10.TabIndex = 30;
+            this.lblIOName10.Text = "##########";
             // 
-            // label5
+            // lblIOName3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(24, 49);
-            this.label5.Name = "label5";
-            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(99, 20);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "##########";
+            this.lblIOName3.AutoSize = true;
+            this.lblIOName3.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName3.Location = new System.Drawing.Point(36, 74);
+            this.lblIOName3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName3.Name = "lblIOName3";
+            this.lblIOName3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName3.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName3.TabIndex = 30;
+            this.lblIOName3.Text = "##########";
             // 
-            // label6
+            // lblIOName11
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(148, 49);
-            this.label6.Name = "label6";
-            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label6.Size = new System.Drawing.Size(99, 20);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "##########";
+            this.lblIOName11.AutoSize = true;
+            this.lblIOName11.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName11.Location = new System.Drawing.Point(222, 74);
+            this.lblIOName11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName11.Name = "lblIOName11";
+            this.lblIOName11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName11.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName11.TabIndex = 30;
+            this.lblIOName11.Text = "##########";
             // 
-            // label7
+            // lblIOName4
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(24, 72);
-            this.label7.Name = "label7";
-            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label7.Size = new System.Drawing.Size(99, 20);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "##########";
+            this.lblIOName4.AutoSize = true;
+            this.lblIOName4.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName4.Location = new System.Drawing.Point(36, 108);
+            this.lblIOName4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName4.Name = "lblIOName4";
+            this.lblIOName4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName4.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName4.TabIndex = 30;
+            this.lblIOName4.Text = "##########";
             // 
-            // label8
+            // lblIOName12
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(148, 72);
-            this.label8.Name = "label8";
-            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label8.Size = new System.Drawing.Size(99, 20);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "##########";
+            this.lblIOName12.AutoSize = true;
+            this.lblIOName12.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName12.Location = new System.Drawing.Point(222, 108);
+            this.lblIOName12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName12.Name = "lblIOName12";
+            this.lblIOName12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName12.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName12.TabIndex = 30;
+            this.lblIOName12.Text = "##########";
             // 
-            // label9
+            // lblIOName5
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(24, 95);
-            this.label9.Name = "label9";
-            this.label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label9.Size = new System.Drawing.Size(99, 20);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "##########";
+            this.lblIOName5.AutoSize = true;
+            this.lblIOName5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName5.Location = new System.Drawing.Point(36, 142);
+            this.lblIOName5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName5.Name = "lblIOName5";
+            this.lblIOName5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName5.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName5.TabIndex = 30;
+            this.lblIOName5.Text = "##########";
             // 
-            // label10
+            // lblIOName13
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(148, 95);
-            this.label10.Name = "label10";
-            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label10.Size = new System.Drawing.Size(99, 20);
-            this.label10.TabIndex = 30;
-            this.label10.Text = "##########";
+            this.lblIOName13.AutoSize = true;
+            this.lblIOName13.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName13.Location = new System.Drawing.Point(222, 142);
+            this.lblIOName13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName13.Name = "lblIOName13";
+            this.lblIOName13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName13.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName13.TabIndex = 30;
+            this.lblIOName13.Text = "##########";
             // 
-            // label11
+            // lblIOName6
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.Location = new System.Drawing.Point(24, 118);
-            this.label11.Name = "label11";
-            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label11.Size = new System.Drawing.Size(99, 20);
-            this.label11.TabIndex = 30;
-            this.label11.Text = "##########";
+            this.lblIOName6.AutoSize = true;
+            this.lblIOName6.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName6.Location = new System.Drawing.Point(36, 177);
+            this.lblIOName6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName6.Name = "lblIOName6";
+            this.lblIOName6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName6.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName6.TabIndex = 30;
+            this.lblIOName6.Text = "##########";
             // 
-            // label12
+            // lblIOName14
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.Location = new System.Drawing.Point(148, 118);
-            this.label12.Name = "label12";
-            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label12.Size = new System.Drawing.Size(99, 20);
-            this.label12.TabIndex = 30;
-            this.label12.Text = "##########";
+            this.lblIOName14.AutoSize = true;
+            this.lblIOName14.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName14.Location = new System.Drawing.Point(222, 177);
+            this.lblIOName14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName14.Name = "lblIOName14";
+            this.lblIOName14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName14.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName14.TabIndex = 30;
+            this.lblIOName14.Text = "##########";
             // 
-            // label13
+            // lblIOName7
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label13.Location = new System.Drawing.Point(24, 141);
-            this.label13.Name = "label13";
-            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label13.Size = new System.Drawing.Size(99, 20);
-            this.label13.TabIndex = 30;
-            this.label13.Text = "##########";
+            this.lblIOName7.AutoSize = true;
+            this.lblIOName7.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName7.Location = new System.Drawing.Point(36, 212);
+            this.lblIOName7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName7.Name = "lblIOName7";
+            this.lblIOName7.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName7.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName7.TabIndex = 30;
+            this.lblIOName7.Text = "##########";
             // 
-            // label14
+            // lblIOName15
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label14.Location = new System.Drawing.Point(148, 141);
-            this.label14.Name = "label14";
-            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label14.Size = new System.Drawing.Size(99, 20);
-            this.label14.TabIndex = 30;
-            this.label14.Text = "##########";
+            this.lblIOName15.AutoSize = true;
+            this.lblIOName15.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName15.Location = new System.Drawing.Point(222, 212);
+            this.lblIOName15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName15.Name = "lblIOName15";
+            this.lblIOName15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName15.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName15.TabIndex = 30;
+            this.lblIOName15.Text = "##########";
             // 
-            // label15
+            // lblIOName8
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label15.Location = new System.Drawing.Point(24, 164);
-            this.label15.Name = "label15";
-            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label15.Size = new System.Drawing.Size(99, 20);
-            this.label15.TabIndex = 30;
-            this.label15.Text = "##########";
+            this.lblIOName8.AutoSize = true;
+            this.lblIOName8.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName8.Location = new System.Drawing.Point(36, 246);
+            this.lblIOName8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName8.Name = "lblIOName8";
+            this.lblIOName8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName8.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName8.TabIndex = 30;
+            this.lblIOName8.Text = "##########";
             // 
-            // label16
+            // lblIOName16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label16.Location = new System.Drawing.Point(148, 164);
-            this.label16.Name = "label16";
-            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label16.Size = new System.Drawing.Size(99, 20);
-            this.label16.TabIndex = 30;
-            this.label16.Text = "##########";
+            this.lblIOName16.AutoSize = true;
+            this.lblIOName16.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblIOName16.Location = new System.Drawing.Point(222, 246);
+            this.lblIOName16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblIOName16.Name = "lblIOName16";
+            this.lblIOName16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIOName16.Size = new System.Drawing.Size(142, 28);
+            this.lblIOName16.TabIndex = 30;
+            this.lblIOName16.Text = "##########";
             // 
-            // ucSignalLamp16
+            // ucSL16
             // 
-            this.ucSignalLamp16.IsHighlight = true;
-            this.ucSignalLamp16.IsShowBorder = false;
-            this.ucSignalLamp16.LampColor = new System.Drawing.Color[] {
+            this.ucSL16.IsHighlight = true;
+            this.ucSL16.IsShowBorder = false;
+            this.ucSL16.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp16.Location = new System.Drawing.Point(126, 164);
-            this.ucSignalLamp16.Name = "ucSignalLamp16";
-            this.ucSignalLamp16.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp16.TabIndex = 28;
-            this.ucSignalLamp16.TwinkleSpeed = 0;
+            this.ucSL16.Location = new System.Drawing.Point(189, 246);
+            this.ucSL16.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL16.Name = "ucSL16";
+            this.ucSL16.Size = new System.Drawing.Size(30, 30);
+            this.ucSL16.TabIndex = 28;
+            this.ucSL16.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp14
+            // ucSL15
             // 
-            this.ucSignalLamp14.IsHighlight = true;
-            this.ucSignalLamp14.IsShowBorder = false;
-            this.ucSignalLamp14.LampColor = new System.Drawing.Color[] {
+            this.ucSL15.IsHighlight = true;
+            this.ucSL15.IsShowBorder = false;
+            this.ucSL15.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp14.Location = new System.Drawing.Point(126, 141);
-            this.ucSignalLamp14.Name = "ucSignalLamp14";
-            this.ucSignalLamp14.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp14.TabIndex = 28;
-            this.ucSignalLamp14.TwinkleSpeed = 0;
+            this.ucSL15.Location = new System.Drawing.Point(189, 212);
+            this.ucSL15.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL15.Name = "ucSL15";
+            this.ucSL15.Size = new System.Drawing.Size(30, 30);
+            this.ucSL15.TabIndex = 28;
+            this.ucSL15.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp12
+            // ucSL14
             // 
-            this.ucSignalLamp12.IsHighlight = true;
-            this.ucSignalLamp12.IsShowBorder = false;
-            this.ucSignalLamp12.LampColor = new System.Drawing.Color[] {
+            this.ucSL14.IsHighlight = true;
+            this.ucSL14.IsShowBorder = false;
+            this.ucSL14.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp12.Location = new System.Drawing.Point(126, 118);
-            this.ucSignalLamp12.Name = "ucSignalLamp12";
-            this.ucSignalLamp12.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp12.TabIndex = 28;
-            this.ucSignalLamp12.TwinkleSpeed = 0;
+            this.ucSL14.Location = new System.Drawing.Point(189, 177);
+            this.ucSL14.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL14.Name = "ucSL14";
+            this.ucSL14.Size = new System.Drawing.Size(30, 30);
+            this.ucSL14.TabIndex = 28;
+            this.ucSL14.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp10
+            // ucSL13
             // 
-            this.ucSignalLamp10.IsHighlight = true;
-            this.ucSignalLamp10.IsShowBorder = false;
-            this.ucSignalLamp10.LampColor = new System.Drawing.Color[] {
+            this.ucSL13.IsHighlight = true;
+            this.ucSL13.IsShowBorder = false;
+            this.ucSL13.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp10.Location = new System.Drawing.Point(126, 95);
-            this.ucSignalLamp10.Name = "ucSignalLamp10";
-            this.ucSignalLamp10.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp10.TabIndex = 28;
-            this.ucSignalLamp10.TwinkleSpeed = 0;
+            this.ucSL13.Location = new System.Drawing.Point(189, 142);
+            this.ucSL13.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL13.Name = "ucSL13";
+            this.ucSL13.Size = new System.Drawing.Size(30, 30);
+            this.ucSL13.TabIndex = 28;
+            this.ucSL13.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp8
+            // ucSL12
             // 
-            this.ucSignalLamp8.IsHighlight = true;
-            this.ucSignalLamp8.IsShowBorder = false;
-            this.ucSignalLamp8.LampColor = new System.Drawing.Color[] {
+            this.ucSL12.IsHighlight = true;
+            this.ucSL12.IsShowBorder = false;
+            this.ucSL12.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp8.Location = new System.Drawing.Point(126, 72);
-            this.ucSignalLamp8.Name = "ucSignalLamp8";
-            this.ucSignalLamp8.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp8.TabIndex = 28;
-            this.ucSignalLamp8.TwinkleSpeed = 0;
+            this.ucSL12.Location = new System.Drawing.Point(189, 108);
+            this.ucSL12.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL12.Name = "ucSL12";
+            this.ucSL12.Size = new System.Drawing.Size(30, 30);
+            this.ucSL12.TabIndex = 28;
+            this.ucSL12.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp5
+            // ucSL11
             // 
-            this.ucSignalLamp5.IsHighlight = true;
-            this.ucSignalLamp5.IsShowBorder = false;
-            this.ucSignalLamp5.LampColor = new System.Drawing.Color[] {
+            this.ucSL11.IsHighlight = true;
+            this.ucSL11.IsShowBorder = false;
+            this.ucSL11.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp5.Location = new System.Drawing.Point(126, 49);
-            this.ucSignalLamp5.Name = "ucSignalLamp5";
-            this.ucSignalLamp5.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp5.TabIndex = 28;
-            this.ucSignalLamp5.TwinkleSpeed = 0;
+            this.ucSL11.Location = new System.Drawing.Point(189, 74);
+            this.ucSL11.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL11.Name = "ucSL11";
+            this.ucSL11.Size = new System.Drawing.Size(30, 30);
+            this.ucSL11.TabIndex = 28;
+            this.ucSL11.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp3
+            // ucSL10
             // 
-            this.ucSignalLamp3.IsHighlight = true;
-            this.ucSignalLamp3.IsShowBorder = false;
-            this.ucSignalLamp3.LampColor = new System.Drawing.Color[] {
+            this.ucSL10.IsHighlight = true;
+            this.ucSL10.IsShowBorder = false;
+            this.ucSL10.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp3.Location = new System.Drawing.Point(126, 26);
-            this.ucSignalLamp3.Name = "ucSignalLamp3";
-            this.ucSignalLamp3.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp3.TabIndex = 28;
-            this.ucSignalLamp3.TwinkleSpeed = 0;
+            this.ucSL10.Location = new System.Drawing.Point(189, 39);
+            this.ucSL10.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL10.Name = "ucSL10";
+            this.ucSL10.Size = new System.Drawing.Size(30, 30);
+            this.ucSL10.TabIndex = 28;
+            this.ucSL10.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp15
+            // ucSL8
             // 
-            this.ucSignalLamp15.IsHighlight = true;
-            this.ucSignalLamp15.IsShowBorder = false;
-            this.ucSignalLamp15.LampColor = new System.Drawing.Color[] {
+            this.ucSL8.IsHighlight = true;
+            this.ucSL8.IsShowBorder = false;
+            this.ucSL8.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp15.Location = new System.Drawing.Point(2, 164);
-            this.ucSignalLamp15.Name = "ucSignalLamp15";
-            this.ucSignalLamp15.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp15.TabIndex = 28;
-            this.ucSignalLamp15.TwinkleSpeed = 0;
+            this.ucSL8.Location = new System.Drawing.Point(3, 246);
+            this.ucSL8.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL8.Name = "ucSL8";
+            this.ucSL8.Size = new System.Drawing.Size(30, 30);
+            this.ucSL8.TabIndex = 28;
+            this.ucSL8.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp13
+            // ucSL7
             // 
-            this.ucSignalLamp13.IsHighlight = true;
-            this.ucSignalLamp13.IsShowBorder = false;
-            this.ucSignalLamp13.LampColor = new System.Drawing.Color[] {
+            this.ucSL7.IsHighlight = true;
+            this.ucSL7.IsShowBorder = false;
+            this.ucSL7.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp13.Location = new System.Drawing.Point(2, 141);
-            this.ucSignalLamp13.Name = "ucSignalLamp13";
-            this.ucSignalLamp13.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp13.TabIndex = 28;
-            this.ucSignalLamp13.TwinkleSpeed = 0;
+            this.ucSL7.Location = new System.Drawing.Point(3, 212);
+            this.ucSL7.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL7.Name = "ucSL7";
+            this.ucSL7.Size = new System.Drawing.Size(30, 30);
+            this.ucSL7.TabIndex = 28;
+            this.ucSL7.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp11
+            // ucSL6
             // 
-            this.ucSignalLamp11.IsHighlight = true;
-            this.ucSignalLamp11.IsShowBorder = false;
-            this.ucSignalLamp11.LampColor = new System.Drawing.Color[] {
+            this.ucSL6.IsHighlight = true;
+            this.ucSL6.IsShowBorder = false;
+            this.ucSL6.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp11.Location = new System.Drawing.Point(2, 118);
-            this.ucSignalLamp11.Name = "ucSignalLamp11";
-            this.ucSignalLamp11.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp11.TabIndex = 28;
-            this.ucSignalLamp11.TwinkleSpeed = 0;
+            this.ucSL6.Location = new System.Drawing.Point(3, 177);
+            this.ucSL6.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL6.Name = "ucSL6";
+            this.ucSL6.Size = new System.Drawing.Size(30, 30);
+            this.ucSL6.TabIndex = 28;
+            this.ucSL6.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp9
+            // ucSL5
             // 
-            this.ucSignalLamp9.IsHighlight = true;
-            this.ucSignalLamp9.IsShowBorder = false;
-            this.ucSignalLamp9.LampColor = new System.Drawing.Color[] {
+            this.ucSL5.IsHighlight = true;
+            this.ucSL5.IsShowBorder = false;
+            this.ucSL5.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp9.Location = new System.Drawing.Point(2, 95);
-            this.ucSignalLamp9.Name = "ucSignalLamp9";
-            this.ucSignalLamp9.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp9.TabIndex = 28;
-            this.ucSignalLamp9.TwinkleSpeed = 0;
+            this.ucSL5.Location = new System.Drawing.Point(3, 142);
+            this.ucSL5.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL5.Name = "ucSL5";
+            this.ucSL5.Size = new System.Drawing.Size(30, 30);
+            this.ucSL5.TabIndex = 28;
+            this.ucSL5.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp7
+            // ucSL4
             // 
-            this.ucSignalLamp7.IsHighlight = true;
-            this.ucSignalLamp7.IsShowBorder = false;
-            this.ucSignalLamp7.LampColor = new System.Drawing.Color[] {
+            this.ucSL4.IsHighlight = true;
+            this.ucSL4.IsShowBorder = false;
+            this.ucSL4.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp7.Location = new System.Drawing.Point(2, 72);
-            this.ucSignalLamp7.Name = "ucSignalLamp7";
-            this.ucSignalLamp7.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp7.TabIndex = 28;
-            this.ucSignalLamp7.TwinkleSpeed = 0;
+            this.ucSL4.Location = new System.Drawing.Point(3, 108);
+            this.ucSL4.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL4.Name = "ucSL4";
+            this.ucSL4.Size = new System.Drawing.Size(30, 30);
+            this.ucSL4.TabIndex = 28;
+            this.ucSL4.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp4
+            // ucSL3
             // 
-            this.ucSignalLamp4.IsHighlight = true;
-            this.ucSignalLamp4.IsShowBorder = false;
-            this.ucSignalLamp4.LampColor = new System.Drawing.Color[] {
+            this.ucSL3.IsHighlight = true;
+            this.ucSL3.IsShowBorder = false;
+            this.ucSL3.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp4.Location = new System.Drawing.Point(2, 49);
-            this.ucSignalLamp4.Name = "ucSignalLamp4";
-            this.ucSignalLamp4.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp4.TabIndex = 28;
-            this.ucSignalLamp4.TwinkleSpeed = 0;
+            this.ucSL3.Location = new System.Drawing.Point(3, 74);
+            this.ucSL3.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL3.Name = "ucSL3";
+            this.ucSL3.Size = new System.Drawing.Size(30, 30);
+            this.ucSL3.TabIndex = 28;
+            this.ucSL3.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp2
+            // ucSL2
             // 
-            this.ucSignalLamp2.IsHighlight = true;
-            this.ucSignalLamp2.IsShowBorder = false;
-            this.ucSignalLamp2.LampColor = new System.Drawing.Color[] {
+            this.ucSL2.IsHighlight = true;
+            this.ucSL2.IsShowBorder = false;
+            this.ucSL2.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp2.Location = new System.Drawing.Point(2, 26);
-            this.ucSignalLamp2.Name = "ucSignalLamp2";
-            this.ucSignalLamp2.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp2.TabIndex = 28;
-            this.ucSignalLamp2.TwinkleSpeed = 0;
+            this.ucSL2.Location = new System.Drawing.Point(3, 39);
+            this.ucSL2.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL2.Name = "ucSL2";
+            this.ucSL2.Size = new System.Drawing.Size(30, 30);
+            this.ucSL2.TabIndex = 28;
+            this.ucSL2.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp1
+            // ucSL9
             // 
-            this.ucSignalLamp1.IsHighlight = true;
-            this.ucSignalLamp1.IsShowBorder = false;
-            this.ucSignalLamp1.LampColor = new System.Drawing.Color[] {
+            this.ucSL9.IsHighlight = true;
+            this.ucSL9.IsShowBorder = false;
+            this.ucSL9.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp1.Location = new System.Drawing.Point(126, 3);
-            this.ucSignalLamp1.Name = "ucSignalLamp1";
-            this.ucSignalLamp1.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp1.TabIndex = 28;
-            this.ucSignalLamp1.TwinkleSpeed = 0;
+            this.ucSL9.Location = new System.Drawing.Point(189, 4);
+            this.ucSL9.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL9.Name = "ucSL9";
+            this.ucSL9.Size = new System.Drawing.Size(30, 30);
+            this.ucSL9.TabIndex = 28;
+            this.ucSL9.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp6
+            // ucSL1
             // 
-            this.ucSignalLamp6.IsHighlight = true;
-            this.ucSignalLamp6.IsShowBorder = false;
-            this.ucSignalLamp6.LampColor = new System.Drawing.Color[] {
+            this.ucSL1.IsHighlight = true;
+            this.ucSL1.IsShowBorder = false;
+            this.ucSL1.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp6.Location = new System.Drawing.Point(2, 3);
-            this.ucSignalLamp6.Name = "ucSignalLamp6";
-            this.ucSignalLamp6.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp6.TabIndex = 28;
-            this.ucSignalLamp6.TwinkleSpeed = 0;
+            this.ucSL1.Location = new System.Drawing.Point(3, 4);
+            this.ucSL1.Margin = new System.Windows.Forms.Padding(4);
+            this.ucSL1.Name = "ucSL1";
+            this.ucSL1.Size = new System.Drawing.Size(30, 30);
+            this.ucSL1.TabIndex = 28;
+            this.ucSL1.TwinkleSpeed = 0;
             // 
             // UCIOModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.ucSignalLamp16);
-            this.Controls.Add(this.ucSignalLamp14);
-            this.Controls.Add(this.ucSignalLamp12);
-            this.Controls.Add(this.ucSignalLamp10);
-            this.Controls.Add(this.ucSignalLamp8);
-            this.Controls.Add(this.ucSignalLamp5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.ucSignalLamp3);
-            this.Controls.Add(this.ucSignalLamp15);
-            this.Controls.Add(this.ucSignalLamp13);
-            this.Controls.Add(this.ucSignalLamp11);
-            this.Controls.Add(this.ucSignalLamp9);
-            this.Controls.Add(this.ucSignalLamp7);
-            this.Controls.Add(this.ucSignalLamp4);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.ucSignalLamp2);
-            this.Controls.Add(this.ucSignalLamp1);
-            this.Controls.Add(this.ucSignalLamp6);
+            this.Controls.Add(this.lblIOName16);
+            this.Controls.Add(this.lblIOName15);
+            this.Controls.Add(this.lblIOName14);
+            this.Controls.Add(this.lblIOName13);
+            this.Controls.Add(this.lblIOName12);
+            this.Controls.Add(this.lblIOName11);
+            this.Controls.Add(this.lblIOName10);
+            this.Controls.Add(this.lblIOName9);
+            this.Controls.Add(this.lblIOName8);
+            this.Controls.Add(this.lblIOName7);
+            this.Controls.Add(this.lblIOName6);
+            this.Controls.Add(this.lblIOName5);
+            this.Controls.Add(this.lblIOName4);
+            this.Controls.Add(this.lblIOName3);
+            this.Controls.Add(this.ucSL16);
+            this.Controls.Add(this.ucSL15);
+            this.Controls.Add(this.ucSL14);
+            this.Controls.Add(this.ucSL13);
+            this.Controls.Add(this.ucSL12);
+            this.Controls.Add(this.ucSL11);
+            this.Controls.Add(this.lblIOName2);
+            this.Controls.Add(this.ucSL10);
+            this.Controls.Add(this.ucSL8);
+            this.Controls.Add(this.ucSL7);
+            this.Controls.Add(this.ucSL6);
+            this.Controls.Add(this.ucSL5);
+            this.Controls.Add(this.ucSL4);
+            this.Controls.Add(this.ucSL3);
+            this.Controls.Add(this.lblIOName1);
+            this.Controls.Add(this.ucSL2);
+            this.Controls.Add(this.ucSL9);
+            this.Controls.Add(this.ucSL1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCIOModule";
-            this.Size = new System.Drawing.Size(247, 188);
+            this.Size = new System.Drawing.Size(370, 282);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -491,37 +524,37 @@
 
         #endregion
 
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp6;
-        private System.Windows.Forms.Label label1;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp1;
-        private System.Windows.Forms.Label label2;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp2;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp4;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp7;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp9;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp11;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp13;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp15;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        public HZH_Controls.Controls.UCSignalLamp ucSL1;
+        public System.Windows.Forms.Label lblIOName1;
+        public HZH_Controls.Controls.UCSignalLamp ucSL9;
+        public System.Windows.Forms.Label lblIOName9;
+        public HZH_Controls.Controls.UCSignalLamp ucSL2;
+        public HZH_Controls.Controls.UCSignalLamp ucSL10;
+        public System.Windows.Forms.Label lblIOName2;
+        public System.Windows.Forms.Label lblIOName10;
+        public HZH_Controls.Controls.UCSignalLamp ucSL3;
+        public HZH_Controls.Controls.UCSignalLamp ucSL11;
+        public System.Windows.Forms.Label lblIOName3;
+        public System.Windows.Forms.Label lblIOName11;
+        public HZH_Controls.Controls.UCSignalLamp ucSL4;
+        public HZH_Controls.Controls.UCSignalLamp ucSL12;
+        public System.Windows.Forms.Label lblIOName4;
+        public System.Windows.Forms.Label lblIOName12;
+        public HZH_Controls.Controls.UCSignalLamp ucSL5;
+        public HZH_Controls.Controls.UCSignalLamp ucSL13;
+        public System.Windows.Forms.Label lblIOName5;
+        public System.Windows.Forms.Label lblIOName13;
+        public HZH_Controls.Controls.UCSignalLamp ucSL6;
+        public HZH_Controls.Controls.UCSignalLamp ucSL14;
+        public System.Windows.Forms.Label lblIOName6;
+        public System.Windows.Forms.Label lblIOName14;
+        public HZH_Controls.Controls.UCSignalLamp ucSL7;
+        public HZH_Controls.Controls.UCSignalLamp ucSL15;
+        public System.Windows.Forms.Label lblIOName7;
+        public System.Windows.Forms.Label lblIOName15;
+        public HZH_Controls.Controls.UCSignalLamp ucSL8;
+        public HZH_Controls.Controls.UCSignalLamp ucSL16;
+        public System.Windows.Forms.Label lblIOName8;
+        public System.Windows.Forms.Label lblIOName16;
     }
 }

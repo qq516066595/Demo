@@ -14,7 +14,7 @@
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -38,6 +38,14 @@
     <ApplicationIcon>logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20133.795, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Work_Laplace\Winform\NetWinformControl-master\HZH_Controls\Test\bin\Debug\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.2, Version=2.0.20133.33326, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Work_Laplace\Winform\NetWinformControl-master\HZH_Controls\Test\bin\Debug\C1.Win.C1Input.2.dll</HintPath>
+    </Reference>
     <Reference Include="DynamicData, Version=7.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DynamicData.7.1.1\lib\net461\DynamicData.dll</HintPath>
     </Reference>
@@ -56,6 +64,7 @@
     <Reference Include="log4net">
       <HintPath>..\Demo\lib\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="ReactiveUI, Version=13.2.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -144,11 +153,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="TestGridModel.cs" />
-    <Compile Include="UCShouQuan.cs">
+    <Compile Include="View\Tube\frmRecipeStepConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tube\frmRecipeStepConfig.Designer.cs">
+      <DependentUpon>frmRecipeStepConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Tube\UCRecipe.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UCShouQuan.Designer.cs">
-      <DependentUpon>UCShouQuan.cs</DependentUpon>
+    <Compile Include="View\Tube\UCRecipe.Designer.cs">
+      <DependentUpon>UCRecipe.cs</DependentUpon>
     </Compile>
     <Compile Include="ucTest.cs">
       <SubType>UserControl</SubType>
@@ -728,6 +743,12 @@
       <DependentUpon>UCTestWaveChart.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Common\CommonClass.cs" />
+    <Compile Include="View\Common\frmUserInfoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Common\frmUserInfoEdit.Designer.cs">
+      <DependentUpon>frmUserInfoEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Common\TubeHelpClass.cs" />
     <Compile Include="View\Common\UCAbout.cs">
       <SubType>UserControl</SubType>
@@ -838,12 +859,6 @@
     <Compile Include="View\Tube\UCMain.Designer.cs">
       <DependentUpon>UCMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Tube\UCRecipe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\Tube\UCRecipe.Designer.cs">
-      <DependentUpon>UCRecipe.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Tube\UCRecipeInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -910,13 +925,17 @@
     <EmbeddedResource Include="FrmWithTitleTest.resx">
       <DependentUpon>FrmWithTitleTest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCShouQuan.resx">
-      <DependentUpon>UCShouQuan.cs</DependentUpon>
+    <EmbeddedResource Include="View\Tube\frmRecipeStepConfig.resx">
+      <DependentUpon>frmRecipeStepConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Tube\UCRecipe.resx">
+      <DependentUpon>UCRecipe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucTest.resx">
       <DependentUpon>ucTest.cs</DependentUpon>
@@ -1206,6 +1225,9 @@
     <EmbeddedResource Include="UC\UCTestWaveChart.resx">
       <DependentUpon>UCTestWaveChart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Common\frmUserInfoEdit.resx">
+      <DependentUpon>frmUserInfoEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Common\UCAbout.resx">
       <DependentUpon>UCAbout.cs</DependentUpon>
     </EmbeddedResource>
@@ -1256,9 +1278,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tube\UCMain.resx">
       <DependentUpon>UCMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Tube\UCRecipe.resx">
-      <DependentUpon>UCRecipe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tube\UCRecipeInfo.resx">
       <DependentUpon>UCRecipeInfo.cs</DependentUpon>
@@ -1330,6 +1349,9 @@
     <None Include="Resources\流量计蓝1.png" />
     <Content Include="Resources\炉管.png" />
     <Content Include="Resources\缓存.png" />
+    <Content Include="SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="UC\UCTestLiveCharts\Cartesian\FunnelChart\Resources\fingerprint.png" />
     <Content Include="UC\UCTestLiveCharts\Cartesian\FunnelChart\Resources\user.png" />
     <Content Include="UC\UCTestLiveCharts\Cartesian\FunnelChart\Resources\view.png" />

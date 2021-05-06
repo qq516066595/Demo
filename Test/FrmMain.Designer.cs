@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.tvMenu = new HZH_Controls.Controls.TreeViewEx();
             this.ucSplitLine_V1 = new HZH_Controls.Controls.UCSplitLine_V();
             this.panControl = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.scrollbarComponent1 = new HZH_Controls.Controls.ScrollbarComponent();
+            this.scrollbarComponent1 = new HZH_Controls.Controls.ScrollbarComponent(this.components);
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.lblLoader = new System.Windows.Forms.Label();
             this.lblT5 = new System.Windows.Forms.Label();
@@ -45,8 +44,16 @@
             this.lblT2 = new System.Windows.Forms.Label();
             this.lblT1 = new System.Windows.Forms.Label();
             this.lblCurrentLocation = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsTime = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsCompanyName = new System.Windows.Forms.ToolStripStatusLabel();
             this.panel1.SuspendLayout();
             this.pnlMenu.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tvMenu
@@ -109,23 +116,13 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.statusStrip1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(115, 736);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(909, 32);
             this.panel1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(172, 24);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "用户名：UserName";
             // 
             // label1
             // 
@@ -135,18 +132,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(909, 1);
             this.label1.TabIndex = 1;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(299, 8);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(280, 24);
-            this.linkLabel1.TabIndex = 0;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "深圳市拉普拉斯能源技术有限公司";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // pnlMenu
             // 
@@ -174,7 +159,7 @@
             this.lblLoader.Padding = new System.Windows.Forms.Padding(10, 15, 10, 0);
             this.lblLoader.Size = new System.Drawing.Size(106, 46);
             this.lblLoader.TabIndex = 25;
-            this.lblLoader.Tag = "6";
+            this.lblLoader.Tag = "0";
             this.lblLoader.Text = "机械手";
             this.lblLoader.Click += new System.EventHandler(this.Lable_Click);
             // 
@@ -255,16 +240,73 @@
             // lblCurrentLocation
             // 
             this.lblCurrentLocation.AutoSize = true;
-            this.lblCurrentLocation.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblCurrentLocation.BackColor = System.Drawing.Color.Transparent;
             this.lblCurrentLocation.Dock = System.Windows.Forms.DockStyle.Right;
             this.lblCurrentLocation.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblCurrentLocation.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblCurrentLocation.Location = new System.Drawing.Point(729, 0);
             this.lblCurrentLocation.Name = "lblCurrentLocation";
-            this.lblCurrentLocation.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.lblCurrentLocation.Size = new System.Drawing.Size(180, 36);
+            this.lblCurrentLocation.Padding = new System.Windows.Forms.Padding(0, 10, 0, 8);
+            this.lblCurrentLocation.Size = new System.Drawing.Size(180, 46);
             this.lblCurrentLocation.TabIndex = 24;
             this.lblCurrentLocation.Text = "当前位置：炉管一";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.Color.Transparent;
+            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statusStrip1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel3,
+            this.tsTime,
+            this.tsCompanyName});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 1);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(909, 31);
+            this.statusStrip1.TabIndex = 2;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(82, 24);
+            this.toolStripStatusLabel1.Text = "用户名：";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(100, 24);
+            this.toolStripStatusLabel2.Text = "UserName";
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(116, 24);
+            this.toolStripStatusLabel3.Text = "      系统时间:";
+            // 
+            // tsTime
+            // 
+            this.tsTime.Name = "tsTime";
+            this.tsTime.Size = new System.Drawing.Size(52, 24);
+            this.tsTime.Text = "Time";
+            // 
+            // tsCompanyName
+            // 
+            this.tsCompanyName.IsLink = true;
+            this.tsCompanyName.Name = "tsCompanyName";
+            this.tsCompanyName.Size = new System.Drawing.Size(498, 24);
+            this.tsCompanyName.Spring = true;
+            this.tsCompanyName.Text = "深圳市拉普拉斯能源技术有限公司";
+            this.tsCompanyName.Click += new System.EventHandler(this.tsCompanyName_Click);
             // 
             // FrmMain
             // 
@@ -295,21 +337,21 @@
             this.panel1.PerformLayout();
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private HZH_Controls.Controls.TreeViewEx tvMenu;
+        public HZH_Controls.Controls.TreeViewEx tvMenu;
         private HZH_Controls.Controls.UCSplitLine_V ucSplitLine_V1;
         private System.Windows.Forms.Panel panControl;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private HZH_Controls.Controls.ScrollbarComponent scrollbarComponent1;
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblLoader;
         private System.Windows.Forms.Label lblT5;
         private System.Windows.Forms.Label lblT4;
@@ -317,5 +359,12 @@
         private System.Windows.Forms.Label lblT2;
         private System.Windows.Forms.Label lblT1;
         private System.Windows.Forms.Label lblCurrentLocation;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel tsCompanyName;
+        internal System.Windows.Forms.Timer timer1;
+        internal System.Windows.Forms.ToolStripStatusLabel tsTime;
     }
 }

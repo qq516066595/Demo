@@ -28,24 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtWarnValue = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAlmValue = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtMaxRange = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSheild = new System.Windows.Forms.Button();
+            this.verificationComponent1 = new HZH_Controls.Controls.VerificationComponent(this.components);
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(4, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
+            this.label1.Size = new System.Drawing.Size(89, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "MFC名称";
             // 
@@ -53,89 +56,121 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(9, 19);
+            this.label2.Location = new System.Drawing.Point(14, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 17);
+            this.label2.Size = new System.Drawing.Size(146, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "偏差警示值(%)：";
             // 
-            // textBox1
+            // txtWarnValue
             // 
-            this.textBox1.Location = new System.Drawing.Point(99, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(63, 21);
-            this.textBox1.TabIndex = 2;
+            this.txtWarnValue.Location = new System.Drawing.Point(148, 26);
+            this.txtWarnValue.Margin = new System.Windows.Forms.Padding(4);
+            this.txtWarnValue.Name = "txtWarnValue";
+            this.txtWarnValue.Size = new System.Drawing.Size(92, 28);
+            this.txtWarnValue.TabIndex = 2;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtWarnValue, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtWarnValue, "");
+            this.verificationComponent1.SetVerificationModel(this.txtWarnValue, HZH_Controls.Controls.VerificationModel.UnsignNumber);
+            this.verificationComponent1.SetVerificationRequired(this.txtWarnValue, false);
+            this.txtWarnValue.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(9, 41);
+            this.label3.Location = new System.Drawing.Point(14, 62);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 17);
+            this.label3.Size = new System.Drawing.Size(146, 24);
             this.label3.TabIndex = 1;
             this.label3.Text = "报警警示值(%)：";
             // 
-            // textBox2
+            // txtAlmValue
             // 
-            this.textBox2.Location = new System.Drawing.Point(99, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(63, 21);
-            this.textBox2.TabIndex = 2;
+            this.txtAlmValue.Location = new System.Drawing.Point(148, 58);
+            this.txtAlmValue.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAlmValue.Name = "txtAlmValue";
+            this.txtAlmValue.Size = new System.Drawing.Size(92, 28);
+            this.txtAlmValue.TabIndex = 2;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtAlmValue, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtAlmValue, "");
+            this.verificationComponent1.SetVerificationModel(this.txtAlmValue, HZH_Controls.Controls.VerificationModel.UnsignNumber);
+            this.verificationComponent1.SetVerificationRequired(this.txtAlmValue, false);
+            this.txtAlmValue.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(3, 63);
+            this.label4.Location = new System.Drawing.Point(4, 94);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 17);
+            this.label4.Size = new System.Drawing.Size(155, 24);
             this.label4.TabIndex = 1;
             this.label4.Text = "最大量程(sccm)：";
             // 
-            // textBox3
+            // txtMaxRange
             // 
-            this.textBox3.Location = new System.Drawing.Point(99, 61);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(63, 21);
-            this.textBox3.TabIndex = 2;
+            this.txtMaxRange.Location = new System.Drawing.Point(148, 92);
+            this.txtMaxRange.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaxRange.Name = "txtMaxRange";
+            this.txtMaxRange.Size = new System.Drawing.Size(92, 28);
+            this.txtMaxRange.TabIndex = 2;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtMaxRange, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtMaxRange, "");
+            this.verificationComponent1.SetVerificationModel(this.txtMaxRange, HZH_Controls.Controls.VerificationModel.UnsignNumber);
+            this.verificationComponent1.SetVerificationRequired(this.txtMaxRange, false);
+            this.txtMaxRange.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(28, 83);
+            this.label5.Location = new System.Drawing.Point(42, 124);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 17);
+            this.label5.Size = new System.Drawing.Size(118, 24);
             this.label5.TabIndex = 1;
             this.label5.Text = "流量计屏蔽：";
             // 
-            // button1
+            // btnSheild
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(99, 82);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(63, 21);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "屏蔽";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSheild.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSheild.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnSheild.Location = new System.Drawing.Point(148, 123);
+            this.btnSheild.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSheild.Name = "btnSheild";
+            this.btnSheild.Size = new System.Drawing.Size(94, 32);
+            this.btnSheild.TabIndex = 22;
+            this.btnSheild.Text = "屏蔽";
+            this.btnSheild.UseVisualStyleBackColor = true;
+            this.btnSheild.Click += new System.EventHandler(this.btnSheild_Click);
+            // 
+            // verificationComponent1
+            // 
+            this.verificationComponent1.AutoCloseErrorTipsTime = 3000;
+            this.verificationComponent1.ErrorTipsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.verificationComponent1.ErrorTipsForeColor = System.Drawing.Color.White;
+            this.verificationComponent1.Verificationed += new HZH_Controls.Controls.VerificationComponent.VerificationedHandle(this.verificationComponent1_Verificationed);
             // 
             // UCSetMFCModule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnSheild);
+            this.Controls.Add(this.txtMaxRange);
+            this.Controls.Add(this.txtAlmValue);
+            this.Controls.Add(this.txtWarnValue);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCSetMFCModule";
-            this.Size = new System.Drawing.Size(165, 107);
+            this.Size = new System.Drawing.Size(248, 160);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,12 +180,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txtWarnValue;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox txtAlmValue;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox txtMaxRange;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button btnSheild;
+        private HZH_Controls.Controls.VerificationComponent verificationComponent1;
     }
 }

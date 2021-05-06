@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblOnHeating = new System.Windows.Forms.Label();
             this.lblLineH = new System.Windows.Forms.Label();
             this.lblLineH2 = new System.Windows.Forms.Label();
@@ -45,51 +46,52 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.lblZoneEx1 = new System.Windows.Forms.Label();
+            this.lblZoneEx2 = new System.Windows.Forms.Label();
+            this.lblZoneEx3 = new System.Windows.Forms.Label();
+            this.lblZoneEx4 = new System.Windows.Forms.Label();
+            this.lblZoneEx5 = new System.Windows.Forms.Label();
+            this.lblZoneEx6 = new System.Windows.Forms.Label();
+            this.lblZoneEx7 = new System.Windows.Forms.Label();
+            this.lblZoneEx8 = new System.Windows.Forms.Label();
+            this.lblZoneIn1 = new System.Windows.Forms.Label();
+            this.lblZoneIn2 = new System.Windows.Forms.Label();
+            this.lblZoneIn3 = new System.Windows.Forms.Label();
+            this.lblZoneIn4 = new System.Windows.Forms.Label();
+            this.lblZoneIn5 = new System.Windows.Forms.Label();
+            this.lblZoneIn6 = new System.Windows.Forms.Label();
+            this.lblZoneIn7 = new System.Windows.Forms.Label();
+            this.lblZoneIn8 = new System.Windows.Forms.Label();
+            this.lblZoneMV1 = new System.Windows.Forms.Label();
+            this.lblZoneMV2 = new System.Windows.Forms.Label();
+            this.lblZoneMV3 = new System.Windows.Forms.Label();
+            this.lblZoneMV4 = new System.Windows.Forms.Label();
+            this.lblZoneMV5 = new System.Windows.Forms.Label();
+            this.lblZoneMV6 = new System.Windows.Forms.Label();
+            this.lblZoneMV7 = new System.Windows.Forms.Label();
+            this.lblZoneMV8 = new System.Windows.Forms.Label();
+            this.lblZoneSP1 = new System.Windows.Forms.Label();
+            this.lblZoneSP2 = new System.Windows.Forms.Label();
+            this.lblZoneSP3 = new System.Windows.Forms.Label();
+            this.lblZoneSP4 = new System.Windows.Forms.Label();
+            this.lblZoneSP5 = new System.Windows.Forms.Label();
+            this.lblZoneSP6 = new System.Windows.Forms.Label();
+            this.lblZoneSP7 = new System.Windows.Forms.Label();
+            this.lblZoneSP8 = new System.Windows.Forms.Label();
+            this.txtZoneSV1 = new System.Windows.Forms.TextBox();
+            this.txtZoneSV2 = new System.Windows.Forms.TextBox();
+            this.txtZoneSV3 = new System.Windows.Forms.TextBox();
+            this.txtZoneSV4 = new System.Windows.Forms.TextBox();
+            this.txtZoneSV5 = new System.Windows.Forms.TextBox();
+            this.txtZoneSV6 = new System.Windows.Forms.TextBox();
+            this.txtZoneSV7 = new System.Windows.Forms.TextBox();
+            this.txtZoneSV8 = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
+            this.lblCoolingPV1 = new System.Windows.Forms.Label();
+            this.lblCoolingPV2 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
+            this.verificationComponent1 = new HZH_Controls.Controls.VerificationComponent(this.components);
             this.SuspendLayout();
             // 
             // lblOnHeating
@@ -262,397 +264,437 @@
             this.label14.TabIndex = 4;
             this.label14.Text = "水冷";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label15.Location = new System.Drawing.Point(114, 47);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(58, 24);
-            this.label15.TabIndex = 4;
-            this.label15.Text = "000.0";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label16.Location = new System.Drawing.Point(184, 47);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(58, 24);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "000.0";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label17.Location = new System.Drawing.Point(254, 47);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(58, 24);
-            this.label17.TabIndex = 4;
-            this.label17.Text = "000.0";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label18.Location = new System.Drawing.Point(324, 47);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(58, 24);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "000.0";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label19.Location = new System.Drawing.Point(394, 47);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(58, 24);
-            this.label19.TabIndex = 4;
-            this.label19.Text = "000.0";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label20.Location = new System.Drawing.Point(464, 47);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(58, 24);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "000.0";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label21.Location = new System.Drawing.Point(534, 47);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(58, 24);
-            this.label21.TabIndex = 4;
-            this.label21.Text = "000.0";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label22.Location = new System.Drawing.Point(604, 47);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(58, 24);
-            this.label22.TabIndex = 4;
-            this.label22.Text = "000.0";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label23.Location = new System.Drawing.Point(114, 77);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(58, 24);
-            this.label23.TabIndex = 4;
-            this.label23.Text = "000.0";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label24.Location = new System.Drawing.Point(184, 77);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(58, 24);
-            this.label24.TabIndex = 4;
-            this.label24.Text = "000.0";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label25.Location = new System.Drawing.Point(254, 77);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(58, 24);
-            this.label25.TabIndex = 4;
-            this.label25.Text = "000.0";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label26.Location = new System.Drawing.Point(324, 77);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(58, 24);
-            this.label26.TabIndex = 4;
-            this.label26.Text = "000.0";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label27.Location = new System.Drawing.Point(394, 77);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(58, 24);
-            this.label27.TabIndex = 4;
-            this.label27.Text = "000.0";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label28.Location = new System.Drawing.Point(464, 77);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(58, 24);
-            this.label28.TabIndex = 4;
-            this.label28.Text = "000.0";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label29.Location = new System.Drawing.Point(534, 77);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(58, 24);
-            this.label29.TabIndex = 4;
-            this.label29.Text = "000.0";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label30.Location = new System.Drawing.Point(604, 77);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(58, 24);
-            this.label30.TabIndex = 4;
-            this.label30.Text = "000.0";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label39.Location = new System.Drawing.Point(114, 139);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(58, 24);
-            this.label39.TabIndex = 4;
-            this.label39.Text = "000.0";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label40.Location = new System.Drawing.Point(184, 139);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(58, 24);
-            this.label40.TabIndex = 4;
-            this.label40.Text = "000.0";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label41.Location = new System.Drawing.Point(254, 139);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(58, 24);
-            this.label41.TabIndex = 4;
-            this.label41.Text = "000.0";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label42.Location = new System.Drawing.Point(324, 139);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(58, 24);
-            this.label42.TabIndex = 4;
-            this.label42.Text = "000.0";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label43.Location = new System.Drawing.Point(394, 139);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(58, 24);
-            this.label43.TabIndex = 4;
-            this.label43.Text = "000.0";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label44.Location = new System.Drawing.Point(464, 139);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(58, 24);
-            this.label44.TabIndex = 4;
-            this.label44.Text = "000.0";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label45.Location = new System.Drawing.Point(534, 139);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(58, 24);
-            this.label45.TabIndex = 4;
-            this.label45.Text = "000.0";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label46.Location = new System.Drawing.Point(604, 139);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(58, 24);
-            this.label46.TabIndex = 4;
-            this.label46.Text = "000.0";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label47.Location = new System.Drawing.Point(114, 169);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(58, 24);
-            this.label47.TabIndex = 4;
-            this.label47.Text = "000.0";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label48.Location = new System.Drawing.Point(184, 169);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(58, 24);
-            this.label48.TabIndex = 4;
-            this.label48.Text = "000.0";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label49.Location = new System.Drawing.Point(254, 169);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(58, 24);
-            this.label49.TabIndex = 4;
-            this.label49.Text = "000.0";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label50.Location = new System.Drawing.Point(324, 169);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(58, 24);
-            this.label50.TabIndex = 4;
-            this.label50.Text = "000.0";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label51.Location = new System.Drawing.Point(394, 169);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(58, 24);
-            this.label51.TabIndex = 4;
-            this.label51.Text = "000.0";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label52.Location = new System.Drawing.Point(464, 169);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(58, 24);
-            this.label52.TabIndex = 4;
-            this.label52.Text = "000.0";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label53.Location = new System.Drawing.Point(534, 169);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(58, 24);
-            this.label53.TabIndex = 4;
-            this.label53.Text = "000.0";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label54.Location = new System.Drawing.Point(604, 169);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(58, 24);
-            this.label54.TabIndex = 4;
-            this.label54.Text = "000.0";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(118, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(64, 31);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "000.0";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox2.Location = new System.Drawing.Point(188, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(64, 31);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.Text = "000.0";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox3.Location = new System.Drawing.Point(258, 104);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(64, 31);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "000.0";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox4.Location = new System.Drawing.Point(328, 104);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(64, 31);
-            this.textBox4.TabIndex = 5;
-            this.textBox4.Text = "000.0";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox5.Location = new System.Drawing.Point(398, 104);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(64, 31);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.Text = "000.0";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox6.Location = new System.Drawing.Point(468, 104);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(64, 31);
-            this.textBox6.TabIndex = 5;
-            this.textBox6.Text = "000.0";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox7.Location = new System.Drawing.Point(538, 104);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(64, 31);
-            this.textBox7.TabIndex = 5;
-            this.textBox7.Text = "000.0";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox8.Location = new System.Drawing.Point(608, 104);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(64, 31);
-            this.textBox8.TabIndex = 5;
-            this.textBox8.Text = "000.0";
+            // lblZoneEx1
+            // 
+            this.lblZoneEx1.AutoSize = true;
+            this.lblZoneEx1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneEx1.Location = new System.Drawing.Point(114, 47);
+            this.lblZoneEx1.Name = "lblZoneEx1";
+            this.lblZoneEx1.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneEx1.TabIndex = 4;
+            this.lblZoneEx1.Text = "000.0";
+            // 
+            // lblZoneEx2
+            // 
+            this.lblZoneEx2.AutoSize = true;
+            this.lblZoneEx2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneEx2.Location = new System.Drawing.Point(184, 47);
+            this.lblZoneEx2.Name = "lblZoneEx2";
+            this.lblZoneEx2.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneEx2.TabIndex = 4;
+            this.lblZoneEx2.Text = "000.0";
+            // 
+            // lblZoneEx3
+            // 
+            this.lblZoneEx3.AutoSize = true;
+            this.lblZoneEx3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneEx3.Location = new System.Drawing.Point(254, 47);
+            this.lblZoneEx3.Name = "lblZoneEx3";
+            this.lblZoneEx3.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneEx3.TabIndex = 4;
+            this.lblZoneEx3.Text = "000.0";
+            // 
+            // lblZoneEx4
+            // 
+            this.lblZoneEx4.AutoSize = true;
+            this.lblZoneEx4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneEx4.Location = new System.Drawing.Point(324, 47);
+            this.lblZoneEx4.Name = "lblZoneEx4";
+            this.lblZoneEx4.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneEx4.TabIndex = 4;
+            this.lblZoneEx4.Text = "000.0";
+            // 
+            // lblZoneEx5
+            // 
+            this.lblZoneEx5.AutoSize = true;
+            this.lblZoneEx5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneEx5.Location = new System.Drawing.Point(394, 47);
+            this.lblZoneEx5.Name = "lblZoneEx5";
+            this.lblZoneEx5.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneEx5.TabIndex = 4;
+            this.lblZoneEx5.Text = "000.0";
+            // 
+            // lblZoneEx6
+            // 
+            this.lblZoneEx6.AutoSize = true;
+            this.lblZoneEx6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneEx6.Location = new System.Drawing.Point(464, 47);
+            this.lblZoneEx6.Name = "lblZoneEx6";
+            this.lblZoneEx6.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneEx6.TabIndex = 4;
+            this.lblZoneEx6.Text = "000.0";
+            // 
+            // lblZoneEx7
+            // 
+            this.lblZoneEx7.AutoSize = true;
+            this.lblZoneEx7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneEx7.Location = new System.Drawing.Point(534, 47);
+            this.lblZoneEx7.Name = "lblZoneEx7";
+            this.lblZoneEx7.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneEx7.TabIndex = 4;
+            this.lblZoneEx7.Text = "000.0";
+            // 
+            // lblZoneEx8
+            // 
+            this.lblZoneEx8.AutoSize = true;
+            this.lblZoneEx8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneEx8.Location = new System.Drawing.Point(604, 47);
+            this.lblZoneEx8.Name = "lblZoneEx8";
+            this.lblZoneEx8.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneEx8.TabIndex = 4;
+            this.lblZoneEx8.Text = "000.0";
+            // 
+            // lblZoneIn1
+            // 
+            this.lblZoneIn1.AutoSize = true;
+            this.lblZoneIn1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneIn1.Location = new System.Drawing.Point(114, 77);
+            this.lblZoneIn1.Name = "lblZoneIn1";
+            this.lblZoneIn1.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneIn1.TabIndex = 4;
+            this.lblZoneIn1.Text = "000.0";
+            // 
+            // lblZoneIn2
+            // 
+            this.lblZoneIn2.AutoSize = true;
+            this.lblZoneIn2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneIn2.Location = new System.Drawing.Point(184, 77);
+            this.lblZoneIn2.Name = "lblZoneIn2";
+            this.lblZoneIn2.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneIn2.TabIndex = 4;
+            this.lblZoneIn2.Text = "000.0";
+            // 
+            // lblZoneIn3
+            // 
+            this.lblZoneIn3.AutoSize = true;
+            this.lblZoneIn3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneIn3.Location = new System.Drawing.Point(254, 77);
+            this.lblZoneIn3.Name = "lblZoneIn3";
+            this.lblZoneIn3.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneIn3.TabIndex = 4;
+            this.lblZoneIn3.Text = "000.0";
+            // 
+            // lblZoneIn4
+            // 
+            this.lblZoneIn4.AutoSize = true;
+            this.lblZoneIn4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneIn4.Location = new System.Drawing.Point(324, 77);
+            this.lblZoneIn4.Name = "lblZoneIn4";
+            this.lblZoneIn4.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneIn4.TabIndex = 4;
+            this.lblZoneIn4.Text = "000.0";
+            // 
+            // lblZoneIn5
+            // 
+            this.lblZoneIn5.AutoSize = true;
+            this.lblZoneIn5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneIn5.Location = new System.Drawing.Point(394, 77);
+            this.lblZoneIn5.Name = "lblZoneIn5";
+            this.lblZoneIn5.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneIn5.TabIndex = 4;
+            this.lblZoneIn5.Text = "000.0";
+            // 
+            // lblZoneIn6
+            // 
+            this.lblZoneIn6.AutoSize = true;
+            this.lblZoneIn6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneIn6.Location = new System.Drawing.Point(464, 77);
+            this.lblZoneIn6.Name = "lblZoneIn6";
+            this.lblZoneIn6.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneIn6.TabIndex = 4;
+            this.lblZoneIn6.Text = "000.0";
+            // 
+            // lblZoneIn7
+            // 
+            this.lblZoneIn7.AutoSize = true;
+            this.lblZoneIn7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneIn7.Location = new System.Drawing.Point(534, 77);
+            this.lblZoneIn7.Name = "lblZoneIn7";
+            this.lblZoneIn7.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneIn7.TabIndex = 4;
+            this.lblZoneIn7.Text = "000.0";
+            // 
+            // lblZoneIn8
+            // 
+            this.lblZoneIn8.AutoSize = true;
+            this.lblZoneIn8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneIn8.Location = new System.Drawing.Point(604, 77);
+            this.lblZoneIn8.Name = "lblZoneIn8";
+            this.lblZoneIn8.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneIn8.TabIndex = 4;
+            this.lblZoneIn8.Text = "000.0";
+            // 
+            // lblZoneMV1
+            // 
+            this.lblZoneMV1.AutoSize = true;
+            this.lblZoneMV1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneMV1.Location = new System.Drawing.Point(114, 139);
+            this.lblZoneMV1.Name = "lblZoneMV1";
+            this.lblZoneMV1.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneMV1.TabIndex = 4;
+            this.lblZoneMV1.Text = "000.0";
+            // 
+            // lblZoneMV2
+            // 
+            this.lblZoneMV2.AutoSize = true;
+            this.lblZoneMV2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneMV2.Location = new System.Drawing.Point(184, 139);
+            this.lblZoneMV2.Name = "lblZoneMV2";
+            this.lblZoneMV2.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneMV2.TabIndex = 4;
+            this.lblZoneMV2.Text = "000.0";
+            // 
+            // lblZoneMV3
+            // 
+            this.lblZoneMV3.AutoSize = true;
+            this.lblZoneMV3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneMV3.Location = new System.Drawing.Point(254, 139);
+            this.lblZoneMV3.Name = "lblZoneMV3";
+            this.lblZoneMV3.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneMV3.TabIndex = 4;
+            this.lblZoneMV3.Text = "000.0";
+            // 
+            // lblZoneMV4
+            // 
+            this.lblZoneMV4.AutoSize = true;
+            this.lblZoneMV4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneMV4.Location = new System.Drawing.Point(324, 139);
+            this.lblZoneMV4.Name = "lblZoneMV4";
+            this.lblZoneMV4.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneMV4.TabIndex = 4;
+            this.lblZoneMV4.Text = "000.0";
+            // 
+            // lblZoneMV5
+            // 
+            this.lblZoneMV5.AutoSize = true;
+            this.lblZoneMV5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneMV5.Location = new System.Drawing.Point(394, 139);
+            this.lblZoneMV5.Name = "lblZoneMV5";
+            this.lblZoneMV5.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneMV5.TabIndex = 4;
+            this.lblZoneMV5.Text = "000.0";
+            // 
+            // lblZoneMV6
+            // 
+            this.lblZoneMV6.AutoSize = true;
+            this.lblZoneMV6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneMV6.Location = new System.Drawing.Point(464, 139);
+            this.lblZoneMV6.Name = "lblZoneMV6";
+            this.lblZoneMV6.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneMV6.TabIndex = 4;
+            this.lblZoneMV6.Text = "000.0";
+            // 
+            // lblZoneMV7
+            // 
+            this.lblZoneMV7.AutoSize = true;
+            this.lblZoneMV7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneMV7.Location = new System.Drawing.Point(534, 139);
+            this.lblZoneMV7.Name = "lblZoneMV7";
+            this.lblZoneMV7.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneMV7.TabIndex = 4;
+            this.lblZoneMV7.Text = "000.0";
+            // 
+            // lblZoneMV8
+            // 
+            this.lblZoneMV8.AutoSize = true;
+            this.lblZoneMV8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneMV8.Location = new System.Drawing.Point(604, 139);
+            this.lblZoneMV8.Name = "lblZoneMV8";
+            this.lblZoneMV8.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneMV8.TabIndex = 4;
+            this.lblZoneMV8.Text = "000.0";
+            // 
+            // lblZoneSP1
+            // 
+            this.lblZoneSP1.AutoSize = true;
+            this.lblZoneSP1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneSP1.Location = new System.Drawing.Point(114, 169);
+            this.lblZoneSP1.Name = "lblZoneSP1";
+            this.lblZoneSP1.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneSP1.TabIndex = 4;
+            this.lblZoneSP1.Text = "000.0";
+            // 
+            // lblZoneSP2
+            // 
+            this.lblZoneSP2.AutoSize = true;
+            this.lblZoneSP2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneSP2.Location = new System.Drawing.Point(184, 169);
+            this.lblZoneSP2.Name = "lblZoneSP2";
+            this.lblZoneSP2.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneSP2.TabIndex = 4;
+            this.lblZoneSP2.Text = "000.0";
+            // 
+            // lblZoneSP3
+            // 
+            this.lblZoneSP3.AutoSize = true;
+            this.lblZoneSP3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneSP3.Location = new System.Drawing.Point(254, 169);
+            this.lblZoneSP3.Name = "lblZoneSP3";
+            this.lblZoneSP3.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneSP3.TabIndex = 4;
+            this.lblZoneSP3.Text = "000.0";
+            // 
+            // lblZoneSP4
+            // 
+            this.lblZoneSP4.AutoSize = true;
+            this.lblZoneSP4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneSP4.Location = new System.Drawing.Point(324, 169);
+            this.lblZoneSP4.Name = "lblZoneSP4";
+            this.lblZoneSP4.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneSP4.TabIndex = 4;
+            this.lblZoneSP4.Text = "000.0";
+            // 
+            // lblZoneSP5
+            // 
+            this.lblZoneSP5.AutoSize = true;
+            this.lblZoneSP5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneSP5.Location = new System.Drawing.Point(394, 169);
+            this.lblZoneSP5.Name = "lblZoneSP5";
+            this.lblZoneSP5.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneSP5.TabIndex = 4;
+            this.lblZoneSP5.Text = "000.0";
+            // 
+            // lblZoneSP6
+            // 
+            this.lblZoneSP6.AutoSize = true;
+            this.lblZoneSP6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneSP6.Location = new System.Drawing.Point(464, 169);
+            this.lblZoneSP6.Name = "lblZoneSP6";
+            this.lblZoneSP6.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneSP6.TabIndex = 4;
+            this.lblZoneSP6.Text = "000.0";
+            // 
+            // lblZoneSP7
+            // 
+            this.lblZoneSP7.AutoSize = true;
+            this.lblZoneSP7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneSP7.Location = new System.Drawing.Point(534, 169);
+            this.lblZoneSP7.Name = "lblZoneSP7";
+            this.lblZoneSP7.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneSP7.TabIndex = 4;
+            this.lblZoneSP7.Text = "000.0";
+            // 
+            // lblZoneSP8
+            // 
+            this.lblZoneSP8.AutoSize = true;
+            this.lblZoneSP8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblZoneSP8.Location = new System.Drawing.Point(604, 169);
+            this.lblZoneSP8.Name = "lblZoneSP8";
+            this.lblZoneSP8.Size = new System.Drawing.Size(58, 24);
+            this.lblZoneSP8.TabIndex = 4;
+            this.lblZoneSP8.Text = "000.0";
+            // 
+            // txtZoneSV1
+            // 
+            this.txtZoneSV1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtZoneSV1.Location = new System.Drawing.Point(118, 104);
+            this.txtZoneSV1.Name = "txtZoneSV1";
+            this.txtZoneSV1.Size = new System.Drawing.Size(64, 31);
+            this.txtZoneSV1.TabIndex = 5;
+            this.txtZoneSV1.Text = "000.0";
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtZoneSV1, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtZoneSV1, "数值输入错误(>0)");
+            this.verificationComponent1.SetVerificationModel(this.txtZoneSV1, HZH_Controls.Controls.VerificationModel.UnsignNumber);
+            this.verificationComponent1.SetVerificationRequired(this.txtZoneSV1, false);
+            this.txtZoneSV1.TextChanged += new System.EventHandler(this.txtZoneSV_TextChanged);
+            // 
+            // txtZoneSV2
+            // 
+            this.txtZoneSV2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtZoneSV2.Location = new System.Drawing.Point(188, 104);
+            this.txtZoneSV2.Name = "txtZoneSV2";
+            this.txtZoneSV2.Size = new System.Drawing.Size(64, 31);
+            this.txtZoneSV2.TabIndex = 5;
+            this.txtZoneSV2.Text = "000.0";
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtZoneSV2, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtZoneSV2, "数值输入错误(>0)");
+            this.verificationComponent1.SetVerificationModel(this.txtZoneSV2, HZH_Controls.Controls.VerificationModel.UnsignNumber);
+            this.verificationComponent1.SetVerificationRequired(this.txtZoneSV2, false);
+            this.txtZoneSV2.TextChanged += new System.EventHandler(this.txtZoneSV_TextChanged);
+            // 
+            // txtZoneSV3
+            // 
+            this.txtZoneSV3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtZoneSV3.Location = new System.Drawing.Point(258, 104);
+            this.txtZoneSV3.Name = "txtZoneSV3";
+            this.txtZoneSV3.Size = new System.Drawing.Size(64, 31);
+            this.txtZoneSV3.TabIndex = 5;
+            this.txtZoneSV3.Text = "000.0";
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtZoneSV3, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtZoneSV3, "数值输入错误(>0)");
+            this.verificationComponent1.SetVerificationModel(this.txtZoneSV3, HZH_Controls.Controls.VerificationModel.UnsignNumber);
+            this.verificationComponent1.SetVerificationRequired(this.txtZoneSV3, false);
+            this.txtZoneSV3.TextChanged += new System.EventHandler(this.txtZoneSV_TextChanged);
+            // 
+            // txtZoneSV4
+            // 
+            this.txtZoneSV4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtZoneSV4.Location = new System.Drawing.Point(328, 104);
+            this.txtZoneSV4.Name = "txtZoneSV4";
+            this.txtZoneSV4.Size = new System.Drawing.Size(64, 31);
+            this.txtZoneSV4.TabIndex = 5;
+            this.txtZoneSV4.Text = "000.0";
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtZoneSV4, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtZoneSV4, "数值输入错误(>0)");
+            this.verificationComponent1.SetVerificationModel(this.txtZoneSV4, HZH_Controls.Controls.VerificationModel.UnsignNumber);
+            this.verificationComponent1.SetVerificationRequired(this.txtZoneSV4, false);
+            this.txtZoneSV4.TextChanged += new System.EventHandler(this.txtZoneSV_TextChanged);
+            // 
+            // txtZoneSV5
+            // 
+            this.txtZoneSV5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtZoneSV5.Location = new System.Drawing.Point(398, 104);
+            this.txtZoneSV5.Name = "txtZoneSV5";
+            this.txtZoneSV5.Size = new System.Drawing.Size(64, 31);
+            this.txtZoneSV5.TabIndex = 5;
+            this.txtZoneSV5.Text = "000.0";
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtZoneSV5, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtZoneSV5, "数值输入错误(>0)");
+            this.verificationComponent1.SetVerificationModel(this.txtZoneSV5, HZH_Controls.Controls.VerificationModel.UnsignNumber);
+            this.verificationComponent1.SetVerificationRequired(this.txtZoneSV5, false);
+            this.txtZoneSV5.TextChanged += new System.EventHandler(this.txtZoneSV_TextChanged);
+            // 
+            // txtZoneSV6
+            // 
+            this.txtZoneSV6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtZoneSV6.Location = new System.Drawing.Point(468, 104);
+            this.txtZoneSV6.Name = "txtZoneSV6";
+            this.txtZoneSV6.Size = new System.Drawing.Size(64, 31);
+            this.txtZoneSV6.TabIndex = 5;
+            this.txtZoneSV6.Text = "000.0";
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtZoneSV6, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtZoneSV6, "数值输入错误(>0)");
+            this.verificationComponent1.SetVerificationModel(this.txtZoneSV6, HZH_Controls.Controls.VerificationModel.UnsignNumber);
+            this.verificationComponent1.SetVerificationRequired(this.txtZoneSV6, false);
+            this.txtZoneSV6.TextChanged += new System.EventHandler(this.txtZoneSV_TextChanged);
+            // 
+            // txtZoneSV7
+            // 
+            this.txtZoneSV7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtZoneSV7.Location = new System.Drawing.Point(538, 104);
+            this.txtZoneSV7.Name = "txtZoneSV7";
+            this.txtZoneSV7.Size = new System.Drawing.Size(64, 31);
+            this.txtZoneSV7.TabIndex = 5;
+            this.txtZoneSV7.Text = "000.0";
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtZoneSV7, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtZoneSV7, "数值输入错误(>0)");
+            this.verificationComponent1.SetVerificationModel(this.txtZoneSV7, HZH_Controls.Controls.VerificationModel.UnsignNumber);
+            this.verificationComponent1.SetVerificationRequired(this.txtZoneSV7, false);
+            this.txtZoneSV7.TextChanged += new System.EventHandler(this.txtZoneSV_TextChanged);
+            // 
+            // txtZoneSV8
+            // 
+            this.txtZoneSV8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtZoneSV8.Location = new System.Drawing.Point(608, 104);
+            this.txtZoneSV8.Name = "txtZoneSV8";
+            this.txtZoneSV8.Size = new System.Drawing.Size(64, 31);
+            this.txtZoneSV8.TabIndex = 5;
+            this.txtZoneSV8.Text = "000.0";
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtZoneSV8, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtZoneSV8, "数值输入错误(>0)");
+            this.verificationComponent1.SetVerificationModel(this.txtZoneSV8, HZH_Controls.Controls.VerificationModel.UnsignNumber);
+            this.verificationComponent1.SetVerificationRequired(this.txtZoneSV8, false);
+            this.txtZoneSV8.TextChanged += new System.EventHandler(this.txtZoneSV_TextChanged);
             // 
             // label31
             // 
@@ -664,25 +706,25 @@
             this.label31.TabIndex = 4;
             this.label31.Text = "T1:";
             // 
-            // label32
+            // lblCoolingPV1
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label32.Location = new System.Drawing.Point(776, 47);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(58, 24);
-            this.label32.TabIndex = 4;
-            this.label32.Text = "000.0";
+            this.lblCoolingPV1.AutoSize = true;
+            this.lblCoolingPV1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblCoolingPV1.Location = new System.Drawing.Point(776, 47);
+            this.lblCoolingPV1.Name = "lblCoolingPV1";
+            this.lblCoolingPV1.Size = new System.Drawing.Size(58, 24);
+            this.lblCoolingPV1.TabIndex = 4;
+            this.lblCoolingPV1.Text = "000.0";
             // 
-            // label33
+            // lblCoolingPV2
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label33.Location = new System.Drawing.Point(776, 81);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(58, 24);
-            this.label33.TabIndex = 4;
-            this.label33.Text = "000.0";
+            this.lblCoolingPV2.AutoSize = true;
+            this.lblCoolingPV2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblCoolingPV2.Location = new System.Drawing.Point(776, 81);
+            this.lblCoolingPV2.Name = "lblCoolingPV2";
+            this.lblCoolingPV2.Size = new System.Drawing.Size(58, 24);
+            this.lblCoolingPV2.TabIndex = 4;
+            this.lblCoolingPV2.Text = "000.0";
             // 
             // label34
             // 
@@ -703,18 +745,25 @@
             this.label35.Size = new System.Drawing.Size(1, 177);
             this.label35.TabIndex = 4;
             // 
+            // verificationComponent1
+            // 
+            this.verificationComponent1.AutoCloseErrorTipsTime = 3000;
+            this.verificationComponent1.ErrorTipsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.verificationComponent1.ErrorTipsForeColor = System.Drawing.Color.White;
+            this.verificationComponent1.Verificationed += new HZH_Controls.Controls.VerificationComponent.VerificationedHandle(this.verificationComponent1_Verificationed);
+            // 
             // UCZone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtZoneSV8);
+            this.Controls.Add(this.txtZoneSV7);
+            this.Controls.Add(this.txtZoneSV6);
+            this.Controls.Add(this.txtZoneSV5);
+            this.Controls.Add(this.txtZoneSV4);
+            this.Controls.Add(this.txtZoneSV3);
+            this.Controls.Add(this.txtZoneSV2);
+            this.Controls.Add(this.txtZoneSV1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -729,40 +778,40 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label54);
-            this.Controls.Add(this.label46);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label53);
-            this.Controls.Add(this.label45);
-            this.Controls.Add(this.label29);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label52);
-            this.Controls.Add(this.label44);
-            this.Controls.Add(this.label28);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label51);
-            this.Controls.Add(this.label43);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label50);
-            this.Controls.Add(this.label42);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label49);
-            this.Controls.Add(this.label41);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label48);
-            this.Controls.Add(this.label40);
-            this.Controls.Add(this.label24);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label47);
-            this.Controls.Add(this.label39);
-            this.Controls.Add(this.label33);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.lblZoneSP8);
+            this.Controls.Add(this.lblZoneMV8);
+            this.Controls.Add(this.lblZoneIn8);
+            this.Controls.Add(this.lblZoneEx8);
+            this.Controls.Add(this.lblZoneSP7);
+            this.Controls.Add(this.lblZoneMV7);
+            this.Controls.Add(this.lblZoneIn7);
+            this.Controls.Add(this.lblZoneEx7);
+            this.Controls.Add(this.lblZoneSP6);
+            this.Controls.Add(this.lblZoneMV6);
+            this.Controls.Add(this.lblZoneIn6);
+            this.Controls.Add(this.lblZoneEx6);
+            this.Controls.Add(this.lblZoneSP5);
+            this.Controls.Add(this.lblZoneMV5);
+            this.Controls.Add(this.lblZoneIn5);
+            this.Controls.Add(this.lblZoneEx5);
+            this.Controls.Add(this.lblZoneSP4);
+            this.Controls.Add(this.lblZoneMV4);
+            this.Controls.Add(this.lblZoneIn4);
+            this.Controls.Add(this.lblZoneEx4);
+            this.Controls.Add(this.lblZoneSP3);
+            this.Controls.Add(this.lblZoneMV3);
+            this.Controls.Add(this.lblZoneIn3);
+            this.Controls.Add(this.lblZoneEx3);
+            this.Controls.Add(this.lblZoneSP2);
+            this.Controls.Add(this.lblZoneMV2);
+            this.Controls.Add(this.lblZoneIn2);
+            this.Controls.Add(this.lblZoneEx2);
+            this.Controls.Add(this.lblZoneSP1);
+            this.Controls.Add(this.lblZoneMV1);
+            this.Controls.Add(this.lblCoolingPV2);
+            this.Controls.Add(this.lblZoneIn1);
+            this.Controls.Add(this.lblCoolingPV1);
+            this.Controls.Add(this.lblZoneEx1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label1);
@@ -779,7 +828,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblOnHeating;
+        public System.Windows.Forms.Label lblOnHeating;
         private System.Windows.Forms.Label lblLineH;
         private System.Windows.Forms.Label lblLineH2;
         private System.Windows.Forms.Label label1;
@@ -796,50 +845,51 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        public System.Windows.Forms.Label lblZoneEx1;
+        public System.Windows.Forms.Label lblZoneEx2;
+        public System.Windows.Forms.Label lblZoneEx3;
+        public System.Windows.Forms.Label lblZoneEx4;
+        public System.Windows.Forms.Label lblZoneEx5;
+        public System.Windows.Forms.Label lblZoneEx6;
+        public System.Windows.Forms.Label lblZoneEx7;
+        public System.Windows.Forms.Label lblZoneEx8;
+        public System.Windows.Forms.Label lblZoneIn1;
+        public System.Windows.Forms.Label lblZoneIn2;
+        public System.Windows.Forms.Label lblZoneIn3;
+        public System.Windows.Forms.Label lblZoneIn4;
+        public System.Windows.Forms.Label lblZoneIn5;
+        public System.Windows.Forms.Label lblZoneIn6;
+        public System.Windows.Forms.Label lblZoneIn7;
+        public System.Windows.Forms.Label lblZoneIn8;
+        public System.Windows.Forms.Label lblZoneMV1;
+        public System.Windows.Forms.Label lblZoneMV2;
+        public System.Windows.Forms.Label lblZoneMV3;
+        public System.Windows.Forms.Label lblZoneMV4;
+        public System.Windows.Forms.Label lblZoneMV5;
+        public System.Windows.Forms.Label lblZoneMV6;
+        public System.Windows.Forms.Label lblZoneMV7;
+        public System.Windows.Forms.Label lblZoneMV8;
+        public System.Windows.Forms.Label lblZoneSP1;
+        public System.Windows.Forms.Label lblZoneSP2;
+        public System.Windows.Forms.Label lblZoneSP3;
+        public System.Windows.Forms.Label lblZoneSP4;
+        public System.Windows.Forms.Label lblZoneSP5;
+        public System.Windows.Forms.Label lblZoneSP6;
+        public System.Windows.Forms.Label lblZoneSP7;
+        public System.Windows.Forms.Label lblZoneSP8;
+        public System.Windows.Forms.TextBox txtZoneSV1;
+        public System.Windows.Forms.TextBox txtZoneSV2;
+        public System.Windows.Forms.TextBox txtZoneSV3;
+        public System.Windows.Forms.TextBox txtZoneSV4;
+        public System.Windows.Forms.TextBox txtZoneSV5;
+        public System.Windows.Forms.TextBox txtZoneSV6;
+        public System.Windows.Forms.TextBox txtZoneSV7;
+        public System.Windows.Forms.TextBox txtZoneSV8;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
+        public System.Windows.Forms.Label lblCoolingPV1;
+        public System.Windows.Forms.Label lblCoolingPV2;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
+        private HZH_Controls.Controls.VerificationComponent verificationComponent1;
     }
 }

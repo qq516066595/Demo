@@ -36,7 +36,7 @@ namespace Test.View.Common
         {
             try
             {
-                string newTime = ((float)time / 60).ToString() + " Min " + ((float)time % 60).ToString() + " s";
+                string newTime = ((Int32)time / 60).ToString() + " Min " + ((float)time % 60).ToString() + " s";
                 return newTime;
             }
             catch (Exception e)
@@ -361,40 +361,36 @@ namespace Test.View.Common
         /// <param name="color">颜色</param>
         /// <param name="btnValue">变化值</param>
         /// <Remarks>color好像没有用，调用设置的背景色</Remarks>
-        //public void SetbtnClickBackColor(SimpleButton button, Color color, bool btnValue)
-        //{
-        //    button.Appearance.Options.UseBackColor = true;
-
-        //    if (btnValue)
-        //    {
-        //        button.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-        //        button.BackColor = color;
-        //    }
-        //    else
-        //    {
-        //        button.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
-        //        button.BackColor = Color.Transparent;
-        //    }
-        //}
+        public void SetbtnClickBackColor(Button button, Color color, bool btnValue)
+        {
+            if (btnValue)
+            {
+                button.BackColor = color;
+            }
+            else
+            {
+                button.BackColor = Color.Transparent;
+            }
+        }
         /// <summary>
         /// 感应器颜色变化
         /// </summary>
         /// <param name="lbl"></param>
         /// <param name="color"></param>
         /// <param name="lblValue"></param>
-        //public void SetlblSignalBackColor(LabelControl lbl, Color color, bool lblValue)
-        //{
-        //    lbl.Appearance.Options.UseBackColor = true;
+        public void SetlblSignalBackColor(Control lbl, Color color, bool lblValue)
+        {
+            //lbl.Appearance.Options.UseBackColor = true;
 
-        //    if (lblValue)
-        //    {
-        //        lbl.BackColor = color;
-        //    }
-        //    else
-        //    {
-        //        lbl.BackColor = Color.Transparent;
-        //    }
-        //}
+            if (lblValue)
+            {
+                lbl.BackColor = color;
+            }
+            else
+            {
+                lbl.BackColor = Color.Transparent;
+            }
+        }
         #endregion
 
         #region Aspose.Cells方式

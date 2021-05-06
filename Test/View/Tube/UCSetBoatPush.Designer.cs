@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -35,26 +36,27 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxEx1 = new HZH_Controls.Controls.TextBoxEx();
-            this.textBoxEx2 = new HZH_Controls.Controls.TextBoxEx();
-            this.textBoxEx3 = new HZH_Controls.Controls.TextBoxEx();
-            this.textBoxEx4 = new HZH_Controls.Controls.TextBoxEx();
-            this.textBoxEx5 = new HZH_Controls.Controls.TextBoxEx();
-            this.textBoxEx6 = new HZH_Controls.Controls.TextBoxEx();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnHome_Excute = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBoxEx7 = new HZH_Controls.Controls.TextBoxEx();
-            this.textBoxEx8 = new HZH_Controls.Controls.TextBoxEx();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBoxEx9 = new HZH_Controls.Controls.TextBoxEx();
-            this.textBoxEx10 = new HZH_Controls.Controls.TextBoxEx();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnEnableT_Protect = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBoxEx11 = new HZH_Controls.Controls.TextBoxEx();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBoxEx12 = new HZH_Controls.Controls.TextBoxEx();
+            this.txtAbs_Speed6 = new HZH_Controls.Controls.TextBoxEx();
+            this.txtAbs_Pos6 = new HZH_Controls.Controls.TextBoxEx();
+            this.txtAbs_Speed4 = new HZH_Controls.Controls.TextBoxEx();
+            this.txtAbs_Pos4 = new HZH_Controls.Controls.TextBoxEx();
+            this.txtBoatOutAlmOffsetPos = new HZH_Controls.Controls.TextBoxEx();
+            this.txtBoatOut_OffsetPos = new HZH_Controls.Controls.TextBoxEx();
+            this.txtMinPos = new HZH_Controls.Controls.TextBoxEx();
+            this.txtBoatPush_SV_MaxT = new HZH_Controls.Controls.TextBoxEx();
+            this.txtAbs_Speed1 = new HZH_Controls.Controls.TextBoxEx();
+            this.txtMaxPos = new HZH_Controls.Controls.TextBoxEx();
+            this.txtAcc = new HZH_Controls.Controls.TextBoxEx();
+            this.txtAbs_Pos1 = new HZH_Controls.Controls.TextBoxEx();
+            this.verificationComponent1 = new HZH_Controls.Controls.VerificationComponent(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -105,7 +107,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(6, 42);
+            this.label4.Location = new System.Drawing.Point(6, 45);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 24);
@@ -116,7 +118,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(6, 68);
+            this.label5.Location = new System.Drawing.Point(6, 74);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 24);
@@ -127,173 +129,24 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(6, 93);
+            this.label6.Location = new System.Drawing.Point(6, 103);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 24);
             this.label6.TabIndex = 0;
             this.label6.Text = "7.取舟位";
             // 
-            // textBoxEx1
+            // btnHome_Excute
             // 
-            this.textBoxEx1.DecLength = 2;
-            this.textBoxEx1.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx1.Location = new System.Drawing.Point(103, 43);
-            this.textBoxEx1.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx1.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx1.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx1.Name = "textBoxEx1";
-            this.textBoxEx1.OldText = null;
-            this.textBoxEx1.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx1.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx1.PromptText = "";
-            this.textBoxEx1.RegexPattern = "";
-            this.textBoxEx1.Size = new System.Drawing.Size(100, 28);
-            this.textBoxEx1.TabIndex = 4;
-            // 
-            // textBoxEx2
-            // 
-            this.textBoxEx2.DecLength = 2;
-            this.textBoxEx2.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx2.Location = new System.Drawing.Point(103, 69);
-            this.textBoxEx2.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx2.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx2.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx2.Name = "textBoxEx2";
-            this.textBoxEx2.OldText = null;
-            this.textBoxEx2.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx2.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx2.PromptText = "";
-            this.textBoxEx2.RegexPattern = "";
-            this.textBoxEx2.Size = new System.Drawing.Size(100, 28);
-            this.textBoxEx2.TabIndex = 4;
-            // 
-            // textBoxEx3
-            // 
-            this.textBoxEx3.DecLength = 2;
-            this.textBoxEx3.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx3.Location = new System.Drawing.Point(103, 94);
-            this.textBoxEx3.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx3.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx3.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx3.Name = "textBoxEx3";
-            this.textBoxEx3.OldText = null;
-            this.textBoxEx3.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx3.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx3.PromptText = "";
-            this.textBoxEx3.RegexPattern = "";
-            this.textBoxEx3.Size = new System.Drawing.Size(100, 28);
-            this.textBoxEx3.TabIndex = 4;
-            // 
-            // textBoxEx4
-            // 
-            this.textBoxEx4.DecLength = 2;
-            this.textBoxEx4.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx4.Location = new System.Drawing.Point(237, 43);
-            this.textBoxEx4.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx4.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx4.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx4.Name = "textBoxEx4";
-            this.textBoxEx4.OldText = null;
-            this.textBoxEx4.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx4.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx4.PromptText = "";
-            this.textBoxEx4.RegexPattern = "";
-            this.textBoxEx4.Size = new System.Drawing.Size(100, 28);
-            this.textBoxEx4.TabIndex = 4;
-            // 
-            // textBoxEx5
-            // 
-            this.textBoxEx5.DecLength = 2;
-            this.textBoxEx5.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx5.Location = new System.Drawing.Point(237, 69);
-            this.textBoxEx5.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx5.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx5.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx5.Name = "textBoxEx5";
-            this.textBoxEx5.OldText = null;
-            this.textBoxEx5.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx5.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx5.PromptText = "";
-            this.textBoxEx5.RegexPattern = "";
-            this.textBoxEx5.Size = new System.Drawing.Size(100, 28);
-            this.textBoxEx5.TabIndex = 4;
-            // 
-            // textBoxEx6
-            // 
-            this.textBoxEx6.DecLength = 2;
-            this.textBoxEx6.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx6.Location = new System.Drawing.Point(237, 94);
-            this.textBoxEx6.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx6.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx6.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx6.Name = "textBoxEx6";
-            this.textBoxEx6.OldText = null;
-            this.textBoxEx6.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx6.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx6.PromptText = "";
-            this.textBoxEx6.RegexPattern = "";
-            this.textBoxEx6.Size = new System.Drawing.Size(100, 28);
-            this.textBoxEx6.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(374, 66);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 41);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "回原点";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHome_Excute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome_Excute.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnHome_Excute.Location = new System.Drawing.Point(374, 66);
+            this.btnHome_Excute.Name = "btnHome_Excute";
+            this.btnHome_Excute.Size = new System.Drawing.Size(129, 41);
+            this.btnHome_Excute.TabIndex = 5;
+            this.btnHome_Excute.Text = "回原点";
+            this.btnHome_Excute.UseVisualStyleBackColor = true;
+            this.btnHome_Excute.Click += new System.EventHandler(this.btnValue_Click);
             // 
             // label7
             // 
@@ -317,56 +170,6 @@
             this.label8.TabIndex = 0;
             this.label8.Text = "最大扭矩(%)";
             // 
-            // textBoxEx7
-            // 
-            this.textBoxEx7.DecLength = 2;
-            this.textBoxEx7.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx7.Location = new System.Drawing.Point(103, 179);
-            this.textBoxEx7.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx7.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx7.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx7.Name = "textBoxEx7";
-            this.textBoxEx7.OldText = null;
-            this.textBoxEx7.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx7.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx7.PromptText = "";
-            this.textBoxEx7.RegexPattern = "";
-            this.textBoxEx7.Size = new System.Drawing.Size(100, 28);
-            this.textBoxEx7.TabIndex = 4;
-            // 
-            // textBoxEx8
-            // 
-            this.textBoxEx8.DecLength = 2;
-            this.textBoxEx8.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx8.Location = new System.Drawing.Point(237, 179);
-            this.textBoxEx8.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx8.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx8.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx8.Name = "textBoxEx8";
-            this.textBoxEx8.OldText = null;
-            this.textBoxEx8.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx8.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx8.PromptText = "";
-            this.textBoxEx8.RegexPattern = "";
-            this.textBoxEx8.Size = new System.Drawing.Size(100, 28);
-            this.textBoxEx8.TabIndex = 4;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -389,66 +192,17 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "反向软极限";
             // 
-            // textBoxEx9
+            // btnEnableT_Protect
             // 
-            this.textBoxEx9.DecLength = 2;
-            this.textBoxEx9.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx9.Location = new System.Drawing.Point(103, 237);
-            this.textBoxEx9.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx9.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx9.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx9.Name = "textBoxEx9";
-            this.textBoxEx9.OldText = null;
-            this.textBoxEx9.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx9.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx9.PromptText = "";
-            this.textBoxEx9.RegexPattern = "";
-            this.textBoxEx9.Size = new System.Drawing.Size(100, 28);
-            this.textBoxEx9.TabIndex = 4;
-            // 
-            // textBoxEx10
-            // 
-            this.textBoxEx10.DecLength = 2;
-            this.textBoxEx10.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx10.Location = new System.Drawing.Point(237, 237);
-            this.textBoxEx10.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx10.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx10.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx10.Name = "textBoxEx10";
-            this.textBoxEx10.OldText = null;
-            this.textBoxEx10.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx10.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx10.PromptText = "";
-            this.textBoxEx10.RegexPattern = "";
-            this.textBoxEx10.Size = new System.Drawing.Size(100, 28);
-            this.textBoxEx10.TabIndex = 4;
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(374, 193);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 41);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "扭矩保护使能";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEnableT_Protect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnableT_Protect.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnEnableT_Protect.Location = new System.Drawing.Point(374, 193);
+            this.btnEnableT_Protect.Name = "btnEnableT_Protect";
+            this.btnEnableT_Protect.Size = new System.Drawing.Size(129, 41);
+            this.btnEnableT_Protect.TabIndex = 5;
+            this.btnEnableT_Protect.Text = "扭矩保护使能";
+            this.btnEnableT_Protect.UseVisualStyleBackColor = true;
+            this.btnEnableT_Protect.Click += new System.EventHandler(this.btnValue_Click);
             // 
             // label11
             // 
@@ -461,31 +215,6 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "出舟时，舟相对于传感器的偏差位置";
             // 
-            // textBoxEx11
-            // 
-            this.textBoxEx11.DecLength = 2;
-            this.textBoxEx11.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx11.Location = new System.Drawing.Point(344, 284);
-            this.textBoxEx11.MaxValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.textBoxEx11.MinValue = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            -2147483648});
-            this.textBoxEx11.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx11.Name = "textBoxEx11";
-            this.textBoxEx11.OldText = null;
-            this.textBoxEx11.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx11.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx11.PromptText = "";
-            this.textBoxEx11.RegexPattern = "";
-            this.textBoxEx11.Size = new System.Drawing.Size(100, 28);
-            this.textBoxEx11.TabIndex = 4;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -497,49 +226,391 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "出舟时，有舟位与无舟位的偏差位置";
             // 
-            // textBoxEx12
+            // txtAbs_Speed6
             // 
-            this.textBoxEx12.DecLength = 2;
-            this.textBoxEx12.InputType = HZH_Controls.TextInputType.NotControl;
-            this.textBoxEx12.Location = new System.Drawing.Point(344, 317);
-            this.textBoxEx12.MaxValue = new decimal(new int[] {
+            this.txtAbs_Speed6.DecLength = 2;
+            this.txtAbs_Speed6.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtAbs_Speed6.Location = new System.Drawing.Point(237, 105);
+            this.txtAbs_Speed6.MaxValue = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
-            this.textBoxEx12.MinValue = new decimal(new int[] {
+            this.txtAbs_Speed6.MinValue = new decimal(new int[] {
             1000000,
             0,
             0,
             -2147483648});
-            this.textBoxEx12.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.textBoxEx12.Name = "textBoxEx12";
-            this.textBoxEx12.OldText = null;
-            this.textBoxEx12.PromptColor = System.Drawing.Color.Gray;
-            this.textBoxEx12.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.textBoxEx12.PromptText = "";
-            this.textBoxEx12.RegexPattern = "";
-            this.textBoxEx12.Size = new System.Drawing.Size(100, 28);
-            this.textBoxEx12.TabIndex = 4;
+            this.txtAbs_Speed6.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtAbs_Speed6.Name = "txtAbs_Speed6";
+            this.txtAbs_Speed6.OldText = null;
+            this.txtAbs_Speed6.PromptColor = System.Drawing.Color.Gray;
+            this.txtAbs_Speed6.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAbs_Speed6.PromptText = "";
+            this.txtAbs_Speed6.RegexPattern = "";
+            this.txtAbs_Speed6.Size = new System.Drawing.Size(100, 28);
+            this.txtAbs_Speed6.TabIndex = 4;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtAbs_Speed6, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtAbs_Speed6, "数值输入错误");
+            this.verificationComponent1.SetVerificationModel(this.txtAbs_Speed6, HZH_Controls.Controls.VerificationModel.Number);
+            this.verificationComponent1.SetVerificationRequired(this.txtAbs_Speed6, false);
+            this.txtAbs_Speed6.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // txtAbs_Pos6
+            // 
+            this.txtAbs_Pos6.DecLength = 2;
+            this.txtAbs_Pos6.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtAbs_Pos6.Location = new System.Drawing.Point(103, 105);
+            this.txtAbs_Pos6.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.txtAbs_Pos6.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.txtAbs_Pos6.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtAbs_Pos6.Name = "txtAbs_Pos6";
+            this.txtAbs_Pos6.OldText = null;
+            this.txtAbs_Pos6.PromptColor = System.Drawing.Color.Gray;
+            this.txtAbs_Pos6.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAbs_Pos6.PromptText = "";
+            this.txtAbs_Pos6.RegexPattern = "";
+            this.txtAbs_Pos6.Size = new System.Drawing.Size(100, 28);
+            this.txtAbs_Pos6.TabIndex = 4;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtAbs_Pos6, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtAbs_Pos6, "数值输入错误");
+            this.verificationComponent1.SetVerificationModel(this.txtAbs_Pos6, HZH_Controls.Controls.VerificationModel.Number);
+            this.verificationComponent1.SetVerificationRequired(this.txtAbs_Pos6, false);
+            this.txtAbs_Pos6.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // txtAbs_Speed4
+            // 
+            this.txtAbs_Speed4.DecLength = 2;
+            this.txtAbs_Speed4.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtAbs_Speed4.Location = new System.Drawing.Point(237, 74);
+            this.txtAbs_Speed4.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.txtAbs_Speed4.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.txtAbs_Speed4.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtAbs_Speed4.Name = "txtAbs_Speed4";
+            this.txtAbs_Speed4.OldText = null;
+            this.txtAbs_Speed4.PromptColor = System.Drawing.Color.Gray;
+            this.txtAbs_Speed4.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAbs_Speed4.PromptText = "";
+            this.txtAbs_Speed4.RegexPattern = "";
+            this.txtAbs_Speed4.Size = new System.Drawing.Size(100, 28);
+            this.txtAbs_Speed4.TabIndex = 4;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtAbs_Speed4, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtAbs_Speed4, "数值输入错误");
+            this.verificationComponent1.SetVerificationModel(this.txtAbs_Speed4, HZH_Controls.Controls.VerificationModel.Number);
+            this.verificationComponent1.SetVerificationRequired(this.txtAbs_Speed4, false);
+            this.txtAbs_Speed4.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // txtAbs_Pos4
+            // 
+            this.txtAbs_Pos4.DecLength = 2;
+            this.txtAbs_Pos4.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtAbs_Pos4.Location = new System.Drawing.Point(103, 74);
+            this.txtAbs_Pos4.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.txtAbs_Pos4.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.txtAbs_Pos4.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtAbs_Pos4.Name = "txtAbs_Pos4";
+            this.txtAbs_Pos4.OldText = null;
+            this.txtAbs_Pos4.PromptColor = System.Drawing.Color.Gray;
+            this.txtAbs_Pos4.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAbs_Pos4.PromptText = "";
+            this.txtAbs_Pos4.RegexPattern = "";
+            this.txtAbs_Pos4.Size = new System.Drawing.Size(100, 28);
+            this.txtAbs_Pos4.TabIndex = 4;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtAbs_Pos4, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtAbs_Pos4, "数值输入错误");
+            this.verificationComponent1.SetVerificationModel(this.txtAbs_Pos4, HZH_Controls.Controls.VerificationModel.Number);
+            this.verificationComponent1.SetVerificationRequired(this.txtAbs_Pos4, false);
+            this.txtAbs_Pos4.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // txtBoatOutAlmOffsetPos
+            // 
+            this.txtBoatOutAlmOffsetPos.DecLength = 2;
+            this.txtBoatOutAlmOffsetPos.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtBoatOutAlmOffsetPos.Location = new System.Drawing.Point(344, 317);
+            this.txtBoatOutAlmOffsetPos.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.txtBoatOutAlmOffsetPos.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.txtBoatOutAlmOffsetPos.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtBoatOutAlmOffsetPos.Name = "txtBoatOutAlmOffsetPos";
+            this.txtBoatOutAlmOffsetPos.OldText = null;
+            this.txtBoatOutAlmOffsetPos.PromptColor = System.Drawing.Color.Gray;
+            this.txtBoatOutAlmOffsetPos.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtBoatOutAlmOffsetPos.PromptText = "";
+            this.txtBoatOutAlmOffsetPos.RegexPattern = "";
+            this.txtBoatOutAlmOffsetPos.Size = new System.Drawing.Size(100, 28);
+            this.txtBoatOutAlmOffsetPos.TabIndex = 4;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtBoatOutAlmOffsetPos, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtBoatOutAlmOffsetPos, "数值输入错误");
+            this.verificationComponent1.SetVerificationModel(this.txtBoatOutAlmOffsetPos, HZH_Controls.Controls.VerificationModel.Number);
+            this.verificationComponent1.SetVerificationRequired(this.txtBoatOutAlmOffsetPos, false);
+            this.txtBoatOutAlmOffsetPos.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // txtBoatOut_OffsetPos
+            // 
+            this.txtBoatOut_OffsetPos.DecLength = 2;
+            this.txtBoatOut_OffsetPos.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtBoatOut_OffsetPos.Location = new System.Drawing.Point(344, 284);
+            this.txtBoatOut_OffsetPos.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.txtBoatOut_OffsetPos.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.txtBoatOut_OffsetPos.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtBoatOut_OffsetPos.Name = "txtBoatOut_OffsetPos";
+            this.txtBoatOut_OffsetPos.OldText = null;
+            this.txtBoatOut_OffsetPos.PromptColor = System.Drawing.Color.Gray;
+            this.txtBoatOut_OffsetPos.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtBoatOut_OffsetPos.PromptText = "";
+            this.txtBoatOut_OffsetPos.RegexPattern = "";
+            this.txtBoatOut_OffsetPos.Size = new System.Drawing.Size(100, 28);
+            this.txtBoatOut_OffsetPos.TabIndex = 4;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtBoatOut_OffsetPos, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtBoatOut_OffsetPos, "数值输入错误");
+            this.verificationComponent1.SetVerificationModel(this.txtBoatOut_OffsetPos, HZH_Controls.Controls.VerificationModel.Number);
+            this.verificationComponent1.SetVerificationRequired(this.txtBoatOut_OffsetPos, false);
+            this.txtBoatOut_OffsetPos.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // txtMinPos
+            // 
+            this.txtMinPos.DecLength = 2;
+            this.txtMinPos.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtMinPos.Location = new System.Drawing.Point(237, 237);
+            this.txtMinPos.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.txtMinPos.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.txtMinPos.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtMinPos.Name = "txtMinPos";
+            this.txtMinPos.OldText = null;
+            this.txtMinPos.PromptColor = System.Drawing.Color.Gray;
+            this.txtMinPos.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtMinPos.PromptText = "";
+            this.txtMinPos.RegexPattern = "";
+            this.txtMinPos.Size = new System.Drawing.Size(100, 28);
+            this.txtMinPos.TabIndex = 4;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtMinPos, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtMinPos, "数值输入错误");
+            this.verificationComponent1.SetVerificationModel(this.txtMinPos, HZH_Controls.Controls.VerificationModel.Number);
+            this.verificationComponent1.SetVerificationRequired(this.txtMinPos, false);
+            this.txtMinPos.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // txtBoatPush_SV_MaxT
+            // 
+            this.txtBoatPush_SV_MaxT.DecLength = 2;
+            this.txtBoatPush_SV_MaxT.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtBoatPush_SV_MaxT.Location = new System.Drawing.Point(237, 179);
+            this.txtBoatPush_SV_MaxT.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.txtBoatPush_SV_MaxT.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.txtBoatPush_SV_MaxT.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtBoatPush_SV_MaxT.Name = "txtBoatPush_SV_MaxT";
+            this.txtBoatPush_SV_MaxT.OldText = null;
+            this.txtBoatPush_SV_MaxT.PromptColor = System.Drawing.Color.Gray;
+            this.txtBoatPush_SV_MaxT.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtBoatPush_SV_MaxT.PromptText = "";
+            this.txtBoatPush_SV_MaxT.RegexPattern = "";
+            this.txtBoatPush_SV_MaxT.Size = new System.Drawing.Size(100, 28);
+            this.txtBoatPush_SV_MaxT.TabIndex = 4;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtBoatPush_SV_MaxT, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtBoatPush_SV_MaxT, "数值输入错误");
+            this.verificationComponent1.SetVerificationModel(this.txtBoatPush_SV_MaxT, HZH_Controls.Controls.VerificationModel.Number);
+            this.verificationComponent1.SetVerificationRequired(this.txtBoatPush_SV_MaxT, false);
+            this.txtBoatPush_SV_MaxT.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // txtAbs_Speed1
+            // 
+            this.txtAbs_Speed1.DecLength = 2;
+            this.txtAbs_Speed1.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtAbs_Speed1.Location = new System.Drawing.Point(237, 43);
+            this.txtAbs_Speed1.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.txtAbs_Speed1.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.txtAbs_Speed1.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtAbs_Speed1.Name = "txtAbs_Speed1";
+            this.txtAbs_Speed1.OldText = null;
+            this.txtAbs_Speed1.PromptColor = System.Drawing.Color.Gray;
+            this.txtAbs_Speed1.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAbs_Speed1.PromptText = "";
+            this.txtAbs_Speed1.RegexPattern = "";
+            this.txtAbs_Speed1.Size = new System.Drawing.Size(100, 28);
+            this.txtAbs_Speed1.TabIndex = 4;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtAbs_Speed1, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtAbs_Speed1, "数值输入错误");
+            this.verificationComponent1.SetVerificationModel(this.txtAbs_Speed1, HZH_Controls.Controls.VerificationModel.Number);
+            this.verificationComponent1.SetVerificationRequired(this.txtAbs_Speed1, false);
+            this.txtAbs_Speed1.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // txtMaxPos
+            // 
+            this.txtMaxPos.DecLength = 2;
+            this.txtMaxPos.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtMaxPos.Location = new System.Drawing.Point(103, 237);
+            this.txtMaxPos.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.txtMaxPos.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.txtMaxPos.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtMaxPos.Name = "txtMaxPos";
+            this.txtMaxPos.OldText = null;
+            this.txtMaxPos.PromptColor = System.Drawing.Color.Gray;
+            this.txtMaxPos.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtMaxPos.PromptText = "";
+            this.txtMaxPos.RegexPattern = "";
+            this.txtMaxPos.Size = new System.Drawing.Size(100, 28);
+            this.txtMaxPos.TabIndex = 4;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtMaxPos, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtMaxPos, "数值输入错误");
+            this.verificationComponent1.SetVerificationModel(this.txtMaxPos, HZH_Controls.Controls.VerificationModel.Number);
+            this.verificationComponent1.SetVerificationRequired(this.txtMaxPos, false);
+            this.txtMaxPos.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // txtAcc
+            // 
+            this.txtAcc.DecLength = 2;
+            this.txtAcc.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtAcc.Location = new System.Drawing.Point(103, 179);
+            this.txtAcc.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.txtAcc.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.txtAcc.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtAcc.Name = "txtAcc";
+            this.txtAcc.OldText = null;
+            this.txtAcc.PromptColor = System.Drawing.Color.Gray;
+            this.txtAcc.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAcc.PromptText = "";
+            this.txtAcc.RegexPattern = "";
+            this.txtAcc.Size = new System.Drawing.Size(100, 28);
+            this.txtAcc.TabIndex = 4;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtAcc, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtAcc, "数值输入错误");
+            this.verificationComponent1.SetVerificationModel(this.txtAcc, HZH_Controls.Controls.VerificationModel.Number);
+            this.verificationComponent1.SetVerificationRequired(this.txtAcc, false);
+            this.txtAcc.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // txtAbs_Pos1
+            // 
+            this.txtAbs_Pos1.DecLength = 2;
+            this.txtAbs_Pos1.InputType = HZH_Controls.TextInputType.NotControl;
+            this.txtAbs_Pos1.Location = new System.Drawing.Point(103, 43);
+            this.txtAbs_Pos1.MaxValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.txtAbs_Pos1.MinValue = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            -2147483648});
+            this.txtAbs_Pos1.MyRectangle = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.txtAbs_Pos1.Name = "txtAbs_Pos1";
+            this.txtAbs_Pos1.OldText = null;
+            this.txtAbs_Pos1.PromptColor = System.Drawing.Color.Gray;
+            this.txtAbs_Pos1.PromptFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtAbs_Pos1.PromptText = "";
+            this.txtAbs_Pos1.RegexPattern = "";
+            this.txtAbs_Pos1.Size = new System.Drawing.Size(100, 28);
+            this.txtAbs_Pos1.TabIndex = 4;
+            this.verificationComponent1.SetVerificationCustomRegex(this.txtAbs_Pos1, "");
+            this.verificationComponent1.SetVerificationErrorMsg(this.txtAbs_Pos1, "数值输入错误");
+            this.verificationComponent1.SetVerificationModel(this.txtAbs_Pos1, HZH_Controls.Controls.VerificationModel.Number);
+            this.verificationComponent1.SetVerificationRequired(this.txtAbs_Pos1, false);
+            this.txtAbs_Pos1.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // verificationComponent1
+            // 
+            this.verificationComponent1.AutoCloseErrorTipsTime = 3000;
+            this.verificationComponent1.ErrorTipsBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(77)))), ((int)(((byte)(58)))));
+            this.verificationComponent1.ErrorTipsForeColor = System.Drawing.Color.White;
+            this.verificationComponent1.Verificationed += new HZH_Controls.Controls.VerificationComponent.VerificationedHandle(this.verificationComponent1_Verificationed);
             // 
             // UCSetBoatPush
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBoxEx6);
-            this.Controls.Add(this.textBoxEx3);
-            this.Controls.Add(this.textBoxEx5);
-            this.Controls.Add(this.textBoxEx2);
-            this.Controls.Add(this.textBoxEx12);
-            this.Controls.Add(this.textBoxEx11);
-            this.Controls.Add(this.textBoxEx10);
-            this.Controls.Add(this.textBoxEx8);
-            this.Controls.Add(this.textBoxEx4);
-            this.Controls.Add(this.textBoxEx9);
-            this.Controls.Add(this.textBoxEx7);
-            this.Controls.Add(this.textBoxEx1);
+            this.Controls.Add(this.btnEnableT_Protect);
+            this.Controls.Add(this.btnHome_Excute);
+            this.Controls.Add(this.txtAbs_Speed6);
+            this.Controls.Add(this.txtAbs_Pos6);
+            this.Controls.Add(this.txtAbs_Speed4);
+            this.Controls.Add(this.txtAbs_Pos4);
+            this.Controls.Add(this.txtBoatOutAlmOffsetPos);
+            this.Controls.Add(this.txtBoatOut_OffsetPos);
+            this.Controls.Add(this.txtMinPos);
+            this.Controls.Add(this.txtBoatPush_SV_MaxT);
+            this.Controls.Add(this.txtAbs_Speed1);
+            this.Controls.Add(this.txtMaxPos);
+            this.Controls.Add(this.txtAcc);
+            this.Controls.Add(this.txtAbs_Pos1);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
@@ -553,7 +624,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCSetBoatPush";
             this.Size = new System.Drawing.Size(1004, 952);
             this.ResumeLayout(false);
@@ -570,25 +641,26 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx1;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx2;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx3;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx4;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx5;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx6;
-        private System.Windows.Forms.Button button1;
+        public HZH_Controls.Controls.TextBoxEx txtAbs_Pos1;
+        public HZH_Controls.Controls.TextBoxEx txtAbs_Pos4;
+        public HZH_Controls.Controls.TextBoxEx txtAbs_Pos6;
+        public HZH_Controls.Controls.TextBoxEx txtAbs_Speed1;
+        public HZH_Controls.Controls.TextBoxEx txtAbs_Speed4;
+        public HZH_Controls.Controls.TextBoxEx txtAbs_Speed6;
+        public System.Windows.Forms.Button btnHome_Excute;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx7;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx8;
+        public HZH_Controls.Controls.TextBoxEx txtAcc;
+        public HZH_Controls.Controls.TextBoxEx txtBoatPush_SV_MaxT;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx9;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx10;
-        private System.Windows.Forms.Button button2;
+        public HZH_Controls.Controls.TextBoxEx txtMaxPos;
+        public HZH_Controls.Controls.TextBoxEx txtMinPos;
+        public System.Windows.Forms.Button btnEnableT_Protect;
         private System.Windows.Forms.Label label11;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx11;
+        public HZH_Controls.Controls.TextBoxEx txtBoatOut_OffsetPos;
         private System.Windows.Forms.Label label12;
-        private HZH_Controls.Controls.TextBoxEx textBoxEx12;
+        public HZH_Controls.Controls.TextBoxEx txtBoatOutAlmOffsetPos;
+        private HZH_Controls.Controls.VerificationComponent verificationComponent1;
     }
 }

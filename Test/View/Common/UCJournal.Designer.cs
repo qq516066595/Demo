@@ -39,6 +39,7 @@
             this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RecoveryTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSelect = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJournal)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +56,8 @@
             // 
             // dtEndTime
             // 
-            this.dtEndTime.CustomFormat = "yyyy-MM-dd HH:MM:SS";
+            this.dtEndTime.CustomFormat = "yyyy-MM-dd HH:MM:ss";
+            this.dtEndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtEndTime.Location = new System.Drawing.Point(500, 4);
             this.dtEndTime.Margin = new System.Windows.Forms.Padding(4);
             this.dtEndTime.Name = "dtEndTime";
@@ -64,7 +66,8 @@
             // 
             // dtStartTime
             // 
-            this.dtStartTime.CustomFormat = "yyyy-MM-dd HH:MM:SS";
+            this.dtStartTime.CustomFormat = "yyyy-MM-dd HH:MM:ss";
+            this.dtStartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtStartTime.Location = new System.Drawing.Point(98, 4);
             this.dtStartTime.Margin = new System.Windows.Forms.Padding(4);
             this.dtStartTime.Name = "dtStartTime";
@@ -95,6 +98,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnSelect);
             this.panel1.Controls.Add(this.dtEndTime);
             this.panel1.Controls.Add(this.dtStartTime);
             this.panel1.Controls.Add(this.label3);
@@ -149,6 +153,17 @@
             this.Desc.Name = "Desc";
             this.Desc.ReadOnly = true;
             // 
+            // btnSelect
+            // 
+            this.btnSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSelect.Location = new System.Drawing.Point(820, 6);
+            this.btnSelect.Name = "btnSelect";
+            this.btnSelect.Size = new System.Drawing.Size(75, 23);
+            this.btnSelect.TabIndex = 8;
+            this.btnSelect.Text = "查询";
+            this.btnSelect.UseVisualStyleBackColor = true;
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+            // 
             // UCJournal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -179,5 +194,6 @@
         public System.Windows.Forms.DataGridViewTextBoxColumn UserName;
         public System.Windows.Forms.DataGridViewTextBoxColumn RecoveryTime;
         public System.Windows.Forms.DataGridViewTextBoxColumn Desc;
+        private System.Windows.Forms.Button btnSelect;
     }
 }

@@ -28,83 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucSignalLamp1 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp2 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp3 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp4 = new HZH_Controls.Controls.UCSignalLamp();
-            this.ucSignalLamp5 = new HZH_Controls.Controls.UCSignalLamp();
+            this.SLProcess_InitDone = new HZH_Controls.Controls.UCSignalLamp();
+            this.SLHeating_InitDone = new HZH_Controls.Controls.UCSignalLamp();
+            this.SLGas_InitDone = new HZH_Controls.Controls.UCSignalLamp();
+            this.SLBoatPush_InitDone = new HZH_Controls.Controls.UCSignalLamp();
+            this.SLVacuum_InitDone = new HZH_Controls.Controls.UCSignalLamp();
             this.label27 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnProcessInit = new System.Windows.Forms.Button();
+            this.btnHeatingInit = new System.Windows.Forms.Button();
+            this.btnGasInit = new System.Windows.Forms.Button();
+            this.btnBoatPushInit = new System.Windows.Forms.Button();
+            this.btnVacuumInit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // ucSignalLamp1
+            // SLProcess_InitDone
             // 
-            this.ucSignalLamp1.IsHighlight = true;
-            this.ucSignalLamp1.IsShowBorder = false;
-            this.ucSignalLamp1.LampColor = new System.Drawing.Color[] {
+            this.SLProcess_InitDone.IsHighlight = true;
+            this.SLProcess_InitDone.IsShowBorder = false;
+            this.SLProcess_InitDone.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp1.Location = new System.Drawing.Point(115, 18);
-            this.ucSignalLamp1.Name = "ucSignalLamp1";
-            this.ucSignalLamp1.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp1.TabIndex = 29;
-            this.ucSignalLamp1.TwinkleSpeed = 0;
+            this.SLProcess_InitDone.Location = new System.Drawing.Point(172, 27);
+            this.SLProcess_InitDone.Margin = new System.Windows.Forms.Padding(4);
+            this.SLProcess_InitDone.Name = "SLProcess_InitDone";
+            this.SLProcess_InitDone.Size = new System.Drawing.Size(30, 30);
+            this.SLProcess_InitDone.TabIndex = 29;
+            this.SLProcess_InitDone.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp2
+            // SLHeating_InitDone
             // 
-            this.ucSignalLamp2.IsHighlight = true;
-            this.ucSignalLamp2.IsShowBorder = false;
-            this.ucSignalLamp2.LampColor = new System.Drawing.Color[] {
+            this.SLHeating_InitDone.IsHighlight = true;
+            this.SLHeating_InitDone.IsShowBorder = false;
+            this.SLHeating_InitDone.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp2.Location = new System.Drawing.Point(115, 45);
-            this.ucSignalLamp2.Name = "ucSignalLamp2";
-            this.ucSignalLamp2.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp2.TabIndex = 29;
-            this.ucSignalLamp2.TwinkleSpeed = 0;
+            this.SLHeating_InitDone.Location = new System.Drawing.Point(172, 68);
+            this.SLHeating_InitDone.Margin = new System.Windows.Forms.Padding(4);
+            this.SLHeating_InitDone.Name = "SLHeating_InitDone";
+            this.SLHeating_InitDone.Size = new System.Drawing.Size(30, 30);
+            this.SLHeating_InitDone.TabIndex = 29;
+            this.SLHeating_InitDone.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp3
+            // SLGas_InitDone
             // 
-            this.ucSignalLamp3.IsHighlight = true;
-            this.ucSignalLamp3.IsShowBorder = false;
-            this.ucSignalLamp3.LampColor = new System.Drawing.Color[] {
+            this.SLGas_InitDone.IsHighlight = true;
+            this.SLGas_InitDone.IsShowBorder = false;
+            this.SLGas_InitDone.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp3.Location = new System.Drawing.Point(115, 72);
-            this.ucSignalLamp3.Name = "ucSignalLamp3";
-            this.ucSignalLamp3.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp3.TabIndex = 29;
-            this.ucSignalLamp3.TwinkleSpeed = 0;
+            this.SLGas_InitDone.Location = new System.Drawing.Point(172, 108);
+            this.SLGas_InitDone.Margin = new System.Windows.Forms.Padding(4);
+            this.SLGas_InitDone.Name = "SLGas_InitDone";
+            this.SLGas_InitDone.Size = new System.Drawing.Size(30, 30);
+            this.SLGas_InitDone.TabIndex = 29;
+            this.SLGas_InitDone.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp4
+            // SLBoatPush_InitDone
             // 
-            this.ucSignalLamp4.IsHighlight = true;
-            this.ucSignalLamp4.IsShowBorder = false;
-            this.ucSignalLamp4.LampColor = new System.Drawing.Color[] {
+            this.SLBoatPush_InitDone.IsHighlight = true;
+            this.SLBoatPush_InitDone.IsShowBorder = false;
+            this.SLBoatPush_InitDone.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp4.Location = new System.Drawing.Point(115, 99);
-            this.ucSignalLamp4.Name = "ucSignalLamp4";
-            this.ucSignalLamp4.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp4.TabIndex = 29;
-            this.ucSignalLamp4.TwinkleSpeed = 0;
+            this.SLBoatPush_InitDone.Location = new System.Drawing.Point(172, 148);
+            this.SLBoatPush_InitDone.Margin = new System.Windows.Forms.Padding(4);
+            this.SLBoatPush_InitDone.Name = "SLBoatPush_InitDone";
+            this.SLBoatPush_InitDone.Size = new System.Drawing.Size(30, 30);
+            this.SLBoatPush_InitDone.TabIndex = 29;
+            this.SLBoatPush_InitDone.TwinkleSpeed = 0;
             // 
-            // ucSignalLamp5
+            // SLVacuum_InitDone
             // 
-            this.ucSignalLamp5.IsHighlight = true;
-            this.ucSignalLamp5.IsShowBorder = false;
-            this.ucSignalLamp5.LampColor = new System.Drawing.Color[] {
+            this.SLVacuum_InitDone.IsHighlight = true;
+            this.SLVacuum_InitDone.IsShowBorder = false;
+            this.SLVacuum_InitDone.LampColor = new System.Drawing.Color[] {
         System.Drawing.Color.Silver,
         System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))))};
-            this.ucSignalLamp5.Location = new System.Drawing.Point(115, 126);
-            this.ucSignalLamp5.Name = "ucSignalLamp5";
-            this.ucSignalLamp5.Size = new System.Drawing.Size(20, 20);
-            this.ucSignalLamp5.TabIndex = 29;
-            this.ucSignalLamp5.TwinkleSpeed = 0;
+            this.SLVacuum_InitDone.Location = new System.Drawing.Point(172, 189);
+            this.SLVacuum_InitDone.Margin = new System.Windows.Forms.Padding(4);
+            this.SLVacuum_InitDone.Name = "SLVacuum_InitDone";
+            this.SLVacuum_InitDone.Size = new System.Drawing.Size(30, 30);
+            this.SLVacuum_InitDone.TabIndex = 29;
+            this.SLVacuum_InitDone.TwinkleSpeed = 0;
             // 
             // label27
             // 
@@ -112,97 +117,109 @@
             this.label27.Dock = System.Windows.Forms.DockStyle.Top;
             this.label27.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label27.Location = new System.Drawing.Point(0, 0);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(764, 1);
+            this.label27.Size = new System.Drawing.Size(1146, 2);
             this.label27.TabIndex = 30;
             // 
-            // button1
+            // btnProcessInit
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(19, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 23);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "工艺单元";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnProcessInit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProcessInit.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnProcessInit.Location = new System.Drawing.Point(28, 22);
+            this.btnProcessInit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProcessInit.Name = "btnProcessInit";
+            this.btnProcessInit.Size = new System.Drawing.Size(135, 34);
+            this.btnProcessInit.TabIndex = 31;
+            this.btnProcessInit.Text = "工艺单元";
+            this.btnProcessInit.UseVisualStyleBackColor = true;
+            this.btnProcessInit.Click += new System.EventHandler(this.btnValue_Click);
             // 
-            // button2
+            // btnHeatingInit
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(19, 42);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 23);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "加热系统";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHeatingInit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHeatingInit.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnHeatingInit.Location = new System.Drawing.Point(28, 63);
+            this.btnHeatingInit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHeatingInit.Name = "btnHeatingInit";
+            this.btnHeatingInit.Size = new System.Drawing.Size(135, 34);
+            this.btnHeatingInit.TabIndex = 31;
+            this.btnHeatingInit.Text = "加热系统";
+            this.btnHeatingInit.UseVisualStyleBackColor = true;
+            this.btnHeatingInit.Click += new System.EventHandler(this.btnValue_Click);
             // 
-            // button3
+            // btnGasInit
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(19, 69);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 23);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "气路系统";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnGasInit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGasInit.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnGasInit.Location = new System.Drawing.Point(28, 104);
+            this.btnGasInit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGasInit.Name = "btnGasInit";
+            this.btnGasInit.Size = new System.Drawing.Size(135, 34);
+            this.btnGasInit.TabIndex = 31;
+            this.btnGasInit.Text = "气路系统";
+            this.btnGasInit.UseVisualStyleBackColor = true;
+            this.btnGasInit.Click += new System.EventHandler(this.btnValue_Click);
             // 
-            // button4
+            // btnBoatPushInit
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(19, 96);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 23);
-            this.button4.TabIndex = 31;
-            this.button4.Text = "推舟系统";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnBoatPushInit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBoatPushInit.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnBoatPushInit.Location = new System.Drawing.Point(28, 144);
+            this.btnBoatPushInit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBoatPushInit.Name = "btnBoatPushInit";
+            this.btnBoatPushInit.Size = new System.Drawing.Size(135, 34);
+            this.btnBoatPushInit.TabIndex = 31;
+            this.btnBoatPushInit.Text = "推舟系统";
+            this.btnBoatPushInit.UseVisualStyleBackColor = true;
+            this.btnBoatPushInit.Click += new System.EventHandler(this.btnValue_Click);
             // 
-            // button5
+            // btnVacuumInit
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button5.Location = new System.Drawing.Point(19, 123);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(90, 23);
-            this.button5.TabIndex = 31;
-            this.button5.Text = "真空系统";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnVacuumInit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVacuumInit.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnVacuumInit.Location = new System.Drawing.Point(28, 184);
+            this.btnVacuumInit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVacuumInit.Name = "btnVacuumInit";
+            this.btnVacuumInit.Size = new System.Drawing.Size(135, 34);
+            this.btnVacuumInit.TabIndex = 31;
+            this.btnVacuumInit.Text = "真空系统";
+            this.btnVacuumInit.UseVisualStyleBackColor = true;
+            this.btnVacuumInit.Click += new System.EventHandler(this.btnValue_Click);
             // 
             // UCInit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnVacuumInit);
+            this.Controls.Add(this.btnBoatPushInit);
+            this.Controls.Add(this.btnGasInit);
+            this.Controls.Add(this.btnHeatingInit);
+            this.Controls.Add(this.btnProcessInit);
             this.Controls.Add(this.label27);
-            this.Controls.Add(this.ucSignalLamp5);
-            this.Controls.Add(this.ucSignalLamp4);
-            this.Controls.Add(this.ucSignalLamp3);
-            this.Controls.Add(this.ucSignalLamp2);
-            this.Controls.Add(this.ucSignalLamp1);
+            this.Controls.Add(this.SLVacuum_InitDone);
+            this.Controls.Add(this.SLBoatPush_InitDone);
+            this.Controls.Add(this.SLGas_InitDone);
+            this.Controls.Add(this.SLHeating_InitDone);
+            this.Controls.Add(this.SLProcess_InitDone);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCInit";
-            this.Size = new System.Drawing.Size(764, 581);
+            this.Size = new System.Drawing.Size(1146, 872);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp1;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp2;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp3;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp4;
-        private HZH_Controls.Controls.UCSignalLamp ucSignalLamp5;
+        public HZH_Controls.Controls.UCSignalLamp SLProcess_InitDone;
+        public HZH_Controls.Controls.UCSignalLamp SLHeating_InitDone;
+        public HZH_Controls.Controls.UCSignalLamp SLGas_InitDone;
+        public HZH_Controls.Controls.UCSignalLamp SLBoatPush_InitDone;
+        public HZH_Controls.Controls.UCSignalLamp SLVacuum_InitDone;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        public System.Windows.Forms.Button btnProcessInit;
+        public System.Windows.Forms.Button btnHeatingInit;
+        public System.Windows.Forms.Button btnGasInit;
+        public System.Windows.Forms.Button btnBoatPushInit;
+        public System.Windows.Forms.Button btnVacuumInit;
     }
 }

@@ -111,6 +111,7 @@
             this.ucSwitch.Texts = new string[0];
             this.ucSwitch.TrueColor = System.Drawing.Color.LimeGreen;
             this.ucSwitch.TrueTextColr = System.Drawing.Color.White;
+            this.ucSwitch.CheckedChanged += new System.EventHandler(this.ucSwitch_CheckedChanged);
             // 
             // label2
             // 
@@ -172,6 +173,7 @@
             this.ucBoatState.TabIndex = 16;
             this.ucBoatState.TextValue = null;
             this.ucBoatState.TriangleColor = System.Drawing.Color.Black;
+            this.ucBoatState.SelectedChangedEvent += new System.EventHandler(this.ucBoatState_SelectedChangedEvent);
             // 
             // label6
             // 
@@ -462,6 +464,7 @@
             this.btnJumpStep.TabIndex = 25;
             this.btnJumpStep.Text = "跳步";
             this.btnJumpStep.UseVisualStyleBackColor = true;
+            this.btnJumpStep.Click += new System.EventHandler(this.btnJumpStep_Click);
             // 
             // btnAbort
             // 
@@ -474,6 +477,7 @@
             this.btnAbort.TabIndex = 25;
             this.btnAbort.Text = "中断";
             this.btnAbort.UseVisualStyleBackColor = true;
+            this.btnAbort.Click += new System.EventHandler(this.btnAbort_Click);
             // 
             // btnFinish
             // 
@@ -486,6 +490,7 @@
             this.btnFinish.TabIndex = 25;
             this.btnFinish.Text = "结束";
             this.btnFinish.UseVisualStyleBackColor = true;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // btnTubeDisable
             // 
@@ -498,6 +503,7 @@
             this.btnTubeDisable.TabIndex = 25;
             this.btnTubeDisable.Text = "锁管";
             this.btnTubeDisable.UseVisualStyleBackColor = true;
+            this.btnTubeDisable.Click += new System.EventHandler(this.btnTubeDisable_Click);
             // 
             // UCRecipeInfo
             // 

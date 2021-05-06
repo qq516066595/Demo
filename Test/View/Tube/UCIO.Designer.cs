@@ -28,121 +28,132 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucioModule1 = new Test.View.Common.UCIOModule();
-            this.ucioModule2 = new Test.View.Common.UCIOModule();
-            this.ucioModule3 = new Test.View.Common.UCIOModule();
-            this.ucioModule4 = new Test.View.Common.UCIOModule();
-            this.ucioModule5 = new Test.View.Common.UCIOModule();
-            this.ucioModule6 = new Test.View.Common.UCIOModule();
-            this.ucioModule7 = new Test.View.Common.UCIOModule();
-            this.ucioModule8 = new Test.View.Common.UCIOModule();
-            this.ucioModule9 = new Test.View.Common.UCIOModule();
+            this.ucIOm1 = new Test.View.Common.UCIOModule();
+            this.ucIOm2 = new Test.View.Common.UCIOModule();
+            this.ucIOm4 = new Test.View.Common.UCIOModule();
+            this.ucIOm5 = new Test.View.Common.UCIOModule();
+            this.ucIOm3 = new Test.View.Common.UCIOModule();
+            this.ucIOm6 = new Test.View.Common.UCIOModule();
+            this.ucIOm7 = new Test.View.Common.UCIOModule();
+            this.ucIOm8 = new Test.View.Common.UCIOModule();
+            this.ucIOm9 = new Test.View.Common.UCIOModule();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // ucioModule1
+            // ucIOm1
             // 
-            this.ucioModule1.Location = new System.Drawing.Point(7, 3);
-            this.ucioModule1.Name = "ucioModule1";
-            this.ucioModule1.Size = new System.Drawing.Size(247, 188);
-            this.ucioModule1.TabIndex = 0;
+            this.ucIOm1.Location = new System.Drawing.Point(10, 4);
+            this.ucIOm1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ucIOm1.Name = "ucIOm1";
+            this.ucIOm1.Size = new System.Drawing.Size(370, 282);
+            this.ucIOm1.TabIndex = 0;
             // 
-            // ucioModule2
+            // ucIOm2
             // 
-            this.ucioModule2.Location = new System.Drawing.Point(260, 3);
-            this.ucioModule2.Name = "ucioModule2";
-            this.ucioModule2.Size = new System.Drawing.Size(247, 188);
-            this.ucioModule2.TabIndex = 1;
+            this.ucIOm2.Location = new System.Drawing.Point(390, 4);
+            this.ucIOm2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ucIOm2.Name = "ucIOm2";
+            this.ucIOm2.Size = new System.Drawing.Size(370, 282);
+            this.ucIOm2.TabIndex = 1;
             // 
-            // ucioModule3
+            // ucIOm4
             // 
-            this.ucioModule3.Location = new System.Drawing.Point(7, 197);
-            this.ucioModule3.Name = "ucioModule3";
-            this.ucioModule3.Size = new System.Drawing.Size(247, 188);
-            this.ucioModule3.TabIndex = 2;
+            this.ucIOm4.Location = new System.Drawing.Point(10, 296);
+            this.ucIOm4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ucIOm4.Name = "ucIOm4";
+            this.ucIOm4.Size = new System.Drawing.Size(370, 282);
+            this.ucIOm4.TabIndex = 2;
             // 
-            // ucioModule4
+            // ucIOm5
             // 
-            this.ucioModule4.Location = new System.Drawing.Point(260, 197);
-            this.ucioModule4.Name = "ucioModule4";
-            this.ucioModule4.Size = new System.Drawing.Size(247, 188);
-            this.ucioModule4.TabIndex = 3;
+            this.ucIOm5.Location = new System.Drawing.Point(390, 296);
+            this.ucIOm5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ucIOm5.Name = "ucIOm5";
+            this.ucIOm5.Size = new System.Drawing.Size(370, 282);
+            this.ucIOm5.TabIndex = 3;
             // 
-            // ucioModule5
+            // ucIOm3
             // 
-            this.ucioModule5.Location = new System.Drawing.Point(513, 3);
-            this.ucioModule5.Name = "ucioModule5";
-            this.ucioModule5.Size = new System.Drawing.Size(247, 188);
-            this.ucioModule5.TabIndex = 4;
+            this.ucIOm3.Location = new System.Drawing.Point(770, 4);
+            this.ucIOm3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ucIOm3.Name = "ucIOm3";
+            this.ucIOm3.Size = new System.Drawing.Size(370, 282);
+            this.ucIOm3.TabIndex = 4;
             // 
-            // ucioModule6
+            // ucIOm6
             // 
-            this.ucioModule6.Location = new System.Drawing.Point(513, 197);
-            this.ucioModule6.Name = "ucioModule6";
-            this.ucioModule6.Size = new System.Drawing.Size(247, 188);
-            this.ucioModule6.TabIndex = 5;
+            this.ucIOm6.Location = new System.Drawing.Point(770, 296);
+            this.ucIOm6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ucIOm6.Name = "ucIOm6";
+            this.ucIOm6.Size = new System.Drawing.Size(370, 282);
+            this.ucIOm6.TabIndex = 5;
             // 
-            // ucioModule7
+            // ucIOm7
             // 
-            this.ucioModule7.Location = new System.Drawing.Point(7, 391);
-            this.ucioModule7.Name = "ucioModule7";
-            this.ucioModule7.Size = new System.Drawing.Size(247, 188);
-            this.ucioModule7.TabIndex = 2;
+            this.ucIOm7.Location = new System.Drawing.Point(10, 586);
+            this.ucIOm7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ucIOm7.Name = "ucIOm7";
+            this.ucIOm7.Size = new System.Drawing.Size(370, 282);
+            this.ucIOm7.TabIndex = 2;
             // 
-            // ucioModule8
+            // ucIOm8
             // 
-            this.ucioModule8.Location = new System.Drawing.Point(260, 391);
-            this.ucioModule8.Name = "ucioModule8";
-            this.ucioModule8.Size = new System.Drawing.Size(247, 188);
-            this.ucioModule8.TabIndex = 3;
+            this.ucIOm8.Location = new System.Drawing.Point(390, 586);
+            this.ucIOm8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ucIOm8.Name = "ucIOm8";
+            this.ucIOm8.Size = new System.Drawing.Size(370, 282);
+            this.ucIOm8.TabIndex = 3;
             // 
-            // ucioModule9
+            // ucIOm9
             // 
-            this.ucioModule9.Location = new System.Drawing.Point(513, 391);
-            this.ucioModule9.Name = "ucioModule9";
-            this.ucioModule9.Size = new System.Drawing.Size(247, 188);
-            this.ucioModule9.TabIndex = 5;
+            this.ucIOm9.Location = new System.Drawing.Point(770, 586);
+            this.ucIOm9.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ucIOm9.Name = "ucIOm9";
+            this.ucIOm9.Size = new System.Drawing.Size(370, 282);
+            this.ucIOm9.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(671, 1);
+            this.label1.Size = new System.Drawing.Size(1006, 2);
             this.label1.TabIndex = 6;
             // 
             // UCIO
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ucioModule9);
-            this.Controls.Add(this.ucioModule6);
-            this.Controls.Add(this.ucioModule5);
-            this.Controls.Add(this.ucioModule8);
-            this.Controls.Add(this.ucioModule7);
-            this.Controls.Add(this.ucioModule4);
-            this.Controls.Add(this.ucioModule3);
-            this.Controls.Add(this.ucioModule2);
-            this.Controls.Add(this.ucioModule1);
+            this.Controls.Add(this.ucIOm9);
+            this.Controls.Add(this.ucIOm6);
+            this.Controls.Add(this.ucIOm3);
+            this.Controls.Add(this.ucIOm8);
+            this.Controls.Add(this.ucIOm7);
+            this.Controls.Add(this.ucIOm5);
+            this.Controls.Add(this.ucIOm4);
+            this.Controls.Add(this.ucIOm2);
+            this.Controls.Add(this.ucIOm1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UCIO";
-            this.Size = new System.Drawing.Size(671, 513);
+            this.Size = new System.Drawing.Size(1006, 770);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Common.UCIOModule ucioModule1;
-        private Common.UCIOModule ucioModule2;
-        private Common.UCIOModule ucioModule3;
-        private Common.UCIOModule ucioModule4;
-        private Common.UCIOModule ucioModule5;
-        private Common.UCIOModule ucioModule6;
-        private Common.UCIOModule ucioModule7;
-        private Common.UCIOModule ucioModule8;
-        private Common.UCIOModule ucioModule9;
+        public Common.UCIOModule ucIOm1;
+        public Common.UCIOModule ucIOm2;
+        public Common.UCIOModule ucIOm4;
+        public Common.UCIOModule ucIOm5;
+        public Common.UCIOModule ucIOm3;
+        public Common.UCIOModule ucIOm6;
+        public Common.UCIOModule ucIOm7;
+        public Common.UCIOModule ucIOm8;
+        public Common.UCIOModule ucIOm9;
         private System.Windows.Forms.Label label1;
     }
 }
