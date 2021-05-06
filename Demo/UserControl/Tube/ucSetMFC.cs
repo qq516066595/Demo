@@ -34,6 +34,7 @@ namespace Demo.UserControl.Tube
             txtSetGasMaxRange.Text = PlcVar.Tube[frmID.Unit].stMFC_Para[MFC_ID].nMaxRange.ToString();
             help.SetbtnClickBackColor(btnSetGasShield, Color.LightCoral, PlcVar.Tube[frmID.Unit].stMFC_Para[MFC_ID].bShield);
         }
+        
         private void txtSetGasWarnDiff_TextChanged(object sender, EventArgs e)
         {
             //stMFC_Para1.rWarnDiff_Persent = (float)Convert.ToDouble(txtSetGasWarnDiff.Text);

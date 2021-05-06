@@ -385,7 +385,6 @@ namespace com.DataBaseModels
         public struct AI_Para
         {
             public int FilterN;             //滤波数量
-            public int PeakN;               //毛孔监控数量
             public double rMinAct;          //最小实际值
             public double rMinOriginal;     //最小分辨率
             public double rMaxAct;          //最大实际值
@@ -736,6 +735,7 @@ namespace com.DataBaseModels
         public PlcModels.Pump_Ctrl stPump_Ctrl;
         public int giSource_Counter;
         public bool gbSourceBottle_LeakCheck;
+        public bool gbNOBOAT_LeakCheck;
 
         public bool gbValve_Unlock;
         public PlcModels.MFC_Para[] stMFC_Para;//12
