@@ -338,8 +338,8 @@ namespace com.DataBaseModels
             AUTO_MODE,
             AUTO_RUN_MODE,
             HALT_MODE,
-            EM_MODE
-
+            EM_MODE,
+            OFFLINE
         }
         //****************操作命令结构体****************
         [Serializable]
@@ -986,24 +986,133 @@ namespace com.DataBaseModels
              
         }
 
-        public static void GetTUBEInfo(int index) {
-
+        public static void GetTUBEInfo(int index)
+        {
+            if (index == 0)
+            {
+                index = 1;
+            }
             try
             {
-               
+
+                //  LaplaceCIP.PlcOmronCip.Instance.nxCompolet_Jht.Active = true;
+                //   LaplaceCIP.PlcOmronCip.Instance.nxCompolet_Tube[1].Active = true;
+                //    for (int i = 1; i < LaplaceCIP.PlcOmronCip.Instance.nxCompolet_Tube.Length; i++)
+                //    {
+                //        if (LaplaceCIP.PlcOmronCip.Instance.nxCompolet_Tube[i].IsConnected == true)
+                {
+                    string str = LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "OP_MODE");
+                    if (str == "")
+                    {
+                        PlcVar.Tube[index].OP_Mode = PlcModels.OP_MODE.OFFLINE;//未联机
+                        return;
+                    }
+                    PlcVar.Tube[index].OP_Mode = (PlcModels.OP_MODE)Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "OP_MODE"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bPowerOff = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bHMI_PowerOff"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bPowerStatus = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bPowerStatus"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bStandStill = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bStandStill"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bMinPos_Reached = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bMinPos_Reached"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bMaxPos_Reached = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bMaxPos_Reached"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bHome_Excute = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bHome_Excute"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bHome_Condition = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bHome_Condition"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bJogF = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bJogF"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bJogB = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bJogB"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bJogF_Condition = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bJogF_Condition"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bJogB_Condition = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bJogB_Condition"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bReset_Execute = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bReset_Execute"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.bStop_Execute = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bStop_Execute"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.P_SW = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.P_SW"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.N_SW = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.N_SW"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.O_SW = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.O_SW"));
+                    for (int i = 0; i < 31; i++)
+                    {
+                        PlcVar.Tube[index].BoatPush_SV_Ctrl.bAbs_Execute[i] = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bAbs_Execute[" + i + "]"));
+                        PlcVar.Tube[index].BoatPush_SV_Ctrl.bAbs_Condition[i] = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bAbs_Condition[" + i + "]"));
+                        PlcVar.Tube[index].BoatPush_SV_Ctrl.bPos_Reached[i] = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.bAbs_Condition[" + i + "]"));
+                    }
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.rOverride = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.rOverride"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.rActPos = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.rActPos"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.rActSpeed = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.rActSpeed"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.rAct_Torque = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.rAct_Torque"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.nErrorCode = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.nErrorCode"));
+                    PlcVar.Tube[index].BoatPush_SV_Ctrl.nECT_ErrorCode = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "BoatPush_SV_Ctrl.nECT_ErrorCode"));
+
+                    PlcVar.Tube[index].stPump_Ctrl.rSetPressure = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "stPump_Ctrl.rSetPressure"));
+                    PlcVar.Tube[index].stPump_Ctrl.rActPressure = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "stPump_Ctrl.rActPressure"));
+                    PlcVar.Tube[index].stPump_Ctrl.rSetSpeed = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "stPump_Ctrl.rSetSpeed"));
+                    PlcVar.Tube[index].stPump_Ctrl.rActSpeed = float.Parse(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "stPump_Ctrl.rActSpeed"));
+                    PlcVar.Tube[index].stPump_Ctrl.bStartPump = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "stPump_Ctrl.bStartPump"));
+                    PlcVar.Tube[index].stPump_Ctrl.nStatusAlarm = Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "stPump_Ctrl.nStatusAlarm"));
+                    PlcVar.Tube[index].stPump_Ctrl.bCheckDiff_Enable = Convert.ToBoolean(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(index, "stPump_Ctrl.bCheckDiff_Enable"));
+
+
+                    //    }
+                    //    else
+                    //   { 
+                    //       
+                    //   }
+
+                }
+
+
+
+
             }
             catch (Exception e)
             {
+                log.Info("通讯交互:" + e.ToString() + "__________________________/n_____\n");
 
-                Console.WriteLine(e.ToString()); ;
+
             }
 
         }
 
 
+        public static void GetPlcState()
+        {
+
+            try
+            {
+
+                string str1 = LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(1, "OP_MODE");
+                string str2 = LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(2, "OP_MODE");
+                string str3 = LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(3, "OP_MODE");
+                string str4 = LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(4, "OP_MODE");
+                string str5 = LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(5, "OP_MODE");
+                if (str1 != "")
+                {
+                    PlcVar.Tube[1].OP_Mode = (PlcModels.OP_MODE)Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(1, "OP_MODE"));
+                }
+                if (str2 != "")
+                {
+                    PlcVar.Tube[2].OP_Mode = (PlcModels.OP_MODE)Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(2, "OP_MODE"));
+                }
+                if (str3 != "")
+                {
+                    PlcVar.Tube[3].OP_Mode = (PlcModels.OP_MODE)Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(3, "OP_MODE"));
+                }
+                if (str4 != "")
+                {
+                    PlcVar.Tube[4].OP_Mode = (PlcModels.OP_MODE)Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(4, "OP_MODE"));
+                }
+                if (str5 != "")
+                {
+                    PlcVar.Tube[5].OP_Mode = (PlcModels.OP_MODE)Convert.ToUInt16(LaplaceCIP.PlcOmronCip.Instance.GetVariableInfo(5, "OP_MODE"));
+
+                }
 
 
-        
+
+            }
+            catch (Exception e)
+            {
+
+            }
+
+
+        }
+
+
 
 
 

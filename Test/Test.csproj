@@ -40,14 +40,17 @@
   <ItemGroup>
     <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20133.795, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Work_Laplace\Winform\NetWinformControl-master\HZH_Controls\Test\bin\Debug\C1.Win.C1FlexGrid.2.dll</HintPath>
+      <HintPath>..\Demo\lib\C1.Win.C1FlexGrid.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.C1Input.2, Version=2.0.20133.33326, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Work_Laplace\Winform\NetWinformControl-master\HZH_Controls\Test\bin\Debug\C1.Win.C1Input.2.dll</HintPath>
+      <HintPath>..\Demo\lib\C1.Win.C1Input.2.dll</HintPath>
     </Reference>
     <Reference Include="DynamicData, Version=7.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DynamicData.7.1.1\lib\net461\DynamicData.dll</HintPath>
+    </Reference>
+    <Reference Include="LaplaceCIP">
+      <HintPath>..\Demo\lib\LaplaceCIP.dll</HintPath>
     </Reference>
     <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>..\packages\LiveCharts.0.9.7\lib\net40\LiveCharts.dll</HintPath>
@@ -925,7 +928,6 @@
     <EmbeddedResource Include="FrmWithTitleTest.resx">
       <DependentUpon>FrmWithTitleTest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
